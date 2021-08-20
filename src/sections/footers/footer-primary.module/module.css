@@ -1,0 +1,57 @@
+main {
+  height: 700px;
+}
+
+/* Default Footer */
+.footer {
+  background-color: var(--lightest);
+  padding: 1.6875em 1.5em 1.5em 1.5em;
+}
+.footer hr {
+  color: var(--lighter);
+  margin: 2.5em 0;
+  opacity: .2;
+}
+.footer__title {
+  font: 350 1.125em var(--font-primary);
+}
+
+
+/* CTA Trabalhe conosco */
+.footer-cortex__cta {
+  text-align: center;
+}
+.footer-cortex__cta .button--secondary {
+  margin: 1.25rem auto;
+}
+
+/* Redes sociais */
+.footer-social__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-social__item {
+  font-size: 2.25em;
+}
+.footer-social__item .icon-linkedin .path1:before,
+.footer-social__item .icon-facebook .path1:before,
+.footer-social__item .icon-youtube .path1:before {
+  color: var(--darkest);
+}
+.footer-social__item .icon-instagram .path2:before {
+  color: var(--darkest);
+}
+
+
+/* Termos e politica */
+.footer__terms {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+}
+.footer__terms .footer__text {
+  font: 400 0.875em var(--font-secondary);
+  color: var(--darkest);
+}

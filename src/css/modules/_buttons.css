@@ -1,0 +1,28 @@
+.button {
+  display: block;
+  width: max-content;
+  font: 400 1em var(--font-secondary);
+  padding: 12px 24px;
+  text-decoration: none;
+  line-height: 1;
+  border-radius: 40px;
+  transition: all .2s ease-in-out;
+} 
+
+.button--primary {
+  color: var(--darkest);
+  background-color: transparent;
+  border: 1px solid var(--darkest);
+}
+.button--primary:hover {
+  color: var(--white);
+  background-color: var(--darkest);
+  border: 1px solid var(--darkest);
+}
+
+.button--secondary {
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--darkest);
+  border: 1px solid var(--darkest);
+}

@@ -1,0 +1,59 @@
+
+:root {
+  /* Fontes */
+  --font-primary: "Gotham";
+  --font-secondary: "Open Sans";
+
+  /* Cores */
+  /* Vermelho */
+  --red_official: #D21E46;
+  --red-spotlight: #FF2850;
+  --red_light: #FF7396;
+  --red_lightest: #FFEBEB;
+
+  /* Rozo */
+  --purple_official: #642D96;
+  --purple_spotlight: #D232D2;
+  --purple_light: #FF78AF;
+  --purple_lightest: #FFEBF5;
+
+  /* Azul */
+  --blue_official: #285FC3;
+  --blue_spotlight: #1E8CFF;
+  --blue_light: #28C8FF;
+  --blue_lightest: #DCF0FF;
+
+  /* Verde */
+  --green_official: #1E9B50;
+  --green_spotlight: #8CC328;
+  --green_light: #C3DC3C;
+  --green_lightest: #EBFAEB;
+
+  /* Escalas de Cinza */
+  --black: #000000;
+  --darkest: #37324B;
+  --darker: #4B465A;
+  --dark: #7A7589;
+  --light: #C5BFCA;
+  --lighter: #E1DCE6;
+  --lightest: #F6F6FB;
+  --white: #FFFFFF;
+
+    /* Cores Auxiliares */
+  --Auxiliary-pink: #FF3C82;
+  --Auxiliary-yellow: #FFA028;
+  --Auxiliary-green: #00B9B4;
+
+  /* Containers */
+  --container-desktop: 1440px;
+  --container-notebook: 1140px;
+  --container-tablet: 920px;
+  --container-smart: 540px;
+
+  /* Breakpoints */
+  --breakpoint-desktop: 1920px;
+  --breakpoint-notebook: 1200px;
+  --breakpoint-tablet-landscape: 1024px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-smart: 640px;
+}
