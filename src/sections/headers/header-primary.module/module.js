@@ -1,6 +1,6 @@
 const buttonMenuMobile = document.querySelector('.menu-mobile');
-const liMenu = document.querySelectorAll('.hs-menu-depth-2');
-const menuItemsWithChildren = document.querySelectorAll('a[aria-haspopup="true"');
+const liMenu = document.querySelectorAll('.header .hs-menu-depth-2');
+const menuItemsWithChildren = document.querySelectorAll('.header a[aria-haspopup="true"');
 
 function createSubtitle(item, text) {
   const subtitle = document.createElement('p');

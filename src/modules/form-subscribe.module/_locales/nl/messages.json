@@ -1,0 +1,67 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "Toevoegen aan workflow",
+    "description" : null,
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "Als je een opvolgmail wilt verzenden, zorg er dan voor dat de instelling 'Aangemaakte contactpersonen instellen als contactpersonen voor marketing' is ingeschakeld. Je kunt dit in de opties beheren. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>Meer informatie</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "Een opvolge-mail verzenden",
+    "description" : null,
+    "placeholders" : null
+  },
+  "font_field.label" : {
+    "message" : "Lettertypeveld",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "Bedankt voor het verzenden van het formulier.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "Formulier",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "Workflow",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Formulier",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "Formuliermeldingen verzenden naar opgegeven e-mailadressen in plaats van de standaardinstellingen van het formulier",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "E-mailadressen",
+    "description" : null,
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "Salesforce-campagne",
+    "description" : null,
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "E-mail",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Titel formulier",
+    "description" : null,
+    "placeholders" : null
+  }
+}

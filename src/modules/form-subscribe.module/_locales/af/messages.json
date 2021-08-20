@@ -1,0 +1,62 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "Voeg by werksvloei",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "As jy 'n opvolg-e-pos wil stuur, moet jy seker maak dat die instelling vir \"Stel geskepte kontakte as bemarkingskontakte\" aangeskakel is. Jy kan dit in opsies doen. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>Vind meer uit</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "Stuur 'n opvolg-e-pos",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "Dankie dat jy die vorm ingedien het.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "Vorm",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "Werksvloei",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Vorm",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "Stuur vormkennisgewings na gespesifiseerde e-posadresse eerder as verstek vorms",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "E-posadresse",
+    "description" : "",
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "Verkoopsmagveldtog",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "E-pos",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Vormtitel",
+    "description" : "",
+    "placeholders" : null
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "ワークフローに追加",
+    "description" : null,
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "フォローアップEメールを送信するには、［作成されたコンタクトをマーケティングコンタクトに設定］設定を有効にしてください。この設定はオプションで管理できます。<a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>もっと詳しく</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "フォローアップEメールを送信",
+    "description" : null,
+    "placeholders" : null
+  },
+  "font_field.label" : {
+    "message" : "フォントフィールド",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "フォームのご送信ありがとうございます。",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "フォーム",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "ワークフロー",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "フォーム",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "フォームの既定設定ではなく、指定されたEメールアドレスにフォーム通知を送信",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "Eメールアドレス",
+    "description" : null,
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "Salesforceキャンペーン",
+    "description" : null,
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "Eメール",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "フォームタイトル",
+    "description" : null,
+    "placeholders" : null
+  }
+}

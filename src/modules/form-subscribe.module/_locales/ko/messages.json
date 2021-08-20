@@ -1,0 +1,67 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "워크플로에 추가",
+    "description" : null,
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "후속 조치 이메일을 보내려면 '마케팅 연락처로 생성된 연락처 설정' 설정을 켜두어야 합니다. 옵션에서 이를 관리할 수 있습니다. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>자세히 알아보기</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "추가 이메일 보내기",
+    "description" : null,
+    "placeholders" : null
+  },
+  "font_field.label" : {
+    "message" : "글꼴 필드",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "양식을 제출해 주셔서 감사합니다.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "양식",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "워크플로",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "양식",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "양식 알림을 양식 기본값 대신 지정된 이메일 주소로 전송",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "이메일 주소",
+    "description" : null,
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "Salesforce 캠페인",
+    "description" : null,
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "이메일",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "양식 제목",
+    "description" : null,
+    "placeholders" : null
+  }
+}

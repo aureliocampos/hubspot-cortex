@@ -1,0 +1,62 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "Tambah ke alur kerja",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "Untuk mengirimkan email tindak lanjut, pastikan pengaturan 'Kontak set dibuat sebagai kontak pemasaran' diaktifkan. Anda dapat mengelola pilihan ini. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>Pelajari selengkapnya</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "Kirim email tindak lanjut",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "Terima kasih telah mengirimkan formulirnya.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "Formulir",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "Alur kerja",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Formulir",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "Kirim notifikasi formulir ke alamat email khusus, bukan default formulir",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "Alamat Email",
+    "description" : "",
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "Kampanye tenaga penjualan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "Email",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Judul Formulir",
+    "description" : "",
+    "placeholders" : null
+  }
+}

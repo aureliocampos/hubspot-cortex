@@ -1,0 +1,62 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "Pridať do toku činností",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "Ak chcete odoslať následný e-mail, uistite sa, že je zapnuté nastavenie Nastaviť vytvorené kontakty ako marketingové kontakty. Môžete tak urobiť v nastaveniach. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>Ďalšie informácie</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "Odoslať následný e-mail",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "Ďakujeme za odoslanie formulára.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "Formulár",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "Tok činností",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Formulár",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "Odoslať oznámenia formulára určeným e-mailovým adresám namiesto predvoleným adresám formulára",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "E-mailové adresy",
+    "description" : "",
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "Kampaň v službe Salesforce",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "E-mail",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Názov formulára",
+    "description" : "",
+    "placeholders" : null
+  }
+}

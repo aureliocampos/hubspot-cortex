@@ -1,0 +1,62 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "Įtraukti į darbo eigą",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "Norėdami išsiųsti priminimo el. laišką įsitikinkite, kad nuostata „Nustatyti sukurtus kontaktus kaip rinkodaros kontaktus“ įjungta. Šią nuostata tvarkyti galite parinkčių srityje. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>Sužinokite daugiau</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "Siųsti priminimo el. laišką",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "Dėkojame, kad pateikėte formą.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "Forma",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "Darbo eiga",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Forma",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "Siųsti formos pranešimus nurodytiems el. pašto adresams vietoj formos numatytųjų",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "El. pašto adresai",
+    "description" : "",
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "„Salesforce“ kampanija",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "El. paštas",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Formos pavadinimas",
+    "description" : "",
+    "placeholders" : null
+  }
+}

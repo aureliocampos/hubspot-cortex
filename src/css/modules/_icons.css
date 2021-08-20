@@ -24,7 +24,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-seta:before {
+  content: "\e914";
+  color: #f6f6fb;
+}
 .icon-logo-cortex .path1:before {
   content: "\e900";
   color: rgb(55, 50, 75);

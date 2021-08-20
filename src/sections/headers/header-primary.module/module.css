@@ -64,11 +64,11 @@
 }
 
 /* Menu-itens de nível 1 */
-.hs-menu-item.hs-menu-depth-1 {
+.header .hs-menu-item.hs-menu-depth-1 {
   position: relative;
   transition: all 200ms ease-in-out;
 }
-.hs-menu-item.hs-menu-depth-1:after {
+.header .hs-menu-item.hs-menu-depth-1:after {
   width: calc(100% - 40px);
   height: 1px;
   background: var(--lighter);
@@ -81,7 +81,7 @@
   bottom: 0;
   transition: all 200ms ease-in-out;
 }
-.hs-menu-item.hs-menu-depth-1 > a[role="menuitem"] {
+.header .hs-menu-item.hs-menu-depth-1 > a[role="menuitem"] {
   display: inline-flex;
   justify-content: space-between;
   width: 100%;
@@ -92,25 +92,25 @@
 }
 
 /* Menu-itens de nível 2 */
-.hs-menu-item.hs-menu-depth-2 {
+.header .hs-menu-item.hs-menu-depth-2 {
   padding: 0 1.25rem;
 }
-.hs-menu-item.hs-menu-depth-2 > a[role="menuitem"] {
+.header .hs-menu-item.hs-menu-depth-2 > a[role="menuitem"] {
   display: block;
   font: 800 1em var(--font-secondary);
   color: var(--darker);
   line-height: 117.2%;
   margin: 0.875rem 0;
 }
-.hs-menu-item.hs-menu-depth-2 > a[role="menuitem"] > p {
+.header .hs-menu-item.hs-menu-depth-2 > a[role="menuitem"] > p {
   font: 400 0.875rem var(--font-secondary);
   line-height: 148%;
   margin-top: 0.5rem;
 }
-.hs-menu-item.hs-menu-depth-2:first-of-type > a[role="menuitem"] {
+.header .hs-menu-item.hs-menu-depth-2:first-of-type > a[role="menuitem"] {
   margin-top: 1.1875rem;
 }
-.hs-menu-item.hs-menu-depth-2:last-of-type > a[role="menuitem"] {
+.header .hs-menu-item.hs-menu-depth-2:last-of-type > a[role="menuitem"] {
   margin-bottom: 1.1875rem;
 }
 
@@ -131,14 +131,14 @@
 }
 
 /* Ajustes Especiais */
-.hs-menu-children-wrapper {
+.header .hs-menu-children-wrapper {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
 
 /* Menu-itens de nível 1 Ativo - Se conter elementos filhos */
-.hs-menu-item.hs-menu-depth-1.hs-item-has-children > a.active {
+.header .hs-menu-item.hs-menu-depth-1.hs-item-has-children > a.active {
   background-color: var(--lightest);
 }
 .hs-menu-children-wrapper.active {
@@ -177,18 +177,18 @@
   }
 
   /* Menu-itens de nível 1 */
-  .hs-menu-item.hs-menu-depth-1.active {
+  .header .hs-menu-item.hs-menu-depth-1.active {
     background-color: var(--lightest);
     border-radius: 8px;
   }
-  .hs-menu-item.hs-menu-depth-1:after {
+  .header .hs-menu-item.hs-menu-depth-1:after {
     display: none;
   }
-  .hs-menu-item.hs-menu-depth-1>a[role="menuitem"] {
+  .header .hs-menu-item.hs-menu-depth-1>a[role="menuitem"] {
     width: max-content;
     padding: 0.5rem;
   }
-  .hs-menu-children-wrapper {
+  .header .hs-menu-children-wrapper {
     position: absolute;
     left: -20px;
     width: 330px;
@@ -200,22 +200,22 @@
 
   
   /* Menu-itens de nível 2 */
-  .hs-menu-item.hs-menu-depth-2 {
+  .header .hs-menu-item.hs-menu-depth-2 {
     margin: 0;
     padding: 0;
   }
-  .hs-menu-item.hs-menu-depth-2>a[role="menuitem"] {
+  .header .hs-menu-item.hs-menu-depth-2>a[role="menuitem"] {
     border-radius: 8px;
     padding: 1rem;
     margin: 0;
   }
-  .hs-menu-item.hs-menu-depth-2:first-of-type > a[role="menuitem"] {
+  .header .hs-menu-item.hs-menu-depth-2:first-of-type > a[role="menuitem"] {
     margin-top: 0;
   }
-  .hs-menu-item.hs-menu-depth-2:last-of-type > a[role="menuitem"] {
+  .header .hs-menu-item.hs-menu-depth-2:last-of-type > a[role="menuitem"] {
     margin-bottom: 0;
   }
-  .hs-menu-children-wrapper.active {
+  .header .hs-menu-children-wrapper.active {
     top: 36px;
     max-height: 400px;
     padding-bottom: 1.5rem;
@@ -256,21 +256,21 @@
   .header__content { 
     padding: 0;
   }
-  .hs-menu-item.hs-menu-depth-1 {
+  .header .hs-menu-item.hs-menu-depth-1 {
     padding: 1.25rem 0;
   }
-  .hs-menu-item.hs-menu-depth-1>a[role="menuitem"] {
+  .header .hs-menu-item.hs-menu-depth-1>a[role="menuitem"] {
     font-size: 1em;
   }
-  .hs-menu-item.hs-menu-depth-1>a[role="menuitem"]:hover,
-  .hs-menu-item.hs-menu-depth-2>a[role="menuitem"]:hover {
+  .header .hs-menu-item.hs-menu-depth-1>a[role="menuitem"]:hover,
+  .header .hs-menu-item.hs-menu-depth-2>a[role="menuitem"]:hover {
     background-color: var(--lightest);
     border-radius: 8px;
   }
-  .hs-menu-children-wrapper {
+  .header .hs-menu-children-wrapper {
     display: none;
   }
-  .hs-menu-item.hs-menu-depth-1.hs-item-has-children:hover .hs-menu-children-wrapper {
+  .header .hs-menu-item.hs-menu-depth-1.hs-item-has-children:hover .hs-menu-children-wrapper {
     display: block;
     top: 49px;
     max-height: 400px;
