@@ -48,7 +48,7 @@
   font-family: 'Open Sans';
   src: url('/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Italic.woff2') format('woff2'),
       url('/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Italic.woff') format('woff');
-  font-weight: normal;
+  font-weight: 400;
   font-style: italic;
   font-display: swap;
 }

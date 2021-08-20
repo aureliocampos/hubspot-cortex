@@ -1,7 +1,7 @@
 .button {
   display: block;
   width: max-content;
-  font: 400 1em var(--font-secondary);
+  font: 400 1em var(--secondary-font);
   padding: 12px 24px;
   text-decoration: none;
   line-height: 1;

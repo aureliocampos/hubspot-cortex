@@ -1,0 +1,96 @@
+.plataform-feature {
+  padding: 4em 1.5em;
+  background-color: var(--darkest);
+}
+.plataform-feature__item {
+  margin-bottom: 7.5em;
+}
+.plataform-feature__title {
+  font: bold 2.25em var(--primary-font);
+  line-height: 82%;
+  letter-spacing: -0.04em;
+  color: var(--lightest);
+}
+.plataform-feature__subtitle {
+  font: 300 0.875em var(--secondary-font);
+  font-style: italic;
+  line-height: 148%; 
+  color: var(--light);
+  margin: 1.25rem 0;
+}
+.plataform-feature__text {
+  font: 400 1em var(--secondary-font);
+  line-height: 148%;
+  color: var(--lightest);
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .plataform-feature__item {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+  }
+  .plataform-feature__item:nth-of-type(2n) {
+    flex-direction: row-reverse;
+  }
+  .plataform-feature__item:last-of-type {
+    justify-content: center;
+    align-items: center;
+  }
+  .plataform-feature__description {
+    width: 50%;
+  }
+  .plataform-feature__figure {
+    width: 50%;
+  }
+}
+@media(min-width: 1024px) {
+  .plataform-feature .section__container {
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+  .plataform-feature__item {
+    margin-bottom: 13em;
+  }  
+  .plataform-feature__title {
+    font-size: 3.5em;
+  }
+  .plataform-feature__subtitle {
+    font-size: 1.125em;
+  }
+  .plataform-feature__text {
+    font-size: 1.125em;
+
+  }
+}
+
+@media(min-width: 1200px) {
+  .plataform-feature {
+    padding: 13em 0;
+  }
+  .plataform-feature__description {
+    width: 380px;
+  }
+  .plataform-feature__item.plataform-feature__text {
+    width: 320px;
+  }
+  .plataform-feature__figure {
+    width: 60%;
+  }
+  
+  .plataform-feature__item:first-of-type .plataform-feature__title {
+    width: 497px;
+  }
+  .plataform-feature__item:first-of-type .plataform-feature__figure {
+    width: 691px;
+  }
+
+  .plataform-feature__item:nth-of-type(4) .plataform-feature__title {
+    width: 320px;
+  }
+
+  .plataform-feature__item:last-of-type .plataform-feature__figure {
+    width: 55%;
+  }
+}

@@ -1,0 +1,27 @@
+ <section class="section plataform-feature">
+	<div class="section__container">
+		<div class="plataform-feature__items">
+			{% for item in module.cards_repeater %}
+				<article class="plataform-feature__item">
+					<div class="plataform-feature__description">
+						<h2 class="plataform-feature__title">{{ item.title }}</h2>
+						<p class="plataform-feature__subtitle">{{ item.subtitle }}</p>
+						<div class="plataform-feature__text">{{ item.text }}</div>
+					</div>
+					{% if item.image.src %}
+						{% set sizeAttrs = 'width="{{ item.image.width }}" height="{{ item.image.height }}"' %}
+						{% if item.image.size_type == 'auto' %}
+							{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+						{% elif item.image.size_type == 'auto_custom_max' %}
+							{% set sizeAttrs = 'width="{{ item.image.max_width }}" height="{{ item.image.max_height }}" style="max-width: 100%; height: auto;"' %}
+						{% endif %}
+						{% set loadingAttr = item.image.loading != 'disabled' ? 'loading="{{ item.image.loading }}"' : '' %}
+						<figure class="plataform-feature__figure">
+							<img src="{{ item.image.src }}" alt="{{ item.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+						</figure>
+					{% endif %}
+				</article>
+			{% endfor %}
+		</div>
+	</div>
+ </section>
