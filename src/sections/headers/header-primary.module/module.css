@@ -2,6 +2,7 @@
   position: sticky;
   top: 0;
   background-color: var(--white);
+  z-index: 99;
 }
 .header {
   --box-shadow: rgb(55 50 75 / 10%) 2px 0px 25px;
@@ -177,10 +178,10 @@
   }
 
   /* Menu-itens de nível 1 */
-  .header .hs-menu-item.hs-menu-depth-1.active {
+  /* .header .hs-menu-item.hs-menu-depth-1.active {
     background-color: var(--lightest);
     border-radius: 8px;
-  }
+  } */
   .header .hs-menu-item.hs-menu-depth-1:after {
     display: none;
   }
@@ -272,7 +273,7 @@
   }
   .header .hs-menu-item.hs-menu-depth-1.hs-item-has-children:hover .hs-menu-children-wrapper {
     display: block;
-    top: 49px;
+    top: 70px;
     max-height: 400px;
     padding: 1.5rem;
     box-shadow:  var(--box-shadow);

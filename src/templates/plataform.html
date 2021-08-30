@@ -1,0 +1,15 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Plataforma
+  screenshotPath: ../images/template-previews/plataforma.png
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+  <main id="main-content" class="body-container-wrapper">
+    {% module "module_162982514857512" path="/cortex-v1/sections/pages/plataform/main-plataform", label="Main Plataforma" %}
+    {% module "module_16294940268251" path="/cortex-v1/sections/pages/plataform/plataform-features", label="Destaques da Plataforma" %}
+    {% module "module_162983871515136" path="/cortex-v1/sections/pages/plataform/protected-data", label="Dados Protegidos" %}
+  </main>
+{% endblock body %}

@@ -23,6 +23,6 @@
 .button--secondary {
   font-weight: 600;
   color: var(--white);
-  background-color: var(--darkest);
-  border: 1px solid var(--darkest);
+  background-color: transparent;
+  border: 1px solid var(--white);
 }

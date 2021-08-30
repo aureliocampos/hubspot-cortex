@@ -1,9 +1,13 @@
 .plataform-feature {
   padding: 4em 1.5em;
   background-color: var(--darkest);
+  margin-top: -1px;
 }
 .plataform-feature__item {
-  margin-bottom: 7.5em;
+  margin-bottom: 4em;
+}
+.plataform-feature__item:last-of-type {
+  margin-bottom: 0;
 }
 .plataform-feature__title {
   font: bold 2.25em var(--primary-font);
@@ -37,6 +41,7 @@
   .plataform-feature__item:last-of-type {
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
   }
   .plataform-feature__description {
     width: 50%;
@@ -67,7 +72,7 @@
 
 @media(min-width: 1200px) {
   .plataform-feature {
-    padding: 13em 0;
+    padding: 5em 0 5em 0 ;
   }
   .plataform-feature__description {
     width: 380px;

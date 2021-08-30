@@ -1,0 +1,115 @@
+.main-plataform {
+  position: relative;
+  overflow: hidden;
+
+  width: 100%;
+  height:auto;
+  background-color: rgba(55, 50, 75, 0.85);
+  padding: 10.625em 0;
+}
+.main-plataform:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(55, 50, 75, 0) 0%, #37324B 100%);
+  z-index: 1;
+}
+.main__title {
+  font: 400 1.3125em var(--primary-font);
+  color: var(--white);
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  padding: 0 1.5em;
+}
+.main__figure {
+  width: 100%;
+  overflow-x: scroll;
+}
+.main__figure img {
+  width: 693px;
+  height: auto;
+}
+.main-background__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.main-background__video video {
+  width: auto;
+  height: 100%;
+}
+
+
+/* Intro Plataform */
+.intro-plataform {
+  background-color: var(--darkest);
+  padding: 3.25em 1.5em;
+  margin-top: -2px;
+}
+.intro-plataform__text {
+  font: 400 0.875em var(--secondary-font);
+  color: var(--white);
+  line-height: 148%;
+}
+.intro-plataform__container .button {
+  margin: 2rem auto 0 auto;
+}
+@media(min-width: 768px) {
+
+  .main-plataform {
+    padding-top: 54px;
+    padding-bottom: 77px;
+  }
+  .main__title {
+    max-width: 600px;
+    font-size: 44px;
+    line-height: 105%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .main__figure {
+    width: 700px;
+    margin: 0 auto;
+    overflow: auto;
+  }
+  .main__figure img {
+    width: 100%;
+    height: auto;
+  }
+  .main-background__video video {
+    width: 150%;
+    height: 100%;
+  }
+
+
+  /* Intro Plataform */
+  .intro-plataform {
+    padding: 3.625em 0 5em 0;
+  }
+  .intro-plataform__container {
+    max-width: 588px;
+    margin: 0 auto;
+  }
+  .intro-plataform__text {
+    font-size: 1.3125em;
+  }
+  .intro-plataform__container .button  {
+    margin-left: 0;
+  }
+}
+
+@media(min-width: 1200px) {
+  .main-plataform {
+    padding-top: 100px;
+  }
+  .main__figure {
+    width: 1120px;
+    margin: 0 auto;
+  }
+}

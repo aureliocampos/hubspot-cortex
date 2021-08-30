@@ -1,0 +1,105 @@
+[ {
+  "id" : "6ecffa19-a07e-0792-b936-631241b71a46",
+  "name" : "title",
+  "label" : "Título",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "6622e9ff-79ce-e04c-11bc-cb51469191fd",
+  "name" : "image",
+  "label" : "Imagem",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "2e7f1aad-91f3-a5fc-0f6d-3b60031a58ed",
+  "name" : "intro_plataforma",
+  "label" : "Intro Plataforma",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "20b3e87c-9a18-239a-404a-381329842aa0",
+    "name" : "intro_text",
+    "label" : "Intro Plataforma",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext"
+  }, {
+    "id" : "1aa34a9f-ba53-ed2f-eae1-5dc180ab1d80",
+    "name" : "button_call",
+    "label" : "Botão Fale",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "d069c951-6796-3e55-220e-5131ce655193",
+      "name" : "link",
+      "label" : "Link ",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "615b3aaf-67a5-806b-4f67-bd1e7143b7b0",
+      "name" : "text",
+      "label" : "Texto",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "button_call" : {
+      "link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }
+} ]
