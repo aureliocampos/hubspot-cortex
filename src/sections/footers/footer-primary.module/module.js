@@ -3,7 +3,6 @@ setTimeout(() => {
 
   buttonSubmit.innerHTML += '<span class="icon-seta"></span>'
   
-  console.log(buttonSubmit);
 }, 2000);
 
 

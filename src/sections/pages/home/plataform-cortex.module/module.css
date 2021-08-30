@@ -1,0 +1,98 @@
+.button.button--primary.mobile {
+  margin: 0 auto;
+}
+.plataform-cortex.desktop {
+  display: none;
+}
+.plataform-cortex {
+  padding: 2.8125em 2em;
+}
+.plataform-cortex__title {
+  font: 700 1.5em var(--primary-font);
+  color: var(--darkest);
+  line-height: 108%;
+  letter-spacing: -0.02em;
+}
+.plataform-cortex__items {
+  padding: 1.75em 0 3.5em 0;
+}
+.plataform-cortex__item {
+  margin-bottom: 3.5em;
+}
+.plataform-cortex__article .title {
+  display: inline-flex;
+  align-items: center;
+  width: 200px;
+
+  font: 700 1.125em var(--secondary-font);
+  color: var(--darkest);
+  line-height: 110%;
+  letter-spacing: -1px;
+}
+.plataform-cortex__article .title > span {
+  display: inline-flex;
+  font-size: 2.5em;
+  margin-right: 0.625rem;
+  /* filter: brightness(0.3); */
+}
+.plataform-cortex__article .text {
+  font: 400 0.875em var(--secondary-font);
+  color: var(--darkest);
+  line-height: 148%;
+  margin: 1rem 0 1.25rem 0;
+}
+.plataform-cortex__article .image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+@media (min-width: 1200px ) {
+  .plataform-cortex.mobile{
+    display: none;
+  }
+  .plataform-cortex.desktop {
+    display: block;
+  }
+  .plataform-cortex__container {
+    max-width: 1268px;
+    margin: 0 auto;
+    padding: 84px 120px 128px 130px;
+    background: var(--lightest);
+    border-radius: 4em;
+  }
+  .plataform-cortex__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.5em;
+  }
+  .plataform-cortex__title {
+    font-size: 48px;
+  }
+  .plataform-cortex__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+  }
+  .plataform-cortex__article {
+    cursor: pointer;
+    text-align: left;
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0;
+  }
+
+  .plataform-cortex__article:focus .title > span {
+    filter: none;
+  }
+  .plataform-cortex__article .title > span {
+    filter: brightness(0.3);
+    transition: all 0.2s ease-in-out;
+  }
+  .plataform-cortex__article:hover .title > span {
+    filter: none;
+  }
+}

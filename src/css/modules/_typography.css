@@ -163,3 +163,7 @@
   font-style: normal;
   font-display: swap;
 }
+
+.font-normal {
+  font-weight: 400;
+}
