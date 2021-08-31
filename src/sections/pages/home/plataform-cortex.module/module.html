@@ -1,10 +1,13 @@
 
 {% set icons = 
 	[
-	'<span class="icon-dados-externos_colorido"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span></span>', 
-	'<span class="icon-dados-da-empresa_colorido"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span></span>', 
-	'<span class="icon-ciencia-de-dados-e-analytics_colorido"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span></span>', 
-	'<span class="icon-workflow-com-dados_colorido"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>'
+	'<span class="icon-dados-externos_colorido first"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span></span><span class="icon-dados-externos_colorido"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span></span>', 
+
+	'<span class="icon-dados-da-empresa_colorido first"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span></span><span class="icon-dados-da-empresa_colorido"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span></span>', 
+
+	'<span class="icon-ciencia-de-dados-e-analytics_colorido first"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span></span><span class="icon-ciencia-de-dados-e-analytics_colorido "><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span></span>', 
+
+	'<span class="icon-workflow-com-dados_colorido first"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span><span class="icon-workflow-com-dados_colorido"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>'
 	] 
 %}
 
@@ -55,10 +58,27 @@
 		</div>
 
 
+		<div class="plataform-cortex__items--target">
+			{% for item in module.item_plataforma %}
+					{% if item.image.src %}
+						{% set sizeAttrs = 'width="{{ item.image.width }}" height="{{ item.image.height }}"' %}
+						{% if item.image.size_type == 'auto' %}
+							{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+						{% elif item.image.size_type == 'auto_custom_max' %}
+							{% set sizeAttrs = 'width="{{ item.image.max_width }}" height="{{ item.image.max_height }}" style="max-width: 100%; height: auto;"' %}
+						{% endif %}
+						{% set loadingAttr = item.image.loading != 'disabled' ? 'loading="{{ item.image.loading }}"' : '' %}
+						<figure class="plataform-cortex__figure--target" id="item-{{loop.index }}">
+							<img src="{{ item.image.src }}" alt="{{ item.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="image embed-responsive">
+						</figure>
+					{% endif %}
+			{% endfor %}
+		</div>
+
 		<ul class="plataform-cortex__items">
 			{% for item in module.item_plataforma %}
-				<li class="plataform-cortex__item">
-					<button class="plataform-cortex__article">
+				<li class="plataform-cortex__item" data-target="item-{{loop.index }}">
+					<article class="plataform-cortex__article">
 						<h2 class="title">
 							{% if loop.index == '1' %}
 								{{ icons[0] }}
@@ -72,11 +92,9 @@
 							{{ item.title }}
 						</h2>
 						<p class="text">{{ item.text }}</p>
-					</button>
+					</article>
 				</li>
 			{% endfor %}
 		</ul>
 	</div>
 </section>
-
-// Melhor utilizar a função com active do que o button

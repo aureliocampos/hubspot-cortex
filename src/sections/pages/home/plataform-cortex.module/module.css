@@ -19,15 +19,24 @@
 .plataform-cortex__item {
   margin-bottom: 3.5em;
 }
+.plataform-cortex__article {
+  color: var(--darkest);
+}
 .plataform-cortex__article .title {
   display: inline-flex;
   align-items: center;
-  width: 200px;
+  width: 60%;
 
   font: 700 1.125em var(--secondary-font);
-  color: var(--darkest);
+  color: currentColor;
   line-height: 110%;
   letter-spacing: -1px;
+}
+.plataform-cortex__item:nth-of-type(3) .plataform-cortex__article .title {
+  width: 80%;
+}
+.plataform-cortex__item:last-of-type .plataform-cortex__article .title {
+  width: 80%;
 }
 .plataform-cortex__article .title > span {
   display: inline-flex;
@@ -37,7 +46,7 @@
 }
 .plataform-cortex__article .text {
   font: 400 0.875em var(--secondary-font);
-  color: var(--darkest);
+  color: currentColor;
   line-height: 148%;
   margin: 1rem 0 1.25rem 0;
 }
@@ -56,11 +65,11 @@
     display: block;
   }
   .plataform-cortex__container {
-    max-width: 1268px;
+    max-width: 1274px;
     margin: 0 auto;
-    padding: 84px 120px 128px 130px;
+    padding: 66px 80px 83px 80px;
     background: var(--lightest);
-    border-radius: 4em;
+    border-radius: 70px;
   }
   .plataform-cortex__header {
     display: flex;
@@ -75,24 +84,61 @@
     display: flex;
     justify-content: space-between;
     gap: 28px;
-  }
-  .plataform-cortex__article {
-    cursor: pointer;
-    text-align: left;
-    background: none;
-    outline: none;
-    border: none;
     padding: 0;
   }
-
-  .plataform-cortex__article:focus .title > span {
-    filter: none;
+  .plataform-cortex__item {
+    margin: 0;
   }
-  .plataform-cortex__article .title > span {
-    filter: brightness(0.3);
+  .plataform-cortex__item:nth-of-type(3) .plataform-cortex__article .title {
+    width: 80%;
+  }
+  .plataform-cortex__item:last-of-type .plataform-cortex__article .title {
+    width: 80%;
+  }
+  .plataform-cortex__item .plataform-cortex__article {
+    cursor: pointer;
+    color: var(--dark);
     transition: all 0.2s ease-in-out;
   }
-  .plataform-cortex__article:hover .title > span {
-    filter: none;
+  .plataform-cortex__item .plataform-cortex__article .title > span.first span::before{
+    color: currentColor;
+  }
+  .plataform-cortex__item .plataform-cortex__article .title span.first {
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+  }
+
+  /* Anitamtion Hover */
+  .plataform-cortex__item .plataform-cortex__article:hover {
+    color: var(--darkest);
+    transition: all 0.2s ease-in-out;
+  }
+  .plataform-cortex__item .plataform-cortex__article:hover .title span.first {
+    opacity: 0;
+  }
+
+  /* Animation Clicked */
+  .plataform-cortex__item.active .plataform-cortex__article {
+    color: var(--darkest);
+    transition: all 0.2s ease-in-out;
+  }
+  .plataform-cortex__item.active .title span.first {
+    opacity: 0;
+  }
+  .plataform-cortex__items--target {
+    margin: 59px 0;
+  }
+  .plataform-cortex__figure--target {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 1114px;
+    height: 460px;
+  }
+  .plataform-cortex__figure--target.active {
+    display: flex;
+    color: green;
   }
 }
