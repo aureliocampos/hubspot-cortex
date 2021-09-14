@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-input-seta:before {
+  content: "\e966";
+}
 .icon-dados-da-empresa_colorido .path1:before {
   content: "\e92f";
   color: rgb(40, 200, 255);

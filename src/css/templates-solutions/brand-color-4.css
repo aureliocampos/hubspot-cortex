@@ -1,0 +1,30 @@
+/* Botão modulo Main */
+.button--main-solutions {
+  color: var(--green_official);
+  background: var(--green_lightest);
+}
+.button--main-solutions span:before {
+  color: var(--green_spotlight);
+}
+
+/* Título de conteúdo Modulo content */
+.main-solutions__title span:nth-of-type(1n) {
+  color: var(--green_spotlight);
+}
+.main-solutions__title span:nth-of-type(2n) {
+  color: var(--green_light);
+}
+.main-solutions__title span:nth-of-type(3n) {
+  color: var(--green_official);
+}
+
+/* Seção CTA */
+.cta-icon {
+  background-color: var(--green_official);
+}
+.cta-icon:after {
+  background: var(--green_spotlight);
+}
+.button-cta--solutions {
+  background-color: var(--green_official);
+}

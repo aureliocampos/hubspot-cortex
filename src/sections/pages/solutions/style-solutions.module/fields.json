@@ -1,0 +1,10 @@
+[ {
+  "id" : "68249cf2-72a7-49a9-4e56-93698d33e884",
+  "name" : "escolha_a_cor_da_marca",
+  "label" : "Escolha a cor da marca",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "brand_color_2", "Brand Color 2" ], [ "brand_color_3", "Brand Color 3" ], [ "brand_color_4", "Brand Color 4" ] ],
+  "type" : "choice"
+} ]

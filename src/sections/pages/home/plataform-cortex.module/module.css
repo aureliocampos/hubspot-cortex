@@ -56,6 +56,12 @@
   overflow: hidden;
   object-fit: cover;
 }
+.plataform-cortex__item .plataform-cortex__article .title span.first {
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
 
 @media (min-width: 1200px ) {
   .plataform-cortex.mobile{

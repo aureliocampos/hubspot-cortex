@@ -1,0 +1,49 @@
+ <section class="main main-solutions">
+	<div class="main-solutions__container">
+		{% if module.image_field.src %}
+			{% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+			{% if module.image_field.size_type == 'auto' %}
+				{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+			{% elif module.image_field.size_type == 'auto_custom_max' %}
+				{% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+			{% endif %}
+			{% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+				<figure class="main-solutions__figure">
+					<img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+				</figure>
+		{% endif %}
+		<div class="main-solutions__content">
+			<small class="main-solutions__tag">{{ module.solution }}</small>
+			<h1 class="main-solutions__title">{{ module.title }}</h1>
+			<div class="main-solutions__text">{{ module.texto }}</div>
+			<a href="https://pages.cortex-intelligence.com/agendar-conversa-com-especialistas-cortex?__hstc=233546881.3732211f783a2ade2a956aa208f2e136.1625842847012.1631633275748.1631639635819.64&__hssc=233546881.22.1631639635819&__hsfp=1726582311&_ga=2.88352031.58033824.1631633276-504479821.1625842847" class="button button--main-solutions"
+			>Fale com a gente<span class="icon-input-seta"></span></a>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- Criar texto colorido  -->
+<!-- 
+	{% set string_to_split = module.title %}
+		{% set title_parts = string_to_split|split(' ') %}
+		<h1 class="main-solutions__title">
+			{% for part in title_parts  %}
+				<span>{{ part }}</span>
+			{% endfor %}
+		</h1> 
+
+		/* 
+		Criar texto colorido
+
+		.main-solutions__title span:nth-of-type(1n) {
+			color: #D232D2;
+		}
+		.main-solutions__title span:nth-of-type(2n) {
+			color: #FF78AF;
+		}
+		.main-solutions__title span:nth-of-type(3n) {
+			color: #642D96;
+		} */
+-->

@@ -1,0 +1,11 @@
+[ {
+  "id" : "6e3fc8fa-b123-a724-b21f-fe4500e9241a",
+  "name" : "text_field",
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

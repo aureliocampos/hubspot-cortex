@@ -1,0 +1,15 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Template de Soluções
+  screenshotPath: ../images/template-previews/template-solucoe.png
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+{% module "module_163165255557618" path="/cortex-v1/sections/pages/solutions/style-solutions", label="style-solutions" %}
+  <main id="main-content" class="body-container-wrapper">
+    {% module "module_163163287185410" path="/cortex-v1/sections/pages/solutions/main-solutions", label="main-solutions" %}
+    {% module "module_16316532904141" path="/cortex-v1/sections/pages/solutions/call-to-action", label="call-to-action" %}
+  </main>
+{% endblock body %}
