@@ -32,6 +32,9 @@ function createAnimationCard(card) {
     isPaused = false;
   })
 
+  console.log(video);
+  video.addEventListener('ended', displayTime)
+
 }
 const allCards = solutionCards
 
@@ -65,10 +68,3 @@ function displayTime() {
   }
 
 }
-
-const createClock = window.setInterval(function() {
-  if(!isPaused) {
-    time++;
-    displayTime()
-  }
-}, 8000);
