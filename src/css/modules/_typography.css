@@ -1,8 +1,8 @@
 /* Open Sans */
 @font-face {
   font-family: 'Open Sans';
-  src: url('/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-LightItalic.woff2') format('woff2'),
-      url('/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-LightItalic.woff') format('woff');
+  src: url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-LightItalic.woff2') format('woff2'),
+      url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-LightItalic.woff') format('woff');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -10,8 +10,8 @@
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Regular.woff2') format('woff2'),
-      url('/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Regular.woff') format('woff');
+  src: url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Regular.woff2') format('woff2'),
+      url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -19,8 +19,8 @@
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-SemiBold.woff2') format('woff2'),
-      url('/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-SemiBold.woff') format('woff');
+  src: url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-SemiBold.woff2') format('woff2'),
+      url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -28,8 +28,8 @@
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Bold.woff2') format('woff2'),
-      url('/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Bold.woff') format('woff');
+  src: url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Bold.woff2') format('woff2'),
+      url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -37,8 +37,8 @@
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Light.woff2') format('woff2'),
-      url('/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Light.woff') format('woff');
+  src: url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Light.woff2') format('woff2'),
+      url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -46,8 +46,8 @@
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Italic.woff2') format('woff2'),
-      url('/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Italic.woff') format('woff');
+  src: url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Italic.woff2') format('woff2'),
+      url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Italic.woff') format('woff');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -55,8 +55,8 @@
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-SemiBoldItalic.woff2') format('woff2'),
-      url('/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-SemiBoldItalic.woff') format('woff');
+  src: url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-SemiBoldItalic.woff2') format('woff2'),
+      url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-SemiBoldItalic.woff') format('woff');
   font-weight: 600;
   font-style: italic;
   font-display: swap;
@@ -64,8 +64,8 @@
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Italic.woff2') format('woff2'),
-      url('/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Italic.woff') format('woff');
+  src: url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Italic.woff2') format('woff2'),
+      url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Italic.woff') format('woff');
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -73,8 +73,8 @@
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-BoldItalic.woff2') format('woff2'),
-      url('/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-BoldItalic.woff') format('woff');
+  src: url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-BoldItalic.woff2') format('woff2'),
+      url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-BoldItalic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -82,8 +82,8 @@
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-ExtraBold.woff2') format('woff2'),
-      url('/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-ExtraBold.woff') format('woff');
+  src: url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-ExtraBold.woff2') format('woff2'),
+      url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-ExtraBold.woff') format('woff');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -94,8 +94,8 @@
 
 @font-face {
   font-family: 'Gotham';
-  src: url('/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Black.woff2') format('woff2'),
-      url('/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Black.woff') format('woff');
+  src: url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Black.woff2') format('woff2'),
+      url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Black.woff') format('woff');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -103,8 +103,8 @@
 
 @font-face {
   font-family: 'Gotham';
-  src: url('/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Bold.woff2') format('woff2'),
-      url('/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Bold.woff') format('woff');
+  src: url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Bold.woff2') format('woff2'),
+      url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -112,8 +112,8 @@
 
 @font-face {
   font-family: 'Gotham';
-  src: url('/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Medium.woff2') format('woff2'),
-      url('/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Medium.woff') format('woff');
+  src: url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Medium.woff2') format('woff2'),
+      url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -121,8 +121,8 @@
 
 @font-face {
   font-family: 'Gotham';
-  src: url('/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Book.woff2') format('woff2'),
-      url('/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Book.woff') format('woff');
+  src: url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Book.woff2') format('woff2'),
+      url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Book.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -130,8 +130,8 @@
 
 @font-face {
   font-family: 'Gotham';
-  src: url('/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Light.woff2') format('woff2'),
-      url('/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Light.woff') format('woff');
+  src: url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Light.woff2') format('woff2'),
+      url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -139,8 +139,8 @@
 
 @font-face {
   font-family: 'Gotham Extra';
-  src: url('/hubfs/8917234/website-cortex/fonts/gotham/Gotham-ExtraLight.woff2') format('woff2'),
-      url('/hubfs/8917234/website-cortex/fonts/gotham/Gotham-ExtraLight.woff') format('woff');
+  src: url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/gotham/Gotham-ExtraLight.woff2') format('woff2'),
+      url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/gotham/Gotham-ExtraLight.woff') format('woff');
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -148,8 +148,8 @@
 
 @font-face {
   font-family: 'Gotham';
-  src: url('/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Thin.woff2') format('woff2'),
-      url('/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Thin.woff') format('woff');
+  src: url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Thin.woff2') format('woff2'),
+      url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Thin.woff') format('woff');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -157,8 +157,8 @@
 
 @font-face {
   font-family: 'Gotham Ultra';
-  src: url('/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Ultra.woff2') format('woff2'),
-      url('/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Ultra.woff') format('woff');
+  src: url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Ultra.woff2') format('woff2'),
+      url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/gotham/Gotham-Ultra.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

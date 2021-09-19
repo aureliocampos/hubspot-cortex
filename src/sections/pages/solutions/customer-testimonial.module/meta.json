@@ -1,8 +1,7 @@
 {
   "global" : false,
-  "master_language" : "pt",
   "host_template_types" : [ "PAGE" ],
-  "module_id" : 55234796827,
-  "label" : "Main Soluções",
+  "module_id" : 55312780327,
+  "label" : "Depoimentos dos Clientes",
   "is_available_for_new_content" : true
 }

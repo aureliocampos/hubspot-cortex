@@ -1,0 +1,64 @@
+<section class="section main-home">
+	<div class="main-home__container">
+		<div class="main-home__flexblock">
+			<div class="main-home__description">
+				<h1 class="main-home__title">{{ module.titulo }}</h1>
+				<div class="main-home__text">{{ module.subtitulo }}</div>
+			</div>
+			<div class="main-home__video">
+				<video id="video-1" class="video" autoplay muted width="805" height="445">
+					<source src="https://storage.googleapis.com/cortex-intelligence/header_Comunicacao.mp4" type="video/mp4">
+				</video>
+				<video id="video-2" class="video" autoplay muted width="945" height="452">
+					<source src="https://storage.googleapis.com/cortex-intelligence/home_Vendas.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div>
+		<div class="main-home__cards">
+			{% for item in module.card_solutions %}
+				<article class="cards-item" data-target="video-{{loop.index}}" title="{{item.card_title}}">
+					<span class="progress-bar"></span>
+					{% set string_to_split = item.card_title %}
+					{% set title_parts = string_to_split|split(' ') %}
+					<h2 class="cards-item__title">
+						{% for part in title_parts  %}
+							<span>{{ part }}</span>
+						{% endfor %}
+					</h2> 
+					<p class="cards-item__text">{{ item.card_text }}</p>
+					<ul class="cards-item__icons">
+						{% for item2 in item.card_item %}
+							<li class="cards-item__icons--item">
+								<span><svg width="46" height="38" viewBox="0 0 46 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="22" cy="19" r="19" fill="#FFEBF5"/>
+									<circle cx="37" cy="11" r="9" fill="#D232D2"/>
+									<circle cx="9" cy="20" r="8.5" stroke="#642D96"/>
+									</svg>
+									</span>
+								{{ item2 }}
+							</li>
+						{% endfor %}
+					</ul>
+					{% set href = item.link_do_card.url.href %}
+						{% if item.link_do_card.url.type is equalto "EMAIL_ADDRESS" %}
+							{% set href = "mailto:" + href %}
+						{% endif %}
+						{% set rel = [] %}
+						{% if item.link_do_card.no_follow %}
+							{% do rel.append("nofollow") %}
+						{% endif %}
+						{% if item.link_do_card.open_in_new_tab %}
+							{% do rel.append("noopener") %}
+						{% endif %}
+						<a href="{{ href }}" class="button button--main-home"
+							{% if item.link_do_card.open_in_new_tab %}target="_blank"{% endif %}
+							{% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+							>
+							Conheça a solução
+							<span class="icon-input-seta"></span>
+						</a>
+				</article>
+			{% endfor %}
+		</div>
+	</div>
+</section>

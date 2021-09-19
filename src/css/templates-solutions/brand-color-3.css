@@ -28,3 +28,14 @@
 .button-cta--solutions {
   background-color: var(--blue_official);
 }
+
+/* Seção de depoimentos e Clientes */
+.customer-testimonial__content {
+  background-color: var(--blue_official);
+}
+.customer-testimonial__author {
+  color: var(--blue_light);
+}
+.clients__item {
+  color: var(--blue_official);
+}

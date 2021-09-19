@@ -2,6 +2,6 @@
   "global" : false,
   "host_template_types" : [ "PAGE" ],
   "module_id" : 55259586214,
-  "label" : "Cor da marca das soluções",
+  "label" : "Definir Cores da Marca",
   "is_available_for_new_content" : true
 }

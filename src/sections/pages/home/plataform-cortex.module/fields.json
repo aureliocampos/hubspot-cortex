@@ -47,6 +47,15 @@
     "allow_new_line" : false,
     "show_emoji_picker" : false,
     "type" : "text"
+  }, {
+    "id" : "b3736da2-807f-1bd8-44bc-38eb82e37449",
+    "name" : "videoplayer_field",
+    "label" : "Vídeo",
+    "required" : false,
+    "locked" : false,
+    "resizable" : true,
+    "show_preview" : true,
+    "type" : "videoplayer"
   } ],
   "tab" : "CONTENT",
   "expanded" : false,

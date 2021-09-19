@@ -3,5 +3,6 @@
   "smart_type" : "NOT_SMART",
   "host_template_types" : [ "PAGE" ],
   "module_id" : 53253040260,
+  "label" : "Header Primário",
   "is_available_for_new_content" : true
 }

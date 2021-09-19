@@ -17,3 +17,15 @@
 .main-solutions__title span:nth-of-type(3n) {
   color: var(--darkest);
 }
+
+/* Seção de depoimentos e Clientes */
+.customer-testimonial__content {
+  background-color: var(--darkest);
+}
+.customer-testimonial__author {
+  color: var(--darkest);
+}
+.clients__item {
+  background: var(--light);
+  color: var(--darkest);
+}

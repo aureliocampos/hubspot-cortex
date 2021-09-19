@@ -3,5 +3,6 @@
   "smart_type" : "NOT_SMART",
   "host_template_types" : [ "PAGE" ],
   "module_id" : 53668645139,
+  "label" : "Proteção de Dados",
   "is_available_for_new_content" : true
 }
