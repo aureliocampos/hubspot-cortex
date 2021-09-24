@@ -1,8 +1,6 @@
-const solutionCards = Array.from(document.querySelector('.main-home__cards').children)
-let isPaused = false
-let time = 0
+const allCards = Array.from(document.querySelector('.main-home__cards').children)
 
-function createAnimationCard(card) {
+function addAnimationCard(card) {
 
   const current = card
   const video = document.querySelector(`#${current.dataset.target}`)
@@ -32,17 +30,11 @@ function createAnimationCard(card) {
     isPaused = false;
   })
 
-  console.log(video);
-  video.addEventListener('ended', displayTime)
+  video.addEventListener('ended', whichCardisActive)
 
 }
-const allCards = solutionCards
-
-allCards[0].classList.add('active')
-createAnimationCard(allCards[0])
-
   
-function displayTime() {
+function whichCardisActive() {
 
   if (allCards[0].classList.contains('active')) {
 
@@ -51,7 +43,7 @@ function displayTime() {
     video.classList.remove('active')
     
     allCards[1].classList.add('active')
-    createAnimationCard(allCards[1])
+    addAnimationCard(allCards[1])
     return
   }
 
@@ -62,9 +54,12 @@ function displayTime() {
     video.classList.remove('active')
 
     allCards[0].classList.add('active')
-    createAnimationCard(allCards[0])
+    addAnimationCard(allCards[0])
 
     return
   }
 
 }
+
+allCards[0].classList.add('active')
+addAnimationCard(allCards[0])
