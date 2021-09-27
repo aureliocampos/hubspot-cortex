@@ -1,5 +1,10 @@
  <section class="main main-solutions">
+
 	<div class="main-solutions__container">
+		<div class="header-mobile">
+			<small class="main-solutions__tag">{{ module.solution }}</small>
+			<h1 class="main-solutions__title">{{ module.title }}</h1>
+		 </div>
 		{% if module.image_field.src %}
 			{% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
 			{% if module.image_field.size_type == 'auto' %}
@@ -12,7 +17,7 @@
 					<img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
 				</figure>
 		{% endif %}
-		<div class="main-solutions__content">
+		<div class="main-solutions__content header-desktop">
 			<small class="main-solutions__tag">{{ module.solution }}</small>
 			<h1 class="main-solutions__title">{{ module.title }}</h1>
 			<div class="main-solutions__text">{{ module.texto }}</div>
