@@ -6,6 +6,9 @@
 .button--main-solutions span:before {
   color: var(--green_spotlight);
 }
+.button-cta--solutions .icon-input-seta {
+  color: var(--green_light);
+}
 
 /* Título de conteúdo Modulo content */
 .main-solutions__title span:nth-of-type(1n) {

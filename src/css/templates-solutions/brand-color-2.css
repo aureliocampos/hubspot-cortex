@@ -29,6 +29,9 @@
 .button-cta--solutions {
   background-color: var(--purple_official);
 }
+.button-cta--solutions .icon-input-seta {
+  color: var(--purple_light);
+}
 
 /* Seção de depoimentos e Clientes */
 .customer-testimonial__content {
