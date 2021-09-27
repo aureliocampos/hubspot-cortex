@@ -45,7 +45,7 @@
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'opensans__italic_400';
   src: url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Italic.woff2') format('woff2'),
       url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/fonts/open-sans/OpenSans-Italic.woff') format('woff');
   font-weight: 400;

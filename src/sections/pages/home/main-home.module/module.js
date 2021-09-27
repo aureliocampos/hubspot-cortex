@@ -14,7 +14,7 @@ function addAnimationCard(card) {
       width: ["0%", "100%"] 
     },
     {
-      duration: 8000,
+      duration: 7000,
       pseudoElement: "::after",
     },
   )

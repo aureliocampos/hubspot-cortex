@@ -54,7 +54,7 @@
 .main-home__cards .cards-item .progress-bar {
   display: none;
   position: absolute;
-  top: -14px;
+  top: 10px;
   left: 14px;
   width: 95%;
   height: 8px;
@@ -65,7 +65,7 @@
 .main-home__cards .cards-item .progress-bar:after {
   content: '';
   position: absolute;
-  right: 0;
+  left: 0;
   width: 0%;
   height: 8px;
   background: var(--lightest);
@@ -93,14 +93,25 @@
   margin-top: 0.5em;
 }
 .main-home__video {
-  min-width: 800px;
-  max-width: 950px;
-  min-height: 445px;
-  max-height: 455px;
+  width: 980px;
+  height: 531px;
+}
+.main-home__video > img {
+  z-index: -1;
+  width: 980px;
+  height: 531px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.main-home__video > video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 .main-home__video > video {
   display: none;
-  object-fit: cover;
+
 }
 /* Ícones */
 .cards-item__icons {

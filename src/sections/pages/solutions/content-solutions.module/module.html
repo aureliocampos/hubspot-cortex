@@ -1,0 +1,30 @@
+<section class="section content-solutions">
+	<article class="content__container content__items">
+		{% for item in module.card_de_conte_do %}
+			<section class="content__item">
+				{% if item.image.src %}
+					{% set sizeAttrs = 'width="{{ item.image.width }}" height="{{ item.image.height }}"' %}
+					{% if item.image.size_type == 'auto' %}
+						{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+					{% elif item.image.size_type == 'auto_custom_max' %}
+						{% set sizeAttrs = 'width="{{ item.image.max_width }}" height="{{ item.image.max_height }}" style="max-width: 100%; height: auto;"' %}
+					{% endif %}
+					{% set loadingAttr = item.image.loading != 'disabled' ? 'loading="{{ item.image.loading }}"' : '' %}
+					<figure class="content__item-figure">
+						<img src="{{ item.image.src }}" alt="{{ item.image.alt }}" {{ loadingAttr }}>
+					</figure>
+				{% endif %}
+				<div class="content__item-description">
+					{% set string_to_split = item.title %}
+					{% set title_parts = string_to_split|split(' ') %}
+					<h2 class="content__item-title">
+						{% for part in title_parts  %}
+							<span>{{ part }}</span>
+						{% endfor %}
+					</h2> 
+					<div class="content__item-text">{{ item.texto }}</div>
+				</div>
+			</section>
+		{% endfor %}
+	</article>
+</section>
