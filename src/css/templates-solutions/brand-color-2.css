@@ -8,16 +8,15 @@
 }
 
 /* Título de conteúdo Modulo content */
-.main-solutions__title span:nth-of-type(1n) {
+.content__item-title span:nth-of-type(1n) {
   color: var(--purple_spotlight);
 }
-.main-solutions__title span:nth-of-type(2n) {
+.content__item-title span:nth-of-type(2n) {
   color: var(--purple_light);
 }
-.main-solutions__title span:nth-of-type(3n) {
+.content__item-title span:nth-of-type(3n) {
   color: var(--purple_official);
 }
-
 
 /* Seção CTA */
 .cta-icon {

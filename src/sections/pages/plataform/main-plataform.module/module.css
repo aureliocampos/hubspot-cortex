@@ -1,11 +1,10 @@
 .main-plataform {
   position: relative;
   overflow: hidden;
-
   width: 100%;
   height:auto;
   background-color: rgba(55, 50, 75, 0.85);
-  padding: 10.625em 0;
+  padding: 24.375em 2em 5.9375em;
 }
 .main-plataform:after {
   content: '';
@@ -18,14 +17,15 @@
   z-index: 1;
 }
 .main__title {
-  font: 400 1.3125em var(--primary-font);
+  font: bold 2em var(--primary-font);
   color: var(--white);
-  line-height: 110%;
-  text-align: center;
+  line-height: 108%;
   letter-spacing: -0.02em;
-  padding: 0 1.5em;
+  margin: 0;
 }
+
 .main__figure {
+  display: none;
   width: 100%;
   overflow-x: scroll;
 }
@@ -45,7 +45,6 @@
   height: 100%;
 }
 
-
 /* Intro Plataform */
 .intro-plataform {
   background-color: var(--darkest);
@@ -57,9 +56,13 @@
   color: var(--white);
   line-height: 148%;
 }
-.intro-plataform__container .button {
-  margin: 2rem auto 0 auto;
+.intro-plataform__text p {
+  margin: 1em 0;
 }
+.intro-plataform__container .button {
+  margin: 3rem auto 0 auto;
+}
+
 @media(min-width: 768px) {
 
   .main-plataform {
@@ -69,6 +72,8 @@
   .main__title {
     max-width: 600px;
     font-size: 44px;
+    font-weight: 400;
+    text-align: center;
     line-height: 105%;
     padding: 0;
     margin: 0 auto;
@@ -109,6 +114,7 @@
     padding-top: 100px;
   }
   .main__figure {
+    display: block;
     width: 1120px;
     margin: 0 auto;
   }

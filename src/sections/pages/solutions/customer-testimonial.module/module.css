@@ -72,6 +72,9 @@
 
 
 @media (min-width: 1024px) {
+  .customer-testimonial {
+    padding: 0;
+  }
   .customer-testimonial__article {
     display: flex;
     justify-content: center;
