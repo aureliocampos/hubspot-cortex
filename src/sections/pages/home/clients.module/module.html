@@ -1,0 +1,102 @@
+
+
+
+<section class="section section-clients">
+	<div class="clients-container">
+
+		<div class="title-header">
+			<ul class="float-logos__items desktop desktop--first">
+				<li class="float-logos__item blue w-96">
+					<span class="icon-clientes_bayer"></span>
+				</li>
+				<li class="float-logos__item yellow w-132">
+					<span class="icon-clientes_unilever"></span>
+				</li>
+				<li class="float-logos__item green w-96">
+					<span class="icon-clientes_visa"></span>
+				</li>
+				<li class="float-logos__item blue w-132">
+					<span class="icon-clientes_amazon"></span>
+				</li>
+				<li class="float-logos__item purple w-116">
+					<span class="icon-clientes_adobe"></span>
+				</li>
+				<li class="float-logos__item green w-96">
+					<span class="icon-clientes_oracle"></span>
+				</li>
+				<li class="float-logos__item purple w-96">
+					<span class="icon-clientes_roche"></span>
+				</li>
+				<li class="float-logos__item yellow w-96">
+					<span class="icon-clientes_cpfl-energia"></span>
+				</li>
+			</ul>
+			<h2 class="section__title">{{ module.section_title }}</h2>
+			<ul class="float-logos__items desktop desktop--second">
+				<li class="float-logos__item blue w-116">
+					<span class="icon-clientes_microsoft"></span>
+				</li>
+				<li class="float-logos__item purple w-132">
+					<span class="icon-clientes_loreal"></span>
+				</li>
+				<li class="float-logos__item green w-96">
+					<span class="icon-clientes_gol"></span>
+				</li>
+				<li class="float-logos__item purple w-116">
+					<span class="icon-clientes_bradesco"></span>
+				</li>
+				<li class="float-logos__item yellow w-96">
+					<span class="icon-clientes_ifood"></span>
+				</li>
+				<li class="float-logos__item blue w-96">
+					<span class="icon-clientes_autodesk"></span>
+				</li>
+				<li class="float-logos__item yellow w-132">
+					<span class="icon-clientes_globo"></span>
+				</li>
+				<li class="float-logos__item blue w-96">
+					<span class="icon-clientes_google"></span>
+				</li>
+			</ul>
+		</div>
+
+
+	{# Logos mobile #}
+		<ul class="float-logos__items mobile">
+			<div class="box-line">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</div>
+			<li class="float-logos__item blue">
+				<span class="icon-clientes_btg-pactual"></span>
+			</li>
+			<li class="float-logos__item yellow">
+				<span class="icon-clientes_amazon"></span>
+			</li>
+			<li class="float-logos__item purple">
+				<span class="icon-clientes_suzano"></span>
+			</li>
+			<li class="float-logos__item yellow">
+				<span class="icon-clientes_ifood"></span>
+			</li>
+			<li class="float-logos__item purple">
+				<span class="icon-clientes_loreal"></span>
+			</li>
+			<li class="float-logos__item green">
+				<span class="icon-clientes_gol"></span>
+			</li>
+			<li class="float-logos__item blue">
+				<span class="icon-clientes_unilever"></span>
+			</li>
+		</ul>
+	{# FIM Logos mobile #}
+
+		<ul class="clients__info-items">
+			{% for item in module.texto %}
+				<li class="clients__info-item">{{ item }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>

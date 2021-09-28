@@ -1,0 +1,25 @@
+[ {
+  "id" : "e42200a0-08f9-3b9a-5264-7dc8c24400aa",
+  "name" : "section_title",
+  "label" : "Título da seção",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Por que as empresas  escolhem a Cortex?"
+}, {
+  "id" : "ae63f182-7c4c-5c3d-6270-14990ebf9065",
+  "name" : "texto",
+  "label" : "Texto",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "type" : "richtext"
+} ]

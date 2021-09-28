@@ -1,7 +1,6 @@
 
 /* Default Footer */
 .footer {
-  background-color: var(--lightest);
   padding: 1.6875em 1.5em 1.5em 1.5em;
 }
 .footer hr {
@@ -62,6 +61,10 @@
 }
 .footer__form form .actions {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
 }
 .footer__form form .actions .hs-button {
   width: 100%;
@@ -72,16 +75,9 @@
   border: 1px solid var(--dark);
   border-radius: 0 2.5rem 2.5rem 0;
 }
-.footer__form form .actions .hs-button  + .icon-seta {
-  line-height: 40px;
-  font-size: 0.7em;
-  text-align: center;
-}
-.footer__form form .actions .icon-seta:before {
+.footer__form form .actions .icon-input-seta {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  color: white;
 }
 
 /* Formulário texto */
@@ -116,9 +112,16 @@
 .footer-social__item .icon-linkedin .path1:before,
 .footer-social__item .icon-facebook .path1:before,
 .footer-social__item .icon-youtube .path1:before {
-  color: var(--darkest);
+  color: #F1F1FA;
 }
 .footer-social__item .icon-instagram .path2:before {
+  color: #F1F1FA;
+}
+.footer-social__item .icon-linkedin .path2:before,
+.footer-social__item .icon-linkedin .path3:before,
+.footer-social__item .icon-facebook .path2:before,
+.footer-social__item .icon-youtube .path2:before,
+.footer-social__item .icon-instagram .path1:before {
   color: var(--darkest);
 }
 
@@ -207,8 +210,14 @@
   .footer__form form {
     margin-right: 4.5em;
   }
+  .footer__form form .actions  {
+    width: 70%;
+  }
   .footer hr:nth-of-type(2) {
     opacity: 0;
     margin: 2em 0;
+  }
+  .footer__terms .icon-logo-cortex {
+    font-size: 25px;
   }
 }

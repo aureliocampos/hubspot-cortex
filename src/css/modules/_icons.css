@@ -25,6 +25,69 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-clientes_carrefour:before {
+  content: "\e96c";
+}
+.icon-clientes_central-de-materiais:before {
+  content: "\e96d";
+}
+.icon-clientes_cpfl-energia:before {
+  content: "\e96e";
+}
+.icon-clientes_globo:before {
+  content: "\e96f";
+}
+.icon-clientes_gol:before {
+  content: "\e970";
+}
+.icon-clientes_google:before {
+  content: "\e971";
+}
+.icon-clientes_ifood:before {
+  content: "\e972";
+}
+.icon-clientes_kepler-weber:before {
+  content: "\e973";
+}
+.icon-clientes_loreal:before {
+  content: "\e974";
+}
+.icon-clientes_microsoft:before {
+  content: "\e975";
+}
+.icon-clientes_oracle:before {
+  content: "\e976";
+}
+.icon-clientes_roche:before {
+  content: "\e977";
+}
+.icon-clientes_suzano:before {
+  content: "\e978";
+}
+.icon-clientes_unilever:before {
+  content: "\e979";
+}
+.icon-clientes_visa:before {
+  content: "\e97a";
+}
+.icon-clientes_adobe:before {
+  content: "\e97b";
+}
+.icon-clientes_amazon:before {
+  content: "\e97c";
+}
+.icon-clientes_autodesk:before {
+  content: "\e97d";
+}
+.icon-clientes_bayer:before {
+  content: "\e97e";
+}
+.icon-clientes_bradesco:before {
+  content: "\e97f";
+}
+.icon-clientes_btg-pactual:before {
+  content: "\e980";
+}
 .icon-cpfl-energia:before {
   content: "\e967";
 }
