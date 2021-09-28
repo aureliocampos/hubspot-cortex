@@ -25,6 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-round-prev:before {
+  content: "\e982";
+}
+.icon-arrow-round-next:before {
+  content: "\e981";
+}
 .icon-clientes_carrefour:before {
   content: "\e96c";
 }

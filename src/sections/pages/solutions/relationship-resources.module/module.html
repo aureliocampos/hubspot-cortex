@@ -1,0 +1,53 @@
+{% if module.materiais|length > 0 %}
+  <section class="section relationship-resources">
+    <div class="rel-resources__container">
+      <h2 class="rel-resources__title">{{ module.section_title }}</h2>
+      <div class="swiper swiper-rel-resources">
+        <div class="rel-resources__items swiper-wrapper">
+          {% for item in module.materiais %}
+          {% set resource = content_by_id(item.material) %}
+          <article class="rel-resources__card swiper-slide">
+            <section class="rel-resources__card-content">
+              <figure class="rel-resources__card-figure">
+                {% if item.tag_field %}
+                  <small class="rel-resources__card-tag">{{ item.tag_field }}</small>
+                {% endif %}
+                <a href="{{ resource.absolute_url }}" >
+                  <img src="{{ resource.featuredImage }}" alt="{{ resource.featuredImageAltText }}" 
+                  class="rel-resources__card-image"
+                  />
+                </a>
+              </figure>
+              <div class="rel-resources__card-description">
+                <h2 class="rel-resources__card-title">{{resource.title}}</h2>
+                <ul class="rel-resources__card-categories">
+
+                  {% set all_categories = blog_tags('default', 250) %}
+
+                  {% for tag in item.categorias %}
+                    {% for category in all_categories %}
+                      {% if category.slug == tag %}
+                        <li >
+                          <a href="{{ blog_tag_url(group.id, tag) }}" class="rel-resources__card-category"target="_blank" rel="noopener noreferrer">{{ category }}</a>
+                        </li>
+                      {% endif %}
+                    {% endfor %}
+                  {% endfor %}
+                </ul>
+              </div>
+            </section>
+            <div class="rel-button--container">
+              <a href="{{ resource.absolute_url }}" class="button button--primary">Baixar Ebook</a>
+              <span class="rel-resources__card-weight">({{ item.tamanho_do_arquivo }})</span>
+            </div>
+          </article>
+    
+        {% endfor %}
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+    </div>
+  </section>
+{% endif %}

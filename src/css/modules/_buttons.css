@@ -26,3 +26,8 @@
   background-color: transparent;
   border: 1px solid var(--white);
 }
+
+.icon-arrow-round-prev,
+.icon-arrow-round-next {
+  cursor: pointer; 
+}

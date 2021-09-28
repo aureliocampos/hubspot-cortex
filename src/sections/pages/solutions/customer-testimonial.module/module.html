@@ -1,30 +1,40 @@
 <section class="section customer-testimonial">
 	<div class="customer-testimonial__container">
-		{% for item in module.depoimentos %}
-			<aside class="customer-testimonial__article">
-				{% if item.imagem.src %}
-					{% set sizeAttrs = 'width="{{ item.imagem.width }}" height="{{ item.imagem.height }}"' %}
-					{% if item.imagem.size_type == 'auto' %}
-						{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
-					{% elif item.imagem.size_type == 'auto_custom_max' %}
-						{% set sizeAttrs = 'width="{{ item.imagem.max_width }}" height="{{ item.imagem.max_height }}" style="max-width: 100%; height: auto;"' %}
+		<div class="swiper swiper-testimonial">
+			<div class="swiper-wrapper">
+				{% for item in module.depoimentos %}
+				<aside class="customer-testimonial__article swiper-slide">
+					{% if item.imagem.src %}
+						{% set sizeAttrs = 'width="{{ item.imagem.width }}" height="{{ item.imagem.height }}"' %}
+						{% if item.imagem.size_type == 'auto' %}
+							{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+						{% elif item.imagem.size_type == 'auto_custom_max' %}
+							{% set sizeAttrs = 'width="{{ item.imagem.max_width }}" height="{{ item.imagem.max_height }}" style="max-width: 100%; height: auto;"' %}
+						{% endif %}
+						{% set loadingAttr = item.imagem.loading != 'disabled' ? 'loading="{{ item.imagem.loading }}"' : '' %}
+						<figure class="customer-testimonial__figure">
+							<img src="{{ item.imagem.src }}" alt="{{ item.imagem.alt }}" {{ loadingAttr }} width="718" height="524">
+						</figure>
 					{% endif %}
-					{% set loadingAttr = item.imagem.loading != 'disabled' ? 'loading="{{ item.imagem.loading }}"' : '' %}
-					<figure class="customer-testimonial__figure">
-						<img src="{{ item.imagem.src }}" alt="{{ item.imagem.alt }}" {{ loadingAttr }} width="718" height="524">
-					</figure>
-				{% endif %}
-				<section class="customer-testimonial__content">
-					<blockquote class="customer-testimonial__text">
-						{{ item.texto }}
-					</blockquote>
-					<address class="customer-testimonial__author">
-						<h3 class="customer-testimonial__name">{{ item.nome }}</h3>, 
-						<p class="customer-testimonial__job">{{ item.cargo }}</p>
-					</address>
-				</section>
-			</aside>
-		{% endfor %}
+					<section class="customer-testimonial__content">
+						<div class="customer-testimonial__content-specific">
+							<blockquote class="customer-testimonial__text">
+								{{ item.texto }}
+							</blockquote>
+							<address class="customer-testimonial__author">
+								<h3 class="customer-testimonial__name">{{ item.nome }}</h3>, 
+								<p class="customer-testimonial__job">{{ item.cargo }}</p>
+							</address>
+						</div>
+					</section>
+				</aside>
+				{% endfor %}
+			</div>
+			<div class="customer-testimonial__controls">
+				<div class="icon-arrow-round-prev"></div>
+				<div class="icon-arrow-round-next"></div>
+			</div>
+		</div>
 
     {% if module.lista_de_logos_dos_clientes == "comunicacao_e_marketing" %}
       <ul class="clients__items" data-brand-icons="comunicacao_e_marketing" >

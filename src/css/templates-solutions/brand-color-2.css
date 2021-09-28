@@ -6,6 +6,13 @@
 .button--main-solutions span:before {
   color: var(--purple_spotlight);
 }
+.button--main-solutions:hover {
+  color: var(--white);
+  background-color: var(--purple_official);
+}
+.button--main-solutions:hover span:before {
+  color: var(--purple_light);
+}
 
 /* Título de conteúdo Modulo content */
 .content__item-title span:nth-of-type(1n) {
@@ -31,6 +38,13 @@
 .button-cta--solutions .icon-input-seta {
   color: var(--purple_light);
 }
+.button-cta--solutions:hover {
+  color: var(--purple_official);
+  background: var(--purple_lightest);
+}
+.button-cta--solutions:hover .icon-input-seta {
+  color: var(--purple_spotlight);
+}
 
 /* Seção de depoimentos e Clientes */
 .customer-testimonial__content {
@@ -41,4 +55,10 @@
 }
 .clients__item {
   color: var(--purple_official);
+}
+
+/* controles do slide de depoimento */
+.icon-arrow-round-prev::before,
+.icon-arrow-round-next::before {
+  color: var(--purple_spotlight);
 }

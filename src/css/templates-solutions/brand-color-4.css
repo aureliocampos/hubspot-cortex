@@ -6,7 +6,11 @@
 .button--main-solutions span:before {
   color: var(--green_spotlight);
 }
-.button-cta--solutions .icon-input-seta {
+.button--main-solutions:hover {
+  color: var(--white);
+  background-color: var(--green_official);
+}
+.button--main-solutions:hover span:before {
   color: var(--green_light);
 }
 
@@ -31,6 +35,17 @@
 .button-cta--solutions {
   background-color: var(--green_official);
 }
+.button-cta--solutions .icon-input-seta {
+  color: var(--green_light);
+}
+.button-cta--solutions:hover {
+  color: var(--green_official);
+  background: var(--green_lightest);
+}
+.button-cta--solutions:hover .icon-input-seta {
+  color: var(--green_spotlight);
+}
+
 
 /* Seção de depoimentos e Clientes */
 .customer-testimonial__content {
