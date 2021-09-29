@@ -10,9 +10,8 @@
     <meta name="description" content="{{ page_meta.meta_description }}">
     {{ standard_header_includes }}
 
-    {{ require_css(get_asset_url('/cortex-v1/lib/owlcarousel/owl.carousel.min.css'), { async: true }) }}
-    {{ require_css(get_asset_url('/cortex-v1/lib/owlcarousel/owl.carousel.default.min.css'), { async: true }) }}
-    
+    <link rel="preconnect" href="https://cdn2.hubspot.net">
+
     {{ require_css(get_asset_url('/cortex-v1/css/main.css')) }}
   </head>
   <body>
@@ -25,9 +24,6 @@
 
       {% module "module_16294732947563" path="/cortex-v1/sections/footers/footer-primary", label="footer-primary" %}
     </div>
-
-    {{ require_js(get_asset_url('/cortex-v1/lib/jquery.js'), { position: 'footer', async: true }) }}
-    {{ require_js(get_asset_url('/cortex-v1/lib/owlcarousel/owl.carousel.min.js'), { position: 'footer', async: true }) }}
     {{ standard_footer_includes }}
   </body>
 </html>

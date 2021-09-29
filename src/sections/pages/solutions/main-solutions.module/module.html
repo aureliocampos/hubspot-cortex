@@ -14,7 +14,9 @@
 			{% endif %}
 			{% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
 				<figure class="main-solutions__figure">
-					<img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+					<img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }} srcset="{{resize_image_url (module.image_field.src, module.image_field.width)}} 1x,
+					{{resize_image_url (module.image_field.src, module.image_field.width * 2)}} 2x, 
+					{{resize_image_url (module.image_field.src, module.image_field.width * 3)}} 3x ">
 				</figure>
 		{% endif %}
 		<div class="main-solutions__content header-desktop">
