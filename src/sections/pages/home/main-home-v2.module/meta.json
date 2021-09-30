@@ -1,0 +1,17 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 56368143750,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../../../lib/swiper/swiper.min.css",
+    "name" : "swiper.min.css"
+  } ],
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../../../lib/swiper/swiper.min.js",
+    "name" : "swiper.min.js"
+  } ],
+  "label" : "Main Home",
+  "is_available_for_new_content" : true
+}

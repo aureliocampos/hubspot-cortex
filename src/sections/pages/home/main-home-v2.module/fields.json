@@ -1,0 +1,180 @@
+[ {
+  "id" : "830e9461-b861-a052-dccd-b037e8b8c6d7",
+  "name" : "titulo",
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p><strong>Crescer</strong> pode ser mais <strong>simples</strong> com <strong>inteligência</strong></p>"
+}, {
+  "id" : "4ccb0a26-d0b9-97b7-1f0f-cf0fc2948243",
+  "name" : "subtitulo",
+  "label" : "Subtitulo",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Soluções de inteligência de dados para impulsionar sua jornada de <span style=\"color: #6e3d9c; background-color: #ffebf5;\">marketing</span> e <span style=\"color: #285fc3; background-color: #dcf0ff;\">vendas</span></p>"
+}, {
+  "id" : "e1d8cb36-81bb-5c56-20ad-d258aba3aa06",
+  "name" : "card_solutions",
+  "label" : "Card da solução",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "2c556a99-c5bf-c7c9-799f-72d782e2d67b",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "9bbf536d-3507-c641-2179-9d3065b5d48b",
+    "name" : "url_video",
+    "label" : "URL Video",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL" ],
+    "type" : "url",
+    "default" : {
+      "type" : "EXTERNAL",
+      "href" : "https://storage.googleapis.com/website_cortex/MLP%202_comunicacao_v5_Comunicacao%20(1).mp4",
+      "content_id" : null
+    }
+  }, {
+    "id" : "838a0d56-14be-63ca-02ee-374dd5bcbc00",
+    "name" : "imagem_mobile",
+    "label" : "Imagem Mobile",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "2c556a99-c5bf-c7c9-799f-72d782e2d67b",
+    "name" : "card_title",
+    "label" : "Título do card",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "f8613d4b-3d1f-ec05-9f9e-08cd57e40c0e",
+    "name" : "card_text",
+    "label" : "Texto do card",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "c4ee3ffd-20d0-0060-fd6d-4a45473e43a9",
+    "name" : "card_items",
+    "label" : "Card Items",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "1880aec7-c703-43bb-ab54-e5438b3b1354",
+      "name" : "card_item_icon",
+      "label" : "Ícone",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    }, {
+      "id" : "c55007e6-0a28-c533-2521-b02c48e39c3e",
+      "name" : "card_item",
+      "label" : "Item do card",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "card_item_icon" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    }
+  }, {
+    "id" : "97a1c976-8c58-b238-684f-90021bec340a",
+    "name" : "link_do_card",
+    "label" : "Link do card",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "CONTENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "url_video" : {
+      "type" : "EXTERNAL",
+      "href" : "https://storage.googleapis.com/website_cortex/MLP%202_comunicacao_v5_Comunicacao%20(1).mp4",
+      "content_id" : null
+    },
+    "imagem_mobile" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "card_items" : {
+      "card_item_icon" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    },
+    "link_do_card" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+} ]
