@@ -1,0 +1,62 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "ওয়ার্কফ্লো-তে যোগ করুন",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "একটি ফলো-আপ ইমেল পাঠাতে, নিশ্চিত করুন যে 'মার্কেটিং পরিচিতি হিসেবে তৈরি পরিচিতিগুলি সেট করুন' সেটিংস চালু আছে। আপনি বিকল্পগুলিতে এটি পরিচালনা করতে পারেন। <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>আরও জানুন</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "একটি ফলো-আপ ইমেল পাঠান",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "ফর্মটি জমা করার জন্য ধন্যবাদ।",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "ফর্ম",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "ওয়ার্কফ্লো",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "ফর্ম",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "ফর্ম ডিফল্টগুলির পরিবর্তে নির্দিষ্ট ইমেল ঠিকানাগুলিতে ফর্ম বিজ্ঞপ্তিগুলি প্রেরণ করুন",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "ইমেল ঠিকানাগুলি",
+    "description" : "",
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "সেলস্‌ফোর্স প্রচার",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "ইমেল",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "ফর্মের শিরোনাম",
+    "description" : "",
+    "placeholders" : null
+  }
+}

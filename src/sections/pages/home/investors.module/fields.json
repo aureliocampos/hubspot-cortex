@@ -1,0 +1,9 @@
+[ {
+  "id" : "c2e0e8fd-a72a-1837-b82c-5570cfd333ee",
+  "name" : "title",
+  "label" : "Título da seção",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "default" : "<p>Somos líder em <strong>inteligência artificial</strong> na <strong>América Latina</strong>.<br>Apoiada pelos maiores <strong>fundos de investimento</strong>.</p>"
+} ]

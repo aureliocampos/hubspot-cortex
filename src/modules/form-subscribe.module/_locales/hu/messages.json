@@ -1,0 +1,62 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "Hozzáadás munkafolyamathoz",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "Ha követő e-mailt szeretne küldeni, ügyeljen arra, hogy a „Létrehozott kapcsolatok beállítása marketingkapcsolatokként” opció be legyen kapcsolva. Ezt a beállításokban kezelheti. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>Tudjon meg többet</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "Követő e-mail küldése",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "Köszönjük, hogy beküldte az űrlapot.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "Űrlap",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "Munkafolyamat",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Űrlap",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "Az alapbeállítás helyett küldjön űrlapértesítéseket a megadott e-mail-címekre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "E-mail-címek",
+    "description" : "",
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "Salesforce-kampány",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "E-mail",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Űrlap címe",
+    "description" : "",
+    "placeholders" : null
+  }
+}

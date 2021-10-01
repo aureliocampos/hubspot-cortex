@@ -1,0 +1,39 @@
+ <section class="main main-solutions">
+
+	<div class="main-solutions__container">
+		<div class="header-mobile">
+			<small class="main-solutions__tag">{{ module.solution }}</small>
+			<h1 class="main-solutions__title">{{ module.title }}</h1>
+		 </div>
+		{% if module.image_field.src %}
+				<figure class="main-solutions__figure">
+					<img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" srcset="{{resize_image_url (module.image_field.src, module.image_field.width)}} 1x,
+					{{resize_image_url (module.image_field.src, module.image_field.width * 2)}} 2x, 
+					{{resize_image_url (module.image_field.src, module.image_field.width * 3)}} 3x ">
+				</figure>
+		{% endif %}
+		<div class="main-solutions__content header-desktop">
+			<small class="main-solutions__tag">{{ module.solution }}</small>
+			<h1 class="main-solutions__title">{{ module.title }}</h1>
+			<div class="main-solutions__text">{{ module.texto }}</div>
+      {% set href = module.link_field.url.href %}
+        {% if module.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+        {% endif %}
+        {% set rel = [] %}
+        {% if module.link_field.no_follow %}
+          {% do rel.append("nofollow") %}
+        {% endif %}
+        {% if module.link_field.open_in_new_tab %}
+          {% do rel.append("noopener") %}
+        {% endif %}
+        <a href="{{ href }}" class="button button--main-solutions"
+          {% if module.link_field.open_in_new_tab %}target="_blank"{% endif %}
+          {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+          >
+         Fale com a gente<span class="icon-input-seta"></span>
+        </a>
+      
+		</div>
+	</div>
+</section>

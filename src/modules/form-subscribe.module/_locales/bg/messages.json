@@ -1,0 +1,62 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "Добавяне към работен поток",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "За да изпратите последващ имейл, се уверете, че настройката „Задаване на контакти, създадени като маркетингови контакти“ е включена. Може да управлявате това в опциите. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>Научете повече</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "Изпращане на имейл с последващо действие",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "Благодарим ви, че подадохте формуляра.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "Формуляр",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "Работен поток",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Формуляр",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "Изпращане на известия на формуляр до посочени имейл адреси вместо формуляри по подразбиране",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "Имейл адреси",
+    "description" : "",
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "Кампания на Salesforce",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "Имейл",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Заглавие на формуляр",
+    "description" : "",
+    "placeholders" : null
+  }
+}

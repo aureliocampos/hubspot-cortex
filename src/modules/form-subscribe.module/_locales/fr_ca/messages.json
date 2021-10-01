@@ -1,0 +1,62 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "Ajouter au flux de travail",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "Pour envoyer un courriel de suivi, assurez-vous que le paramètre « Définir les contacts créés comme contacts marketing » est activé. Vous pouvez gérer cela dans les options. En savoir d'avantage",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "Envoyer un courriel de suivi",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "Merci d'avoir envoyé le formulaire.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "Formulaire",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "Flux de travail",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Formulaire",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "Envoyer les notifications du formulaire à des adresses courriel spécifiées au lieu des adresses par défaut du formulaire",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "Adresses courriel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "Campagne de vente",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "Courriel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Titre du formulaire",
+    "description" : "",
+    "placeholders" : null
+  }
+}

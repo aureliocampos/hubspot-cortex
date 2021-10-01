@@ -1,0 +1,75 @@
+/* Botão modulo Main */
+.button--main-solutions {
+  color: var(--blue_official);
+  background: var(--blue_lightest);
+}
+.button--main-solutions span:before {
+  color: var(--blue_spotlight);
+}
+.button--main-solutions:hover {
+  color: var(--white);
+  background-color: var(--blue_official);
+}
+.button--main-solutions:hover span:before {
+  color: var(--blue_light);
+}
+
+
+/* Título de conteúdo Modulo content */
+.content__item-title span:nth-of-type(1n) {
+  color: var(--blue_spotlight);
+}
+.content__item-title span:nth-of-type(2n) {
+  color: var(--blue_light);
+}
+.content__item-title span:nth-of-type(3n) {
+  color: var(--blue_official);
+}
+
+/* Seção CTA */
+.cta-icon {
+  background-color: var(--blue_official);
+}
+.cta-icon:after {
+  background: var(--blue_spotlight);
+}
+.button-cta--solutions {
+  background-color: var(--blue_official);
+}
+.button-cta--solutions .icon-input-seta {
+  color: var(--blue_light);
+}
+.button-cta--solutions:hover {
+  color: var(--blue_official);
+  background: var(--blue_lightest);
+}
+.button-cta--solutions:hover .icon-input-seta {
+  color: var(--blue_spotlight);
+}
+
+/* Seção de depoimentos e Clientes */
+.customer-testimonial__content {
+  min-height: 360px;
+  background-color: var(--blue_official);
+}
+.customer-testimonial__author {
+  color: var(--blue_light);
+}
+.clients__item {
+  color: var(--blue_official);
+}
+
+/* controles do slide de depoimento */
+.customer-testimonial__controls .icon-arrow {
+  border-color: var(--blue_spotlight);
+}
+.customer-testimonial__controls .icon-arrow:before {
+  color: var(--blue_spotlight);
+}
+
+.customer-testimonial__controls .icon-arrow:hover{
+  background-color: var(--blue_spotlight);
+}
+.customer-testimonial__controls .icon-arrow:hover::before {
+  color: var(--blue_official);
+}

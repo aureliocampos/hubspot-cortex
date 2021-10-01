@@ -1,0 +1,97 @@
+<section class="section customer-testimonial">
+	<div class="customer-testimonial__container">
+		<div class="swiper swiper-testimonial">
+			<div class="swiper-wrapper">
+				{% for item in module.depoimentos %}
+				<aside class="customer-testimonial__article swiper-slide">
+					{% if item.imagem.src %}
+						{% set sizeAttrs = 'width="{{ item.imagem.width }}" height="{{ item.imagem.height }}"' %}
+						{% if item.imagem.size_type == 'auto' %}
+							{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+						{% elif item.imagem.size_type == 'auto_custom_max' %}
+							{% set sizeAttrs = 'width="{{ item.imagem.max_width }}" height="{{ item.imagem.max_height }}" style="max-width: 100%; height: auto;"' %}
+						{% endif %}
+						{% set loadingAttr = item.imagem.loading != 'disabled' ? 'loading="{{ item.imagem.loading }}"' : '' %}
+						<figure class="customer-testimonial__figure">
+							<img src="{{ item.imagem.src }}" alt="{{ item.imagem.alt }}" {{ loadingAttr }} width="718" height="524">
+						</figure>
+					{% endif %}
+					<section class="customer-testimonial__content">
+						<div class="customer-testimonial__content-specific">
+							<blockquote class="customer-testimonial__text">
+								{{ item.texto }}
+							</blockquote>
+							<address class="customer-testimonial__author">
+								<h3 class="customer-testimonial__name">{{ item.nome }}</h3>, 
+								<p class="customer-testimonial__job">{{ item.cargo }}</p>
+							</address>
+						</div>
+					</section>
+				</aside>
+				{% endfor %}
+			</div>
+			<div class="customer-testimonial__controls">
+				<div class="icon-arrow-prev icon-arrow"></div>
+				<div class="icon-arrow-next icon-arrow"></div>
+			</div>
+		</div>
+
+    {% if module.lista_de_logos_dos_clientes == "comunicacao_e_marketing" %}
+      <ul class="clients__items" data-brand-icons="comunicacao_e_marketing" >
+				<li class="clients__item">
+					<span class="icon-clientes_loreal"></span>
+				</li>
+				<li class="clients__item">
+					<span class="icon-clientes_cpfl-energia"></span>
+				</li>
+				<li class="clients__item">
+					<span class="icon-clientes_btg-pactual"></span>
+				</li>
+				<li class="clients__item">
+					<span class="icon-clientes_bradesco"></span>
+				</li>
+				<li class="clients__item">
+					<span class="icon-clientes_ifood"></span>
+				</li>
+			</ul>
+    {% elif module.lista_de_logos_dos_clientes == "inteligencia_de_mercado" %}
+      <ul class="clients__items" data-brand-icons="inteligencia_de_mercado">
+				<li class="clients__item">
+					<span class="icon-clientes_adobe"></span>
+				</li>
+				<li class="clients__item">
+					<span class="icon-clientes_bayer"></span>
+				</li>
+				<li class="clients__item">
+					<span class="icon-clientes_central-de-materiais"></span>
+				</li>
+				<li class="clients__item">
+					<span class="icon-clientes_microsoft"></span>
+				</li>
+				<li class="clients__item">
+					<span class="icon-clientes_autodesk"></span>
+				</li>
+			</ul>
+    {% elif module.lista_de_logos_dos_clientes == "inteligencia_de_vendas_b2b" %}
+      <ul class="clients__items" data-brand-icons="inteligencia_de_vendas_b2b">
+				<li class="clients__item">
+					<span class="icon-clientes_adobe"></span>
+				</li>
+				<li class="clients__item">
+					<span class="icon-clientes_bayer"></span>
+				</li>
+				<li class="clients__item">
+					<span class="icon-clientes_central-de-materiais"></span>
+				</li>
+				<li class="clients__item">
+					<span class="icon-clientes_microsoft"></span>
+				</li>
+				<li class="clients__item">
+					<span class="icon-clientes_autodesk"></span>
+				</li>
+			</ul>
+    {% else %}
+    {% endif %}
+
+	</div>
+</section>

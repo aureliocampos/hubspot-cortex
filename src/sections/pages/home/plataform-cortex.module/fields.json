@@ -1,0 +1,72 @@
+[ {
+  "id" : "d5aee0c2-e1a4-52dc-2a01-8c38f3822531",
+  "name" : "item_plataforma",
+  "label" : "Item Plataforma",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "4096ab5d-fa5b-468a-e2cf-f4664f9b7c83",
+    "name" : "image",
+    "label" : "Imagem",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "93c9142b-314f-4d09-05a6-3d8146a203e0",
+    "name" : "title",
+    "label" : "Título",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "<span class=\"icon-check\"></span>"
+  }, {
+    "id" : "5535272f-097a-5536-dc5f-c55abc148081",
+    "name" : "text",
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "b3736da2-807f-1bd8-44bc-38eb82e37449",
+    "name" : "videoplayer_field",
+    "label" : "Vídeo",
+    "required" : false,
+    "locked" : false,
+    "resizable" : true,
+    "show_preview" : true,
+    "type" : "videoplayer"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "title" : "<span class=\"icon-check\"></span>"
+  }
+} ]

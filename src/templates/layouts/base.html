@@ -1,0 +1,29 @@
+<!--
+  templateType: none
+-->
+<!doctype html>
+<html lang="{{ html_lang }}" {{ html_lang_dir }}>
+  <head>
+    <meta charset="utf-8">
+    {% if page_meta.html_title %}<title>{{ page_meta.html_title }}</title>{% endif %}
+    {% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
+    <meta name="description" content="{{ page_meta.meta_description }}">
+    {{ standard_header_includes }}
+
+    <link rel="preconnect" href="https://cdn2.hubspot.net">
+
+    {{ require_css(get_asset_url('/cortex-v1/css/main.css')) }}
+  </head>
+  <body>
+    <div class="body-wrapper {{ builtin_body_classes }}">
+    
+      {% module "module_16293970708281" path="/cortex-v1/sections/headers/header-primary", label="header-primary" %}
+
+      {% block body %}
+      {% endblock body %}
+
+      {% module "module_16294732947563" path="/cortex-v1/sections/footers/footer-primary", label="footer-primary" %}
+    </div>
+    {{ standard_footer_includes }}
+  </body>
+</html>

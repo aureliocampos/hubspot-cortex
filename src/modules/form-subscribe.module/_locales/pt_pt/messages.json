@@ -1,0 +1,62 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "Adicionar ao fluxo de trabalho",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "Para enviar um e-mail de seguimento, certifique-se de que a definição \"Definir contactos criados como contactos de marketing\" está ativada. Pode gerir estas opções. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>Saber mais</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "Enviar um e-mail de seguimento",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "Agradecemos a submissão do formulário.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "Formulário",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "Fluxo de trabalho",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Formulário",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "Enviar notificações do formulário para os endereços de e-mail especificados em vez das predefinições do formulário",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "Endereços de e-mail",
+    "description" : "",
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "Campanha da Sailsforce",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "E-mail",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Título do formulároi",
+    "description" : "",
+    "placeholders" : null
+  }
+}

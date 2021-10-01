@@ -1,0 +1,50 @@
+<section class="main main-plataform">
+	<div class="main__container">
+		<div class="main-background__video">
+			<video width="1920" height="1080" autoplay="" muted="" loop="">
+				<source src="https://cortex-intelligence.com/wp-content/uploads/2020/11/UPDATED-Video-Home-cortes-secos-LOW-10MB.mp4" type="video/mp4">
+				<source src="https://cortex-intelligence.com/wp-content/uploads/2020/11/UPDATED-Video-Home-cortes-secos-LOW-10MB-1.ogg" type="video/ogg">
+			</video>
+		</div>
+		
+		<h1 class="main__title">{{ module.title }}</h1>
+		{% if module.image.src %}
+			{% set sizeAttrs = 'width="{{ module.image.width }}" height="{{ module.image.height }}"' %}
+			{% if module.image.size_type == 'auto' %}
+				{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+			{% elif module.image.size_type == 'auto_custom_max' %}
+				{% set sizeAttrs = 'width="{{ module.image.max_width }}" height="{{ module.image.max_height }}" style="max-width: 100%; height: auto;"' %}
+			{% endif %}
+			{% set loadingAttr = module.image.loading != 'disabled' ? 'loading="{{ module.image.loading }}"' : '' %}
+			<figure class="main__figure">
+				<img src="{{ module.image.src }}" alt="{{ module.image.alt }}" {{ loadingAttr }}>
+			</figure>
+		{% endif %}
+
+	</div>
+</section>
+<section class="intro-plataform">
+	<div class="intro-plataform__container">
+		<div class="intro-plataform__text">{{ module.intro_plataforma.intro_text }}</div>
+		{% set href = module.intro_plataforma.button_call.link.url.href %}
+			{% if module.intro_plataforma.button_call.link.url.type is equalto "EMAIL_ADDRESS" %}
+				{% set href = "mailto:" + href %}
+			{% endif %}
+			{% set rel = [] %}
+			{% if module.intro_plataforma.button_call.link.no_follow %}
+				{% do rel.append("nofollow") %}
+			{% endif %}
+			{% if module.intro_plataforma.button_call.link.open_in_new_tab %}
+				{% do rel.append("noopener") %}
+			{% endif %}
+			<a href="{{ href }}" class="button button--secondary"
+				{% if module.intro_plataforma.button_call.link.open_in_new_tab %}target="_blank"{% endif %}
+				{% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+				>
+				{{ module.intro_plataforma.button_call.text }}
+			</a>
+	</div>
+</section>
+
+
+

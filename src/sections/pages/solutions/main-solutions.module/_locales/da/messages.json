@@ -1,0 +1,162 @@
+{
+  "embed_field.default.source_type" : {
+    "message" : "oembed",
+    "description" : null,
+    "placeholders" : null
+  },
+  "embed_field.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "embed_field.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "embed_field.label" : {
+    "message" : "Incorporar",
+    "description" : null,
+    "placeholders" : null
+  },
+  "embed_field.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_field.default.alt" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_field.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_field.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_field.label" : {
+    "message" : "Imagem",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_field.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_field.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_field.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_field.label" : {
+    "message" : "Link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_field.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "main-solutions",
+    "description" : null,
+    "placeholders" : null
+  },
+  "solution.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "solution.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "solution.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "solution.label" : {
+    "message" : "Solução",
+    "description" : null,
+    "placeholders" : null
+  },
+  "solution.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "solution.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texto.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texto.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texto.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texto.label" : {
+    "message" : "Rich text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texto.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Título ",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

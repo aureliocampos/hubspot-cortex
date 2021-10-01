@@ -1,0 +1,59 @@
+/* Botão modulo Main */
+.button--main-solutions {
+  color: var(--green_official);
+  background: var(--green_lightest);
+}
+.button--main-solutions span:before {
+  color: var(--green_spotlight);
+}
+.button--main-solutions:hover {
+  color: var(--white);
+  background-color: var(--green_official);
+}
+.button--main-solutions:hover span:before {
+  color: var(--green_light);
+}
+
+/* Título de conteúdo Modulo content */
+.content__item-title span:nth-of-type(1n) {
+  color: var(--green_spotlight);
+}
+.content__item-title span:nth-of-type(2n) {
+  color: var(--green_light);
+}
+.content__item-title span:nth-of-type(3n) {
+  color: var(--green_official);
+}
+
+/* Seção CTA */
+.cta-icon {
+  background-color: var(--green_official);
+}
+.cta-icon:after {
+  background: var(--green_spotlight);
+}
+.button-cta--solutions {
+  background-color: var(--green_official);
+}
+.button-cta--solutions .icon-input-seta {
+  color: var(--green_light);
+}
+.button-cta--solutions:hover {
+  color: var(--green_official);
+  background: var(--green_lightest);
+}
+.button-cta--solutions:hover .icon-input-seta {
+  color: var(--green_spotlight);
+}
+
+
+/* Seção de depoimentos e Clientes */
+.customer-testimonial__content {
+  background-color: var(--green_official);
+}
+.customer-testimonial__author {
+  color: var(--green_light);
+}
+.clients__item {
+  color: var(--green_official);
+}

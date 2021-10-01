@@ -1,0 +1,47 @@
+[ {
+  "id" : "6e2fec1f-3e55-157e-b516-520fc6566177",
+  "name" : "section_title",
+  "label" : "Título da seção",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Inspire-se com nossos conteúdos sobre Inteligência de Comunicação"
+}, {
+  "id" : "db57a631-21a8-2ecf-dd1a-79cb1b23b4e3",
+  "name" : "materiais",
+  "label" : "Materiais",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "9a7e2366-5a59-6095-f2e2-176ef08920c9",
+    "name" : "material",
+    "label" : "Material",
+    "required" : false,
+    "locked" : false,
+    "type" : "page"
+  }, {
+    "id" : "3ae0a8fd-536e-861b-d673-e4f42717aa79",
+    "name" : "tamanho_do_arquivo",
+    "label" : "Tamanho do arquivo",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "429 kb ou 1MB",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : { }
+} ]

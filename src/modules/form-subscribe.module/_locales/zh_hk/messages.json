@@ -1,0 +1,67 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "新增至工作流程",
+    "description" : null,
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "如要傳送更跟進電郵，請確定已開啟「將建立的聯絡人設為市場推廣聯絡人」設定。你可以在選項中管理此設定。<a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>深入了解</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "傳送跟進電郵",
+    "description" : null,
+    "placeholders" : null
+  },
+  "font_field.label" : {
+    "message" : "字體欄位",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "感謝你提交表單。",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "表單",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "工作流程",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "表單",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "傳送表單通知至特定電郵地址，而非表單預設電郵地址",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "電郵地址",
+    "description" : null,
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "Salesforce 活動",
+    "description" : null,
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "電郵",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "表單標題",
+    "description" : null,
+    "placeholders" : null
+  }
+}

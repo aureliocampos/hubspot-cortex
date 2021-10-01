@@ -1,0 +1,593 @@
+@font-face {
+  font-family: 'cortex';
+  src:  url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/icons/fonts/cortex.eot');
+  src:  url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/icons/fonts/cortex.eot') format('embedded-opentype'),
+    url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/icons/fonts/cortex.ttf') format('truetype'),
+    url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/icons/fonts/cortex.woff') format('woff'),
+    url('https://cdn2.hubspot.net/hubfs/8917234/website-cortex/icons/fonts/cortex.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'cortex' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-prev:before {
+  content: "\e914";
+}
+.icon-arrow-next:before {
+  content: "\e967";
+}
+.icon-clientes_amazon1:before {
+  content: "\e983";
+}
+.icon-clientes_carrefour:before {
+  content: "\e96c";
+}
+.icon-clientes_central-de-materiais:before {
+  content: "\e96d";
+}
+.icon-clientes_cpfl-energia:before {
+  content: "\e96e";
+}
+.icon-clientes_globo:before {
+  content: "\e96f";
+}
+.icon-clientes_gol:before {
+  content: "\e970";
+}
+.icon-clientes_google:before {
+  content: "\e971";
+}
+.icon-clientes_ifood:before {
+  content: "\e972";
+}
+.icon-clientes_kepler-weber:before {
+  content: "\e973";
+}
+.icon-clientes_loreal:before {
+  content: "\e974";
+}
+.icon-clientes_microsoft:before {
+  content: "\e975";
+}
+.icon-clientes_oracle:before {
+  content: "\e976";
+}
+.icon-clientes_roche:before {
+  content: "\e977";
+}
+.icon-clientes_suzano:before {
+  content: "\e978";
+}
+.icon-clientes_unilever:before {
+  content: "\e979";
+}
+.icon-clientes_visa:before {
+  content: "\e97a";
+}
+.icon-clientes_adobe:before {
+  content: "\e97b";
+}
+.icon-clientes_amazon:before {
+  content: "\e97c";
+}
+.icon-clientes_autodesk:before {
+  content: "\e97d";
+}
+.icon-clientes_bayer:before {
+  content: "\e97e";
+}
+.icon-clientes_bradesco:before {
+  content: "\e97f";
+}
+.icon-clientes_btg-pactual:before {
+  content: "\e980";
+}
+.icon-input-seta:before {
+  content: "\e966";
+}
+.icon-dados-da-empresa_colorido .path1:before {
+  content: "\e92f";
+  color: rgb(40, 200, 255);
+}
+.icon-dados-da-empresa_colorido .path2:before {
+  content: "\e930";
+  margin-left: -0.998046875em;
+  color: rgb(40, 95, 195);
+}
+.icon-dados-da-empresa_colorido .path3:before {
+  content: "\e931";
+  margin-left: -0.998046875em;
+  color: rgb(30, 140, 255);
+}
+.icon-dados-da-empresa_colorido .path4:before {
+  content: "\e932";
+  margin-left: -0.998046875em;
+  color: rgb(40, 200, 255);
+}
+.icon-dados-da-empresa_colorido .path5:before {
+  content: "\e933";
+  margin-left: -0.998046875em;
+  color: rgb(40, 200, 255);
+}
+.icon-dados-da-empresa_colorido .path6:before {
+  content: "\e934";
+  margin-left: -0.998046875em;
+  color: rgb(30, 140, 255);
+}
+.icon-dados-da-empresa_colorido .path7:before {
+  content: "\e935";
+  margin-left: -0.998046875em;
+  color: rgb(30, 140, 255);
+}
+.icon-dados-da-empresa_colorido .path8:before {
+  content: "\e936";
+  margin-left: -0.998046875em;
+  color: rgb(40, 200, 255);
+}
+.icon-dados-da-empresa_colorido .path9:before {
+  content: "\e937";
+  margin-left: -0.998046875em;
+  color: rgb(30, 140, 255);
+}
+.icon-dados-da-empresa_colorido .path10:before {
+  content: "\e938";
+  margin-left: -0.998046875em;
+  color: rgb(40, 95, 195);
+}
+.icon-dados-da-empresa_colorido .path11:before {
+  content: "\e939";
+  margin-left: -0.998046875em;
+  color: rgb(40, 95, 195);
+}
+.icon-dados-da-empresa_colorido .path12:before {
+  content: "\e93a";
+  margin-left: -0.998046875em;
+  color: rgb(40, 200, 255);
+}
+.icon-dados-da-empresa_colorido .path13:before {
+  content: "\e93b";
+  margin-left: -0.998046875em;
+  color: rgb(40, 200, 255);
+}
+.icon-dados-da-empresa_colorido .path14:before {
+  content: "\e93c";
+  margin-left: -0.998046875em;
+  color: rgb(30, 140, 255);
+}
+.icon-dados-da-empresa_colorido .path15:before {
+  content: "\e93d";
+  margin-left: -0.998046875em;
+  color: rgb(30, 140, 255);
+}
+.icon-dados-da-empresa_colorido .path16:before {
+  content: "\e93e";
+  margin-left: -0.998046875em;
+  color: rgb(40, 95, 195);
+}
+.icon-dados-da-empresa_colorido .path17:before {
+  content: "\e93f";
+  margin-left: -0.998046875em;
+  color: rgb(40, 95, 195);
+}
+.icon-ciencia-de-dados-e-analytics_colorido .path1:before {
+  content: "\e940";
+  color: rgb(0, 185, 180);
+}
+.icon-ciencia-de-dados-e-analytics_colorido .path2:before {
+  content: "\e941";
+  margin-left: -1.033203125em;
+  color: rgb(67, 211, 231);
+}
+.icon-ciencia-de-dados-e-analytics_colorido .path3:before {
+  content: "\e942";
+  margin-left: -1.033203125em;
+  color: rgb(0, 185, 180);
+}
+.icon-ciencia-de-dados-e-analytics_colorido .path4:before {
+  content: "\e943";
+  margin-left: -1.033203125em;
+  color: rgb(0, 185, 180);
+}
+.icon-ciencia-de-dados-e-analytics_colorido .path5:before {
+  content: "\e944";
+  margin-left: -1.033203125em;
+  color: rgb(0, 185, 180);
+}
+.icon-ciencia-de-dados-e-analytics_colorido .path6:before {
+  content: "\e945";
+  margin-left: -1.033203125em;
+  color: rgb(6, 125, 133);
+}
+.icon-ciencia-de-dados-e-analytics_colorido .path7:before {
+  content: "\e946";
+  margin-left: -1.033203125em;
+  color: rgb(6, 125, 133);
+}
+.icon-ciencia-de-dados-e-analytics_colorido .path8:before {
+  content: "\e947";
+  margin-left: -1.033203125em;
+  color: rgb(67, 211, 231);
+}
+.icon-ciencia-de-dados-e-analytics_colorido .path9:before {
+  content: "\e948";
+  margin-left: -1.033203125em;
+  color: rgb(0, 185, 180);
+}
+.icon-ciencia-de-dados-e-analytics_colorido .path10:before {
+  content: "\e949";
+  margin-left: -1.033203125em;
+  color: rgb(67, 211, 231);
+}
+.icon-ciencia-de-dados-e-analytics_colorido .path11:before {
+  content: "\e94a";
+  margin-left: -1.033203125em;
+  color: rgb(67, 211, 231);
+}
+.icon-ciencia-de-dados-e-analytics_colorido .path12:before {
+  content: "\e94b";
+  margin-left: -1.033203125em;
+  color: rgb(6, 125, 133);
+}
+.icon-ciencia-de-dados-e-analytics_colorido .path13:before {
+  content: "\e94c";
+  margin-left: -1.033203125em;
+  color: rgb(6, 125, 133);
+}
+.icon-ciencia-de-dados-e-analytics_colorido .path14:before {
+  content: "\e94d";
+  margin-left: -1.033203125em;
+  color: rgb(6, 125, 133);
+}
+.icon-ciencia-de-dados-e-analytics_colorido .path15:before {
+  content: "\e94e";
+  margin-left: -1.033203125em;
+  color: rgb(67, 211, 231);
+}
+.icon-workflow-com-dados_colorido .path1:before {
+  content: "\e94f";
+  color: rgb(195, 220, 60);
+}
+.icon-workflow-com-dados_colorido .path2:before {
+  content: "\e950";
+  margin-left: -0.9833984375em;
+  color: rgb(140, 195, 40);
+}
+.icon-workflow-com-dados_colorido .path3:before {
+  content: "\e951";
+  margin-left: -0.9833984375em;
+  color: rgb(30, 155, 80);
+}
+.icon-workflow-com-dados_colorido .path4:before {
+  content: "\e952";
+  margin-left: -0.9833984375em;
+  color: rgb(140, 195, 40);
+}
+.icon-dados-externos_colorido .path1:before {
+  content: "\e953";
+  color: rgb(255, 120, 175);
+}
+.icon-dados-externos_colorido .path2:before {
+  content: "\e954";
+  margin-left: -0.7880859375em;
+  color: rgb(210, 50, 210);
+}
+.icon-dados-externos_colorido .path3:before {
+  content: "\e955";
+  margin-left: -0.7880859375em;
+  color: rgb(210, 50, 210);
+}
+.icon-dados-externos_colorido .path4:before {
+  content: "\e956";
+  margin-left: -0.7880859375em;
+  color: rgb(210, 50, 210);
+}
+.icon-dados-externos_colorido .path5:before {
+  content: "\e957";
+  margin-left: -0.7880859375em;
+  color: rgb(255, 120, 175);
+}
+.icon-dados-externos_colorido .path6:before {
+  content: "\e958";
+  margin-left: -0.7880859375em;
+  color: rgb(255, 120, 175);
+}
+.icon-dados-externos_colorido .path7:before {
+  content: "\e959";
+  margin-left: -0.7880859375em;
+  color: rgb(255, 120, 175);
+}
+.icon-dados-externos_colorido .path8:before {
+  content: "\e95a";
+  margin-left: -0.7880859375em;
+  color: rgb(100, 45, 150);
+}
+.icon-dados-externos_colorido .path9:before {
+  content: "\e95b";
+  margin-left: -0.7880859375em;
+  color: rgb(100, 45, 150);
+}
+.icon-dados-externos_colorido .path10:before {
+  content: "\e95c";
+  margin-left: -0.7880859375em;
+  color: rgb(210, 50, 210);
+}
+.icon-dados-externos_colorido .path11:before {
+  content: "\e95d";
+  margin-left: -0.7880859375em;
+  color: rgb(100, 45, 150);
+}
+.icon-dados-externos_colorido .path12:before {
+  content: "\e95e";
+  margin-left: -0.7880859375em;
+  color: rgb(100, 45, 150);
+}
+.icon-dados-externos_colorido .path13:before {
+  content: "\e95f";
+  margin-left: -0.7880859375em;
+  color: rgb(100, 45, 150);
+}
+.icon-dados-externos_colorido .path14:before {
+  content: "\e960";
+  margin-left: -0.7880859375em;
+  color: rgb(100, 45, 150);
+}
+.icon-dados-externos_colorido .path15:before {
+  content: "\e961";
+  margin-left: -0.7880859375em;
+  color: rgb(255, 120, 175);
+}
+.icon-dados-externos_colorido .path16:before {
+  content: "\e962";
+  margin-left: -0.7880859375em;
+  color: rgb(100, 45, 150);
+}
+.icon-dados-externos_colorido .path17:before {
+  content: "\e963";
+  margin-left: -0.7880859375em;
+  color: rgb(100, 45, 150);
+}
+.icon-dados-externos_colorido .path18:before {
+  content: "\e964";
+  margin-left: -0.7880859375em;
+  color: rgb(100, 45, 150);
+}
+.icon-dados-externos_colorido .path19:before {
+  content: "\e965";
+  margin-left: -0.7880859375em;
+  color: rgb(100, 45, 150);
+}
+.icon-c2 .path1:before {
+  content: "\e917";
+  color: rgb(1, 1, 1);
+}
+.icon-c2 .path2:before {
+  content: "\e918";
+  margin-left: -4.6923828125em;
+  color: rgb(1, 1, 1);
+}
+.icon-c2 .path3:before {
+  content: "\e919";
+  margin-left: -4.6923828125em;
+  color: rgb(1, 1, 1);
+}
+.icon-c2 .path4:before {
+  content: "\e91a";
+  margin-left: -4.6923828125em;
+  color: rgb(1, 1, 1);
+}
+.icon-c2 .path5:before {
+  content: "\e91b";
+  margin-left: -4.6923828125em;
+  color: rgb(1, 1, 1);
+}
+.icon-c2 .path6:before {
+  content: "\e91c";
+  margin-left: -4.6923828125em;
+  color: rgb(1, 1, 1);
+}
+.icon-c2 .path7:before {
+  content: "\e91d";
+  margin-left: -4.6923828125em;
+  color: rgb(1, 1, 1);
+}
+.icon-c2 .path8:before {
+  content: "\e91e";
+  margin-left: -4.6923828125em;
+  color: rgb(1, 1, 1);
+}
+.icon-c2 .path9:before {
+  content: "\e91f";
+  margin-left: -4.6923828125em;
+  color: rgb(1, 1, 1);
+}
+.icon-c2 .path10:before {
+  content: "\e920";
+  margin-left: -4.6923828125em;
+  color: rgb(1, 1, 1);
+}
+.icon-c2 .path11:before {
+  content: "\e921";
+  margin-left: -4.6923828125em;
+  color: rgb(1, 1, 1);
+}
+.icon-c2 .path12:before {
+  content: "\e922";
+  margin-left: -4.6923828125em;
+  color: rgb(1, 1, 1);
+}
+.icon-c2 .path13:before {
+  content: "\e923";
+  margin-left: -4.6923828125em;
+  color: rgb(1, 1, 1);
+}
+.icon-c2 .path14:before {
+  content: "\e924";
+  margin-left: -4.6923828125em;
+  color: rgb(1, 1, 1);
+}
+.icon-c2 .path15:before {
+  content: "\e925";
+  margin-left: -4.6923828125em;
+  color: rgb(1, 1, 1);
+}
+.icon-c2 .path16:before {
+  content: "\e926";
+  margin-left: -4.6923828125em;
+  color: rgb(82, 99, 112);
+}
+.icon-c2 .path17:before {
+  content: "\e927";
+  margin-left: -4.6923828125em;
+  color: rgb(82, 99, 112);
+}
+.icon-c2 .path18:before {
+  content: "\e928";
+  margin-left: -4.6923828125em;
+  color: rgb(82, 99, 112);
+}
+.icon-c2 .path19:before {
+  content: "\e929";
+  margin-left: -4.6923828125em;
+  color: rgb(82, 99, 112);
+}
+.icon-c2 .path20:before {
+  content: "\e92a";
+  margin-left: -4.6923828125em;
+  color: rgb(82, 99, 112);
+}
+.icon-softbank .path1:before {
+  content: "\e92b";
+  color: rgb(0, 0, 0);
+}
+.icon-softbank .path2:before {
+  content: "\e92c";
+  margin-left: -4.25em;
+  color: rgb(0, 0, 0);
+}
+.icon-softbank .path3:before {
+  content: "\e92d";
+  margin-left: -4.25em;
+  color: rgb(183, 187, 190);
+}
+.icon-softbank .path4:before {
+  content: "\e92e";
+  margin-left: -4.25em;
+  color: rgb(0, 0, 0);
+}
+.icon-padlock:before {
+  content: "\e916";
+  color: #ffa028;
+}
+.icon-check:before {
+  content: "\e915";
+  color: #c3dc3c;
+}
+.icon-logo-cortex .path1:before {
+  content: "\e900";
+  color: rgb(55, 50, 75);
+}
+.icon-logo-cortex .path2:before {
+  content: "\e90b";
+  margin-left: -5.7998046875em;
+  color: rgb(55, 50, 75);
+}
+.icon-logo-cortex .path3:before {
+  content: "\e90c";
+  margin-left: -5.7998046875em;
+  color: rgb(55, 50, 75);
+}
+.icon-logo-cortex .path4:before {
+  content: "\e90d";
+  margin-left: -5.7998046875em;
+  color: rgb(55, 50, 75);
+}
+.icon-logo-cortex .path5:before {
+  content: "\e90e";
+  margin-left: -5.7998046875em;
+  color: rgb(55, 50, 75);
+}
+.icon-logo-cortex .path6:before {
+  content: "\e90f";
+  margin-left: -5.7998046875em;
+  color: rgb(55, 50, 75);
+}
+.icon-logo-cortex .path7:before {
+  content: "\e910";
+  margin-left: -5.7998046875em;
+  color: rgb(40, 95, 195);
+}
+.icon-logo-cortex .path8:before {
+  content: "\e911";
+  margin-left: -5.7998046875em;
+  color: rgb(100, 45, 150);
+}
+.icon-logo-cortex .path9:before {
+  content: "\e912";
+  margin-left: -5.7998046875em;
+  color: rgb(30, 155, 80);
+}
+.icon-logo-cortex .path10:before {
+  content: "\e913";
+  margin-left: -5.7998046875em;
+  color: rgb(210, 30, 70);
+}
+.icon-linkedin .path1:before {
+  content: "\e902";
+  color: rgb(122, 117, 137);
+}
+.icon-linkedin .path2:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-linkedin .path3:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-youtube .path1:before {
+  content: "\e909";
+  color: rgb(122, 117, 137);
+}
+.icon-youtube .path2:before {
+  content: "\e90a";
+  margin-left: -0.9658203125em;
+  color: rgb(255, 255, 255);
+}
+.icon-facebook .path1:before {
+  content: "\e905";
+  color: rgb(122, 117, 137);
+}
+.icon-facebook .path2:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-instagram .path1:before {
+  content: "\e907";
+  color: rgb(255, 255, 255);
+}
+.icon-instagram .path2:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(122, 117, 137);
+}
+.icon-headset-support:before {
+  content: "\e901";
+  color: #7a7589;
+}

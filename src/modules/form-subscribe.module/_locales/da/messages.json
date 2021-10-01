@@ -1,0 +1,67 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "Tilføj til arbejdsgang",
+    "description" : null,
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "For at sende en opfølgningsmail, skal du sørge for, at indstillingen \"Indstil oprettede kontakter som marketingkontakter\" er slået til. Du kan administrere det under Indstillinger. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>Lær mere</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "Send en opfølgningsmail",
+    "description" : null,
+    "placeholders" : null
+  },
+  "font_field.label" : {
+    "message" : "Skrifttypefelt",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "Tak, fordi du indsendte formularen.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "Formular",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "Arbejdsgang",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Formular",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "Send formularnotifikation til angivne e-mailadresser i stedet for formularstandarderne",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "E-mailadresser",
+    "description" : null,
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "Salesforce-kampagne",
+    "description" : null,
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "E-mail",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Formulartitel",
+    "description" : null,
+    "placeholders" : null
+  }
+}

@@ -1,0 +1,9 @@
+[ {
+  "id" : "16d374f0-8105-94c1-7c64-d56f12e03ca7",
+  "name" : "menu",
+  "label" : "Menu",
+  "required" : false,
+  "locked" : true,
+  "type" : "menu",
+  "default" : 49567660607
+} ]

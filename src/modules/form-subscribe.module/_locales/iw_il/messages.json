@@ -1,0 +1,62 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "הוסף לזרימת עבודה",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "כדי לשלוח דוא\"ל מעקב, ודא שההגדרה 'הגדר אנשי קשר שנוצרו בתור אנשי קשר לשיווק' מופעלת. ניתן לנהל זאת באפשרויות. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>למידע נוסף</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "שלח דוא\"ל מעקב",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "תודה על שליחת הטופס.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "טופס",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "זרימת עבודה",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "טופס",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "שלח הודעות בטופס לכתובות הדוא\"ל שצוינו במקום אפשרויות ברירת המחדל של הטופס",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "כתובות דוא\"ל",
+    "description" : "",
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "קמפיין Salesforce",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "דוא\"ל",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "כותרת טופס",
+    "description" : "",
+    "placeholders" : null
+  }
+}

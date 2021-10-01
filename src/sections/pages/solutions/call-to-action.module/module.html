@@ -1,0 +1,23 @@
+<section class="section-cta cta-solutions">
+  <div class="section-cta__box">
+    <span class="cta-icon"></span>
+    <h2 class="section-cta__text">{{ module.text_field }}</h2>
+    {% set href = module.link_field.url.href %}
+      {% if module.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+      {% endif %}
+      {% set rel = [] %}
+      {% if module.link_field.no_follow %}
+        {% do rel.append("nofollow") %}
+      {% endif %}
+      {% if module.link_field.open_in_new_tab %}
+        {% do rel.append("noopener") %}
+      {% endif %}
+      <a href="{{ href }}" class="button button-cta--solutions"
+        {% if module.link_field.open_in_new_tab %}target="_blank"{% endif %}
+        {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+        >
+        Fale com a gente <span class="icon-input-seta"></span>
+      </a>
+  </div>
+</section>
