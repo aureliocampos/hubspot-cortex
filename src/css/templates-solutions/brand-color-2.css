@@ -58,7 +58,16 @@
 }
 
 /* controles do slide de depoimento */
-.icon-arrow-round-prev::before,
-.icon-arrow-round-next::before {
+.customer-testimonial__controls .icon-arrow {
+  border-color: var(--purple_spotlight);
+}
+.customer-testimonial__controls .icon-arrow:before {
   color: var(--purple_spotlight);
+}
+
+.customer-testimonial__controls .icon-arrow:hover{
+  background-color: var(--purple_spotlight);
+}
+.customer-testimonial__controls .icon-arrow:hover::before {
+  color: var(--purple_official);
 }

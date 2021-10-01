@@ -49,6 +49,7 @@
 
 /* Seção de depoimentos e Clientes */
 .customer-testimonial__content {
+  min-height: 360px;
   background-color: var(--blue_official);
 }
 .customer-testimonial__author {
@@ -57,8 +58,18 @@
 .clients__item {
   color: var(--blue_official);
 }
+
 /* controles do slide de depoimento */
-.icon-arrow-round-prev::before,
-.icon-arrow-round-next::before {
+.customer-testimonial__controls .icon-arrow {
+  border-color: var(--blue_spotlight);
+}
+.customer-testimonial__controls .icon-arrow:before {
   color: var(--blue_spotlight);
+}
+
+.customer-testimonial__controls .icon-arrow:hover{
+  background-color: var(--blue_spotlight);
+}
+.customer-testimonial__controls .icon-arrow:hover::before {
+  color: var(--blue_official);
 }

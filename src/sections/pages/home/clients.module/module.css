@@ -59,6 +59,9 @@
   color: var(--blue_official);
   background-color: var(--blue_lightest);
 }
+.float-logos__item.blue svg path {
+  fill: var(--blue_official);
+}
 .float-logos__item.purple {
   color: var(--purple_official);
   background-color: var(--purple_lightest);

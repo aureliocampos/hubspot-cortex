@@ -1,4 +1,29 @@
 {
+  "embed_field.default.source_type" : {
+    "message" : "oembed",
+    "description" : "",
+    "placeholders" : null
+  },
+  "embed_field.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "embed_field.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "embed_field.label" : {
+    "message" : "Incorporar",
+    "description" : "",
+    "placeholders" : null
+  },
+  "embed_field.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
   "image_field.default.alt" : {
     "message" : "",
     "description" : "",
@@ -20,6 +45,26 @@
     "placeholders" : null
   },
   "image_field.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "link_field.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "link_field.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "link_field.label" : {
+    "message" : "Link",
+    "description" : "",
+    "placeholders" : null
+  },
+  "link_field.placeholder" : {
     "message" : "",
     "description" : "",
     "placeholders" : null

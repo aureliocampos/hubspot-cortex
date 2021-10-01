@@ -6,15 +6,8 @@
 			<h1 class="main-solutions__title">{{ module.title }}</h1>
 		 </div>
 		{% if module.image_field.src %}
-			{% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
-			{% if module.image_field.size_type == 'auto' %}
-				{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
-			{% elif module.image_field.size_type == 'auto_custom_max' %}
-				{% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
-			{% endif %}
-			{% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
 				<figure class="main-solutions__figure">
-					<img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }} srcset="{{resize_image_url (module.image_field.src, module.image_field.width)}} 1x,
+					<img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" srcset="{{resize_image_url (module.image_field.src, module.image_field.width)}} 1x,
 					{{resize_image_url (module.image_field.src, module.image_field.width * 2)}} 2x, 
 					{{resize_image_url (module.image_field.src, module.image_field.width * 3)}} 3x ">
 				</figure>
@@ -23,8 +16,24 @@
 			<small class="main-solutions__tag">{{ module.solution }}</small>
 			<h1 class="main-solutions__title">{{ module.title }}</h1>
 			<div class="main-solutions__text">{{ module.texto }}</div>
-			<a href="https://pages.cortex-intelligence.com/agendar-conversa-com-especialistas-cortex?hsLang=pt-BR&__hstc=233546881.3732211f783a2ade2a956aa208f2e136.1625842847012.1629410244692.1629420760316.39&__hssc=233546881.16.1629420760316&__hsfp=981320134&_ga=2.174724322.1751256226.1629383613-504479821.1625842847" class="button button--main-solutions" target="_blank"
-			>Fale com a gente<span class="icon-input-seta"></span></a>
+      {% set href = module.link_field.url.href %}
+        {% if module.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+        {% endif %}
+        {% set rel = [] %}
+        {% if module.link_field.no_follow %}
+          {% do rel.append("nofollow") %}
+        {% endif %}
+        {% if module.link_field.open_in_new_tab %}
+          {% do rel.append("noopener") %}
+        {% endif %}
+        <a href="{{ href }}" class="button button--main-solutions"
+          {% if module.link_field.open_in_new_tab %}target="_blank"{% endif %}
+          {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+          >
+         Fale com a gente<span class="icon-input-seta"></span>
+        </a>
+      
 		</div>
 	</div>
 </section>

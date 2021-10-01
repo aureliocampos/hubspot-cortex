@@ -6,7 +6,7 @@ const swiperTestimonial = new Swiper('.swiper-testimonial', {
   spaceBetween: 30,
   centeredSlides: true,
   navigation: {
-    nextEl: '.icon-arrow-round-next',
-    prevEl: '.icon-arrow-round-prev',
+    nextEl: '.icon-arrow-next',
+    prevEl: '.icon-arrow-prev',
   },
 });

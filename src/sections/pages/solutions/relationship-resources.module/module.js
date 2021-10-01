@@ -24,3 +24,31 @@ const swiperResources = new Swiper('.swiper-rel-resources', {
   }
 });
 
+function handlesCardHeight(className) {
+  const titles = Array.from(document.querySelectorAll(className));
+  const heights = titles.map( title => title.offsetHeight )
+
+  const heightParam = heights.reduce((acc, height) => {
+    return Math.max(acc, height);
+  }, 0);
+  
+  if (heightParam < 84) {
+
+    const contents = Array.from(document.querySelectorAll('.rel-resources__card-description'))
+    return contents.forEach( content => content.style.height = '150px' )
+
+  } else if ( heightParam >= 85 && heightParam < 100 ) {
+
+    const contents = Array.from(document.querySelectorAll('.rel-resources__card-description'))
+    return contents.forEach( content => content.style.height = '180px' )
+
+  } else {
+    
+    const contents = Array.from(document.querySelectorAll('.rel-resources__card-description'))
+    return contents.forEach( content => content.style.height = '200px' )
+    
+  }
+}
+
+document.addEventListener('DOMContentLoaded', 
+  handlesCardHeight('.rel-resources__card-title'))

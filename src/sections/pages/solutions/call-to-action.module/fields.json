@@ -7,5 +7,24 @@
   "validation_regex" : "",
   "allow_new_line" : false,
   "show_emoji_picker" : false,
-  "type" : "text"
+  "type" : "text",
+  "default" : "Quer tornar a sua marca a líder do mercado?"
+}, {
+  "id" : "90f85cec-4dd8-dfe2-cd0a-22f024ae9ecb",
+  "name" : "link_field",
+  "label" : "Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : true,
+    "no_follow" : false
+  }
 } ]

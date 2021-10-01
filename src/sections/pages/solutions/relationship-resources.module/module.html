@@ -37,8 +37,12 @@
               </div>
             </section>
             <div class="rel-button--container">
-              <a href="{{ resource.absolute_url }}" class="button button--primary">Baixar Ebook</a>
-              <span class="rel-resources__card-weight">({{ item.tamanho_do_arquivo }})</span>
+              {% if item.tag_field == 'eBook' %}
+                {% set button_text = 'Baixar eBook' %}
+              {% elif item.tag_field == 'Caso de Sucesso' %}
+                {% set button_text = 'Baixar Case' %}
+              {% endif %}
+              <a href="{{ resource.absolute_url }}" class="button button--primary">{{ button_text }}</a>
             </div>
           </article>
     

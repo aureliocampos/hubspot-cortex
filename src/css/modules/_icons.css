@@ -25,11 +25,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow-round-prev:before {
-  content: "\e982";
+.icon-arrow-prev:before {
+  content: "\e914";
 }
-.icon-arrow-round-next:before {
-  content: "\e981";
+.icon-arrow-next:before {
+  content: "\e967";
+}
+.icon-clientes_amazon1:before {
+  content: "\e983";
 }
 .icon-clientes_carrefour:before {
   content: "\e96c";
@@ -93,21 +96,6 @@
 }
 .icon-clientes_btg-pactual:before {
   content: "\e980";
-}
-.icon-cpfl-energia:before {
-  content: "\e967";
-}
-.icon-ifood:before {
-  content: "\e968";
-}
-.icon-loreal:before {
-  content: "\e969";
-}
-.icon-bradesco-seguros:before {
-  content: "\e96a";
-}
-.icon-btg-pactual:before {
-  content: "\e96b";
 }
 .icon-input-seta:before {
   content: "\e966";
@@ -508,10 +496,6 @@
 .icon-check:before {
   content: "\e915";
   color: #c3dc3c;
-}
-.icon-arrow:before {
-  content: "\e914";
-  color: #f6f6fb;
 }
 .icon-logo-cortex .path1:before {
   content: "\e900";
