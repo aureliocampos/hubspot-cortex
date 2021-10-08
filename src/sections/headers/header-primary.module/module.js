@@ -8,8 +8,8 @@ function createSubtitle(item, text) {
     item.children[0].appendChild(subtitle); 
 }
 function handleTextInSubtitles() {
-  createSubtitle(liMenu[0], 'Gestão integrada da Comunicação: da estratégia do negócio à operação dos canais de RP e marketing')
-  createSubtitle(liMenu[1], 'Da geração de demanda ao forecast de vendas')
+  createSubtitle(liMenu[0], 'Seus resultados com muito mais impacto e visibilidade')
+  createSubtitle(liMenu[1], 'Sua performance com muito mais eficiência de ponta a ponta')
 }
 
 buttonMenuMobile.addEventListener('click', (event) => {

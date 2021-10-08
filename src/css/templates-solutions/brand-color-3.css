@@ -14,15 +14,14 @@
   color: var(--blue_light);
 }
 
-
 /* Título de conteúdo Modulo content */
-.content__item-title span:nth-of-type(1n) {
+.content__item-title span {
   color: var(--blue_spotlight);
 }
-.content__item-title span:nth-of-type(2n) {
+.content__item-title span.brand-color-light {
   color: var(--blue_light);
 }
-.content__item-title span:nth-of-type(3n) {
+.content__item-title span.brand-color-official {
   color: var(--blue_official);
 }
 
@@ -61,7 +60,7 @@
 
 /* controles do slide de depoimento */
 .customer-testimonial__controls .icon-arrow {
-  border-color: var(--blue_spotlight);
+  border: 1px solid var(--blue_spotlight);
 }
 .customer-testimonial__controls .icon-arrow:before {
   color: var(--blue_spotlight);

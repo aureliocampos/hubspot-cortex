@@ -19,7 +19,11 @@
   background-color: var(--darkest);
   border: 1px solid var(--darkest);
 }
-
+.button--primary-invert {
+  color: var(--white);
+  background-color: var(--darkest);
+  border: 1px solid var(--darkest);
+}
 .button--secondary {
   font-weight: 600;
   color: var(--white);

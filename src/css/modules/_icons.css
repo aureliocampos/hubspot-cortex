@@ -31,8 +31,8 @@
 .icon-arrow-next:before {
   content: "\e967";
 }
-.icon-clientes_amazon1:before {
-  content: "\e983";
+.icon-clientes_salesforce-1:before {
+  content: "\e969";
 }
 .icon-clientes_carrefour:before {
   content: "\e96c";
@@ -96,9 +96,6 @@
 }
 .icon-clientes_btg-pactual:before {
   content: "\e980";
-}
-.icon-input-seta:before {
-  content: "\e966";
 }
 .icon-dados-da-empresa_colorido .path1:before {
   content: "\e92f";
@@ -590,4 +587,7 @@
 .icon-headset-support:before {
   content: "\e901";
   color: #7a7589;
+}
+.icon-input-seta:before {
+  content: "\e966";
 }

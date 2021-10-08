@@ -2,6 +2,16 @@
   "global" : false,
   "host_template_types" : [ "PAGE" ],
   "module_id" : 55312780327,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../../../lib/swiper/swiper.min.css",
+    "name" : "swiper.min.css"
+  } ],
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../../../lib/swiper/swiper.min.js",
+    "name" : "swiper.min.js"
+  } ],
   "label" : "Depoimentos dos Clientes",
   "is_available_for_new_content" : true
 }

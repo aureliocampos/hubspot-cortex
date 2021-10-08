@@ -19,6 +19,9 @@
   letter-spacing: -0.055em;
   margin-top: 9px;
 }
+.main-home__cta {
+  margin-top: 2.25rem;
+}
 .main-home hr[data-disable="desktop"] {
   width: 296px;
   border: none;
@@ -165,6 +168,9 @@
 .main-home__card-video[data-disable="mobile"] {
   display: none;
 }
+.mockup-video {
+  display: none;
+}
 /*
   FIM ** DESABILITADO MOBILE **
 */
@@ -216,11 +222,23 @@
     width: 100%;
     height: auto;
   }
+  .mockup-video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 948.59px;
+    height: auto;
+    z-index: -1;
+  }
   .main-home__title {
     font-size: 3em;
   }
   .main-home__subtitle {
     font-size: 1.125em;
+    margin-top: 1.5rem;
+  }
+  .main-home__cta {
+    margin-top: 3rem;
   }
   hr[data-disable="desktop"] {
     display: none;
@@ -300,7 +318,6 @@
     height: 64px;
   }
   .main-home__card-item--title {
-    font-size: 1.125em;
     line-height: 120%;
     letter-spacing: -0.02em;
   }
