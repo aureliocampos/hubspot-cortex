@@ -1,12 +1,11 @@
 const allContentTitles = Array.from(document.querySelectorAll('.content__item-title'));
 
 let prepositions = ['a', 'e', 'o', 'da', 'das', 'de', 'do', 'dos', 
-'com', 'em', 'para', 'por', 'sem', 'sobre', '&'];
+'com', 'em', '&'];
 
 let keywords = [
   "busca",
   "canais",
-  "concorrentes",
   "controle",
   "crises",
   "identificação",
@@ -18,9 +17,16 @@ let keywords = [
   "performance",
   "previsibilidade",
   "propensão",
-  "reputação",
   "retorno",
-  "tendências",
+  "monitoramento",
+  "gestão",
+  "tempo",
+  "real",
+  "alinhados",
+  "estratégico",
+  "próprio",
+  "comparação",
+  "pagos"
 ]
 
 function cleanStringPart(item) {

@@ -1,0 +1,127 @@
+[ {
+  "id" : "0f70d0aa-b154-3521-97c8-24dfb3c75350",
+  "name" : "section__title",
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Nosso propósito é simplificar dados com inteligência, transformando o caminho de pessoas e negócios"
+}, {
+  "id" : "f5c2ab8f-5111-23fa-476f-7ee3704432ab",
+  "name" : "section__text",
+  "label" : "Texto da seção",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p><span>Somos um time de pessoas altamente motivadas e focadas em gerar soluções simples e escaláveis para problemas de negócio concretos. Nosso propósito é simplificar dados com inteligência, para transformar o caminho de pessoas e negócios.</span></p>\n<p><span>Por isso, criamos a plataforma líder de inteligência para crescimento na América Latina. Nossas soluções ajudam na tomada de decisões inteligentes e baseadas em dados, permitindo que executivos de áreas geradoras de demanda e receita otimizem seus resultados e impulsionem o crescimento das empresas.</span></p>"
+}, {
+  "id" : "f2245b9f-d227-d7de-e0eb-e5b4a9dc26cf",
+  "name" : "image_field",
+  "label" : "Imagem",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 10,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : [ {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent40.net/hubfs/9391197/Group%2050-1.png",
+    "alt" : "Group 50-1",
+    "loading" : "lazy",
+    "width" : 216,
+    "height" : 144,
+    "max_width" : 216,
+    "max_height" : 144
+  }, {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent40.net/hubfs/9391197/Group%2050-1.png",
+    "alt" : "Group 50-1",
+    "loading" : "lazy",
+    "width" : 216,
+    "height" : 144,
+    "max_width" : 216,
+    "max_height" : 144
+  }, {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent40.net/hubfs/9391197/Group%2050-1.png",
+    "alt" : "Group 50-1",
+    "loading" : "lazy",
+    "width" : 216,
+    "height" : 144,
+    "max_width" : 216,
+    "max_height" : 144
+  }, {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent40.net/hubfs/9391197/Group%2050-1.png",
+    "alt" : "Group 50-1",
+    "loading" : "lazy",
+    "width" : 216,
+    "height" : 144,
+    "max_width" : 216,
+    "max_height" : 144
+  }, {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent40.net/hubfs/9391197/Group%2050-1.png",
+    "alt" : "Group 50-1",
+    "loading" : "lazy",
+    "width" : 216,
+    "height" : 144,
+    "max_width" : 216,
+    "max_height" : 144
+  }, {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent40.net/hubfs/9391197/Group%2050-1.png",
+    "alt" : "Group 50-1",
+    "loading" : "lazy",
+    "width" : 216,
+    "height" : 144,
+    "max_width" : 216,
+    "max_height" : 144
+  }, {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent40.net/hubfs/9391197/Group%2050-1.png",
+    "alt" : "Group 50-1",
+    "loading" : "lazy",
+    "width" : 216,
+    "height" : 144,
+    "max_width" : 216,
+    "max_height" : 144
+  }, {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent40.net/hubfs/9391197/Group%2050-1.png",
+    "alt" : "Group 50-1",
+    "loading" : "lazy",
+    "width" : 216,
+    "height" : 144,
+    "max_width" : 216,
+    "max_height" : 144
+  }, {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent40.net/hubfs/9391197/Group%2050-1.png",
+    "alt" : "Group 50-1",
+    "loading" : "lazy",
+    "width" : 216,
+    "height" : 144,
+    "max_width" : 216,
+    "max_height" : 144
+  }, {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent40.net/hubfs/9391197/Group%2050-1.png",
+    "alt" : "Group 50-1",
+    "loading" : "lazy",
+    "width" : 216,
+    "height" : 144,
+    "max_width" : 216,
+    "max_height" : 144
+  } ]
+} ]

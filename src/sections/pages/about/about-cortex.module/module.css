@@ -1,0 +1,51 @@
+.section--about-cortex .section__container {
+  padding-bottom: 16px;
+}
+.section--about-cortex {
+  background-color: #F6F6FB;
+}
+.section--about-cortex .section__title {
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+.section--about-cortex .section__text {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  line-height: 148%;
+  margin-top: 2rem;
+}
+.section--about-cortex .section__figure img {
+    border-radius: 12px;
+  }
+@media (min-width: 1200px) {
+  .section--about-cortex .section__container {
+    display: grid;
+    grid-template-areas: "about-cortex-title about-cortex-title"	
+                          "about-cortex-text about-cortex-image"
+                          "about-cortex-text about-cortex-image"
+    ;
+    column-gap: 73px;
+    padding: 54px 0;
+    max-width: 1114px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .section--about-cortex .section__title {
+    grid-area: about-cortex-title;
+    font-size: 2rem;
+  }
+  .section--about-cortex .section__text {
+    grid-area: about-cortex-text;
+    font-size: 16px;
+    width: 633px;
+    margin: 0;
+  }
+  .section--about-cortex .section__figure {
+    grid-area: about-cortex-image;
+    margin-top: 1em;
+  }
+  .section--about-cortex .section__figure img {
+    width: 408px;
+    border-radius: 16px;
+  }
+}

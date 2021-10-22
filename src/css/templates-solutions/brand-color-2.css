@@ -58,16 +58,24 @@
 }
 
 /* controles do slide de depoimento */
-.customer-testimonial__controls .icon-arrow {
-  border: 1px solid var(--purple_spotlight);
-}
-.customer-testimonial__controls .icon-arrow:before {
-  color: var(--purple_spotlight);
+.arrow-next .arrow,
+.arrow-prev .arrow {
+  stroke: var(--purple_spotlight);
 }
 
-.customer-testimonial__controls .icon-arrow:hover{
-  background-color: var(--purple_spotlight);
+.arrow-next .circle-background,
+.arrow-next .circle-small,
+.arrow-prev .circle-background,
+.arrow-prev .circle-small {
+  stroke: var(--purple_light);
 }
-.customer-testimonial__controls .icon-arrow:hover::before {
-  color: var(--purple_official);
+.arrow-next .circle-background--animation,
+.arrow-prev .circle-background--animation  {
+  stroke: var(--purple_official);
+  stroke-dashoffset: -50px;
+}
+.arrow-next .circle-small--animation,
+.arrow-prev .circle-small--animation {
+  stroke: var(--purple_spotlight);
+  stroke-dashoffset: -50px;
 }

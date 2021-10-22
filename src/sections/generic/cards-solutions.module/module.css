@@ -5,6 +5,11 @@
   padding: 0 2em;
   margin-bottom: 2.25em;
 }
+.section__title {
+  font-family: 'Gotham';
+  text-align: center;
+  padding: 0 1.5em;
+}
 .main-home__title {
   font: 400 2em var(--primary-font);
   color: var(--darkest);
@@ -61,7 +66,13 @@
   margin-top: 1.5em;
 }
 .main-home__card {
-  padding: 0 2em;
+  max-width: 296px;
+  padding: 1.625em;
+  border: 3px solid #F6F6FB;
+  box-shadow: 20px 20px 50px rgba(204, 204, 230, 0.1);
+  border-radius: 16px;
+  transition: 400ms;
+  margin: 0 auto 26px auto;
 }
 
 /* Título */
@@ -79,10 +90,10 @@
   width: 80%;
   font: 400 1.125em var(--secondary-font);
   color: var(--darkest);
-  text-align: center;
+  text-align: left;
   line-height: 120%;
   letter-spacing: -0.02em;
-  margin: 2.25em auto 1em;
+  margin: 0.75rem 0 1.5rem;
 }
 .main-home__card-image {
   width: 100%;
@@ -99,7 +110,7 @@
   height: 40px;
 }
 .main-home__card-item--title {
-  font: 400 1em var(--secondary-font);
+  font: 400 0.875em var(--secondary-font);
   color: var(--darker);
   line-height: 122%;
   letter-spacing: -0.02em;
@@ -177,6 +188,9 @@
 
 
 @media ( min-width: 768px ) {
+  .section__title  {
+    display: none;
+  }
   .main-home__cards-control[data-disable="desktop"] {
     display: none;
   }

@@ -1,0 +1,38 @@
+[ {
+  "id" : "e5d72aa3-21c9-18f0-00df-01888ce7d9e3",
+  "name" : "section__title",
+  "label" : "Título da Seção",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Nossa História"
+}, {
+  "id" : "d43c4eb6-3d16-588d-5c3b-8c91b8bd25e9",
+  "name" : "image_field",
+  "label" : "Imagem",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://f.hubspotusercontent40.net/hubfs/9391197/Group%202129.png",
+    "alt" : "Group 2129",
+    "width" : 936,
+    "height" : 526,
+    "max_width" : 936,
+    "max_height" : 526
+  }
+}, {
+  "id" : "a9a3cd0c-e16e-4fb0-28ea-cd1681ae06e5",
+  "name" : "section__text",
+  "label" : "Texto da seção",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p><span>A equação que deu origem à Cortex reunia três variáveis. A primeira foi a paixão por construir tecnologia altamente inovadora de captura e análise de dados. A segunda, a inquietude de experientes profissionais de mercado, altamente analíticos e obcecados pela resolução de problemas reais de marketing e vendas. Por fim, uniu-se às primeiras, a ousadia de querer construir no país uma empresa de produto grande escalável na área de inteligência de dados.</span></p>\n<p><span>Em 2020 nos tornamos o maior investimento de IA e Big Data da América Latina e entramos em um seleto grupo de empresas sul americanas que estão fazendo história.</span></p>\n<p><span>Consolidamos ainda mais nossa liderança com a aquisição da ITB360, startup especializada na coleta de dados sobre empresas para inteligência de vendas com mais de 17 mil fontes de dados em 150 países. </span></p>"
+} ]

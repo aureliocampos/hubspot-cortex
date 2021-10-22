@@ -8,8 +8,8 @@ function createSubtitle(item, text) {
     item.children[0].appendChild(subtitle); 
 }
 function handleTextInSubtitles() {
-  createSubtitle(liMenu[0], 'Seus resultados com muito mais impacto e visibilidade')
-  createSubtitle(liMenu[1], 'Sua performance com muito mais eficiência de ponta a ponta')
+  createSubtitle(liMenu[0], 'Seus resultados com mais impacto no negócio e visibilidade')
+  createSubtitle(liMenu[1], 'A maneira mais rápida de encontrar oportunidades e aumentar as vendas')
 }
 
 buttonMenuMobile.addEventListener('click', (event) => {

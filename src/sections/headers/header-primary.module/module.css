@@ -1,13 +1,15 @@
-#hs_cos_wrapper_module_16293970708281 {
+#hs_cos_wrapper_module_16293970708281,
+#hs_cos_wrapper_module_16342471232934 {
   position: sticky;
   top: 0;
   background-color: var(--white);
   z-index: 99;
 }
-.header {
+
+/* .header {
   --box-shadow: rgb(55 50 75 / 10%) 2px 0px 25px;
   box-shadow: var(--box-shadow);
-}
+} */
 .header__responsive {
   display: flex;
   justify-content: space-between;

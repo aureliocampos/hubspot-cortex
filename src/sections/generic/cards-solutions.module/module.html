@@ -1,0 +1,52 @@
+<section class="section main-home">
+  <div class="main-home__container">
+    <h2 class="section__title">
+      Conheça nossas soluções para garantir uma jornada completa data driven
+    </h2>
+    <div class="swiper main-home__slides">
+      <div class="main-home__items main-home__cards swiper-wrapper">
+        {% for item in module.card_solutions %}
+          <article class="main-home__card swiper-slide" id="card-{{loop.index}}" data-target="video-{{loop.index}}" title="{{item.card_title}}">
+            {% set string_to_split = item.card_title %}
+            {% set title_parts = string_to_split|split(' ') %}
+            <h2 class="main-home__card-title">
+              {% for part in title_parts  %}
+                <span>{{ part }}</span>
+              {% endfor %}
+            </h2> 
+            <p class="main-home__card-text">{{ item.card_text }}</p>
+            <ul class="main-home__card-items">
+              {% for item2 in item.card_items %}
+                {% if item2.card_item_icon.src %}
+                  {% set loadingAttr = item2.card_item_icon.loading != 'disabled' ? 'loading="{{ item2.card_item_icon.loading }}"' : '' %}
+                  <li class="main-home__card-item">
+                    <img src="{{ item2.card_item_icon.src }}" alt="{{ item2.card_item_icon.alt }}" {{ loadingAttr }} class="main-home__card-item--image">
+                    <h3 class="main-home__card-item--title">{{ item2.card_item }}</h3>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+            {% set href = item.link_do_card.url.href %}
+              {% if item.link_do_card.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+              {% endif %}
+              {% set rel = [] %}
+              {% if item.link_do_card.no_follow %}
+                {% do rel.append("nofollow") %}
+              {% endif %}
+              {% if item.link_do_card.open_in_new_tab %}
+                {% do rel.append("noopener") %}
+              {% endif %}
+              <a href="{{ href }}" class="button button--main-home"
+              {% if item.link_do_card.open_in_new_tab %}target="_blank"{% endif %}
+              {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+              >
+                Conheça a Solução
+                <span class="icon-input-seta"></span>
+              </a>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,12 @@
+{
+  "global" : true,
+  "smart_type" : "NOT_SMART",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 57447728759,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../../css/main.css",
+    "name" : "main.css"
+  } ],
+  "is_available_for_new_content" : true
+}

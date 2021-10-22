@@ -1,0 +1,16 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "module_id" : 58164376941,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../../../lib/swiper/swiper.min.css",
+    "name" : "swiper.min.css"
+  } ],
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../../../lib/swiper/swiper.min.js",
+    "name" : "swiper.min.js"
+  } ],
+  "is_available_for_new_content" : true
+}
