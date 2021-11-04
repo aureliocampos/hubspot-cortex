@@ -1,4 +1,15 @@
 [ {
+  "id" : "004e9790-1b77-92f7-dffd-08df44ab1323",
+  "name" : "section_title",
+  "label" : "Título da seção",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Conheça nossas soluções para garantir uma jornada completa data driven"
+}, {
   "id" : "e1d8cb36-81bb-5c56-20ad-d258aba3aa06",
   "name" : "card_solutions",
   "label" : "Card da solução",
@@ -98,6 +109,17 @@
       "open_in_new_tab" : false,
       "no_follow" : false
     }
+  }, {
+    "id" : "6c0f7f0a-0c71-54a1-10e0-28a82f8f079b",
+    "name" : "texto_do_link",
+    "label" : "Texto do link",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Conheça a Solução"
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
@@ -119,6 +141,7 @@
       },
       "open_in_new_tab" : false,
       "no_follow" : false
-    }
+    },
+    "texto_do_link" : "Conheça a Solução"
   }
 } ]

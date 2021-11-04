@@ -25,7 +25,16 @@
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
         </div>
-        <a class="button button--primary-invert component-card--xl__button" href="https://cortex.gupy.io/?__hstc=233546881.3732211f783a2ade2a956aa208f2e136.1625842847012.1626203391758.1626282152260.6&__hssc=233546881.133.1626282152260&__hsfp=1302937794">Conheça nossas vagas </a>
+          {% set href = module.cta_trabalhe_conosco.link_field.url.href %}
+          {% if module.cta_trabalhe_conosco.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}" class="button button--primary-invert component-card--xl__button"
+            {% if module.cta_trabalhe_conosco.link_field.open_in_new_tab %}target="_blank"{% endif %}
+            {% if module.cta_trabalhe_conosco.link_field.rel %}rel="{{ module.cta_trabalhe_conosco.link_field.rel }}"{% endif %}
+            >
+            {{ module.cta_trabalhe_conosco.link_texto }}
+          </a>
       </div>
     </article>
   </div>

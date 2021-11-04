@@ -133,6 +133,71 @@
   margin: 1.5rem auto 0 auto;
 }
 
+/* Seção de Language Switcher */
+
+.header__language-switcher-label-option,
+.header__language-switcher-label-current {
+  display: flex;
+  align-items: center;
+  min-width: 131px;
+  width: max-content;
+  font: 400 1em var(--secondary-font);
+  color: var(--darkest);
+  line-height: 22px;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: transparent;
+}
+.header__language-switcher {
+  position: relative;
+}
+.header__language-switcher .header__language-switcher-label-current {
+  margin: 2em auto 0 auto;
+  background-color: var(--lightest);
+}
+.header__language-switcher .header__language-switcher-label-current .icon-arrow-next {
+  display: none;
+}
+.header__language-switcher .language-icon {
+  font-size: 1.1em;
+  margin-right: 10px;
+}
+
+.header__language-switcher-options {
+  position: absolute;
+  top: -140px;
+  left: 0;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 181px;
+  padding: 1em;
+  margin: 0 auto;
+  background: var(--white);
+  box-shadow: 20px 20px 50px rgb(204 204 230 / 10%), -10px 0px 30px rgb(204 204 229 / 10%);
+  border-radius: 8px;
+}
+.header__language-switcher-options.active {
+  display: flex;
+}
+.header__language-switcher-label-option.disabled {
+  color: var(--dark);
+}
+.header__language-switcher-label-option.disabled .icon-bandeira-estados-unidos span:before{
+  color: var(--light);
+}
+.header__language-switcher-label-option.disabled .icon-bandeira-brasil span.path1:before {
+  color: var(--light);
+}
+.header__language-switcher-label-option.disabled .icon-bandeira-brasil span.path2:before {
+  color: var(--lightest);
+}
+.header__language-switcher-label-option.disabled .icon-bandeira-brasil span.path3:before {
+  color: var(--dark);
+}
+
 /* Ajustes Especiais */
 .header .hs-menu-children-wrapper {
   max-height: 0;
@@ -228,9 +293,29 @@
   /* Seção de Suporte do Header */  
   .header__support {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+    flex-direction: row-reverse;
     width: 40%;
+  }
+  .header__language-switcher {
+    height: 74px;
+    display: inline-flex;
+    margin-right: 1em;
+  }
+  .header__language-switcher .header__language-switcher-label-current {
+    cursor: pointer;
+    margin: auto;
+  }
+  .header__language-switcher .header__language-switcher-label-current .icon-arrow-next{
+    display: block;
+    font-size: 0.6em;
+    transform: rotate(90deg);
+    margin-left: 10px;
+  }
+  .header__language-switcher:hover .header__language-switcher-options {
+    display: flex;
+    top: 74px;
   }
   .support--link {
     width: max-content;

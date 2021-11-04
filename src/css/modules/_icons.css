@@ -25,6 +25,66 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.icon-bandeira-brasil .path1:before {
+  content: "\e982";
+  color: rgb(30, 155, 80);
+}
+.icon-bandeira-brasil .path2:before {
+  content: "\e983";
+  margin-left: -0.9521484375em;
+  color: rgb(244, 192, 30);
+}
+.icon-bandeira-brasil .path3:before {
+  content: "\e984";
+  margin-left: -0.9521484375em;
+  color: rgb(40, 95, 195);
+}
+.icon-bandeira-estados-unidos .path1:before {
+  content: "\e985";
+  color: rgb(210, 30, 70);
+}
+.icon-bandeira-estados-unidos .path2:before {
+  content: "\e986";
+  margin-left: -0.9521484375em;
+  color: rgb(210, 30, 70);
+}
+.icon-bandeira-estados-unidos .path3:before {
+  content: "\e987";
+  margin-left: -0.9521484375em;
+  color: rgb(210, 30, 70);
+}
+.icon-bandeira-estados-unidos .path4:before {
+  content: "\e988";
+  margin-left: -0.9521484375em;
+  color: rgb(210, 30, 70);
+}
+.icon-bandeira-estados-unidos .path5:before {
+  content: "\e989";
+  margin-left: -0.9521484375em;
+  color: rgb(210, 30, 70);
+}
+.icon-bandeira-estados-unidos .path6:before {
+  content: "\e98a";
+  margin-left: -0.9521484375em;
+  color: rgb(40, 95, 195);
+}
+.icon-language-switcher:before {
+  content: "\e981";
+  color: #7a7589;
+}
+.icon-logo-clientes-pr-philip-morris-1:before {
+  content: "\e968";
+  color: #642d96;
+}
+.icon-logo-clientes-SI-jvalerio:before {
+  content: "\e96a";
+  color: #285fc3;
+}
+.icon-logo-clientes-SI-zendesk:before {
+  content: "\e96b";
+  color: #285fc3;
+}
 .icon-arrow-prev:before {
   content: "\e914";
 }

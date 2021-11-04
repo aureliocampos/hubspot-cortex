@@ -1,7 +1,7 @@
 <section class="section main-home">
   <div class="main-home__container">
     <h2 class="main-home__title--secondary">
-      Conheça nossas soluções para garantir uma jornada completa data driven
+      {{ module.section_title }}
     </h2>
     <div class="swiper main-home__slides">
       <div class="main-home__items main-home__cards swiper-wrapper">
@@ -41,7 +41,7 @@
               {% if item.link_do_card.open_in_new_tab %}target="_blank"{% endif %}
               {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
               >
-                Conheça a Solução
+                {{ item.texto_do_link }}
                 <span class="icon-input-seta"></span>
               </a>
           </article>
