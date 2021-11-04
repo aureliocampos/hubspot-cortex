@@ -188,7 +188,7 @@
   }
   .main-home__items {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
   .main-home__card {
     max-width: 540px;
@@ -223,11 +223,12 @@
     height: auto;
   }
   .mockup-video {
+    display: block;
     position: absolute;
     top: 0;
     right: 0;
     width: 948.59px;
-    height: auto;
+    height: 513.81px;
     z-index: -1;
   }
   .main-home__title {

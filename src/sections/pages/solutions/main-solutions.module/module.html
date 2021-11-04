@@ -30,8 +30,7 @@
         <a href="{{ href }}" class="button button--main-solutions"
           {% if module.link_field.open_in_new_tab %}target="_blank"{% endif %}
           {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
-          >
-         Fale com a gente<span class="icon-input-seta"></span>
+          >{{ module.texto_do_link }}<span class="icon-input-seta"></span>
         </a>
       
 		</div>

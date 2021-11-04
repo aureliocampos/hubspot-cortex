@@ -1,17 +1,21 @@
-
-  <section class="section section--about-cortex">
-    <div class="section__container">
-      <h2 class="section__title">{{ module.section__title }}</h2>
-      {% if module.image_field.src %}
-      {% set sizeAttrs = 'width="{{ module.image_field.src.width }}" height="{{ module.image_field.src.height }}"' %}
-      {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
-        <figure class="section__figure">
-          <img srcset="{{ resize_image_url( module.image_field.src, 312, 175, 312 ) }} 312w, {{ resize_image_url( module.image_field.src, 684, 300, 684 ) }} 684w" sizes="(max-width: 640px) 312px, (min-width: 1200px) 684px" src="{{ resize_image_url( module.image_field.src, 684, 300, 684 ) }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} />
-        </figure>
-    {% endif %} 
-      <div class="section__text">
-        {{ module.section__text }}
-      </div>
+<section class="section section--about-cortex">
+  <div class="section__container">
+    <h2 class="section__title">{{ module.title }}</h2>
+    {% if module.image_field.src %}
+	{% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+	{% if module.image_field.size_type == 'auto' %}
+		{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+	{% elif module.image_field.size_type == 'auto_custom_max' %}
+		{% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+	{% endif %}
+	 {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+      <figure class="section__figure">
+        <img srcset="{{ resize_image_url( module.image_field.src, 312, 175, 312 ) }} 312w, {{ resize_image_url( module.image_field.src, 684, 300, 684 ) }} 684w" sizes="(max-width: 640px) 312px, (min-width: 1200px) 684px" src="{{ resize_image_url( module.image_field.src, 684, 300, 684 ) }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} />
+      </figure>
+{% endif %}
+  {% endif %} 
+    <div class="section__text">
+      {{ module.text }}
     </div>
-    
-  </section>
+  </div>
+</section>

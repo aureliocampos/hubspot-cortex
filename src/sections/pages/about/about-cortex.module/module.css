@@ -2,22 +2,29 @@
   padding-bottom: 16px;
 }
 .section--about-cortex {
-  background-color: #F6F6FB;
+  background-color: var(--lightest);
+  padding: 2.5em 2em;
 }
 .section--about-cortex .section__title {
+  font: 400 1.5em var(--primary-font);
   font-size: 24px;
   margin-bottom: 2rem;
 }
 .section--about-cortex .section__text {
-  font-family: 'Open Sans';
-  font-size: 16px;
+  font: 400 1em var(--secondary-font);
   line-height: 148%;
   margin-top: 2rem;
+}
+.section--about-cortex .section__text > p {
+  margin: 1em 0;
 }
 .section--about-cortex .section__figure img {
     border-radius: 12px;
   }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
+  .section--about-cortex {
+    padding-top: 5em;
+  }
   .section--about-cortex .section__container {
     display: grid;
     grid-template-areas: "about-cortex-title about-cortex-title"	
@@ -25,7 +32,6 @@
                           "about-cortex-text about-cortex-image"
     ;
     column-gap: 73px;
-    padding: 54px 0;
     max-width: 1114px;
     margin: 0 auto;
     overflow: hidden;

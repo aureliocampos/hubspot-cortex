@@ -126,6 +126,17 @@
       }
     }
   }, {
+    "id" : "13094115-bf4e-203c-5e63-088db5ef9025",
+    "name" : "texto_do_link",
+    "label" : "Texto do Link",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Conheça a Solução"
+  }, {
     "id" : "97a1c976-8c58-b238-684f-90021bec340a",
     "name" : "link_do_card",
     "label" : "Link do card",
@@ -167,6 +178,7 @@
         "loading" : "lazy"
       }
     },
+    "texto_do_link" : "Conheça a Solução",
     "link_do_card" : {
       "url" : {
         "content_id" : null,
@@ -175,6 +187,57 @@
       },
       "open_in_new_tab" : false,
       "no_follow" : false
+    }
+  }
+}, {
+  "id" : "f2c7049b-ae12-e7a6-e734-d5b9503557ec",
+  "name" : "cta_main_home",
+  "label" : "CTA Main home",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "02349648-ac60-e21e-bc1f-31fb21ee3e52",
+    "name" : "text",
+    "label" : "text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Fale com a gente"
+  }, {
+    "id" : "771078dc-1382-36e4-1968-99090c43c32e",
+    "name" : "link",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://pages.cortex-intelligence.com/agendar-conversa-com-especialistas-cortex-3",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : true
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "text" : "Fale com a gente",
+    "link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://pages.cortex-intelligence.com/agendar-conversa-com-especialistas-cortex-3",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : true
     }
   }
 } ]

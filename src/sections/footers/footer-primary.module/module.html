@@ -1,16 +1,31 @@
 <footer id="footer" class="footer">
   <div class="footer__container">
     <div class="footer__section footer__form">
-      {% form "footer_subscribe_form" 
-        form_to_use='9fd05f68-e72f-45b9-8a07-c13614f7053f', 
-        title='Deseja receber e-mails com novos eventos e conteúdos exclusivos?' 
-      %}   
+      {% form
+        title="{{ module.title_form }}"
+        form_to_use="{{ module.form_field.form_id }}"
+        response_response_type="{{ module.form_field.response_type }}"
+        response_message="{{ module.form_field.message }}"
+        response_redirect_id="{{ module.form_field.redirect_id }}"
+        response_redirect_url="{{module.form_field.redirect_url}}"
+        gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}"
+      %}
     </div>
     <hr>
     <section class="footer__section footer-section__cta">
       <div class="footer-cortex__cta">
-       <h2 class="footer__title">Faça parte do nosso time</h2>
-        <a href="https://cortex.gupy.io/?__hstc=233546881.3732211f783a2ade2a956aa208f2e136.1625842847012.1629420760316.1629470236458.40&__hssc=233546881.24.1629470236458&__hsfp=2012181404" target="_blank" rel="noopener noreferrer" class="button button--primary">Conheça nossas vagas</a>
+       <h2 class="footer__title">{{ module.cta_gupy.work_title }}</h2>        
+        {% inline_text field="cta_gupy.work_title" value="" %}
+          {% set href = module.cta_gupy.work_link.url.href %}
+          {% if module.cta_gupy.work_link.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}" class="button button--primary"
+            {% if module.cta_gupy.work_link.open_in_new_tab %}target="_blank"{% endif %}
+            {% if module.cta_gupy.work_link.rel %}rel="{{ module.cta_gupy.work_link.rel }}"{% endif %}
+            >
+           {{ module.cta_gupy.work_link_text }}
+          </a>
       </div>
       <div class="footer__menu">
         {% menu id="{{ module.menu }}" %}

@@ -1,190 +1,170 @@
 {
-  "embed_field.default.source_type" : {
-    "message" : "oembed",
-    "description" : null,
-    "placeholders" : null
-  },
-  "embed_field.help_text" : {
+  "cta_header.default" : {
     "message" : "",
     "description" : null,
     "placeholders" : null
   },
-  "embed_field.inline_help_text" : {
+  "cta_header.help_text" : {
     "message" : "",
     "description" : null,
     "placeholders" : null
   },
-  "embed_field.label" : {
-    "message" : "Incorporar",
-    "description" : null,
-    "placeholders" : null
-  },
-  "embed_field.placeholder" : {
+  "cta_header.inline_help_text" : {
     "message" : "",
     "description" : null,
     "placeholders" : null
   },
-  "image_field.default.alt" : {
+  "cta_header.label" : {
+    "message" : "Grupo de campo",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_header.link_field.default" : {
     "message" : "",
     "description" : null,
     "placeholders" : null
   },
-  "image_field.help_text" : {
+  "cta_header.link_field.help_text" : {
     "message" : "",
     "description" : null,
     "placeholders" : null
   },
-  "image_field.inline_help_text" : {
+  "cta_header.link_field.inline_help_text" : {
     "message" : "",
     "description" : null,
     "placeholders" : null
   },
-  "image_field.label" : {
-    "message" : "Imagem",
-    "description" : null,
-    "placeholders" : null
-  },
-  "image_field.placeholder" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "link_field.help_text" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "link_field.inline_help_text" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "link_field.label" : {
+  "cta_header.link_field.label" : {
     "message" : "Link",
     "description" : null,
     "placeholders" : null
   },
-  "link_field.placeholder" : {
+  "cta_header.link_field.placeholder" : {
     "message" : "",
     "description" : null,
+    "placeholders" : null
+  },
+  "cta_header.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_header.text.default" : {
+    "message" : "Fale com a gente",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_header.text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_header.text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_header.text.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_header.text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_header.text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_field.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_field.default.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_field.default.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_field.default.url.href" : {
+    "message" : "https://pages.cortex-intelligence.com/agendar-conversa-com-especialistas-cortex-3",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_field.default.url.type" : {
+    "message" : "EXTERNAL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "menu_header.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "menu_header.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "menu_header.label" : {
+    "message" : "Menu Header",
+    "description" : "",
+    "placeholders" : null
+  },
+  "menu_header.placeholder" : {
+    "message" : "",
+    "description" : "",
     "placeholders" : null
   },
   "name" : {
-    "message" : "main-solutions",
-    "description" : null,
+    "message" : "header-primary",
+    "description" : "",
     "placeholders" : null
   },
-  "solution.default" : {
+  "url_da_logo.default" : {
     "message" : "",
     "description" : null,
     "placeholders" : null
   },
-  "solution.help_text" : {
+  "url_da_logo.default.content_id" : {
     "message" : "",
     "description" : null,
     "placeholders" : null
   },
-  "solution.inline_help_text" : {
+  "url_da_logo.default.href" : {
+    "message" : "https://cortex-intelligence-8917234.hs-sites.com/home",
+    "description" : null,
+    "placeholders" : null
+  },
+  "url_da_logo.default.type" : {
+    "message" : "EXTERNAL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "url_da_logo.help_text" : {
     "message" : "",
     "description" : null,
     "placeholders" : null
   },
-  "solution.label" : {
-    "message" : "Solução",
-    "description" : null,
-    "placeholders" : null
-  },
-  "solution.placeholder" : {
+  "url_da_logo.inline_help_text" : {
     "message" : "",
     "description" : null,
     "placeholders" : null
   },
-  "solution.validation_regex" : {
+  "url_da_logo.label" : {
     "message" : "",
     "description" : null,
     "placeholders" : null
   },
-  "texto.default" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "texto.help_text" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "texto.inline_help_text" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "texto.label" : {
-    "message" : "Rich text",
-    "description" : null,
-    "placeholders" : null
-  },
-  "texto.placeholder" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "texto_do_link.default" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "texto_do_link.help_text" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "texto_do_link.inline_help_text" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "texto_do_link.label" : {
-    "message" : "Texto",
-    "description" : null,
-    "placeholders" : null
-  },
-  "texto_do_link.placeholder" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "texto_do_link.validation_regex" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "title.default" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "title.help_text" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "title.inline_help_text" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "title.label" : {
-    "message" : "Título ",
-    "description" : null,
-    "placeholders" : null
-  },
-  "title.placeholder" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "title.validation_regex" : {
+  "url_da_logo.placeholder" : {
     "message" : "",
     "description" : null,
     "placeholders" : null

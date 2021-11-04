@@ -5,17 +5,20 @@
   padding: 0 2em;
   margin-bottom: 2.25em;
 }
-.section__title {
-  font-family: 'Gotham';
-  text-align: center;
-  padding: 0 1.5em;
-}
+
 .main-home__title {
   font: 400 2em var(--primary-font);
   color: var(--darkest);
   line-height: 108%;
   letter-spacing: -0.055em;
   margin: 0;
+}
+.main-home__title--secondary {
+  font: 400 1.3125em var(--primary-font);
+  color: var(--darkest);
+  line-height: 120%;
+  text-align: center;
+  margin: 0 1.5em;
 }
 .main-home__subtitle {
   font: 400 0.875em var(--secondary-font);
@@ -65,6 +68,9 @@
 .main-home__items {
   margin-top: 1.5em;
 }
+.main-home__items.main-home__cards.swiper-wrapper {
+  display: block;
+}
 .main-home__card {
   max-width: 296px;
   padding: 1.625em;
@@ -78,9 +84,10 @@
 /* Título */
 .main-home__card-title {
   font: 900 1.625em var(--primary-font);
-  line-height: 88%;
+  /* line-height: 88%; */
   letter-spacing: -0.04em;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .main-home__card-title span:first-of-type {
   display: block;
@@ -247,6 +254,9 @@
   .main-home__title {
     font-size: 3em;
   }
+  .main-home__title--secondary {
+    display: none;
+  }
   .main-home__subtitle {
     font-size: 1.125em;
     margin-top: 1.5rem;
@@ -258,7 +268,7 @@
     display: none;
   }
   .main-home__items {
-    margin: 3em 0;
+    margin: 0;
     gap: 2.25em;
   }
   .main-home__card {
@@ -322,6 +332,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.3em;
+  }
+  .main-home__items.main-home__cards.swiper-wrapper {
+    display: flex;
   }
   .main-home__card-item {
     flex-direction: column;

@@ -6,10 +6,10 @@
   z-index: 99;
 }
 
-/* .header {
+.header {
   --box-shadow: rgb(55 50 75 / 10%) 2px 0px 25px;
   box-shadow: var(--box-shadow);
-} */
+}
 .header__responsive {
   display: flex;
   justify-content: space-between;

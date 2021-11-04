@@ -21,22 +21,20 @@ buttonMenuMobile.addEventListener('click', (event) => {
 });
 menuItemsWithChildren.forEach( item => {
   item.addEventListener("click", (event) => {
-    if (event.pointerType === "touch") {
-      
-      const drivingElements = ['A', 'SVG'];
-      const elementClicked = event.target;
+    event.preventDefault()
+    const drivingElements = ['A', 'SVG'];
+    const elementClicked = event.target;
 
-      if (drivingElements.includes(elementClicked.tagName)) {
+    if (drivingElements.includes(elementClicked.tagName)) {
 
-        elementClicked.classList.toggle('active')
+      elementClicked.classList.toggle('active')
 
-        let parent = elementClicked.parentElement;
-        let content = elementClicked.nextElementSibling;
+      let parent = elementClicked.parentElement;
+      let content = elementClicked.nextElementSibling;
 
-        parent.classList.toggle('active');
-        content.classList.toggle('active');
+      parent.classList.toggle('active');
+      content.classList.toggle('active');
 
-      }
     }
   });
 });

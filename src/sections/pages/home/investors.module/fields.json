@@ -6,4 +6,26 @@
   "locked" : true,
   "type" : "richtext",
   "default" : "<p>Somos líder em <strong>inteligência artificial</strong> na <strong>América Latina</strong>.<br>Apoiada pelos maiores <strong>fundos de investimento</strong>.</p>"
+}, {
+  "id" : "b4bfb1b0-0d70-39cd-a465-59c2b0ca863d",
+  "name" : "image_field",
+  "label" : "Imagem",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : [ {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  } ]
 } ]

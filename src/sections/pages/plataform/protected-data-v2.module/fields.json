@@ -9,14 +9,12 @@
   "show_loading" : false,
   "type" : "image",
   "default" : {
-    "size_type" : "auto",
-    "src" : "https://pages.cortex-intelligence.com/hubfs/GDA_stacked_white%201.svg",
+    "src" : "https://pages.cortex-intelligence.com/hubfs/GDA_stacked_white%201.png",
     "alt" : "GDA_stacked_white 1",
-    "loading" : "lazy",
-    "width" : 78,
-    "height" : 60,
-    "max_width" : 78,
-    "max_height" : 60
+    "width" : 232,
+    "height" : 86,
+    "max_width" : 232,
+    "max_height" : 86
   }
 }, {
   "id" : "f46983f2-c12c-145b-2d44-ae86b27510f0",

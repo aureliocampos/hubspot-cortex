@@ -52,3 +52,9 @@ a {
 *, *:before, *:after {
   box-sizing: border-box;
 }
+
+*[role="button"]:active,
+*[role="button"]:focus,
+*[role="button"]:focus-visible{
+	outline: none;
+}

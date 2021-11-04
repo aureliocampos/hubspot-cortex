@@ -2,6 +2,11 @@
   "global" : false,
   "host_template_types" : [ "PAGE" ],
   "module_id" : 58159074820,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../../css/main.css",
+    "name" : "main.css"
+  } ],
   "label" : "Main Home",
   "is_available_for_new_content" : true
 }

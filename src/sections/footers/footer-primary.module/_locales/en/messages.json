@@ -1,190 +1,190 @@
 {
-  "embed_field.default.source_type" : {
-    "message" : "oembed",
-    "description" : null,
-    "placeholders" : null
-  },
-  "embed_field.help_text" : {
+  "cta_gupy.default" : {
     "message" : "",
     "description" : null,
     "placeholders" : null
   },
-  "embed_field.inline_help_text" : {
+  "cta_gupy.help_text" : {
     "message" : "",
     "description" : null,
     "placeholders" : null
   },
-  "embed_field.label" : {
-    "message" : "Incorporar",
-    "description" : null,
-    "placeholders" : null
-  },
-  "embed_field.placeholder" : {
+  "cta_gupy.inline_help_text" : {
     "message" : "",
     "description" : null,
     "placeholders" : null
   },
-  "image_field.default.alt" : {
+  "cta_gupy.label" : {
+    "message" : "Grupo de campo",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_gupy.placeholder" : {
     "message" : "",
     "description" : null,
     "placeholders" : null
   },
-  "image_field.help_text" : {
+  "cta_gupy.work_link.default" : {
     "message" : "",
     "description" : null,
     "placeholders" : null
   },
-  "image_field.inline_help_text" : {
+  "cta_gupy.work_link.help_text" : {
     "message" : "",
     "description" : null,
     "placeholders" : null
   },
-  "image_field.label" : {
-    "message" : "Imagem",
-    "description" : null,
-    "placeholders" : null
-  },
-  "image_field.placeholder" : {
+  "cta_gupy.work_link.inline_help_text" : {
     "message" : "",
     "description" : null,
     "placeholders" : null
   },
-  "link_field.help_text" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "link_field.inline_help_text" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "link_field.label" : {
+  "cta_gupy.work_link.label" : {
     "message" : "Link",
     "description" : null,
     "placeholders" : null
   },
-  "link_field.placeholder" : {
+  "cta_gupy.work_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_gupy.work_link_text.default" : {
+    "message" : "Conheça nossas vagas",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_gupy.work_link_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_gupy.work_link_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_gupy.work_link_text.label" : {
+    "message" : "Texto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_gupy.work_link_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_gupy.work_link_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_gupy.work_title.default" : {
+    "message" : "Faça parte do nosso time",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_gupy.work_title.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_gupy.work_title.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_gupy.work_title.label" : {
+    "message" : "Título",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_gupy.work_title.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_gupy.work_title.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form_field.default.message" : {
+    "message" : "Obrigado por enviar o formulário.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form_field.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form_field.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form_field.label" : {
+    "message" : "Formulário",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form_field.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "menu.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "menu.label" : {
+    "message" : "Menu",
+    "description" : null,
+    "placeholders" : null
+  },
+  "menu.placeholder" : {
     "message" : "",
     "description" : null,
     "placeholders" : null
   },
   "name" : {
-    "message" : "main-solutions",
+    "message" : "footer-primary",
     "description" : null,
     "placeholders" : null
   },
-  "solution.default" : {
+  "title_form.default" : {
     "message" : "",
     "description" : null,
     "placeholders" : null
   },
-  "solution.help_text" : {
+  "title_form.help_text" : {
     "message" : "",
     "description" : null,
     "placeholders" : null
   },
-  "solution.inline_help_text" : {
+  "title_form.inline_help_text" : {
     "message" : "",
     "description" : null,
     "placeholders" : null
   },
-  "solution.label" : {
-    "message" : "Solução",
-    "description" : null,
-    "placeholders" : null
-  },
-  "solution.placeholder" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "solution.validation_regex" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "texto.default" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "texto.help_text" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "texto.inline_help_text" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "texto.label" : {
-    "message" : "Rich text",
-    "description" : null,
-    "placeholders" : null
-  },
-  "texto.placeholder" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "texto_do_link.default" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "texto_do_link.help_text" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "texto_do_link.inline_help_text" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "texto_do_link.label" : {
+  "title_form.label" : {
     "message" : "Texto",
     "description" : null,
     "placeholders" : null
   },
-  "texto_do_link.placeholder" : {
+  "title_form.placeholder" : {
     "message" : "",
     "description" : null,
     "placeholders" : null
   },
-  "texto_do_link.validation_regex" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "title.default" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "title.help_text" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "title.inline_help_text" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "title.label" : {
-    "message" : "Título ",
-    "description" : null,
-    "placeholders" : null
-  },
-  "title.placeholder" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "title.validation_regex" : {
+  "title_form.validation_regex" : {
     "message" : "",
     "description" : null,
     "placeholders" : null

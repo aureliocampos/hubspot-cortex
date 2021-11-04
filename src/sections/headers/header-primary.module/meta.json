@@ -1,5 +1,6 @@
 {
   "global" : true,
+  "master_language" : "pt",
   "smart_type" : "NOT_SMART",
   "host_template_types" : [ "PAGE" ],
   "module_id" : 53253040260,

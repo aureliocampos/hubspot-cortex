@@ -55,6 +55,7 @@
     "locked" : false,
     "resizable" : true,
     "show_preview" : true,
+    "show_advanced_options" : false,
     "type" : "videoplayer"
   } ],
   "tab" : "CONTENT",

@@ -67,7 +67,7 @@
 }
 @media (min-width: 1200px) {
   .platafrom-cortex {
-    padding: 0;
+    padding: 3.25em 0;
   }
   .plataform-cortex__section {
     max-width: 1114px;

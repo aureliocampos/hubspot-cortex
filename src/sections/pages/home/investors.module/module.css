@@ -36,8 +36,8 @@
   margin-bottom: 0;
 }
 .investors__item .investors__image {
-  width: 100px;
-  height: auto;
+  width: auto;
+  height: 38px;
   object-fit: cover;
 }
 @media ( min-width: 768px ) {
@@ -54,10 +54,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.5em;
   }
   .investors__item {
-    margin: 0 auto;
+    margin: 0 1.375em;
   }
 
 }
@@ -71,19 +70,9 @@
     font-size: 26px;
   }
   .investors__items {
-    gap: 2.625em;
     margin: 4em auto 0 auto;
   }
   .investors__item>span {
     font-size: 2.125em;
-  }
-  .investors__item .investors__image {
-    width: auto;
-    height: auto;
-    object-fit: cover;
-  }
-  .investors__item .investors__image.riverwood {
-    width: 100%;
-    height: 35px;
   }
 }

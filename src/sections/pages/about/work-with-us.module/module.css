@@ -7,6 +7,7 @@
   overflow: hidden;
 }
 .component-card--xl__figure-image {
+  width: 100%;
   object-fit: cover;
   object-position: center -6em;
   border-radius: 20px 20px 20px 0;

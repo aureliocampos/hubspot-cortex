@@ -4,11 +4,20 @@
       <header class="main-home__header">
         <h1 class="main-home__title">{{ module.titulo }}</h1>
         <div class="main-home__subtitle">{{ module.subtitulo }}</div>
-        <a href="https://pages.cortex-intelligence.com/agendar-conversa-com-especialistas-cortex-3" target="_blank" rel="noopener noreferrer" class="button button--primary-invert main-home__cta">Fale com a gente</a>
+        {% set href = module.cta_main_home.link.url.href %}
+        {% if module.cta_main_home.link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}" class="button button--primary-invert main-home__cta"
+           {% if module.cta_main_home.link.open_in_new_tab %}target="_blank"{% endif %}
+           {% if module.cta_main_home.link.rel %}rel="{{ module.cta_main_home.link.rel }}"{% endif %}
+           >
+          {{ module.cta_main_home.text }}
+        </a>
       </header>
       <div class="main-home__videos-items">
         {% for item in module.card_solutions %}
-          <video id="video-{{loop.index}}" class="main-home__card-video" autoplay muted data-disable="mobile" poster="https://pages.cortex-intelligence.com/hubfs/website-cortex/paginas/home/laptop-mockup.png">
+          <video id="video-{{loop.index}}" class="main-home__card-video" autoplay muted data-disable="mobile">
             <source src="{{ item.url_video.href }}" type="video/mp4">
           </video>
         {% endfor %}
@@ -75,7 +84,7 @@
               {% if item.link_do_card.open_in_new_tab %}target="_blank"{% endif %}
               {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
               >
-                Conheça a Solução
+                {{ item.texto_do_link }}
                 <span class="icon-input-seta"></span>
               </a>
           </article>
@@ -84,3 +93,4 @@
     </div>
   </div>
 </section>
+

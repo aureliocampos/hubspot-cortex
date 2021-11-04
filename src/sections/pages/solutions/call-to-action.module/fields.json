@@ -10,6 +10,17 @@
   "type" : "text",
   "default" : "Quer tornar a sua marca a líder do mercado?"
 }, {
+  "id" : "c8bb8eda-9344-e817-9d82-e132a8102542",
+  "name" : "link_text",
+  "label" : "Link Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Fale com a gente "
+}, {
   "id" : "90f85cec-4dd8-dfe2-cd0a-22f024ae9ecb",
   "name" : "link_field",
   "label" : "Link",
