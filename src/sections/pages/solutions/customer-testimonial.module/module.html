@@ -31,8 +31,35 @@
 				{% endfor %}
 			</div>
 			<div class="customer-testimonial__controls">
-				<div class="icon-arrow-prev icon-arrow"></div>
-				<div class="icon-arrow-next icon-arrow"></div>
+				<div class="icon-arrow">
+					<svg class="arrow-prev" width="120" height="120" viewBox="0 0 47 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+  
+						<path class="arrow" d="M24 27.4575L18 22L24 16.5424" stroke="#D232D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											
+						<rect class="circle-background" x="1.26562" y="0.580444" width="43" height="43" rx="21.5" stroke="#ff78af" style="stroke-width: 3px;"/>
+							
+						<rect class="circle-background--animation circle-animation" x="1.26562" y="0.580444" width="43" height="43" rx="21.5" stroke="#222" style="stroke-dasharray: 140px;stroke-dashoffset: 0px; stroke-width: 4px;"></rect>
+						
+						<rect class="circle-small" x="1.26562" y="0.580444" width="43" height="43" rx="21.5" stroke="#ff78af"></rect>
+							
+						<rect class="circle-small--animation circle-animation" x="1.26562" y="0.580444" width="43" height="43" rx="21.5" stroke="purple" style="stroke-dasharray: 140px;stroke-dashoffset: 0px;"></rect>
+					</svg>
+				</div>
+				<div class="icon-arrow">
+					<svg class="arrow-next" width="120" height="120" viewBox="0 0 47 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+  
+						<path class="arrow" d="M20.7656 16.6229L26.7656 22.0805L20.7656 27.538" stroke="purple" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											
+						<rect class="circle-background" x="1.26562" y="0.580444" width="43" height="43" rx="21.5" stroke="#ff78af" style="stroke-width: 3px;"/>
+							
+						<rect class="circle-background--animation circle-animation" x="1.26562" y="0.580444" width="43" height="43" rx="21.5" stroke="#222" style="stroke-dasharray: 140px;stroke-dashoffset: 0px; stroke-width: 4px;"></rect>
+						
+						<rect class="circle-small" x="1.26562" y="0.580444" width="43" height="43" rx="21.5" stroke="#ff78af"></rect>
+							
+						<rect class="circle-small--animation circle-animation" x="1.26562" y="0.580444" width="43" height="43" rx="21.5" stroke="purple" style="stroke-dasharray: 140px;stroke-dashoffset: 0px;"></rect>
+					</svg>
+				</div>
+
 			</div>
 		</div>
 
@@ -51,7 +78,7 @@
 					<span class="icon-clientes_bradesco"></span>
 				</li>
 				<li class="clients__item">
-					<span class="icon-clientes_ifood"></span>
+					<span class="icon-logo-clientes-pr-philip-morris-1"></span>
 				</li>
 			</ul>
     {% elif module.lista_de_logos_dos_clientes == "inteligencia_de_mercado" %}
@@ -63,17 +90,20 @@
 					<span class="icon-clientes_bayer"></span>
 				</li>
 				<li class="clients__item">
-					<span class="icon-clientes_central-de-materiais"></span>
+					<span class="icon-clientes_salesforce-1"></span>
 				</li>
 				<li class="clients__item">
-					<span class="icon-clientes_microsoft"></span>
+					<span class="icon-logo-clientes-SI-jvalerio"></span>
 				</li>
 				<li class="clients__item">
-					<span class="icon-clientes_autodesk"></span>
+					<span class="icon-logo-clientes-SI-zendesk"></span>
 				</li>
 			</ul>
     {% elif module.lista_de_logos_dos_clientes == "inteligencia_de_vendas_b2b" %}
       <ul class="clients__items" data-brand-icons="inteligencia_de_vendas_b2b">
+				<li class="clients__item">
+					<span class="icon-clientes_salesforce-1"></span>
+				</li>
 				<li class="clients__item">
 					<span class="icon-clientes_adobe"></span>
 				</li>
@@ -81,13 +111,10 @@
 					<span class="icon-clientes_bayer"></span>
 				</li>
 				<li class="clients__item">
-					<span class="icon-clientes_central-de-materiais"></span>
+					<span class="icon-logo-clientes-SI-jvalerio"></span>
 				</li>
 				<li class="clients__item">
-					<span class="icon-clientes_microsoft"></span>
-				</li>
-				<li class="clients__item">
-					<span class="icon-clientes_autodesk"></span>
+					<span class="icon-logo-clientes-SI-zendesk"></span>
 				</li>
 			</ul>
     {% else %}

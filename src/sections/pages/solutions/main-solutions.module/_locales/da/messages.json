@@ -129,6 +129,36 @@
     "description" : null,
     "placeholders" : null
   },
+  "texto_do_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texto_do_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texto_do_link.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texto_do_link.label" : {
+    "message" : "Texto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texto_do_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texto_do_link.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
   "title.default" : {
     "message" : "",
     "description" : null,

@@ -27,17 +27,7 @@ if (window.matchMedia("(min-width: 760px)").matches) {
     const video = document.querySelector(`#${current.dataset.target}`)
     video.classList.add('active')
     video.load();
-
-    current.addEventListener('mouseenter', () => {
-      video.pause();
-    })
-  
-    current.addEventListener('mouseleave', () => {
-      video.play();
-    })
-  
     video.addEventListener('ended', whichCardisActive)
-  
   }
     
   function whichCardisActive() {

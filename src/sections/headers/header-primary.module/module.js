@@ -8,8 +8,41 @@ function createSubtitle(item, text) {
     item.children[0].appendChild(subtitle); 
 }
 function handleTextInSubtitles() {
-  createSubtitle(liMenu[0], 'Gestão integrada da Comunicação: da estratégia do negócio à operação dos canais de RP e marketing')
-  createSubtitle(liMenu[1], 'Da geração de demanda ao forecast de vendas')
+  if (document.firstElementChild.lang === 'pt-br') {
+    createSubtitle(liMenu[0], 'Seus resultados com mais impacto no negócio e visibilidade')
+    createSubtitle(liMenu[1], 'A maneira mais rápida de encontrar oportunidades e aumentar as vendas')
+    return
+  }
+  if (document.firstElementChild.lang === 'en') {
+    createSubtitle(liMenu[0], 'Your results with more business impact and visibility')
+    createSubtitle(liMenu[1], 'The fastest way to find opportunities and increase sales')
+    return
+  }
+}
+function languageToggle() {
+  const isPortugues = document.firstElementChild.lang === 'pt-br'
+  const isEnglish = document.firstElementChild.lang === 'en'
+  const buttonLangCurrent = document.querySelector('button[data-lang="lang-current"]')
+  const buttonLangPortugues = document.querySelector('a[data-lang="lang-pt"]')
+  const buttonLangEnglish = document.querySelector('a[data-lang="lang-en"]')
+  let langCurrentText;
+
+  if (isPortugues) {
+    langCurrentText = "Português"
+    buttonLangCurrent.lastElementChild.insertAdjacentText('beforebegin', langCurrentText)
+    buttonLangPortugues.classList.toggle('disabled') 
+  }
+  if (isEnglish) {
+    langCurrentText = "English"
+    buttonLangCurrent.lastElementChild.insertAdjacentText('beforebegin', langCurrentText)
+    buttonLangEnglish.classList.toggle('disabled') 
+  }
+
+  buttonLangCurrent.addEventListener('click', () => {
+    const langOptions = document.querySelector('.header__language-switcher-options');
+
+    langOptions.classList.toggle('active')
+  })
 }
 
 buttonMenuMobile.addEventListener('click', (event) => {
@@ -21,22 +54,20 @@ buttonMenuMobile.addEventListener('click', (event) => {
 });
 menuItemsWithChildren.forEach( item => {
   item.addEventListener("click", (event) => {
-    if (event.pointerType === "touch") {
-      
-      const drivingElements = ['A', 'SVG'];
-      const elementClicked = event.target;
+    event.preventDefault()
+    const drivingElements = ['A', 'SVG'];
+    const elementClicked = event.target;
 
-      if (drivingElements.includes(elementClicked.tagName)) {
+    if (drivingElements.includes(elementClicked.tagName)) {
 
-        elementClicked.classList.toggle('active')
+      elementClicked.classList.toggle('active')
 
-        let parent = elementClicked.parentElement;
-        let content = elementClicked.nextElementSibling;
+      let parent = elementClicked.parentElement;
+      let content = elementClicked.nextElementSibling;
 
-        parent.classList.toggle('active');
-        content.classList.toggle('active');
+      parent.classList.toggle('active');
+      content.classList.toggle('active');
 
-      }
     }
   });
 });
@@ -44,4 +75,7 @@ menuItemsWithChildren.forEach( item => {
 document.addEventListener('DOMContentLoaded', () => {
   handleTextInSubtitles();
 
+  languageToggle()
 });
+
+

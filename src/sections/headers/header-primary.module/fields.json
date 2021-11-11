@@ -6,4 +6,68 @@
   "locked" : true,
   "type" : "menu",
   "default" : 49567660607
+}, {
+  "id" : "2afdaae1-3151-8883-3236-fe8d21358e87",
+  "name" : "url_da_logo",
+  "label" : "URL da Logo",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL" ],
+  "type" : "url",
+  "default" : {
+    "type" : "EXTERNAL",
+    "href" : "https://cortex-intelligence-8917234.hs-sites.com/home",
+    "content_id" : null
+  }
+}, {
+  "id" : "82d57038-4b6f-82db-4590-7dd24850b6c2",
+  "name" : "cta_header",
+  "label" : "CTA Header",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "d0a00e10-adf1-d9e7-63f9-317bbd9bf867",
+    "name" : "link_field",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://pages.cortex-intelligence.com/agendar-conversa-com-especialistas-cortex-3",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : true
+    }
+  }, {
+    "id" : "576fab53-bd2c-cabe-d092-7094e5be0bfa",
+    "name" : "text",
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Fale com a gente"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "link_field" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://pages.cortex-intelligence.com/agendar-conversa-com-especialistas-cortex-3",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : true
+    },
+    "text" : "Fale com a gente"
+  }
 } ]

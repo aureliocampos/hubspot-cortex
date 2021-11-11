@@ -88,10 +88,9 @@
     height: auto;
   }
   .main-background__video video {
-    width: 150%;
+    width: 100%;
     height: 100%;
   }
-
 
   /* Intro Plataform */
   .intro-plataform {

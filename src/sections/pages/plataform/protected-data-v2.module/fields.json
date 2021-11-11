@@ -1,0 +1,27 @@
+[ {
+  "id" : "52fbe335-4cf9-8de4-a9d7-fd75476e0b5b",
+  "name" : "image_field",
+  "label" : "Imagem",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://pages.cortex-intelligence.com/hubfs/GDA_stacked_white%201.png",
+    "alt" : "GDA_stacked_white 1",
+    "width" : 232,
+    "height" : 86,
+    "max_width" : 232,
+    "max_height" : 86
+  }
+}, {
+  "id" : "f46983f2-c12c-145b-2d44-ae86b27510f0",
+  "name" : "texto",
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Somos a única empresa brasileira no Global Data Alliance, coalizão de seletas empresas globais, comprometidas com altos padrões uso de dados</p>"
+} ]

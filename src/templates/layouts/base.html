@@ -4,8 +4,14 @@
 <!doctype html>
 <html lang="{{ html_lang }}" {{ html_lang_dir }}>
   <head>
+
     <meta charset="utf-8">
     {% if page_meta.html_title %}<title>{{ page_meta.html_title }}</title>{% endif %}
+
+    <!-- Dados estruturados -->
+    {% include "../data-structure/data-localBusiness.html" %}
+    <!-- Fim Dados estruturados -->
+    
     {% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
     <meta name="description" content="{{ page_meta.meta_description }}">
     {{ standard_header_includes }}

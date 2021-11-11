@@ -60,4 +60,15 @@
     "open_in_new_tab" : false,
     "no_follow" : false
   }
+}, {
+  "id" : "52f4c13d-cf70-3fc7-d7c2-79950b874428",
+  "name" : "texto_do_link",
+  "label" : "Texto do Link",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Fale com a gente"
 } ]

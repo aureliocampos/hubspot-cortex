@@ -1,0 +1,102 @@
+[ {
+  "id" : "9546c04d-5f8d-0d74-1aa4-7293c71d16b4",
+  "name" : "image_field",
+  "label" : "Imagem",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://pages.cortex-intelligence.com/hubfs/be_cortex-cta-vagas.webp",
+    "alt" : "be_cortex-cta-vagas",
+    "loading" : "lazy",
+    "width" : 1855,
+    "height" : 3182,
+    "max_width" : 1855,
+    "max_height" : 3182
+  }
+}, {
+  "id" : "bb9b7e36-6938-005d-7a50-5f257497de25",
+  "name" : "title",
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "#BeCortex"
+}, {
+  "id" : "a14c1d46-a045-8ba3-7c9b-bbb6272a9f27",
+  "name" : "subtitle",
+  "label" : "Sutitulo",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Vem para o nosso time!"
+}, {
+  "id" : "93904976-831f-58de-29fa-edc4098f3797",
+  "name" : "text",
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Ser cortexiane é estar motivado e focado em gerar as melhores experiências aos nossos clientes. Trabalhamos duro, assumimos responsabilidades e riscos, mas também nos divertimos durante o processo.</p>\n<p>Nossa cultura estimula a autonomia e a colaboração. Valorizamos a troca de conhecimentos, aprendemos juntos, respiramos inovação e gostamos de celebrar nossas conquistas.</p>\n<p>Aqui você vai encontrar um ambiente de trabalho descontraído e acolhedor, onde você pode se manifestar e ser quem você é! Buscamos pessoas que, assim como nós, acreditam que o mundo evolui rápido e que inovar é sempre possível.</p>"
+}, {
+  "id" : "6247fff6-37b7-6d8b-5d94-1269cd2f1752",
+  "name" : "cta_trabalhe_conosco",
+  "label" : "CTA Trabalhe Conosco",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "0609c09c-087c-0b9d-fdd2-8f2417a1e32d",
+    "name" : "link_texto",
+    "label" : "Link Texto",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Conheça nossas vagas"
+  }, {
+    "id" : "b5b91350-39c4-143e-966e-5a71e3dbcc3b",
+    "name" : "link_field",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://cortex.gupy.io/?__hstc=233546881.3732211f783a2ade2a956aa208f2e136.1625842847012.1626203391758.1626282152260.6&__hssc=233546881.133.1626282152260&__hsfp=1302937794",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "link_texto" : "Conheça nossas vagas",
+    "link_field" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://cortex.gupy.io/?__hstc=233546881.3732211f783a2ade2a956aa208f2e136.1625842847012.1626203391758.1626282152260.6&__hssc=233546881.133.1626282152260&__hsfp=1302937794",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    }
+  }
+} ]

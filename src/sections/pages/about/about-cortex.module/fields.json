@@ -1,0 +1,40 @@
+[ {
+  "id" : "09b34ae9-2da0-28e2-f955-f31e7e988abd",
+  "name" : "title",
+  "label" : "título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Nossa História"
+}, {
+  "id" : "d59162d8-9f06-60b8-52eb-9669d4a8eaf2",
+  "name" : "text",
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>A Cortex nasceu da singular combinação de três elementos que estão no centro do nosso propósito: a paixão por tecnologia de dados, a veia consultiva para resolução de problemas complexos, e o desejo de transformar positivamente a vida dos profissionais e dos negócios.</p>\n<p>Demos os primeiros passos na incubadora da universidade. É de lá que vem o nosso DNA de inovação. Nesta época, a inteligência de dados ainda era quase desconhecida, e o segredo do nosso sucesso foi criar um time de excelência em consultoria. Dessa forma, conquistamos os primeiros grandes clientes.</p>\n<p>Alguns anos depois, percebemos a transformação digital dando seus primeiros sinais e logo mergulhamos de cabeça no revolucionário modelo de negócios SaaS. Construímos, assim, um produto tecnológico disruptivo, que tem apoiado o crescimento das maiores empresas do país.</p>\n<p>Em 2020, recebemos o maior investimento de I.A. e Big Data da América Latina. E no capítulo mais recente, temos consolidado a nossa liderança através das aquisições. Com elas, o portfólio de soluções Cortex aumenta e nossa plataforma segue em constante inovação.</p>"
+}, {
+  "id" : "9cc38535-faac-2e15-b0af-776001d15054",
+  "name" : "image_field",
+  "label" : "Imagem",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://pages.cortex-intelligence.com/hs-fs/hubfs/nossa-historia.jpg?width=2531&quality=high",
+    "alt" : "nossa-historia",
+    "loading" : "lazy",
+    "width" : 2532,
+    "height" : 1688,
+    "max_width" : 2532,
+    "max_height" : 1688
+  }
+} ]

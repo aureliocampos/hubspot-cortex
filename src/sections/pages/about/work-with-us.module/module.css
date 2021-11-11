@@ -1,0 +1,137 @@
+.section--work-cortex {
+  padding: 2.5em 2em;
+}
+
+.component-card--xl__figure {
+  height: 312px;
+  overflow: hidden;
+}
+.component-card--xl__figure-image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center -6em;
+  border-radius: 20px 20px 20px 0;
+}
+.component-card--xl__description {
+  padding: 1.5em;
+  background-color: var(--white);
+  box-shadow: 0px 20px 50px rgba(204, 204, 230, 0.27);
+border-radius: 20px;
+}
+.component-card--xl__title {
+  font: 400 1.5em var(--primary-font);
+  color: var(--darkest);
+  line-height: 120%;
+}
+.component-card--xl__subtitle {
+  font: 400 1.125em var(--secondary-font);
+  color: var(--darkest);
+  line-height: 148%;
+  margin-top: 0.25em;
+}
+.component-card--xl__text {
+  font: 400 1em var(--secondary-font);
+  color: var(--darkest);
+  line-height: 148%;
+  margin-top: 1em;
+}
+.component-card--xl__button {
+  margin: 1.5em auto;
+}
+
+/* Estilos personalizados para o Swiper */
+.component-card--xl .swiper-pagination {
+  position: initial;
+}
+.component-card--xl .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background: var(--lighter);
+}
+.component-card--xl .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--darkest);
+}
+
+@media (min-width: 768px) {
+  .component-card--xl {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .component-card--xl__figure-image {
+    object-position: center -20em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .component-card--xl {
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    height: 520px;
+    margin: 0 auto;
+  }
+  .component-card--xl__figure {
+    width: 30%;
+    height: 100%;
+  }
+  .component-card--xl__figure-image {
+    height: 100%;
+    object-position: center;
+    border-radius: 20px 0 0 20px;
+  }
+  .component-card--xl__description {
+    width: 70%;
+    height: 100%;
+    padding: 2.5em;
+    border-radius: 0 20px 20px 0;
+  }
+  .component-card--xl__button {
+    margin: 1.5em 0;
+  }
+
+  /* Estilos personalizados para Swiper */
+  .component-card--xl .swiper-wrapper {
+    flex-direction: column;
+  }
+  .component-card--xl .swiper-wrapper > .swiper-slide {
+    width: 100% !important;
+    margin: 0 0 1em 0;
+  }
+}
+
+@media (min-width: 1200px) { 
+  .section--work-cortex {
+    position: relative;
+    padding: 4em 0;
+  }
+  .section--work-cortex:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50%;
+    background: var(--lightest);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  .component-card--xl {
+    max-width: 1114px;
+    height: 590px;
+  }
+  .component-card--xl__title {
+    font-size: 2em;
+  }
+  .component-card--xl__subtitle {
+    font-size: 1.5em;
+  }
+  .component-card--xl__text {
+    margin-top: 3em;
+  }
+  .component-card--xl__button {
+    margin: 2.5em auto 0 0;
+  }
+  /* Estilos personalizados para Swiper */
+  .component-card--xl .swiper-wrapper > .swiper-slide {
+    margin: 1em 0;
+  }
+}

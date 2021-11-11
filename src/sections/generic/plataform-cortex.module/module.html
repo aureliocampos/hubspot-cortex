@@ -1,0 +1,25 @@
+<section class="section platafrom-cortex">
+  <div class="plataform-cortex__section">
+    <div class="plataform-cortex__content">
+      <h2 class="section__title"><strong>Plataforma</strong> Cortex</h2>
+      <div class="section__text">
+        {{ module.section_text }}
+      </div>
+      <a href="https://cortex-intelligence-8917234.hs-sites.com/plataforma" class="button button--primary" data-media="desktop">Conheça a plataforma</a> 
+    </div>
+    <figure class="plataform-cortex__figure">
+      {% if module.image_field.src %}
+      {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+      {% if module.image_field.size_type == 'auto' %}
+      {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+      {% elif module.image_field.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+      <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+    </figure>
+
+    <a href="https://pages.cortex-intelligence.com/agendar-conversa-com-especialistas-cortex-3" target="_blank" rel="noopener noreferrer" class="button button--primary" data-media="mobile">Conheça a plataforma</a> 
+  </div>
+</section>

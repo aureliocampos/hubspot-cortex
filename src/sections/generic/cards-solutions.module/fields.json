@@ -1,0 +1,147 @@
+[ {
+  "id" : "004e9790-1b77-92f7-dffd-08df44ab1323",
+  "name" : "section_title",
+  "label" : "Título da seção",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Conheça nossas soluções para garantir uma jornada completa data driven"
+}, {
+  "id" : "e1d8cb36-81bb-5c56-20ad-d258aba3aa06",
+  "name" : "card_solutions",
+  "label" : "Card da solução",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "2c556a99-c5bf-c7c9-799f-72d782e2d67b",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "2c556a99-c5bf-c7c9-799f-72d782e2d67b",
+    "name" : "card_title",
+    "label" : "Título do card",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "f8613d4b-3d1f-ec05-9f9e-08cd57e40c0e",
+    "name" : "card_text",
+    "label" : "Texto do card",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "c4ee3ffd-20d0-0060-fd6d-4a45473e43a9",
+    "name" : "card_items",
+    "label" : "Card Items",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "1880aec7-c703-43bb-ab54-e5438b3b1354",
+      "name" : "card_item_icon",
+      "label" : "Ícone",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    }, {
+      "id" : "c55007e6-0a28-c533-2521-b02c48e39c3e",
+      "name" : "card_item",
+      "label" : "Item do card",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "card_item_icon" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    }
+  }, {
+    "id" : "97a1c976-8c58-b238-684f-90021bec340a",
+    "name" : "link_do_card",
+    "label" : "Link do card",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "CONTENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "6c0f7f0a-0c71-54a1-10e0-28a82f8f079b",
+    "name" : "texto_do_link",
+    "label" : "Texto do link",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Conheça a Solução"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "card_items" : {
+      "card_item_icon" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    },
+    "link_do_card" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "texto_do_link" : "Conheça a Solução"
+  }
+} ]

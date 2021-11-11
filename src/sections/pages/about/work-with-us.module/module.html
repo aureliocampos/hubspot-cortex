@@ -1,0 +1,41 @@
+<section class="section section--work-cortex">
+  <div class="section__container">
+    <article class="component-card--xl">
+      {% if module.image_field.src %}
+      {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+      {% if module.image_field.size_type == 'auto' %}
+      {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+      {% elif module.image_field.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+        <figure class="component-card--xl__figure">
+          <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" class="component-card--xl__figure-image" {{ loadingAttr }}>
+        </figure>
+      {% endif %}
+
+      <div class="component-card--xl__description">
+        <h2 class="component-card--xl__title">{{ module.title }}</h2>
+        <p class="component-card--xl__subtitle">{{ module.subtitle }}</p>   
+        <div class="component-card--xl__text swiper text-transform-swiper">
+           <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            {{ module.text }}
+          </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+          {% set href = module.cta_trabalhe_conosco.link_field.url.href %}
+          {% if module.cta_trabalhe_conosco.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}" class="button button--primary-invert component-card--xl__button"
+            {% if module.cta_trabalhe_conosco.link_field.open_in_new_tab %}target="_blank"{% endif %}
+            {% if module.cta_trabalhe_conosco.link_field.rel %}rel="{{ module.cta_trabalhe_conosco.link_field.rel }}"{% endif %}
+            >
+            {{ module.cta_trabalhe_conosco.link_texto }}
+          </a>
+      </div>
+    </article>
+  </div>
+</section>

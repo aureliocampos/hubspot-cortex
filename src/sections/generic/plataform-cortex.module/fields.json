@@ -1,0 +1,29 @@
+[ {
+  "id" : "5b1a792b-fde6-c4cc-fa75-d4fa04829e8a",
+  "name" : "section_text",
+  "label" : "Texto ",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "default" : "<p>A plataforma Cortex pode ser configurada, de forma flexível e amigável, para solucionar diferentes desafios de inteligência nas áreas de RP, Marketing e Vendas</p>"
+}, {
+  "id" : "2e307c8c-a40a-eaae-bbde-00b8df108a6d",
+  "name" : "image_field",
+  "label" : "Imagem",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://pages.cortex-intelligence.com/hubfs/image-plataforma.svg",
+    "alt" : "image-plataforma",
+    "loading" : "lazy",
+    "width" : 635,
+    "height" : 420,
+    "max_width" : 635,
+    "max_height" : 420
+  }
+} ]

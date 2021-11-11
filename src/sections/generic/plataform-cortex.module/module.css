@@ -1,0 +1,82 @@
+.platafrom-cortex {
+  padding: 4em 2em;
+}
+.platafrom-cortex .section__title {
+  font: 300 1.5em var(--primary-font);
+  text-align: center;
+  line-height: 110%;
+  letter-spacing: -0.015em;
+}
+.platafrom-cortex .section__title strong {
+   font-weight: 700;
+}
+.platafrom-cortex .section__text {
+  font: 400 1em var(--secondary-font);
+  text-align: center;
+  line-height: 148%;
+  margin-top: 1em;
+}
+.plataform-cortex__figure {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 40px auto;
+}
+.button[data-media="desktop"] {
+  display: none;
+}
+.button[data-media="mobile"] {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .platafrom-cortex .section__title {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  .plataform-cortex__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+    margin: 0 auto;
+  }
+  .button[data-media="desktop"] {
+    display: block;
+  }
+  .button[data-media="mobile"] {
+    display: none;
+  }
+  .plataform-cortex__content {
+    width: 50%;
+  }
+  .plataform-cortex__figure {
+    width: 50%;
+  }
+  .platafrom-cortex .section__title {
+    font-size: 3em;
+    text-align: left;
+    padding: 0;
+  }
+  .platafrom-cortex .section__text {
+    font-size: 1.125em;
+    text-align: left;
+    margin: 2rem 0 2.5rem 0;
+  }
+}
+@media (min-width: 1200px) {
+  .platafrom-cortex {
+    padding: 3.25em 0;
+  }
+  .plataform-cortex__section {
+    max-width: 1114px;
+  }
+  .plataform-cortex__content {
+    width: 440px;
+  }
+  .plataform-cortex__figure {
+    width: 630px;
+    margin: 0;
+  }
+}

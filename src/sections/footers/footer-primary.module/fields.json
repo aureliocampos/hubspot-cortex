@@ -6,4 +6,92 @@
   "locked" : true,
   "type" : "menu",
   "default" : 49567660607
+}, {
+  "id" : "620c5b83-f403-d061-c93a-6824ae432fa1",
+  "name" : "title_form",
+  "label" : "Título do Formulário",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Deseja receber e-mails com novos eventos e conteúdos exclusivos?"
+}, {
+  "id" : "7acdd35a-ea95-916b-d3a2-1e20f1b5419c",
+  "name" : "form_field",
+  "label" : "Formulário",
+  "required" : false,
+  "locked" : true,
+  "type" : "form",
+  "default" : {
+    "form_id" : "9fd05f68-e72f-45b9-8a07-c13614f7053f",
+    "response_type" : "inline",
+    "message" : "Obrigado por enviar o formulário.",
+    "gotowebinar_webinar_key" : null,
+    "form_type" : "HUBSPOT"
+  }
+}, {
+  "id" : "5a3d16d2-dde2-e344-3d92-7b85166e0045",
+  "name" : "cta_gupy",
+  "label" : "CTA Gupy",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "54e9ce25-8b3c-2216-6871-9f8a8a40d2f1",
+    "name" : "work_title",
+    "label" : "Título",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Faça parte do nosso time"
+  }, {
+    "id" : "60e899ab-9c26-71e0-7c51-a243b414b2c7",
+    "name" : "work_link",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://cortex.gupy.io/?__hstc=233546881.3732211f783a2ade2a956aa208f2e136.1625842847012.1629420760316.1629470236458.40&__hssc=233546881.24.1629470236458&__hsfp=2012181404",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : true
+    }
+  }, {
+    "id" : "b4bccaa4-9cc2-bf0e-cdd1-a03563a9c8e8",
+    "name" : "work_link_text",
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Conheça nossas vagas"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "work_title" : "Faça parte do nosso time",
+    "work_link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://cortex.gupy.io/?__hstc=233546881.3732211f783a2ade2a956aa208f2e136.1625842847012.1629420760316.1629470236458.40&__hssc=233546881.24.1629470236458&__hsfp=2012181404",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : true
+    },
+    "work_link_text" : "Conheça nossas vagas"
+  }
 } ]
