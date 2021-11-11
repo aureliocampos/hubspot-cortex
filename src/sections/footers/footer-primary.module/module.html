@@ -61,7 +61,16 @@
       </ul>
     </nav>
     <section class="footer__section footer__terms">
-      <a href="https://pages.cortex-intelligence.com/politica-de-privacidade-cortex?_ga=2.257104779.1671114480.1626206243-370845782.1612791931&hsLang=en&__hstc=233546881.3732211f783a2ade2a956aa208f2e136.1625842847012.1629470236458.1629478178343.41&__hssc=233546881.10.1629478178343&__hsfp=981320134" class="footer__text"><h3>Termos e condiçoes de uso</h3></a>
+      {% set href = module.cta_termos.link_field.url.href %}
+        {% if module.cta_termos.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}" class="footer__text"
+          {% if module.cta_termos.link_field.open_in_new_tab %}target="_blank"{% endif %}
+          {% if module.cta_termos.link_field.rel %}rel="{{ module.cta_termos.link_field.rel }}"{% endif %}
+          >
+          <h3>{{ module.cta_termos.texto_do_link }}</h3>
+        </a>
       <span class="icon-logo-cortex"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span></span>
     </section>
   </div>

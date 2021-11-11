@@ -109,6 +109,111 @@
     "description" : null,
     "placeholders" : null
   },
+  "cta_termos.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.label" : {
+    "message" : "Grupo de campo",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.link_field.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.link_field.default.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.link_field.default.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.link_field.default.url.href" : {
+    "message" : "https://pages.cortex-intelligence.com/politica-de-privacidade-cortex?_ga=2.257104779.1671114480.1626206243-370845782.1612791931&hsLang=en&__hstc=233546881.3732211f783a2ade2a956aa208f2e136.1625842847012.1629470236458.1629478178343.41&__hssc=233546881.10.1629478178343&__hsfp=981320134",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.link_field.default.url.type" : {
+    "message" : "EXTERNAL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.link_field.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "cta_termos.link_field.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "cta_termos.link_field.label" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "cta_termos.link_field.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "cta_termos.name" : {
+    "message" : "footer-primary",
+    "description" : "",
+    "placeholders" : null
+  },
+  "cta_termos.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.texto_do_link.default" : {
+    "message" : "Termos e condiçoes de uso",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.texto_do_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.texto_do_link.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.texto_do_link.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.texto_do_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.texto_do_link.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
   "form_field.default.form_id" : {
     "message" : "9fd05f68-e72f-45b9-8a07-c13614f7053f",
     "description" : null,

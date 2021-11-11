@@ -1,11 +1,20 @@
 <section class="section platafrom-cortex">
   <div class="plataform-cortex__section">
     <div class="plataform-cortex__content">
-      <h2 class="section__title"><strong>Plataforma</strong> Cortex</h2>
+      <h2 class="section__title" id="section-title--plataform"></h2>
       <div class="section__text">
         {{ module.section_text }}
       </div>
-      <a href="https://cortex-intelligence-8917234.hs-sites.com/plataforma" class="button button--primary" data-media="desktop">Conheça a plataforma</a> 
+     {% set href = module.cta_plataforma.link_field.url.href %}
+      {% if module.cta_plataforma.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href }}" class="button button--primary" data-media="desktop"
+        {% if module.cta_plataforma.link_field.open_in_new_tab %}target="_blank"{% endif %}
+        {% if module.cta_plataforma.link_field.rel %}rel="{{ module.cta_plataforma.link_field.rel }}"{% endif %}
+        >
+       {{ module.cta_plataforma.text }}
+      </a>
     </div>
     <figure class="plataform-cortex__figure">
       {% if module.image_field.src %}
@@ -20,6 +29,15 @@
       {% endif %}
     </figure>
 
-    <a href="https://pages.cortex-intelligence.com/agendar-conversa-com-especialistas-cortex-3" target="_blank" rel="noopener noreferrer" class="button button--primary" data-media="mobile">Conheça a plataforma</a> 
+    {% set href = module.cta_plataforma.link_field.url.href %}
+      {% if module.cta_plataforma.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href }}" class="button button--primary" data-media="mobile"
+        {% if module.cta_plataforma.link_field.open_in_new_tab %}target="_blank"{% endif %}
+        {% if module.cta_plataforma.link_field.rel %}rel="{{ module.cta_plataforma.link_field.rel }}"{% endif %}
+        >
+       {{ module.cta_plataforma.text }}
+      </a>
   </div>
 </section>

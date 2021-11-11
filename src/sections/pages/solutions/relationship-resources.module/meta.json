@@ -1,5 +1,6 @@
 {
   "global" : false,
+  "master_language" : "pt",
   "host_template_types" : [ "PAGE" ],
   "module_id" : 56260690508,
   "css_assets" : [ {

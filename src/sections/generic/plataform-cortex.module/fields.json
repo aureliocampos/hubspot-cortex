@@ -26,4 +26,55 @@
     "max_width" : 635,
     "max_height" : 420
   }
+}, {
+  "id" : "6a431ee9-ef5e-f9db-2c8c-edba2e893e26",
+  "name" : "cta_plataforma",
+  "label" : "CTA Plataforma",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "3360c665-6252-0f8e-a3f7-f11c72182cdb",
+    "name" : "link_field",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://pages.cortex-intelligence.com/agendar-conversa-com-especialistas-cortex-3",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : true
+    }
+  }, {
+    "id" : "3dbb2c52-3ebe-14c2-1c3a-e25075c9ed74",
+    "name" : "text",
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Conheça a plataforma"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "link_field" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://pages.cortex-intelligence.com/agendar-conversa-com-especialistas-cortex-3",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : true
+    },
+    "text" : "Conheça a plataforma"
+  }
 } ]

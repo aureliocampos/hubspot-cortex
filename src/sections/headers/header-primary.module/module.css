@@ -22,7 +22,7 @@
   background-color: var(--white);
 }
 .header .icon-logo-cortex {
-  font-size: 1.444em;
+  font-size: 1.4rem;
 }
 /* content */
 .header__content {
@@ -118,14 +118,6 @@
 }
 
 /* Seção de Suporte do Header */
-.support--link {
-  display: inline-flex;
-  width: 100%;
-  font: 350 1.125em var(--primary-font);
-  color: var(--darkest);
-  line-height: 117.2%;
-  padding: 1.25rem;
-}
 .icon-headset-support {
   display: none;
 }
@@ -155,6 +147,7 @@
 .header__language-switcher .header__language-switcher-label-current {
   margin: 2em auto 0 auto;
   background-color: var(--lightest);
+  transition: 400ms;
 }
 .header__language-switcher .header__language-switcher-label-current .icon-arrow-next {
   display: none;
@@ -172,7 +165,8 @@
   display: none;
   flex-direction: column;
   align-items: center;
-  width: 181px;
+  gap: 8px;
+  width: max-content;
   padding: 1em;
   margin: 0 auto;
   background: var(--white);
@@ -182,8 +176,14 @@
 .header__language-switcher-options.active {
   display: flex;
 }
+.header__language-switcher-label-option:hover {
+  background-color: var(--lightest);
+  transition: 400ms;
+}
+
 .header__language-switcher-label-option.disabled {
   color: var(--dark);
+  pointer-events: none;
 }
 .header__language-switcher-label-option.disabled .icon-bandeira-estados-unidos span:before{
   color: var(--light);
@@ -206,6 +206,7 @@
 }
 
 /* Menu-itens de nível 1 Ativo - Se conter elementos filhos */
+
 .header .hs-menu-item.hs-menu-depth-1.hs-item-has-children > a.active {
   background-color: var(--lightest);
 }
@@ -265,7 +266,6 @@
     z-index: -1;
     border-radius: 8px;
   }
-
   
   /* Menu-itens de nível 2 */
   .header .hs-menu-item.hs-menu-depth-2 {
@@ -293,7 +293,7 @@
   /* Seção de Suporte do Header */  
   .header__support {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: row-reverse;
     width: 40%;
@@ -304,8 +304,12 @@
     margin-right: 1em;
   }
   .header__language-switcher .header__language-switcher-label-current {
+    background-color: transparent;
     cursor: pointer;
     margin: auto;
+  }
+  .header__language-switcher:hover .header__language-switcher-label-current {
+    background-color: var(--lightest);
   }
   .header__language-switcher .header__language-switcher-label-current .icon-arrow-next{
     display: block;
@@ -315,11 +319,10 @@
   }
   .header__language-switcher:hover .header__language-switcher-options {
     display: flex;
-    top: 74px;
+    top: 72px;
+    z-index: -1;
   }
-  .support--link {
-    width: max-content;
-  }
+
   .icon-headset-support {
     display: inline-flex;
     align-items: center;
@@ -327,6 +330,9 @@
   }
   .header__support .button--primary {
     margin: 0;
+  }
+  .header .hs-menu-item.hs-menu-depth-1.hs-item-has-children > a.active {
+    background-color: transparent;
   }
 }
 /* Notebook */

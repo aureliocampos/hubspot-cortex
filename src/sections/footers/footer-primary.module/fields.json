@@ -94,4 +94,55 @@
     },
     "work_link_text" : "Conheça nossas vagas"
   }
+}, {
+  "id" : "0ee3907b-1c33-8468-86f4-88ec383a1c33",
+  "name" : "cta_termos",
+  "label" : "CTA Termos",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "b8a58bf9-9abd-0ee0-9ef4-2d76d627d1d4",
+    "name" : "texto_do_link",
+    "label" : "Texto do link",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Termos e condiçoes de uso"
+  }, {
+    "id" : "3c003b90-a3f0-ca72-996f-db4c9a1840fa",
+    "name" : "link_field",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://pages.cortex-intelligence.com/politica-de-privacidade-cortex?_ga=2.257104779.1671114480.1626206243-370845782.1612791931&hsLang=en&__hstc=233546881.3732211f783a2ade2a956aa208f2e136.1625842847012.1629470236458.1629478178343.41&__hssc=233546881.10.1629478178343&__hsfp=981320134",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "texto_do_link" : "Termos e condiçoes de uso",
+    "link_field" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://pages.cortex-intelligence.com/politica-de-privacidade-cortex?_ga=2.257104779.1671114480.1626206243-370845782.1612791931&hsLang=en&__hstc=233546881.3732211f783a2ade2a956aa208f2e136.1625842847012.1629470236458.1629478178343.41&__hssc=233546881.10.1629478178343&__hsfp=981320134",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
 } ]

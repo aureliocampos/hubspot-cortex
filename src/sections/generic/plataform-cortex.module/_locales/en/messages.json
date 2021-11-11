@@ -1,0 +1,127 @@
+{
+  "cta_plataforma.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_plataforma.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_plataforma.label" : {
+    "message" : "CTA Plataforma",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_plataforma.link_field.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_plataforma.link_field.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_plataforma.link_field.label" : {
+    "message" : "Link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_plataforma.link_field.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_plataforma.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_plataforma.text.default" : {
+    "message" : "Discover the platform",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_plataforma.text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_plataforma.text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_plataforma.text.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_plataforma.text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_plataforma.text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_field.default.alt" : {
+    "message" : "image-plataforma",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_field.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_field.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_field.label" : {
+    "message" : "Imagem",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_field.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "plataform-cortex",
+    "description" : null,
+    "placeholders" : null
+  },
+  "section_text.default" : {
+    "message" : "<p>A plataforma Cortex pode ser configurada, de forma flexível e amigável, para solucionar diferentes desafios de inteligência nas áreas de RP, Marketing e Vendas</p>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "section_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "section_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "section_text.label" : {
+    "message" : "Texto ",
+    "description" : null,
+    "placeholders" : null
+  },
+  "section_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

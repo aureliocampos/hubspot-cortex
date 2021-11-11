@@ -109,6 +109,86 @@
     "description" : null,
     "placeholders" : null
   },
+  "cta_termos.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.label" : {
+    "message" : "Grupo de campo",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.link_field.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.link_field.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.link_field.label" : {
+    "message" : "Link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.link_field.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.name" : {
+    "message" : "footer-primary",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.texto_do_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.texto_do_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.texto_do_link.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.texto_do_link.label" : {
+    "message" : "Texto do link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.texto_do_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_termos.texto_do_link.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
   "form_field.default.message" : {
     "message" : "Obrigado por enviar o formulário.",
     "description" : null,

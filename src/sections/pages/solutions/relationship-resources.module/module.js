@@ -50,5 +50,19 @@ function handlesCardHeight(className) {
   }
 }
 
-document.addEventListener('DOMContentLoaded', 
-  handlesCardHeight('.rel-resources__card-title'))
+document.addEventListener('DOMContentLoaded', function() {
+  handlesCardHeight('.rel-resources__card-title')
+  
+  const isEnglish = window.document.firstElementChild.lang === 'en'
+  
+  if (isEnglish) {
+    const buttons = Array.from(document.querySelectorAll('.button.button--primary') )
+    
+    buttons.forEach((button) => {
+      const newText = button.textContent.replace('Baixar', 'Download')
+      button.textContent = newText
+    })
+  }
+})
+
+

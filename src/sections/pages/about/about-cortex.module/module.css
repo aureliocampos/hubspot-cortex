@@ -7,11 +7,12 @@
 }
 .section--about-cortex .section__title {
   font: 400 1.5em var(--primary-font);
-  font-size: 24px;
+  color: var(--darkest);
   margin-bottom: 2rem;
 }
 .section--about-cortex .section__text {
   font: 400 1em var(--secondary-font);
+  color: var(--darkest);
   line-height: 148%;
   margin-top: 2rem;
 }

@@ -1,0 +1,107 @@
+{
+  "materiais.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "materiais.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "materiais.label" : {
+    "message" : "Materiais",
+    "description" : "",
+    "placeholders" : null
+  },
+  "materiais.material.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "materiais.material.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "materiais.material.label" : {
+    "message" : "Material",
+    "description" : "",
+    "placeholders" : null
+  },
+  "materiais.material.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "materiais.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "materiais.tamanho_do_arquivo.default" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "materiais.tamanho_do_arquivo.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "materiais.tamanho_do_arquivo.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "materiais.tamanho_do_arquivo.label" : {
+    "message" : "Tamanho do arquivo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "materiais.tamanho_do_arquivo.placeholder" : {
+    "message" : "429 kb ou 1MB",
+    "description" : "",
+    "placeholders" : null
+  },
+  "materiais.tamanho_do_arquivo.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "relationship-resources",
+    "description" : "",
+    "placeholders" : null
+  },
+  "section_title.default" : {
+    "message" : "Inspire-se com nossos conteúdos sobre Inteligência de Comunicação",
+    "description" : "",
+    "placeholders" : null
+  },
+  "section_title.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "section_title.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "section_title.label" : {
+    "message" : "Título da seção",
+    "description" : "",
+    "placeholders" : null
+  },
+  "section_title.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "section_title.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  }
+}

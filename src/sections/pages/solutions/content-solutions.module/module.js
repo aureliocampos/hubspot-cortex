@@ -1,9 +1,7 @@
 const allContentTitles = Array.from(document.querySelectorAll('.content__item-title'));
 
-let prepositions = ['a', 'e', 'o', 'da', 'das', 'de', 'do', 'dos', 
-'com', 'em', '&'];
-
-let keywords = [
+// Palavras em destaque (Português)
+const keywordsPT = [
   "busca",
   "canais",
   "controle",
@@ -28,6 +26,45 @@ let keywords = [
   "comparação",
   "pagos"
 ]
+const prepositionsPT = ['a', 'e', 'o', 'da', 'das', 'de', 'do', 'dos', 
+'com', 'em', '&'];
+
+// Palavras em destaque (Inglês)
+const keywordsEN = [
+  'real',
+  'time',
+  'strategic',
+  'pillar',
+  'return',
+  'aligned',
+  'comparison',
+  'monitoring',
+  'paid',
+  'owned',
+  'media',
+  'market',
+  'identification',
+  'contacts',
+  'crm',
+  'buying',
+  'revenue',
+  'performance'
+]
+const prepositionsEN = [
+  'in',
+  'and',
+  'by',
+  'on',
+  'with',
+  'of',
+];
+
+// Verificar se o conteúdo está traduzido para o inglês
+const isEnglish = window.document.firstElementChild.lang === 'en'
+
+
+let prepositions = isEnglish ? prepositionsEN : prepositionsPT;
+let keywords = isEnglish ? keywordsEN : keywordsPT;
 
 function cleanStringPart(item) {
   return String(item.textContent).toLowerCase().replace(/,\s*$/, "");

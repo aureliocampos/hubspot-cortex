@@ -17,7 +17,6 @@
         {% menu id="{{ module.menu_header }}" %}
       </div>
       <div class="header__support">
-<!--         <a href="https://atendimentocortex.zendesk.com/hc/pt-br" target="_blank" rel="noopener noreferrer" class="support--link"><span class="icon-headset-support"></span>Suporte</a> -->
         {% set href = module.cta_header.link_field.url.href %}
         <a href="{{ href }}" class="button button--primary"
           {% if module.cta_header.link_field.open_in_new_tab %}target="_blank"{% endif %}
