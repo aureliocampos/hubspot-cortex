@@ -15,6 +15,19 @@
   "type" : "richtext",
   "default" : "<p>Soluções de inteligência de dados para impulsionar sua jornada de <span style=\"color: #6e3d9c; background-color: #ffebf5;\">marketing</span> e <span style=\"color: #285fc3; background-color: #dcf0ff;\">vendas</span></p>"
 }, {
+  "id" : "9bbf536d-3507-c641-2179-9d3065b5d48b",
+  "name" : "url_video",
+  "label" : "URL Video",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL" ],
+  "type" : "url",
+  "default" : {
+    "type" : "EXTERNAL",
+    "href" : "https://storage.googleapis.com/website_cortex/Animacao%20Final%20-%20Sales%20%2B%20Comunicacao_v2.mp4",
+    "content_id" : null
+  }
+}, {
   "id" : "e1d8cb36-81bb-5c56-20ad-d258aba3aa06",
   "name" : "card_solutions",
   "label" : "Card da solução",
@@ -27,19 +40,6 @@
     "default" : null
   },
   "children" : [ {
-    "id" : "9bbf536d-3507-c641-2179-9d3065b5d48b",
-    "name" : "url_video",
-    "label" : "URL Video",
-    "required" : false,
-    "locked" : false,
-    "supported_types" : [ "EXTERNAL" ],
-    "type" : "url",
-    "default" : {
-      "type" : "EXTERNAL",
-      "href" : "https://storage.googleapis.com/website_cortex/MLP%202_comunicacao_v5_Comunicacao%20(1).mp4",
-      "content_id" : null
-    }
-  }, {
     "id" : "838a0d56-14be-63ca-02ee-374dd5bcbc00",
     "name" : "imagem_mobile",
     "label" : "Imagem Mobile",
@@ -159,11 +159,6 @@
   "expanded" : false,
   "type" : "group",
   "default" : {
-    "url_video" : {
-      "type" : "EXTERNAL",
-      "href" : "https://storage.googleapis.com/website_cortex/MLP%202_comunicacao_v5_Comunicacao%20(1).mp4",
-      "content_id" : null
-    },
     "imagem_mobile" : {
       "size_type" : "auto",
       "src" : "",

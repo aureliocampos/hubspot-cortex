@@ -147,6 +147,7 @@
 .main-home__cards-control .main-home__card-title:first-of-type span:nth-of-type(3n) {
   color: var(--purple_official);
 }
+/* default */
 .main-home__card:first-of-type .button--main-home {
   color: var(--purple_official);
   background-color: var(--purple_lightest);
@@ -154,7 +155,11 @@
 .main-home__card:first-of-type .button--main-home > span:before {
   color: var(--purple_spotlight);
 }
-
+/* Hover */
+.main-home__card:first-of-type .button--main-home:hover {
+  color: var(--purple_lightest);
+  background-color: var(--purple_official);
+}
 
 /* Estilo do card 1 baseado na cor da marca brand-color 2*/
 .main-home__card:last-of-type .main-home__card-title span:nth-of-type(1n),
@@ -169,12 +174,18 @@
 .main-home__cards-control .main-home__card-title:last-of-type span:nth-of-type(3n) {
   color: var(--blue_official);
 }
+/* default */
 .main-home__card:last-of-type .button--main-home {
   color: var(--blue_official);
   background-color: var(--blue_lightest);
 }
 .main-home__card:last-of-type .button--main-home > span:before {
   color: var(--blue_spotlight);
+}
+/* Hover */
+.main-home__card:last-of-type .button--main-home:hover {
+  color: var(--blue_lightest);
+  background-color: var(--blue_official);
 }
 
 /*

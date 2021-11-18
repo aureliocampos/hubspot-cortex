@@ -2,12 +2,14 @@
   padding: 2em 1.5em 0.5em 1.5em;
 }
 .clients-container .section__title {
+  width: 80%;
   font: 500 1.5em var(--primary-font);
   color: var(--darkest);
   line-height: 108%;
   /* or 26px */
   text-align: center;
   letter-spacing: -0.04em;
+  margin: 0 auto;
 }
 .box-line {
   position: absolute;
@@ -34,13 +36,16 @@
 .float-logos__items.desktop {
   display: none;
 }
+.float-logos__items.mobile {
+  width: 105%;
+}
 .float-logos__items {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 2.75em 0 1.75em 0;
+  margin: 2.75em auto 1.75em auto;
 }
 .float-logos__item {
   display: flex;

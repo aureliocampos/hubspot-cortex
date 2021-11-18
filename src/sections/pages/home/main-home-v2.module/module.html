@@ -16,13 +16,10 @@
         </a>
       </header>
       <div class="main-home__videos-items">
-        {% for item in module.card_solutions %}
-          <video id="video-{{loop.index}}" class="main-home__card-video" autoplay muted data-disable="mobile">
-            <source src="{{ item.url_video.href }}" type="video/mp4">
-          </video>
-        {% endfor %}
+        <video class="main-home__card-video" autoplay muted loop data-disable="mobile" width="670" height="470">
+          <source src="{{ module.url_video.href }}" type="video/mp4">
+        </video>
       </div>
-      <img src="https://pages.cortex-intelligence.com/hubfs/website-cortex/paginas/home/laptop-mockup.png" alt="laptop mockup" class="mockup-video">
     </div>
 
     <hr data-disable="desktop">

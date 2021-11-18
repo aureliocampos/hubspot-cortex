@@ -6,7 +6,7 @@
   text-decoration: none;
   line-height: 1;
   border-radius: 40px;
-  transition: all .2s ease-in-out;
+  transition: all .3s ease-in-out;
 } 
 
 .button--primary {
@@ -24,13 +24,22 @@
   background-color: var(--darkest);
   border: 1px solid var(--darkest);
 }
+.button--primary-invert:hover {
+  color: var(--darkest);
+  background-color: transparent;
+  border: 1px solid var(--darkest);
+}
 .button--secondary {
   font-weight: 600;
   color: var(--white);
   background-color: transparent;
   border: 1px solid var(--white);
 }
-
+.button--secondary:hover {
+  color: var(--darkest);
+  background-color: var(--white);
+  border: 1px solid var(--white);
+}
 .icon-arrow-round-prev,
 .icon-arrow-round-next {
   cursor: pointer; 
