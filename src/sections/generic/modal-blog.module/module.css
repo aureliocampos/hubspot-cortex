@@ -1,0 +1,46 @@
+.modal-blog {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  display: none;
+  width: 312px;
+  padding: 45px 38px 38px 38px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border: 6px solid #F6F6FB;
+  box-shadow: 0px 20px 50px rgba(204, 204, 230, 0.27);
+  border-radius: 20px;
+}
+.modal-blog__container .modal-blog__content {
+  font: 400 1.125em var(--secondary-font);
+  color: var(--darkest);
+  line-height: 140%;
+  margin: 28px 0;
+}
+.modal-blog__container .button--primary-invert {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+  .modal-blog {
+    width: 668px; 
+    top: 110px;
+    padding: 54px;
+  }
+  .modal-blog__container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .modal-blog__container .modal-blog__header {
+    margin-right: 29px;
+  }
+  .modal-blog__container .modal-blog__content {
+    width: 75%;
+    margin: 0 0 40px 0;
+  }
+  .modal-blog__container .button--primary-invert {
+    margin: 0 20px 0 80px;
+  }
+}

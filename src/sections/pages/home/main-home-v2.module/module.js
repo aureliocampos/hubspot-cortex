@@ -1,24 +1,24 @@
-// const mainHomeControllersContainer = document.querySelector('.main-home__cards-control');
-// const allCards = Array.from(document.querySelector('.main-home__cards').children)
+const mainHomeControllersContainer = document.querySelector('.main-home__cards-control');
+const allCards = Array.from(document.querySelector('.main-home__cards').children)
 
-// if (window.matchMedia("(max-width: 760px)").matches) {
-//   const swiperMobileMainHome = new Swiper('.main-home__slides', {
-//     loop: false,
-//     speed: 400,
-//     slidesPerView: 1,
-//     spaceBetween: 30,
-//     centeredSlides: true,
-//     navigation: {
-//       nextEl: '.control-2',
-//       prevEl: '.control-1',
-//     },
-//     on: {
-//       slideChangeTransitionStart: function () {
-//         mainHomeControllersContainer.classList.toggle('active')
-//       },
-//     }
-//   });
-// }
+if (window.matchMedia("(max-width: 760px)").matches) {
+  const swiperMobileMainHome = new Swiper('.main-home__slides', {
+    loop: false,
+    speed: 400,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
+    navigation: {
+      nextEl: '.control-2',
+      prevEl: '.control-1',
+    },
+    on: {
+      slideChangeTransitionStart: function () {
+        mainHomeControllersContainer.classList.toggle('active')
+      },
+    }
+  });
+}
 
 // if (window.matchMedia("(min-width: 760px)").matches) {
 //   function addAnimationCard(card) {

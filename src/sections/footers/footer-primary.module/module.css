@@ -222,11 +222,17 @@
   .footer__form form .actions  {
     width: 70%;
   }
+  
   .footer hr:nth-of-type(2) {
     opacity: 0;
     margin: 2em 0;
   }
   .footer__terms .icon-logo-cortex {
     font-size: 25px;
+  }
+  .icon-headset-support {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 8px;
   }
 }

@@ -96,6 +96,10 @@
   background-color: var(--lightest);
   border-radius: 100%;
 }
+.clients__item > svg {
+  width: 48px;
+  height: 48px;
+}
 .clients__item:last-of-type {
   display: none;
 }
@@ -177,6 +181,10 @@
     font-size: 7rem;
     background-color: var(--lightest);
     border-radius: 100%;
+  }
+  .clients__item > svg {
+    width: 104px;
+    height: 104px;
   }
   .clients__item:last-of-type {
     display: flex;

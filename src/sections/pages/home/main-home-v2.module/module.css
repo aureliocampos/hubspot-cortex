@@ -67,12 +67,13 @@
 /* Título */
 .main-home__card-title {
   font: 900 1.625em var(--primary-font);
-  line-height: 88%;
+  /* line-height: 88%; */
   letter-spacing: -0.04em;
   text-transform: uppercase;
 }
 .main-home__card-title span:first-of-type {
   display: block;
+  height: 40%;
 }
 /* Texto */
 .main-home__card-text {
@@ -242,6 +243,7 @@
     z-index: -1;
   }
   .main-home__title {
+    height: auto;
     font-size: 3em;
   }
   .main-home__subtitle {
@@ -255,7 +257,7 @@
     display: none;
   }
   .main-home__items {
-    margin: 3em 0;
+    margin: 0;
     gap: 2.25em;
   }
   .main-home__card {

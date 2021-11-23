@@ -1,0 +1,7 @@
+{
+  "global" : false,
+  "host_template_types" : [ "BLOG_LISTING" ],
+  "module_id" : 60285600102,
+  "label" : "Modal Blog",
+  "is_available_for_new_content" : true
+}
