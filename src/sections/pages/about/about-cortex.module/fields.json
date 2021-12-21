@@ -1,6 +1,7 @@
 [ {
   "id" : "09b34ae9-2da0-28e2-f955-f31e7e988abd",
   "name" : "title",
+  "display_width" : null,
   "label" : "título",
   "required" : false,
   "locked" : false,
@@ -12,6 +13,7 @@
 }, {
   "id" : "d59162d8-9f06-60b8-52eb-9669d4a8eaf2",
   "name" : "text",
+  "display_width" : null,
   "label" : "Texto",
   "required" : false,
   "locked" : false,
@@ -20,6 +22,7 @@
 }, {
   "id" : "9cc38535-faac-2e15-b0af-776001d15054",
   "name" : "image_field",
+  "display_width" : null,
   "label" : "Imagem",
   "required" : false,
   "locked" : false,

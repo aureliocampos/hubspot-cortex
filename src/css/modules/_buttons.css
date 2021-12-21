@@ -44,3 +44,12 @@
 .icon-arrow-round-next {
   cursor: pointer; 
 }
+
+.button--link {
+  text-decoration: underline;
+  color: var(--blue_spotlight);
+}
+.button--link:hover {
+  text-decoration: underline;
+  color: var(--blue_spotlight);
+}

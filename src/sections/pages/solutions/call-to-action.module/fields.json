@@ -1,6 +1,7 @@
 [ {
   "id" : "6e3fc8fa-b123-a724-b21f-fe4500e9241a",
   "name" : "text_field",
+  "display_width" : null,
   "label" : "Texto",
   "required" : false,
   "locked" : false,
@@ -12,6 +13,7 @@
 }, {
   "id" : "c8bb8eda-9344-e817-9d82-e132a8102542",
   "name" : "link_text",
+  "display_width" : null,
   "label" : "Link Text",
   "required" : false,
   "locked" : false,
@@ -23,6 +25,7 @@
 }, {
   "id" : "90f85cec-4dd8-dfe2-cd0a-22f024ae9ecb",
   "name" : "link_field",
+  "display_width" : null,
   "label" : "Link",
   "required" : false,
   "locked" : false,

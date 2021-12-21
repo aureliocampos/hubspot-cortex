@@ -35,6 +35,9 @@
   .platafrom-cortex .section__title {
     display: block;
   }
+  .plataform-cortex__figure {
+    width: 80%;
+  }
 }
 @media (min-width: 1024px) {
   .plataform-cortex__section {

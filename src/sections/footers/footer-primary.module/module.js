@@ -4,9 +4,10 @@ function addArrowInButtonOfNewsletter() {
   setTimeout(
     () => {
       const buttonSubmit = document.querySelector('.footer__form form .actions');
-      buttonSubmit.innerHTML += '<span class="icon-input-seta"></span>'
+      const newLocal = '<span class="icon-input-seta"></span>';
+      buttonSubmit.innerHTML += newLocal
       
-    }, 1000);
+    }, 1500);
 }
 
 function addHTMLButtonSupportInFooterMenu() {

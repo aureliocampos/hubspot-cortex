@@ -1,6 +1,7 @@
 [ {
   "id" : "5b1a792b-fde6-c4cc-fa75-d4fa04829e8a",
   "name" : "section_text",
+  "display_width" : null,
   "label" : "Texto ",
   "required" : false,
   "locked" : true,
@@ -9,6 +10,7 @@
 }, {
   "id" : "2e307c8c-a40a-eaae-bbde-00b8df108a6d",
   "name" : "image_field",
+  "display_width" : null,
   "label" : "Imagem",
   "required" : false,
   "locked" : true,
@@ -29,12 +31,14 @@
 }, {
   "id" : "6a431ee9-ef5e-f9db-2c8c-edba2e893e26",
   "name" : "cta_plataforma",
+  "display_width" : null,
   "label" : "CTA Plataforma",
   "required" : false,
   "locked" : true,
   "children" : [ {
     "id" : "3360c665-6252-0f8e-a3f7-f11c72182cdb",
     "name" : "link_field",
+    "display_width" : null,
     "label" : "Link",
     "required" : false,
     "locked" : false,
@@ -53,6 +57,7 @@
   }, {
     "id" : "3dbb2c52-3ebe-14c2-1c3a-e25075c9ed74",
     "name" : "text",
+    "display_width" : null,
     "label" : "Text",
     "required" : false,
     "locked" : false,

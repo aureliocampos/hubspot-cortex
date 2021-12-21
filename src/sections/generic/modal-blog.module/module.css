@@ -21,7 +21,9 @@
 .modal-blog__container .button--primary-invert {
   margin-bottom: 20px;
 }
-
+.button--link {
+  padding-left: 0;
+}
 @media (min-width: 1024px) {
   .modal-blog {
     width: 668px; 
@@ -42,5 +44,8 @@
   }
   .modal-blog__container .button--primary-invert {
     margin: 0 20px 0 80px;
+  }
+  .button--link {
+    padding-left: 24px;
   }
 }

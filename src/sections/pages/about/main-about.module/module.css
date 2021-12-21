@@ -20,20 +20,31 @@
   margin: 1em 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .section--main-about > .section__container{
     max-width: 1114px;
     margin: 0 auto;
   }
   .main-about__title {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 2rem; 
+  }
+  .main-about__text {
+    display: flex;
+    justify-content: space-between;   
+  }
+  .main-about__text p {
+    width: 48%;
+  }
+}
+@media (min-width: 1024px) {
+  .main-about__title {
     font-size: 2.25em;
     text-align: center;
     margin-bottom: 5rem; 
   }
-  .main-about__text {
-    display: flex;
-    justify-content: space-between;
-    
+  .main-about__text {   
     font-size: 1.125em;
   }
   .main-about__text p {

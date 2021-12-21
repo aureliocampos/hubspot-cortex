@@ -120,15 +120,20 @@
 }
 
 @media (min-width: 768px) {
+  .section-clients {
+    margin: 10rem 0;
+  }
   .clients-container {
     max-width: 340px;
     margin: 0 auto;
+    transform: scale(1.7);
   }
 }
 
 @media (min-width: 1200px) {
   .section-clients {
     padding: 0 0 3.5em 0;
+    margin: 0;
   }
   .clients-container {
     display: flex;
@@ -136,6 +141,7 @@
     align-items: center;
     max-width: 1116px;
     margin: 0 auto;
+    transform: scale(1);
   }
   .clients-container .title-header {
     width: 820px;

@@ -1,6 +1,7 @@
 [ {
   "id" : "004e9790-1b77-92f7-dffd-08df44ab1323",
   "name" : "section_title",
+  "display_width" : null,
   "label" : "Título da seção",
   "required" : false,
   "locked" : false,
@@ -12,6 +13,7 @@
 }, {
   "id" : "e1d8cb36-81bb-5c56-20ad-d258aba3aa06",
   "name" : "card_solutions",
+  "display_width" : null,
   "label" : "Card da solução",
   "required" : false,
   "locked" : false,
@@ -24,6 +26,7 @@
   "children" : [ {
     "id" : "2c556a99-c5bf-c7c9-799f-72d782e2d67b",
     "name" : "card_title",
+    "display_width" : null,
     "label" : "Título do card",
     "required" : false,
     "locked" : false,
@@ -34,6 +37,7 @@
   }, {
     "id" : "f8613d4b-3d1f-ec05-9f9e-08cd57e40c0e",
     "name" : "card_text",
+    "display_width" : null,
     "label" : "Texto do card",
     "required" : false,
     "locked" : false,
@@ -44,6 +48,7 @@
   }, {
     "id" : "c4ee3ffd-20d0-0060-fd6d-4a45473e43a9",
     "name" : "card_items",
+    "display_width" : null,
     "label" : "Card Items",
     "required" : false,
     "locked" : false,
@@ -56,6 +61,7 @@
     "children" : [ {
       "id" : "1880aec7-c703-43bb-ab54-e5438b3b1354",
       "name" : "card_item_icon",
+      "display_width" : null,
       "label" : "Ícone",
       "required" : false,
       "locked" : false,
@@ -72,6 +78,7 @@
     }, {
       "id" : "c55007e6-0a28-c533-2521-b02c48e39c3e",
       "name" : "card_item",
+      "display_width" : null,
       "label" : "Item do card",
       "required" : false,
       "locked" : false,
@@ -94,6 +101,7 @@
   }, {
     "id" : "97a1c976-8c58-b238-684f-90021bec340a",
     "name" : "link_do_card",
+    "display_width" : null,
     "label" : "Link do card",
     "required" : false,
     "locked" : false,
@@ -112,6 +120,7 @@
   }, {
     "id" : "6c0f7f0a-0c71-54a1-10e0-28a82f8f079b",
     "name" : "texto_do_link",
+    "display_width" : null,
     "label" : "Texto do link",
     "required" : false,
     "locked" : false,

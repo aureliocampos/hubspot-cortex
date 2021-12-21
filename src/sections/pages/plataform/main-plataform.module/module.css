@@ -94,7 +94,7 @@
 
   /* Intro Plataform */
   .intro-plataform {
-    padding: 3.625em 0 5em 0;
+    padding: 0.5em 0 5em 0;
   }
   .intro-plataform__container {
     max-width: 588px;
@@ -117,4 +117,8 @@
     width: 1120px;
     margin: 0 auto;
   }
+    /* Intro Plataform */
+    .intro-plataform {
+      padding: 3.625em 0 5em 0;
+    }
 }

@@ -42,18 +42,17 @@
   margin-top: 18px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .content-solutions {
     max-width: 1268px;
     margin: 100px auto 120px auto;
     background-color: var(--lightest);
-    border-radius: 70px;
-    padding: 133px 0;
+    border-radius: 30px;
+    padding: 70px 20px;
   }  
   .content__item {
     display: flex;
     flex-direction: row;
-    gap: 47px;
     max-width: 1002px;
     margin: 0 auto;
     padding: 40px 45px 40px 0;
@@ -73,11 +72,21 @@
   .content__item-description {
     width: 481px;
     padding: 0;
+    margin-left: 47px;
   }
   .content__item-title {
-    font-size: 40px;
+    font-size: 30px;
   }
   .content__item-text {
     font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .content-solutions {
+    border-radius: 70px;
+    padding: 133px 0;
+  } 
+  .content__item-title {
+    font-size: 40px;
   }
 }

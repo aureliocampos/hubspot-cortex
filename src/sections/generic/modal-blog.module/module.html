@@ -28,7 +28,7 @@
 		{% if module.cta_go_back.link_field.url.type is equalto "EMAIL_ADDRESS" %}
 			{% set href = "mailto:" + href %}
 		{% endif %}
-		<a href="{{ href }}" class="button button--primary"
+		<a href="{{ href }}" class="button button--link"
 			{% if module.cta_go_back.link_field.open_in_new_tab %}target="_blank"{% endif %}
 			{% if module.cta_go_back.link_field.rel %}rel="{{ module.cta_go_back.link_field.rel }}"{% endif %}
 			>

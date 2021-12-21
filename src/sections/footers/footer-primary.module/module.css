@@ -165,11 +165,13 @@
     text-align: left;
   }
   .footer-cortex__cta .button--primary {
+    font-size: 12px;
     margin-left: 0;
   }
   .footer__menu {
     display: block;
-    width: 715px;
+    width: 500px;
+    font-size: 13px;
   }
   .footer__menu .hs-menu-wrapper>ul[role="menu"] {
     display: flex;
@@ -234,5 +236,12 @@
     display: inline-flex;
     align-items: center;
     margin-right: 8px;
+  }
+  .footer-cortex__cta .button--primary {
+    font-size: 16px;
+  }
+  .footer__menu {
+    width: 715px;
+    font-size: 16px;
   }
 }

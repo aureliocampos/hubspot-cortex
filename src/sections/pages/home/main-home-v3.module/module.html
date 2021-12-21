@@ -15,8 +15,8 @@
           {{ module.cta_main_home.text }}
         </a>
       </header>
-      <div class="main-home__videos-items" data-disable="mobile">
-        <div id="bm" class="main-home__card-video" data-disable="mobile"></div>
+      <div class="main-home__videos-items">
+        <div id="bm"></div>
       </div>
     </div>
 
@@ -89,3 +89,6 @@
   </div>
 </section>
 
+  <!-- you can add async or defer attributes to the tags that are added. -->
+  {{ require_js(get_asset_url('/teste-video/scripts/lottie.js'), { position: 'footer'}) }}
+  <!-- {{ require_js(get_asset_url('/teste-video/scripts/index.js'), { position: 'footer'}) }} -->

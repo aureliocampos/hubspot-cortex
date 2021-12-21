@@ -22,10 +22,6 @@ function readingRate(textContainerID) {
     return
   }
 }
-
-
-
-
 function clickHandler(e) {
   e.preventDefault();
   const href = this.getAttribute("href");
@@ -36,7 +32,6 @@ function clickHandler(e) {
     behavior: "smooth"
   });
 }
-
 for (const link of links) {
   link.addEventListener("click", clickHandler);
 }
