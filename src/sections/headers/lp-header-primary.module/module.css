@@ -1,0 +1,28 @@
+.lp-header {
+  padding: 1.5em 2em;
+}
+.lp-header .header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 256px;
+  margin: 0 auto;
+}
+.lp-header .header__figure {
+  width: 110px;
+  height: auto;
+}
+
+@media (min-width:768px) {
+  .lp-header {
+    padding: 2em 0;
+  }
+}
+@media (min-width:1200px) {
+  .lp-header {
+    padding: 2.5em 0;
+  }
+  .lp-header .header__container {
+    max-width: 310px;
+  }
+}

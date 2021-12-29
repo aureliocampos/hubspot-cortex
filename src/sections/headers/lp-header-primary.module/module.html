@@ -1,0 +1,29 @@
+<header class="header lp-header">
+	<div class="header__container">
+		<figure class="header__figure">
+			{% if module.logo_cortex.src %}
+				{% set sizeAttrs = 'width="{{ module.logo_cortex.width }}" height="{{ module.logo_cortex.height }}"' %}
+				{% if module.logo_cortex.size_type == 'auto' %}
+					{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+				{% elif module.logo_cortex.size_type == 'auto_custom_max' %}
+					{% set sizeAttrs = 'width="{{ module.logo_cortex.max_width }}" height="{{ module.logo_cortex.max_height }}" style="max-width: 100%; height: auto;"' %}
+				{% endif %}
+				{% set loadingAttr = module.logo_cortex.loading != 'disabled' ? 'loading="{{ module.logo_cortex.loading }}"' : '' %}
+				<img src="{{ module.logo_cortex.src }}" alt="{{ module.logo_cortex.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+			{% endif %}
+
+		</figure>
+		<figure class="header__figure">
+			{% if module.logo_cliente.src %}
+				{% set sizeAttrs = 'width="{{ module.logo_cliente.width }}" height="{{ module.logo_cliente.height }}"' %}
+				{% if module.logo_cliente.size_type == 'auto' %}
+					{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+				{% elif module.logo_cliente.size_type == 'auto_custom_max' %}
+					{% set sizeAttrs = 'width="{{ module.logo_cliente.max_width }}" height="{{ module.logo_cliente.max_height }}" style="max-width: 100%; height: auto;"' %}
+				{% endif %}
+				{% set loadingAttr = module.logo_cliente.loading != 'disabled' ? 'loading="{{ module.logo_cliente.loading }}"' : '' %}
+				<img src="{{ module.logo_cliente.src }}" alt="{{ module.logo_cliente.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+			{% endif %}
+		</figure>
+	</div>
+</header>
