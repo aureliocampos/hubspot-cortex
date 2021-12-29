@@ -13,7 +13,7 @@
     {{ standard_header_includes }}
 
     <link rel="preconnect" href="https://cdn2.hubspot.net">
-
+    {{ require_css(get_asset_url('/cortex-intelligence/lib/swiper/swiper.min.css')) }}
     {{ require_css(get_asset_url('/cortex-intelligence/css/main.css')) }}
   </head>
   <body>
@@ -25,7 +25,7 @@
       {% endblock body %}
 
     </div>
-
+    {{ require_js(get_asset_url('/cortex-intelligence/lib/swiper/swiper.min.js'), { position: 'header'}) }}
     {{ standard_footer_includes }}
   </body>
 </html>

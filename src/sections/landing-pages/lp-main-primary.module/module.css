@@ -27,7 +27,7 @@
 .lp-main__figure {
   position: relative;
   top: 70px;
-  max-width: 300px;
+  max-width: 350px;
 }
 
 @media (min-width: 640px) {
