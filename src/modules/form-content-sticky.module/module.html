@@ -1,0 +1,46 @@
+<section class="section section form-content-sticky">
+  <div class="section__container section__container--flex">
+    <div class="section__content">
+      <h2 class="section__title">Neste eBook, vamos te provar que na verdade você está diante de uma grande oportunidade.</h2>
+      <div class="section__text">
+        <p>Ao contrário dos departamentos de marketing, que já se deram conta há anos da importância de ser data driven, as áreas de comunicação e relações públicas iniciaram a transformação digital com mais intensidade somente nos últimos anos.</p>
+        <p>Agora, esse movimento foi ainda mais intensificado com a pandemia da Covid-19, que forçou as empresas a se adaptarem ao digital do dia para a noite e enxugou os orçamentos das áreas. <strong>Ou seja, não há espaço para erros.</strong> É preciso ser assertivo nas decisões.</p>
+      </div>
+    </div>
+    <div id="cortex-form" class="section__form-content-sticky cortex-form--black">
+      {% if module.form.title is truthy %}
+        {% set no_title = False %}
+      {% else %} 
+        {% set no_title = True %}
+      {% endif %}
+      
+      {% if module.form.form.form_id %}
+        {% form
+          form_key='{{ name }}',
+          form_to_use='{{ module.form.form.form_id }}',
+          title='{{ module.form.title }}',
+          no_title='{{ no_title }}',
+          follow_up_type_simple='{{ module.form.follow_up_type_simple }}',
+          simple_email_for_live_id='{{ module.form.simple_email_for_live_id }}',
+          follow_up_type_automation='{{ module.form.follow_up_type_automation }}',
+          form_follow_ups_workflow_id='{{ module.form.form_follow_ups_workflow_id }}',
+          response_response_type='{{ module.form.form.response_type }}',
+          response_redirect_id='{{ module.form.form.redirect_id }}',
+          response_redirect_url='{{ module.form.form.redirect_url }}',
+          response_message='{{ module.form.form.message }}',
+          notifications_are_overridden='{{ module.form.notifications_are_overridden }}',
+          notifications_override_email_addresses='{{ module.form.notifications_override_email_addresses }}'
+          gotowebinar_webinar_key='{{ module.form.form.gotowebinar_webinar_key }}'
+          sfdc_campaign='{{ module.form.sfdc_campaign }}'
+        %}
+      {% else %}
+        {% form
+          title='{{ module.form.title }}',
+          no_title='{{ no_title }}',
+        %}
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+
