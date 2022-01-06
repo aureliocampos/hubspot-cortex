@@ -1,0 +1,68 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cortex-intelligence.com/#website",
+      "url": "https://cortex-intelligence.com/",
+      "name": "Cortex",
+      "description": "Big Data e ci\u00eancia de dados para turbinar  seus resultados",
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "target": "https://cortex-intelligence.com/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      ],
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://cortex-intelligence.com/blog/vendas/licitacoes-em-saude-big-data-multiplica-faturamento-nas-vendas-para-o-governo/#primaryimage",
+      "inLanguage": "pt-BR",
+      "url": "https://cortex-intelligence.com/wp-content/uploads/2019/01/B2Gov-licitacao-saude.png",
+      "width": 630,
+      "height": 350,
+      "caption": "Licita\u00e7\u00f5es em Sa\u00fade: big data multiplica faturamento nas vendas para o governo"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cortex-intelligence.com/blog/vendas/licitacoes-em-saude-big-data-multiplica-faturamento-nas-vendas-para-o-governo/#webpage",
+      "url": "https://cortex-intelligence.com/blog/vendas/licitacoes-em-saude-big-data-multiplica-faturamento-nas-vendas-para-o-governo/",
+      "name": "Licita\u00e7\u00f5es em Sa\u00fade: big data multiplica faturamento nas vendas para o governo - Cortex",
+      "isPartOf": {
+        "@id": "https://cortex-intelligence.com/#website"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://cortex-intelligence.com/blog/vendas/licitacoes-em-saude-big-data-multiplica-faturamento-nas-vendas-para-o-governo/#primaryimage"
+      },
+      "datePublished": "2019-01-24T13:47:06+00:00",
+      "dateModified": "2019-08-15T15:13:57+00:00",
+      "author": {
+        "@id": "https://cortex-intelligence.com/#/schema/person/fafeab9ba77ccc7279003f32d7a18a50"
+      },
+      "description": "Empresas j\u00e1 investem em tecnologias para otimizar processos de vendas e abocanhar fatias cada vez maiores do mercado de licita\u00e7\u00f5es em sa\u00fade.",
+      "inLanguage": "pt-BR",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://cortex-intelligence.com/blog/vendas/licitacoes-em-saude-big-data-multiplica-faturamento-nas-vendas-para-o-governo/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://cortex-intelligence.com/#/schema/person/fafeab9ba77ccc7279003f32d7a18a50",
+      "name": "Nathalia Curvelo",
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://cortex-intelligence.com/#personlogo",
+        "inLanguage": "pt-BR",
+        "url": "https://secure.gravatar.com/avatar/05403502a626f3ab8610a49fa470a4f5?s=96&d=mm&r=g",
+        "caption": "Nathalia Curvelo"
+      }
+    }
+  ]
+}

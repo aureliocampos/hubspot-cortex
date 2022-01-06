@@ -214,9 +214,9 @@
 .hs-menu-children-wrapper.active {
   max-height: 296px;
 }
-.hs-tools-menu.hs-collapsed {
+/* .hs-tools-menu.hs-collapsed {
   display: none !important;
-}
+} */
 
 /*Tablet Landscape */
 @media screen and (min-width: 1024px ) {

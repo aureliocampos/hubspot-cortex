@@ -20,60 +20,6 @@
   "type" : "richtext",
   "default" : "Novas métricas e indicadores de comunicação"
 }, {
-  "id" : "f7ca918b-6499-e3fd-fcdc-f11093d24a5c",
-  "name" : "button_cta",
-  "display_width" : null,
-  "label" : "Botão CTA",
-  "required" : false,
-  "locked" : false,
-  "children" : [ {
-    "id" : "8080b032-3cff-bbb0-89a5-a685d1833e88",
-    "name" : "link_field",
-    "display_width" : null,
-    "label" : "Link",
-    "required" : false,
-    "locked" : false,
-    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
-    "show_advanced_rel_options" : false,
-    "type" : "link",
-    "default" : {
-      "url" : {
-        "content_id" : null,
-        "type" : "EXTERNAL",
-        "href" : "#cortex-form"
-      },
-      "open_in_new_tab" : false,
-      "no_follow" : false
-    }
-  }, {
-    "id" : "e12f7b9d-8db1-c935-ae14-1ce24bdd81cb",
-    "name" : "text_field",
-    "display_width" : null,
-    "label" : "Texto",
-    "required" : false,
-    "locked" : false,
-    "validation_regex" : "",
-    "allow_new_line" : false,
-    "show_emoji_picker" : false,
-    "type" : "text",
-    "default" : "Baixar Ebook"
-  } ],
-  "tab" : "CONTENT",
-  "expanded" : false,
-  "type" : "group",
-  "default" : {
-    "link_field" : {
-      "url" : {
-        "content_id" : null,
-        "type" : "EXTERNAL",
-        "href" : ""
-      },
-      "open_in_new_tab" : false,
-      "no_follow" : false
-    },
-    "text_field" : "Baixar Ebook"
-  }
-}, {
   "id" : "2eca3bfb-c530-8048-3768-112a260811a0",
   "name" : "style",
   "display_width" : null,
@@ -119,4 +65,21 @@
     "max_width" : 1028,
     "max_height" : 1160
   }
+}, {
+  "id" : "ad55e18d-97a6-719c-a7cb-2412a63aa872",
+  "name" : "subtitulo",
+  "display_width" : null,
+  "label" : "Subtítulo",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>O eBook Novas métricas e indicadores de comunicação foi enviado para o seu e-mail.</p>"
+}, {
+  "id" : "617d9619-c66c-4df8-dd8b-33fd75b8cd7e",
+  "name" : "p_gina_de_compartilhamento",
+  "display_width" : null,
+  "label" : "Página de compartilhamento",
+  "required" : true,
+  "locked" : false,
+  "type" : "page"
 } ]

@@ -41,6 +41,8 @@
                 {% set button_text = 'Baixar eBook' %}
               {% elif item.tag_field == 'Caso de Sucesso' %}
                 {% set button_text = 'Baixar Case' %}
+              {% else %}
+                {% set button_text = 'Baixar' %}
               {% endif %}
               <a href="{{ resource.absolute_url }}" class="button button--primary">{{ button_text }}</a>
             </div>

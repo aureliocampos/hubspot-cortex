@@ -15,6 +15,6 @@
   "icon" : "../../../mV0_hubspot/img/icon/high-forms.svg",
   "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
   "module_id" : 62838101512,
-  "label" : "form-subscribe",
+  "label" : "Formulário ",
   "is_available_for_new_content" : true
 }

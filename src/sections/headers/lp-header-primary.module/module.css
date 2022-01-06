@@ -3,7 +3,7 @@
 }
 .lp-header .header__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   max-width: 256px;
   margin: 0 auto;

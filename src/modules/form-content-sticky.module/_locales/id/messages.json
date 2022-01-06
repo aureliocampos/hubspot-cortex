@@ -199,36 +199,6 @@
     "description" : null,
     "placeholders" : null
   },
-  "form.title.default" : {
-    "message" : "Cadastre-se para receber nossos conteúdos do blog",
-    "description" : null,
-    "placeholders" : null
-  },
-  "form.title.help_text" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "form.title.inline_help_text" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "form.title.label" : {
-    "message" : "Form Title",
-    "description" : null,
-    "placeholders" : null
-  },
-  "form.title.placeholder" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
-  "form.title.validation_regex" : {
-    "message" : "",
-    "description" : null,
-    "placeholders" : null
-  },
   "form_follow_ups_workflow_id.label" : {
     "message" : "Alur kerja",
     "description" : "",
@@ -236,7 +206,62 @@
   },
   "name" : {
     "message" : "form-content-sticky",
-    "description" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "richtext_field.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "richtext_field.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "richtext_field.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "richtext_field.label" : {
+    "message" : "Rich text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "richtext_field.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Texto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.validation_regex" : {
+    "message" : "",
+    "description" : null,
     "placeholders" : null
   }
 }

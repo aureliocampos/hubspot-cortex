@@ -1,11 +1,8 @@
 <section class="section section form-content-sticky">
   <div class="section__container section__container--flex">
     <div class="section__content">
-      <h2 class="section__title">Neste eBook, vamos te provar que na verdade você está diante de uma grande oportunidade.</h2>
-      <div class="section__text">
-        <p>Ao contrário dos departamentos de marketing, que já se deram conta há anos da importância de ser data driven, as áreas de comunicação e relações públicas iniciaram a transformação digital com mais intensidade somente nos últimos anos.</p>
-        <p>Agora, esse movimento foi ainda mais intensificado com a pandemia da Covid-19, que forçou as empresas a se adaptarem ao digital do dia para a noite e enxugou os orçamentos das áreas. <strong>Ou seja, não há espaço para erros.</strong> É preciso ser assertivo nas decisões.</p>
-      </div>
+      <h2 class="section__title">{{ module.title }}</h2>
+      <div class="section__text">{{ module.richtext_field }}</div>
     </div>
     <div id="cortex-form" class="section__form-content-sticky cortex-form--black">
       {% if module.form.title is truthy %}

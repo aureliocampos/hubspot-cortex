@@ -2,6 +2,7 @@
   margin: 0 2em;
 }
 .section-cta__box {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,9 +20,11 @@
   letter-spacing: -0.02em;
   margin-bottom: 1.5rem;
 }
+
 .button-cta--solutions {
   color: var(--white);
 }
+
 .button-cta--solutions .icon-input-seta {
   font-size: 10px;
   margin-left: 0.5em;
@@ -40,13 +43,15 @@
     border: 6px solid var(--lightest);
     box-sizing: border-box;
     border-radius: 32px;
-    padding: 2.5em 3.75em 2.5em 0;
+    padding: 2.5em 3.75em;
   }
   .cta-icon {
-    position: relative;
+    position: absolute;
+    left: 0;
     display: block;
     height: 50px;
     width: 5px;
+    
   }
   .cta-icon:after {
     position: absolute;
