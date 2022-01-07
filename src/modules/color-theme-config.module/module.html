@@ -1,0 +1,9 @@
+{% if module.escolha_a_cor_da_marca == "brand_color_2" %}
+  {{ require_css(get_asset_url('/cortex-intelligence/css/templates-solutions/brand-color-2.css')) }}
+{% elif module.escolha_a_cor_da_marca == "brand_color_3" %}
+  <link type="text/css" rel="stylesheet" href="{{ get_asset_url('/cortex-intelligence/css/templates-solutions/brand-color-3.css') }}">
+{% elif module.escolha_a_cor_da_marca == "brand_color_4" %}
+  <link type="text/css" rel="stylesheet" href="{{ get_asset_url('/cortex-intelligence/css/templates-solutions/brand-color-4.css') }}">
+{% else %}
+  <link type="text/css" rel="stylesheet" href="{{ get_asset_url('/cortex-intelligence/css/templates-solutions/brand-color-neutral.css') }}">
+{% endif %}

@@ -57,3 +57,14 @@
 .clients__item {
   color: var(--green_official);
 }
+
+
+/**
+*** ESTILOS DEFINIDOS PARA LANDING PAGES E THANK YOU PAGES
+* EBOOK
+* MEETUP
+* THANK YOU
+*/
+.lp-main__tag {
+  background-color: var(--green_official);
+}

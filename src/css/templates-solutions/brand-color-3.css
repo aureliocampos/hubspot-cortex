@@ -80,3 +80,14 @@
   stroke: var(--blue_spotlight);
   stroke-dashoffset: -50px;
 }
+
+
+/**
+*** ESTILOS DEFINIDOS PARA LANDING PAGES E THANK YOU PAGES
+* EBOOK
+* MEETUP
+* THANK YOU
+*/
+.lp-main__tag {
+  background-color: var(--blue_official);
+}

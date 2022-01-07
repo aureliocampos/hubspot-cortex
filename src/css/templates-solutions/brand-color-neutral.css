@@ -29,3 +29,15 @@
   background: var(--light);
   color: var(--darkest);
 }
+
+
+
+/**
+*** ESTILOS DEFINIDOS PARA LANDING PAGES E THANK YOU PAGES
+* EBOOK
+* MEETUP
+* THANK YOU
+*/
+.lp-main__tag {
+  background-color: var(--dark);
+}
