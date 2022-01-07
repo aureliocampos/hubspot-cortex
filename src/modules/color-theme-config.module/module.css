@@ -1,3 +1,105 @@
-:root {
-  --brand_official: var(--purple_official);
+/**
+*
+*** ESTILOS DEFINIDOS PARA PÁGINA DE SOLUÇÕES
+* COMUNICAÇÃO É MARKETING
+* VENDAS E MERCADO
+* 
+*/
+
+/* Botão modulo Main */
+.button--main-solutions {
+  color: var(--brand_official);
+  background: var(--brand_lightest);
+}
+.button--main-solutions span:before {
+  color: var(--brand_spotlight);
+}
+.button--main-solutions:hover {
+  color: var(--white);
+  background-color: var(--brand_official);
+}
+.button--main-solutions:hover span:before {
+  color: var(--brand_light);
+}
+
+/* Título de conteúdo Modulo content */
+.content__item-title span {
+  color: var(--brand_spotlight);
+}
+.content__item-title span.brand-color-light {
+  color: var(--brand_light);
+}
+.content__item-title span.brand-color-official {
+  color: var(--brand_official);
+}
+
+/* Seção CTA */
+.cta-icon {
+  background-color: var(--brand_official);
+}
+.cta-icon:after {
+  background: var(--brand_spotlight);
+}
+.button-cta--solutions {
+  background-color: var(--brand_official);
+}
+.button-cta--solutions .icon-input-seta {
+  color: var(--brand_light);
+}
+.button-cta--solutions:hover {
+  color: var(--brand_official);
+  background: var(--brand_lightest);
+}
+.button-cta--solutions:hover .icon-input-seta {
+  color: var(--brand_spotlight);
+}
+
+/* Seção de depoimentos e Clientes */
+.customer-testimonial__content {
+  background-color: var(--brand_official);
+}
+.customer-testimonial__author {
+  color: var(--brand_light);
+}
+.clients__item {
+  color: var(--brand_official);
+}
+
+/* controles do slide de depoimento */
+.arrow-next .arrow,
+.arrow-prev .arrow {
+  stroke: var(--brand_spotlight);
+}
+
+.arrow-next .circle-background,
+.arrow-next .circle-small,
+.arrow-prev .circle-background,
+.arrow-prev .circle-small {
+  stroke: var(--brand_light);
+}
+.arrow-next .circle-background--animation,
+.arrow-prev .circle-background--animation  {
+  stroke: var(--brand_official);
+  stroke-dashoffset: -50px;
+}
+.arrow-next .circle-small--animation,
+.arrow-prev .circle-small--animation {
+  stroke: var(--brand_spotlight);
+  stroke-dashoffset: -50px;
+}
+/*=================================*/
+
+
+
+
+/**
+*
+*** ESTILOS DEFINIDOS PARA LANDING PAGES E THANK YOU PAGES
+* EBOOK
+* MEETUP
+* THANK YOU
+*
+*/
+.lp-main__tag {
+  background-color: var(--brand_official);
 }

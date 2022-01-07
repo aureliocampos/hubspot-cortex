@@ -68,3 +68,7 @@
 .lp-main__tag {
   background-color: var(--green_official);
 }
+
+:root {
+  --brand_official : var(--green_official);
+}

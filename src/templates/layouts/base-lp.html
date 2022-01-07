@@ -32,19 +32,28 @@
   </script>
 </head>
 
-<body>
-  <div class="body-wrapper {{ builtin_body_classes }}">
+  <body>
+    
+    <!-- Seletor de Cores Cortex -->
+    {% module "module_16415189198955" path="/cortex-intelligence/modules/color-theme-config", label="Configurar tema de cores" %}
 
-    {% module "module_16407967948607" path="/cortex-intelligence/sections/headers/lp-header-primary", label="Header" %}
+    <div class="body-wrapper {{ builtin_body_classes }}">
+  
+      <!-- Header -->
+      {% module "module_16407967948607" path="/cortex-intelligence/sections/headers/lp-header-primary", label="Header" %}
 
-    {% block body %}
-    {% endblock body %}
+      <!-- Conteúdo inserido dentro do template -->
+      {% block body %}
+      {% endblock body %}
 
-    {% module "module_16408981570786" path="/cortex-intelligence/sections/footers/lp-footer-primary", label="Footer" %}
-  </div>
-  {{ require_js(get_asset_url('/cortex-intelligence/lib/swiper/swiper.min.js'), { position: 'header'}) }}
-  {{ standard_footer_includes }}
+      <!-- Footer -->
+      {% module "module_16408981570786" path="/cortex-intelligence/sections/footers/lp-footer-primary", label="Footer" %}
+    </div>
 
-</body>
+    
+    <!-- Scripts e bibliotecas globais -->
+    {{ require_js(get_asset_url('/cortex-intelligence/lib/swiper/swiper.min.js'), { position: 'header'}) }}
+    {{ standard_footer_includes }}
 
+  </body>
 </html>
