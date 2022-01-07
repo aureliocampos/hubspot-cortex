@@ -1,0 +1,118 @@
+.section--person-profile {
+  padding: 4em 2em;
+}
+.section--person-profile .section__title {
+  font: 400 1.5em var(--primary-font);
+  color: var(--darkest);
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+.profiles__items {
+  margin: 2em 0;
+}
+.profile__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 200px;
+  height: 350px;
+  margin: 0 auto 3.5em auto;
+}
+.profile__info {
+  text-align: center;
+  margin-top: 1rem;
+}
+.profile__name {
+  font: 400 1.25em var(--primary-font);
+  color: var(--darkest);
+  line-height: 100%;
+  letter-spacing: -0.035em;
+}
+.profile__job {
+  font: 400 0.875em var(--secondary-font);
+  color: var(--darkest);
+  line-height: 148%;
+  margin-top: 0.625rem;
+}
+.profile__nav {
+  margin-top: 1.25em;
+}
+.profile__nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 150px;
+  margin: 0 auto;
+}
+.profile__nav-item {
+  font-size: 2em;
+  margin: 0 0.3em;
+}
+
+
+/* ícones social */
+
+.profile__nav-link .icon-linkedin .path1:before,
+.profile__nav-link .icon-facebook .path1:before,
+.profile__nav-link .icon-youtube .path1:before {
+  color: var(--darkest);
+}
+.profile__nav-link .icon-linkedin .path2:before, 
+.profile__nav-link .icon-linkedin .path3:before, 
+.profile__nav-link .icon-facebook .path2:before, 
+.profile__nav-link .icon-youtube .path2:before, 
+.profile__nav-link .icon-instagram .path1:before {
+  color: #f1f1fa;
+}
+.icon-linkedin .path2:before,
+.icon-linkedin .path3:before,
+.icon-facebook .path2:before,
+.icon-instagram .path2:before {
+  margin-left: -1em;
+}
+.profile__nav-link .icon-instagram .path2:before {
+  color: var(--darkest);
+}
+.icon-youtube .path2:before {
+  margin-left: -0.9658203125em;
+}
+
+
+@media (min-width: 640px) {
+  .profiles__items {
+    display: flex;
+    align-items: flex-start;
+  }
+  .section--person-profile .section__title {
+    font-size: 2em;
+    margin-bottom: 2em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section--person-profile {
+    padding: 0 0 2em 0;
+  }
+  .section--person-profile .section__title {
+    font-size: 2.5em;
+    margin-bottom: 2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section--person-profile {
+    padding: 2em 0 4em 0;
+  }
+  .section--person-profile .section__title {
+    max-width: 1114px;
+    font-size: 3em;
+    text-align: left;
+    margin: 0 auto 1.5em auto;
+  }
+  .profiles__items {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
