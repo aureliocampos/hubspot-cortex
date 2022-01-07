@@ -1,13 +1,23 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: Landing Page - Ebook
+  label: Landing Page - Meetup
 -->
 
 {% extends "../layouts/base-lp.html" %}
 
 {% block body %}
-  <main id="main-content" class="body-container-wrapper landing-page--ebook">
-
+  <main id="main-content" class="body-container-wrapper landing-page--meetup">
+    {% module "module_16407979092019" 
+      path="/cortex-intelligence/sections/landing-pages/lp-main-primary", 
+      label="Main Landing Page" 
+      escolha_o_tipo_de_imagem="meetup"
+      image_field={
+        "src": "https://pages.cortex-intelligence.com/hubfs/PR%20-%20meetup%20-%20LP-INVERT.png",
+        "alt": "Insira um altText relevante"
+      }
+    %}
+    {% module "module_164152852417933" path="/cortex-intelligence/sections/landing-pages/person-profiles", label="Perfil de pessoas" %}
+    {% module "module_16408200462891" path="/cortex-intelligence/modules/form-content-sticky", label="Formulário" %}
   </main>
 {% endblock body %}

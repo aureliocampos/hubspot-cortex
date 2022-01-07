@@ -45,6 +45,7 @@
 @media (min-width: 1024px) {
   .lp-main--primary {
     padding: 4em 0;
+    margin-bottom: 7em;
   }
   .lp-main--primary .section__container {
     position: relative;
@@ -55,7 +56,7 @@
     margin: 0 auto;
   }
   .lp-main--primary .section__content {
-    width: 50%;
+    width: 46%;
   }
   .lp-main__title {
     font-size: 2.5em;
@@ -77,6 +78,12 @@
 
 
 @media (min-width: 1200px) {
+  .lp-main--primary[data-typemargin="ebook"] {
+    min-height: 435px;
+  }
+  .lp-main--primary[data-typemargin="meetup"] {
+    min-height: 485px;
+  }
   .lp-main--primary .section__container { 
     max-width: 1114px;
   }

@@ -68,7 +68,7 @@
   /* container block  */
   .section--content-slide-vertical {
     max-width: 960px;
-    padding: 8rem 0;
+    padding: 4em 0 7rem 0;
   }
   .section--content-slide-vertical .section__title {
     width: 400px;
