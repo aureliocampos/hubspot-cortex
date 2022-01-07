@@ -15,51 +15,26 @@
     <link rel="preconnect" href="https://cdn2.hubspot.net">
 
     {{ require_css(get_asset_url('/cortex-intelligence/css/main.css')) }}
-
-<!--     <script type="application/ld+json">
-      {
+    {% require_js %}
+      <script type="application/ld+json" aria-label="Dados estruturados Website">
+        {
         "@context": "https://schema.org",
-        "@graph": [
+        "@type": "WebSite",
+        "name": "{{company_name}}",
+        "url": "https://www.cortex-intelligence.com/",
+        "description": "Big Data e ciência de dados para turbinar  seus resultados",
+        "potentialAction": [
           {
-            "@type": "WebSite",
-            "@id": "https://www.cortex-intelligence.com/#website",
-            "url": "https://www.cortex-intelligence.com/",
-            "name": "{{company_name}}",
-            "description": "Big Data e ciência de dados para turbinar  seus resultados",
-            "potentialAction": [
-              {
-                "@type": "SearchAction",
-                "target": "https://www.cortex-intelligence.com/?s={search_term_string}",
-                "query-input": "required name=search_term_string"
-              }
-            ],
-            "inLanguage": "{{html_lang}}"
-          },
-          {
-            "@type": "WebPage",
-            "@id": "http://cortex-intelligence.com/#webpage",
-            "url": "{{absolute_url}}",
-            "name": "{{page_meta.unescaped_html_title}}",
-            "isPartOf": {
-              "@id": "https://www.cortex-intelligence.com/#website"
-            },
-            "datePublished": "2020-03-27T04:29:16+00:00",
-            "dateModified": "2021-06-23T20:23:45+00:00",
-            "description": "{{page_meta.unescaped_meta_description}}",
-            "inLanguage": "{{html_lang}}",
-            "potentialAction": [
-              {
-                "@type": "ReadAction",
-                "target": [
-                  "{{absolute_url}}"
-                ]
-              }
-            ]
+            "@type": "SearchAction",
+            "target": "https://www.cortex-intelligence.com/hs-search-results?term={query}",
+            "query": "required"
           }
-        ]
+        ],
+        "inLanguage": "{{html_lang}}"
       }
       
-    </script> -->
+      </script>
+    {% end_require_js%}
   </head>
   <body class="body-wrapper {{ builtin_body_classes }}">
 
