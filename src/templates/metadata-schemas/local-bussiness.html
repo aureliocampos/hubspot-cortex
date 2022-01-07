@@ -1,0 +1,26 @@
+<!--
+    templateType: global_partial
+    isAvailableForNewContent: false
+-->
+{% require_js %}
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "LocalBusiness",
+  "name" : "{{ site_settings.company_name }}",
+  "image" : "{{ site_settings.site_settings.logo_src}}",
+  "telephone" : "{{ site_settings.company_phone}}",
+  "email" : "",
+  "address" : {
+    "@type" : "PostalAddress",
+    "streetAddress" : "{{ site_settings.company_street_address1 }}",
+    "addressLocality" : "{{ site_settings.company_city }}",
+    "addressRegion" : "{{ site_settings.company_state }}",
+    "addressCountry" : "{{ site_settings.company_country }}",
+    "postalCode" : "{{ site_settings.company_zip }}"
+  },
+  "url" : "{{ site_settings.domain }}",
+  "priceRange": "R$ & $"
+}
+</script>
+{% end_require_js%}

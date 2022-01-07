@@ -1,0 +1,30 @@
+<!--
+    templateType: global_partial
+    isAvailableForNewContent: false
+-->
+{% require_js %}
+<script type="application/ld+json" aria-label="Dados estruturados Website">
+ {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{company_name}}",
+  "url": "https://www.cortex-intelligence.com/",
+  "description": "Big Data e ciência de dados para turbinar  seus resultados",
+    "potentialAction": [{
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.cortex-intelligence.com/hs-search-results?term={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+      },{
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "android-app://com.cortex-intelligence/https/query.cortex-intelligence.com/hs-search-results?term={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }]
+    }
+</script>
+{% end_require_js%}

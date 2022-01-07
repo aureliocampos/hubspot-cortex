@@ -15,26 +15,7 @@
     <link rel="preconnect" href="https://cdn2.hubspot.net">
 
     {{ require_css(get_asset_url('/cortex-intelligence/css/main.css')) }}
-    {% require_js %}
-      <script type="application/ld+json" aria-label="Dados estruturados Website">
-        {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "{{company_name}}",
-        "url": "https://www.cortex-intelligence.com/",
-        "description": "Big Data e ciência de dados para turbinar  seus resultados",
-        "potentialAction": [
-          {
-            "@type": "SearchAction",
-            "target": "https://www.cortex-intelligence.com/hs-search-results?term={query}",
-            "query": "required"
-          }
-        ],
-        "inLanguage": "{{html_lang}}"
-      }
-      
-      </script>
-    {% end_require_js%}
+    
   </head>
   <body class="body-wrapper {{ builtin_body_classes }}">
 
