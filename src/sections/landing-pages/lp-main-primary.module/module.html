@@ -1,17 +1,7 @@
 <section class="lp-main--primary">
   <div class="section__container">
     <div class="section__content">
-      
-      {% if module.style.escolha_a_cor_da_marca == "brand_color_2" %}
-         {% set bg_color = "#642D96" %}
-      {% elif module.style.escolha_a_cor_da_marca == "brand_color_3" %}
-        {% set bg_color = "#285FC3" %}
-      {% elif module.style.escolha_a_cor_da_marca == "brand_color_4" %}
-        {% set bg_color = "#1E9B50" %}
-      {% else %}
-       {% set bg_color = "#37324B" %}
-      {% endif %}
-      <p class="lp-main__tag" style="background-color:{{ bg_color }};">{{ module.tag }}</p>
+      <p class="lp-main__tag">{{ module.tag }}</p>
       
       <h1 class="lp-main__title">{{ module.title_h1 }}</h1>
       {% set href = module.button_cta.link_field.url.href %}
@@ -33,7 +23,8 @@
         {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
       {% endif %}
        {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
-      <figure class="lp-main__figure">
+    
+      <figure class="lp-main__figure" data-figuretype="{{ module.escolha_o_tipo_de_imagem }}">
         <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
       </figure>
     {% endif %}

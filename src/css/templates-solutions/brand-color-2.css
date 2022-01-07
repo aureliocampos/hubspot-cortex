@@ -1,6 +1,81 @@
-:root {
-  --brand_official  : var(--purple_official);
-  --brand-spotlight : var(--purple_spotlight);
-  --brand_light     : var(--purple_light);
-  --brand_lightest  : var(--purple_lightest);
+/* Botão modulo Main */
+.button--main-solutions {
+  color: var(--purple_official);
+  background: var(--purple_lightest);
+}
+.button--main-solutions span:before {
+  color: var(--purple_spotlight);
+}
+.button--main-solutions:hover {
+  color: var(--white);
+  background-color: var(--purple_official);
+}
+.button--main-solutions:hover span:before {
+  color: var(--purple_light);
+}
+
+/* Título de conteúdo Modulo content */
+.content__item-title span {
+  color: var(--purple_spotlight);
+}
+.content__item-title span.brand-color-light {
+  color: var(--purple_light);
+}
+.content__item-title span.brand-color-official {
+  color: var(--purple_official);
+}
+
+/* Seção CTA */
+.cta-icon {
+  background-color: var(--purple_official);
+}
+.cta-icon:after {
+  background: var(--purple_spotlight);
+}
+.button-cta--solutions {
+  background-color: var(--purple_official);
+}
+.button-cta--solutions .icon-input-seta {
+  color: var(--purple_light);
+}
+.button-cta--solutions:hover {
+  color: var(--purple_official);
+  background: var(--purple_lightest);
+}
+.button-cta--solutions:hover .icon-input-seta {
+  color: var(--purple_spotlight);
+}
+
+/* Seção de depoimentos e Clientes */
+.customer-testimonial__content {
+  background-color: var(--purple_official);
+}
+.customer-testimonial__author {
+  color: var(--purple_light);
+}
+.clients__item {
+  color: var(--purple_official);
+}
+
+/* controles do slide de depoimento */
+.arrow-next .arrow,
+.arrow-prev .arrow {
+  stroke: var(--purple_spotlight);
+}
+
+.arrow-next .circle-background,
+.arrow-next .circle-small,
+.arrow-prev .circle-background,
+.arrow-prev .circle-small {
+  stroke: var(--purple_light);
+}
+.arrow-next .circle-background--animation,
+.arrow-prev .circle-background--animation  {
+  stroke: var(--purple_official);
+  stroke-dashoffset: -50px;
+}
+.arrow-next .circle-small--animation,
+.arrow-prev .circle-small--animation {
+  stroke: var(--purple_spotlight);
+  stroke-dashoffset: -50px;
 }

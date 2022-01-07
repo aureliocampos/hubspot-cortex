@@ -20,6 +20,38 @@
   "type" : "richtext",
   "default" : "Novas métricas e indicadores de comunicação"
 }, {
+  "id" : "74429741-68ff-9aaf-b5a4-fe9450f87c5f",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Imagem",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://pages.cortex-intelligence.com/hubfs/capa-lp.png",
+    "alt" : "capa-lp",
+    "loading" : "lazy",
+    "width" : 1028,
+    "height" : 1160,
+    "max_width" : 1028,
+    "max_height" : 1160
+  }
+}, {
+  "id" : "6ab5f4ab-ec5e-081c-8faa-b8b95c8630b8",
+  "name" : "escolha_o_tipo_de_imagem",
+  "display_width" : null,
+  "label" : "Escolha o tipo de imagem",
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "meetup", "Mockup Meetup" ], [ "ebook", "Mockup Ebook" ] ],
+  "type" : "choice",
+  "default" : ""
+}, {
   "id" : "f7ca918b-6499-e3fd-fcdc-f11093d24a5c",
   "name" : "button_cta",
   "display_width" : null,
@@ -32,7 +64,7 @@
     "display_width" : null,
     "label" : "Link",
     "required" : false,
-    "locked" : false,
+    "locked" : true,
     "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
     "show_advanced_rel_options" : false,
     "type" : "link",
@@ -66,57 +98,11 @@
       "url" : {
         "content_id" : null,
         "type" : "EXTERNAL",
-        "href" : ""
+        "href" : "#cortex-form"
       },
       "open_in_new_tab" : false,
       "no_follow" : false
     },
     "text_field" : "Baixar Ebook"
-  }
-}, {
-  "id" : "2eca3bfb-c530-8048-3768-112a260811a0",
-  "name" : "style",
-  "display_width" : null,
-  "label" : "Style",
-  "required" : false,
-  "locked" : false,
-  "children" : [ {
-    "id" : "e23d306f-da5d-41f6-98d3-cee45b9badbe",
-    "name" : "escolha_a_cor_da_marca",
-    "display_width" : null,
-    "label" : "Escolha a cor da marca",
-    "required" : false,
-    "locked" : false,
-    "display" : "select",
-    "choices" : [ [ "brand_color_2", "Brand Color 2" ], [ "brand_color_3", "Brand Color 3" ], [ "brand_color_4", "Brand Color 4" ] ],
-    "type" : "choice",
-    "default" : "brand_color_2"
-  } ],
-  "tab" : "STYLE",
-  "expanded" : false,
-  "type" : "group",
-  "default" : {
-    "escolha_a_cor_da_marca" : "brand_color_2"
-  }
-}, {
-  "id" : "74429741-68ff-9aaf-b5a4-fe9450f87c5f",
-  "name" : "image_field",
-  "display_width" : null,
-  "label" : "Imagem",
-  "required" : false,
-  "locked" : false,
-  "responsive" : true,
-  "resizable" : false,
-  "show_loading" : false,
-  "type" : "image",
-  "default" : {
-    "size_type" : "auto",
-    "src" : "https://pages.cortex-intelligence.com/hubfs/capa-lp.png",
-    "alt" : "capa-lp",
-    "loading" : "lazy",
-    "width" : 1028,
-    "height" : 1160,
-    "max_width" : 1028,
-    "max_height" : 1160
   }
 } ]
