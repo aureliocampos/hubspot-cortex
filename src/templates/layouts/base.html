@@ -19,13 +19,14 @@
   </head>
   <body class="body-wrapper {{ builtin_body_classes }}">
 
-      {% module "module_16400516209561" path='/cortex-intelligence/sections/headers/header-primary', label="header-primary" %}
-      
-      {% block body %}
-      {% endblock body %}
+    {% module "module_16400516209561" path='/cortex-intelligence/sections/headers/header-primary', label="Header" %}
+    
+    {% block body %}
+    {% endblock body %}
 
-      {% module "module_16294732947563" path='/cortex-intelligence/sections/footers/footer-primary', label="footer-primary" %}
+    {% module "module_16294732947563" path='/cortex-intelligence/sections/footers/footer-primary', label="Footer" %}
 
+    {{ require_js(get_asset_url('/cortex-intelligence/lib/lazysizes.min.js'), { position: 'footer', async: true }) }}
     {{ standard_footer_includes }}
   </body>
 </html>

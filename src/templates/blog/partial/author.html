@@ -1,0 +1,62 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: false
+-->
+<div>
+  {% if blog_author.avatar %}
+    <img src="{{ blog_author.avatar }}" alt="image of blog {{ blog_author.display_name }}">
+  {% endif %}
+  <h1>{{ blog_author.display_name }}</h1>
+  {% if blog_author.bio %}
+    <p>{{ blog_author.bio }}</p>
+  {% endif %}
+  {% if blog_author.has_social_profiles %}
+    <div>
+      {% if blog_author.website %}
+        <a href="{{ blog_author.website }}" target="_blank" rel="noopener">
+          {% icon
+            name='link',
+            purpose='semantic',
+            style='SOLID',
+            title='Follow me on my website',
+            width='10'
+          %}
+        </a>
+      {% endif %}
+      {% if blog_author.facebook %}
+        <a href="{{ blog_author.facebook }}" target="_blank" rel="noopener">
+          {% icon
+            name='facebook-f',
+            purpose='semantic',
+            style='SOLID',
+            title='Follow me on Facebook',
+            width='10'
+          %}
+        </a>
+      {% endif %}
+      {% if blog_author.linkedin %}
+        <a href="{{ blog_author.linkedin }}" target="_blank" rel="noopener">
+          {% icon
+            name='linkedin-in',
+            purpose='semantic',
+            style='SOLID',
+            title='Follow me on LinkedIn',
+            width='10'
+          %}
+        </a>
+      {% endif %}
+      {% if blog_author.twitter %}
+        <a href="{{ blog_author.twitter }}" target="_blank" rel="noopener">
+          {% icon
+            name='twitter',
+            purpose='semantic',
+            style='SOLID',
+            title='Follow me on Twitter',
+            width='10'
+          %}
+        </a>
+      {% endif %}
+    </div>
+  {% endif %}
+  {% module "module_16424725170243" path="/cortex-intelligence/sections/pages/blog/grid-posts", label="Grid  posts" %}
+</div>

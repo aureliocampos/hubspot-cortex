@@ -1,0 +1,41 @@
+<section class="blog-listing__section">
+  <div class="blog-listing__items">
+    {% for content in contents %}
+    <article class="card-primary__article">
+      {% if content.featured_image and group.use_featured_image_in_summary %}
+        <figure class="card-primary__figure">
+          <a href="{{ content.absolute_url }}">
+            <img 
+              data-src="{{ content.featured_image }}" 
+              data-srcset="{{ resize_image_url( content.featured_image, 312, 190, 312 ) }} 312w,{{ resize_image_url( content.featured_image, 345, 190, 345 ) }} 345w" 
+              sizes="(max-width: 768px) 312px, (min-width: 769px) 345px" 
+              alt="{{ content.featured_image_alt_text }}"
+              class="lazyload card-primary__image"
+              width="312px"
+              height="190px"
+            />
+          </a>
+          <a href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}" class="card-primary__avatar" rel="author">
+            <small class="card-primary__avatar__name"><em>por</em> {{content.blog_post_author.name }}</small>
+            <img class="card-primary__avatar__image" src="{{content.blog_post_author.avatar }}" alt="{{content.blog_post_author.name }}" width="24" height="24" />
+          </a>
+        </figure>
+      {% endif %}
+      <div class="card-primary__summary">
+        <a href="{{ content.absolute_url }}">
+          <h2 class="card-primary__name">{{ content.name }}</h2>
+          {% if content_group.show_summary_in_listing %}
+            <p class="card-primary__description">{{ content.meta_description }}</p>
+          {% endif %}
+        </a>
+        {% if content.tag_list != [] %}
+          {% for tag in content.topic_list %}
+            <a href="{{ blog_tag_url('default', tag.slug) }}" class="card-primary__tag">{{tag}}</a>
+          {% endfor %}       
+        {% endif %}
+      </div>
+    </article>
+    <hr class="blog-listing__items__separator">
+  {% endfor %}
+  </div>
+</section>
