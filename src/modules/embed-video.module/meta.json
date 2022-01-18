@@ -1,0 +1,7 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE", "BLOG_POST" ],
+  "module_id" : 64178372718,
+  "label" : "Embed Vídeo",
+  "is_available_for_new_content" : true
+}
