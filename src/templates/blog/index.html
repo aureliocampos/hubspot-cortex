@@ -6,6 +6,8 @@
 
 {% extends "../layouts/base.html" %}
 
+{{ require_css(get_asset_url('/cortex-intelligence/css/blog/index.css')) }}
+
 {% block body %}
   <main id="main-content" class="body-container-wrapper" role="main">
     {% if blog_author %}
@@ -17,3 +19,5 @@
     {% endif %}
   </main>
 {% endblock body %}
+
+{{ require_js(get_asset_url('/cortex-intelligence/js/blog.js'), { position: 'footer', async: true }) }}

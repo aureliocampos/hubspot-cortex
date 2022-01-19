@@ -3,24 +3,50 @@
     isAvailableForNewContent: false
 -->
 
-<nav aria-label="Pagination" role="navigation">
-  {% set page_list = [-2, -1, 0, 1, 2] %}
-  {% if contents.total_page_count - current_page_num == 1 %}{% set offset = -1 %}
-  {% elif contents.total_page_count - current_page_num == 0 %}{% set offset = -2 %}
-  {% elif current_page_num == 2 %}{% set offset = 1 %}
-  {% elif current_page_num == 1 %}{% set offset = 2 %}
-  {% else %}{% set offset = 0 %}{% endif %}
-
-  <a class="blog-pagination__link blog-pagination__prev-link {{ 'blog-pagination__prev-link--disabled' if !last_page_num }}"{% if last_page_num %} href="{% if current_page_num == 2 %}{{ group.absolute_url }} {% else %}{{ blog_page_link(last_page_num) }}{% endif %}" rel="prev"{% else %} aria-disabled="true" disabled {% endif %} role="button" aria-label="Go to previous page">
-    Prev
-  </a>
-  {% for page in page_list %}
-    {% set this_page = current_page_num + page + offset %}
-    {% if this_page > 0 and this_page <= contents.total_page_count %}
-      <a class="blog-pagination__link blog-pagination__number-link {{ 'blog-pagination__link--active' if this_page == current_page_num }}" aria-label="Go to Page {{ this_page }}" {% if this_page == current_page_num %}aria-current="true"{% endif %} href="{% if this_page == 1 %}{{ group.absolute_url }}{% else %}{{ blog_page_link(this_page) }}{% endif %}">{{ this_page }}</a>
+{% set page_list = [-2, -1, 0, 1] %}
+    
+{% if contents.total_page_count - current_page_num == 1 %}
+  {% set offset = -1 %}
+{% elif contents.total_page_count - current_page_num == 0 %}
+  {% set offset = -2 %}
+{% elif current_page_num == 2 %}
+  {% set offset = 1 %}
+{% elif current_page_num == 1 %}
+  {% set offset = 2 %}
+{% else %}
+  {% set offset = 0 %}
+{% endif %}
+<nav class="pagination__nav" aria-label="Pagination" role="navigation">
+  <ul class="pagination__items">
+    {# {% if last_page_num %}<a class="pagination__link" href="{{ blog_page_link(last_page_num) }}">❮</a>{% endif %}#}
+    {% if contents.total_page_count > 5 %}
+      {% if current_page_num >= 4 %}
+        <li class="pagination__item">
+        <a href="{{ blog_page_link(1) }}" class="pagination__link">1</a>
+          </li>
+        <li class="elipses__item">
+          <a class="elipses pagination__link" href="{% if current_page_num <= 5 %}{{ blog_page_link(1) }}{% else %}{{ blog_page_link(current_page_num - 5) }}{% endif %}">...</a>
+        </li>
+      {% endif %}
+   {% endif %}
+   {% for page in page_list %}
+      {% set this_page = current_page_num + page + offset %}
+      {% if this_page > 0 and this_page <= contents.total_page_count %}
+          <li class="pagination__item">
+            <a {% if this_page == current_page_num %}id="active"{% endif %} href="{{ blog_page_link(this_page) }}" class="pagination__link" aria-label="Vá para a página {{ this_page }}">{{ this_page }}</a>
+          </li>
+      {% endif %}
+    {% endfor %}
+    {% if contents.total_page_count > 5 %}
+        {% if contents.total_page_count - current_page_num > 2 %}
+            <li class="elipses__item">
+              <a class="elipses" href="{% if contents.total_page_count - current_page_num <= 5 %}{{ contents.total_page_count }}{% else %}{{ blog_page_link(current_page_num + 5) }}{% endif %}">...</a>
+            </li>
+            <li class="pagination__item">
+                <a href="{{ blog_page_link(contents.total_page_count) }}" class="pagination__link" >{{ contents.total_page_count }}</a>
+             </li>
+        {% endif %}
     {% endif %}
-  {% endfor %}
-  <a class="blog-pagination__link blog-pagination__next-link {{ 'blog-pagination__next-link--disabled' if !next_page_num }}"{% if next_page_num %} href="{{ blog_page_link(current_page_num + 1) }}"  rel="prev" {% else %} aria-disabled="true" disabled {% endif %} role="button" aria-label="Go to next page">
-    Next
-  </a>
-</nav>
+   {#  {% if next_page_num %}<a class="next-link" href="{{ blog_page_link(current_page_num + 1) }}">❯</a>{% endif %}#}
+  </ul>
+</nav>   

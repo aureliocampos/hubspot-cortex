@@ -1,0 +1,28 @@
+/* Paginação */
+.pagination__nav {
+  margin: 5em auto 7em auto;
+}
+.pagination__items {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.pagination__item,
+.elipses__item {
+  margin: 0 0.675em;
+}
+.pagination__link {
+  font: 300 1.125em var(--secondary-font);
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  color: var(--darkest);
+}
+
+.pagination__link#active {
+  font: 700 1.125em var(--secondary-font);
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  color: var(--darkest);
+}
