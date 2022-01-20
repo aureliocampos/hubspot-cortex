@@ -79,5 +79,7 @@
   "locked" : false,
   "display" : "select",
   "choices" : [ [ "comunicacao_e_marketing", "Comunicação e Marketing" ], [ "inteligencia_de_mercado", "Inteligência de Mercado" ], [ "inteligencia_de_vendas_b2b", "Inteligência de Vendas B2B" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
   "type" : "choice"
 } ]

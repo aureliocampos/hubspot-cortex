@@ -1,0 +1,193 @@
+[ {
+  "id" : "6e3fc8fa-b123-a724-b21f-fe4500e9241a",
+  "name" : "title_field",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Quer tornar a sua marca a líder do mercado?"
+}, {
+  "id" : "13f86aa1-bacb-39ad-9161-7bdd6db495a3",
+  "name" : "text_field",
+  "display_width" : null,
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "5a0a509b-bbf6-a17e-f047-da99e7476955",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "4d15a5e0-ad4d-9f4d-232a-207721df44d9",
+    "name" : "custom_colors",
+    "display_width" : null,
+    "label" : "Personalizar cores?",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "eb97a544-8688-eab5-caa4-34f90baf731b",
+    "name" : "brand_official",
+    "display_width" : null,
+    "label" : "Brand official",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "4d15a5e0-ad4d-9f4d-232a-207721df44d9",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#37324b",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "f58c389d-75b1-ea8e-ff22-3d82ffcc7d88",
+    "name" : "brand_spotlight",
+    "display_width" : null,
+    "label" : "Brand spotlight",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "4d15a5e0-ad4d-9f4d-232a-207721df44d9",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#7a7589",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "32566c87-7b46-3deb-e9d5-fc3fb780a917",
+    "name" : "brand_light",
+    "display_width" : null,
+    "label" : "Brand light",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "4d15a5e0-ad4d-9f4d-232a-207721df44d9",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#f6f6fb",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "db2c661b-f08b-52bb-a6e7-ac08f45f596c",
+    "name" : "button_style_primary",
+    "display_width" : null,
+    "label" : "Botão estilo primário",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "2b64ccd6-20fc-70b2-e24a-b41aa6e6f0b8",
+    "name" : "esconder_elementos",
+    "display_width" : null,
+    "label" : "Esconder Elementos",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "custom_colors" : false,
+    "brand_official" : {
+      "color" : "#37324b",
+      "opacity" : 100
+    },
+    "brand_spotlight" : {
+      "color" : "#7a7589",
+      "opacity" : 100
+    },
+    "brand_light" : {
+      "color" : "#f6f6fb",
+      "opacity" : 100
+    },
+    "button_style_primary" : false,
+    "esconder_elementos" : false
+  }
+}, {
+  "id" : "bb96d8b1-25e3-093a-01b7-1c8e593093e3",
+  "name" : "button_cta",
+  "display_width" : null,
+  "label" : "Botão CTA",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "90f85cec-4dd8-dfe2-cd0a-22f024ae9ecb",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "c8bb8eda-9344-e817-9d82-e132a8102542",
+    "name" : "link_text",
+    "display_width" : null,
+    "label" : "Link Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Fale com a gente "
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    },
+    "link_text" : "Fale com a gente "
+  }
+} ]

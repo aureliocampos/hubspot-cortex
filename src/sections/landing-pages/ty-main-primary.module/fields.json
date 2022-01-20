@@ -20,31 +20,6 @@
   "type" : "richtext",
   "default" : "Novas métricas e indicadores de comunicação"
 }, {
-  "id" : "2eca3bfb-c530-8048-3768-112a260811a0",
-  "name" : "style",
-  "display_width" : null,
-  "label" : "Style",
-  "required" : false,
-  "locked" : false,
-  "children" : [ {
-    "id" : "e23d306f-da5d-41f6-98d3-cee45b9badbe",
-    "name" : "escolha_a_cor_da_marca",
-    "display_width" : null,
-    "label" : "Escolha a cor da marca",
-    "required" : false,
-    "locked" : false,
-    "display" : "select",
-    "choices" : [ [ "brand_color_2", "Brand Color 2" ], [ "brand_color_3", "Brand Color 3" ], [ "brand_color_4", "Brand Color 4" ] ],
-    "type" : "choice",
-    "default" : "brand_color_2"
-  } ],
-  "tab" : "STYLE",
-  "expanded" : false,
-  "type" : "group",
-  "default" : {
-    "escolha_a_cor_da_marca" : "brand_color_2"
-  }
-}, {
   "id" : "74429741-68ff-9aaf-b5a4-fe9450f87c5f",
   "name" : "image_field",
   "display_width" : null,

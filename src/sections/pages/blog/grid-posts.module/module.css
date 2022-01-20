@@ -13,6 +13,7 @@
   position: relative;
 }
 .card-primary__image {
+  width: 100%;
   object-fit: cover;
   border-radius: 0.75em;
 }
@@ -22,15 +23,21 @@
   position: absolute;
   right: 1em;
   bottom: 1em;
+  display: flex;
+  align-items: center;
 }
 .card-primary__avatar__name {
   font: 400 0.625em var(--secondary-font);
   color: var(--darker);
   line-height: 1rem;
   letter-spacing: -0.01em;
+  margin-right: 1em;
 }
 .card-primary__avatar__name > em {
   font-style: italic;
+}
+.card-primary__avatar__image {
+  border-radius: 100%;
 }
 
 /* title and Subtitle */

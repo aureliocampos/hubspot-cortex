@@ -7,11 +7,11 @@
           <a href="{{ content.absolute_url }}">
             <img 
               data-src="{{ content.featured_image }}" 
-              data-srcset="{{ resize_image_url( content.featured_image, 312, 190, 312 ) }} 312w,{{ resize_image_url( content.featured_image, 345, 190, 345 ) }} 345w" 
-              sizes="(max-width: 768px) 312px, (min-width: 769px) 345px" 
+              data-srcset="{{ resize_image_url( content.featured_image, 345, 190, 345 ) }} 345w" 
+              sizes="345px" 
               alt="{{ content.featured_image_alt_text }}"
               class="lazyload card-primary__image"
-              width="312px"
+              width="345px"
               height="190px"
             />
           </a>

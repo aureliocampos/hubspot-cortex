@@ -1,0 +1,59 @@
+<section class="section-cta cta-solutions">
+  <div class="section-cta__box">
+    {% if module.style.esconder_elementos %}
+    {% else %}
+     <span class="cta-icon"></span>
+    {% endif %}
+    <div class="section-cta__content">
+      <h2 class="section-cta__title">{{ module.title_field }}</h2>
+      {% if module.text_field != '' %}
+        <p class="section-cta__text">{{ module.text_field }}</p>
+      {% endif %}
+    </div>
+    
+    {% set href = module.button_cta.link_field.url.href %}
+    {% if module.button_cta.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+    {% endif %}
+    
+    {% if module.style.button_style_primary %}
+      {% set classButton = "button--primary" %}
+    {% else %}
+      {% set classButton = "button-cta--solutions" %}
+    {% endif %}
+    
+    <a href="{{ href }}" class="button {{classButton}}"
+      {% if module.button_cta.link_field.open_in_new_tab %}target="_blank"{% endif %}
+      {% if module.button_cta.link_field.rel %}rel="{{ module.button_cta.link_field.rel }}"{% endif %}
+      >
+      {{ module.button_cta.link_text }}
+      <span class="icon-input-seta"></span>
+    </a>
+  </div>
+</section>
+
+{% if module.style.custom_colors %}
+  {% require_css %}
+    <style>
+      .cta-icon {
+        background-color: {{ module.style.brand_official.color }};
+      }
+      .cta-icon:after {
+        background: {{ module.style.brand_spotlight.color }};
+      }
+      .button-cta--solutions {
+        background-color: {{ module.style.brand_official.color }};
+      }
+      .button-cta--solutions .icon-input-seta {
+        color: {{ module.style.brand_light.color }};
+      }
+      .button-cta--solutions:hover {
+        color: {{ module.style.brand_official.color }};
+        background: {{ module.style.brand_light.color }};
+      }
+      .button-cta--solutions:hover .icon-input-seta {
+        color: {{ module.style.brand_official.color }};
+      }
+    </style>
+  {% end_require_css %}
+{% endif %}

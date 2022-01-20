@@ -1,0 +1,49 @@
+
+{% set contents = blog_popular_posts('default', 6) %}
+
+<section class="section featured-posts__section">
+  <div class="section__container">
+    <div class="swiper featured-posts__swiper">
+      <div class="swiper-wrapper featured-posts__items">
+        {% for content in contents %}
+          <div class="swiper-slide ">
+            <article class="featured-posts__article">
+              {% if content.featured_image and group.use_featured_image_in_summary %}
+                <figure class="featured-posts__figure">
+                  <a href="{{ content.absolute_url }}">
+                    <img 
+                      data-src="{{ content.featured_image }}" 
+                      data-srcset="{{ resize_image_url( content.featured_image, 345, 190, 345 ) }} 345w" 
+                      sizes="345px" 
+                      alt="{{ content.featured_image_alt_text }}"
+                      class="lazyload featured-posts__image"
+                      width="345px"
+                      height="190px"
+                    />
+                  </a>
+                  <a href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}" class="featured-posts__avatar" rel="author">
+                    <small class="featured-posts__avatar__name"><em>por</em> {{content.blog_post_author.name }}</small>
+                    <img class="featured-posts__avatar__image" src="{{content.blog_post_author.avatar }}" alt="{{content.blog_post_author.name }}" width="24" height="24" />
+                  </a>
+                </figure>
+              {% endif %}
+              <div class="featured-posts__summary">
+                <a href="{{ content.absolute_url }}">
+                  <h2 class="featured-posts__name">{{ content.name }}</h2>
+                </a>
+                {% if content.tag_list != [] %}
+                  {% for tag in content.topic_list %}
+                    <a href="{{ blog_tag_url('default', tag.slug) }}" class="featured-posts__tag">{{tag}}</a>
+                  {% endfor %}       
+                {% endif %}
+              </div>
+            </article>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>

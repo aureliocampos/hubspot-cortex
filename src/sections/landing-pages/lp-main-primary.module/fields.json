@@ -49,6 +49,8 @@
   "locked" : false,
   "display" : "select",
   "choices" : [ [ "meetup", "Mockup Meetup" ], [ "ebook", "Mockup Ebook" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
   "type" : "choice",
   "default" : ""
 }, {

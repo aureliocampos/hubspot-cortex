@@ -13,7 +13,8 @@
     {{ standard_header_includes }}
 
     <link rel="preconnect" href="https://cdn2.hubspot.net">
-
+    
+    {{ require_css(get_asset_url('/cortex-intelligence/lib/swiper/swiper.min.css')) }}
     {{ require_css(get_asset_url('/cortex-intelligence/css/main.css')) }}
     
   </head>
@@ -26,7 +27,11 @@
 
     {% module "module_16294732947563" path='/cortex-intelligence/sections/footers/footer-primary', label="Footer" %}
 
+
+    <!-- Scripts e bibliotecas globais -->
+    {{ require_js(get_asset_url('/cortex-intelligence/lib/swiper/swiper.min.js'), { position: 'header'}) }}
     {{ require_js(get_asset_url('/cortex-intelligence/lib/lazysizes.min.js'), { position: 'footer', async: true }) }}
+    
     {{ standard_footer_includes }}
   </body>
 </html>

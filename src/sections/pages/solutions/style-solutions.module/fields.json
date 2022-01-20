@@ -7,5 +7,7 @@
   "locked" : false,
   "display" : "select",
   "choices" : [ [ "brand_color_2", "Brand Color 2" ], [ "brand_color_3", "Brand Color 3" ], [ "brand_color_4", "Brand Color 4" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
   "type" : "choice"
 } ]
