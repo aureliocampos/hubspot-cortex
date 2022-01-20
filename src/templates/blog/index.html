@@ -4,9 +4,7 @@
     label: Blog listing
 -->
 
-{% extends "../layouts/base.html" %}
-
-{{ require_css(get_asset_url('/cortex-intelligence/css/blog/index.css')) }}
+{% extends "../layouts/base-materials.html" %}
 
 {% block body %}
   <main id="main-content" class="body-container-wrapper" role="main">
@@ -19,5 +17,3 @@
     {% endif %}
   </main>
 {% endblock body %}
-
-{{ require_js(get_asset_url('/cortex-intelligence/js/blog.js'), { position: 'footer', async: true }) }}

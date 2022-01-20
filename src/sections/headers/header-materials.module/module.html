@@ -1,0 +1,66 @@
+<header id="header-primary" class="header">
+  <div class="header__container">
+    <div class="header__responsive">
+      <figure class="header__figure header__logo">
+        <a href="/" aria-label="Logo Cortex Intelligence">
+          <img src="https://pages.cortex-intelligence.com/hubfs/website-cortex/logo-cortex.webp" width="130" height="22" alt="Logo Cortex"/>
+        </a>
+        <div class="header__name-separator"></div>
+        <a href="/blog">
+          <h2 class="header__name">Blog</h2>
+        </a>
+      </figure>
+      
+      <button class="menu-mobile" aria-label="Menu de navegação mobile" >
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+    </div>
+    <div class="header__content">
+      <div class="header__nav">
+        {% simple_menu menu_tree="{{ module.simplemenu_field }}" %}
+      </div>
+      <div class="header__support">
+        <div class="hs-search-field"> 
+          <div class="hs-search-field__bar"> 
+            <form action="/{{ site_settings.content_search_results_page_path }}">
+              {% if module.input_search.field_label %}
+                <label for="term">{{ module.input_search.field_label }}</label>
+              {% endif %}
+              <input type="text" class="hs-search-field__input" name="term" autocomplete="off" aria-label="{{ module.input_search.field_label || "Search" }}" placeholder="{{ module.input_search.placeholder }}">
+
+              {% if module.input_search.content_types.website_pages %}
+                <input type="hidden" name="type" value="SITE_PAGE">
+              {% endif %}
+              {% if module.input_search.content_types.landing_pages %}
+                <input type="hidden" name="type" value="LANDING_PAGE">
+              {% endif %}
+              {% if module.input_search.content_types.blog_posts %}
+                <input type="hidden" name="type" value="BLOG_POST">
+                <input type="hidden" name="type" value="LISTING_PAGE">
+              {% endif %}
+              {% if module.input_search.content_types.knowledge_articles %}
+                <input type="hidden" name="type" value="KNOWLEDGE_ARTICLE">
+              {% endif %}
+
+              {% if module.input_search.include_search_button %}
+                <button aria-label="Search">{% icon name="search" style="solid" %}</button>
+              {% endif %}
+            </form>
+          </div>
+          <ul class="hs-search-field__suggestions"></ul>
+      </div>
+        {% set href = module.cta_header.link_field.url.href %}
+        <a href="{{ href }}" class="button button--primary"
+          {% if module.cta_header.link_field.open_in_new_tab %}target="_blank"{% endif %}
+          {% if module.cta_header.link_field.rel %}rel="{{ module.cta_header.link_field.rel }}"{% endif %}
+          >
+         {{ module.cta_header.text_field }}
+        </a>
+      </div>
+    </div>
+    
+  </div>
+</header>
