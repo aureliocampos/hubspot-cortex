@@ -30,5 +30,18 @@ function indentifyBlogPaginationPages() {
     document.head.insertAdjacentHTML('beforeend','<link rel="canonical" href="https://www.cortex-intelligence.com/blog" />')
   }
 }
-
 indentifyBlogPaginationPages()
+
+function buttonAssBlogClosedMenuMobile() {
+  const buttonAssBlogHeader = document.querySelector("#header-primary .header__support > .button");
+  const mobileMenu = document.querySelector("#header-primary .menu-mobile")
+  const headerContent = document.querySelector("#header-primary .header__content")
+
+  buttonAssBlogHeader.addEventListener('click', () => {
+    if (mobileMenu.classList.contains('active') && headerContent.classList.contains('active')) {
+      mobileMenu.classList.remove('active')
+      headerContent.classList.remove('active')
+    }
+  })
+}
+buttonAssBlogClosedMenuMobile();

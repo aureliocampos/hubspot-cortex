@@ -11,13 +11,13 @@
                 <figure class="featured-posts__figure">
                   <a href="{{ content.absolute_url }}">
                     <img 
-                      data-src="{{ content.featured_image }}" 
-                      data-srcset="{{ resize_image_url( content.featured_image, 345, 190, 345 ) }} 345w" 
-                      sizes="345px" 
+                      src="{{ content.featured_image }}" 
+                      srcset="{{ resize_image_url( content.featured_image, 500, 296, 500 ) }} 500w" 
+                      sizes="500px" 
                       alt="{{ content.featured_image_alt_text }}"
-                      class="lazyload featured-posts__image"
-                      width="345px"
-                      height="190px"
+                      class="featured-posts__image"
+                      width="500"
+                      height="296"
                     />
                   </a>
                   <a href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}" class="featured-posts__avatar" rel="author">

@@ -12,7 +12,7 @@
   font: 400 1.125em var(--primary-font);
   color: var(--darkest);
 }
-.form-title {
+.footer__form .form-title {
   font: 400 1.3125em var(--primary-font);
   color: var(--darkest);
   line-height: 25px;
@@ -145,7 +145,7 @@
   margin-bottom: 0.6875em;
 }
 @media (min-width: 768px) {
-  .form-title {
+  .footer__form .form-title {
     width: 300px;
     margin: 0;
   }
@@ -213,7 +213,7 @@
   .footer-cortex__cta .footer__title {
     font-size: 24px;
   }
-  .form-title {
+  .footer__form .form-title {
     font-size: 1.75em;
     width: 50%;
     line-height: 35px;

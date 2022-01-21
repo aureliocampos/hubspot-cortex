@@ -1,0 +1,62 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "Add to workflow",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "To send a follow-up email, make sure the 'Set contacts created as marketing contacts’ setting has been turned on. You can manage this in options. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>Learn more</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "Send a follow-up email",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "Thank you for submitting the form.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "Form",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "Workflow",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Form",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "Send form notifications to specified email addresses instead of the form defaults",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "Email addresses",
+    "description" : "",
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "Salesforce campaign",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "Email",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Form title",
+    "description" : "",
+    "placeholders" : null
+  }
+}

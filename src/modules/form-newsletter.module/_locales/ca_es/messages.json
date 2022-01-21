@@ -1,0 +1,62 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "Afegeix al flux de treball",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "Per enviar un correu electrònic de seguiment, assegura't que l'opció de configuració \"Defineix els contactes creats com a contactes de màrqueting\" estigui activada. Pots gestionar-la a les opcions. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>Més informació</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "Envia un correu electrònic de seguiment",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "Gràcies per enviar el formulari.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "Formulari",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "Flux de treball",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Formulari",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "Envia notificacions de formulari a les adreces electròniques especificades en lloc de les opcions per defecte del formulari",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "Adreces electròniques",
+    "description" : "",
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "Campanya de Salesforce",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "Correu electrònic",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Títol del formulari",
+    "description" : "",
+    "placeholders" : null
+  }
+}

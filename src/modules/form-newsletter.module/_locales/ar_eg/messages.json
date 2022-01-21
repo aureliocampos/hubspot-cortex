@@ -1,0 +1,62 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "إضافة إلى سير العمل",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "لإرسال بريد إلكتروني للمتابعة، تأكد من تشغيل إعداد \"تعيين جهات الاتصال التي تم إنشاؤها كجهات اتصال تسويقية\". يمكنك إدارة ذلك في الخيارات. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>معرفة المزيد</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "إرسال بريد إلكتروني للمتابعة",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "شكرًا على إرسال النموذج.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "النموذج",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "سير العمل",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "النموذج",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "إرسال إشعارات النموذج إلى عناوين البريد الإلكتروني المحددة بدلاً من افتراضيات النموذج",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "عناوين البريد الإلكتروني",
+    "description" : "",
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "حملة Salesforce",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "البريد الإلكتروني",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "عنوان النموذج",
+    "description" : "",
+    "placeholders" : null
+  }
+}

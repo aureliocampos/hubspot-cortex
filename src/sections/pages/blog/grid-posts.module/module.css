@@ -1,6 +1,11 @@
 .blog-listing__section {
   padding: 0 1.5em;
 }
+.blog-listing__section .section__title {
+  font: 400 1.5em var(--primary-font);
+  max-width: 960px;
+  margin: 0 auto 1.5em auto;
+}
 
 /* card */
 .card-primary__article {
@@ -100,6 +105,9 @@
   .blog-listing__section {
     padding: 0;
   }
+  .blog-listing__section .section__title {
+    font: 400 2em var(--primary-font);
+  }
   .blog-listing__items {
     grid-template-columns: repeat(3,1fr);
     gap: 1em;
@@ -124,6 +132,9 @@
 
 
 @media (min-width: 1200px) {
+  .blog-listing__section .section__title {
+    max-width: 1114px;
+  }
   .blog-listing__items {
     grid-template-columns: repeat(3,1fr);
     max-width: 1114px;

@@ -1,0 +1,62 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "เพิ่มลงในเวิร์กโฟลว์",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "หากต้องการส่งอีเมลติดตามผล ตรวจสอบให้แน่ใจว่าเปิดการตั้งค่า \"ตั้งค่าผู้ติดต่อที่สร้างเป็นผู้ติดต่อทางการตลาด\" คุณสามารถจัดการส่วนนี้ได้ในตัวเลือก <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>เรียนรู้เพิ่มเติม</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "ส่งอีเมลติดตาม",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "ขอบคุณที่ส่งแบบฟอร์ม",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "แบบฟอร์ม",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "เวิร์กโฟลว์",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "แบบฟอร์ม",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "ส่งการแจ้งเตือนแบบฟอร์มไปที่อีเมลที่ต้องการแทนค่าเริ่มต้นของแบบฟอร์ม",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "อีเมล",
+    "description" : "",
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "แคมเปญของ Salesforce",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "อีเมล",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "ชื่อแบบฟอร์ม",
+    "description" : "",
+    "placeholders" : null
+  }
+}

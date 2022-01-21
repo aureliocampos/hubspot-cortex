@@ -1,0 +1,67 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "Ajouter au workflow",
+    "description" : null,
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "Pour envoyer un e-mail de suivi, assurez-vous que le paramètre « Définir les contacts créés comme contacts marketing » est activé. Vous pouvez gérer cela dans les options. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>En savoir plus</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "Envoyer un e-mail de suivi",
+    "description" : null,
+    "placeholders" : null
+  },
+  "font_field.label" : {
+    "message" : "Champ de police",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "Merci d'avoir soumis le formulaire.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "Formulaire",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "Workflow",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Formulaire",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "Envoyer les notifications pour les soumissions de formulaire à des adresses spécifiques au lieu de celles par défaut",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "Adresses e-mail",
+    "description" : null,
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "Campagne Salesforce",
+    "description" : null,
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "E-mail marketing",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Titre de formulaire",
+    "description" : null,
+    "placeholders" : null
+  }
+}

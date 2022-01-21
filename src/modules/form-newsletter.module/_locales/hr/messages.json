@@ -1,0 +1,62 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "Dodaj u tijek rada",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "Da biste poslali popratnu poruku e-pošte, uključite postavku \"Postavi kontakte stvorene kao marketinški kontakti\". Time možete upravljati u opcijama. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>Saznaj više</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "Pošalji dodatnu poruku e-pošte",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "Hvala vam što ste poslali obrazac.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "Obrazac",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "Tijek rada",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Obrazac",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "Pošalji obavijesti o obrascu na određene adrese e-pošte umjesto zadanih za obrazac",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "Adrese e-pošte",
+    "description" : "",
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "Kampanja tvrtke Salesforce",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "E-pošta",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Naslov obrasca",
+    "description" : "",
+    "placeholders" : null
+  }
+}

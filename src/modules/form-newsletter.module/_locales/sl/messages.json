@@ -1,0 +1,62 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "Dodaj v potek dela",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "Če želite poslati nadaljnje e-poštno sporočilo, preverite, ali je nastavitev »Nastavi stike, ustvarjene kot trženjski stiki« vklopljena. To lahko upravljate v možnostih. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>Več</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "Pošlji e-pošto za sledenje",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "Hvala, ker ste poslali obrazec.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "Obrazec",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "Potek dela",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Oblika",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "Pošljite obvestila obrazca na določene e-poštne naslove namesto privzetih obrazcev",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "E-poštni naslovi",
+    "description" : "",
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "Kampanja Salesforce",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "E-pošta",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Naslov obrazca",
+    "description" : "",
+    "placeholders" : null
+  }
+}
