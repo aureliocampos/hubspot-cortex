@@ -2,61 +2,137 @@
     templateType: page
     isAvailableForNewContent: false
 -->
-<div>
-  {% if blog_author.avatar %}
-    <img src="{{ blog_author.avatar }}" alt="image of blog {{ blog_author.display_name }}">
-  {% endif %}
-  <h1>{{ blog_author.display_name }}</h1>
-  {% if blog_author.bio %}
-    <p>{{ blog_author.bio }}</p>
-  {% endif %}
-  {% if blog_author.has_social_profiles %}
-    <div>
-      {% if blog_author.website %}
-        <a href="{{ blog_author.website }}" target="_blank" rel="noopener">
-          {% icon
-            name='link',
-            purpose='semantic',
-            style='SOLID',
-            title='Follow me on my website',
-            width='10'
-          %}
-        </a>
-      {% endif %}
-      {% if blog_author.facebook %}
-        <a href="{{ blog_author.facebook }}" target="_blank" rel="noopener">
-          {% icon
-            name='facebook-f',
-            purpose='semantic',
-            style='SOLID',
-            title='Follow me on Facebook',
-            width='10'
-          %}
-        </a>
-      {% endif %}
-      {% if blog_author.linkedin %}
-        <a href="{{ blog_author.linkedin }}" target="_blank" rel="noopener">
-          {% icon
-            name='linkedin-in',
-            purpose='semantic',
-            style='SOLID',
-            title='Follow me on LinkedIn',
-            width='10'
-          %}
-        </a>
-      {% endif %}
-      {% if blog_author.twitter %}
-        <a href="{{ blog_author.twitter }}" target="_blank" rel="noopener">
-          {% icon
-            name='twitter',
-            purpose='semantic',
-            style='SOLID',
-            title='Follow me on Twitter',
-            width='10'
-          %}
-        </a>
-      {% endif %}
+{% require_css %}
+<style>
+  .section__main-author {
+    background-color: var(--lightest);
+  }
+  .section__main-author .section__container {
+    padding: 2em 1.5em;
+    margin-bottom: 2em;
+  }
+  .main-author__figure {
+    width: 80px;
+    height: 80px;
+  }
+  .main-author__image {
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+  }
+  .main-author__name {
+    font: 300 1.5em var(--primary-font);
+    color: var(--darkest);
+    line-height: 120%;
+    letter-spacing: -0.025em;
+  }
+  .main-author__text {
+    font: 400 0.875em var(--secondary-font);
+    color: var(--darkest);
+    line-height: 148%;
+    margin: 1em 0;
+  }
+  .section__main-author .social-profiles__items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1em;
+  }
+  .section__main-author .social-profiles__item {
+    font-size: 2em;
+  }
+  @media (min-width: 1024px) {
+    .main-author__info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .main-author__description {
+      display: flex;
+      align-items: center;
+      gap: 1.5em;
+      width: 50%;
+    }
+    .main-author__bio {
+      width: 80%;
+    }
+    .main-author__figure {
+      width: 112px;
+      height: 112px;
+    }
+    .main-author__name {
+      margin: 0;
+    }
+  }
+  @media (min-width: 1200px) {
+    .section__main-author .section__container {
+      padding: 3em 0;
+      margin-bottom: 4em;
+    }
+    .main-author__info {
+      max-width: 1114px;
+    }
+    .main-author__name {
+      font-size: 2em;
+    }
+  }
+</style>
+{% end_require_css %}
+
+<section class="section section__main-author">
+  <div class="section__container">        
+    <div class="main-author__info">
+      <div class="main-author__description">
+        {% if blog_author.avatar %}
+          <figure class="main-author__figure">
+            <img src="{{ blog_author.avatar }}" alt="image of blog {{ blog_author.display_name }}" class="main-author__image">
+          </figure>
+        {% endif %}
+        <div class="main-author__bio">
+          <h1 class="main-author__name">{{ blog_author.display_name }}</h1>
+        
+          {% if blog_author.bio %}
+            <p class="main-author__text">{{ blog_author.bio }}</p>
+          {% endif %}
+        </div>
+      </div>
+
+    {% if blog_author.has_social_profiles %}
+      <div class="social-profiles">
+                
+        <ul class="social-profiles__items">
+          {% if blog_author.linkedin %}
+            <li class="social-profiles__item">
+              <a href="{{ blog_author.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="Link externo para o Linkedin de {{ blog_author.display_name }}">
+                <span class="icon-linkedin"><span class="path1"></span><span class="path2"></span><span
+                class="path3"></span></span>
+              </a>
+            </li>
+          {% endif %}
+          {% if blog_author.facebook %}
+            <li class="social-profiles__item">
+              <a href="{{ blog_author.facebook }}" target="_blank" rel="noopener noreferrer" aria-label="Link externo para o Facebook de {{ blog_author.display_name }}">
+                <span class="icon-facebook"><span class="path1"></span><span class="path2"></span></span>
+              </a>
+            </li>
+          {% endif %}
+          {% if blog_author.website %} {# Is Instagram #}
+          <li class="social-profiles__item">
+            <a href="{{ blog_author.website }}" target="_blank" rel="noopener noreferrer" aria-label="Link externo para o Instagram de {{ blog_author.display_name }}">
+              <span class="icon-instagram"><span class="path1"></span><span class="path2"></span></span>
+            </a>
+          </li>
+        {% endif %}
+        </ul>
+      </div>
+    {% endif %}
     </div>
+  </div>
+</section>
+  {% module "module_164265145920447" path="/cortex-intelligence/sections/pages/blog/grid-posts", label="grid-posts" %}
+
+  {% if contents.total_page_count > 1 %}
+    {% include "./pagination.html" %}
   {% endif %}
-  {% module "module_16424725170243" path="/cortex-intelligence/sections/pages/blog/grid-posts", label="Grid  posts" %}
-</div>

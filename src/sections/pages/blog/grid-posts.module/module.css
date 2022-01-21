@@ -102,7 +102,8 @@
   }
   .blog-listing__items {
     grid-template-columns: repeat(3,1fr);
-    max-width: 1114px;
+    gap: 1em;
+    max-width: 960px;
     margin: 0 auto;
   }
   
@@ -118,5 +119,14 @@
   }
   .card-primary__description {
     font-size: 0.875em;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .blog-listing__items {
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1114px;
+    margin: 0 auto;
   }
 }

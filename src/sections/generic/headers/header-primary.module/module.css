@@ -3,13 +3,13 @@
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  background-color: var(--white);
   z-index: 99;
 }
 
 .header {
   --box-shadow: rgb(55 50 75 / 10%) 2px 0px 25px;
   box-shadow: var(--box-shadow);
+  background-color: var(--white);
 }
 .header__responsive {
   display: flex;
