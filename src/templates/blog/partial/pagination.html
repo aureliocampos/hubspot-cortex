@@ -2,7 +2,11 @@
     templateType: page
     isAvailableForNewContent: false
 -->
-
+{% require_css %}
+<style type="text/css" id="pagination">
+ .pagination__nav{margin:5em auto 7em auto}.pagination__items{display:flex;align-items:baseline;justify-content:center;max-width:600px;margin:0 auto}.elipses__item,.pagination__item{margin:0 .675em}.pagination__link{font:300 1.125em var(--secondary-font);line-height:26px;letter-spacing:-.01em;color:var(--darkest)}.pagination__link#active{font:700 1.125em var(--secondary-font);line-height:26px;letter-spacing:-.01em;color:var(--darkest)}
+</style>
+{% end_require_css%}
 {% set page_list = [-2, -1, 0, 1] %}
     
 {% if contents.total_page_count - current_page_num == 1 %}

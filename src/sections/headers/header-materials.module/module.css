@@ -170,6 +170,7 @@
 /* busca */
 .hs-search-field {
   position: relative;
+  margin-top: 1.5em;
 }
 .hs-search-field form {
   position: relative;
@@ -326,6 +327,9 @@
   }
 
   /* Busca */
+  .hs-search-field {
+    margin-top: 0;
+  }
   .hs-search-field__suggestions {
     top: 40px;
     max-width: 380px;

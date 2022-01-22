@@ -5,6 +5,8 @@
 -->
 
 {% extends "../layouts/base-materials.html" %}
+{{ require_css(get_asset_url('/cortex-intelligence/css/blog/index.css')) }}
+
 
 {% block body %}
   <main id="main-content" class="body-container-wrapper single-page" role="main">
@@ -12,18 +14,17 @@
     {# Blog post #}
     <article class="blog-post">
       <figure class="blog-post__image">
-        <img src="{{ content.featured_image }}" alt="{{ content.featured_image_alt_text }}">
+        <img src="{{ content.featured_image }}" alt="{{ content.featured_image_alt_text }}" width="732" height="407">
       </figure>
       <header class="blog-post__header">
         <h1 class="blog-post__title">{{ content.name }}</h1>
-        <p class="blog-post__header-subtitle">Aprofunde seus conhecimentos profissionais com nossos artigos ricos e
+        <p class="blog-post__subtitle">Aprofunde seus conhecimentos profissionais com nossos artigos ricos e
           gratuitos.</p>
 
         <div class="blog-post__info">
           <div class="blog-post__info-author">
-            <a href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}" rel="author">
-              <img src="{{ content.blog_post_author.avatar }}" alt="{{ content.blog_post_author.display_name }}"
-                class="blog-post__author-image">
+            <a href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}" rel="author" class="blog-post__info-author--link">
+              <img src="{{ content.blog_post_author.avatar }}" alt="{{ content.blog_post_author.display_name }}" width="56" height="56" class="blog-post__author-image">
               <div class="blog-post__author-description">
                 <h3 class="blog-post__author-name">{{ content.blog_post_author.display_name }}</h3>
                 <p class="blog-post__author-job">Analista de Conteúdo da Cortex</p>
@@ -34,38 +35,30 @@
             <ul class="sharing_items">
               <li class="sharing__item">
                 <a href="https://www.linkedin.com/shareArticle?mini=true&url={{content.absolute_url}}" target="_blank"
-                  rel="noopener noreferrer">
-                  <img src="https://pages.cortex-intelligence.com/hubfs/website-images/icons/linkedin.webp"
-                    alt="Link de compartilhamento no Linkedin" style="width: 55%" />
+                  rel="noopener noreferrer" aria-label="Link de compartilhamento no Linkedin">
+                  <span class="icon-linkedin"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
                 </a>
               </li>
               <li class="sharing__item">
                 <a href="https://www.facebook.com/sharer/sharer.php?u={{content.absolute_url}}" target="_blank"
-                  rel="noopener noreferrer">
-                  <img src="https://pages.cortex-intelligence.com/hubfs/website-images/icons/facebook.webp"
-                    alt="Link de compartilhamento no Facebook" style="width: 35%;" />
+                  rel="noopener noreferrer" aria-label="Link de compartilhamento no Facebook">
+                  <span class="icon-facebook"><span class="path1"></span><span class="path2"></span></span>
                 </a>
               </li>
-              <li class="sharing__item">
+              <!-- <li class="sharing__item">
                 <a href="https://twitter.com/intent/tweet?url={{content.absolute_url}}" target="_blank"
-                  rel="noopener noreferrer">
-                  <img src="https://pages.cortex-intelligence.com/hubfs/website-images/icons/twitter.webp"
-                    alt="Link de compartilhamento no Twitter" />
+                  rel="noopener noreferrer" aria-label="Link de compartilhamento no Twitter">
                 </a>
               </li>
               <li class="sharing__item">
                 <a href="https://t.me/share/url?url={{content.absolute_url}}&text={{content.title}}" target="_blank"
-                  rel="noopener noreferrer">
-                  <img src="https://pages.cortex-intelligence.com/hubfs/website-images/icons/telegram.webp"
-                    alt="Link de compartilhamento no Telegram" />
+                  rel="noopener noreferrer" aria-label="Link de compartilhamento no Telegram">
                 </a>
               </li>
               <li class="sharing__item">
-                <a href="https://api.whatsapp.com/send?text={{content.title}}" target="_blank" rel="noopener noreferrer">
-                  <img src="https://pages.cortex-intelligence.com/hubfs/website-images/icons/whatsapp.webp"
-                    alt="Link de compartilhamento no Whatsapp" />
+                <a href="https://api.whatsapp.com/send?text={{content.title}}" target="_blank" rel="noopener noreferrer" aria-label="Link de compartilhamento no Whatsapp">
                 </a>
-              </li>
+              </li> -->
             </ul>
           </div>
           <div class="blog-post__times">
@@ -88,38 +81,30 @@
           <ul class="sharing_items">
             <li class="sharing__item">
               <a href="https://www.linkedin.com/shareArticle?mini=true&url={{content.absolute_url}}" target="_blank"
-                rel="noopener noreferrer">
-                <img src="https://pages.cortex-intelligence.com/hubfs/website-images/icons/linkedin.webp"
-                  alt="Link de compartilhamento no Linkedin" style="width: 55%" />
+                rel="noopener noreferrer" aria-label="Link de compartilhamento no Linkedin">
+                <span class="icon-linkedin"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
               </a>
             </li>
             <li class="sharing__item">
               <a href="https://www.facebook.com/sharer/sharer.php?u={{content.absolute_url}}" target="_blank"
-                rel="noopener noreferrer">
-                <img src="https://pages.cortex-intelligence.com/hubfs/website-images/icons/facebook.webp"
-                  alt="Link de compartilhamento no Facebook" style="width: 35%;" />
+                rel="noopener noreferrer" aria-label="Link de compartilhamento no Facebook">
+                <span class="icon-facebook"><span class="path1"></span><span class="path2"></span></span>
               </a>
             </li>
-            <li class="sharing__item">
+            <!-- <li class="sharing__item">
               <a href="https://twitter.com/intent/tweet?url={{content.absolute_url}}" target="_blank"
-                rel="noopener noreferrer">
-                <img src="https://pages.cortex-intelligence.com/hubfs/website-images/icons/twitter.webp"
-                  alt="Link de compartilhamento no Twitter" />
+                rel="noopener noreferrer" aria-label="Link de compartilhamento no Twitter">
               </a>
             </li>
             <li class="sharing__item">
               <a href="https://t.me/share/url?url={{content.absolute_url}}&text={{content.title}}" target="_blank"
-                rel="noopener noreferrer">
-                <img src="https://pages.cortex-intelligence.com/hubfs/website-images/icons/telegram.webp"
-                  alt="Link de compartilhamento no Telegram" />
+                rel="noopener noreferrer" aria-label="Link de compartilhamento no Telegram">
               </a>
             </li>
             <li class="sharing__item">
-              <a href="https://api.whatsapp.com/send?text={{content.title}}" target="_blank" rel="noopener noreferrer">
-                <img src="https://pages.cortex-intelligence.com/hubfs/website-images/icons/whatsapp.webp"
-                  alt="Link de compartilhamento no Whatsapp" />
+              <a href="https://api.whatsapp.com/send?text={{content.title}}" target="_blank" rel="noopener noreferrer" aria-label="Link de compartilhamento no Whatsapp">
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -131,44 +116,50 @@
     {# Recent posts listing #}
     {# This macro is used to format each recent post card and gets passed to the related_blog_posts HubL tag below #}
     {% macro related_posts(post, count, total) %}
-    {% if count == 1 %}
-    <section class="section blog-related-posts">
-      <div class="section__container">
-        <h2 class="section__title">Artigos Relacionados</h2>
-        <ul id="slide-related-posts" class="slide__cards slide__cards-items">
-          {% endif %}
-          <li class="slide__cards-item">
-            <article class="component-card card-m">
-              <figure class="card__figure">
-                <a href="{{ post.absolute_url }}" class="card__figure-link">
-                  <img src="{{ resize_image_url('{{ post.featured_image }}', 0, 135, 0) }}"
-                    alt="Image de destaque do post {{ post.name }}." class="card__figure-image embed-responsive"
-                    loading="lazy" />
+      {% if count == 1 %}
+        <section class="blog-listing__section">
+          <h2 class="section__title">Artigos Relacionados</h2>
+          <div class="blog-listing__items">
+            {% endif %}
+            <article class="card-primary__article">
+              {% if post.featured_image and group.use_featured_image_in_summary %}
+                <figure class="card-primary__figure">
+                  <a href="{{ post.absolute_url }}">
+                    <img 
+                      data-src="{{ post.featured_image }}" 
+                      data-srcset="{{ resize_image_url( post.featured_image, 345, 190, 345 ) }} 345w" 
+                      sizes="345px" 
+                      alt="{{ post.featured_image_alt_text }}"
+                      class="lazyload card-primary__image"
+                      width="345px"
+                      height="190px"
+                    />
+                  </a>
+                  <a href="{{ blog_author_url(group.id, post.blog_post_author.slug) }}" class="card-primary__avatar" rel="author">
+                    <small class="card-primary__avatar__name"><em>por</em> {{post.blog_post_author.name }}</small>
+                    <img class="card-primary__avatar__image" src="{{post.blog_post_author.avatar }}" alt="{{post.blog_post_author.name }}" width="24" height="24" />
+                  </a>
+                </figure>
+              {% endif %}
+              <div class="card-primary__summary">
+                <a href="{{ post.absolute_url }}">
+                  <h2 class="card-primary__name">{{ post.name }}</h2>
+                  {% if post_group.show_summary_in_listing %}
+                    <p class="card-primary__description">{{ post.meta_description }}</p>
+                  {% endif %}
                 </a>
-                <a class="card__avatar component-avatar">
-                  <small class="card__avatar-text"><em>por</em> {{post.blog_post_author.name }}</small>
-                  <img class="card__avatar-image " src="{{post.blog_post_author.avatar }}"
-                    alt="{{post.blog_post_author.name }}" width="32" height="32" />
-                </a>
-              </figure>
-              <a href="{{ post.absolute_url }}">
-                <div class="card__description">
-                  <h2 class="card__title">{{ post.name }}</h2>
-                  <div class="card__tags--content">
-                    {% for tag in post.topic_list %}
-                    <span class="card__tag component-tag-content">{{tag.name}}</span>
-                    {% endfor %}
-                  </div>
-                </div>
-              </a>
+                {% if post.tag_list != [] %}
+                  {% for tag in post.topic_list %}
+                    <a href="{{ blog_tag_url('default', tag.slug) }}" class="card-primary__tag">{{tag}}</a>
+                  {% endfor %}       
+                {% endif %}
+              </div>
             </article>
-
-          </li>
-          {% if count == total %}
-        </ul>
-      </div>
-    </section>
-    {% endif %}
+            <hr class="blog-listing__items__separator">
+            {% if count == total %}
+          </div>
+        </section>
+      {% endif %}
     {% endmacro %}
 
     {% related_blog_posts
@@ -177,8 +168,8 @@
       post_formatter="related_posts"
     %}
     {# End recent posts listing #}
-  </main>
 
+  </main>
   {% if content.blog_author.slug != null %}
     {% set slug = content.blog_author.slug %}
   {% else %}
