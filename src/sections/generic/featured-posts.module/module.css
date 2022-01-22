@@ -102,6 +102,10 @@
   }
   .featured-posts__article {
     max-width: 500px;
+    width: 500px;
+  }
+  .featured-posts__figure {
+    width: 500px;
   }
   .featured-posts__image {
     height: 296px;

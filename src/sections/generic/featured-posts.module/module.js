@@ -1,5 +1,8 @@
 const swiperResources = new Swiper('.featured-posts__swiper', {
   loop:true,
+  lazy: {
+    loadPrevNext: true,
+  },
   speed: 400,
   slidesPerView: 1,
   navigation: {

@@ -11,6 +11,6 @@
     "upload": "hs upload src cortex-intelligence",
     "watch-dev" : "hs watch src cortex-intelligence --account='development'",
     "fetch-dev" : "hs fetch cortex-intelligence src --account='development'",
-    "upload-dev": "hs upload cortex-intelligence src --account='development'"
+    "upload-dev": "hs upload src cortex-intelligence --account='development'"
   }
 }

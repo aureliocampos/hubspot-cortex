@@ -3,48 +3,245 @@
     isAvailableForNewContent: true
     label: Blog post
 -->
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>{{ content.html_title }}</title>
-    <meta name="description" content="{{ content.meta_description }}" />
-    {{ standard_header_includes }}
-  </head>
-  <body>
-    <main>
-      
-      {# Blog post #}
-      <article>
-        <h1>{{ content.name }}</h1>
-        <div>
-          <a href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}" rel="author">
-            {{ content.blog_post_author.display_name }}
-          </a>
-          <time>
-            {{ content.publish_date_localized }}
-          </time>
-        </div>
-        <div>
-          {{ content.post_body }}
-        </div>
-        {% if content.tag_list %}
-        <div>
-        {% for tag in content.tag_list %}
-          <a href="{{ blog_tag_url(group.id, tag.slug) }}" rel="tag">{{ tag.name }}</a> {% if not loop.last %},{% endif %} 
-        {% endfor %}
-        </div>
-        {% endif %}
-      </article>
 
-      {% if group.allow_comments %}
-      <div>
-        {% module 'blog_comments' path='@hubspot/blog_comments', label="Blog comments" %}
+{% extends "../layouts/base-materials.html" %}
+
+{% block body %}
+  <main id="main-content" class="body-container-wrapper single-page" role="main">
+
+    {# Blog post #}
+    <article class="blog-post">
+      <figure class="blog-post__image">
+        <img src="{{ content.featured_image }}" alt="{{ content.featured_image_alt_text }}">
+      </figure>
+      <header class="blog-post__header">
+        <h1 class="blog-post__title">{{ content.name }}</h1>
+        <p class="blog-post__header-subtitle">Aprofunde seus conhecimentos profissionais com nossos artigos ricos e
+          gratuitos.</p>
+
+        <div class="blog-post__info">
+          <div class="blog-post__info-author">
+            <a href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}" rel="author">
+              <img src="{{ content.blog_post_author.avatar }}" alt="{{ content.blog_post_author.display_name }}"
+                class="blog-post__author-image">
+              <div class="blog-post__author-description">
+                <h3 class="blog-post__author-name">{{ content.blog_post_author.display_name }}</h3>
+                <p class="blog-post__author-job">Analista de Conteúdo da Cortex</p>
+              </div>
+            </a>
+          </div>
+          <div id="sharing-desktop" class="blog-post__sharing">
+            <ul class="sharing_items">
+              <li class="sharing__item">
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url={{content.absolute_url}}" target="_blank"
+                  rel="noopener noreferrer">
+                  <img src="https://pages.cortex-intelligence.com/hubfs/website-images/icons/linkedin.webp"
+                    alt="Link de compartilhamento no Linkedin" style="width: 55%" />
+                </a>
+              </li>
+              <li class="sharing__item">
+                <a href="https://www.facebook.com/sharer/sharer.php?u={{content.absolute_url}}" target="_blank"
+                  rel="noopener noreferrer">
+                  <img src="https://pages.cortex-intelligence.com/hubfs/website-images/icons/facebook.webp"
+                    alt="Link de compartilhamento no Facebook" style="width: 35%;" />
+                </a>
+              </li>
+              <li class="sharing__item">
+                <a href="https://twitter.com/intent/tweet?url={{content.absolute_url}}" target="_blank"
+                  rel="noopener noreferrer">
+                  <img src="https://pages.cortex-intelligence.com/hubfs/website-images/icons/twitter.webp"
+                    alt="Link de compartilhamento no Twitter" />
+                </a>
+              </li>
+              <li class="sharing__item">
+                <a href="https://t.me/share/url?url={{content.absolute_url}}&text={{content.title}}" target="_blank"
+                  rel="noopener noreferrer">
+                  <img src="https://pages.cortex-intelligence.com/hubfs/website-images/icons/telegram.webp"
+                    alt="Link de compartilhamento no Telegram" />
+                </a>
+              </li>
+              <li class="sharing__item">
+                <a href="https://api.whatsapp.com/send?text={{content.title}}" target="_blank" rel="noopener noreferrer">
+                  <img src="https://pages.cortex-intelligence.com/hubfs/website-images/icons/whatsapp.webp"
+                    alt="Link de compartilhamento no Whatsapp" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="blog-post__times">
+            <time class="blog-post__date">
+              {{ content.publish_date|datetimeformat('%b %e, %Y') }},
+            </time>
+            <time class="blog-post__read-time">
+              <em></em>
+            </time>
+          </div>
+        </div>
+      </header>
+
+      <section class="blog-post__content">
+        {{ content.post_body }}
+      </section>
+      <div id="sharing-mobile" class="blog-post__sharing">
+        <div class="blog-post__sharing-container">
+          <h3 class="title">Compartilhe esse artigo</h3>
+          <ul class="sharing_items">
+            <li class="sharing__item">
+              <a href="https://www.linkedin.com/shareArticle?mini=true&url={{content.absolute_url}}" target="_blank"
+                rel="noopener noreferrer">
+                <img src="https://pages.cortex-intelligence.com/hubfs/website-images/icons/linkedin.webp"
+                  alt="Link de compartilhamento no Linkedin" style="width: 55%" />
+              </a>
+            </li>
+            <li class="sharing__item">
+              <a href="https://www.facebook.com/sharer/sharer.php?u={{content.absolute_url}}" target="_blank"
+                rel="noopener noreferrer">
+                <img src="https://pages.cortex-intelligence.com/hubfs/website-images/icons/facebook.webp"
+                  alt="Link de compartilhamento no Facebook" style="width: 35%;" />
+              </a>
+            </li>
+            <li class="sharing__item">
+              <a href="https://twitter.com/intent/tweet?url={{content.absolute_url}}" target="_blank"
+                rel="noopener noreferrer">
+                <img src="https://pages.cortex-intelligence.com/hubfs/website-images/icons/twitter.webp"
+                  alt="Link de compartilhamento no Twitter" />
+              </a>
+            </li>
+            <li class="sharing__item">
+              <a href="https://t.me/share/url?url={{content.absolute_url}}&text={{content.title}}" target="_blank"
+                rel="noopener noreferrer">
+                <img src="https://pages.cortex-intelligence.com/hubfs/website-images/icons/telegram.webp"
+                  alt="Link de compartilhamento no Telegram" />
+              </a>
+            </li>
+            <li class="sharing__item">
+              <a href="https://api.whatsapp.com/send?text={{content.title}}" target="_blank" rel="noopener noreferrer">
+                <img src="https://pages.cortex-intelligence.com/hubfs/website-images/icons/whatsapp.webp"
+                  alt="Link de compartilhamento no Whatsapp" />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      {% endif %}
-      {# End blog post #} 
+    </article>
 
-    </main>
-    {{ standard_footer_includes }}
-  </body>
-</html>
+
+    <hr class="separator-desktop-blog">
+
+    {# Recent posts listing #}
+    {# This macro is used to format each recent post card and gets passed to the related_blog_posts HubL tag below #}
+    {% macro related_posts(post, count, total) %}
+    {% if count == 1 %}
+    <section class="section blog-related-posts">
+      <div class="section__container">
+        <h2 class="section__title">Artigos Relacionados</h2>
+        <ul id="slide-related-posts" class="slide__cards slide__cards-items">
+          {% endif %}
+          <li class="slide__cards-item">
+            <article class="component-card card-m">
+              <figure class="card__figure">
+                <a href="{{ post.absolute_url }}" class="card__figure-link">
+                  <img src="{{ resize_image_url('{{ post.featured_image }}', 0, 135, 0) }}"
+                    alt="Image de destaque do post {{ post.name }}." class="card__figure-image embed-responsive"
+                    loading="lazy" />
+                </a>
+                <a class="card__avatar component-avatar">
+                  <small class="card__avatar-text"><em>por</em> {{post.blog_post_author.name }}</small>
+                  <img class="card__avatar-image " src="{{post.blog_post_author.avatar }}"
+                    alt="{{post.blog_post_author.name }}" width="32" height="32" />
+                </a>
+              </figure>
+              <a href="{{ post.absolute_url }}">
+                <div class="card__description">
+                  <h2 class="card__title">{{ post.name }}</h2>
+                  <div class="card__tags--content">
+                    {% for tag in post.topic_list %}
+                    <span class="card__tag component-tag-content">{{tag.name}}</span>
+                    {% endfor %}
+                  </div>
+                </div>
+              </a>
+            </article>
+
+          </li>
+          {% if count == total %}
+        </ul>
+      </div>
+    </section>
+    {% endif %}
+    {% endmacro %}
+
+    {% related_blog_posts
+      limit=3,
+      no_wrapper=True,
+      post_formatter="related_posts"
+    %}
+    {# End recent posts listing #}
+  </main>
+
+  {% if content.blog_author.slug != null %}
+    {% set slug = content.blog_author.slug %}
+  {% else %}
+    {% set slug = 'cortex-intelligence' %}
+  {% endif %}
+
+  {% require_js position="footer" async="true" %}
+    <script>
+      function readingRate(textContainerID) {
+        // Validação
+        if (typeof textContainerID !== "string" || textContainerID.length === 0)
+          throw new Error("Parametro 'textContainerID' inválido");
+
+        let readingRateInSeconds = 0;
+        // Recuperando elemento HTML
+        const textContainer = window.document.getElementById(textContainerID);
+        // Pegando todos os textos
+        const content = textContainer.innerText;
+        // Quantidade de palavras do texto
+        const wordCount = content.split(" ").length;
+        // Processando o tempo de leitura
+        readingRateInSeconds = (wordCount * 60) / 200;
+
+        let minutes = Math.floor(readingRateInSeconds / 60);
+        const container = document.querySelector('.blog-post__read-time em');
+
+        container.textContent = `${minutes}min de leitura`;
+
+        if (minutes == 0) {
+          container.textContent = `1min de leitura`;
+          return
+        }
+
+      }
+
+      readingRate('hs_cos_wrapper_post_body')
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "{{ site_settings.domain }}"
+        },
+        "headline": "{{ page_meta.name }}",
+        "image": "{{ content.featured_image }}",
+        "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
+        "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
+        "author": {
+          "@type": "Person",
+          "name": "{{ content.blog_author.full_name }}",
+          "url": "{{ blog_author_url('default', slug ) }}"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "{{ site_settings.company_name }}",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "{{ site_settings.site_settings.logo_src}}"
+          }
+        }
+      }
+    </script>
+  {% end_require_js %}
+{% endblock body %}

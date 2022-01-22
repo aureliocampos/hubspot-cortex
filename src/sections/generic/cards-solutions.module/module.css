@@ -104,6 +104,8 @@
 }
 .main-home__card-image {
   width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /* Card Itens */

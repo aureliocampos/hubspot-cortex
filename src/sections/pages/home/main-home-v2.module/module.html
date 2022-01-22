@@ -40,9 +40,10 @@
           <article class="main-home__card swiper-slide" id="card-{{loop.index}}" data-target="video-{{loop.index}}" title="{{item.card_title}}">
             {% if item.imagem_mobile.src %}
               {% set loadingAttr = item.imagem_mobile.loading != 'disabled' ? 'loading="{{ item.imagem_mobile.loading }}"' : '' %}
-              <img src="{{ item.imagem_mobile.src }}" alt="{{ item.imagem_mobile.alt }}" {{ loadingAttr }} data-disable="desktop" class="main-home__card-image" srcset="{{resize_image_url (item.imagem_mobile.src, item.imagem_mobile.width)}} 1x,
-              {{resize_image_url (item.imagem_mobile.src, item.imagem_mobile.width * 2)}} 2x, 
-              {{resize_image_url (item.imagem_mobile.src, item.imagem_mobile.width * 3)}} 3x"
+              <img data-src="{{ item.imagem_mobile.src }}" alt="{{ item.imagem_mobile.alt }}" {{ loadingAttr }} data-disable="desktop" class="main-home__card-image lazyload" data-srcset="{{resize_image_url (item.imagem_mobile.src, 296)}} 296w"
+              sizes="296px"
+              width="296"
+              height="220"
               />
             {% endif %}
             {% set string_to_split = item.card_title %}
@@ -58,7 +59,7 @@
                 {% if item2.card_item_icon.src %}
                   {% set loadingAttr = item2.card_item_icon.loading != 'disabled' ? 'loading="{{ item2.card_item_icon.loading }}"' : '' %}
                   <li class="main-home__card-item">
-                    <img src="{{ item2.card_item_icon.src }}" alt="{{ item2.card_item_icon.alt }}" {{ loadingAttr }} class="main-home__card-item--image">
+                    <img data-src="{{ item2.card_item_icon.src }}" alt="{{ item2.card_item_icon.alt }}" {{ loadingAttr }} class="main-home__card-item--image lazyload">
                     <h3 class="main-home__card-item--title">{{ item2.card_item }}</h3>
                   </li>
                 {% endif %}

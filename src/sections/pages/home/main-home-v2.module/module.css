@@ -86,7 +86,7 @@
   margin: 2.25em auto 1em;
 }
 .main-home__card-image {
-  width: 100%;
+  object-fit: cover;
 }
 
 /* Card Itens */
