@@ -1,0 +1,26 @@
+[ {
+  "id" : "dd12125a-b82f-08a2-1650-03fc92096aef",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Imagem",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "1a295440-665e-732c-63a4-a0fa735679d8",
+  "name" : "texto",
+  "display_width" : null,
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext"
+} ]
