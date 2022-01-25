@@ -1,0 +1,26 @@
+.section__main-case {
+  padding: 3em 2em;
+  background: var(--lightest);
+}
+.main-case__tag {
+  width: max-content;
+  font: 400 12px var(--secondary-font);
+  color: var(--lightest);
+  padding: 6px 16px;
+  background-color: var(--brand_official);
+  border-radius: 20px;
+}
+
+.main-case__title {
+  font: 400 2em var(--primary-font);
+  color: var(--darkest);
+  line-height: 120%;
+  letter-spacing: -0.055em;
+  margin: 2rem 0;
+}
+.button--lp-cta {
+ font: 600 1em var(--secondary-font);
+ line-height: 120%;
+ color: var(--white);
+ background-color: var(--Auxiliary-yellow);
+}

@@ -1,0 +1,112 @@
+[ {
+  "id" : "3e5a5de3-c356-df78-1165-5fb64d29fef5",
+  "name" : "subtitle_1",
+  "display_width" : null,
+  "label" : "Sobretítulo",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Plataforma de #1 de Sales Inteligence da América Latina"
+}, {
+  "id" : "912cf32d-46dd-6342-107b-7b8167d8acd5",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Enriquecimento de dados para vender mais de forma inteligente"
+}, {
+  "id" : "7510372c-4685-a44a-6dbe-5cd9aecbcdad",
+  "name" : "subtitle_2",
+  "display_width" : null,
+  "label" : "Subtítulo",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Use nossa solução para ter detalhes sobre os leads mais propensos a comprar"
+}, {
+  "id" : "51b8d414-dcbc-a671-724c-30eb870b2899",
+  "name" : "button",
+  "display_width" : null,
+  "label" : "Botão",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d1fa94c8-9064-89b6-5dc1-3c3cacce7ae6",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#cortex-form",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "b555ab96-c7f4-aaaa-cc63-c981b5ae2ff1",
+    "name" : "texto_do_link",
+    "display_width" : null,
+    "label" : "Texto do link",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Quero enriquecer a minha base!"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "link_field" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#cortex-form",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "texto_do_link" : "Quero enriquecer a minha base!"
+  }
+}, {
+  "id" : "fad2931b-b3c4-2b96-be4b-3691d8e5cb6e",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Imagem",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://pages.cortex-intelligence.com/hubfs/image%20119.png",
+    "alt" : "image 119",
+    "loading" : "disabled",
+    "width" : 481,
+    "height" : 349,
+    "max_width" : 481,
+    "max_height" : 349
+  }
+} ]

@@ -1,0 +1,79 @@
+[ {
+  "id" : "3e5a5de3-c356-df78-1165-5fb64d29fef5",
+  "name" : "tag",
+  "display_width" : null,
+  "label" : "Tag",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "caso de sucesso"
+}, {
+  "id" : "912cf32d-46dd-6342-107b-7b8167d8acd5",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Como uma grande empresa de software regularizou o uso de seus produtos e fechou mais negocios"
+}, {
+  "id" : "51b8d414-dcbc-a671-724c-30eb870b2899",
+  "name" : "button",
+  "display_width" : null,
+  "label" : "Botão",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d1fa94c8-9064-89b6-5dc1-3c3cacce7ae6",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#cortex-form",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "b555ab96-c7f4-aaaa-cc63-c981b5ae2ff1",
+    "name" : "texto_do_link",
+    "display_width" : null,
+    "label" : "Texto do link",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Baixar caso de sucesso"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "link_field" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#cortex-form",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "texto_do_link" : "Baixar caso de sucesso"
+  }
+} ]

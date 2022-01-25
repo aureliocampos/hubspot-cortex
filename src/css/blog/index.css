@@ -358,6 +358,10 @@
 }
 
 /* Corrigi erros de video no blog */
+#hs_cos_wrapper_post_body img {
+  width: 100% !important;
+  height: auto;
+}
 .wp-block-lazyblock-form-hubspot-blog.lazyblock-form-hubspot-blog-2pp8sd > section > div {
   background-color: #f5f0f5;
   padding: 2em 1em !important;
@@ -386,3 +390,4 @@ div#attachment_14172 {
 img.size-full.wp-image-14172 {
 width: 100% !important;
 }
+
