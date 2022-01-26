@@ -4,7 +4,7 @@
 }
 .main-case__subtitle--1 {
   font: 325 0.875em var(--primary-font);
-  color: var(--dark);
+  color: var(--darker);
 }
 .main-case__subtitle--2 {
   font: 400 1em var(--primary-font);
@@ -17,11 +17,7 @@
   letter-spacing: -0.055em;
   margin: 1rem 0;
 }
-.button--lp-cta {
- font: 600 1em var(--secondary-font);
- line-height: 120%;
- color: var(--white);
- background-color: var(--Auxiliary-yellow);
+.section__main-case--primary .button--lp-cta {
  margin-top: 1.5rem;
 }
 .main-case__figure {
@@ -66,7 +62,7 @@
     font-size: 2.25em;
     margin: 1.25rem 0;
   }
-  .button--lp-cta {
+  .section__main-case--primary .button--lp-cta {
     margin-top: 3.5rem;
    }
 }

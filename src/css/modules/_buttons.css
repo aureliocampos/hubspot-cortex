@@ -56,3 +56,10 @@
   text-decoration: underline;
   color: var(--blue_spotlight);
 }
+.button--lp-cta {
+  font: 600 1em var(--secondary-font);
+  line-height: 120%;
+  color: var(--white);
+  background-color: var(--Auxiliary-yellow);
+  margin-top: 1.5rem;
+}
