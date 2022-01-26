@@ -30,7 +30,7 @@ section.section.section__content-pillars {
 }
 @media (min-width: 1024px) {
   section.section.section__content-pillars {
-    padding: 4em 0;
+    padding: 5.4em 0;
   }
   .content-pillars__items {
     display: flex;

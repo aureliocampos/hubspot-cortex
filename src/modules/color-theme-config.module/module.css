@@ -61,7 +61,7 @@
 .customer-testimonial__author {
   color: var(--brand_light);
 }
-.clients__item {
+.customer-testimonial .clients__item {
   color: var(--brand_official);
 }
 

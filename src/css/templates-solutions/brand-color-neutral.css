@@ -25,7 +25,7 @@
 .customer-testimonial__author {
   color: var(--darkest);
 }
-.clients__item {
+.customer-testimonial .clients__item {
   background: var(--light);
   color: var(--darkest);
 }

@@ -54,7 +54,7 @@
 .customer-testimonial__author {
   color: var(--blue_light);
 }
-.clients__item {
+.customer-testimonial .clients__item {
   color: var(--blue_official);
 }
 

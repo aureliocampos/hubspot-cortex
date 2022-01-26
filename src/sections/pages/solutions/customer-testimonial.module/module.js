@@ -31,8 +31,7 @@ function animateLoadingArrowsPrev() {
   
   animations.forEach( item => {
 
-    const animate = item.getAnimations(options)
-
+    const animate = item.getAnimations()
     if (animate.length !== 0 ) {
       animate.forEach( anime => anime.cancel())
       return
@@ -62,7 +61,7 @@ function animateLoadingArrowsNext() {
   
   animations.forEach( item => {
 
-    const animate = item.getAnimations(options)
+    const animate = item.getAnimations()
 
     if (animate.length !== 0 ) {
       animate.forEach( anime => anime.cancel())
