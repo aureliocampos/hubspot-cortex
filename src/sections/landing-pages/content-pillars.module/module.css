@@ -25,6 +25,13 @@ section.section.section__content-pillars {
 .content-pillars__text p {
   margin: 1em 0;
 }
+.content-pillars__text ul {
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+.content-pillars__text ul li {
+  margin: 1em 0;
+}
 .section__content-pillars .button--lp-cta {
   margin: 2.5em auto 0 auto;
 }
@@ -36,6 +43,8 @@ section.section.section__content-pillars {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 3em;
     max-width: 960px;
     margin: 0 auto;
   }

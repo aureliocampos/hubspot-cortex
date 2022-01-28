@@ -1,0 +1,229 @@
+[
+  {
+   "choices": [
+    [
+     "cards_si",
+     "SI"
+    ],
+    [
+     "cards_pr",
+     "PR"
+    ]
+   ],
+   "default": "cards_si",
+   "display": "radio",
+   "display_width": null,
+   "id": "c7dc7282-0f2a-2dde-86a4-e69080061d92",
+   "label": "Escolha o tipo de conteúdo",
+   "locked": false,
+   "name": "type_content_change",
+   "required": false,
+   "type": "choice"
+  },
+  {
+   "children": [
+    {
+     "default": {
+      "size_type": "auto",
+      "src": "",
+      "alt": null,
+      "loading": "lazy"
+     },
+     "display_width": null,
+     "id": "6efc75c6-08da-1510-c80f-f41bb9d3a069",
+     "label": "Imagem",
+     "locked": false,
+     "name": "image",
+     "required": false,
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "type": "image"
+    },
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "id": "9eaba7f9-aa1a-cbd1-81fe-6dabcff3f956",
+     "label": "Título",
+     "locked": false,
+     "name": "title",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "display_width": null,
+     "id": "300e84d6-131e-9392-65e7-8354e2e7389a",
+     "label": "Texto",
+     "locked": false,
+     "name": "texto",
+     "required": false,
+     "type": "richtext"
+    }
+   ],
+   "default": [
+    {
+     "image": {
+      "size_type": "auto",
+      "src": "https://www.cortex-intelligence.com/hubfs/website-cortex/paginas/vendas-e-mercado/Vendas-1.png",
+      "alt": "Visualização de nichos de mercado por segmento e através de gráficos em barra e de bolhas",
+      "loading": "lazy"
+     },
+     "title": "IDENTIFICAÇÃO E DIMENSIONAMENTO DE NICHOS DE MERCADO",
+     "texto":"<p>Entenda o real tamanho de seu mercado e descubra novos nichos. Dimensione o potencial de diferentes segmentos e identifique tendências macroeconômicas.</p>"
+    },
+    {
+     "image": {
+      "size_type": "auto",
+      "src": "https://www.cortex-intelligence.com/hubfs/website-cortex/paginas/vendas-e-mercado/Vendas-2.png",
+      "alt": "Dados de contato de telefone, e-mail e website de acordo com empresa, faturamento, tendência e índice de adoção",
+      "loading": "lazy"
+     },
+     "title": "BUSCA DE CONTATOS E ENRIQUECIMENTO DE CRM",
+     "texto":"<p>Identifique o seu perfil de cliente ideal, obtenha dados de contato para prospecção e enriqueça seu CRM com informações exclusivas sobre as empresas-alvo.</p>"
+    },
+    {
+     "image": {
+      "size_type": "auto",
+      "src": "https://www.cortex-intelligence.com/hubfs/website-cortex/paginas/vendas-e-mercado/Vendas-3.png",
+      "alt": "Gráficos em formato de barra e pizza com dados de propensão de compra e previsibilidade de receita",
+      "loading": "lazy"
+     },
+     "title": "PROPENSÃO DE COMPRA E PREVISIBILIDADE DE RECEITA",
+     "texto":"<p>Tenha o apoio de Inteligência Artificial na prospecção para receber sugestões de clientes com potencial, definir prioridades e prever a receita com mais assertividade.</p>"
+    },
+    {
+     "image": {
+      "size_type": "auto",
+      "src": "https://www.cortex-intelligence.com/hubfs/website-cortex/paginas/vendas-e-mercado/Vendas-4.png",
+      "alt": "Dados estruturados em gráficos da mensuração e monitoramento de performance do funil de vendas, ganhos, perdas e total de oportunidades",
+      "loading": "lazy"
+     },
+     "title": "MENSURAÇÃO E MONITORAMENTO DE PERFORMANCE",
+     "texto":"<p>Integre seus dados e acompanhe o resultado em tempo real, obtenha insights a partir de painéis flexíveis e dispare ações de melhoria. Tudo em um só lugar.</p>"
+    }
+   ],
+   "display_width": null,
+   "expanded": false,
+   "id": "d228a167-4e2b-f02b-4a31-17bfccde910e",
+   "label": "Cards de Conteúdo",
+   "locked": false,
+   "name": "cards_si",
+   "occurrence": {
+    "sorting_label_field": "9eaba7f9-aa1a-cbd1-81fe-6dabcff3f956",
+    "default": 4
+   },
+   "required": false,
+   "tab": "CONTENT",
+   "type": "group",
+   "visibility": {
+    "controlling_field": "c7dc7282-0f2a-2dde-86a4-e69080061d92",
+    "controlling_value_regex": "cards_si",
+    "operator": "EQUAL"
+   }
+  },
+  {
+   "children": [
+    {
+     "default": {
+      "size_type": "auto",
+      "src": "",
+      "alt": null,
+      "loading": "lazy"
+     },
+     "display_width": null,
+     "id": "e266a96b-8df3-3291-aa41-69ea8a1c93f1",
+     "label": "Imagem",
+     "locked": false,
+     "name": "image",
+     "required": false,
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "type": "image"
+    },
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "id": "861cd7a7-492f-0861-0db4-88652af389f2",
+     "label": "Título",
+     "locked": false,
+     "name": "title",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "display_width": null,
+     "id": "b6f0858e-45d5-ad79-6647-e3901b1c27ad",
+     "label": "Texto",
+     "locked": false,
+     "name": "texto",
+     "required": false,
+     "type": "richtext"
+    }
+   ],
+   "default": [
+    {
+     "image": {
+      "size_type": "auto",
+      "src": "https://pages.cortex-intelligence.com/hubfs/website-cortex/paginas/comunicacao-e-marketing/pr-card-1.png",
+      "alt": "Resultados e insights de Comunicação apresentados em formato de gráfico bolha e percentuais",
+      "loading": "lazy"
+     },
+     "title": "INDICADOR DE REPUTAÇÃO EM TEMPO REAL E POR PILAR ESTRATÉGICO",
+     "texto": "<p>Monitore em tempo real a exposição da marca e seu protagonismo nos temas mais estratégicos para o seu negócio.</p>"
+    },
+    {
+     "image": {
+      "size_type": "auto",
+      "src": "https://www.cortex-intelligence.com/hubfs/website-cortex/paginas/comunicacao-e-marketing/pr-card-4.png",
+      "alt": "Resultados de investimentos e ações apresentados em numerais e gráficos de coluna e em barra",
+      "loading": "lazy"
+     },
+     "title": "RETORNO DAS AÇÕES E INDICADORES ALINHADOS À ESTRATÉGIA",
+     "texto": "<p>Obtenha métricas concretas de retorno das ações e acompanhe os resultados da área em painéis executivos e operacionais.</p>"
+    },
+    {
+     "image": {
+      "size_type": "auto",
+      "src": "https://pages.cortex-intelligence.com/hubfs/website-cortex/paginas/comunicacao-e-marketing/Monitoramento%20de%20concorrentes%20e%20tendencias.png",
+      "alt": "Gráfico e insights do monitoramento de concorrentes e tendências",
+      "loading": "lazy"
+     },
+     "title": "COMPARAÇÃO COM CONCORRENTES E MONITORAMENTO DE TENDÊNCIAS",
+     "texto": "<p>Compare-se com concorrentes e monitore tendências do mercado para obter informações competitivas e estratégicas.</p>"
+    },
+    {
+     "image": {
+      "size_type": "auto",
+      "src": "https://www.cortex-intelligence.com/hubfs/website-cortex/paginas/comunicacao-e-marketing/Integracao%20de%20midias%20e%20canais.png",
+      "alt": "Gráficos e insights obtidos com a integração de mídias e canais",
+      "loading": "lazy"
+     },
+     "title": "MENSURAÇÃO MULTIMÍDIA DE CANAIS CONQUISTADOS, PRÓPRIO E PAGOS",
+     "texto": "<p>Acompanhe indicadores de comunicação e marketing online e offline, integrando canais próprios, pagos e conquistados.</p>"
+    }
+   ],
+   "display_width": null,
+   "expanded": false,
+   "id": "e7c1a53c-2861-6fcc-43fb-c25f3120b2a2",
+   "label": "Cards de Conteúdo",
+   "locked": false,
+   "name": "cards_pr",
+   "occurrence": {
+    "sorting_label_field": "861cd7a7-492f-0861-0db4-88652af389f2",
+    "default": 4
+   },
+   "required": false,
+   "tab": "CONTENT",
+   "type": "group",
+   "visibility": {
+    "controlling_field": "c7dc7282-0f2a-2dde-86a4-e69080061d92",
+    "controlling_value_regex": "cards_pr",
+    "operator": "EQUAL"
+   }
+  }
+ ]
