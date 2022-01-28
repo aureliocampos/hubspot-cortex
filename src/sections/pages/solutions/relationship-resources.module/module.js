@@ -12,7 +12,7 @@ const swiperResources = new Swiper('.swiper-rel-resources', {
     // when window width is >= 640px
     768: {
       slidesPerView: 2,
-      spaceBetween: 40,
+      spaceBetween: 0,
       centeredSlides: false,
     },
     // when window width is >= 640px

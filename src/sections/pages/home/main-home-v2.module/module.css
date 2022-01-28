@@ -16,7 +16,6 @@
   font: 400 0.875em var(--secondary-font);
   color: var(--darkest);
   line-height: 144%;
-  letter-spacing: -0.055em;
   margin-top: 9px;
 }
 .main-home__cta {
@@ -226,7 +225,7 @@
     overflow: initial;
   }
   .main-home__header {
-    width: 472px;
+    width: 440px;
     position: absolute;
     top: 0;
     left: 0;

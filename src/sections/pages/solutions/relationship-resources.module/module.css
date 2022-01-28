@@ -91,7 +91,11 @@
 .swiper-button-next {
   right: 0;
 }
-
+@media (min-width: 768px) {
+  .rel-resources__card-content {
+    max-width: 300px;
+  }
+}
 @media (min-width: 1200px) {
   .relationship-resources {
     max-width: 1219px;

@@ -74,6 +74,10 @@
     padding: 0;
     margin-left: 47px;
   }
+  .content__item:nth-of-type(2n) .content__item-description {
+    margin-left:0;
+    margin-right: 47px;
+  }
   .content__item-title {
     font-size: 30px;
   }

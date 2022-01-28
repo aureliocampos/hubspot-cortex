@@ -88,7 +88,7 @@
   text-transform: uppercase;
   text-decoration: none;
   line-height: 1;
-  padding: 0.75em 1.5em;
+  padding: 0.875em 1.5em;
   margin: 2rem auto 0 auto;
   transition: all .3s ease-in-out;
   outline: none;
@@ -153,10 +153,5 @@
   }
   #cortex-form .hs_cos_wrapper_type_form .legal-consent-container .hs-input[type="checkbox"] {
     margin-top: 6px;
-  }
-
-  /* button */
-  #cortex-form .hs_cos_wrapper_type_form input[type="submit"] {
-    font-size: 1.25em;
   }
 }

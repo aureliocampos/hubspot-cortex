@@ -1,0 +1,95 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+    label: Política de privacidade
+-->
+{% extends "../layouts/base.html" %}
+
+{% require_css %}
+  <style>
+    #main-content.privacy-policy {
+      font: 400 1em var(--secondary-font);
+      color: var(--darkest);
+      line-height: 148%;
+      padding: 4em 2em;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    #main-content.privacy-policy .section__title {
+      font: 700 1.5em var(--primary-font);
+      color: var(--darkest);
+      line-height: 120%;
+      text-align: center;
+      margin: 2em 0;
+    }
+    #main-content.privacy-policy p {
+      margin: 1em 0;
+    }
+    #main-content.privacy-policy ul {
+      margin: 1em 0;
+      padding-left: 40px;
+      list-style: disc;
+    }
+    #main-content.privacy-policy a {
+      text-decoration: underline;
+    }
+
+  </style>
+{% end_require_css %}
+{% block body %}
+<main id="main-content" class="body-container-wrapper privacy-policy">
+  <h1 class="section__title">Aviso de Privacidade | Site e Plataforma Cortex
+  </h1>
+  {% widget_block rich_text "text" overrideable=True, label="Texto Corrido"  %}
+    {% widget_attribute "html" %}
+      <p style="text-align: right;"><em>Atualizado em:</em> [05/10/2021]</p>
+      <p style="text-align: left;"><strong style="font-family: Montserrat, sans-serif; font-size: 1.5em;">1. INTRODUÇÃO</strong></p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">1.1.</span> Nós, da Cortex, nos preocupamos com a privacidade de seus dados. Justamente por isso, acompanhamos atentamente o desenvolvimento e os avanços da legislação em matéria de proteção de dados no Brasil, especialmente por meio da Lei nº 13.709/2018 (“Lei Geral de Proteção de Dados ou “LGPD”), que regulamenta o tema no país e garante direitos aos titulares de dados. Trata-se de uma lei essencial, sendo responsável por inserir o Brasil no âmbito da proteção de dados a nível mundial e prevendo, de forma específica, direitos e deveres a todos que realizam atividades de tratamento de dados pessoais.&nbsp;</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">1.2.</span> Desta maneira, como uma empresa de destaque no desenvolvimento de soluções de inteligência de dados para o impulsionamento de setores de comunicação, <em>marketing</em> e vendas, estamos comprometidos em adotar as melhores medidas e práticas de mercado para que nossas atividades estejam em conformidade com a LGPD no se refere a temas como privacidade, proteção de dados e segurança da informação para que todos os dados tratados por nós ou por nossos parceiros sejam mantidos adequadamente.</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">1.3.</span> Para isso, passamos por um processo completo de adequação das nossas atividades à LGPD, identificando todas as atividades que envolvem o tratamento de dados pessoais, realizamos avaliações e ajustamos nossos termos com fornecedores e parceiros, incluindo a proteção de dados como um tema chave em nossas relações, garantindo, na medida do que nos é possível, estabelecer relacionamentos com empresas que adotem os melhores padrões de diligência e adequação nos termos da LGPD.</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">1.4.</span> Finalmente, ressaltamos que, para as nossas soluções de <em>software</em>, adotamos medidas robustas a fim de garantir a integridade e qualidade durante o tratamento de dados pessoais.</p>
+      <h2 style="text-align: justify;"><strong>2. SOBRE A CORTEX</strong></h2>
+      <p style="text-align: justify;"><span style="font-weight: bold;">2.1.</span> A Cortex é uma empresa que oferece soluções inteligentes com base em dados para as áreas de <em>marketing</em>, comunicação e vendas destinadas aos nossos parceiros. Prezamos pela qualidade de nossos serviços, utilizando as técnicas mais robustas para avaliação e criação de soluções. Dentre as soluções oferecidas, temos como objetivo central impulsionar as vendas de empresas contratantes por meio de estratégias de <em>marketing</em> e comunicação, especialmente a partir das soluções da Cortex. Além disso, estamos sempre buscando inovações a fim de oferecer serviços com alto padrão de eficiência e que acompanhem as necessidades do mercado.</p>
+      <h2 style="text-align: justify;"><strong>3. APLICAÇÃO DO PRESENTE AVISO DE PRIVACIDADE&nbsp;</strong></h2>
+      <p style="text-align: justify;"><span style="font-weight: bold;">3.1.</span> Por meio deste documento (“Aviso de Privacidade” ou “Aviso”), os titulares terão acesso a todas as possibilidades de tratamento de seus dados pessoais pela Cortex quando da utilização do <em>site </em>da Cortex e serviços relacionados a ele. Portanto, recomendamos que você leia atentamente este Aviso de Privacidade. <strong>Caso você não concorde</strong> com as disposições deste Aviso, recomendamos que você não utilize o <em>site </em>da Cortex ou seus serviços, já que, nesses casos, ocorrerá o aceite dos termos aqui descritos.&nbsp;</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">3.2.</span> Este Aviso descreve quais informações são coletadas pela Cortex Intelligence Tecnologia Ltda., sociedade limitada, domiciliada na cidade e Estado de São Paulo, na Avenida Paulo VI, nº 621, Sumaré, CEP 01262-010, inscrita no CNPJ/MF sob o nº 06.068.735/0002-14, titular da inscrição municipal nº 4.626.712-3, mas isenta de inscrição estadual, titular da propriedade intelectual sobre <em>software</em>, <em>website</em>, aplicativos, conteúdos e demais ativos digitais ou não, relacionados aos produtos e serviços da Cortex.</p>
+      <h2 style="text-align: justify;"><strong>4. COMO A CORTEX ACESSA SEUS DADOS E PARA QUAIS FINALIDADES ESSES SÃO TRATADOS PELA CORTEX</strong></h2>
+      <p style="text-align: justify;"><span style="font-weight: bold;">4.1.</span> Enquanto controladora, a Cortex obtém seus dados por meio das suas interações com o <em>site </em>da própria Cortex, além de dados tornados públicos. Há três formas centrais pelas quais a Cortex obtém seus dados pessoais:</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">4.1.1.</span> <strong>Dados de navegação</strong>: dados sobre o acesso ao <em>site </em>da Cortex e demais dados coletados enquanto o titular utiliza o referido <em>site</em>, como dados sobre endereço de IP e outros meios, dados técnicos, como os computadores, aparelhos e dispositivos usados, dados relacionados a ferramentas de comunicação disponibilizadas no <em>site </em>da Cortex, os dados de latitude/longitude do <em>smartphone </em>do titular, tipo de conexão de rede e desempenho do provedor, da rede e do dispositivo utilizado.</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">4.1.2.</span> <strong>Dados preenchidos pelo titular</strong>: disponibilizados em formulários voltados à comunicação entre os titulares e a Cortex, como para o recebimento de <em>newsletter</em> e para o <em>download</em> de materiais disponibilizados pela Cortex, o agendamento de conversa com a Cortex ou <em>chatbot </em>da Cortex e, ainda, aqueles disponibilizados pelo titular ao participar de eventos organizados pela Cortex com parceiros. Nessas situações, podemos coletar dados como, por exemplo: nome; sobrenome; e-mail profissional; celular; nome da empresa em que o titular trabalha, qual a sua respectiva área e o setor de atuação da empresa; além do cargo hierárquico ocupado pelo titular.</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">4.1.3.</span> <strong>Dados tornados públicos</strong>: sempre respeitando a legislação aplicável, dados pessoais cujo acesso é público ou que foram tornados manifestamente públicos pelo seu titular, incluindo eventuais dados sensíveis de acesso público, ressaltando que o tratamento desses dados sempre levará em consideração a finalidade, a boa-fé e o interesse público que justificaram sua disponibilização.</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">4.2.</span> Ademais, o tratamento de dados pessoais é realizado para as seguintes finalidades:&nbsp;</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">4.2.1.</span> Envio de <strong>conteúdo </strong>mediante preenchimento de formulário, inscrição em <em>newsletter </em>e/ou participação nos eventos organizados pela Cortex com parceiros.&nbsp;</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">4.2.2.</span> Realização de <strong>campanhas de </strong><strong><em>marketing</em></strong><strong> em redes sociais e campanhas de </strong><strong><em>marketing</em></strong><strong> direcionado</strong>.&nbsp;</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">4.2.3.</span> Apresentação de <strong>conteúdo personalizado</strong> no <em>site</em> da Cortex aos titulares que consentiram para essa finalidade.</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">4.2.4.</span> Entrar em contato com interessados que desejarem <strong>agendar uma conversa com a Cortex ou oferecer os nossos serviços</strong> aos titulares que tenham consentido para essa finalidade, conforme formulário disponível no <em>site</em> da Cortex.&nbsp;</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">4.2.5.</span> Permitir <strong>uso de </strong><strong><em>cookies</em></strong> no site da Cortex a fim de garantir o funcionamento de funcionalidades básicas de seus serviços e gerar estatísticas sobre o seu uso.&nbsp;</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">4.3.</span> A Cortex assegura que, sempre que houver a necessidade de realizar o tratamento de dados pessoais sensíveis, cumprirá estritamente as autorizações e os requisitos impostos pela legislação aplicável de proteção de dados pessoais.</p>
+      <h2 style="text-align: justify;"><strong>5. COM QUEM COMPARTILHAMOS OS DADOS PESSOAIS&nbsp;</strong></h2>
+      <p style="text-align: justify;"><span style="font-weight: bold;">5.1.</span> Nos casos em que for necessário para o funcionamento de nosso <em>site </em>ou prestação de nossos serviços, dentro dos limites da legislação aplicável, a Cortex poderá compartilhar seus dados pessoais com terceiros. Esse compartilhamento buscará atingir as seguintes finalidades:&nbsp;</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">5.1.1.</span> <strong>Auxiliar na operação da Cortex</strong> (ex.: armazenamento de dados em serviços nuvem de terceiros), sempre dentro dos estritos limites autorizados pela legislação, e segundo as finalidades de tratamento e precauções informadas neste Aviso.&nbsp;</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">5.1.2.</span> Permitir a <strong>realização de parcerias por parte do Cortex, na medida em que os dados pessoais forem necessários à concretização destas parcerias</strong>, sempre dentro dos estritos limites autorizados pela legislação, e em conformidade com as finalidades de tratamento e demais precauções informadas neste Aviso.&nbsp;</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">5.1.3.</span> <strong>Gerar dados a respeito das funcionalidades e uso dos serviços da Cortex</strong>, que serão disponibilizados para seu grupo econômico, sempre dentro dos estritos limites autorizados pela legislação, e segundo as finalidades de tratamento e demais precauções informadas neste Aviso.&nbsp;</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">5.1.4.</span> <strong>Analisar e solucionar </strong>problemas técnicos e outros que estejam relacionados a fraude e segurança da Cortex e dos seus serviços.&nbsp;</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">5.1.5.</span> <strong>Eventos com parceiros</strong>. Quando organizar eventos com seus parceiros, os dados pessoais dos participantes do evento poderão, sempre respeitando a legislação aplicável, ser compartilhados com os parceiros co-organizadores.</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">5.1.6.</span> <strong>Outros fins</strong>, na forma e limites do consentimento concedido pelo titular (quando necessário), e nos limites do que for permitido ou exigido pela legislação aplicável.</p>
+      <h2 style="text-align: justify;"><strong>6. ARMAZENAMENTO E SEGURANÇA DOS DADOS PESSOAIS&nbsp;</strong></h2>
+      <p style="text-align: justify;"><span style="font-weight: bold;">6.1.</span> Ao tratar os seus dados, a Cortex irá sempre se esforçar para mantê-los seguros. Por essa razão, a Cortex se compromete a implementar, de maneira contínua, medidas físicas, técnicas e administrativas de segurança da informação no tratamento dos seus dados pessoais. Buscamos, desta maneira, proteger os seus dados pessoais contra acessos não autorizados, situações acidentais ou ilícitas de destruição, perda, alteração comunicação ou qualquer forma de tratamento inadequado ou ilícito.&nbsp;</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">6.1.1.</span> A Cortex <strong>permite que os seus dados pessoais sejam acessados pelos seus funcionários apenas no limite do estritamente necessário para executarem as suas atividades</strong>, em conformidade com instruções expressas e mediante obrigação contratual de sigilo e confidencialidade dos dados pessoais tratados.&nbsp;</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">6.1.2.</span> As práticas da Cortex a respeito de <strong>segurança da informação</strong> tomarão como base: a legislação aplicável, melhores práticas adotadas no mercado, e outras políticas internas da Cortex relacionadas ao tema.&nbsp;</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">6.2.</span> A Cortex irá reter os seus dados pessoais somente pelo período necessário a fim de alcançar os objetivos descritos neste Aviso ou pelos prazos dispostos na legislação aplicável.</p>
+      <h2 style="text-align: justify;"><strong>7. TRANSFERÊNCIA INTERNACIONAL DE DADOS&nbsp;</strong></h2>
+      <p style="text-align: justify;"><span style="font-weight: bold;">7.1.</span> A Cortex, enquanto empresa alinhada às práticas e tecnologias mais atuais, poderá realizar transferências internacionais dos seus dados pessoais de modo a viabilizar o desenvolvimento de algumas das atividades indicadas neste Aviso (ex.: armazenamento de dados em serviços de nuvem com servidores localizados no exterior). A Cortex se compromete a realizar as transferências internacionais dos seus dados apenas com base em mecanismos permitidos pela legislação aplicável.</p>
+      <h2 style="text-align: justify;"><strong>8. DIREITOS DOS TITULARES&nbsp;</strong></h2>
+      <p style="text-align: justify;"><span style="font-weight: bold;">8.1.</span> A Cortex adotará medidas técnicas e organizacionais apropriadas para cumprir suas obrigações em relação aos seus direitos enquanto titular dos dados pessoais. Justamente nesse sentido, a Cortex se compromete a viabilizar da melhor maneira possível os seus direitos tais quais previstos em lei.</p>
+      <h2 style="text-align: justify;"><strong>9. DISPOSIÇÕES GERAIS</strong></h2>
+      <p style="text-align: justify;"><span style="font-weight: bold;">9.1.</span> Este Aviso de Privacidade consiste na versão válida e eficaz das informações sobre o tratamento dos seus dados pessoais pela Cortex. Essa versão é responsável por governar todas as instâncias em que a Cortex trata seus dados pessoais.&nbsp;</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">9.2.</span> A Cortex pode disponibilizar informações adicionais a você sobre as suas práticas de tratamento de dados pessoais relacionadas a determinados serviços. Essas informações podem complementar ou esclarecer as práticas da privacidade da Cortex ou fornecer a você escolhas adicionais sobre como a Cortex efetua o tratamento de dados pessoais. De todo modo, a Cortex se compromete a seguir as obrigações legais e regulatórias aplicáveis ao tratamento de dados pessoais, assim como os acordos celebrados com seus Parceiros e Fornecedores.&nbsp;</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">9.3.</span> As cláusulas deste Aviso de Privacidade seguirão vigentes a quaisquer formas de terminação, ocorridas por quaisquer motivos, continuando a produzir seus efeitos sobre as partes enquanto houver relações jurídicas subsequentes.&nbsp;</p>
+      <p style="text-align: justify;"><span style="font-weight: bold;">9.4.</span> Caso você queira exercer algum dos direitos previstos neste Aviso de Privacidade ou tenha qualquer dúvida sobre este documento e as práticas nele descritas, você deverá entrar em contato com a Cortex por meio do seguinte e-mail: [<span style="background-color: #ffffff;">marketing@cortex-intelligence.com</span>].</p>
+      <p style="text-align: center;">* * *</p>
+      <p style="text-align: left;"><span style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 16px;">&nbsp;</span></p>
+    {% end_widget_attribute %}
+  {% end_widget_block %}
+</main>
+{% endblock body %}

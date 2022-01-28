@@ -107,7 +107,7 @@
   display: inline-flex;
   justify-content: space-between;
   width: 100%;
-  font: 350 1.125em var(--primary-font);
+  font: 400 1.125em var(--primary-font);
   color: var(--darkest);
   line-height: 117.2%;
   padding: 1.25rem;
@@ -119,7 +119,7 @@
 }
 .header .hs-menu-item.hs-menu-depth-2 > a[role="menuitem"] {
   display: block;
-  font: 800 1em var(--secondary-font);
+  font: 800 1em var(--primary-font);
   color: var(--darker);
   line-height: 117.2%;
   margin: 0.875rem 0;

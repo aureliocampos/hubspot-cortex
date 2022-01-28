@@ -10,8 +10,9 @@
 }
  /* estilo mensagem de sucesso */
  #cortex-form.cortex__form-newsletter .submitted-message {
-  font: 500 2em var(--primary-font);
+  font: 500 1em var(--primary-font);
   color: var(--lightest);
+  text-align: center;
   margin-top: 1em;
 }
 
@@ -62,7 +63,7 @@
 
   /* estilo mensagem de sucesso */
   #cortex-form.cortex__form-newsletter .submitted-message {
-    font: 500 4em var(--primary-font);
+    font: 500 1.125em var(--primary-font);
     color: var(--lightest);
     margin-top: 1em;
   }

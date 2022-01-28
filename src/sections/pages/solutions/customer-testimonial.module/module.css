@@ -173,14 +173,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 52px;
+    /* gap: 52px; */
+    gap: 1.5em;
     margin: 3.8125em auto 0;
   }
   .customer-testimonial .clients__item {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5rem;
+    /* font-size: 5rem; */
+    font-size: 6.5rem;
     background-color: var(--lightest);
     border-radius: 100%;
   }
@@ -200,11 +202,14 @@
   .customer-testimonial__container {
     max-width: 1018px;
   }
-  .customer-testimonial__text {
-    font-size: 16px;
+  .customer-testimonial .clients__items {
+    gap: 52px;
   }
   .customer-testimonial .clients__item {
     font-size: 7rem;
+  }
+  .customer-testimonial__text {
+    font-size: 16px;
   }
   .customer-testimonial__controls {
     display: flex;

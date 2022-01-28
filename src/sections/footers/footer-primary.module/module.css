@@ -85,7 +85,10 @@
   order: 4;
   margin-top: 4rem;
 }
-
+.footer__form form.submitted-message {
+  font: 400 1em var(--secondary-font);
+  color: var(--darkest);
+}
 /* CTA Trabalhe conosco */
 .footer-cortex__cta {
   text-align: center;
