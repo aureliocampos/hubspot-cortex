@@ -1,10 +1,10 @@
-<section class="section section form-content-sticky">
+<section class="section section form-content-sticky ">
   <div class="section__container section__container--flex">
-    <div class="section__content">
-      <h2 class="section__title">{{ module.title }}</h2>
-      <div class="section__text">{{ module.richtext_field }}</div>
+    <div class="section__content section__content">
+      <h2 class="section__title section__title--{{ module.style.cor_da_fonte }}">{{ module.title }}</h2>
+      <div class="section__text section__text--{{ module.style.cor_da_fonte }}">{{ module.richtext_field }}</div>
     </div>
-    <div id="cortex-form" class="section__form-content-sticky cortex-form--black">
+    <div id="cortex-form" class="section__form-content-sticky cortex-form--{{ module.style.form_color }}"> 
       {% if module.form.title is truthy %}
         {% set no_title = False %}
       {% else %} 
@@ -40,4 +40,29 @@
   </div>
 </section>
 
+{% if module.style.change_section_custom_form == true %}
+  {% require_css %}
+    {% if module.style.plano_de_fundo.types == 'bg_color' %}
+      <style>
+        .form-content-sticky {
+            background-color: {{ module.style.plano_de_fundo.background_color.color }};
+        }
+      </style>
+      {% else %}
+       <style>
+        .form-content-sticky {
+            background: {{ module.style.plano_de_fundo.gradient.css }};
+        }
+      </style>
+    {% endif %}
+  {% end_require_css%}
 
+  {% else %}
+    {% require_css %}
+         <style>
+          .form-content-sticky {
+              background: var(--lightest);
+          }
+        </style>
+    {% end_require_css%}
+{% endif %}

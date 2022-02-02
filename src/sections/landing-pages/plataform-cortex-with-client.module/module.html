@@ -1,0 +1,45 @@
+
+<section class="section section__plataform-with-clients">
+	<div class="section__container">
+		<div class="plataform-with-clients__items">
+			<div class="plataform-with-clients__item">
+				{% if module.conteudo_a.image_field.src %}
+					{% set loadingAttr = module.conteudo_a.image_field.loading != 'disabled' ? 'loading="{{ module.conteudo_a.image_field.loading }}"' : '' %}
+					<figure class="plataform-with-clients__figure">
+						<img class="plataform-with-clients__image" src="{{ module.conteudo_a.image_field.src }}" alt="{{ module.conteudo_a.image_field.alt }}" {{ loadingAttr }} width="488" height="460">
+					</figure>
+				{% endif %}
+				<div class="plataform-with-clients__text">
+					{{ module.conteudo_a.texto }}
+				</div>
+			</div>
+			<div class="plataform-with-clients__item">
+				{% if module.conteudo_b.image_field.src %}
+					{% set loadingAttr = module.conteudo_b.image_field.loading != 'disabled' ? 'loading="{{ module.conteudo_b.image_field.loading }}"' : '' %}
+					<figure class="plataform-with-clients__figure">
+						<img class="plataform-with-clients__image" src="{{ module.conteudo_b.image_field.src }}" alt="{{ module.conteudo_b.image_field.alt }}" {{ loadingAttr }} width="537" height="322">
+					</figure>
+				{% endif %}
+				<div class="plataform-with-clients__text">
+					{{ module.conteudo_b.texto }}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% require_css %}
+  {% if module.style.plano_de_fundo == 'bg_color' %}
+		<style>
+			.section__plataform-with-clients {
+				background-color: {{ module.style.background_color.color }};
+			}
+		</style>
+		{% else %}
+		<style>
+			.section__plataform-with-clients {
+				background: {{ module.style.gradient_field.css }};
+			}
+		</style>
+	{% endif %}
+{% end_require_css%}

@@ -42,6 +42,9 @@
 }
 
 @media (min-width: 1200px) {
+  .section__main-case--primary {
+    padding: 6em 0;
+  }
   .section__main-case--primary .section__container {
     max-width: 1114px;
   }

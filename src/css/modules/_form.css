@@ -98,10 +98,13 @@
   cursor: pointer;
 }
 
-/* Formulário fundo Escuro */
-#cortex-form.cortex-form--black .hs_cos_wrapper_type_form {
-  background-color: var(--darkest);
+ /* estilo mensagem de sucesso */
+ #cortex-form .submitted-message {
+  font: 500 1.25em var(--primary-font);
+  color: var(--Auxiliary-green);
+  margin-top: 1em;
 }
+
 
 @media (min-width: 768px ) {
   #cortex-form {
@@ -154,4 +157,29 @@
   #cortex-form .hs_cos_wrapper_type_form .legal-consent-container .hs-input[type="checkbox"] {
     margin-top: 6px;
   }
+}
+
+
+/* Formulário fundo Escuro */
+#cortex-form.cortex-form--black .hs_cos_wrapper_type_form {
+  background-color: var(--darkest);
+}
+
+
+/* Formulário fundo claro */
+#cortex-form.cortex-form--white .hs_cos_wrapper_type_form {
+  background-color: var(--white);
+}
+#cortex-form.cortex-form--white .form-title {
+  color: var(--darkest);
+}
+#cortex-form.cortex-form--white .hs_cos_wrapper_type_form label {
+  color: var(--darkest);
+}
+#cortex-form.cortex-form--white .hs_cos_wrapper_type_form .legal-consent-container p {
+  color: var(--darkest);
+}
+#cortex-form.cortex-form--white .hs_cos_wrapper_type_form label.hs-error-msg, 
+#cortex-form.cortex-form--white .hs_cos_wrapper_type_form .hs_error_rollup label.hs-main-font-element {
+  color: var(--red-spotlight);
 }
