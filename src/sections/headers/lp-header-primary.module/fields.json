@@ -20,12 +20,29 @@
     "max_height" : 23
   }
 }, {
+  "id" : "7e37eecb-7886-85b3-9bea-8bc1bdbff7d3",
+  "name" : "adicionar_logo_do_cliente",
+  "display_width" : null,
+  "label" : "Adicionar logo do cliente",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
   "id" : "a648fc8b-2eb9-bdba-7203-bf02bf8a2fab",
   "name" : "logo_cliente",
   "display_width" : null,
   "label" : "Logo Cliente",
   "required" : false,
   "locked" : false,
+  "visibility" : {
+    "controlling_field" : "7e37eecb-7886-85b3-9bea-8bc1bdbff7d3",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
   "responsive" : true,
   "resizable" : false,
   "show_loading" : false,

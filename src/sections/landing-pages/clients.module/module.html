@@ -1,4 +1,8 @@
-<section class="section section__clients--lp" style="background-color: {{ module.style.background_color.color }};">
+{% if module.style.personalizar_cor_de_fundo == 'color' %}
+  <section class="section section__clients--lp" style="background-color: {{ module.style.background_color.color }};">
+{% else %} 
+   <section class="section section__clients--lp" style="background: {{ module.style.gradient_field.css }};">
+{% endif %}
 	<div class="section__container">
 		<h2 class="section__title">{{ module.text_field }}</h2>
 		<ul class="clients__items">

@@ -1,6 +1,6 @@
 {
   "global" : false,
-  "host_template_types" : [ "PAGE" ],
-  "module_id" : 64599988751,
+  "host_template_types" : [ "PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "module_id" : 64731033433,
   "is_available_for_new_content" : true
 }

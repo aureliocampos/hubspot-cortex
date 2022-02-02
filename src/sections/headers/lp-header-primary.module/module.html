@@ -13,6 +13,7 @@
 			{% endif %}
 		</figure>
 		
+    {% if module.adicionar_logo_do_cliente == true%}
 			{% if module.logo_cliente.src %}
 				{% set sizeAttrs = 'width="{{ module.logo_cliente.width }}" height="{{ module.logo_cliente.height }}"' %}
 				{% if module.logo_cliente.size_type == 'auto' %}
@@ -25,5 +26,6 @@
 					<img src="{{ module.logo_cliente.src }}" alt="{{ module.logo_cliente.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
 				</figure>
 			{% endif %}
+    {% endif %}
 	</div>
 </header>
