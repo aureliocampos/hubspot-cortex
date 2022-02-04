@@ -11,7 +11,7 @@
 					{% endif %}
 					{% set loadingAttr = item.image.loading != 'disabled' ? 'loading="{{ item.image.loading }}"' : '' %}
 					<figure class="content__item-figure">
-						<img src="{{ item.image.src }}" alt="{{ item.image.alt }}" {{ loadingAttr }}>
+						<img src="{{ item.image.src }}" alt="{{ item.image.alt }}" {{ loadingAttr }} width="420" height="400">
 					</figure>
 				{% endif %}
 				<div class="content__item-description">

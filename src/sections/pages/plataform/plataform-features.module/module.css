@@ -88,9 +88,6 @@
   .plataform-feature__item {
     gap: 136px;
   }
-  .plataform-feature__description {
-    width: 441px;
-  }
   .plataform-feature__item.plataform-feature__text {
     width: 320px;
   }
