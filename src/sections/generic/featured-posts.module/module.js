@@ -1,4 +1,5 @@
 const swiperResources = new Swiper('.featured-posts__swiper', {
+  autoplay: true,
   loop:true,
   lazy: {
     loadPrevNext: true,

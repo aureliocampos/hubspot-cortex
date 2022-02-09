@@ -83,7 +83,7 @@
 #cortex-form .hs_cos_wrapper_type_form input[type="submit"] {
   display: block;
   width: max-content;
-  font: bold 1em var(--secondary-font);
+  font: bold 0.75em var(--secondary-font);
   color: var(--lightest);
   text-transform: uppercase;
   text-decoration: none;
@@ -123,6 +123,9 @@
   #cortex-form {
     max-width: 450px;
     margin: 0;
+  }
+  #cortex-form .hs_cos_wrapper_type_form input[type="submit"] {
+    font-size: 1em;
   }
 }
 

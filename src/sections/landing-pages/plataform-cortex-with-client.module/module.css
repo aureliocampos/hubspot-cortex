@@ -54,7 +54,7 @@
 }
 @media (min-width: 1024px) {
   .section__plataform-with-clients {
-    padding: 1.125em 0 4em 0;
+    padding: 4em 0;
   }
   .section__plataform-with-clients .section__container {
     max-width: 870px;

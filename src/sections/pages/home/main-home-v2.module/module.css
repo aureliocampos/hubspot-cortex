@@ -84,9 +84,6 @@
   letter-spacing: -0.02em;
   margin: 2.25em auto 1em;
 }
-.main-home__card-image {
-  object-fit: cover;
-}
 
 /* Card Itens */
 .main-home__card-item {
