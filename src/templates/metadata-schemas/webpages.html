@@ -1,0 +1,117 @@
+<!--
+    templateType: global_partial
+    isAvailableForNewContent: false
+-->
+{% require_js async="true" %}
+<script type="application/ld+json" id="data-webpages">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "{{request.domain}}/#organization",
+        "name" : "{{ site_settings.company_name }}",
+        "url" : "{{ site_settings.domain }}",
+        "legalName" : "{{ site_settings.company_name }}",
+        "description": "{{ content.meta_description}}",
+        "telephone" : "{{ site_settings.company_phone}}",
+        "email" : "",
+        "address" : {
+          "@type" : "PostalAddress",
+          "streetAddress" : "{{ site_settings.company_street_address1 }}",
+          "addressLocality" : "{{ site_settings.company_city }}",
+          "addressRegion" : "{{ site_settings.company_state }}",
+          "addressCountry" : "{{ site_settings.company_country }}",
+          "postalCode" : "{{ site_settings.company_zip }}"
+        },
+        "priceRange": "R$ and $",
+        "openingHours": "Mo 09:00-18:00 Tu 09:00-18:00 We 09:00-18:00 Th 09:00-18:00 Fr 09:00-18:00",
+        "hasMap": "https://goo.gl/maps/qqGexPC5scoXsj2f7",
+        "sameAs": [
+          "https://www.facebook.com/beCortex/",
+          "https://www.instagram.com/becortex/",
+          "https://www.linkedin.com/company/cortex-intelligence/mycompany/",
+          "https://www.youtube.com/c/CORTEXINTELLIGENCE"
+        ],
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "{{request.domain}}/#logo",
+          "inLanguage": "pt-BR",
+          "url": "{{ site_settings.site_settings.logo_src}}",
+          "width": 130,
+          "height": 122,
+          "caption": "{{ site_settings.company_name }}"
+        },
+        "image": {
+          "@id": "{{request.domain}}/#logo",
+          "image" : "{{ site_settings.site_settings.logo_src}}"
+        }
+      },
+      {
+        "@type" : "LocalBusiness",
+        "name" : "{{ site_settings.company_name }}",
+        "image" : "{{ site_settings.site_settings.logo_src}}",
+        "telephone" : "{{ site_settings.company_phone}}",
+        "email" : "",
+        "address" : {
+          "@type" : "PostalAddress",
+          "streetAddress" : "{{ site_settings.company_street_address1 }}",
+          "addressLocality" : "{{ site_settings.company_city }}",
+          "addressRegion" : "{{ site_settings.company_state }}",
+          "addressCountry" : "{{ site_settings.company_country }}",
+          "postalCode" : "{{ site_settings.company_zip }}"
+        },
+        "url" : "{{ site_settings.domain }}",
+        "priceRange": "R$ & $"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "{{request.domain}}/#website",
+        "url": "{{ site_settings.domain }}",
+        "name": "{{ site_settings.company_name }}",
+        "description": "Big Data e ciência de dados para turbinar  seus resultados",
+        "publisher": {
+          "@id": "{{request.domain}}/#organization"
+        },
+        "potentialAction": [{
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.cortex-intelligence.com/hs-search-results?term={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+          },{
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "android-app://com.cortex-intelligence/https/query.cortex-intelligence.com/hs-search-results?term={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }],
+        "inLanguage": "{{ content.language.languageTag }}"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "{{content.absolute_url}}/#webpage",
+        "url": "{{content.absolute_url}}",
+        "name": "{{page_meta.html_title}}",
+        "isPartOf": {
+          "@id": "{{request.domain}}/#website"
+        },
+        "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
+        "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
+        "description": "{{page_meta.meta_description}}",
+        "inLanguage": "{{content.language}}",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "{{content.absolute_url}}"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+</script>
+{% end_require_js%}

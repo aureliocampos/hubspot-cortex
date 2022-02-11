@@ -70,9 +70,9 @@
     "type" : "link",
     "default" : {
       "url" : {
-        "content_id" : null,
         "type" : "EXTERNAL",
-        "href" : "#cortex-form"
+        "href" : "#section-form",
+        "content_id" : null
       },
       "open_in_new_tab" : false,
       "no_follow" : false
@@ -96,9 +96,9 @@
   "default" : {
     "link_field" : {
       "url" : {
-        "content_id" : null,
         "type" : "EXTERNAL",
-        "href" : "#cortex-form"
+        "href" : "#section-form",
+        "content_id" : null
       },
       "open_in_new_tab" : false,
       "no_follow" : false

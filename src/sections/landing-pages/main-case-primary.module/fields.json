@@ -54,7 +54,7 @@
     "default" : {
       "url" : {
         "type" : "EXTERNAL",
-        "href" : "#cortex-form",
+        "href" : "#section-form",
         "content_id" : null
       },
       "open_in_new_tab" : false,
@@ -80,7 +80,7 @@
     "link_field" : {
       "url" : {
         "type" : "EXTERNAL",
-        "href" : "#cortex-form",
+        "href" : "#section-form",
         "content_id" : null
       },
       "open_in_new_tab" : false,

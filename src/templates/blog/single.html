@@ -207,32 +207,5 @@
 
       readingRate('hs_cos_wrapper_post_body')
     </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "NewsArticle",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "{{ site_settings.domain }}"
-        },
-        "headline": "{{ page_meta.name }}",
-        "image": "{{ content.featured_image }}",
-        "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-        "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-        "author": {
-          "@type": "Person",
-          "name": "{{ content.blog_author.full_name }}",
-          "url": "{{ blog_author_url('default', slug ) }}"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "{{ site_settings.company_name }}",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "{{ site_settings.site_settings.logo_src}}"
-          }
-        }
-      }
-    </script>
   {% end_require_js %}
 {% endblock body %}
