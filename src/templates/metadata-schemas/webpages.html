@@ -46,26 +46,12 @@
           "caption": "{{ site_settings.company_name }}"
         },
         "image": {
-          "@id": "{{site_url}}/#logo",
-          "image" : "{{ site_settings.site_settings.logo_src}}"
+          "@id": "{{site_url}}/#logo"
         }
       },
       {
         "@type" : "LocalBusiness",
-        "name" : "{{ site_settings.company_name }}",
-        "image" : "{{ site_settings.site_settings.logo_src}}",
-        "telephone" : "{{ site_settings.company_phone}}",
-        "email" : "",
-        "address" : {
-          "@type" : "PostalAddress",
-          "streetAddress" : "{{ site_settings.company_street_address1 }}",
-          "addressLocality" : "{{ site_settings.company_city }}",
-          "addressRegion" : "{{ site_settings.company_state }}",
-          "addressCountry" : "{{ site_settings.company_country }}",
-          "postalCode" : "{{ site_settings.company_zip }}"
-        },
-        "url" : "{{ site_url}}",
-        "priceRange": "R$ & $"
+        "@id": "{{site_url}}/#organization"
       },
       {
         "@type": "WebSite",
@@ -91,7 +77,11 @@
             },
             "query-input": "required name=search_term_string"
           }],
-        "inLanguage": "{{ content.language.languageTag }}"
+        "inLanguage": "{{ html_lang }}"
+      },
+      {
+        "@type": "WebContent",
+        "@id": "{{content.absolute_url}}/#webpage"
       },
       {
         "@type": "WebPage",
@@ -129,7 +119,7 @@
             "position": 2,
             "name": "{{page_meta.html_title}}",
             "item": "{{content.absolute_url}}"
-          },
+          }
         ]
       }
     ]

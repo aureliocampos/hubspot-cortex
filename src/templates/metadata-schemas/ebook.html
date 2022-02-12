@@ -46,26 +46,12 @@
           "caption": "{{ site_settings.company_name }}"
         },
         "image": {
-          "@id": "{{site_url}}/#logo",
-          "image" : "{{ site_settings.site_settings.logo_src}}"
+          "@id": "{{site_url}}/#logo"
         }
       },
       {
         "@type" : "LocalBusiness",
-        "name" : "{{ site_settings.company_name }}",
-        "image" : "{{ site_settings.site_settings.logo_src}}",
-        "telephone" : "{{ site_settings.company_phone}}",
-        "email" : "",
-        "address" : {
-          "@type" : "PostalAddress",
-          "streetAddress" : "{{ site_settings.company_street_address1 }}",
-          "addressLocality" : "{{ site_settings.company_city }}",
-          "addressRegion" : "{{ site_settings.company_state }}",
-          "addressCountry" : "{{ site_settings.company_country }}",
-          "postalCode" : "{{ site_settings.company_zip }}"
-        },
-        "url" : "{{ site_url }}",
-        "priceRange": "R$ & $"
+        "@id": "{{site_url}}/#organization"
       },
       {
         "@type": "WebSite",
@@ -91,7 +77,11 @@
             },
             "query-input": "required name=search_term_string"
           }],
-        "inLanguage": "{{ content.language.languageTag }}"
+        "inLanguage": "{{ html_lang }}"
+      },
+      {
+        "@type": "WebContent",
+        "@id": "{{content.absolute_url}}/#webpage"
       },
       {
         "@type": "WebPage",
@@ -102,12 +92,13 @@
           "@id": "{{site_url}}/#website"
         },
         "primaryImageOfPage": {
+          "@type": "ImageObject",
           "@id": "{{request.full_url}}/#primaryimage"
         },
         "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
         "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
         "description": "{{page_meta.meta_description}}",
-        "inLanguage": "{{content.language}}",
+        "inLanguage": "{{ html_lang }}",
         "potentialAction": [
           {
             "@type": "ReadAction",
@@ -118,85 +109,44 @@
         ],
         "mainEntity":{
           "@type": "Book",
-          "@id": "{{content.absolute_url}}/#book",
-          "author": "{{site_url}}",
-          "bookFormat": "http://schema.org/EBook",
-          "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-          "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-          "image": "{{content.featured_image}}",
-          "inLanguage": "{{content.language}}",
-          "isbn": "",
-          "name": "{{page_meta.html_title}}",
-          "numberOfPages": "",
-          "isPartOf": {
-            "@id": "{{site_url}}/#website"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "@id": "{{site_url}}/#organization",
-            "name" : "{{ site_settings.company_name }}",
-            "url" : "{{ site_url }}",
-            "logo": {
-              "@type": "ImageObject",
-              "@id": "{{site_url}}/#logo",
-              "inLanguage": "pt-BR",
-              "url": "{{ site_settings.site_settings.logo_src}}",
-              "width": 130,
-              "height": 122,
-              "caption": "{{ site_settings.company_name }}"
-            }
-          }
+          "@id": "{{content.absolute_url}}/#book"
         }
       },
       {
         "@type": "Book",
         "@id": "{{content.absolute_url}}/#book",
         "author": "{{site_url}}",
+        "bookEdition": "EBook",
         "bookFormat": "http://schema.org/EBook",
         "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
         "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-        "image": "{{content.featured_image}}",
-        "inLanguage": "{{content.language}}",
-        "isbn": "",
+        "image": {
+          "@type": "ImageObject",
+          "@id": "{{request.full_url}}/#primaryimage"
+        },
+        "inLanguage": "{{ html_lang }}",
         "name": "{{page_meta.html_title}}",
-        "numberOfPages": "",
         "isPartOf": {
           "@id": "{{site_url}}/#website"
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "{{site_url}}/#organization",
-          "name" : "{{ site_settings.company_name }}",
-          "url" : "{{ site_url }}",
-          "logo": {
-            "@type": "ImageObject",
-            "@id": "{{site_url}}/#logo",
-            "inLanguage": "pt-BR",
-            "url": "{{ site_settings.site_settings.logo_src}}",
-            "width": 130,
-            "height": 122,
-            "caption": "{{ site_settings.company_name }}"
-          }
+          "@id": "{{site_url}}/#organization"
         }
       },
       {
         "@type": "ImageObject",
         "@id": "{{request.full_url}}/#primaryimage",
-        "inLanguage": "{{content.language}}",
-        "url": "{{content.featured_image}}",
-        "width": 1000,
-        "height": 548,
-        "caption": "{{content.featured_image_alt_text}}"
+        "thumbnail": "{{ content.widgets.module_16407979092019.body.image_field.src }}",
+        "inLanguage": "{{ html_lang }}",
+        "url": "{{ content.widgets.module_16407979092019.body.image_field.src }}",
+        "width": "{{ content.widgets.module_16407979092019.body.image_field.width }}",
+        "height": "{{ content.widgets.module_16407979092019.body.image_field.height }}",
+        "caption": "{{ content.widgets.module_16407979092019.body.image_field.alt }}"
       },
       {
         "@type": "Person",
-        "@id": "{{site_url}}/#organization",
-        "name": "{{ site_settings.company_name }}",
-        "description": "{{ content.meta_description}}",
-        "sameAs": [
-          "https://www.cortex-intelligence.com/sobre-a-cortex"
-        ],
-        "url": "{{ site_url }}"
+        "@id": "{{site_url}}/#organization"
       },
       {
         "@type": "BreadcrumbList",

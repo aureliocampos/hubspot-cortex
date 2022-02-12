@@ -8,317 +8,267 @@
 {% set url_paths =  content.absolute_url|split("/", 6) %}
 
 <script type="application/ld+json" id="data-articles">
-
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "{{site_url}}/#organization",
-        "name" : "{{ site_settings.company_name }}",
-        "url" : "{{ site_url }}",
-        "legalName" : "{{ site_settings.company_name }}",
-        "description": "{{ content.meta_description}}",
-        "telephone" : "{{ site_settings.company_phone}}",
-        "email" : "",
-        "address" : {
-          "@type" : "PostalAddress",
-          "streetAddress" : "{{ site_settings.company_street_address1 }}",
-          "addressLocality" : "{{ site_settings.company_city }}",
-          "addressRegion" : "{{ site_settings.company_state }}",
-          "addressCountry" : "{{ site_settings.company_country }}",
-          "postalCode" : "{{ site_settings.company_zip }}"
-        },
-        "priceRange": "R$ and $",
-        "openingHours": "Mo 09:00-18:00 Tu 09:00-18:00 We 09:00-18:00 Th 09:00-18:00 Fr 09:00-18:00",
-        "hasMap": "https://goo.gl/maps/qqGexPC5scoXsj2f7",
-        "sameAs": [
-          "https://www.facebook.com/beCortex/",
-          "https://www.instagram.com/becortex/",
-          "https://www.linkedin.com/company/cortex-intelligence/mycompany/",
-          "https://www.youtube.com/c/CORTEXINTELLIGENCE"
-        ],
-        "logo": {
-          "@type": "ImageObject",
-          "@id": "{{site_url}}/#logo",
-          "inLanguage": "pt-BR",
-          "url": "{{ site_settings.site_settings.logo_src}}",
-          "width": 130,
-          "height": 122,
-          "caption": "{{ site_settings.company_name }}"
-        },
-        "image": {
-          "@id": "{{site_url}}/#logo",
-          "image" : "{{ site_settings.site_settings.logo_src}}"
-        }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "{{site_url}}/#organization",
+      "name": "{{ site_settings.company_name }}",
+      "url": "{{ site_url }}",
+      "legalName": "{{ site_settings.company_name }}",
+      "description": "{{ content.meta_description}}",
+      "telephone": "{{ site_settings.company_phone}}",
+      "email": "",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{{ site_settings.company_street_address1 }}",
+        "addressLocality": "{{ site_settings.company_city }}",
+        "addressRegion": "{{ site_settings.company_state }}",
+        "addressCountry": "{{ site_settings.company_country }}",
+        "postalCode": "{{ site_settings.company_zip }}"
       },
-      {
-        "@type" : "LocalBusiness",
-        "name" : "{{ site_settings.company_name }}",
-        "image" : "{{ site_settings.site_settings.logo_src}}",
-        "telephone" : "{{ site_settings.company_phone}}",
-        "email" : "",
-        "address" : {
-          "@type" : "PostalAddress",
-          "streetAddress" : "{{ site_settings.company_street_address1 }}",
-          "addressLocality" : "{{ site_settings.company_city }}",
-          "addressRegion" : "{{ site_settings.company_state }}",
-          "addressCountry" : "{{ site_settings.company_country }}",
-          "postalCode" : "{{ site_settings.company_zip }}"
-        },
-        "url" : "{{ site_url }}",
-        "priceRange": "R$ & $"
+      "priceRange": "R$ and $",
+      "openingHours": "Mo 09:00-18:00 Tu 09:00-18:00 We 09:00-18:00 Th 09:00-18:00 Fr 09:00-18:00",
+      "hasMap": "https://goo.gl/maps/qqGexPC5scoXsj2f7",
+      "sameAs": [
+        "https://www.facebook.com/beCortex/",
+        "https://www.instagram.com/becortex/",
+        "https://www.linkedin.com/company/cortex-intelligence/mycompany/",
+        "https://www.youtube.com/c/CORTEXINTELLIGENCE"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "{{site_url}}/#logo",
+        "inLanguage": "{{ html_lang }}",
+        "url": "{{ site_settings.site_settings.logo_src}}",
+        "width": 130,
+        "height": 122,
+        "caption": "{{ site_settings.company_name }}"
       },
-      {
-        "@type": "WebSite",
-        "@id": "{{site_url}}/#website",
-        "url": "{{ site_url }}",
-        "name": "{{ site_settings.company_name }}",
-        "description": "Big Data e ciência de dados para turbinar  seus resultados",
-        "publisher": {
-          "@id": "{{site_url}}/#organization"
-        },
-        "potentialAction": [{
+      "image": {
+        "@id": "{{site_url}}/#logo"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "{{site_url}}/#organization"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{site_url}}/#website",
+      "url": "{{ site_url }}",
+      "name": "{{ site_settings.company_name }}",
+      "description": "Big Data e ciência de dados para turbinar  seus resultados",
+      "publisher": {
+        "@id": "{{site_url}}/#organization"
+      },
+      "potentialAction": [
+        {
           "@type": "SearchAction",
           "target": {
             "@type": "EntryPoint",
             "urlTemplate": "https://www.cortex-intelligence.com/hs-search-results?term={search_term_string}"
           },
           "query-input": "required name=search_term_string"
-          },{
-            "@type": "SearchAction",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": "android-app://com.cortex-intelligence/https/query.cortex-intelligence.com/hs-search-results?term={search_term_string}"
-            },
-            "query-input": "required name=search_term_string"
-          }],
-        "inLanguage": "{{ content.language.languageTag }}"
-      },
-      {
-        "@type": "WebPage",
-        "@id": "{{content.absolute_url}}/#webpage",
-        "url": "{{content.absolute_url}}",
-        "name": "{{page_meta.html_title}}",
-        "isPartOf": {
-          "@id": "{{site_url}}/#website"
         },
-        "primaryImageOfPage": {
-          "@id": "{{content.absolute_url}}/#primaryimage"
-        },
-        "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-        "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-        "description": "{{page_meta.meta_description}}",
-        "inLanguage": "{{content.language}}",
-        "potentialAction": [
-          {
-            "@type": "ReadAction",
-            "target": [
-              "{{content.absolute_url}}"
-            ]
-          }
-        ]
-      },
-      {
-        "@type": "ImageObject",
-        "@id": "{{content.absolute_url}}/#primaryimage",
-        "inLanguage": "{{content.language}}",
-        "url": "{{content.featured_image}}",
-        "width": 1000,
-        "height": 548,
-        "caption": "{{content.featured_image_alt_text}}"
-      },
-      {
-        "@type": "Article",
-        "@id": "{{content.absolute_url}}/#article",
-        "url": "{{content.absolute_url}}",
-        "isPartOf": {
-          "@id": "{{group.absolute_url}}/#webpage"
-        },
-        "author": {
-          "@id": "{{ blog_author_url('default', content.blog_post_author.slug ) }}",
-          "name": "{{content.blog_post_author.display_name}}",
-          "url": "{{ blog_author_url('default', content.blog_post_author.slug ) }}"
-        },
-        "headline": "{{page_meta.html_title}}",
-        "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-        "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "{{content.absolute_url}}/#webpage"
-        },
-        "commentCount": 0,
-        "publisher": {
-          "@type": "Organization",
-          "@id": "{{site_url}}/#organization",
-          "name" : "{{ site_settings.company_name }}",
-          "url" : "{{ site_url }}",
-          "logo": {
-            "@type": "ImageObject",
-            "@id": "{{site_url}}/#logo",
-            "inLanguage": "pt-BR",
-            "url": "{{ site_settings.site_settings.logo_src}}",
-            "width": 130,
-            "height": 122,
-            "caption": "{{ site_settings.company_name }}"
-          }
-        },
-        "image": {
-          "@id": "{{content.absolute_url}}/#primaryimage",
-          "url": "{{content.featured_image}}"
-        },
-        "articleBody": "{{content.post_body|striptags }}",
-        "keywords": ["{{content.topic_list|join(' ')}}"],
-        "inLanguage": "{{content.language.languageTag}}",
-        "potentialAction": [
-          {
-            "@type": "CommentAction",
-            "name": "Comment",
-            "target": [
-              "{{content.absolute_url}}/#respond"
-            ]
+        {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "android-app://com.cortex-intelligence/https/query.cortex-intelligence.com/hs-search-results?term={search_term_string}"
           },
-          {
-            "@type": "SearchAction",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": "https://www.cortex-intelligence.com/hs-search-results?term={search_term_string}"
-            },
-            "query-input": "required name=search_term_string"
-          },
-          {
-            "@type": "SearchAction",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": "android-app://com.cortex-intelligence/https/query.cortex-intelligence.com/hs-search-results?term={search_term_string}"
-            },
-            "query-input": "required name=search_term_string"
-          }
-        ]
+          "query-input": "required name=search_term_string"
+        }
+      ],
+      "inLanguage": "{{ html_lang }}"
+    },
+    {
+      "@type": "WebContent",
+      "@id": "{{content.absolute_url}}/#webpage"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "{{content.absolute_url}}/#webpage",
+      "url": "{{content.absolute_url}}",
+      "name": "{{page_meta.html_title}}",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "{{site_url}}/#website"
       },
-      {
-        "@type": "BlogPosting",
-        "image": "{{content.featured_image}}",
-        "url": "{{content.absolute_url}}",
-        "headline": "{{page_meta.html_title}}",
-        "alternativeHeadline": "{{page_meta.html_title}}",
-        "dateCreated": "{{ datetimeformat(content.created, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-        "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-        "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-        "inLanguage": "{{content.language.languageTag}}",
-        "isFamilyFriendly": "true",
-        "copyrightYear": "{{year}}",
-        "copyrightHolder": "{{ site_settings.company_name }}",
-        "contentLocation": {
-          "@type": "Place",
-          "name": "{{ site_settings.company_city }}, {{ site_settings.company_state }}"
-        },
-        "accountablePerson": {
-          "@type": "Person",
-          "@id": "{{ blog_author_url('default', content.blog_post_author.slug ) }}",
-          "name": "{{content.blog_post_author.display_name}}",
-          "url": "{{ blog_author_url('default', content.blog_post_author.slug ) }}"
-        },
-        "author": {
-          "@type": "Person",
-          "@id": "{{ blog_author_url('default', content.blog_post_author.slug ) }}",
-          "name": "{{content.blog_post_author.display_name}}",
-          "url": "{{ blog_author_url('default', content.blog_post_author.slug ) }}"
-        },
-        "creator": {
-          "@type": "Person",
-          "@id": "{{ blog_author_url('default', content.blog_post_author.slug ) }}",
-          "name": "{{content.blog_post_author.display_name}}",
-          "url": "{{ blog_author_url('default', content.blog_post_author.slug ) }}"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "@id": "{{site_url}}/#organization",
-          "name" : "{{ site_settings.company_name }}",
-          "url" : "{{ site_url }}",
-          "logo": {
-            "@type": "ImageObject",
-            "@id": "{{site_url}}/#logo",
-            "inLanguage": "pt-BR",
-            "url": "{{ site_settings.site_settings.logo_src}}",
-            "width": 130,
-            "height": 122,
-            "caption": "{{ site_settings.company_name }}"
-          }
-        },
-        "mainEntityOfPage": "True",
-        "keywords": ["{{content.topic_list|join(' ')}}"],
-        "genre":["SEO","JSON-LD"],
-        "articleBody": "{{content.post_body|striptags }}",
-        "potentialAction": [
-          {
-            "@type": "CommentAction",
-            "name": "Comment",
-            "target": [
-              "{{content.absolute_url}}/#respond"
-            ]
-          },
-          {
-            "@type": "SearchAction",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": "https://www.cortex-intelligence.com/hs-search-results?term={search_term_string}"
-            },
-            "query-input": "required name=search_term_string"
-          },
-          {
-            "@type": "SearchAction",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": "android-app://com.cortex-intelligence/https/query.cortex-intelligence.com/hs-search-results?term={search_term_string}"
-            },
-            "query-input": "required name=search_term_string"
-          }
-        ]
+      "primaryImageOfPage": {
+        "@id": "{{content.absolute_url}}/#primaryimage"
       },
-      {
+      "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
+      "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
+      "description": "{{page_meta.meta_description}}",
+      "inLanguage": "{{content.language}}",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "{{content.absolute_url}}"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "{{ content.featured_image }}/#primaryimage",
+      "inLanguage": "{{ html_lang }}",
+      "url": "{{ content.featured_image }}",
+      "contentUrl": "{{ content.featured_image }}",
+      "width": 1000,
+      "height": 548,
+      "caption": "{{content.featured_image_alt_text}}"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "{{content.absolute_url}}/#blogposting",
+      "url": "{{content.absolute_url}}",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "{{site_url}}/#website"
+      },
+      "headline": "{{page_meta.html_title}}",
+      "alternativeHeadline": "{{page_meta.html_title}}",
+      "dateCreated": "{{ datetimeformat(content.created, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
+      "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
+      "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
+      "mainEntityOfPage": {
+        "@id": "{{content.absolute_url}}/#webpage"
+      },
+      "commentCount": 0,
+      "publisher": {
+        "@type": "Organization",
+        "@id": "{{site_url}}/#organization"
+      },
+      "copyrightYear": "{{year}}",
+      "copyrightHolder": "{{ site_settings.company_name }}",
+      "image": {
+        "@id": "{{ content.featured_image }}/#primaryimage"
+      },
+      "thumbnailUrl": "{{ content.featured_image }}",
+      "articleBody": "{{content.post_body|striptags }}",
+      "wordCount": {{ content.post_body|striptags|wordcount }},
+      "keywords": [
+        "{{content.topic_list|join(' ')}}"
+      ],
+      "inLanguage": "{{ html_lang }}",
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "{{content.absolute_url}}/#respond"
+          ]
+        },
+        {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.cortex-intelligence.com/hs-search-results?term={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        },
+        {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "android-app://com.cortex-intelligence/https/query.cortex-intelligence.com/hs-search-results?term={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      ],
+      "contentLocation": {
+        "@type": "Place",
+        "name": "{{ site_settings.company_city }}, {{ site_settings.company_state }}"
+      },
+      "accountablePerson": {
         "@type": "Person",
-        "@id": "{{ blog_author_url('default', content.blog_post_author.slug ) }}",
-        "name": "{{content.blog_post_author.display_name}}",
-        "description": "{{content.blog_post_author.bio}}",
-        "sameAs": [
-          "https://www.cortex-intelligence.com/sobre-a-cortex"
-        ],
-        "url": "{{content.blog_post_author.email}}"
+        "@id": "{{ blog_author_url('default', content.blog_post_author.slug ) }}/#author"
       },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "{{content.absolute_url}}/#breadcrumb",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "{{ site_settings.company_name }}",
-            "item": "{{site_url}}"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "{{group.html_title}}",
-            "item": "{{group.absolute_url}}"
-          },
-          {% for item in content.topic_list %}
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "{{ item.name }}",
-            "item": "{{ blog_tag_url("default", item.slug ) }}"
-          },
-          {% endfor %}
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "{{page_meta.html_title}}",
-            "item": "{{content.absolute_url}}"
-          }
-        ]
+      "creator": {
+        "@type": "Person",
+        "@id": "{{ blog_author_url('default', content.blog_post_author.slug ) }}/#author"
+      },
+      "author": {
+        "@type": "Person",
+        "@id": "{{ blog_author_url('default', content.blog_post_author.slug ) }}/#author"
       }
-    ]
-  }  
+    },
+    {
+      "@type": "Article",
+      "@id": "{{content.absolute_url}}/#blogposting"
+    },
+    {
+      "@type": "NewsArticle",
+      "@id": "{{content.absolute_url}}/#blogposting"
+    },
+    {
+      "@type": "AmpStory",
+      "@id": "{{content.absolute_url}}/#blogposting"
+    },
+    {
+      "@type": "Person",
+      "@id": "{{ blog_author_url('default', content.blog_post_author.slug ) }}/#author",
+      "name": "{{content.blog_post_author.display_name}}",
+      "description": "{{content.blog_post_author.bio}}",
+      "jobTitle": "Analista de Conteúdo",
+      "image": {
+        "@type": "ImageObject",
+        "@id": "{{ blog_author_url('default', content.blog_post_author.slug ) }}/#personlogo",
+        "inLanguage": "pt-BR",
+        "url": "{{content.blog_post_author.avatar}}",
+        "contentUrl": "{{content.blog_post_author.avatar}}",
+        "caption": "{{content.blog_post_author.display_name}}"
+      },
+      "sameAs": [
+        "{{content.blog_post_author.facebook}}",
+        "{{content.blog_post_author.linkedin}}",
+        "{{content.blog_post_author.twitter}}",
+        "{{content.blog_post_author.website}}"
+      ],
+      "url": "{{ blog_author_url('default', content.blog_post_author.slug ) }}",
+      "email": "{{content.blog_post_author.email}}",
+      "worksFor": {
+        "@type": "Organization",
+        "@id": "{{site_url}}/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "{{content.absolute_url}}/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "{{ site_settings.company_name }}",
+          "item": "{{site_url}}"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{{group.html_title}}",
+          "item": "{{group.absolute_url}}"
+        },
+        {% for item in content.topic_list %}
+          {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "{{ item.name }}",
+          "item": "{{ blog_tag_url("default", item.slug ) }}"
+        },
+        {% endfor %}
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "{{page_meta.html_title}}",
+          "item": "{{content.absolute_url}}"
+        }
+      ]
+    }
+  ]
+}
 </script>
 {% end_require_js%}
