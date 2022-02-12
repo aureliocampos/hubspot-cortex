@@ -3,15 +3,20 @@
     isAvailableForNewContent: false
 -->
 {% require_js async="true" %}
+
+{% set site_url = "https://{{ request.domain }}" %}
+{% set url_paths =  content.absolute_url|split("/", 6) %}
+
 <script type="application/ld+json" id="data-articles">
+
   {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "{{request.domain}}/#organization",
+        "@id": "{{site_url}}/#organization",
         "name" : "{{ site_settings.company_name }}",
-        "url" : "{{ site_settings.domain }}",
+        "url" : "{{ site_url }}",
         "legalName" : "{{ site_settings.company_name }}",
         "description": "{{ content.meta_description}}",
         "telephone" : "{{ site_settings.company_phone}}",
@@ -35,7 +40,7 @@
         ],
         "logo": {
           "@type": "ImageObject",
-          "@id": "{{request.domain}}/#logo",
+          "@id": "{{site_url}}/#logo",
           "inLanguage": "pt-BR",
           "url": "{{ site_settings.site_settings.logo_src}}",
           "width": 130,
@@ -43,7 +48,7 @@
           "caption": "{{ site_settings.company_name }}"
         },
         "image": {
-          "@id": "{{request.domain}}/#logo",
+          "@id": "{{site_url}}/#logo",
           "image" : "{{ site_settings.site_settings.logo_src}}"
         }
       },
@@ -61,17 +66,17 @@
           "addressCountry" : "{{ site_settings.company_country }}",
           "postalCode" : "{{ site_settings.company_zip }}"
         },
-        "url" : "{{ site_settings.domain }}",
+        "url" : "{{ site_url }}",
         "priceRange": "R$ & $"
       },
       {
         "@type": "WebSite",
-        "@id": "{{request.domain}}/#website",
-        "url": "{{ site_settings.domain }}",
+        "@id": "{{site_url}}/#website",
+        "url": "{{ site_url }}",
         "name": "{{ site_settings.company_name }}",
         "description": "Big Data e ciência de dados para turbinar  seus resultados",
         "publisher": {
-          "@id": "{{request.domain}}/#organization"
+          "@id": "{{site_url}}/#organization"
         },
         "potentialAction": [{
           "@type": "SearchAction",
@@ -96,10 +101,10 @@
         "url": "{{content.absolute_url}}",
         "name": "{{page_meta.html_title}}",
         "isPartOf": {
-          "@id": "{{request.domain}}/#website"
+          "@id": "{{site_url}}/#website"
         },
         "primaryImageOfPage": {
-          "@id": "{{request.full_url}}/#primaryimage"
+          "@id": "{{content.absolute_url}}/#primaryimage"
         },
         "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
         "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
@@ -116,7 +121,7 @@
       },
       {
         "@type": "ImageObject",
-        "@id": "{{request.full_url}}/#primaryimage",
+        "@id": "{{content.absolute_url}}/#primaryimage",
         "inLanguage": "{{content.language}}",
         "url": "{{content.featured_image}}",
         "width": 1000,
@@ -125,32 +130,44 @@
       },
       {
         "@type": "Article",
-        "@id": "{{request.full_url}}/#article",
-        "url": "{{request.full_url}}",
+        "@id": "{{content.absolute_url}}/#article",
+        "url": "{{content.absolute_url}}",
         "isPartOf": {
           "@id": "{{group.absolute_url}}/#webpage"
         },
         "author": {
-          "@id": "{{content.blog_post_author.slug}}",
+          "@id": "{{ blog_author_url('default', content.blog_post_author.slug ) }}",
           "name": "{{content.blog_post_author.display_name}}",
-          "url": "{{content.blog_post_author.slug}}"
+          "url": "{{ blog_author_url('default', content.blog_post_author.slug ) }}"
         },
         "headline": "{{page_meta.html_title}}",
         "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
         "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
         "mainEntityOfPage": {
-          "@id": "{{request.full_url}}/#webpage"
+          "@type": "WebPage",
+          "@id": "{{content.absolute_url}}/#webpage"
         },
         "commentCount": 0,
         "publisher": {
-          "@id": "{{request.domain}}/#organization",
-          "name":"{{ site_settings.company_name }}"
+          "@type": "Organization",
+          "@id": "{{site_url}}/#organization",
+          "name" : "{{ site_settings.company_name }}",
+          "url" : "{{ site_url }}",
+          "logo": {
+            "@type": "ImageObject",
+            "@id": "{{site_url}}/#logo",
+            "inLanguage": "pt-BR",
+            "url": "{{ site_settings.site_settings.logo_src}}",
+            "width": 130,
+            "height": 122,
+            "caption": "{{ site_settings.company_name }}"
+          }
         },
         "image": {
-          "@id": "{{request.full_url}}/#primaryimage",
+          "@id": "{{content.absolute_url}}/#primaryimage",
           "url": "{{content.featured_image}}"
         },
-        "articleBody": "{{content.post_body|escape}}",
+        "articleBody": "{{content.post_body|striptags }}",
         "keywords": ["{{content.topic_list|join(' ')}}"],
         "inLanguage": "{{content.language.languageTag}}",
         "potentialAction": [
@@ -158,15 +175,31 @@
             "@type": "CommentAction",
             "name": "Comment",
             "target": [
-              "{{request.full_url}}/#respond"
+              "{{content.absolute_url}}/#respond"
             ]
+          },
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://www.cortex-intelligence.com/hs-search-results?term={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          },
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "android-app://com.cortex-intelligence/https/query.cortex-intelligence.com/hs-search-results?term={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
           }
         ]
       },
       {
         "@type": "BlogPosting",
         "image": "{{content.featured_image}}",
-        "url": "{{request.full_url}}",
+        "url": "{{content.absolute_url}}",
         "headline": "{{page_meta.html_title}}",
         "alternativeHeadline": "{{page_meta.html_title}}",
         "dateCreated": "{{ datetimeformat(content.created, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
@@ -182,30 +215,30 @@
         },
         "accountablePerson": {
           "@type": "Person",
-          "@id": "{{content.blog_post_author.slug}}",
+          "@id": "{{ blog_author_url('default', content.blog_post_author.slug ) }}",
           "name": "{{content.blog_post_author.display_name}}",
-          "url": "{{content.blog_post_author.slug}}"
+          "url": "{{ blog_author_url('default', content.blog_post_author.slug ) }}"
         },
         "author": {
           "@type": "Person",
-          "@id": "{{content.blog_post_author.slug}}",
+          "@id": "{{ blog_author_url('default', content.blog_post_author.slug ) }}",
           "name": "{{content.blog_post_author.display_name}}",
-          "url": "{{content.blog_post_author.slug}}"
+          "url": "{{ blog_author_url('default', content.blog_post_author.slug ) }}"
         },
         "creator": {
           "@type": "Person",
-          "@id": "{{content.blog_post_author.slug}}",
+          "@id": "{{ blog_author_url('default', content.blog_post_author.slug ) }}",
           "name": "{{content.blog_post_author.display_name}}",
-          "url": "{{content.blog_post_author.slug}}"
+          "url": "{{ blog_author_url('default', content.blog_post_author.slug ) }}"
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "{{request.domain}}/#organization",
+          "@id": "{{site_url}}/#organization",
           "name" : "{{ site_settings.company_name }}",
-          "url" : "{{ site_settings.domain }}",
+          "url" : "{{ site_url }}",
           "logo": {
             "@type": "ImageObject",
-            "@id": "{{request.domain}}/#logo",
+            "@id": "{{site_url}}/#logo",
             "inLanguage": "pt-BR",
             "url": "{{ site_settings.site_settings.logo_src}}",
             "width": 130,
@@ -216,17 +249,74 @@
         "mainEntityOfPage": "True",
         "keywords": ["{{content.topic_list|join(' ')}}"],
         "genre":["SEO","JSON-LD"],
-        "articleBody": "{{content.post_body|escape}}"
+        "articleBody": "{{content.post_body|striptags }}",
+        "potentialAction": [
+          {
+            "@type": "CommentAction",
+            "name": "Comment",
+            "target": [
+              "{{content.absolute_url}}/#respond"
+            ]
+          },
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://www.cortex-intelligence.com/hs-search-results?term={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          },
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "android-app://com.cortex-intelligence/https/query.cortex-intelligence.com/hs-search-results?term={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        ]
       },
       {
         "@type": "Person",
-        "@id": "{{content.blog_post_author.slug}}",
+        "@id": "{{ blog_author_url('default', content.blog_post_author.slug ) }}",
         "name": "{{content.blog_post_author.display_name}}",
         "description": "{{content.blog_post_author.bio}}",
         "sameAs": [
           "https://www.cortex-intelligence.com/sobre-a-cortex"
         ],
         "url": "{{content.blog_post_author.email}}"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "{{content.absolute_url}}/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "{{ site_settings.company_name }}",
+            "item": "{{site_url}}"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "{{group.html_title}}",
+            "item": "{{group.absolute_url}}"
+          },
+          {% for item in content.topic_list %}
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "{{ item.name }}",
+            "item": "{{ blog_tag_url("default", item.slug ) }}"
+          },
+          {% endfor %}
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "{{page_meta.html_title}}",
+            "item": "{{content.absolute_url}}"
+          }
+        ]
       }
     ]
   }  
