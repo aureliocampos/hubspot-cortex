@@ -6,7 +6,7 @@
 
 {% set site_url = "https://www.cortex-intelligence.com" %}
 
-<script type="application/ld+json" id="data-ebook">
+<script type="application/ld+json" id="data-usecase">
   {
     "@context": "https://schema.org",
     "@graph": [
@@ -97,7 +97,7 @@
         },
         "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
         "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-        "description": "{{page_meta.unescaped_meta_description}}",
+        "description": "{{content.meta_description}}",
         "inLanguage": "{{ html_lang }}",
         "potentialAction": [
           {
@@ -113,26 +113,87 @@
         }
       },
       {
-        "@type": "Book",
-        "@id": "{{content.absolute_url}}/#book",
-        "author": "{{site_url}}",
-        "bookEdition": "EBook",
-        "bookFormat": "http://schema.org/EBook",
-        "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-        "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-        "image": {
-          "@type": "ImageObject",
-          "@id": "{{request.full_url}}/#primaryimage"
-        },
-        "inLanguage": "{{ html_lang }}",
-        "name": "{{content.html_title}}",
+        "@type": "Article",
+        "@id": "{{content.absolute_url}}/#article",
+        "url": "{{content.absolute_url}}",
         "isPartOf": {
+          "@type": "WebSite",
           "@id": "{{site_url}}/#website"
         },
+        "headline": "{{content.html_title}}",
+        "alternativeHeadline": "{{content.html_title}}",
+        "dateCreated": "{{ datetimeformat(content.created, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
+        "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
+        "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
+        "mainEntityOfPage": {
+          "@id": "{{content.absolute_url}}/#webpage"
+        },
+        "commentCount": 0,
         "publisher": {
           "@type": "Organization",
           "@id": "{{site_url}}/#organization"
+        },
+        "copyrightYear": "{{year}}",
+        "copyrightHolder": "{{ site_settings.company_name }}",
+        "image": {
+          "@id": "{{ content.featured_image }}/#primaryimage"
+        },
+        "thumbnailUrl": "{{ content.featured_image }}",
+        "articleBody": "{{content.post_body|striptags }}",
+        "wordCount": {{ content.post_body|striptags|wordcount }},
+        "keywords": [
+          "{{content.topic_list|join(' ')}}"
+        ],
+        "inLanguage": "{{ html_lang }}",
+        "potentialAction": [
+          {
+            "@type": "CommentAction",
+            "name": "Comment",
+            "target": [
+              "{{content.absolute_url}}/#respond"
+            ]
+          },
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://www.cortex-intelligence.com/hs-search-results?term={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          },
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "android-app://com.cortex-intelligence/https/query.cortex-intelligence.com/hs-search-results?term={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        ],
+        "contentLocation": {
+          "@type": "Place",
+          "name": "{{ site_settings.company_city }}, {{ site_settings.company_state }}"
+        },
+        "accountablePerson": {
+          "@type": "Person",
+          "@id": "{{site_url}}/#organization"
+        },
+        "creator": {
+          "@type": "Person",
+          "@id": "{{site_url}}/#organization"
+        },
+        "author": {
+          "@type": "Person",
+          "@id": "{{site_url}}/#organization"
         }
+      },
+      {
+        "@type": "NewsArticle",
+        "@id": "{{content.absolute_url}}/#article"
+      },
+      {
+        "@type": "AmpStory",
+        "@id": "{{content.absolute_url}}/#article"
       },
       {
         "@type": "ImageObject",

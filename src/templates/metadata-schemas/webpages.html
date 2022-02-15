@@ -16,7 +16,7 @@
         "name" : "{{ site_settings.company_name }}",
         "url" : "{{ site_url}}",
         "legalName" : "{{ site_settings.company_name }}",
-        "description": "{{ content.meta_description}}",
+        "description": "Big Data e ciência de dados para turbinar  seus resultados",
         "telephone" : "{{ site_settings.company_phone}}",
         "email" : "",
         "address" : {
@@ -87,13 +87,13 @@
         "@type": "WebPage",
         "@id": "{{content.absolute_url}}/#webpage",
         "url": "{{content.absolute_url}}",
-        "name": "{{page_meta.html_title}}",
+        "name": "{{content.html_title}}",
         "isPartOf": {
           "@id": "{{site_url}}/#website"
         },
         "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
         "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-        "description": "{{page_meta.meta_description}}",
+        "description": "{{content.meta_description}}",
         "inLanguage": "{{content.language}}",
         "potentialAction": [
           {
@@ -117,7 +117,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "{{page_meta.html_title}}",
+            "name": "{{content.html_title}}",
             "item": "{{content.absolute_url}}"
           }
         ]

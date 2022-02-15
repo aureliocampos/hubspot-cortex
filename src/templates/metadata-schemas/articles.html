@@ -17,7 +17,7 @@
       "name": "{{ site_settings.company_name }}",
       "url": "{{ site_url }}",
       "legalName": "{{ site_settings.company_name }}",
-      "description": "{{ content.meta_description}}",
+      "description": "Big Data e ciência de dados para turbinar  seus resultados",
       "telephone": "{{ site_settings.company_phone}}",
       "email": "",
       "address": {
@@ -91,7 +91,7 @@
       "@type": "WebPage",
       "@id": "{{content.absolute_url}}/#webpage",
       "url": "{{content.absolute_url}}",
-      "name": "{{page_meta.html_title}}",
+      "name": "{{content.html_title}}",
       "isPartOf": {
         "@type": "WebSite",
         "@id": "{{site_url}}/#website"
@@ -101,7 +101,7 @@
       },
       "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
       "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-      "description": "{{page_meta.meta_description}}",
+      "description": "{{content.meta_description}}",
       "inLanguage": "{{content.language}}",
       "potentialAction": [
         {
@@ -130,8 +130,8 @@
         "@type": "WebSite",
         "@id": "{{site_url}}/#website"
       },
-      "headline": "{{page_meta.html_title}}",
-      "alternativeHeadline": "{{page_meta.html_title}}",
+      "headline": "{{content.html_title}}",
+      "alternativeHeadline": "{{content.html_title}}",
       "dateCreated": "{{ datetimeformat(content.created, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
       "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
       "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
@@ -263,7 +263,7 @@
         {
           "@type": "ListItem",
           "position": 4,
-          "name": "{{page_meta.html_title}}",
+          "name": "{{content.html_title}}",
           "item": "{{content.absolute_url}}"
         }
       ]

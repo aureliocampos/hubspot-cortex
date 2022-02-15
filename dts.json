@@ -88,7 +88,7 @@
       "@type": "WebPage",
       "@id": "{{content.absolute_url}}/#webpage",
       "url": "{{content.absolute_url}}",
-      "name": "{{page_meta.html_title}}",
+      "name": "{{page_meta.unescaped_html_title}}",
       "isPartOf": {
         "@id": "{{request.domain}}/#website"
       },
@@ -97,7 +97,7 @@
       },
       "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
       "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-      "description": "{{page_meta.meta_description}}",
+      "description": "{{page_meta.unescaped_meta_description}}",
       "inLanguage": "{{content.language}}",
       "potentialAction": [
         {
@@ -129,7 +129,7 @@
         "name": "{{content.blog_post_author.display_name}}",
         "url": "{{content.blog_post_author.slug}}"
       },
-      "headline": "{{page_meta.html_title}}",
+      "headline": "{{page_meta.unescaped_html_title}}",
       "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
       "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
       "mainEntityOfPage": {
@@ -161,8 +161,8 @@
       "@type": "BlogPosting",
       "image": "{{content.featured_image}}",
       "url": "{{request.full_url}}",
-      "headline": "{{page_meta.html_title}}",
-      "alternativeHeadline": "{{page_meta.html_title}}",
+      "headline": "{{page_meta.unescaped_html_title}}",
+      "alternativeHeadline": "{{page_meta.unescaped_html_title}}",
       "dateCreated": "{{ datetimeformat(content.created, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
       "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
       "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",

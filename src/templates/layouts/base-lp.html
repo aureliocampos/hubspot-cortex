@@ -8,11 +8,11 @@
 <head>
 
   <meta charset="utf-8">
-  {% if page_meta.html_title %}<title>{{ page_meta.html_title }}</title>{% endif %}
+  {% if content.html_title %}<title>{{ content.html_title }}</title>{% endif %}
 
   {% if site_settings.favicon_src %}
   <link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
-  <meta name="description" content="{{ page_meta.meta_description }}">
+  <meta name="description" content="{{ content.meta_description }}">
   {{ standard_header_includes }}
 
   <link rel="preconnect" href="https://cdn2.hubspot.net">
