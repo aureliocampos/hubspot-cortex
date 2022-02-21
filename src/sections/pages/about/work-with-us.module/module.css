@@ -60,6 +60,14 @@ border-radius: 20px;
   .component-card--xl__figure-image {
     object-position: center -20em;
   }
+  /* Estilos personalizados para Swiper */
+  .component-card--xl .swiper-wrapper {
+    flex-direction: column;
+  }
+  .component-card--xl .swiper-wrapper > .swiper-slide {
+    width: 100% !important;
+    margin: 0 0 1em 0;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -87,15 +95,6 @@ border-radius: 20px;
   }
   .component-card--xl__button {
     margin: 1.5em 0;
-  }
-
-  /* Estilos personalizados para Swiper */
-  .component-card--xl .swiper-wrapper {
-    flex-direction: column;
-  }
-  .component-card--xl .swiper-wrapper > .swiper-slide {
-    width: 100% !important;
-    margin: 0 0 1em 0;
   }
 }
 

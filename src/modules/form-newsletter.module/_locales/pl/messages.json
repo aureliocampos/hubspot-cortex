@@ -1,0 +1,67 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "Dodaj do przepływu pracy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "Aby wysłać kolejny e-mail, upewnij się, że opcja Ustaw kontakty utworzone jako kontakty marketingowe jest włączona. Można nią zarządzać w opcjach. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>Dowiedz się więcej</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "Wyślij kolejny e-mail",
+    "description" : null,
+    "placeholders" : null
+  },
+  "font_field.label" : {
+    "message" : "Pole czcionki",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "Dziękujemy za przesłanie formularza.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "Formularz",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "Przepływ pracy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Formularz",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "Wyślij formularz powiadomień na wybrane adresy e-mail zamiast domyślnych adresów formularza",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "Adresy e-mail",
+    "description" : null,
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "Kampania Salesforce",
+    "description" : null,
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "Adres e-mail",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Tytuł formularza",
+    "description" : null,
+    "placeholders" : null
+  }
+}

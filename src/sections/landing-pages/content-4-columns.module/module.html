@@ -1,0 +1,38 @@
+<section class="section section__content-4columns">
+	<div class="section__container">
+		<h2 class="section__title">{{ module.title_section }}</h2>
+		<div class="content-4columns">
+			{% for item in module.item %}
+				<article class="content-4columns__item">
+					{% if item.icon.src %}
+						{% set sizeAttrs = 'width="{{ item.icon.width }}" height="{{ item.icon.height }}"' %}
+						{% if item.icon.size_type == 'auto' %}
+							{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+						{% elif item.icon.size_type == 'auto_custom_max' %}
+							{% set sizeAttrs = 'width="{{ item.icon.max_width }}" height="{{ item.icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+						{% endif %}
+						{% set loadingAttr = item.icon.loading != 'disabled' ? 'loading="{{ item.icon.loading }}"' : '' %}
+						<figure class="content-4columns__figure">
+							<img class="content-4columns__image" width="90" height="90" src="{{ item.icon.src }}" alt="{{ item.icon.alt }}" {{ loadingAttr }}>
+						</figure>
+					{% endif %}
+					<h3 class="content-4columns__title">{{ item.title }}</h3>
+					<div class="content-4columns__text">{{ item.texto }}</div>
+				</article>
+			{% endfor %}
+		</div>
+		{% set href = module.cta.link_field.url.href %}
+			<a href="{{ href }}" class="button button--lp-cta"
+				{% if module.cta.link_field.open_in_new_tab %}target="_blank"{% endif %}
+				{% if module.cta.link_field.rel %}rel="{{ module.cta.link_field.rel }}"{% endif %}
+				>
+				{{ module.cta.texto_do_link }}
+			</a>
+	</div>
+</section>
+
+
+
+
+
+

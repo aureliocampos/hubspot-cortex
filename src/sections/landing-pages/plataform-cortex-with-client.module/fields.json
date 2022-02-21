@@ -1,0 +1,173 @@
+[ {
+  "id" : "e0efb993-9f7e-caad-4a55-6807f0831cd4",
+  "name" : "conteudo_a",
+  "display_width" : null,
+  "label" : "Linha de Conteúdo A",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "464ad129-5440-e70d-a575-00ba64302f95",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Imagem",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/website-cortex/plataforma-cortex-vendas-b2b.png",
+      "alt" : "plataforma-cortex-vendas-b2b",
+      "loading" : "lazy",
+      "width" : 977,
+      "height" : 922,
+      "max_width" : 977,
+      "max_height" : 922
+    }
+  }, {
+    "id" : "571e5b5b-0370-64c1-fede-18bfaf29b380",
+    "name" : "texto",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p><strong>Nosso propósito</strong> no Vendas B2B Summit é mostrar como a <strong>inteligência de vendas é uma virada de jogo</strong> para empresas que desejam impulsionar <strong>sua jornada de crescimento</strong>.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/website-cortex/plataforma-cortex-vendas-b2b.png",
+      "alt" : "plataforma-cortex-vendas-b2b",
+      "loading" : "lazy",
+      "width" : 977,
+      "height" : 922,
+      "max_width" : 977,
+      "max_height" : 922
+    },
+    "texto" : "<p><strong>Nosso propósito</strong> no Vendas B2B Summit é mostrar como a <strong>inteligência de vendas é uma virada de jogo</strong> para empresas que desejam impulsionar <strong>sua jornada de crescimento</strong>.</p>"
+  }
+}, {
+  "id" : "f9ce9c03-5789-250e-867c-5bc13c7cedde",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "c265a4e0-b75b-d552-d397-598d6c4cb33b",
+    "name" : "plano_de_fundo",
+    "display_width" : null,
+    "label" : "Plano de fundo",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "bg_color", "Background Color" ], [ "bg_gradient", "Gradiente" ] ],
+    "type" : "choice",
+    "default" : "bg_gradient"
+  }, {
+    "id" : "9fa37a7b-84c7-348a-d215-90b790e86499",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "c265a4e0-b75b-d552-d397-598d6c4cb33b",
+      "controlling_value_regex" : "bg_color",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }, {
+    "id" : "129675a4-0b96-7c28-1d75-ad51a008eda0",
+    "name" : "gradient_field",
+    "display_width" : null,
+    "label" : "Gradiente",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "c265a4e0-b75b-d552-d397-598d6c4cb33b",
+      "controlling_value_regex" : "bg_gradient",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "gradient",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "plano_de_fundo" : "bg_gradient",
+    "background_color" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }
+}, {
+  "id" : "1503ae8c-b0f4-5892-1339-46aa84595e20",
+  "name" : "conteudo_b",
+  "display_width" : null,
+  "label" : "Linha de Conteúdo B",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "1a6ca03d-3c46-dff0-9ceb-5bec1f64aaa2",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Imagem",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/plataforma_dashboards-interativos_PT.png",
+      "alt" : "plataforma_dashboards-interativos_PT",
+      "loading" : "lazy",
+      "width" : 1078,
+      "height" : 646,
+      "max_width" : 1078,
+      "max_height" : 646
+    }
+  }, {
+    "id" : "8535ed45-859a-5d19-9713-ea4236b458cc",
+    "name" : "texto",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Com a nossa solução em Vendas e Mercado, cumprimos essa missão ao nos tornamos <strong>a plataforma #1 de inteligência de vendas ponta-a-ponta</strong>.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/plataforma_dashboards-interativos_PT.png",
+      "alt" : "plataforma_dashboards-interativos_PT",
+      "loading" : "lazy",
+      "width" : 1078,
+      "height" : 646,
+      "max_width" : 1078,
+      "max_height" : 646
+    },
+    "texto" : "<p>Com a nossa solução em Vendas e Mercado, cumprimos essa missão ao nos tornamos <strong>a plataforma #1 de inteligência de vendas ponta-a-ponta</strong>.</p>"
+  }
+} ]

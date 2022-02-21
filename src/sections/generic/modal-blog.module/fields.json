@@ -1,0 +1,118 @@
+[ {
+  "id" : "279115e6-6e67-d3ca-8a2b-0deb402ff648",
+  "name" : "texto",
+  "display_width" : null,
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>This content is not available in your language. Activate your browser’s translator to access it.</p>"
+}, {
+  "id" : "9ff5a0b0-5a4d-d16f-f6fd-95aeccd82618",
+  "name" : "cta_go_to",
+  "display_width" : null,
+  "label" : "CTA go to",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "9c5e84c8-78e3-4a87-f125-c630b8690c68",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://site.cortex-intelligence.com/blog",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "e103dda4-b1ee-4473-ee5b-308494ad6b1f",
+    "name" : "texto_do_link",
+    "display_width" : null,
+    "label" : "Texto do link",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Go to blog"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "link_field" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://site.cortex-intelligence.com/blog",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "texto_do_link" : "Go to blog"
+  }
+}, {
+  "id" : "e6b83ee3-7609-7a48-ef52-5214c49d711c",
+  "name" : "cta_go_back",
+  "display_width" : null,
+  "label" : " CTA go back",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "9083f274-1716-c912-e0b1-a31caaf9e585",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : "https://site.cortex-intelligence.com/en/home"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "d1206394-df26-13a0-e1ca-4e467ad85aab",
+    "name" : "texto_do_link",
+    "display_width" : null,
+    "label" : "Texto do link",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Go back to website"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : "https://site.cortex-intelligence.com/en/home"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "texto_do_link" : "Go back to website"
+  }
+} ]

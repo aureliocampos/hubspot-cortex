@@ -1,6 +1,7 @@
 [ {
   "id" : "6ecffa19-a07e-0792-b936-631241b71a46",
   "name" : "title",
+  "display_width" : null,
   "label" : "Título",
   "required" : false,
   "locked" : true,
@@ -11,6 +12,7 @@
 }, {
   "id" : "6622e9ff-79ce-e04c-11bc-cb51469191fd",
   "name" : "image",
+  "display_width" : null,
   "label" : "Imagem",
   "required" : false,
   "locked" : true,
@@ -27,12 +29,14 @@
 }, {
   "id" : "2e7f1aad-91f3-a5fc-0f6d-3b60031a58ed",
   "name" : "intro_plataforma",
+  "display_width" : null,
   "label" : "Intro Plataforma",
   "required" : false,
   "locked" : true,
   "children" : [ {
     "id" : "20b3e87c-9a18-239a-404a-381329842aa0",
     "name" : "intro_text",
+    "display_width" : null,
     "label" : "Intro Plataforma",
     "required" : false,
     "locked" : false,
@@ -40,12 +44,14 @@
   }, {
     "id" : "1aa34a9f-ba53-ed2f-eae1-5dc180ab1d80",
     "name" : "button_call",
+    "display_width" : null,
     "label" : "Botão Fale",
     "required" : false,
     "locked" : false,
     "children" : [ {
       "id" : "d069c951-6796-3e55-220e-5131ce655193",
       "name" : "link",
+      "display_width" : null,
       "label" : "Link ",
       "required" : false,
       "locked" : false,
@@ -64,6 +70,7 @@
     }, {
       "id" : "615b3aaf-67a5-806b-4f67-bd1e7143b7b0",
       "name" : "text",
+      "display_width" : null,
       "label" : "Texto",
       "required" : false,
       "locked" : false,

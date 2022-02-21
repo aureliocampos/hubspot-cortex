@@ -1,0 +1,62 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "Thêm vào quy trình",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "Để gửi email theo dõi, hãy chắc chắn bạn đã bật cài đặt 'Đặt các liên hệ đã tạo làm liên hệ tiếp thị’. Bạn có thể thực hiện việc này trong tùy chọn. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>Tìm hiểu thêm</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "Gửi email theo dõi",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "Cảm ơn bạn đã gửi biểu mẫu.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "Biểu mẫu",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "Quy trình",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Biểu mẫu",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "Gửi thông báo biểu mẫu đến các địa chỉ email được chỉ định thay vì theo cài đặt mặc định của biểu mẫu",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "Địa chỉ email",
+    "description" : "",
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "Chiến dịch Salesforce",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "Email",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Tiêu đề biểu mẫu",
+    "description" : "",
+    "placeholders" : null
+  }
+}

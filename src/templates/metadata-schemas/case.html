@@ -1,0 +1,233 @@
+<!--
+    templateType: global_partial
+    isAvailableForNewContent: false
+-->
+{% require_js position="head" async="true" %}
+
+{% set site_url = "https://www.cortex-intelligence.com" %}
+
+<script type="application/ld+json" id="data-usecase">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "{{site_url}}/#organization",
+        "name" : "{{ site_settings.company_name }}",
+        "url" : "{{ site_url }}",
+        "legalName" : "{{ site_settings.company_name }}",
+        "description": "Big Data e ciência de dados para turbinar  seus resultados",
+        "telephone" : "{{ site_settings.company_phone}}",
+        "email" : "",
+        "address" : {
+          "@type" : "PostalAddress",
+          "streetAddress" : "{{ site_settings.company_street_address1 }}",
+          "addressLocality" : "{{ site_settings.company_city }}",
+          "addressRegion" : "{{ site_settings.company_state }}",
+          "addressCountry" : "{{ site_settings.company_country }}",
+          "postalCode" : "{{ site_settings.company_zip }}"
+        },
+        "priceRange": "R$ and $",
+        "openingHours": "Mo 09:00-18:00 Tu 09:00-18:00 We 09:00-18:00 Th 09:00-18:00 Fr 09:00-18:00",
+        "hasMap": "https://goo.gl/maps/qqGexPC5scoXsj2f7",
+        "sameAs": [
+          "https://www.facebook.com/beCortex/",
+          "https://www.instagram.com/becortex/",
+          "https://www.linkedin.com/company/cortex-intelligence/mycompany/",
+          "https://www.youtube.com/c/CORTEXINTELLIGENCE"
+        ],
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "{{site_url}}/#logo",
+          "inLanguage": "pt-BR",
+          "url": "{{ site_settings.site_settings.logo_src}}",
+          "width": 130,
+          "height": 122,
+          "caption": "{{ site_settings.company_name }}"
+        },
+        "image": {
+          "@id": "{{site_url}}/#logo"
+        }
+      },
+      {
+        "@type" : "LocalBusiness",
+        "@id": "{{site_url}}/#organization"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "{{site_url}}/#website",
+        "url": "{{ site_url }}",
+        "name": "{{ site_settings.company_name }}",
+        "description": "Big Data e ciência de dados para turbinar  seus resultados",
+        "publisher": {
+          "@id": "{{site_url}}/#organization"
+        },
+        "potentialAction": [{
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.cortex-intelligence.com/hs-search-results?term={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+          },{
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "android-app://com.cortex-intelligence/https/query.cortex-intelligence.com/hs-search-results?term={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }],
+        "inLanguage": "{{ html_lang }}"
+      },
+      {
+        "@type": "WebContent",
+        "@id": "{{content.absolute_url}}/#webpage"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "{{content.absolute_url}}/#webpage",
+        "url": "{{content.absolute_url}}",
+        "name": "{{content.html_title}}",
+        "isPartOf": {
+          "@id": "{{site_url}}/#website"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "@id": "{{request.full_url}}/#primaryimage"
+        },
+        "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
+        "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
+        "description": "{{content.meta_description}}",
+        "inLanguage": "{{ html_lang }}",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "{{content.absolute_url}}"
+            ]
+          }
+        ],
+        "mainEntity":{
+          "@type": "Book",
+          "@id": "{{content.absolute_url}}/#book"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "{{content.absolute_url}}/#article",
+        "url": "{{content.absolute_url}}",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "{{site_url}}/#website"
+        },
+        "headline": "{{content.html_title}}",
+        "alternativeHeadline": "{{content.html_title}}",
+        "dateCreated": "{{ datetimeformat(content.created, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
+        "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
+        "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
+        "mainEntityOfPage": {
+          "@id": "{{content.absolute_url}}/#webpage"
+        },
+        "commentCount": 0,
+        "publisher": {
+          "@type": "Organization",
+          "@id": "{{site_url}}/#organization"
+        },
+        "copyrightYear": "{{year}}",
+        "copyrightHolder": "{{ site_settings.company_name }}",
+        "image": {
+          "@id": "{{ content.featured_image }}/#primaryimage"
+        },
+        "thumbnailUrl": "{{ content.featured_image }}",
+        "articleBody": "{{content.post_body|striptags }}",
+        "wordCount": {{ content.post_body|striptags|wordcount }},
+        "keywords": [
+          "{{content.topic_list|join(' ')}}"
+        ],
+        "inLanguage": "{{ html_lang }}",
+        "potentialAction": [
+          {
+            "@type": "CommentAction",
+            "name": "Comment",
+            "target": [
+              "{{content.absolute_url}}/#respond"
+            ]
+          },
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://www.cortex-intelligence.com/hs-search-results?term={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          },
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "android-app://com.cortex-intelligence/https/query.cortex-intelligence.com/hs-search-results?term={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        ],
+        "contentLocation": {
+          "@type": "Place",
+          "name": "{{ site_settings.company_city }}, {{ site_settings.company_state }}"
+        },
+        "accountablePerson": {
+          "@type": "Person",
+          "@id": "{{site_url}}/#organization"
+        },
+        "creator": {
+          "@type": "Person",
+          "@id": "{{site_url}}/#organization"
+        },
+        "author": {
+          "@type": "Person",
+          "@id": "{{site_url}}/#organization"
+        }
+      },
+      {
+        "@type": "NewsArticle",
+        "@id": "{{content.absolute_url}}/#article"
+      },
+      {
+        "@type": "AmpStory",
+        "@id": "{{content.absolute_url}}/#article"
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "{{request.full_url}}/#primaryimage",
+        "thumbnail": "{{ content.widgets.module_16407979092019.body.image_field.src }}",
+        "inLanguage": "{{ html_lang }}",
+        "url": "{{ content.widgets.module_16407979092019.body.image_field.src }}",
+        "width": "{{ content.widgets.module_16407979092019.body.image_field.width }}",
+        "height": "{{ content.widgets.module_16407979092019.body.image_field.height }}",
+        "caption": "{{ content.widgets.module_16407979092019.body.image_field.alt }}"
+      },
+      {
+        "@type": "Person",
+        "@id": "{{site_url}}/#organization"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "{{content.absolute_url}}/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "{{ site_settings.company_name }}",
+            "item": "https://{{request.domain}}"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "{{content.html_title}}",
+            "item": "{{content.absolute_url}}"
+          }
+        ]
+      }
+    ]
+  }  
+</script>
+{% end_require_js%}

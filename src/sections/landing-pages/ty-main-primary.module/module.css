@@ -1,0 +1,113 @@
+.lp-main--primary {
+  padding: 3em 2em 0 2em;
+  background: var(--lightest);
+  margin-bottom: 3em;
+}
+.lp-main__tag {
+  width: max-content;
+  font: 400 12px var(--secondary-font);
+  color: var(--lightest);
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+
+.lp-main__title {
+  font: 325 2em var(--primary-font);
+  color: var(--darkest);
+  line-height: 108%;
+  letter-spacing: -0.055em;
+  margin: 2rem 0 1rem 0;
+}
+.lp-main__text {
+  font: 400 1.125em var(--secondary-font);
+  color: var(--darkest);
+  line-height: 148%;
+}
+.button--lp-cta {
+ font: 600 1em var(--secondary-font);
+ line-height: 120%;
+ color: var(--white);
+ background-color: var(--Auxiliary-yellow);
+}
+.lp-main__figure {
+  position: relative;
+  top: 70px;
+  max-width: 350px;
+}
+.share__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3em;
+}
+.share__title {
+  font: 400 0.925em var(--secondary-font);
+  color: var(--darkest);
+  line-height: 148%;
+}
+.share__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.share__item {
+  font-size: 1.8rem;
+}
+@media (min-width: 640px) {
+  .lp-main--primary {
+    height: auto;
+  }
+  .lp-main--primary .section__container {
+    display: flex;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  .share__content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+  }
+  .lp-main__figure {
+    top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .lp-main--primary {
+    height: 530px;
+    margin-bottom: 9rem;
+  }
+  .lp-main--primary .section__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1114px;
+    margin: 0 auto;
+  }
+  .lp-main--primary .section__content {
+    width: 500px;
+  }
+  .lp-main__title {
+    font-size: 3.5em;
+    margin: 2rem 0 1.5rem 0;
+  }
+  .lp-main__text {
+    font-size: 1.25em;
+  }
+  .lp-main__figure {
+    max-width: 500px;
+    top: 20px;
+  }
+  .share__content {
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    max-width: 400px;
+  }
+  .share__title {
+   font-size: 1.125em;
+  }
+  .share__item {
+    font-size: 2.3rem;
+  }
+}

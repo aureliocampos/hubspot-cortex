@@ -1,0 +1,68 @@
+<section class="section section--person-profile">
+	<div class="section__container">
+		<h2 class="section__title">Conheça os convidados</h2>
+
+		<div class="profiles__items">
+			{% for item in module.perfil %}
+				<article class="profile__item">
+					{% if item.foto.src %}
+						{% set sizeAttrs = 'width="{{ item.foto.width }}" height="{{ item.foto.height }}"' %}
+						{% if item.foto.size_type == 'auto' %}
+							{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+						{% elif item.foto.size_type == 'auto_custom_max' %}
+							{% set sizeAttrs = 'width="{{ item.foto.max_width }}" height="{{ item.foto.max_height }}" style="max-width: 100%; height: auto;"' %}
+						{% endif %}
+						{% set loadingAttr = item.foto.loading != 'disabled' ? 'loading="{{ item.foto.loading }}"' : '' %}
+						<figure class="profile__figure">
+							<img src="{{ item.foto.src }}" alt="{{ item.foto.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="profile__image">
+						</figure>
+					{% endif %}
+					<andress class="profile__info">
+						<h2 class="profile__name">{{ item.nome }}</h2>
+						<p class="profile__job">{{ item.cargo.cargo_descritivo }} <strong>{{ item.cargo.empresa }}</strong></p>
+
+						<nav class="profile__nav">
+							<ul class="profile__nav-items">
+								{% if item.redes_sociais.linkedin.deseja_adicionar %}
+									<li class="profile__nav-item">
+										<a href="{{ item.redes_sociais.linkedin.url_field.href }}" 
+											class="profile__nav-link" 
+											target="_blank" rel="noopener noreferrer" 
+											aria-label="Link externo para o Linkedin de {{ item.nome }}."
+										>
+											<span class="icon-linkedin"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
+										</a>
+									</li>
+								{% endif %}
+								{% if item.redes_sociais.facebook.deseja_adicionar %}
+									<li class="profile__nav-item">
+										<a href="{{ item.redes_sociais.facebook.url_field.href }}" 
+											class="profile__nav-link" 
+											target="_blank" rel="noopener noreferrer" 
+											aria-label="Link externo para o Linkedin de {{ item.nome }}."
+										>
+											<span class="icon-facebook"><span class="path1"></span><span class="path2"></span></span>
+										</a>
+									</li>
+								{% endif %}
+								{% if item.redes_sociais.instagram.deseja_adicionar %}
+									<li class="profile__nav-item">
+										<a href="{{ item.redes_sociais.instagram.url_field.href }}" 
+											class="profile__nav-link" 
+											target="_blank" rel="noopener noreferrer" 
+											aria-label="Link externo para o Instagram de {{ item.nome }}."
+										>
+											<span class="icon-instagram"><span class="path1"></span><span class="path2"></span></span>
+										</a>
+									</li>
+								{% endif %}
+							</ul>
+						</nav>
+					</andress>
+
+				</article>
+			{% endfor %}
+		
+		</div>
+	</div>
+</section>

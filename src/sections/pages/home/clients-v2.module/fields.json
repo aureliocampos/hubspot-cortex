@@ -1,0 +1,150 @@
+[ {
+  "id" : "e42200a0-08f9-3b9a-5264-7dc8c24400aa",
+  "name" : "section_title",
+  "display_width" : null,
+  "label" : "Título da seção",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Por que as empresas escolhem a Cortex"
+}, {
+  "id" : "31bd027b-1825-29be-d91d-b571ef1849ff",
+  "name" : "images_mobile",
+  "display_width" : null,
+  "label" : "Imagens  mobile",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "274ea74d-b494-246a-7021-4867e78a8393",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Imagem",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }
+}, {
+  "id" : "1b996284-76a3-ca5f-d0f0-8cdc1848f157",
+  "name" : "imagens_desktop",
+  "display_width" : null,
+  "label" : "Imagens  Desktop",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "169c7168-362f-fad0-0c85-a9eb1d7918dd",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Imagem",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }
+}, {
+  "id" : "7e12a206-e2ca-5a24-b9be-532d7a8c46d4",
+  "name" : "info_items",
+  "display_width" : null,
+  "label" : "Items de informação",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "5f96b41a-4962-4e8c-6840-ed2156c77e08",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Ícone",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "e3bdef71-a23a-82e5-3287-67b75bbe8218",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }
+} ]

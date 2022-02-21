@@ -1,6 +1,7 @@
 [ {
   "id" : "1c8e3c1c-fce9-6f04-11af-48df4fa09947",
   "name" : "cards_repeater",
+  "display_width" : null,
   "label" : "Cards de Funcionalidades da Plataforma",
   "required" : false,
   "locked" : true,
@@ -13,6 +14,7 @@
   "children" : [ {
     "id" : "6807d932-9a3a-cbc7-e91d-62fc1e191233",
     "name" : "title",
+    "display_width" : null,
     "label" : "Título",
     "required" : false,
     "locked" : false,
@@ -23,6 +25,7 @@
   }, {
     "id" : "ac853e68-961c-8711-0441-c4ab151cc1aa",
     "name" : "subtitle",
+    "display_width" : null,
     "label" : "Subtítulo",
     "required" : false,
     "locked" : false,
@@ -33,6 +36,7 @@
   }, {
     "id" : "9a9da6c8-a703-6edd-86ed-aabe5ee0ef9c",
     "name" : "text",
+    "display_width" : null,
     "label" : "Texto",
     "required" : false,
     "locked" : false,
@@ -40,6 +44,7 @@
   }, {
     "id" : "02a42a23-7a4d-3fe6-992f-c41889adb210",
     "name" : "image",
+    "display_width" : null,
     "label" : "Imagem",
     "required" : false,
     "locked" : false,

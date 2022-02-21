@@ -1,6 +1,7 @@
 [ {
   "id" : "bb0518cc-1c23-2666-b01a-a0cc6ef39619",
   "name" : "depoimentos",
+  "display_width" : null,
   "label" : "Depoimentos",
   "required" : false,
   "locked" : false,
@@ -13,6 +14,7 @@
   "children" : [ {
     "id" : "7f235a83-ef15-0a94-70c6-a8d4e9135780",
     "name" : "imagem",
+    "display_width" : null,
     "label" : "Imagem",
     "required" : false,
     "locked" : false,
@@ -29,6 +31,7 @@
   }, {
     "id" : "e55ac48c-af93-0ca7-b0c4-d60424827662",
     "name" : "nome",
+    "display_width" : null,
     "label" : "Nome",
     "required" : false,
     "locked" : false,
@@ -39,6 +42,7 @@
   }, {
     "id" : "1b5955c8-5a02-5db3-3936-62266bc60646",
     "name" : "texto",
+    "display_width" : null,
     "label" : "Texto",
     "required" : false,
     "locked" : false,
@@ -46,6 +50,7 @@
   }, {
     "id" : "3f041be5-bd64-79b3-a86f-00a4ca307284",
     "name" : "cargo",
+    "display_width" : null,
     "label" : "Cargo",
     "required" : false,
     "locked" : false,
@@ -68,6 +73,7 @@
 }, {
   "id" : "b08d00de-d284-7d96-9b2a-40380268ffa4",
   "name" : "lista_de_logos_dos_clientes",
+  "display_width" : null,
   "label" : "Lista de logos dos clientes",
   "required" : false,
   "locked" : false,

@@ -1,6 +1,7 @@
 [ {
   "id" : "c2e0e8fd-a72a-1837-b82c-5570cfd333ee",
   "name" : "title",
+  "display_width" : null,
   "label" : "Título da seção",
   "required" : false,
   "locked" : true,
@@ -9,6 +10,7 @@
 }, {
   "id" : "b4bfb1b0-0d70-39cd-a465-59c2b0ca863d",
   "name" : "image_field",
+  "display_width" : null,
   "label" : "Imagem",
   "required" : false,
   "locked" : true,

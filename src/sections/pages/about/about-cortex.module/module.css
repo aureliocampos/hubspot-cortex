@@ -22,10 +22,16 @@
 .section--about-cortex .section__figure img {
     border-radius: 12px;
   }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .section--about-cortex {
     padding-top: 5em;
   }
+  .section--about-cortex .section__figure img {
+    width: 100%;
+    border-radius: 16px;
+  }
+}
+@media (min-width: 1024px) {
   .section--about-cortex .section__container {
     display: grid;
     grid-template-areas: "about-cortex-title about-cortex-title"	
@@ -44,7 +50,7 @@
   .section--about-cortex .section__text {
     grid-area: about-cortex-text;
     font-size: 16px;
-    width: 633px;
+    width: 533px;
     margin: 0;
   }
   .section--about-cortex .section__figure {
@@ -54,5 +60,11 @@
   .section--about-cortex .section__figure img {
     width: 408px;
     border-radius: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section--about-cortex .section__text {
+    width: 633px;
   }
 }

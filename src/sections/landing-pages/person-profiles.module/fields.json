@@ -1,0 +1,307 @@
+[ {
+  "id" : "2b0feaaf-52f1-a352-18b3-51ca0b8f6532",
+  "name" : "perfil",
+  "display_width" : null,
+  "label" : "Perfil",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "fd8bcba1-42cc-a78a-599a-3c00e56a15b5",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "5b4f1adb-577d-1c4f-8e61-b30c00053da2",
+    "name" : "foto",
+    "display_width" : null,
+    "label" : "Foto",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "fd8bcba1-42cc-a78a-599a-3c00e56a15b5",
+    "name" : "nome",
+    "display_width" : null,
+    "label" : "Nome",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "bf6ac883-d682-7481-6bb6-18bb0d0423f2",
+    "name" : "cargo",
+    "display_width" : null,
+    "label" : "Cargo",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "397fa9eb-31d4-2cb9-ffae-9100a7702101",
+      "name" : "cargo_descritivo",
+      "display_width" : null,
+      "label" : "Cargo descritivo",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    }, {
+      "id" : "c1462f69-7e84-ecd2-d08f-a83bad0edef8",
+      "name" : "empresa",
+      "display_width" : null,
+      "label" : "Empresa",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "na Cortex"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "empresa" : "na Cortex"
+    }
+  }, {
+    "id" : "038d1ce3-3ae4-a21f-817a-0f406af6de20",
+    "name" : "redes_sociais",
+    "display_width" : null,
+    "label" : "Redes Sociais",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "8451c17f-c024-7146-076b-ab59ac63014e",
+      "name" : "linkedin",
+      "display_width" : null,
+      "label" : "Linkedin",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "b07dbe7b-7ff7-e2dc-41d0-9f451ae70406",
+        "name" : "deseja_adicionar",
+        "display_width" : null,
+        "label" : "Deseja adicionar?",
+        "required" : false,
+        "locked" : false,
+        "display" : "checkbox",
+        "type" : "boolean",
+        "default" : false
+      }, {
+        "id" : "d25fb3c7-92fb-805b-1deb-2edbdf2fd4fa",
+        "name" : "url_field",
+        "display_width" : null,
+        "label" : "URL",
+        "required" : false,
+        "locked" : false,
+        "visibility" : {
+          "controlling_field" : "b07dbe7b-7ff7-e2dc-41d0-9f451ae70406",
+          "controlling_value_regex" : "true",
+          "operator" : "EQUAL",
+          "access" : null,
+          "hidden_subfields" : null
+        },
+        "supported_types" : [ "EXTERNAL" ],
+        "type" : "url",
+        "default" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group",
+      "default" : {
+        "deseja_adicionar" : false,
+        "url_field" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }
+    }, {
+      "id" : "a8982115-769a-8182-058c-b537561d0e86",
+      "name" : "facebook",
+      "display_width" : null,
+      "label" : "Facebook",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "a159dc38-1df7-8a6a-2a53-968fb2781300",
+        "name" : "deseja_adicionar",
+        "display_width" : null,
+        "label" : "Deseja adicionar?",
+        "required" : false,
+        "locked" : false,
+        "display" : "checkbox",
+        "type" : "boolean",
+        "default" : false
+      }, {
+        "id" : "c56d6d60-34f3-e0d2-9fe7-d30bc6fe2291",
+        "name" : "url_field",
+        "display_width" : null,
+        "label" : "URL",
+        "required" : false,
+        "locked" : false,
+        "visibility" : {
+          "controlling_field" : "a159dc38-1df7-8a6a-2a53-968fb2781300",
+          "controlling_value_regex" : "true",
+          "operator" : "EQUAL",
+          "access" : null,
+          "hidden_subfields" : null
+        },
+        "supported_types" : [ "EXTERNAL" ],
+        "type" : "url",
+        "default" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group",
+      "default" : {
+        "deseja_adicionar" : false,
+        "url_field" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }
+    }, {
+      "id" : "2ef4b799-1c92-0cff-60de-94760a9f0776",
+      "name" : "instagram",
+      "display_width" : null,
+      "label" : "Instagram",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "40db5454-5083-da81-10a1-6f466face82f",
+        "name" : "deseja_adicionar",
+        "display_width" : null,
+        "label" : "Deseja adicionar?",
+        "required" : false,
+        "locked" : false,
+        "display" : "checkbox",
+        "type" : "boolean",
+        "default" : false
+      }, {
+        "id" : "1303a97e-4d3e-d709-3f85-b2f496827758",
+        "name" : "url_field",
+        "display_width" : null,
+        "label" : "URL",
+        "required" : false,
+        "locked" : false,
+        "visibility" : {
+          "controlling_field" : "40db5454-5083-da81-10a1-6f466face82f",
+          "controlling_value_regex" : "true",
+          "operator" : "EQUAL",
+          "access" : null,
+          "hidden_subfields" : null
+        },
+        "supported_types" : [ "EXTERNAL" ],
+        "type" : "url",
+        "default" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group",
+      "default" : {
+        "deseja_adicionar" : false,
+        "url_field" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "linkedin" : {
+        "deseja_adicionar" : false,
+        "url_field" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      },
+      "facebook" : {
+        "deseja_adicionar" : false,
+        "url_field" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      },
+      "instagram" : {
+        "deseja_adicionar" : false,
+        "url_field" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "foto" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "cargo" : {
+      "empresa" : "na Cortex"
+    },
+    "redes_sociais" : {
+      "linkedin" : {
+        "deseja_adicionar" : false,
+        "url_field" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      },
+      "facebook" : {
+        "deseja_adicionar" : false,
+        "url_field" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      },
+      "instagram" : {
+        "deseja_adicionar" : false,
+        "url_field" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }
+    }
+  } ]
+} ]

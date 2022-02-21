@@ -13,7 +13,6 @@
         <img srcset="{{ resize_image_url( module.image_field.src, 312, 175, 312 ) }} 312w, {{ resize_image_url( module.image_field.src, 684, 300, 684 ) }} 684w" sizes="(max-width: 640px) 312px, (min-width: 1200px) 684px" src="{{ resize_image_url( module.image_field.src, 684, 300, 684 ) }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} />
       </figure>
 {% endif %}
-  {% endif %} 
     <div class="section__text">
       {{ module.text }}
     </div>

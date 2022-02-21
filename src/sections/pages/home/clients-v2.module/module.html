@@ -1,0 +1,64 @@
+<section class="section section-clients">
+	<div class="clients__container">
+		<div class="clients__content">
+			<h2 class="section__title">{{ module.section_title }}</h2>
+			<ul class="clients-logos__items" data-media="mobile">
+				{% for item in module.images_mobile.image_field %}
+					<li class="clients-logos__item">
+						{% if item.src %}
+							{% set sizeAttrs = 'width="{{ item.width }}" height="{{ item.height }}"' %}
+							{% if item.size_type == 'auto' %}
+								{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+							{% elif item.size_type == 'auto_custom_max' %}
+								{% set sizeAttrs = 'width="{{ item.max_width }}" height="{{ item.max_height }}" style="max-width: 100%; height: auto;"' %}
+							{% endif %}
+							{% set loadingAttr = item.loading != 'disabled' ? 'loading="{{ item.loading }}"' : '' %}
+							<figure class="clients-logos__figure">
+								<img class="clients-logos__image" 
+								src="{{ item.src }}" alt="{{ item.alt }}" {{ loadingAttr }} {{ sizeAttrs }} >
+							</figure>
+						{% endif %}
+					</li>
+				{% endfor %}
+			</ul>
+			<ul class="clients-info__items">
+				{% for item in module.info_items %}
+					<li class="clients-info__item">
+						{% if item.icon.src %}
+							{% set sizeAttrs = 'width="{{ item.icon.width }}" height="{{ item.icon.height }}"' %}
+							{% if item.icon.size_type == 'auto' %}
+								{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+							{% elif item.icon.size_type == 'auto_custom_max' %}
+								{% set sizeAttrs = 'width="{{ item.icon.max_width }}" height="{{ item.icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+							{% endif %}
+							{% set loadingAttr = item.icon.loading != 'disabled' ? 'loading="{{ item.icon.loading }}"' : '' %}
+							<figure class="clients-info__figure">
+								<img class="clients-info__image" src="{{ item.icon.src }}" alt="{{ item.icon.alt }}" {{ loadingAttr }} width="64" height="64">
+							</figure>
+						{% endif %}
+						<p class="clients-info__text">{{ item.text_field }}</p>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<ul class="clients-logos__items" data-media="desktop">
+			{% for item in module.imagens_desktop.image_field %}
+				<li class="clients-logos__item">
+					{% if item.src %}
+						{% set sizeAttrs = 'width="{{ item.width }}" height="{{ item.height }}"' %}
+						{% if item.size_type == 'auto' %}
+							{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+						{% elif item.size_type == 'auto_custom_max' %}
+							{% set sizeAttrs = 'width="{{ item.max_width }}" height="{{ item.max_height }}" style="max-width: 100%; height: auto;"' %}
+						{% endif %}
+						{% set loadingAttr = item.loading != 'disabled' ? 'loading="{{ item.loading }}"' : '' %}
+						<figure class="clients-logos__figure">
+							<img class="clients-logos__image" 
+							src="{{ item.src }}" alt="{{ item.alt }}" {{ loadingAttr }} width="109" height="81">
+						</figure>
+					{% endif %}
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>

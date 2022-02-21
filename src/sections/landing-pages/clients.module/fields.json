@@ -1,0 +1,135 @@
+[ {
+  "id" : "8351cf86-f0f7-fa31-1107-174c69479001",
+  "name" : "text_field",
+  "display_width" : null,
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "As melhores empresas trabalham com a Cortex"
+}, {
+  "id" : "2ab58930-830c-f99f-4b7d-f4aa51872894",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "1056d499-0f73-05e4-4e7c-43e30d53ce18",
+    "name" : "personalizar_cor_de_fundo",
+    "display_width" : null,
+    "label" : "Personalizar cor de fundo",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "color", "Cor" ], [ "gradient", "Gradiente" ] ],
+    "type" : "choice",
+    "default" : "color"
+  }, {
+    "id" : "10631772-093e-afc3-4ed8-3d8ede261e22",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "1056d499-0f73-05e4-4e7c-43e30d53ce18",
+      "controlling_value_regex" : "color",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#28354C",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "5549d622-4f5d-a799-04c3-33c7cf1cb692",
+    "name" : "gradient_field",
+    "display_width" : null,
+    "label" : "Gradiente",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "1056d499-0f73-05e4-4e7c-43e30d53ce18",
+      "controlling_value_regex" : "gradient",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "gradient",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "personalizar_cor_de_fundo" : "color",
+    "background_color" : {
+      "color" : "#28354C",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "9542e1fd-2a6f-54f3-c13a-bf23f179fd53",
+  "name" : "logos",
+  "display_width" : null,
+  "label" : "Logos",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "df6db583-3081-b0dd-644c-4a6ec9926aaf",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Imagem",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "",
+      "loading" : "lazy"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image_field" : {
+      "src" : "",
+      "loading" : "lazy"
+    }
+  }, {
+    "image_field" : {
+      "src" : "",
+      "loading" : "lazy"
+    }
+  }, {
+    "image_field" : {
+      "src" : "",
+      "loading" : "lazy"
+    }
+  }, {
+    "image_field" : {
+      "src" : "",
+      "loading" : "lazy"
+    }
+  }, {
+    "image_field" : {
+      "src" : "",
+      "loading" : "lazy"
+    }
+  } ]
+} ]

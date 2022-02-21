@@ -1,0 +1,100 @@
+[ {
+  "id" : "9e81cd35-d3a7-9330-6c82-47256c464b81",
+  "name" : "item",
+  "display_width" : null,
+  "label" : "Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "5d19307a-9b3a-0841-86fc-6ce593bf4aaa",
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "9c77ebbd-2661-5e61-09c2-4bc5e2d15c89",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Ícone",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Group%20169.png",
+      "alt" : "ícone",
+      "loading" : "lazy",
+      "width" : 64,
+      "height" : 95,
+      "max_width" : 64,
+      "max_height" : 95
+    }
+  }, {
+    "id" : "5d19307a-9b3a-0841-86fc-6ce593bf4aaa",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Título",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Enriquecimento de leads"
+  }, {
+    "id" : "635371f5-a87e-56a9-2bf3-4009c6645ced",
+    "name" : "texto",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>O futuro tem muito de imprevisível, mas não significa que precisamos tatear no absoluto escuro. Sob a esteira desse pensamento que sempre buscamos conhecer as tendências.</p>\n<p>O futuro tem muito de imprevisível, mas não significa que precisamos tatear no absoluto escuro. Sob a esteira desse pensamento que sempre buscamos conhecer as tendências.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Group%20169.png",
+      "alt" : "ícone",
+      "loading" : "lazy",
+      "width" : 64,
+      "height" : 95,
+      "max_width" : 64,
+      "max_height" : 95
+    },
+    "title" : "Enriquecimento de leads",
+    "texto" : "<p>O futuro tem muito de imprevisível, mas não significa que precisamos tatear no absoluto escuro. Sob a esteira desse pensamento que sempre buscamos conhecer as tendências.</p>\n<p>O futuro tem muito de imprevisível, mas não significa que precisamos tatear no absoluto escuro. Sob a esteira desse pensamento que sempre buscamos conhecer as tendências.</p>"
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Group%20169.png",
+      "alt" : "ícone",
+      "loading" : "lazy",
+      "width" : 64,
+      "height" : 95,
+      "max_width" : 64,
+      "max_height" : 95
+    },
+    "title" : "Enriquecimento de leads",
+    "texto" : "<p>O futuro tem muito de imprevisível, mas não significa que precisamos tatear no absoluto escuro. Sob a esteira desse pensamento que sempre buscamos conhecer as tendências.</p>\n<p>O futuro tem muito de imprevisível, mas não significa que precisamos tatear no absoluto escuro. Sob a esteira desse pensamento que sempre buscamos conhecer as tendências.</p>"
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Group%20169.png",
+      "alt" : "ícone",
+      "loading" : "lazy",
+      "width" : 64,
+      "height" : 95,
+      "max_width" : 64,
+      "max_height" : 95
+    },
+    "title" : "Enriquecimento de leads",
+    "texto" : "<p>O futuro tem muito de imprevisível, mas não significa que precisamos tatear no absoluto escuro. Sob a esteira desse pensamento que sempre buscamos conhecer as tendências.</p>\n<p>O futuro tem muito de imprevisível, mas não significa que precisamos tatear no absoluto escuro. Sob a esteira desse pensamento que sempre buscamos conhecer as tendências.</p>"
+  } ]
+} ]

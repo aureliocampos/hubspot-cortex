@@ -1,0 +1,18 @@
+.lp-header .header__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 256px;
+  height: 75px;
+  margin: 0 auto;
+}
+.lp-header .header__figure {
+  width: 110px;
+  height: auto;
+}
+
+@media (min-width:1200px) {
+  .lp-header .header__container {
+    max-width: 310px;
+  }
+}

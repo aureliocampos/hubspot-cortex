@@ -1,0 +1,22 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Landing Page - Casos de uso / Levantada de mão
+-->
+
+{% extends "../layouts/base-lp.html" %}
+
+{% include '/cortex-intelligence/templates/metadata-schemas/case.html' %}
+
+{% block body %}
+  <main id="main-content" class="body-container-wrapper landing-page--case-success" role="main">
+    {% module "module_16431315482639" path="/cortex-intelligence/sections/landing-pages/main-case-primary", label="Main" %}
+    {% module "module_164313465653315" path="/cortex-intelligence/sections/landing-pages/content-intro", label="Intro" %}
+    {% module "module_164315425614921" path="/cortex-intelligence/sections/landing-pages/content-pillars", label="Conteúdo" %}
+    {% module "module_164315616002529" path="/cortex-intelligence/sections/landing-pages/clients", label="Clientes" %}
+    {% module "module_16433033195526" path="/cortex-intelligence/sections/landing-pages/content-solutions-slide", label="Soluções da plataforma Slides" %}
+    {% module "module_163171835946125" path='/cortex-intelligence/sections/pages/solutions/customer-testimonial', label="Depoimentos dos Clientes" %}
+    {% module "module_16408200462891" path="/cortex-intelligence/modules/form-content-sticky", label="Formulário" %}
+
+  </main>
+{% endblock body %}

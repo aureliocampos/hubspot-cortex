@@ -1,0 +1,20 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: false
+-->
+{% require_css %}
+<style type="text/css" id="main-category">
+.main-tag__container{display:flex;align-items:center;padding:1.5em;background:var(--lightest);margin-bottom: 3em;}.main-tag__content{width:1114px;margin:0 auto}.main-tag__title{font:400 2em var(--primary-font);color:var(--darkest);text-transform:capitalize;margin:.67em 0}
+</style>
+{% end_require_css %}
+<section class="main-tag__container">
+  <div class="main-tag__content">
+    <h1 class="main-tag__title">{{ topic }}</h1>
+  </div>
+</section>
+{% module "module_164265145920447" path="/cortex-intelligence/sections/pages/blog/grid-posts", label="grid-posts" %}
+
+{% if contents.total_page_count > 1 %}
+  {% include "./pagination.html" %}
+{% endif %}
+

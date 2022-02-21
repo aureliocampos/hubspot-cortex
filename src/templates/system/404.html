@@ -1,23 +1,33 @@
 <!--
   templateType: error_page
   isAvailableForNewContent: true
-  label: Boilerplate - 404 error
+  label: Cortex - 404 error
   screenshotPath: ../../images/template-previews/404.png
 -->
-{% set template_css = '../../css/templates/system.css' %}
 {% extends '../layouts/base.html' %}
 
+{% require_css %}
+<style>
+  .error-page{max-width:800px;margin:0 auto 56px auto;padding:0 1.5em}.error-page h1{font-family:var(--primary-font);font-weight:350;line-height:120%}.error-page .subtitle{font-family:var(--secondary-font);font-size:18px;color:var(--dark);line-height:148%}.error-page .info{margin-top:40px}.error-page .info h3{font-family:var(--secondary-font);font-size:24px;line-height:148%}.error-page .info ul li{font-family:var(--secondary-font);font-size:18px;line-height:148%;margin:.5rem 0}.error-page .info ul li a{font-family:var(--secondary-font);font-size:18px;font-weight:600;text-decoration:underline;color:var(--blue_official);line-height:148%}.error-page p{font-family:var(--secondary-font);font-size:18px;line-height:148%}.error-page p>a{font-family:var(--secondary-font);font-size:18px;font-weight:600;text-decoration:underline;color:var(--blue_official);line-height:148%}
+</style>
+{% end_require_css%}
 {% block body %}
-{# The main-content ID is used for the navigation skipper in the header.html file. More information on the navigation skipper can be found here: https://github.com/HubSpot/cms-theme-boilerplate/wiki/Accessibility #}
-<main id="main-content" class="body-container-wrapper">
-  <section class="content-wrapper">
+<main class="body-container-wrapper" role="main">
+  <section class="section">
     <div class="error-page" data-error="404">
-      {% module 'content'
-        path='@hubspot/rich_text',
-        html='<h1>Page not found.</h1>'
-      %}
-      {% module 'button' path='../../modules/customizable-button' button_text='Go Home' link={ 'url': { 'type': 'EXTERNAL', 'href': '/'}, 'open_in_new_tab': false, 'no_follow': false } %}
+      <h1 >Desculpe, <br> essa página não foi encontrada</h1>
+        <p class="subtitle">Não se preocupe, nós já vamos analisar o que aconteceu</p>
+        <div class="info">
+          <h3>Enquanto isso você pode...</h3>
+          <ul>
+            <li>→ Voltar para a nossa <a href="https://www.cortex-intelligence.com/?hsLang=pt-br">home</a></li>
+            <!-- <li>→ Conhecer mais sobre nossas <a href="">soluções</a></li> -->
+            <!-- <li>→ Se inscrever para receber uma <a href="https://pages.cortex-intelligence.com/agendar-conversa-com-especialistas-cortex">demo de graça</a></li> -->
+          </ul>
+        </div>
+        <p>Se você quer nos ajudar a encontrar o problema por favor <a href="https://pages.cortex-intelligence.com/agendar-conversa-com-especialistas-cortex-3?hsLang=pt-br&_ga=2.4384123.974344257.1640014042-619250506.1640014042">entre em contato</a> e nos conte o que deu errado.</p>
     </div>
   </section>
 </main>
+
 {% endblock body %}

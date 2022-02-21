@@ -80,14 +80,14 @@
   font-weight: 300;
 }
 /* Seção Clientes */
-.clients__items {
+.customer-testimonial .clients__items {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1em;
   margin: 1.75em auto 0;
 }
-.clients__item {
+.customer-testimonial .clients__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,17 +96,22 @@
   background-color: var(--lightest);
   border-radius: 100%;
 }
-.clients__item:last-of-type {
+.customer-testimonial .clients__item > svg {
+  width: 48px;
+  height: 48px;
+}
+.customer-testimonial .clients__item:last-of-type {
   display: none;
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .customer-testimonial {
     padding: 0;
+    margin-bottom: 2rem;
   }
   .customer-testimonial__container {
-    max-width: 1018px;
+    max-width: 720px;
     margin: 0 auto;
     overflow: hidden;
   }
@@ -148,13 +153,14 @@
     border-bottom-right-radius: 16px;
   }
   .customer-testimonial__controls {
+    display: none;
     bottom: 2rem;
     left: auto;
     right: 2rem;
     gap: 0.5rem;
   }  
   .customer-testimonial__text {
-    font-size: 16px;
+    font-size: 14px;
   }
   .customer-testimonial__author {
     font-size: 16px;
@@ -163,22 +169,49 @@
     font-weight: 300;
   }
   /* Seção Clientes */
-  .clients__items {
+  .customer-testimonial .clients__items {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 52px;
+    /* gap: 52px; */
+    gap: 1.5em;
     margin: 3.8125em auto 0;
   }
-  .clients__item {
+  .customer-testimonial .clients__item {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 7rem;
+    /* font-size: 5rem; */
+    font-size: 6.5rem;
     background-color: var(--lightest);
     border-radius: 100%;
   }
-  .clients__item:last-of-type {
+  .customer-testimonial .clients__item > svg {
+    width: 104px;
+    height: 104px;
+  }
+  .customer-testimonial .clients__item:last-of-type {
+    display: flex;
+  }
+}
+
+@media (min-width:1024px) {
+  .customer-testimonial {
+    margin: 8em 0;
+  }
+  .customer-testimonial__container {
+    max-width: 1018px;
+  }
+  .customer-testimonial .clients__items {
+    gap: 52px;
+  }
+  .customer-testimonial .clients__item {
+    font-size: 7rem;
+  }
+  .customer-testimonial__text {
+    font-size: 16px;
+  }
+  .customer-testimonial__controls {
     display: flex;
   }
 }

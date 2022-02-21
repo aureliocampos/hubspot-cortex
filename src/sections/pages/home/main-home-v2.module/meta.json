@@ -11,6 +11,10 @@
     "autoload" : true,
     "path" : "../../../../lib/swiper/swiper.min.js",
     "name" : "swiper.min.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../../../lib/lottie.js",
+    "name" : "lottie.js"
   } ],
   "label" : "Main Home",
   "is_available_for_new_content" : true

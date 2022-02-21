@@ -1,7 +1,7 @@
 const swiperTestimonial = new Swiper('.swiper-testimonial', {
   loop: true,
   autoplay: {
-    delay: 7000,
+    delay: 15000,
     disableOnInteraction: false,
   },
   effect: "fade",
@@ -31,8 +31,7 @@ function animateLoadingArrowsPrev() {
   
   animations.forEach( item => {
 
-    const animate = item.getAnimations(options)
-
+    const animate = item.getAnimations()
     if (animate.length !== 0 ) {
       animate.forEach( anime => anime.cancel())
       return
@@ -47,7 +46,7 @@ function animateLoadingArrowsPrev() {
         { strokeDashoffset: '-140px' }
       ],
       {
-        duration: 7000, // Deve ser o mesmo tempo da propriedade "delay", do objeto "autoplay" passado no SWIPER
+        duration: 15000, // Deve ser o mesmo tempo da propriedade "delay", do objeto "autoplay" passado no SWIPER
         iterations: 1
       }
     )
@@ -62,7 +61,7 @@ function animateLoadingArrowsNext() {
   
   animations.forEach( item => {
 
-    const animate = item.getAnimations(options)
+    const animate = item.getAnimations()
 
     if (animate.length !== 0 ) {
       animate.forEach( anime => anime.cancel())
@@ -77,7 +76,7 @@ function animateLoadingArrowsNext() {
         { strokeDashoffset: '-140px' }
       ],
       {
-        duration: 7000, // Deve ser o mesmo tempo da propriedade "delay", do objeto "autoplay" passado no SWIPER
+        duration: 15000, // Deve ser o mesmo tempo da propriedade "delay", do objeto "autoplay" passado no SWIPER
         iterations: 1
       }
     )

@@ -1,6 +1,7 @@
 [ {
   "id" : "16d374f0-8105-94c1-7c64-d56f12e03ca7",
   "name" : "menu",
+  "display_width" : null,
   "label" : "Menu",
   "required" : false,
   "locked" : true,
@@ -9,6 +10,7 @@
 }, {
   "id" : "620c5b83-f403-d061-c93a-6824ae432fa1",
   "name" : "title_form",
+  "display_width" : null,
   "label" : "Título do Formulário",
   "required" : false,
   "locked" : true,
@@ -20,6 +22,7 @@
 }, {
   "id" : "7acdd35a-ea95-916b-d3a2-1e20f1b5419c",
   "name" : "form_field",
+  "display_width" : null,
   "label" : "Formulário",
   "required" : false,
   "locked" : true,
@@ -34,12 +37,14 @@
 }, {
   "id" : "5a3d16d2-dde2-e344-3d92-7b85166e0045",
   "name" : "cta_gupy",
+  "display_width" : null,
   "label" : "CTA Gupy",
   "required" : false,
   "locked" : true,
   "children" : [ {
     "id" : "54e9ce25-8b3c-2216-6871-9f8a8a40d2f1",
     "name" : "work_title",
+    "display_width" : null,
     "label" : "Título",
     "required" : false,
     "locked" : false,
@@ -51,6 +56,7 @@
   }, {
     "id" : "60e899ab-9c26-71e0-7c51-a243b414b2c7",
     "name" : "work_link",
+    "display_width" : null,
     "label" : "Link",
     "required" : false,
     "locked" : false,
@@ -69,6 +75,7 @@
   }, {
     "id" : "b4bccaa4-9cc2-bf0e-cdd1-a03563a9c8e8",
     "name" : "work_link_text",
+    "display_width" : null,
     "label" : "Texto",
     "required" : false,
     "locked" : false,
@@ -97,12 +104,14 @@
 }, {
   "id" : "0ee3907b-1c33-8468-86f4-88ec383a1c33",
   "name" : "cta_termos",
+  "display_width" : null,
   "label" : "CTA Termos",
   "required" : false,
   "locked" : true,
   "children" : [ {
     "id" : "b8a58bf9-9abd-0ee0-9ef4-2d76d627d1d4",
     "name" : "texto_do_link",
+    "display_width" : null,
     "label" : "Texto do link",
     "required" : false,
     "locked" : false,
@@ -114,6 +123,7 @@
   }, {
     "id" : "3c003b90-a3f0-ca72-996f-db4c9a1840fa",
     "name" : "link_field",
+    "display_width" : null,
     "label" : "Link",
     "required" : false,
     "locked" : false,

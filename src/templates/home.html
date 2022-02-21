@@ -4,12 +4,13 @@
   label: Home
   screenshotPath: ../images/template-previews/home.png
 -->
+
 {% extends "./layouts/base.html" %}
 
 {% block body %}
-  <main id="main-content" class="body-container-wrapper">
-    {% module "module_16329330097524" path="/cortex-v1/sections/pages/home/main-home-v2", label="main-home-v2" %}    
-    {% module "module_16327936847125" path="/cortex-v1/sections/pages/home/clients", label="Clientes Cortex" %}
-    {% module "module_16299864840374" path="/cortex-v1/sections/pages/home/investors", label="Seção Investidores" %}
+  <main id="main-content" class="body-container-wrapper" role="main">
+    {% module "module_16329330097524" path='/cortex-intelligence/sections/pages/home/main-home-v2', label="main-home-v2" %}    
+    {% module "module_16454694684191" path="/cortex-intelligence/sections/pages/home/clients-v2", label="clientes Cortex V2" %}
+    {% module "module_16299864840374" path="/cortex-intelligence/sections/pages/home/investors", label="Seção Investidores" %}
   </main>
 {% endblock body %}

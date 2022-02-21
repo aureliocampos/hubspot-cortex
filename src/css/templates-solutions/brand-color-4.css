@@ -54,6 +54,21 @@
 .customer-testimonial__author {
   color: var(--green_light);
 }
-.clients__item {
+.customer-testimonial .clients__item {
   color: var(--green_official);
+}
+
+
+/**
+*** ESTILOS DEFINIDOS PARA LANDING PAGES E THANK YOU PAGES
+* EBOOK
+* MEETUP
+* THANK YOU
+*/
+.lp-main__tag {
+  background-color: var(--green_official);
+}
+
+:root {
+  --brand_official : var(--green_official);
 }

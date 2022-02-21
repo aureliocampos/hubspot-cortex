@@ -1,0 +1,108 @@
+[ {
+  "id" : "50dcc255-066c-3321-dc3d-a0765bf12690",
+  "name" : "tag",
+  "display_width" : null,
+  "label" : "Tag",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Ebook"
+}, {
+  "id" : "dcf67815-9ec4-8520-fd4d-cfff71de5529",
+  "name" : "title_h1",
+  "display_width" : null,
+  "label" : "Título H1",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Novas métricas e indicadores de comunicação"
+}, {
+  "id" : "74429741-68ff-9aaf-b5a4-fe9450f87c5f",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Imagem",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://pages.cortex-intelligence.com/hubfs/capa-lp.png",
+    "alt" : "capa-lp",
+    "loading" : "lazy",
+    "width" : 1028,
+    "height" : 1160,
+    "max_width" : 1028,
+    "max_height" : 1160
+  }
+}, {
+  "id" : "6ab5f4ab-ec5e-081c-8faa-b8b95c8630b8",
+  "name" : "escolha_o_tipo_de_imagem",
+  "display_width" : null,
+  "label" : "Escolha o tipo de imagem",
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "meetup", "Mockup Meetup" ], [ "ebook", "Mockup Ebook" ] ],
+  "type" : "choice",
+  "default" : ""
+}, {
+  "id" : "f7ca918b-6499-e3fd-fcdc-f11093d24a5c",
+  "name" : "button_cta",
+  "display_width" : null,
+  "label" : "Botão CTA",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "8080b032-3cff-bbb0-89a5-a685d1833e88",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : true,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#section-form",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "e12f7b9d-8db1-c935-ae14-1ce24bdd81cb",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Baixar Ebook"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "link_field" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#section-form",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "text_field" : "Baixar Ebook"
+  }
+} ]

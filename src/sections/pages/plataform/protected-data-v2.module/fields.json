@@ -1,6 +1,7 @@
 [ {
   "id" : "52fbe335-4cf9-8de4-a9d7-fd75476e0b5b",
   "name" : "image_field",
+  "display_width" : null,
   "label" : "Imagem",
   "required" : false,
   "locked" : false,
@@ -19,6 +20,7 @@
 }, {
   "id" : "f46983f2-c12c-145b-2d44-ae86b27510f0",
   "name" : "texto",
+  "display_width" : null,
   "label" : "Texto",
   "required" : false,
   "locked" : false,

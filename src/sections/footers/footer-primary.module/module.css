@@ -12,7 +12,7 @@
   font: 400 1.125em var(--primary-font);
   color: var(--darkest);
 }
-.form-title {
+.footer__form .form-title {
   font: 400 1.3125em var(--primary-font);
   color: var(--darkest);
   line-height: 25px;
@@ -35,57 +35,48 @@
 }
 
 /* Formulário campo de email */
-.footer__form form .hs_email {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 80%;
-}
 .footer__form form .hs_email .hs-input {
   width: 100%;
   height: 44px;
   font: 400 0.9rem var(--secondary-font);
-  padding: .75em 0 .75em 1em;
+  padding: .75em 1.5em;
   background: #F1F1FA;
-  border: 1px solid var(--dark);
+  border: none;
   box-sizing: border-box;
-  border-radius: 2.5rem 0 0 2.5rem;
+  border-radius: 2.5rem;
 }
 
 /* Formulário botão submit */
 .footer__form form .hs_submit {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 20%;
-}
-.footer__form form .actions {
-  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
+  margin: 1em auto 0;
 }
+
 .footer__form form .actions .hs-button {
-  width: 100%;
+  width: 100px;
   height: 44px;
-  color: transparent;
-  padding: 0;
-  background-color: var(--dark);
-  border: 1px solid var(--dark);
-  border-radius: 0 2.5rem 2.5rem 0;
-}
-.footer__form form .actions .icon-input-seta {
-  position: absolute;
-  color: white;
+  font: 400 1em / 120% var(--secondary-font);
+  color: var(--white);
+  background-color: var(--darkest);
+  border: none;
+  border-radius: 2.5em;
+  cursor: pointer;
 }
 
 /* Formulário texto */
 .footer__form form .legal-consent-container {
   order: 4;
-  margin-top: 4rem;
+  margin-top: 2em;
 }
-
+.footer__form .submitted-message {
+  font: 400 1em var(--secondary-font);
+  color: var(--darkest);
+}
+.hs_error_rollup {
+  position: absolute;
+  font: 400 0.875em var(--secondary-font);
+  color: var(--red_official);
+}
 /* CTA Trabalhe conosco */
 .footer-cortex__cta {
   text-align: center;
@@ -145,7 +136,7 @@
   margin-bottom: 0.6875em;
 }
 @media (min-width: 768px) {
-  .form-title {
+  .footer__form .form-title {
     width: 300px;
     margin: 0;
   }
@@ -155,7 +146,16 @@
     align-items: flex-start;
   }
   .footer__form form  {
-    max-width: 360px;
+    max-width: 400px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .footer__form form .hs_email .hs-input {
+    width: 270px;
+  }
+  .footer__form form .hs_submit {
+    margin: 0 auto;
   }
   .footer-section__cta {
     display: flex;
@@ -165,11 +165,13 @@
     text-align: left;
   }
   .footer-cortex__cta .button--primary {
+    font-size: 12px;
     margin-left: 0;
   }
   .footer__menu {
     display: block;
-    width: 715px;
+    width: 500px;
+    font-size: 13px;
   }
   .footer__menu .hs-menu-wrapper>ul[role="menu"] {
     display: flex;
@@ -211,22 +213,41 @@
   .footer-cortex__cta .footer__title {
     font-size: 24px;
   }
-  .form-title {
+  .footer__form .form-title {
     font-size: 1.75em;
     width: 50%;
     line-height: 35px;
   }
-  .footer__form form {
-    margin-right: 4.5em;
-  }
-  .footer__form form .actions  {
-    width: 70%;
-  }
+  
   .footer hr:nth-of-type(2) {
     opacity: 0;
     margin: 2em 0;
   }
   .footer__terms .icon-logo-cortex {
     font-size: 25px;
+  }
+  .icon-headset-support {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 8px;
+  }
+  .footer-cortex__cta .button--primary {
+    font-size: 16px;
+  }
+  .footer__menu {
+    width: 715px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__form form  {
+    max-width: 500px;
+  }
+  .footer__form form .hs_email .hs-input,
+  .footer__form form .legal-consent-container  {
+    width: 330px;
+  }
+  .footer__form form .hs_submit {
+    margin: 0 0 0 1em;
   }
 }

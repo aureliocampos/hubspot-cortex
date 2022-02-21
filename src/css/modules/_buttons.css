@@ -6,13 +6,16 @@
   text-decoration: none;
   line-height: 1;
   border-radius: 40px;
-  transition: all .2s ease-in-out;
+  transition: all .3s ease-in-out;
 } 
 
 .button--primary {
   color: var(--darkest);
   background-color: transparent;
   border: 1px solid var(--darkest);
+}
+.button--primary .icon-input-seta {
+  display: none;
 }
 .button--primary:hover {
   color: var(--white);
@@ -24,14 +27,39 @@
   background-color: var(--darkest);
   border: 1px solid var(--darkest);
 }
+.button--primary-invert:hover {
+  color: var(--darkest);
+  background-color: transparent;
+  border: 1px solid var(--darkest);
+}
 .button--secondary {
   font-weight: 600;
   color: var(--white);
   background-color: transparent;
   border: 1px solid var(--white);
 }
-
+.button--secondary:hover {
+  color: var(--darkest);
+  background-color: var(--white);
+  border: 1px solid var(--white);
+}
 .icon-arrow-round-prev,
 .icon-arrow-round-next {
   cursor: pointer; 
+}
+
+.button--link {
+  text-decoration: underline;
+  color: var(--blue_spotlight);
+}
+.button--link:hover {
+  text-decoration: underline;
+  color: var(--blue_spotlight);
+}
+.button--lp-cta {
+  font: 600 1em var(--secondary-font);
+  line-height: 120%;
+  color: var(--white);
+  background-color: var(--Auxiliary-yellow);
+  margin-top: 1.5rem;
 }

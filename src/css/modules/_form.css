@@ -1,0 +1,188 @@
+/* Container */
+#cortex-form {
+  max-width: 320px;
+  margin: 0 auto;
+}
+#cortex-form .form-title {
+  font: 600 1.5em var(--primary-font);
+  color: var(--lightest);
+  line-height: 120%;
+  margin-bottom: 2rem;
+}
+#cortex-form .hs_cos_wrapper_type_form {
+  display: block;
+  padding: 4em 1.25em;
+  border-radius: 25px;
+}
+
+/* Inputs */
+#cortex-form .hs_cos_wrapper_type_form input:focus-visible,
+#cortex-form .hs_cos_wrapper_type_form select:focus-visible {
+  outline: none;
+}
+#cortex-form .hs_cos_wrapper_type_form fieldset.form-columns-1 .input,
+#cortex-form .hs_cos_wrapper_type_form fieldset.form-columns-2 .input {
+  margin: 0;
+}
+#cortex-form .hs_cos_wrapper_type_form fieldset.form-columns-1 .hs-input,
+#cortex-form .hs_cos_wrapper_type_form fieldset.form-columns-2 .hs-input,
+#cortex-form .hs_cos_wrapper_type_form form .hs-form-field .input > .hs-input  {
+  width: 100%;
+}
+#cortex-form .hs_cos_wrapper_type_form fieldset input[type="text"],
+#cortex-form .hs_cos_wrapper_type_form fieldset input[type="email"],
+#cortex-form .hs_cos_wrapper_type_form fieldset input[type="tel"],
+#cortex-form .hs_cos_wrapper_type_form fieldset select {
+  height: 35px;
+  font: 400 12px var(--secondary-font);
+  padding-left: 6px;
+  border: 1px solid var(--darkest);
+}
+#cortex-form .hs_cos_wrapper_type_form fieldset.form-columns-1 .hs-input[type="checkbox"] {
+  width: auto;
+}
+#cortex-form .hs_cos_wrapper_type_form .hs-form-field {
+  margin-bottom: 1rem;
+}
+
+/* Labels */
+#cortex-form .hs_cos_wrapper_type_form label {
+  display: inline-block;
+  width: 95%;
+  font: 400 12px var(--secondary-font);
+  color: var(--lightest);
+  line-height: 126%;
+  margin-bottom: 0.5rem;
+}
+#cortex-form .hs_cos_wrapper_type_form label.hs-error-msg {
+  font-size: 0.7em;
+}
+#cortex-form .hs_cos_wrapper_type_form label.hs-error-msg,
+#cortex-form .hs_cos_wrapper_type_form .hs_error_rollup label.hs-main-font-element{
+  color: var(--red-spotlight);
+}
+#cortex-form .hs_cos_wrapper_type_form label.hs-form-checkbox-display {
+  display: flex;
+  align-items: center;
+}
+#cortex-form .hs_cos_wrapper_type_form label.hs-form-checkbox-display .hs-input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+#cortex-form .hs_cos_wrapper_type_form .legal-consent-container p {
+  font: 400 12px var(--secondary-font);
+  color: var(--lightest);
+  line-height: 148%;
+  margin: 1rem 0;
+}
+#cortex-form .hs_cos_wrapper_type_form .legal-consent-container .hs-input[type="checkbox"] {
+  margin-top: 3px;
+}
+
+/* button */
+#cortex-form .hs_cos_wrapper_type_form input[type="submit"] {
+  display: block;
+  width: max-content;
+  font: bold 0.75em var(--secondary-font);
+  color: var(--lightest);
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1;
+  padding: 0.875em 1.5em;
+  margin: 2rem auto 0 auto;
+  transition: all .3s ease-in-out;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  background-color: var(--Auxiliary-yellow);
+  cursor: pointer;
+}
+
+ /* estilo mensagem de sucesso */
+ #cortex-form .submitted-message {
+  font: 500 1.25em var(--primary-font);
+  color: var(--Auxiliary-green);
+  margin-top: 1em;
+}
+
+
+@media (min-width: 768px ) {
+  #cortex-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  #cortex-form .hs_cos_wrapper_type_form fieldset.form-columns-2 .hs-form-field {
+    width: 49%;
+  }
+  #cortex-form .hs_cos_wrapper_type_form fieldset.form-columns-2 .hs-form-field:first-of-type {
+    margin-right: 7px;
+  }
+}
+
+@media (min-width: 1024px ) {
+  #cortex-form {
+    max-width: 450px;
+    margin: 0;
+  }
+  #cortex-form .hs_cos_wrapper_type_form input[type="submit"] {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1200px ) {
+  /* Container */
+  #cortex-form {
+    max-width: 500px;
+    margin: 0;
+  }
+  #cortex-form .form-title {
+    font-size: 2em;
+  }
+  #cortex-form .hs_cos_wrapper_type_form {
+    padding: 5em 2.5em;
+  }
+
+  /* inputs */
+  #cortex-form .hs_cos_wrapper_type_form fieldset input[type="text"],
+  #cortex-form .hs_cos_wrapper_type_form fieldset input[type="email"],
+  #cortex-form .hs_cos_wrapper_type_form fieldset input[type="tel"],
+  #cortex-form .hs_cos_wrapper_type_form fieldset select {
+    height: 45px;
+    font-size: 1em;
+    padding: 0.5em;
+  }
+
+  /* label */
+  #cortex-form .hs_cos_wrapper_type_form label,
+  #cortex-form .hs_cos_wrapper_type_form .legal-consent-container p  {
+    font-size: 1em;
+  }
+  #cortex-form .hs_cos_wrapper_type_form .legal-consent-container .hs-input[type="checkbox"] {
+    margin-top: 6px;
+  }
+}
+
+
+/* Formulário fundo Escuro */
+#cortex-form.cortex-form--black .hs_cos_wrapper_type_form {
+  background-color: var(--darkest);
+}
+
+
+/* Formulário fundo claro */
+#cortex-form.cortex-form--white .hs_cos_wrapper_type_form {
+  background-color: var(--white);
+}
+#cortex-form.cortex-form--white .form-title {
+  color: var(--darkest);
+}
+#cortex-form.cortex-form--white .hs_cos_wrapper_type_form label {
+  color: var(--darkest);
+}
+#cortex-form.cortex-form--white .hs_cos_wrapper_type_form .legal-consent-container p {
+  color: var(--darkest);
+}
+#cortex-form.cortex-form--white .hs_cos_wrapper_type_form label.hs-error-msg, 
+#cortex-form.cortex-form--white .hs_cos_wrapper_type_form .hs_error_rollup label.hs-main-font-element {
+  color: var(--red-spotlight);
+}

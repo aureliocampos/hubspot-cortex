@@ -1,0 +1,44 @@
+<!--
+  templateType: none
+-->
+
+<!DOCTYPE html>
+<html lang="{{ html_lang }}" {{ html_lang_dir }}>
+
+<head>
+
+  <meta charset="utf-8">
+  {% if content.html_title %}<title>{{ content.html_title }}</title>{% endif %}
+
+  {% if site_settings.favicon_src %}
+  <link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
+  <meta name="description" content="{{ content.meta_description }}">
+  {{ standard_header_includes }}
+
+  <link rel="preconnect" href="https://cdn2.hubspot.net">
+  {{ require_css(get_asset_url('/cortex-intelligence/lib/swiper/swiper.min.css')) }}
+  {{ require_css(get_asset_url('/cortex-intelligence/css/main.css')) }}
+
+</head>
+
+  <body class="body-wrapper {{ builtin_body_classes }}">
+    
+    <!-- Seletor de Cores Cortex -->
+    {% module "module_16415189198955" path="/cortex-intelligence/modules/color-theme-config", label="Configurar tema de cores" %}
+
+      <!-- Header -->
+      {% module "module_16415250535541" path="/cortex-intelligence/sections/headers/lp-header-primary", label="Header" %}
+
+      <!-- Conteúdo inserido dentro do template -->
+      {% block body %}
+      {% endblock body %}
+
+      <!-- Footer -->
+      {% module "module_16408981570786" path="/cortex-intelligence/sections/footers/lp-footer-primary", label="Footer" %}
+    
+    <!-- Scripts e bibliotecas globais -->
+    {{ require_js(get_asset_url('/cortex-intelligence/lib/swiper/swiper.min.js'), { position: 'header'}) }}
+    {{ standard_footer_includes }}
+
+  </body>
+</html>

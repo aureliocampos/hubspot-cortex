@@ -1,6 +1,7 @@
 [ {
   "id" : "9546c04d-5f8d-0d74-1aa4-7293c71d16b4",
   "name" : "image_field",
+  "display_width" : null,
   "label" : "Imagem",
   "required" : false,
   "locked" : false,
@@ -21,6 +22,7 @@
 }, {
   "id" : "bb9b7e36-6938-005d-7a50-5f257497de25",
   "name" : "title",
+  "display_width" : null,
   "label" : "Título",
   "required" : false,
   "locked" : false,
@@ -32,6 +34,7 @@
 }, {
   "id" : "a14c1d46-a045-8ba3-7c9b-bbb6272a9f27",
   "name" : "subtitle",
+  "display_width" : null,
   "label" : "Sutitulo",
   "required" : false,
   "locked" : false,
@@ -43,6 +46,7 @@
 }, {
   "id" : "93904976-831f-58de-29fa-edc4098f3797",
   "name" : "text",
+  "display_width" : null,
   "label" : "Texto",
   "required" : false,
   "locked" : false,
@@ -51,12 +55,14 @@
 }, {
   "id" : "6247fff6-37b7-6d8b-5d94-1269cd2f1752",
   "name" : "cta_trabalhe_conosco",
+  "display_width" : null,
   "label" : "CTA Trabalhe Conosco",
   "required" : false,
   "locked" : false,
   "children" : [ {
     "id" : "0609c09c-087c-0b9d-fdd2-8f2417a1e32d",
     "name" : "link_texto",
+    "display_width" : null,
     "label" : "Link Texto",
     "required" : false,
     "locked" : false,
@@ -68,6 +74,7 @@
   }, {
     "id" : "b5b91350-39c4-143e-966e-5a71e3dbcc3b",
     "name" : "link_field",
+    "display_width" : null,
     "label" : "Link",
     "required" : false,
     "locked" : false,

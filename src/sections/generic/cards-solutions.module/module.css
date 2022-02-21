@@ -104,6 +104,8 @@
 }
 .main-home__card-image {
   width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /* Card Itens */
@@ -147,6 +149,7 @@
 .main-home__cards-control .main-home__card-title:first-of-type span:nth-of-type(3n) {
   color: var(--purple_official);
 }
+/* default */
 .main-home__card:first-of-type .button--main-home {
   color: var(--purple_official);
   background-color: var(--purple_lightest);
@@ -154,7 +157,11 @@
 .main-home__card:first-of-type .button--main-home > span:before {
   color: var(--purple_spotlight);
 }
-
+/* Hover */
+.main-home__card:first-of-type .button--main-home:hover {
+  color: var(--purple_lightest);
+  background-color: var(--purple_official);
+}
 
 /* Estilo do card 1 baseado na cor da marca brand-color 2*/
 .main-home__card:last-of-type .main-home__card-title span:nth-of-type(1n),
@@ -169,12 +176,18 @@
 .main-home__cards-control .main-home__card-title:last-of-type span:nth-of-type(3n) {
   color: var(--blue_official);
 }
+/* default */
 .main-home__card:last-of-type .button--main-home {
   color: var(--blue_official);
   background-color: var(--blue_lightest);
 }
 .main-home__card:last-of-type .button--main-home > span:before {
   color: var(--blue_spotlight);
+}
+/* Hover */
+.main-home__card:last-of-type .button--main-home:hover {
+  color: var(--blue_lightest);
+  background-color: var(--blue_official);
 }
 
 /*
@@ -207,12 +220,22 @@
   #card-1 > img {
     margin-bottom: 25px;
   }
+  .main-home__items.main-home__cards.swiper-wrapper {
+    display: flex;
+  }
   .main-home__items {
     display: flex;
     justify-content: center;
   }
   .main-home__card {
-    max-width: 540px;
+    max-width: 48%;
+  }
+  .main-home__card-text {
+    font-size: 14px;
+  }
+  .main-home__title--secondary {
+    margin: 0 auto;
+    width: 70%;
   }
 }
 
@@ -267,11 +290,13 @@
   hr[data-disable="desktop"] {
     display: none;
   }
+
   .main-home__items {
     margin: 0;
-    gap: 2.25em;
+    gap: 1.25em;
   }
   .main-home__card {
+    max-width: 48%;
     padding: 3em;
     border: 3px solid #F6F6FB;
     box-shadow: 20px 20px 50px rgba(204, 204, 230, 0.1);
@@ -285,6 +310,8 @@
     font-size: 2.5em;
   }
   .main-home__card-text {
+    width: 90%;
+    font-size: 1.125em;
     text-align: left;
     color: var(--dark);
     margin: 0.75rem 0 1.75rem;
@@ -332,9 +359,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.3em;
-  }
-  .main-home__items.main-home__cards.swiper-wrapper {
-    display: flex;
   }
   .main-home__card-item {
     flex-direction: column;

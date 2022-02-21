@@ -1,0 +1,19 @@
+<!--
+    templateType: blog_listing
+    isAvailableForNewContent: true
+    label: Blog listing
+-->
+
+{% extends "../layouts/base-materials.html" %}
+{% block body %}
+  <main id="main-content" class="body-container-wrapper" role="main">
+    {% if blog_author %}
+      {% include "./partial/author.html" %}
+    {% elif tag %}
+      {% include "./partial/category.html" %}
+    {% else %}
+      {% include "./partial/blog-listing.html" %}
+    {% endif %}
+    {% module "module_16427922005877" path="/cortex-intelligence/modules/form-newsletter", label="form-newsletter" %}
+  </main>
+{% endblock body %}

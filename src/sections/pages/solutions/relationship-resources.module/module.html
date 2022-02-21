@@ -9,9 +9,9 @@
           <article class="rel-resources__card swiper-slide">
             <section class="rel-resources__card-content">
               <figure class="rel-resources__card-figure">
-                {% if item.tag_field %}
+                <!-- {% if item.tag_field %}
                   <small class="rel-resources__card-tag">{{ item.tag_field }}</small>
-                {% endif %}
+                {% endif %} -->
                 <a href="{{ resource.absolute_url }}" >
                   <img src="{{ resource.featuredImage }}" alt="{{ resource.featuredImageAltText }}" 
                   class="rel-resources__card-image"
@@ -41,6 +41,8 @@
                 {% set button_text = 'Baixar eBook' %}
               {% elif item.tag_field == 'Caso de Sucesso' %}
                 {% set button_text = 'Baixar Case' %}
+              {% else %}
+                {% set button_text = 'Baixar' %}
               {% endif %}
               <a href="{{ resource.absolute_url }}" class="button button--primary">{{ button_text }}</a>
             </div>

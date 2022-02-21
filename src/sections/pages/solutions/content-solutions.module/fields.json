@@ -1,6 +1,7 @@
 [ {
   "id" : "d228a167-4e2b-f02b-4a31-17bfccde910e",
   "name" : "card_de_conte_do",
+  "display_width" : null,
   "label" : "Card de Conteúdo",
   "required" : false,
   "locked" : false,
@@ -13,6 +14,7 @@
   "children" : [ {
     "id" : "6efc75c6-08da-1510-c80f-f41bb9d3a069",
     "name" : "image",
+    "display_width" : null,
     "label" : "Imagem",
     "required" : false,
     "locked" : false,
@@ -29,6 +31,7 @@
   }, {
     "id" : "9eaba7f9-aa1a-cbd1-81fe-6dabcff3f956",
     "name" : "title",
+    "display_width" : null,
     "label" : "Título",
     "required" : false,
     "locked" : false,
@@ -39,6 +42,7 @@
   }, {
     "id" : "300e84d6-131e-9392-65e7-8354e2e7389a",
     "name" : "texto",
+    "display_width" : null,
     "label" : "Texto",
     "required" : false,
     "locked" : false,

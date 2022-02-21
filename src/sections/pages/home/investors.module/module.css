@@ -13,7 +13,7 @@
   font-weight: 400;
   line-height: 120%;
   text-align: center;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.015em;
 }
 .investors__title p {
   margin-bottom: 12px;
@@ -58,7 +58,11 @@
   .investors__item {
     margin: 0 1.375em;
   }
-
+  .investors__item .investors__image {
+    width: 81px;
+    height: auto;
+    object-fit: cover;
+  }
 }
 @media (min-width: 1200px) {
   .investors__container {
@@ -74,5 +78,10 @@
   }
   .investors__item>span {
     font-size: 2.125em;
+  }
+  .investors__item .investors__image {
+    width: auto;
+    height: 38px;
+    object-fit: cover;
   }
 }

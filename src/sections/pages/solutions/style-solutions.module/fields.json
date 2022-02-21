@@ -1,6 +1,7 @@
 [ {
   "id" : "68249cf2-72a7-49a9-4e56-93698d33e884",
   "name" : "escolha_a_cor_da_marca",
+  "display_width" : null,
   "label" : "Escolha a cor da marca",
   "required" : false,
   "locked" : false,

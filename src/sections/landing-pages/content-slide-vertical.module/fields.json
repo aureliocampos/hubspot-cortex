@@ -1,0 +1,85 @@
+[ {
+  "id" : "a99f1537-4a9b-e69f-d51e-1c12886ecbb5",
+  "name" : "item",
+  "display_width" : null,
+  "label" : "Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "eb088168-d8a0-1bc6-ea0c-79e7b58f98cc",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "05cc08a3-a8e5-8bbf-f180-28ecab593519",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Imagem",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/Sales-stack_-o-que-e-e-como-definir-as-ferramentas-de-vendas-do-seu-time_-1.jpg",
+      "alt" : "Sales-stack_-o-que-e-e-como-definir-as-ferramentas-de-vendas-do-seu-time_-1",
+      "width" : 630,
+      "height" : 350,
+      "max_width" : 630,
+      "max_height" : 350
+    }
+  }, {
+    "id" : "eb088168-d8a0-1bc6-ea0c-79e7b58f98cc",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Título",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Métricas"
+  }, {
+    "id" : "0981445b-673b-989a-dad7-60cca2a84ab2",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Quais são as métricas mais importantes atualmente e o quedeve ser mensurado"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image_field" : {
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/Sales-stack_-o-que-e-e-como-definir-as-ferramentas-de-vendas-do-seu-time_-1.jpg",
+      "alt" : "Sales-stack_-o-que-e-e-como-definir-as-ferramentas-de-vendas-do-seu-time_-1",
+      "width" : 630,
+      "height" : 350,
+      "max_width" : 630,
+      "max_height" : 350
+    },
+    "title" : "Métricas",
+    "text_field" : "Quais são as métricas mais importantes atualmente e o quedeve ser mensurado"
+  }
+}, {
+  "id" : "0d30fe9e-ab77-0e6c-bca1-5dd94c7e1862",
+  "name" : "title_h2",
+  "display_width" : null,
+  "label" : "Título h2",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "O que você vai encontrar nesse material"
+} ]

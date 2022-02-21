@@ -1,0 +1,62 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "Додати до робочого циклу",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "Щоб надіслати наступне електронне повідомлення, переконайтеся, що ввімкнено параметр «Налаштувати контакти, створені як маркетингові». Ви можете керувати цим у налаштуваннях. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>Дізнатися більше</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "Відправити наступний електронний лист",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "Дякуємо за надсилання форми.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "Форма",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "Робочий цикл",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Форма",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "Надіслати на зазначені адреси електронної пошти повідомлення про форми замість стандартних форм",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "Адреси електронної пошти",
+    "description" : "",
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "Кампанія з продажу товарів",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "Електронне повідомлення",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Заголовок форми",
+    "description" : "",
+    "placeholders" : null
+  }
+}

@@ -1,29 +1,31 @@
 <!--
   templateType: search_results_page
   isAvailableForNewContent: true
-  label: Boilerplate - search results
+  label: Search Results
   screenshotPath: ../../images/template-previews/search-results.png
 -->
-{% set template_css = '../../css/templates/system.css' %}
-{% extends '../layouts/base.html' %}
+{% extends "../layouts/base-materials.html" %}
 
+{% require_css %}
+<style type="text/css" id="search-results">.hs-search-results__next-page,.hs-search-results__prev-page,.search__input-container h1{font-family:var(--primary-font);color:var(--darkest)}.hs-search-results .hs-search-results__listing{padding:40px 1.5rem 46px 1.5rem}.hs-search-results .hs-search-results__listing li{margin-bottom:40px}.hs-search-results .hs-search-results__listing li .hs-search-results__featured-image img{width:100%;height:171px;object-fit:cover;border-radius:12px}.hs-search-results .hs-search-results__listing .hs-search-results__title{display:block;font-family:var(--primary-font);font-size:16px;color:var(--darkest);line-height:19px;margin-top:18px}.hs-search-results__description{font-size:12px;color:var(--dark);line-height:148%;letter-spacing:-.01em}@media (min-width:1200px){.search__container{max-width:1114px;margin:80px auto}.search__input-container{display:flex;align-items:center;padding:0}.search__input-container h1{margin-right:32px}.hs-search-results .hs-search-results__listing li .hs-search-results__featured-image img{height:190px}.hs-search-results .hs-search-results__listing .hs-search-results__title{font-size:18px;line-height:21px}.hs-search-results .hs-search-results__listing{padding:80px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:40px}.hs-search-results__pagination{height:66px;padding:0 1.5em}.hs-search-results__description{display:none}}</style>
+{% end_require_css %}
 {% block body %}
-{# The main-content ID is used for the navigation skipper in the header.html file. More information on the navigation skipper can be found here: https://github.com/HubSpot/cms-theme-boilerplate/wiki/Accessibility #}
-<main id="main-content" class="body-container-wrapper">
-  <section class="content-wrapper">
-    <div class="systems-page systems-page--search-results">
-      {% module_block module 'search_results_content'
-        label='Search results heading',
-        path='@hubspot/rich_text'
-      %}
-        {% module_attribute 'html' %}
-          <h1>Results for "{{ request.query_dict.term|escape }}"</h1>
-        {% end_module_attribute %}
-      {% end_module_block %}
-      {% module 'search_results'
-        path='@hubspot/search_results'
-      %}
+  <main id="main-content" class="body-container-wrapper search-results  " role="main">
+    <div class="search__container">
+      <section class="search__input-container">
+        <h1>Resultados para </h1>
+        {% module "search_results_page_search_field" overrideable=true, path="@hubspot/search_input", label='Site Search Input' placeholder="Buscar" %}
+      </section>
+
+      <section class="search__results">
+        {% module "search_results_page_search_results" overrideable=true, path="@hubspot/search_results", display_featured_images=true,label='Site Search Results' %}
+      </section>
     </div>
-  </section>
-</main>
+
+  </main>
+
+{% require_js %}
+  <script>setTimeout(()=>{document.querySelector(".hs-search-results .hs-search-results__next-page").textContent="Próxima página >"},2e3),setTimeout(()=>{document.querySelector(".hs-search-results .hs-search-results__prev-page").textContent="< Página anterior"},2e3),setTimeout(()=>{document.querySelectorAll(".hs-search-results__listing .hs-search-results__title").forEach(e=>{"Blog"===String(e.textContent)&&(e.parentElement.style.display="none")})},1e3) </script>
+{% end_require_js %}
+
 {% endblock body %}

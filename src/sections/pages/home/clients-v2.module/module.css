@@ -1,0 +1,123 @@
+.section-clients {
+  padding: 2em 1.5em;
+}
+.section-clients .section__title {
+  font: 500 1.5em / 108% var(--primary-font);
+  color: var(--darkest);
+  text-align: center;
+  letter-spacing: -0.02em;
+  margin: 0 auto;
+}
+.clients-logos__items[data-media="mobile"] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.875em;
+  max-width: 320px;
+  margin: 2em auto;
+}
+.clients-logos__items[data-media="mobile"] .clients-logos__item:first-of-type {
+  margin-left: 2em;
+}
+.clients-logos__items[data-media="mobile"] .clients-logos__item:nth-of-type(8) {
+  margin-left: 3em;
+}
+.clients-info__items {
+  max-width: 380px;
+  margin: 2em auto;
+}
+.clients-info__item {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 0.875em;
+}
+.clients-info__image {
+  width: 50px;
+  height: 50px;
+}
+.clients-info__text {
+  font: 400 0.875em / 148% var(--secondary-font);
+  color: var(--darkest);
+}
+.clients-logos__items[data-media="desktop"] {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .clients-logos__items[data-media="mobile"] {
+    display: none;
+  }
+  .clients-logos__items[data-media="desktop"] {
+    display: block;
+  }
+  .clients__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .clients__content {
+    max-width: 500px;
+  }
+  .section-clients .section__title {
+    font-size: 2.5em;
+    text-align: left;
+    margin: 0;
+  }
+  .clients-info__items {
+    max-width: 410px;
+    margin: 3em 0 0;
+  }
+  .clients-info__item:last-of-type {
+    margin-bottom: 0;
+  }
+  .clients-info__image {
+    width: auto;
+    height: auto;
+  }
+  .clients-logos__items[data-media="desktop"] {
+    display: flex;
+    max-width: 490px;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .clients-logos__item:first-of-type,
+  .clients-logos__item:nth-of-type(9),
+  .clients-logos__item:nth-of-type(17) {
+    margin-left: 3em;
+  }
+  .clients-logos__image {
+    width: 98px;
+    height: auto;
+  }
+  .clients-info__text {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-clients {
+    padding: 4em 1.5em;
+  }
+  .clients__container {
+    max-width: 1114px;
+    margin: 0 auto;
+  }
+  .section-clients .section__title {
+    font-size: 3em;
+  }
+  .clients-info__items {
+    max-width: 500px;
+  }
+  .clients-info__item {
+    gap: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  .clients-info__text {
+    font-size: 1.125em;
+  }
+  .clients-logos__items[data-media="desktop"] {
+    max-width: 540px;
+  }
+  .clients-logos__image {
+    width: auto;
+  }
+}

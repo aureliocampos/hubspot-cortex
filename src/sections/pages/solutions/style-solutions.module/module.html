@@ -1,12 +1,12 @@
 {% if module.escolha_a_cor_da_marca == "brand_color_2" %}
 
-  {{ require_css(get_asset_url('/cortex-v1/css/templates-solutions/brand-color-2.css')) }}
-  {{ require_js( get_asset_url('/cortex-v1/js/templates-solutions/brand-color-2.js') , { position: 'footer', async: true}) }}
+  {{ require_css(get_asset_url('/cortex-intelligence/css/templates-solutions/brand-color-2.css')) }}
+  {{ require_js( get_asset_url('/cortex-intelligence/js/templates-solutions/brand-color-2.js') , { position: 'footer', async: true}) }}
 
 {% elif module.escolha_a_cor_da_marca == "brand_color_3" %}
-  <link type="text/css" rel="stylesheet" href="{{ get_asset_url('/cortex-v1/css/templates-solutions/brand-color-3.css') }}">
+  <link type="text/css" rel="stylesheet" href="{{ get_asset_url('/cortex-intelligence/css/templates-solutions/brand-color-3.css') }}">
 {% elif module.escolha_a_cor_da_marca == "brand_color_4" %}
-  <link type="text/css" rel="stylesheet" href="{{ get_asset_url('/cortex-v1/css/templates-solutions/brand-color-4.css') }}">
+  <link type="text/css" rel="stylesheet" href="{{ get_asset_url('/cortex-intelligence/css/templates-solutions/brand-color-4.css') }}">
 {% else %}
-  <link type="text/css" rel="stylesheet" href="{{ get_asset_url('/cortex-v1/css/templates-solutions/brand-color-neutral.css') }}">
+  <link type="text/css" rel="stylesheet" href="{{ get_asset_url('/cortex-intelligence/css/templates-solutions/brand-color-neutral.css') }}">
 {% endif %}

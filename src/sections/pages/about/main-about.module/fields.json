@@ -1,6 +1,7 @@
 [ {
   "id" : "0f70d0aa-b154-3521-97c8-24dfb3c75350",
   "name" : "section__title",
+  "display_width" : null,
   "label" : "Título",
   "required" : false,
   "locked" : false,
@@ -12,6 +13,7 @@
 }, {
   "id" : "f5c2ab8f-5111-23fa-476f-7ee3704432ab",
   "name" : "section__text",
+  "display_width" : null,
   "label" : "Texto da seção",
   "required" : false,
   "locked" : false,
@@ -20,6 +22,7 @@
 }, {
   "id" : "f2245b9f-d227-d7de-e0eb-e5b4a9dc26cf",
   "name" : "image_field",
+  "display_width" : null,
   "label" : "Imagem",
   "required" : false,
   "locked" : false,

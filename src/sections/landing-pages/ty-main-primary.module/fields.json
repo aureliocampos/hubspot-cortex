@@ -1,0 +1,60 @@
+[ {
+  "id" : "50dcc255-066c-3321-dc3d-a0765bf12690",
+  "name" : "tag",
+  "display_width" : null,
+  "label" : "Tag",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Ebook"
+}, {
+  "id" : "dcf67815-9ec4-8520-fd4d-cfff71de5529",
+  "name" : "title_h1",
+  "display_width" : null,
+  "label" : "Título H1",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Novas métricas e indicadores de comunicação"
+}, {
+  "id" : "74429741-68ff-9aaf-b5a4-fe9450f87c5f",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Imagem",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://pages.cortex-intelligence.com/hubfs/capa-lp.png",
+    "alt" : "capa-lp",
+    "loading" : "lazy",
+    "width" : 1028,
+    "height" : 1160,
+    "max_width" : 1028,
+    "max_height" : 1160
+  }
+}, {
+  "id" : "ad55e18d-97a6-719c-a7cb-2412a63aa872",
+  "name" : "subtitulo",
+  "display_width" : null,
+  "label" : "Subtítulo",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>O eBook Novas métricas e indicadores de comunicação foi enviado para o seu e-mail.</p>"
+}, {
+  "id" : "617d9619-c66c-4df8-dd8b-33fd75b8cd7e",
+  "name" : "p_gina_de_compartilhamento",
+  "display_width" : null,
+  "label" : "Página de compartilhamento",
+  "required" : true,
+  "locked" : false,
+  "type" : "page"
+} ]

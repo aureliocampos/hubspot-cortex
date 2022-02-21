@@ -1,0 +1,37 @@
+<!--
+  templateType: none
+-->
+<!DOCTYPE html>
+<html lang="{{ html_lang }}" {{ html_lang_dir }}>
+  <head>
+
+    <meta charset="utf-8">
+    {% if content.html_title %}<title>{{ content.html_title }}</title>{% endif %}
+    
+    {% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
+    <meta name="description" content="{{ content.meta_description }}">
+    {{ standard_header_includes }}
+
+    <link rel="preconnect" href="https://cdn2.hubspot.net">
+    
+    {{ require_css(get_asset_url('/cortex-intelligence/lib/swiper/swiper.min.css'), {async: true}) }}
+    {{ require_css(get_asset_url('/cortex-intelligence/css/main.css')) }}    
+  </head>
+  <body class="body-wrapper {{ builtin_body_classes }}">
+
+    {% module "module_16426526015243" path="/cortex-intelligence/sections/headers/header-materials", label="Header" %}
+
+    {% block body %}
+    {% endblock body %}
+
+    {% module "module_16294732947563" path='/cortex-intelligence/sections/footers/footer-primary', label="Footer" %}
+
+
+    <!-- Scripts e bibliotecas globais -->
+    {{ require_js(get_asset_url('/cortex-intelligence/lib/swiper/swiper.min.js'), { position: 'header'}) }}
+    {{ require_js(get_asset_url('/cortex-intelligence/lib/lazysizes.min.js'), { position: 'footer', async: true }) }}
+    {{ require_js(get_asset_url('/cortex-intelligence/js/blog.js'), { position: 'footer', async: true }) }}
+    
+    {{ standard_footer_includes }}
+  </body>
+</html>

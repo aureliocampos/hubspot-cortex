@@ -1,0 +1,15 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Thank You Page
+-->
+
+{% extends "../layouts/base-lp.html" %}
+
+{% block body %}
+  <main id="main-content" class="body-container-wrapper template--thank-you">
+    {% module "module_16413937310352" path="/cortex-intelligence/sections/landing-pages/ty-main-primary", label="ty-main-primary" %}
+    {% module "module_16413977458682" path="/cortex-intelligence/sections/pages/solutions/relationship-resources", label="relationship-resources" %}
+    {% module "module_16413980133374" path='/cortex-intelligence/sections/generic/call-to-action', label="call-to-action" %}
+  </main>
+{% endblock body %}

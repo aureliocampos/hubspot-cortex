@@ -1,0 +1,12 @@
+[ {
+  "id" : "68249cf2-72a7-49a9-4e56-93698d33e884",
+  "name" : "color_theming",
+  "display_width" : null,
+  "label" : "Temas",
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "brand_neutral", "Brand Color 1 - ( Neutral )" ], [ "brand_color_2", "Brand Color 2 - ( Roxo )" ], [ "brand_color_3", "Brand Color 3 - ( Azul )" ], [ "brand_color_4", "Brand Color 4 - ( Verde )" ] ],
+  "type" : "choice",
+  "default" : "brand_neutral"
+} ]

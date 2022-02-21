@@ -53,7 +53,7 @@
 .customer-testimonial__author {
   color: var(--purple_light);
 }
-.clients__item {
+.customer-testimonial .clients__item {
   color: var(--purple_official);
 }
 

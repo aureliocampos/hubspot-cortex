@@ -1,0 +1,67 @@
+{
+  "follow_up_type_automation.label" : {
+    "message" : "Agregar a workflow",
+    "description" : null,
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "Para enviar un correo de seguimiento, asegúrate de que el  valor de configuración “Establecer contactos creados como contactos de marketing ” esté activado. Puedes gestionar esto en opciones. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'> Más información</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "Enviar correo de seguimiento",
+    "description" : null,
+    "placeholders" : null
+  },
+  "font_field.label" : {
+    "message" : "Campo de fuente",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "Gracias por enviar el formulario.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "Formulario",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "Workflow",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Formulario",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "Enviar notificaciones de formulario a direcciones de correo especificadas en lugar de los valores predeterminados del formulario",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "Direcciones de correo electrónico",
+    "description" : null,
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "Campaña de Salesforce",
+    "description" : null,
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "Correo electrónico",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Título del formulario",
+    "description" : null,
+    "placeholders" : null
+  }
+}

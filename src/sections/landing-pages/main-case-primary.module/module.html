@@ -1,0 +1,27 @@
+<section class="section section__main-case--primary">
+  <div class="section__container">
+    <div class="section__content">
+      <p class="main-case__subtitle--1">{{ module.subtitle_1 }}</p>
+      <h1 class="main-case__title">{{ module.title }}</h1>
+      <p class="main-case__subtitle--2">{{ module.subtitle_2 }}</p>
+      {% set href = module.button.link_field.url.href %}
+        <a href="{{ href }}" class="button button--lp-cta"
+          >
+        {{ module.button.texto_do_link }}
+        </a>
+    </div>
+    {% if module.image_field.src %}
+      {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+      {% if module.image_field.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+      {% elif module.image_field.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+       {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+      <figure class="main-case__figure">
+        <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="main-case__image">
+      </figure>
+    {% endif %}
+  </div>
+</section>
+
