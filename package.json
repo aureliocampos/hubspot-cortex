@@ -4,5 +4,13 @@
   "main": "index.js",
   "repository": "https://github.com/aureliocampos/hubspot-cortex.git",
   "author": "Aurélio Campos <aureliocampos.dev@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "fetch": "hs fetch cortex-intelligence src",
+    "watch": "hs watch src cortex-intelligence",
+    "upload": "hs upload src cortex-intelligence",
+    "watch-dev" : "hs watch src cortex-intelligence --account='development'",
+    "fetch-dev" : "hs fetch cortex-intelligence src --account='development'",
+    "upload-dev": "hs upload src cortex-intelligence --account='development'"
+  }
 }
