@@ -3,7 +3,9 @@
     isAvailableForNewContent: false
 -->
 
-{% module "module_16426360570402" path="/cortex-intelligence/sections/generic/featured-posts", label="featured-posts" %}
+{% module "module_16456286506203" path="/cortex-intelligence/sections/generic/featured-posts", label="Materiais Populares" 
+  blog_field=66937849885
+%}
 
 {% module "module_16426258918698" path='/cortex-intelligence/sections/generic/call-to-action', label="call-to-action" 
 title_field= "Cresça com a gente!",
@@ -25,7 +27,7 @@ style={
   esconder_elementos: True
 }
 %}
-{% module "module_16456246253191" path="/cortex-intelligence/sections/pages/blog/grid-materials", label="grid-materials" %}
+    {% module "module_16456246253191" path="/cortex-intelligence/sections/pages/blog/grid-materials", label="grid-materials" %}
 
 {% if contents.total_page_count > 1 %}
   {% include "./pagination.html" %}
