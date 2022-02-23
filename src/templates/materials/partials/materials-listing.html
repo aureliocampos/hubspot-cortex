@@ -1,0 +1,32 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: false
+-->
+
+{% module "module_16426360570402" path="/cortex-intelligence/sections/generic/featured-posts", label="featured-posts" %}
+
+{% module "module_16426258918698" path='/cortex-intelligence/sections/generic/call-to-action', label="call-to-action" 
+title_field= "Cresça com a gente!",
+text_field= "Aprofunde seus conhecimentos profissionais com nossos artigos ricos e gratuitos",
+button_cta={
+  link_text: "Assine o blog",
+  link_field: {
+    "url": { 
+      "type": "EXTERNAL", 
+      "href": "#form-newsletter",
+      "content_id": null 
+    },
+    "open_in_new_tab": false
+  }
+}
+style={
+  custom_colors: True,
+  button_style_primary: True,
+  esconder_elementos: True
+}
+%}
+{% module "module_16456246253191" path="/cortex-intelligence/sections/pages/blog/grid-materials", label="grid-materials" %}
+
+{% if contents.total_page_count > 1 %}
+  {% include "./pagination.html" %}
+{% endif %}
