@@ -400,4 +400,29 @@
       "no_follow" : false
     }
   }
+}, {
+  "id" : "0934959e-499b-917a-a118-a612f1968d86",
+  "name" : "subname",
+  "display_width" : null,
+  "label" : "subname",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "0bb239e3-70f2-805a-d881-ae97a166a29f",
+  "name" : "url_subname",
+  "display_width" : null,
+  "label" : "URL subname",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
 } ]

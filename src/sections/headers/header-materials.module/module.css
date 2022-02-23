@@ -21,16 +21,19 @@
 .header__figure {
   display: flex;
   align-items: baseline;
-  gap: 1em;
+  gap: 0.4em;
   position: relative;
+}
+.header__logo > img,
+.header__subname {
+  display: block;
 }
 .header__name-separator {
   height: 26px;
   width: 1px;
   background: black;
-  position: absolute;
-  top: auto;
-  left: 69%;
+  position: relative;
+  top: 5px;
 }
 .header__name {
   font: 700 1.5em var(--primary-font);
@@ -343,7 +346,6 @@
     max-width: 1114px;
     margin: 0 auto;
     padding: 0;
-    gap: 3rem;
     font-size: 16px;
   }
   .header__responsive {

@@ -1,3 +1,11 @@
+{% if content_group.id == 66937849885 %}
+  {% set url_subname = "https://www.cortex-intelligence.com/biblioteca" %}
+  {% set subname = "Biblioteca"%}
+  {% elif content_group.id == 62335526329 %}
+  {% set url_subname = "https://www.cortex-intelligence.com/blog" %}
+  {% set subname = "Blog" %}
+{%¨endif %}
+
 <header id="header-primary" class="header">
   <div class="header__container">
     <div class="header__responsive">
@@ -6,8 +14,8 @@
           <img src="{{ get_asset_url('/cortex-intelligence/images/logo-cortex.png') }}" alt="Logo Cortex Intelligence" width="130" height="22"/>
         </a>
         <div class="header__name-separator"></div>
-        <a href="/blog">
-          <h2 class="header__name">Blog</h2>
+        <a href="{{url_subname}}" class="header__subname">
+          <h2 class="header__name">{{subname}}</h2>
         </a>
       </figure>
       <button class="menu-mobile" aria-label="Menu de navegação mobile" >
