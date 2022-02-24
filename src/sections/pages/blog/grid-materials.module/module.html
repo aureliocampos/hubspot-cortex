@@ -3,12 +3,9 @@
   <div class="blog-listing__items">
     {% for content in contents %}
     <article class="card-primary__article">
-      
-      {% set new_absolut_url = content.post_summary %}
-
       {% if content.featured_image and group.use_featured_image_in_summary %}
         <figure class="card-primary__figure">
-          <a href="{{ new_absolut_url }}">
+          <a href="{{content.link_rel_canonical_url}}">
             <img 
               data-src="{{ content.featured_image }}" 
               data-srcset="{{ resize_image_url( content.featured_image, 345, 190, 345 ) }} 345w" 
@@ -22,7 +19,7 @@
         </figure>
       {% endif %}
       <div class="card-primary__summary">
-        <a href="{{ new_absolut_url }}">
+        <a href="{{content.link_rel_canonical_url}}">
           <h2 class="card-primary__name">{{ content.name }}</h2>
           {% if content_group.show_summary_in_listing %}
             <p class="card-primary__description">{{ content.meta_description }}</p>
