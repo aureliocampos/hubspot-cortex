@@ -1,7 +1,7 @@
 <!--
     templateType: blog_post
     isAvailableForNewContent: true
-    label: Blog/Materiais post
+    label: Materiais Post
 -->
 
 {% extends "../layouts/base-materials.html" %}
@@ -10,6 +10,9 @@
 {% include '/cortex-intelligence/templates/metadata-schemas/articles.html' %}
 
 {% block body %}
+
+{% module "module_16467570902134" path="/cortex-intelligence/modules/material-categorizer", label="material-categorizer" %}
+
   <main id="main-content" class="body-container-wrapper single-page" role="main">
 
     {# Blog post #}

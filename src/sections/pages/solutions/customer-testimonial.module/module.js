@@ -1,7 +1,7 @@
 const swiperTestimonial = new Swiper('.swiper-testimonial', {
   loop: true,
   autoplay: {
-    delay: 15000,
+    delay: 20000,
     disableOnInteraction: false,
   },
   effect: "fade",
@@ -46,7 +46,7 @@ function animateLoadingArrowsPrev() {
         { strokeDashoffset: '-140px' }
       ],
       {
-        duration: 15000, // Deve ser o mesmo tempo da propriedade "delay", do objeto "autoplay" passado no SWIPER
+        duration: 20000, // Deve ser o mesmo tempo da propriedade "delay", do objeto "autoplay" passado no SWIPER
         iterations: 1
       }
     )

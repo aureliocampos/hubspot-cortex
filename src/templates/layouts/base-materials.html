@@ -5,6 +5,10 @@
 <html lang="{{ html_lang }}" {{ html_lang_dir }}>
   <head>
 
+    {% if group.id == 66937849885 && content.html_title != "Biblioteca" %}
+      <meta http-equiv="refresh" content="0; url={{page_meta.link_rel_canonical_url}}" />
+    {% endif %}
+
     <meta charset="utf-8">
     {% if content.html_title %}<title>{{ content.html_title }}</title>{% endif %}
     

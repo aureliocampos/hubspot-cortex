@@ -5,6 +5,7 @@
   "repository": "https://github.com/aureliocampos/hubspot-cortex.git",
   "author": "Aurélio Campos <aureliocampos.dev@gmail.com>",
   "license": "MIT",
+  "description": "Tema do website Cortex Intelligence, feito com campos e seções personalizados para o Hubspot.",
   "scripts": {
     "fetch": "hs fetch cortex-intelligence src",
     "watch": "hs watch src cortex-intelligence",

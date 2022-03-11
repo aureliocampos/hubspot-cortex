@@ -1,0 +1,38 @@
+<section class="blog-listing__section">
+  <h2 class="section__title">Artigos Recentes</h2>
+  <div class="blog-listing__items">
+    {% for content in contents %}
+    <article class="card-primary__article">
+      {% if content.featured_image and group.use_featured_image_in_summary %}
+        <figure class="card-primary__figure">
+          <a href="{{content.link_rel_canonical_url}}">
+            <img 
+              data-src="{{ content.featured_image }}" 
+              data-srcset="{{ resize_image_url( content.featured_image, 345, 190, 345 ) }} 345w" 
+              sizes="345px" 
+              alt="{{ content.featured_image_alt_text }}"
+              class="lazyload card-primary__image"
+              width="345px"
+              height="190px"
+            />
+          </a>
+        </figure>
+      {% endif %}
+      <div class="card-primary__summary">
+        <a href="{{content.link_rel_canonical_url}}">
+          <h2 class="card-primary__name">{{ content.name }}</h2>
+          {% if content_group.show_summary_in_listing %}
+            <p class="card-primary__description">{{ content.meta_description }}</p>
+          {% endif %}
+        </a>
+        {% if content.tag_list != [] %}
+          {% for tag in content.topic_list %}
+            <a href="{{ blog_tag_url('default', tag.slug) }}" class="card-primary__tag">{{tag}}</a>
+          {% endfor %}       
+        {% endif %}
+      </div>
+    </article>
+    <hr class="blog-listing__items__separator">
+  {% endfor %}
+  </div>
+</section>

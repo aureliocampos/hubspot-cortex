@@ -1,0 +1,16 @@
+<section class="secttion section__main-courses">
+	<div class="section__container">
+		<div class="section__content">
+			<span class="section__tag">{{ module.tag }}</span>
+			<h1 class="section__title">{{ module.title }}</h1>
+			<a href="{{ href }}" class="button button--lp-cta"
+			>
+			</a>
+		</div>
+		<figure class="section__figure">
+			{% if module.image_field.src %}
+				<img class="section__image" src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" />
+			{% endif %}
+		</figure>
+	</div>
+</section>
