@@ -1,0 +1,7 @@
+{
+  "global" : false,
+  "host_template_types" : [ "BLOG_POST" ],
+  "module_id" : 68033378489,
+  "label" : "Categorizador de Materiais",
+  "is_available_for_new_content" : true
+}

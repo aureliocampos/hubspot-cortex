@@ -1,0 +1,98 @@
+[ {
+  "id" : "6c72199c-bc31-fba0-271b-07a6c3acd6c2",
+  "name" : "tag",
+  "display_width" : null,
+  "label" : "Tag",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Curso online"
+}, {
+  "id" : "a461a93b-8f9c-0b18-90b4-3fe4eeb8a584",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Introdução a comunicação baseada em dados"
+}, {
+  "id" : "6e87e8c0-6f48-393c-36fa-5d01bee1dcad",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Imagem",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://pages.cortex-intelligence.com/hubfs/Vector-1.png",
+    "alt" : "Vector-1",
+    "loading" : "lazy",
+    "width" : 353,
+    "height" : 278,
+    "max_width" : 353,
+    "max_height" : 278
+  }
+}, {
+  "id" : "41b99851-71c0-18a8-d4bc-ff893d69cc81",
+  "name" : "button_cta",
+  "display_width" : null,
+  "label" : "Botão CTA",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "171652f0-a0cb-1afc-c89f-67625fdf29ad",
+    "name" : "link",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "f845429b-9ee6-a50a-cdff-949125ac29c1",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+} ]
