@@ -1,0 +1,123 @@
+[ {
+  "id" : "054974ec-91bd-6a05-b7b5-d5ac319f16b6",
+  "name" : "section_title",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Para quem é recomendado"
+}, {
+  "id" : "c071b913-fdc9-6675-4f25-54d72c734774",
+  "name" : "texto",
+  "display_width" : null,
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>O curso de introdução à comunicação baseada em dados é recomendado para lideranças e profissionais que trabalham com assessoria de imprensa e relações com a mídia nas áreas de comunicação corporativa.</p>"
+}, {
+  "id" : "8e5d156a-d82a-2ab8-e811-0816434ebdb0",
+  "name" : "detalhes",
+  "display_width" : null,
+  "label" : "Detalhes",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "8f23d48a-832a-f684-1cb6-cac54107a2b7",
+    "name" : "duration",
+    "display_width" : null,
+    "label" : "Duração",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "2 horas"
+  }, {
+    "id" : "67c23841-eb53-4e9d-a495-e15f5a1d3058",
+    "name" : "categoria",
+    "display_width" : null,
+    "label" : "Categoria",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Comunicação"
+  }, {
+    "id" : "b64ef86e-88ef-968f-bd1f-46ff21b54c21",
+    "name" : "metodo",
+    "display_width" : null,
+    "label" : "Método",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "video-aula e apostila"
+  }, {
+    "id" : "3dc2e510-fbb8-c6f6-2e25-286a42b425b1",
+    "name" : "investimento",
+    "display_width" : null,
+    "label" : "Investimento",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "gratuito"
+  }, {
+    "id" : "16a86897-31c7-0c0e-9ad0-e87d84854277",
+    "name" : "objetivo",
+    "display_width" : null,
+    "label" : "Objetivo",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : [
+      "Fundamentos do RP baseado em dados",
+      "Contexto da área de RP na era dos dados e seus desafios e oportunidades",
+      "Quais análises básicas realizar para mensurar e comprovar o trabalho de RP"
+    ]
+  }, {
+    "id" : "ce6519a0-8a4a-5969-1e70-61af50144340",
+    "name" : "produto_utilizado",
+    "display_width" : null,
+    "label" : "Produto utilizado",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Sales Intelligence"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "duration" : "2 horas",
+    "categoria" : "Comunicação",
+    "metodo" : "video-aula e apostila",
+    "investimento" : "gratuito",
+    "objetivo" : "Fundamentos do RP baseado em dados",
+    "produto_utilizado" : "Sales Intelligence"
+  }
+} ]

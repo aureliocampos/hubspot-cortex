@@ -1,5 +1,6 @@
 .section__main-courses {
   padding: 2em 1.5em;
+  background-color: var(--lightest);
 }
 .section__main-courses .section__tag {
   display: block;
@@ -17,7 +18,7 @@
   margin-top: 1.5rem;
 }
 .section__main-courses .section__figure {
-  margin-top: 1.5rem;
+  margin-top: 3rem;
 }
 .section__main-courses .section__image {
   width: 100%;

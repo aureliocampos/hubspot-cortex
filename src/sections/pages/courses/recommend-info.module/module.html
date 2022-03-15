@@ -1,0 +1,21 @@
+  {% inline_text field="detalhes.duration" value="{{ module.detalhes.duration }}" %}
+{% inline_text field="detalhes.categoria" value="{{ module.detalhes.categoria }}" %}
+{% inline_text field="detalhes.metodo" value="{{ module.detalhes.metodo }}" %}
+{% inline_text field="detalhes.investimento" value="{{ module.detalhes.investimento }}" %}
+{% for item in module.detalhes.objetivo %}
+	{% inline_text field="detalhes.objetivo" value="{{ item }}" %}
+{% endfor %}
+{% inline_text field="detalhes.produto_utilizado" value="{{ module.detalhes.produto_utilizado }}" %}
+
+<secttion class="section section__recommend">
+	<div class="section__container">
+		<div class="section__content">
+			<h2 class="section__title">
+				{{ module.section_title }}
+			</h2>
+			<p class="section__text">
+				{{ module.texto }}
+			</p>
+		</div>
+	</div>
+</secttion>
