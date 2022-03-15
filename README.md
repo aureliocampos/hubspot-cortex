@@ -9,3 +9,4 @@ Atualizar os ícones do Site:
 
 
 Imagens - larger: 1114x619, mobile: 345x190
+

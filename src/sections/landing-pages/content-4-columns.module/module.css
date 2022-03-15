@@ -59,6 +59,9 @@
     max-width: 760px;
     margin: 0 auto;
   }
+  .content-4columns__item {
+    width: 25%;
+  }
 }
 @media (min-width: 1200px) {
   .section__content-4columns .section__container {
