@@ -1,0 +1,26 @@
+<section class="section section--about-company">
+  <div class="section__container">
+    <div class="about-company__content">
+      <h2 class="about-company__title">{{ module.section_title }}</h2>
+      <ul class="about-company__items">
+        {% for item in module.sobre_a_empres_itens %}
+          <li class="about-company__item">
+            <p class="about-company__item__text">
+              <strong>{{ item.numero_de_destaque }}</strong> {{ item.text_field }}
+            </p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="about-company__content">
+      <ul class="list-company-info">
+        {% for item in module.categorias_da_empresa %}        
+          <li class="list-company-info__item">
+            <h3 class="list-company-info__title">{{ item.title_category }}</h3>
+            <p class="list-company-info__text">{{ item.text_category }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

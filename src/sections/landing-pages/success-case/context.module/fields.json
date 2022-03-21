@@ -1,0 +1,22 @@
+[ {
+  "id" : "dd39c442-39e3-d380-24ab-7821def08e3b",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Contexto"
+}, {
+  "id" : "e5356a73-78ce-e976-cb51-4d9495a572b4",
+  "name" : "texto",
+  "display_width" : null,
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>A maior empresa química do mundo, que atua em 90 países, estava estruturando uma nova área de inteligência de mercado global dentro de uma de suas unidades de negócio.</p>\n<p>&nbsp;</p>\n<p>A expectativa era que esse novo departamento apoiasse os departamentos de Marketing, Vendas e Produto em 4 regiões e em todos os seus segmentos.</p>\n<p><br>Para apoiar essa estrutura complexa, precisavam encontrar uma forma de organizar as inúmeras fontes de dados manuais e dados não padronizados que sobrecarregavam o trabalho dos gerentes da área. Afinal, o time perdia muito tempo trabalhando nos dados manuais e não conseguiam atender todas as demandas dos seus clientes internos.</p>"
+} ]

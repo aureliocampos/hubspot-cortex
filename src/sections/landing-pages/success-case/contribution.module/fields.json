@@ -1,0 +1,174 @@
+[ {
+  "id" : "aba4f2de-6f1b-be4c-298c-329050dc29f2",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Como a Cortex contribuiu para essa conquista"
+}, {
+  "id" : "23f60d48-f8e1-773e-aaf6-dea8b124e055",
+  "name" : "lista_de_itens",
+  "display_width" : null,
+  "label" : "Lista de itens",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "de82d7f2-1870-0532-5951-aa37197a9b75",
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "de82d7f2-1870-0532-5951-aa37197a9b75",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Título",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Mapear empresas com perfil de uso das soluções"
+  }, {
+    "id" : "dd711777-190f-da93-e3ce-edc2b00dc239",
+    "name" : "texto",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Ao contrário dos departamentos de marketing, que já se deram conta há anos da importância de ser data driven, as áreas de comunicação e relações públicas iniciaram a transformação digital com mais intensidade somente nos últimos anos."
+  }, {
+    "id" : "e52f3326-d393-df02-fabd-69a1077e9d42",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Ícone",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Group%202848.png",
+      "alt" : "Ícone lupa",
+      "width" : 98,
+      "height" : 98,
+      "max_width" : 98,
+      "max_height" : 98,
+      "loading" : "lazy"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "title" : "Integração de dados",
+    "texto" : "Fizemos com que todas as áreas falassem exatamente os mesmos números ao integrar a maioria das fontes de dados do departamento e fornecer notícias sobre a empresa e o mercado praticamente em tempo real para mais de 600 colaboradores. A automatização também trouxe um ganho operacional muito grande para a área de inteligência. Isso porque houve uma diminuição na quantidade de horas dedicadas à captação e tratamento de dados à medida que aumentava a maturidade digital da empresa.",
+    "icon" : {
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Group%202848.png",
+      "alt" : "Ícone lupa",
+      "width" : 98,
+      "height" : 98,
+      "max_width" : 98,
+      "max_height" : 98,
+      "loading" : "lazy"
+    }
+  }, {
+    "title" : "Monitoramento de notícias e tendências na mídia ",
+    "texto" : "Boa parte da estruturação da área de inteligência tem utilizado o monitoramento de notícias para se informar sobre tendências na mídia. Isso permitiu à empresa identificar as tendências da agenda da mídia e, assim, compreender os assuntos que estão ganhando ou perdendo espaço no interesse da opinião pública. Em outras palavras, a área proporcionou que estratégias fossem elaboradas de forma mais assertiva, a partir do “humor” da imprensa e dos líderes de opinião.",
+    "icon" : {
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Group%202848.png",
+      "alt" : "Ícone lupa",
+      "width" : 98,
+      "height" : 98,
+      "max_width" : 98,
+      "max_height" : 98,
+      "loading" : "lazy"
+    }
+  }, {
+    "title" : "Flexibilidade nas análises",
+    "texto" : "O fato de que a Cortex é uma ferramenta muito flexível acabou se mostrando uma virada de chave para a empresa química. Afinal, foi possível montar uma solução personalizada para vencer os desafios impostos pela estruturação da nova área. A possibilidade de cruzar diferentes dados e construir workflows foi extremamente importante para o sucesso do projeto.",
+    "icon" : {
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Group%202848.png",
+      "alt" : "Ícone lupa",
+      "width" : 98,
+      "height" : 98,
+      "max_width" : 98,
+      "max_height" : 98,
+      "loading" : "lazy"
+    }
+  } ]
+}, {
+  "id" : "511be7dd-de89-d0da-bc2d-24fdc7a66def",
+  "name" : "texto",
+  "display_width" : null,
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : ""
+}, {
+  "id" : "a4eb18ab-b749-7c91-f961-902287e2c197",
+  "name" : "cta",
+  "display_width" : null,
+  "label" : "CTA",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "01c92f30-2b79-5094-cddb-bc6af2e4e95f",
+    "name" : "cta",
+    "display_width" : null,
+    "label" : "CTA",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#form",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "04ec7c4e-ef02-5ebc-0480-39e0d2b2b2b1",
+    "name" : "texto_cta",
+    "display_width" : null,
+    "label" : "Texto CTA",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Baixar caso de sucesso"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "cta" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#form",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "texto_cta" : "Baixar caso de sucesso"
+  }
+} ]

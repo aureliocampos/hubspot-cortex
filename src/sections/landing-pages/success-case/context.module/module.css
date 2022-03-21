@@ -1,0 +1,26 @@
+/* Contexto */
+.section--lp-context {
+  padding: 3em 1.5em;
+}
+.lp-context__title {
+  font: 600 2em / 120% var(--primary-font);
+  color: var(--darkest);
+}
+.lp-context__content {
+  font: 400 1.125em / 148% var(--secondary-font);
+  color: var(--darkest);
+}
+.lp-context__content p {
+  margin: 1em 0;
+}
+@media (min-width: 1024px) { 
+  /* context */
+  .section--lp-context {
+    max-width: 1114px;
+    margin: 0 auto;
+  }
+  .lp-context__title {
+    font-size: 3em;
+  }
+
+}

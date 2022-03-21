@@ -1,0 +1,121 @@
+[ {
+  "id" : "4b8cf2a0-f8d4-87a8-1136-84bb8dd15997",
+  "name" : "section_title",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Sobre a empresa"
+}, {
+  "id" : "ede922cb-904b-89d7-b1ed-d8d7fc960a62",
+  "name" : "sobre_a_empres_itens",
+  "display_width" : null,
+  "label" : "Sobre a Empres Itens",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "35e2a458-d5f0-2ef5-b6de-8267ff9e34c5",
+    "name" : "numero_de_destaque",
+    "display_width" : null,
+    "label" : "número de destaque",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "+ 000 milhões"
+  }, {
+    "id" : "0f461989-a408-faf4-63c0-792f6cc1fc31",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "de clientes"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "numero_de_destaque" : "+70 bilhões",
+    "text_field" : "e euros em vendas em 2021"
+  }, {
+    "numero_de_destaque" : "+800 patentes",
+    "text_field" : "registradas em 2021"
+  }, {
+    "numero_de_destaque" : "+100 Mil",
+    "text_field" : "funcionários no Brasil"
+  } ]
+}, {
+  "id" : "e85dd448-2f23-5f1b-d08e-89a80db0e10a",
+  "name" : "categorias_da_empresa",
+  "display_width" : null,
+  "label" : "Categorias da empresa",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "6cc914df-4722-a8d6-58a7-5b9976e9a72a",
+    "name" : "title_category",
+    "display_width" : null,
+    "label" : "Título das categorias",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Tamanho"
+  }, {
+    "id" : "70b62b6e-b025-3513-722d-ac89e281bfaa",
+    "name" : "text_category",
+    "display_width" : null,
+    "label" : "Texto das categorias",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Grande"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "title_category" : "Tamanho",
+    "text_category" : "Grande"
+  }, {
+    "title_category" : "Segmento",
+    "text_category" : "Química"
+  }, {
+    "title_category" : "Tipo",
+    "text_category" : "B2B"
+  }, {
+    "title_category" : "Atuação",
+    "text_category" : "Mundial"
+  }, {
+    "title_category" : "Principal dor",
+    "text_category" : "Padronização e automatização dos dados"
+  } ]
+} ]

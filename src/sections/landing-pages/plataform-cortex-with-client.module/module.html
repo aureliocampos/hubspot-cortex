@@ -1,4 +1,3 @@
-
 <section class="section section__plataform-with-clients">
 	<div class="section__container">
 		<div class="plataform-with-clients__items">
@@ -24,6 +23,19 @@
 					{{ module.conteudo_b.texto }}
 				</div>
 			</div>
+      
+      {% if module.conteudo_c.image_field.src %}
+        <div class="plataform-with-clients__item">
+            {% set loadingAttr = module.conteudo_c.image_field.loading != 'disabled' ? 'loading="{{ module.conteudo_c.image_field.loading }}"' : '' %}
+            <figure class="plataform-with-clients__figure">
+              <img class="plataform-with-clients__image" src="{{ module.conteudo_c.image_field.src }}" alt="{{ module.conteudo_c.image_field.alt }}" {{ loadingAttr }} width="488" height="460">
+            </figure>
+
+          <div class="plataform-with-clients__text">
+            {{ module.conteudo_c.texto }}
+          </div>
+        </div>
+      {% endif %}
 		</div>
 	</div>
 </section>

@@ -1,0 +1,108 @@
+[ {
+  "id" : "e0282f95-b4cd-23f2-d765-ba54bbb8ca5f",
+  "name" : "tag",
+  "display_width" : null,
+  "label" : "Tag",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "caso de sucesso"
+}, {
+  "id" : "d1a42263-2f38-4166-c664-c210ea6b88de",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Como uma grande empresa química passou a integrar dados e monitorar notícias com a Cortex"
+}, {
+  "id" : "75673c04-53e5-30c6-502a-147ff2215650",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "afa431c3-2739-e471-d228-ed6b46a59047",
+    "name" : "background",
+    "display_width" : null,
+    "label" : "Background",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#285FC3",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "background" : {
+      "color" : "#285FC3",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "e21e814f-6e91-5edf-8ef7-e017f18aaf29",
+  "name" : "cta",
+  "display_width" : null,
+  "label" : "CTA",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "4c88543d-ae61-db7f-3345-f83f8e56f258",
+    "name" : "cta",
+    "display_width" : null,
+    "label" : "CTA",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#form",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "0f0d3949-22f3-bb27-505c-66ed03593fa3",
+    "name" : "texto_cta",
+    "display_width" : null,
+    "label" : "Texto CTA",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Baixar caso de sucesso"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "cta" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#form",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "texto_cta" : "Baixar caso de sucesso"
+  }
+} ]

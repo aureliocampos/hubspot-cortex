@@ -114,7 +114,8 @@
     "background_color" : {
       "color" : null,
       "opacity" : null
-    }
+    },
+    "gradient_field" : { }
   }
 }, {
   "id" : "1503ae8c-b0f4-5892-1339-46aa84595e20",
@@ -169,5 +170,45 @@
       "max_height" : 646
     },
     "texto" : "<p>Com a nossa solução em Vendas e Mercado, cumprimos essa missão ao nos tornamos <strong>a plataforma #1 de inteligência de vendas ponta-a-ponta</strong>.</p>"
+  }
+}, {
+  "id" : "54971995-39d7-8ff1-4753-1c96a767ab00",
+  "name" : "conteudo_c",
+  "display_width" : null,
+  "label" : "Linha de Conteúdo C",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "09ac2eeb-327d-5efe-d8a2-4a3f99d22da9",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Imagem",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : ""
+    }
+  }, {
+    "id" : "f9b34aec-1aaf-b124-74b1-49bef7d1bd66",
+    "name" : "texto",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : ""
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image_field" : {
+      "src" : ""
+    },
+    "texto" : ""
   }
 } ]

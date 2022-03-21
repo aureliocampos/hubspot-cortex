@@ -40,13 +40,14 @@
     justify-content: space-between;
     align-items: center;
     gap: 3em;
-    margin: 0;
+    margin: 2.5em 0;
   }
-  .plataform-with-clients__item:last-of-type {
+  .plataform-with-clients__item:nth-of-type(2n) {
     flex-direction: row-reverse;
   }
   .plataform-with-clients__figure {
     width: 50%;
+    margin: 0 auto;
   }
   .plataform-with-clients__text {
     width: 50%;
@@ -63,7 +64,6 @@
     font-size: 1.5em;
   }
 }
-
 @media (min-width: 1200px) {
   .section__plataform-with-clients .section__container {
     max-width: 1114px;

@@ -1,0 +1,41 @@
+<section class="section section--contribution">
+  <div class="section__container">
+    <h2 class="contribution__title">Como a Cortex contribuiu para essa conquista</h2>
+    <ul class="contribution-list">
+      {% for item in module.lista_de_itens %}
+      <li class="contribution-list__item">
+        {% if item.icon.src %}
+        {% set sizeAttrs = 'width="{{ item.icon.width }}" height="{{ item.icon.height }}"' %}
+        {% if item.icon.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif item.icon.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ item.icon.max_width }}" height="{{ item.icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = item.icon.loading != 'disabled' ? 'loading="{{ item.icon.loading }}"' : '' %}
+        <figure class="contribution-list__figure">
+          <img class="contribution-list__image" src="{{ item.icon.src }}" alt="{{ item.icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        </figure>
+        {% endif %}
+        <h3 class="contribution-list__title">{{ item.title }}</h3>
+        <p class="contribution-list__text">{{ item.texto }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+
+    {% if module.texto %}
+    <div class="contribution__text">{{ module.texto }}</div>
+    {% endif %}
+
+    {% if module.cta.cta.url.href %}
+      {% set href = module.cta.cta.url.href %}
+      <div class="button-container">
+        <a href="{{ href }}" class="button button--lp-cta"
+          {% if module.cta.cta.open_in_new_tab %}target="_blank"{% endif %}
+          {% if module.cta.cta.rel %}rel="{{ module.cta.cta.rel }}"{% endif %}
+          >
+          {{ module.cta.texto_cta }}
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</section>

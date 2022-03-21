@@ -1,0 +1,82 @@
+[ {
+  "id" : "6ff51bdb-339a-f011-5c81-553c4521217b",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Somos a única solução feita para a nova era da Comunicação Estratégica"
+}, {
+  "id" : "81c1f32f-2a91-b9a6-bf20-3dbfe64c8179",
+  "name" : "texto",
+  "display_width" : null,
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Resultados como esses só são alcançados quando se leva a estratégia do negócio para o dia a dia da Comunicação, conectando os objetivos macro com os da área, integrando diferentes mídias e canais.</p>\n<p>Para conquistar esse resultado estratégico com a comunicação, é fundamental, principalmente, entender que a Comunicação e o Marketing, cada vez mais, andam juntos.&nbsp;</p>\n<p>Mas também existem outros aspectos que precisam ser analisados com atenção para ganhar um destaque como esse. Um deles é comparar os seus resultados com os principais concorrentes e monitorar as tendências de mercado, assim como temas estratégicos para a marca.&nbsp;</p>\n<p>A solução da Cortex também é a líder em inteligência competitiva de comunicação.</p>"
+}, {
+  "id" : "6dbd5557-fd05-149a-ff04-0307a96a42bb",
+  "name" : "lista_no_detalhe",
+  "display_width" : null,
+  "label" : "Lista no detalhe",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 6
+  },
+  "children" : [ {
+    "id" : "024717a9-ff56-c1db-f131-4ced2d73f764",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Título",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Integração com Social Listening"
+  }, {
+    "id" : "89d00a03-779c-4793-9cf2-d4cf2babbf53",
+    "name" : "texto",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Integre com facilidade os dados da sua plataforma de social listening e tenha as informações importantes em um único lugar"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "title" : "Gestão de reputação por pilar estratégico",
+    "texto" : "Monitore tendências e potenciais riscos de imagem da sua marca, analisando cada pilar estratégico. Saiba como cada um deles está impactando na sua reputação."
+  }, {
+    "title" : "Gestão de KPIs de Comunicação",
+    "texto" : "Acompanhe as principais metas, crie estratégias para atingimento ou correção de rota e receba alertas de gatilho de outliers (queda ou crescimento de indicadores). Temos uma  fonte de dados (feed ou integração) já configurada dentro da Cortex e conseguimos rodar o caso de uso sem depender do engajamento do parceiro do cliente para mantê-lo em pé."
+  }, {
+    "title" : "Gestão de jornalistas e veículos",
+    "texto" : "É possível gerir quais jornalistas e veículos vão impulsionar a reputação da sua empresa ao integrar fontes de dados e monitorar assuntos estratégicos para a companhia."
+  }, {
+    "title" : "Tendências de mídia",
+    "texto" : "Também conhecido como agendamento temático, permite a compreensão das pautas que estão ganhando ou perdendo espaço no interesse da opinião pública. Com isso, crie e execute estratégias de forma mais assertiva, compreendendo o melhor momento a partir do “humor” da imprensa e dos formadores de opinião."
+  }, {
+    "title" : "Bolhas de informação",
+    "texto" : "Visualize as agendas da sociedade por meio dos principais grupos de líderes de opinião (políticos, influenciadores, jornalistas, ONGs, entidades etc) além da repercussão de temas por meio das bolhas de vieses ideológicos progressista, centro e conservador. Assim, a Comunicação consegue dialogar melhor com cada audiência."
+  }, {
+    "title" : "Reputação e impacto dos concorrentes",
+    "texto" : "Entenda como cada concorrente está exposto na mídia. Isso é essencial para o mapeamento de posicionamento do mercado e possíveis tendências e oportunidades."
+  } ]
+} ]

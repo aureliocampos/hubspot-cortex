@@ -1,0 +1,17 @@
+<section class="section section--solutions-perfect">
+  <div class="section__container">
+    <h2 class="solution-perfect__title">{{ module.title }}</h2>
+    <div class="solution-perfect__text">
+       {{ module.texto }}
+    </div>
+    <hr style="border:none;border-top: 0.5px solid #C5BFCA">
+    <ul class="details-list">
+      {% for item in module.lista_no_detalhe %}
+        <li class="details-list__item">
+          <h3 class="details-list__title">{{ item.title }}</h3>
+          <p class="details-list__text">{{ item.texto }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

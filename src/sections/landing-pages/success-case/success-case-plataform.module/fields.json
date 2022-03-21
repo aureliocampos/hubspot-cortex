@@ -1,0 +1,97 @@
+[ {
+  "id" : "d3c9673c-fc84-9ee7-9fc3-3193d3674e27",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Como a nossa plataforma funciona"
+}, {
+  "id" : "5e70fd36-d567-efe7-ac3e-ba09919bf6f8",
+  "name" : "texto",
+  "display_width" : null,
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>A plataforma Cortex é a única capaz de capturar dados externos em diferentes formatos, uni-los a dados internos da sua empresa, analisá-los e disparar as ações certas no momento correto.</p>\n<p>Tudo ao alcance do usuário de negócios, com flexibilidade e simplicidade.</p>"
+}, {
+  "id" : "39ec6e84-9a12-9a9d-792e-c4f8485d5ce4",
+  "name" : "cta",
+  "display_width" : null,
+  "label" : "CTA",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "2ccbc5e9-f514-cd08-4cb5-797601969ffb",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#form",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "5513bbd1-d667-f54b-c8a1-e62d453dcb9f",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : " Baixar caso de sucessso"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "link_field" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#form",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "text_field" : " Baixar caso de sucessso"
+  }
+}, {
+  "id" : "7abbd8ed-17c5-4742-4c86-3bf371a809ff",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Imagem",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://pages.cortex-intelligence.com/hubfs/workflow-cortex%201.png",
+    "alt" : "Workflow Plataforma Cortex",
+    "loading" : "lazy",
+    "width" : 684,
+    "height" : 300,
+    "max_width" : 684,
+    "max_height" : 300
+  }
+} ]

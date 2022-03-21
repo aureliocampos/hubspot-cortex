@@ -1,0 +1,23 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Landing Page - Casos de Sucesso
+-->
+
+{% extends "../layouts/base-lp.html" %}
+
+{% include '/cortex-intelligence/templates/metadata-schemas/case.html' %}
+
+{% block body %}
+  <main id="main-content" class="body-container-wrapper landing-page--success-case" role="main">
+    {% module "module_164788767428020" path="/cortex-intelligence/sections/landing-pages/success-case/main", label="main" %}
+    {% module "module_164788768406721" path="/cortex-intelligence/sections/landing-pages/success-case/about-company", label="about-company" %}
+    {% module "module_164788843427939" path="/cortex-intelligence/sections/landing-pages/success-case/context", label="context" %}
+    {% module "module_164788819164234" path="/cortex-intelligence/sections/landing-pages/success-case/contribution", label="contribution" %}
+    <!-- {% module "module_164788858706442" path="/cortex-intelligence/sections/landing-pages/success-case/main-results", label="main-results" %} -->
+    {% module "module_164788895266755" path="/cortex-intelligence/sections/landing-pages/success-case/success-case-plataform", label="success-case-plataform" %}
+    {% module "module_164788914480862" path="/cortex-intelligence/sections/landing-pages/success-case/solutions-perfect", label="solutions-perfect" %}
+    {% module "module_164788930879363" path="/cortex-intelligence/sections/landing-pages/clients", label="clients" %}
+    {% module "module_164788932420164" path="/cortex-intelligence/modules/form-content-sticky", label="form-content-sticky" %}
+  </main>
+{% endblock body %}

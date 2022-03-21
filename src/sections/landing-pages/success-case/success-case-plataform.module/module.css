@@ -1,0 +1,31 @@
+/* Plataforma */
+.section--success-case-plataform {
+  padding: 2em 1.5em;
+}
+.success-case-plataform__title {
+  font: 400 2em / 120% var(--primary-font);
+  color: var(--darkest);
+  text-align: center;
+  margin-bottom: 2em;
+}
+.success-case-plataform__text {
+  font: 400 1em / 148% var(--secondary-font);
+  color: var(--darkest);
+  margin: 1em 0;
+}
+.section--success-case-plataform .button-container {
+  margin-top: 2em;
+}
+@media (min-width: 1024px) {
+
+  /* Plataforma */
+  .section--success-case-plataform {
+    max-width: 1114px;
+    margin: 0 auto;
+    padding: 4em 0;
+  }
+  .success-case-plataform__title  {
+    font-size: 3em;
+  }
+
+}
