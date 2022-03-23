@@ -49,15 +49,22 @@ export_to_template_context=True
   {% set material_type = request.query|split("material_type=")|replace("&", "") %}
   {% set sectors = request.query|split("sector=")|replace("&", "") %}
 
-  {% set filtered_content = categories != [] or material_type != [] or sectors != [] %}
+  {% set filtered_content = categories != [] or material_type != [] or sectors != []  %}
+
+  
 
   <main id="main-content" class="body-container-wrapper main--materials" role="main">
+
+    {{ categories }}
+    {{ material_type }}
+    {{ sectors }}
 
     <div class="filters mobile-filter--float">
       <div class="mobile-filter__closed">
         <button id="closed-filter" class="button-closed">X</button>
       </div>
       <form id="form-filters">
+        <h2>Filtro</h2>
         <div class="filter__items">
           <h3>Categoria</h3>
           <!-- Filtrar por Categoria -->
@@ -119,19 +126,19 @@ export_to_template_context=True
             </div>
           {% endfor %}
         </div>
-        <div>
-          <button type="submit" class="button">Filtrar</button>
+        <div class="button-container">
+          <button type="submit" class="button button--primary-invert">Filtrar</button>
+
+          <a href="{{ group.absolute_url }}" class="clear-filter">Limpar filtro</a>
         </div>
       </form>
-      <a href="{{ group.absolute_url }}" style="color: red;">Limpar filtro</a>
     </div>
 
-    {% if filtered_content %}
+    {% if categories != [] or material_type != [] or sectors != []  %}
       <section class="section section__materials">
         <div class="section__container">  
           <div class="materials__grid-items">
           {% for content in contents %}
-
             {% set category = content.widgets.module_16467570902134.body.categoria|lower %}
             {% set material = content.widgets.module_16467570902134.body.tipo_de_material|lower %}
             {% set sector = content.widgets.module_16467570902134.body.setor|lower %}
@@ -140,8 +147,8 @@ export_to_template_context=True
             {% set filtered_material = material_type is containing material %}  
             {% set filtered_sector = sectors is containing sector %}     
 
-              {% if filtered_category or filtered_material or filtered_sector %}
-                <article class="card-primary__article">
+              {% if filtered_category and filtered_material and filtered_sector %}
+                <article class="card-primary__article filter">
                   {% if content.featured_image and group.use_featured_image_in_summary %}
                     <figure class="card-primary__figure">
                       <a href="{{content.link_rel_canonical_url}}">
@@ -170,7 +177,8 @@ export_to_template_context=True
                       {% endfor %}       
                     {% endif %}
                   </div>
-                </article>             
+                </article>   
+                <hr class="blog-listing__items__separator">          
               {% endif %}
             {% endfor %}   
           </div>     
@@ -182,7 +190,7 @@ export_to_template_context=True
 
     <div class="mobile-filter">
       <button id="open-filter" class="mobile-filter__button">
-        <img src="{{ get_asset_url('/cortex-intelligence/images/icon-filter.png') }}" width="100%" height="auto"/>
+        <img src="{{ get_asset_url('/cortex-intelligence/images/icon-lupa.png') }}" width="34" height="34"/>
       </button>
     </div>
   </main>

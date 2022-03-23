@@ -6,7 +6,7 @@ const toggleFilter = button => {
     const containerFilter = document.querySelector('.filters');
     containerFilter.classList.toggle('active');
 
-    document.body.style.overflow = "hidden"
+    document.body.classList.toggle("overflow")
   });
 }
 

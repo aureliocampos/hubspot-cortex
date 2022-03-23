@@ -1,5 +1,8 @@
+body.overflow {
+  overflow: hidden;
+}
+
 .main--materials {
-  position: relative;
   background: white;
 }
 .section__materials {
@@ -86,38 +89,64 @@
 }
 
 /* Form filter */
+#form-filters h2 {
+  font: 700 1.5em /120% var(--primary-font);
+  color: var(--darkest);
+  margin: 2rem 0 1rem;
+}
+#form-filters .button-container {
+  max-width: max-content;
+  margin: 3.5em auto 0;
+}
+#form-filters .clear-filter {
+  display: block;
+  font: 400 1em /120% var(--secondary-font);
+  color: var(--darkest); 
+  text-align: center;
+  margin-top: 1.25em;
+}
+
 .mobile-filter--float {
   display: none;
-  position: absolute;
-  top: 0;
+  position: fixed;
   width: 100%;
-  height: 100vh;
-  padding: 1em 1.5em 5em;
+  height: 100%;
+  padding: 1.5em 1.5em 6.5em;
   background: white; 
   transition: ease-in-out;
   overflow-y: auto;
 }
 .mobile-filter--float.active {
   display: block;
-  top: 0;
   z-index: 999;
 }
 .mobile-filter__closed {
   display: flex;
   justify-content: flex-end;
 }
+.mobile-filter__closed .button-closed {
+  width: 40px;
+  height: 35px;
+  font: 700 20px var(--primary-font);
+  color: var(--white);
+  background: var(--blue_spotlight);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
 .filter__items {
-  margin: 1.5em 0;
+  margin-bottom: 2.5em;
 }
 .filter__items h3 {
-  font: 600 1.5em /120% var(--primary-font);
-  color: var(--darkest);
+  font: 400 1.125em /120% var(--primary-font);
+  color: var(--dark);
+  margin-bottom: 1rem;
 }
 .filter__item {
   display: flex;
   align-items: center;
-  gap: 0.25em;
-  margin: 1em 0;
+  gap: 0.75em;
+  margin: 0.35em 0;
 
 }
 .filter__item input {
@@ -145,12 +174,10 @@
   border-radius: 100%;
   border: none;
   box-shadow: 1px 6px 8px 0px var(--light);
-  background-color: var(--darkest);
+  background-color: var(--blue_spotlight);
   cursor: pointer;
 }
-.mobile-filter__button img {
-  filter: invert(1);
-}
+
 @media (min-width: 768px) {
   .materials__grid-items {
     display: grid;
