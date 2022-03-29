@@ -9,16 +9,6 @@
   "choices" : [ [ "comunicacao", "Comunicação" ], [ "marketing", "Marketing" ], [ "vendas", "Vendas" ], [ "inteligencia", "Inteligência" ] ],
   "type" : "choice"
 }, {
-  "id" : "e9898359-d3c0-6aab-6179-2e09773570d9",
-  "name" : "setor",
-  "display_width" : null,
-  "label" : "Setor",
-  "required" : true,
-  "locked" : false,
-  "display" : "select",
-  "choices" : [ [ "financeiro", "Financeiro" ], [ "suprimentos", "Suprimentos" ], [ "tecnologia", "Tecnologia" ] ],
-  "type" : "choice"
-}, {
   "id" : "d616f2d5-f101-8394-978c-01560ac86ddd",
   "name" : "tipo_de_material",
   "display_width" : null,
@@ -26,6 +16,17 @@
   "required" : true,
   "locked" : false,
   "display" : "select",
-  "choices" : [ [ "caso_de_sucesso", "Caso de sucesso" ], [ "ebook", "Ebook" ], [ "meetup", "Meetup" ], [ "audio_posts", "Áudio Posts" ], [ "novidades_cortex", "Novidades Cortex" ], [ "guest_post", "Guest Post" ], [ "infograficos", "Infográficos" ] ],
+  "choices" : [ [ "caso_de_sucesso", "Caso de sucesso" ], [ "ebook", "Ebook" ], [ "meetup", "Meetup" ], [ "audio_posts", "Áudio Posts" ], [ "novidades_cortex", "Novidades Cortex" ], [ "guest_post", "Guest Post" ], [ "infograficos", "Infográficos" ], [ "cartilha", "Cartilha" ] ],
   "type" : "choice"
+}, {
+  "id" : "e9898359-d3c0-6aab-6179-2e09773570d9",
+  "name" : "setor",
+  "display_width" : null,
+  "label" : "Setor",
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "financeiro", "Financeiro" ], [ "suprimentos", "Suprimentos" ], [ "tecnologia", "Tecnologia" ], [ "generico", "Genérico" ] ],
+  "type" : "choice",
+  "default" : "generico"
 } ]

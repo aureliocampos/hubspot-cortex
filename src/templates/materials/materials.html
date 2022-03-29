@@ -24,7 +24,8 @@ choices='[
   ["audio_posts", "Áudio Posts"],
   ["novidades_cortex", "Novidades Cortex"],
   ["guest_post", "Guest Post"],
-  ["infograficos", "Infográficos"]
+  ["infograficos", "Infográficos"],
+  ["cartilha", "Cartilha"]
 ]', 
 export_to_template_context=True 
 %}
@@ -33,7 +34,8 @@ export_to_template_context=True
 choices='[
   ["financeiro", "Financeiro"],
   ["tecnologia", "Tecnologia"],
-  ["suprimentos", "Suprimentos"]
+  ["suprimentos", "Suprimentos"],
+  ["generico", "Genérico"]
 ]', 
 export_to_template_context=True 
 %}
@@ -51,142 +53,162 @@ export_to_template_context=True
 
   {% set filtered_content = categories != [] or material_type != [] or sectors != []  %}
 
-  
-
   <main id="main-content" class="body-container-wrapper main--materials" role="main">
-
-    {{ categories }}
-    {{ material_type }}
-    {{ sectors }}
-
-    <div class="filters mobile-filter--float">
-      <div class="mobile-filter__closed">
-        <button id="closed-filter" class="button-closed">X</button>
-      </div>
-      <form id="form-filters">
-        <h2>Filtro</h2>
-        <div class="filter__items">
-          <h3>Categoria</h3>
-          <!-- Filtrar por Categoria -->
-          {% for choice in widget_data.category_filter.choices_list %}
-
-          {# Verifica se o item está marcado no refresh da página #}
-        {% if categories is containing choice[0] %} 
-          {% set html_attributes = {"checked": true } %}
-          {% else %}
-          {% set html_attributes = {"nocheck": true } %}
-        {% endif %}
-          <div class="filter__item">
-            <input type="checkbox" name="category" id="{{ choice[0]|lower }}" 
-              value="{{ choice[0]|lower }}" {{ html_attributes|xmlattr }}>
-            <label for="{{ choice[0]|lower }}">
-              {{ choice[1] }}
-            </label>
-          </div>
-        {% endfor %}
+    <div class="grid-flex">
+      <div class="filters mobile-filter--float">
+        <div class="mobile-filter__closed">
+          <button id="closed-filter" class="button-closed">X</button>
         </div>
-        <div class="filter__items"> 
-          <h3>Tipo de material</h3>
-          <!-- Filtrar por Tipo de material -->
-          {% for choice in widget_data.material_type_filter.choices_list %}
-
-          {# Verifica se o item está marcado no refresh da página #}
-        {% if material_type is containing choice[0] %} 
-          {% set html_attributes = {"checked": true } %}
-          {% else %}
-          {% set html_attributes = {"nocheck": true } %}
-        {% endif %}
-          <div class="filter__item">
-            <input type="checkbox" name="material_type" id="{{ choice[0]|lower }}" 
-              value="{{ choice[0]|lower }}" {{ html_attributes|xmlattr }}>
-            <label for="{{ choice[0]|lower }}">
-              {{ choice[1] }}
-            </label>
-          </div>
-        {% endfor %}
-        </div>
-        <div class="filter__items">
-          <h3>Setor</h3>
-          <!-- Filtrar por Setor -->
-          {% for choice in widget_data.sector_filter.choices_list %}
-
-           {# Verifica se o item está marcado no refresh da página #}
-          {% if sectors is containing choice[0] %} 
+        <form id="form-filters">
+          <h2>Filtro</h2>
+          <div class="filter__items">
+            <h3>Categoria</h3>
+            <!-- Filtrar por Categoria -->
+            {% for choice in widget_data.category_filter.choices_list %}
+  
+            {# Verifica se o item está marcado no refresh da página #}
+          {% if categories is containing choice[0] %} 
             {% set html_attributes = {"checked": true } %}
             {% else %}
             {% set html_attributes = {"nocheck": true } %}
           {% endif %}
-
             <div class="filter__item">
-              <input type="checkbox" name="sector" id="{{ choice[0]|lower }}" 
+              <input type="checkbox" name="category" id="{{ choice[0]|lower }}" 
                 value="{{ choice[0]|lower }}" {{ html_attributes|xmlattr }}>
               <label for="{{ choice[0]|lower }}">
                 {{ choice[1] }}
               </label>
             </div>
           {% endfor %}
-        </div>
-        <div class="button-container">
-          <button type="submit" class="button button--primary-invert">Filtrar</button>
+          </div>
+          <div class="filter__items"> 
+            <h3>Tipo de material</h3>
+            <!-- Filtrar por Tipo de material -->
+            {% for choice in widget_data.material_type_filter.choices_list %}
+  
+            {# Verifica se o item está marcado no refresh da página #}
+          {% if material_type is containing choice[0] %} 
+            {% set html_attributes = {"checked": true } %}
+            {% else %}
+            {% set html_attributes = {"nocheck": true } %}
+          {% endif %}
+            <div class="filter__item">
+              <input type="checkbox" name="material_type" id="{{ choice[0]|lower }}" 
+                value="{{ choice[0]|lower }}" {{ html_attributes|xmlattr }}>
+              <label for="{{ choice[0]|lower }}">
+                {{ choice[1] }}
+              </label>
+            </div>
+          {% endfor %}
+          </div>
+          <div class="filter__items">
+            <h3>Setor</h3>
+            <!-- Filtrar por Setor -->
+            {% for choice in widget_data.sector_filter.choices_list %}
+  
+             {# Verifica se o item está marcado no refresh da página #}
+            {% if sectors is containing choice[0] %} 
+              {% set html_attributes = {"checked": true } %}
+              {% else %}
+              {% set html_attributes = {"nocheck": true } %}
+            {% endif %}
+  
+              <div class="filter__item">
+                <input type="checkbox" name="sector" id="{{ choice[0]|lower }}" 
+                  value="{{ choice[0]|lower }}" {{ html_attributes|xmlattr }}>
+                <label for="{{ choice[0]|lower }}">
+                  {{ choice[1] }}
+                </label>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="button-container">
+            <button type="submit" class="button button--primary-invert">Filtrar</button>
+  
+            <a href="{{ group.absolute_url }}" class="clear-filter">Limpar filtro</a>
+          </div>
+        </form>
+      </div>
+  
+      {% if categories != [] or material_type != [] or sectors != []  %}
+        <section class="section section__materials">
+          <div class="section__container">  
+            <div class="materials__grid-items">
+            {% for content in contents %}
+              {% set category = content.widgets.module_16467570902134.body.categoria|lower %}
+              {% set material = content.widgets.module_16467570902134.body.tipo_de_material|lower %}
+              {% set sector = content.widgets.module_16467570902134.body.setor|lower %}
+  
+              {% set filtered_category = categories is containing category %}          
+              {% set filtered_material = material_type is containing material %}  
+              {% set filtered_sector = sectors is containing sector %}     
+  
+                {% if filtered_category or filtered_material or filtered_sector %}
 
-          <a href="{{ group.absolute_url }}" class="clear-filter">Limpar filtro</a>
-        </div>
-      </form>
+                  <article class="card-primary__article filter blog-hidden">
+                    {% if content.featured_image and group.use_featured_image_in_summary %}
+                      <figure class="card-primary__figure">
+                        <a href="{{content.link_rel_canonical_url}}">
+                          <img 
+                            data-src="{{ content.featured_image }}" 
+                            data-srcset="{{ resize_image_url( content.featured_image, 345, 190, 345 ) }} 345w" 
+                            sizes="345px" 
+                            alt="{{ content.featured_image_alt_text }}"
+                            class="lazyload card-primary__image"
+                            width="345px"
+                            height="190px"
+                          />
+                        </a>
+                      </figure>
+                    {% endif %}
+                    <div class="card-primary__summary">
+                      <a href="{{content.link_rel_canonical_url}}">
+                        <h2 class="card-primary__name">{{ content.name }}</h2>
+                        {% if content_group.show_summary_in_listing %}
+                          <p class="card-primary__description">{{ content.meta_description }}</p>
+                        {% endif %}
+                      </a>
+                      {% if content.tag_list != [] %}
+                        {% for tag in content.topic_list %}
+                          <a href="{{ blog_tag_url('default', tag.slug) }}" class="card-primary__tag">{{tag}}</a>
+                        {% endfor %}       
+                      {% endif %}
+                      <!-- {% if category %}
+                        <span class="card-primary__tag">{{ category }}</span>
+                      {% endif %}
+                      {% if material %}
+                        <span class="card-primary__tag">{{ material }}</span>
+                      {% endif %}
+                      {% if sector %}
+                        <span class="card-primary__tag">{{ sector }}</span>
+                      {% endif %} -->
+                    </div>
+                  </article>   
+                  <hr class="blog-listing__items__separator">          
+                {% endif %}
+              {% endfor %}   
+            </div>     
+          </div>
+          <div class="loadmore-container">
+            <a href="javascript();"  id="button__loadmore">
+              <span class="icon"><svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="12.584" y1="0.994911" x2="6.58402" y2="6.99491" stroke="#37324B"/>
+                <line x1="1.12575" y1="0.750936" x2="6.77224" y2="6.46773" stroke="#37324B"/>
+                </svg>
+                </span>
+              <span >Mostrar mais</span>
+            </a>
+          </div>
+        </section>                   
+      {% else %}
+        {% include "./partials/materials-listing.html" %}
+      {% endif %}
     </div>
 
-    {% if categories != [] or material_type != [] or sectors != []  %}
-      <section class="section section__materials">
-        <div class="section__container">  
-          <div class="materials__grid-items">
-          {% for content in contents %}
-            {% set category = content.widgets.module_16467570902134.body.categoria|lower %}
-            {% set material = content.widgets.module_16467570902134.body.tipo_de_material|lower %}
-            {% set sector = content.widgets.module_16467570902134.body.setor|lower %}
+    
 
-            {% set filtered_category = categories is containing category %}          
-            {% set filtered_material = material_type is containing material %}  
-            {% set filtered_sector = sectors is containing sector %}     
+    {% module "module_16427922005877" path="/cortex-intelligence/modules/form-newsletter", label="form-newsletter" %}
 
-              {% if filtered_category and filtered_material and filtered_sector %}
-                <article class="card-primary__article filter">
-                  {% if content.featured_image and group.use_featured_image_in_summary %}
-                    <figure class="card-primary__figure">
-                      <a href="{{content.link_rel_canonical_url}}">
-                        <img 
-                          data-src="{{ content.featured_image }}" 
-                          data-srcset="{{ resize_image_url( content.featured_image, 345, 190, 345 ) }} 345w" 
-                          sizes="345px" 
-                          alt="{{ content.featured_image_alt_text }}"
-                          class="lazyload card-primary__image"
-                          width="345px"
-                          height="190px"
-                        />
-                      </a>
-                    </figure>
-                  {% endif %}
-                  <div class="card-primary__summary">
-                    <a href="{{content.link_rel_canonical_url}}">
-                      <h2 class="card-primary__name">{{ content.name }}</h2>
-                      {% if content_group.show_summary_in_listing %}
-                        <p class="card-primary__description">{{ content.meta_description }}</p>
-                      {% endif %}
-                    </a>
-                    {% if content.tag_list != [] %}
-                      {% for tag in content.topic_list %}
-                        <a href="{{ blog_tag_url('default', tag.slug) }}" class="card-primary__tag">{{tag}}</a>
-                      {% endfor %}       
-                    {% endif %}
-                  </div>
-                </article>   
-                <hr class="blog-listing__items__separator">          
-              {% endif %}
-            {% endfor %}   
-          </div>     
-        </div>
-      </section>                   
-    {% else %}
-      {% include "./partials/materials-listing.html" %}
-    {% endif %}
 
     <div class="mobile-filter">
       <button id="open-filter" class="mobile-filter__button">

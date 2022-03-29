@@ -1,7 +1,12 @@
 <section class="blog-listing__section">
   <div class="blog-listing__items">
     {% for content in contents %}
-    <article class="card-primary__article">
+
+    {% set category = content.widgets.module_16467570902134.body.categoria|lower %}
+    {% set material = content.widgets.module_16467570902134.body.tipo_de_material|lower %}
+    {% set sector = content.widgets.module_16467570902134.body.setor|lower %}
+
+    <article class="card-primary__article blog-hidden">
       {% if content.featured_image and group.use_featured_image_in_summary %}
         <figure class="card-primary__figure">
           <a href="{{content.link_rel_canonical_url}}">
@@ -29,9 +34,29 @@
             <a href="{{ blog_tag_url('default', tag.slug) }}" class="card-primary__tag">{{tag}}</a>
           {% endfor %}       
         {% endif %}
+        
+        <!-- {% if category %}
+          <span class="card-primary__tag">{{ category }}</span>
+        {% endif %}
+        {% if material %}
+          <span class="card-primary__tag">{{ material }}</span>
+        {% endif %}
+        {% if sector %}
+          <span class="card-primary__tag">{{ sector }}</span>
+        {% endif %} -->
       </div>
     </article>
     <hr class="blog-listing__items__separator">
   {% endfor %}
+  </div>
+  <div class="loadmore-container">
+    <a href="javascript();"  id="button__loadmore">
+      <span class="icon"><svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="12.584" y1="0.994911" x2="6.58402" y2="6.99491" stroke="#37324B"/>
+        <line x1="1.12575" y1="0.750936" x2="6.77224" y2="6.46773" stroke="#37324B"/>
+        </svg>
+        </span>
+      <span >Mostrar mais</span>
+    </a>
   </div>
 </section>
