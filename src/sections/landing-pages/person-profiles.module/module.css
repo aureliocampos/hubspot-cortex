@@ -20,6 +20,9 @@
   height: 350px;
   margin: 0 auto 3.5em auto;
 }
+.profile__figure > .profile__image {
+  border-radius: 100%;
+}
 .profile__info {
   text-align: center;
   margin-top: 1rem;

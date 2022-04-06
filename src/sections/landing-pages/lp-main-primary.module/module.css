@@ -11,12 +11,18 @@
   border-radius: 20px;
 }
 
-.lp-main__title {
+.lp-main--primary .lp-main__title h1 {
   font: 400 2em var(--primary-font);
   color: var(--darkest);
   line-height: 120%;
   letter-spacing: -0.055em;
-  margin: 2rem 0;
+  margin: 1rem 0;
+}
+.lp-main--primary .lp-main__title p {
+  font: 400 1em var(--primary-font);
+  color: var(--darkest);
+  line-height: 148%;
+  margin-bottom: 3rem;
 }
 .button--lp-cta {
  font: 600 1em var(--secondary-font);
@@ -58,9 +64,12 @@
   .lp-main--primary .section__content {
     width: 46%;
   }
-  .lp-main__title {
+  .lp-main--primary .lp-main__title h1 {
     font-size: 2.5em;
-    margin: 2rem 0 3rem;
+    margin: 1.5rem 0 1rem;
+  }
+  .lp-main--primary .lp-main__title p {
+    font-size: 1.25em;
   }
   .lp-main__figure[data-figuretype="ebook"] {
     max-width: 43%;
@@ -76,7 +85,6 @@
   }
 }
 
-
 @media (min-width: 1200px) {
   .lp-main--primary[data-typemargin="ebook"] {
     min-height: 435px;
@@ -86,9 +94,6 @@
   }
   .lp-main--primary .section__container { 
     max-width: 1114px;
-  }
-  .lp-main__title {
-    font-size: 2.7em;
   }
   .lp-main__figure[data-figuretype="meetup"] {
     max-width: 60%;

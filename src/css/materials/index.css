@@ -31,10 +31,6 @@ body.overflow {
   color: var(--darkest);
 }
 
-
-.main--materials .blog-hidden {
-  display: none;
-}
 .library-grid-items {
   padding: 0 1.5em;
   min-height: 350px;
@@ -44,6 +40,9 @@ body.overflow {
 .card-primary__article {
   max-width: 345px;
   margin: 0 auto;
+}
+.card-primary__article:last-of-type ~ .blog-listing__items__separator {
+  display: none;
 }
 
 /* Image */
@@ -224,7 +223,7 @@ body.overflow {
   max-width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 4em;
+  margin: 3em auto 4em;
 }
 #button__loadmore {
   display: block;
@@ -279,7 +278,7 @@ body.overflow {
     font-size: 0.875em;
   }
   .main-lib .section__container {
-    background-position: left center;
+    background-position: 60% center;
   }
   .main-lib .section__content > h1 {
     font-size: 2em;

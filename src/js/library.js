@@ -224,5 +224,5 @@ clearFilter.addEventListener("click", (event) => {
   containerFilter.classList.remove('active');
 })
 
-console.log("Revisão 22");
+console.log("Revisão 47");
 mountLibraryGrid(data)
