@@ -1,17 +1,17 @@
 {% if module.color_theming == "brand_color_2" %}
   {% require_css %}
-    <style type="text/css">:root{--brand_official:var(--purple_official);--brand_spotlight:var(--purple_spotlight);--brand_light:var(--purple_light);--brand_lightest:var(--purple_lightest)}</style>
+    <style>:root{--brand_official:var(--purple_official);--brand_spotlight:var(--purple_spotlight);--brand_light:var(--purple_light);--brand_lightest:var(--purple_lightest)}</style>
   {% end_require_css %}
 {% elif module.color_theming == "brand_color_3" %}
   {% require_css %}
-    <style type="text/css">:root{--brand_official:var(--blue_official);--brand_spotlight:var(--blue_spotlight);--brand_light:var(--blue_light);--brand_lightest:var(--blue_lightest)}</style>
+    <style>:root{--brand_official:var(--blue_official);--brand_spotlight:var(--blue_spotlight);--brand_light:var(--blue_light);--brand_lightest:var(--blue_lightest)}</style>
   {% end_require_css %}
 {% elif module.color_theming == "brand_color_4" %}
   {% require_css %}
-    <style type="text/css">:root{--brand_official:var(--green_official);--brand_spotlight:var(--green_spotlight);--brand_light:var(--green_light);--brand_lightest:var(--green_lightest)}</style>
+    <style>:root{--brand_official:var(--green_official);--brand_spotlight:var(--green_spotlight);--brand_light:var(--green_light);--brand_lightest:var(--green_lightest)}</style>
   {% end_require_css %}
 {% else %}
   {% require_css %}
-    <style type="text/css">:root{--brand_official:var(--darker);--brand_spotlight:var(--dark);--brand_light:var(--light);--brand_lightest:var(--lightest)}</style>
+    <style>:root{--brand_official:var(--darker);--brand_spotlight:var(--dark);--brand_light:var(--light);--brand_lightest:var(--lightest)}</style>
   {% end_require_css %}
 {% endif %}

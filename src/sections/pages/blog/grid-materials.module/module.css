@@ -143,3 +143,14 @@
     margin: 0 auto;
   }
 }
+
+.card-primary__article {
+  display: none;
+}
+.card-primary__article.active {
+  display: block;
+}
+
+.card-primary__article.post-hidden {
+  display: none;
+}

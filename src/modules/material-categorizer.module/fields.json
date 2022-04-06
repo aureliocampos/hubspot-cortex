@@ -16,7 +16,7 @@
   "required" : true,
   "locked" : false,
   "display" : "select",
-  "choices" : [ [ "caso_de_sucesso", "Caso de sucesso" ], [ "ebook", "Ebook" ], [ "meetup", "Meetup" ], [ "audio_posts", "Áudio Posts" ], [ "novidades_cortex", "Novidades Cortex" ], [ "guest_post", "Guest Post" ], [ "infograficos", "Infográficos" ], [ "cartilha", "Cartilha" ] ],
+  "choices" : [ [ "caso_de_sucesso", "Caso de sucesso" ], [ "ebook", "Ebook" ], [ "meetup", "Meetup" ], [ "audio_posts", "Áudio Posts" ], [ "infograficos", "Infográficos" ], [ "cartilha", "Cartilha" ] ],
   "type" : "choice"
 }, {
   "id" : "e9898359-d3c0-6aab-6179-2e09773570d9",

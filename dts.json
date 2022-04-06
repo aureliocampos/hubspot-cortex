@@ -1,225 +1,720 @@
 {
-  "@context": "https://schema.org",
-  "@graph": [
+  "total": "65",
+  "data": [
     {
-      "@type": "Organization",
-      "@id": "{{request.domain}}/#organization",
-      "name" : "{{ site_settings.company_name }}",
-      "url" : "{{ site_settings.domain }}",
-      "legalName" : "{{ site_settings.company_name }}",
-      "description": "{{ content.meta_description}}",
-      "telephone" : "{{ site_settings.company_phone}}",
-      "email" : "",
-      "address" : {
-        "@type" : "PostalAddress",
-        "streetAddress" : "{{ site_settings.company_street_address1 }}",
-        "addressLocality" : "{{ site_settings.company_city }}",
-        "addressRegion" : "{{ site_settings.company_state }}",
-        "addressCountry" : "{{ site_settings.company_country }}",
-        "postalCode" : "{{ site_settings.company_zip }}"
-      },
-      "priceRange": "R$ and $",
-      "openingHours": "Mo 09:00-18:00 Tu 09:00-18:00 We 09:00-18:00 Th 09:00-18:00 Fr 09:00-18:00",
-      "hasMap": "https://goo.gl/maps/qqGexPC5scoXsj2f7",
-      "sameAs": [
-        "https://www.facebook.com/beCortex/",
-        "https://www.instagram.com/becortex/",
-        "https://www.linkedin.com/company/cortex-intelligence/mycompany/",
-        "https://www.youtube.com/c/CORTEXINTELLIGENCE"
-      ],
-      "logo": {
-        "@type": "ImageObject",
-        "@id": "{{request.domain}}/#logo",
-        "inLanguage": "pt-BR",
-        "url": "{{ site_settings.site_settings.logo_src}}",
-        "width": 130,
-        "height": 122,
-        "caption": "{{ site_settings.company_name }}"
-      },
-      "image": {
-        "@id": "{{request.domain}}/#logo",
-        "image" : "{{ site_settings.site_settings.logo_src}}"
-      }
+      "id": "70339778821",
+      "index": "1",
+      "title": "[Caso de sucesso] Como uma das maiores seguradoras do país aumentou em 55% o impacto positivo e 60% na reputação da marca",
+      "description": "Saiba como a estratégia de comunicação de uma das maiores seguradoras do país foi revista e realinhada para contribuir com as metas de negócio.",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/CASODESUCESSO__blog_post-seguradora.jpg",
+      "featuredImageAlt": "Como uma das maiores seguradoras do país aumentou em 55% o impacto positivo e 60% na reputação da marca",
+      "url": "https://pages.cortex-intelligence.com/caso-de-sucesso-seguradora",
+      "category": "comunicacao",
+      "materialType": "caso_de_sucesso"
     },
     {
-      "@type" : "LocalBusiness",
-      "name" : "{{ site_settings.company_name }}",
-      "image" : "{{ site_settings.site_settings.logo_src}}",
-      "telephone" : "{{ site_settings.company_phone}}",
-      "email" : "",
-      "address" : {
-        "@type" : "PostalAddress",
-        "streetAddress" : "{{ site_settings.company_street_address1 }}",
-        "addressLocality" : "{{ site_settings.company_city }}",
-        "addressRegion" : "{{ site_settings.company_state }}",
-        "addressCountry" : "{{ site_settings.company_country }}",
-        "postalCode" : "{{ site_settings.company_zip }}"
-      },
-      "url" : "{{ site_settings.domain }}",
-      "priceRange": "R$ & $"
+      "id": "70339778606",
+      "index": "2",
+      "title": "[Caso de sucesso] Como uma Big Tech aumentou em 7x a precisão dos dados de contato e subiu para 90%de acurácia nos dados enriquecidos",
+      "description": "Saiba como uma gigante da tecnologia venceu o desafio de gerar leads qualificados para Brasil e América Latina com a ajuda do Cortex SI.",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/CASODESUCESSO__blog_post-big-tech.jpg",
+      "featuredImageAlt": " Como uma Big Tech aumentou em 7x a precisão dos dados de contato e subiu para 90%de acurácia nos dados enriquecidos",
+      "url": "https://pages.cortex-intelligence.com/caso-de-sucesso-big-tech",
+      "category": "vendas",
+      "materialType": "caso_de_sucesso"
     },
     {
-      "@type": "WebSite",
-      "@id": "{{request.domain}}/#website",
-      "url": "{{ site_settings.domain }}",
-      "name": "{{ site_settings.company_name }}",
-      "description": "Big Data e ciência de dados para turbinar  seus resultados",
-      "publisher": {
-        "@id": "{{request.domain}}/#organization"
-      },
-      "potentialAction": [{
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://www.cortex-intelligence.com/hs-search-results?term={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
-        },{
-          "@type": "SearchAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "android-app://com.cortex-intelligence/https/query.cortex-intelligence.com/hs-search-results?term={search_term_string}"
-          },
-          "query-input": "required name=search_term_string"
-        }],
-      "inLanguage": "{{ content.language.languageTag }}"
+      "id": "70339778224",
+      "index": "3",
+      "title": "[Caso de sucesso] Como Banco S.A. aprimorou suas estratégias de negócio ao alinhar a área de comunicação com dados de mercado",
+      "description": "Como Banco S.A. aprimorou suas estratégias de negócio ao alinhar a área de comunicação com dados de mercado",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/CASODESUCESSO__blog_post-banco.png",
+      "featuredImageAlt": "Como Banco S.A. aprimorou suas estratégias de negócio ao alinhar a área de comunicação com dados de mercado",
+      "url": "https://pages.cortex-intelligence.com/caso-de-sucesso-bancosa",
+      "category": "comunicacao",
+      "materialType": "caso_de_sucesso"
     },
     {
-      "@type": "WebPage",
-      "@id": "{{content.absolute_url}}/#webpage",
-      "url": "{{content.absolute_url}}",
-      "name": "{{page_meta.unescaped_html_title}}",
-      "isPartOf": {
-        "@id": "{{request.domain}}/#website"
-      },
-      "primaryImageOfPage": {
-        "@id": "{{request.full_url}}/#primaryimage"
-      },
-      "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-      "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-      "description": "{{page_meta.unescaped_meta_description}}",
-      "inLanguage": "{{content.language}}",
-      "potentialAction": [
-        {
-          "@type": "ReadAction",
-          "target": [
-            "{{content.absolute_url}}"
-          ]
-        }
-      ]
+      "id": "70324267560",
+      "index": "4",
+      "title": "[Caso de sucesso] Saiba como a Indústria S.A. venceu a crise e transformou sua comunicação em um setor de inteligência",
+      "description": "Gestão de crise: entenda como a Indústria S.A. transformou o departamento de Comunicação em um setor de inteligência",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/CASODESUCESSO__blog_post-industria.png",
+      "featuredImageAlt": "Gestão de crise: entenda como a Indústria S.A. transformou o departamento de Comunicação em um setor de inteligência",
+      "url": "https://pages.cortex-intelligence.com/caso-de-sucesso-industria",
+      "category": "comunicacao",
+      "materialType": "caso_de_sucesso"
     },
     {
-      "@type": "ImageObject",
-      "@id": "{{request.full_url}}/#primaryimage",
-      "inLanguage": "{{content.language}}",
-      "url": "{{content.featured_image}}",
-      "width": 1000,
-      "height": 548,
-      "caption": "{{content.featured_image_alt_text}}"
+      "id": "70339777872",
+      "index": "5",
+      "title": "[Caso de sucesso] Como a Autopeças S.A.* se beneficiou da inteligência de informações durante a crise da Covid-19",
+      "description": "Descubra como a empresa aumentou sua inteligência de informações para antecipar imprevistos logísticos durante a pandemia de Covid-19.",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/CASODESUCESSO__blog_post-autopecas.png",
+      "featuredImageAlt": "Como a Autopeças S.A.* se beneficiou da inteligência de informações durante a crise da Covid-19",
+      "url": "https://pages.cortex-intelligence.com/caso-de-sucesso-autopecas",
+      "category": "comunicacao",
+      "materialType": "caso_de_sucesso"
     },
     {
-      "@type": "Article",
-      "@id": "{{request.full_url}}/#article",
-      "url": "{{request.full_url}}",
-      "isPartOf": {
-        "@id": "{{group.absolute_url}}/#webpage"
-      },
-      "author": {
-        "@id": "{{content.blog_post_author.slug}}",
-        "name": "{{content.blog_post_author.display_name}}",
-        "url": "{{content.blog_post_author.slug}}"
-      },
-      "headline": "{{page_meta.unescaped_html_title}}",
-      "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-      "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-      "mainEntityOfPage": {
-        "@id": "{{request.full_url}}/#webpage"
-      },
-      "commentCount": 0,
-      "publisher": {
-        "@id": "{{request.domain}}/#organization",
-        "name":"{{ site_settings.company_name }}"
-      },
-      "image": {
-        "@id": "{{request.full_url}}/#primaryimage",
-        "url": "{{content.featured_image}}"
-      },
-      "articleBody": "{{content.post_body}}",
-      "keywords": ["{{content.topic_list|join(' ')}}"],
-      "inLanguage": "{{content.language.languageTag}}",
-      "potentialAction": [
-        {
-          "@type": "CommentAction",
-          "name": "Comment",
-          "target": [
-            "{{request.full_url}}/#respond"
-          ]
-        }
-      ]
+      "id": "69822467384",
+      "index": "6",
+      "title": "[eBook] Inteligência de Suprimentos na Era dos Dados",
+      "description": "Baixe o eBook e entenda porque, diante das transformações que marcam a Era dos Dados, a gestão das cadeias de suprimentos passou a ter um novo papel.",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/ebook_post-inteligencia-de-suprimentos-na-era-dos-dados.png",
+      "featuredImageAlt": "Inteligência de Suprimentos na Era dos Dados",
+      "url": "https://pages.cortex-intelligence.com/ebook-supply",
+      "category": "inteligencia",
+      "materialType": "ebook"
     },
     {
-      "@type": "BlogPosting",
-      "image": "{{content.featured_image}}",
-      "url": "{{request.full_url}}",
-      "headline": "{{page_meta.unescaped_html_title}}",
-      "alternativeHeadline": "{{page_meta.unescaped_html_title}}",
-      "dateCreated": "{{ datetimeformat(content.created, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-      "datePublished": "{{ datetimeformat(content.publish_date, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-      "dateModified": "{{ datetimeformat(content.updated, '%Y-%m-%dT%H:%M:%S%z%Z') }}",
-      "inLanguage": "{{content.language.languageTag}}",
-      "isFamilyFriendly": "true",
-      "copyrightYear": "{{year}}",
-      "copyrightHolder": "{{ site_settings.company_name }}",
-      "contentLocation": {
-        "@type": "Place",
-        "name": "{{ site_settings.company_city }}, {{ site_settings.company_state }}"
-      },
-      "accountablePerson": {
-        "@type": "Person",
-        "@id": "{{content.blog_post_author.slug}}",
-        "name": "{{content.blog_post_author.display_name}}",
-        "url": "{{content.blog_post_author.slug}}"
-      },
-      "author": {
-        "@type": "Person",
-        "@id": "{{content.blog_post_author.slug}}",
-        "name": "{{content.blog_post_author.display_name}}",
-        "url": "{{content.blog_post_author.slug}}"
-      },
-      "creator": {
-        "@type": "Person",
-        "name": "Patrick Coombe",
-        "url": "https://patrickcoombe.com"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "@id": "{{request.domain}}/#organization",
-        "name" : "{{ site_settings.company_name }}",
-        "url" : "{{ site_settings.domain }}",
-        "logo": {
-          "@type": "ImageObject",
-          "@id": "{{request.domain}}/#logo",
-          "inLanguage": "pt-BR",
-          "url": "{{ site_settings.site_settings.logo_src}}",
-          "width": 130,
-          "height": 122,
-          "caption": "{{ site_settings.company_name }}"
-        }
-      },
-      "mainEntityOfPage": "True",
-      "keywords": ["{{content.topic_list|join(' ')}}"],
-      "genre":["SEO","JSON-LD"],
-      "articleBody": "{{content.post_body}}",
+      "id": "69761468728",
+      "index": "7",
+      "title": "[eBook] Guia das Áreas de Comunicação e RP na Era dos Dados",
+      "description": "Descubra como mensurar a reputação da sua marca na Era dos Dados. Baixe agora!",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/ebook-post-guia-das-areas-de-comunicacao-e-rp-na-era-dos-dados.png",
+      "featuredImageAlt": "Guia das Áreas de Comunicação e RP na Era dos Dados",
+      "url": "https://pages.cortex-intelligence.com/guia-das-areas-de-comunicacao-rp",
+      "category": "comunicacao",
+      "materialType": "ebook"
     },
     {
-      "@type": "Person",
-      "@id": "{{content.blog_post_author.slug}}",
-      "name": "{{content.blog_post_author.display_name}}",
-      "description": "{{content.blog_post_author.bio}}",
-      "sameAs": [
-        "https://www.cortex-intelligence.com/sobre-a-cortex"
-      ],
-      "url": "{{content.blog_post_author.email}}"
+      "id": "69761468578",
+      "index": "8",
+      "title": "[eBook] A nova era da inteligência",
+      "description": "Conheça os 3 pilares da nova era da inteligência: descentralização, cultura ágil e crescimento!",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/ebook_post-1-1.png",
+      "featuredImageAlt": "A nova era da inteligência",
+      "url": "https://pages.cortex-intelligence.com/a-nova-era-da-inteligencia",
+      "category": "inteligencia",
+      "materialType": "ebook"
+    },
+    {
+      "id": "69825759330",
+      "index": "9",
+      "title": "[eBook] Big Data em Jornalismo: a influência dos dados e da tecnologia no cotidiano dos profissionais da área",
+      "description": "Veja como o Big Data tem proporcionado ao Jornalismo meios de identificar histórias, fontes e personagens em grandes bases de dados.",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/ebook_post-big-data-em-jornalismo.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/big-data-em-jornalismo",
+      "category": "comunicacao",
+      "materialType": "ebook"
+    },
+    {
+      "id": "69824162663",
+      "index": "10",
+      "title": "[eBook] Cortex Trends 2022: o futuro da área de Vendas e Inteligência de Mercado",
+      "description": "Cortex Trends 2022: saiba o que especialistas, consultores e pesquisadores apontam como tendências para o futuro de Vendas e Inteligência de Mercado. ",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/ebook_post_cortex-trends-vendas-e-inteligencia-de-mercado.png",
+      "featuredImageAlt": "Cortex Trends 2022: o futuro da área de Vendas e Inteligência de Mercado",
+      "url": "https://pages.cortex-intelligence.com/cortex-trends-2022-vendas-e-inteligencia-de-mercado",
+      "category": "vendas",
+      "materialType": "ebook"
+    },
+    {
+      "id": "69823308696",
+      "index": "11",
+      "title": "[eBook] Cortex Trends 2022: o futuro da Comunicação e do Marketing",
+      "description": "Cortex Trends 2022: Saiba o que especialistas, consultores e pesquisadores apontam como tendências para o futuro da Comunicação e do Marketing.",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/ebook_post_cortex-trends-comunicacao.png",
+      "featuredImageAlt": "Cortex Trends 2022: o futuro da Comunicação e do Marketing",
+      "url": "https://pages.cortex-intelligence.com/cortex-trends-2022-comunicacao",
+      "category": "comunicacao",
+      "materialType": "ebook"
+    },
+    {
+      "id": "69822466854",
+      "index": "12",
+      "title": "[eBook] Líderes na imprensa: guia completo do media training na era de dados",
+      "description": "Você sabe como treinar seu porta-voz na era de dados e as mudanças que o media training passou nos últimos anos? Confira neste ebook!",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/post-pr-ebook-lideres-na-imprensa-2-1.png",
+      "featuredImageAlt": "Líderes na imprensa: guia completo do media training na era de dados",
+      "url": "https://pages.cortex-intelligence.com/lideres-na-imprensa-guia-completo-do-media-training-a-era-de-dados",
+      "category": "comunicacao",
+      "materialType": "ebook"
+    },
+    {
+      "id": "69819125833",
+      "index": "13",
+      "title": "[eBook] Guia completo de análise de dados",
+      "description": "Conheça os principais tipos de análises de dados, quais são as vantagens de realizar esse processo e como conquistar bons resultados para o negócio.",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/SI-eBook-guia-completo-de-analise-de-dados-destaque-lp-3-1-1.png",
+      "featuredImageAlt": "Guia completo de análise de dados",
+      "url": "https://pages.cortex-intelligence.com/guia-completo-analise-de-dados",
+      "category": "vendas",
+      "materialType": "ebook"
+    },
+    {
+      "id": "69817598590",
+      "index": "14",
+      "title": "[eBook] Análise Preditiva: um guia para entender e aplicar o conceito",
+      "description": "Saiba porque a análise preditiva é uma forte tendência de analytics e como essa prática é aplicada em empresas dos mais variados segmentos.",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/MI-destaque-ebook-analise-preditiva-1.png",
+      "featuredImageAlt": "Análise Preditiva: um guia para entender e aplicar o conceito",
+      "url": "https://pages.cortex-intelligence.com/guia-analise-preditiva",
+      "category": "inteligencia",
+      "materialType": "ebook"
+    },
+    {
+      "id": "69812262023",
+      "index": "15",
+      "title": "[Cartilha] Glossário dos principais termos de Comunicação e RP",
+      "description": "Mantenha-se atualizado com os conceitos mais importantes da Comunicação",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/pr-banner-glossario-termos-de-comunicacao-e-rp-3-1-1.png",
+      "featuredImageAlt": "Glossário dos principais termos de Comunicação e RP",
+      "url": "https://pages.cortex-intelligence.com/glossario-dos-principais-termos-de-comunicacao-e-rp",
+      "category": "comunicacao",
+      "materialType": "cartilha"
+    },
+    {
+      "id": "69816109471",
+      "index": "16",
+      "title": "[eBook] Planejamento de vendas 2022: dicas para começar o ano batendo suas metas",
+      "description": "Planejamento de vendas 2022: confira tendências, boas práticas e ferramentas que farão a diferença no seu plano de vendas!",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/ebook_post_planejamento-de-vendas-1.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/ebook-planejamento-de-vendas-2022",
+      "category": "vendas",
+      "materialType": "ebook"
+    },
+    {
+      "id": "69816109185",
+      "index": "17",
+      "title": "[eBook] Planejamento de Comunicação 2022: dicas para alinhar o discurso e conquistar espaço na mídia",
+      "description": "Descubra as principais tendências para o ano que vem e como adotá-las no seu planejamento.",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/ebook_post-planejamento-de-comunicacao-1.jpg",
+      "featuredImageAlt": "Planejamento de Comunicação 2022: dicas para alinhar o discurso e conquistar espaço na mídia",
+      "url": "https://pages.cortex-intelligence.com/planejamento-de-comunicacao-2022",
+      "category": "comunicacao",
+      "materialType": "ebook"
+    },
+    {
+      "id": "69814730616",
+      "index": "18",
+      "title": "[eBook] Geração de Leads Qualificados: como tornar este processo mais inteligente para o seu negócio",
+      "description": "Eleve o nível de geração de leads qualificados e confira indicações de métodos e ferramentas inovadores para aprimorar essa prática!",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/si-post-ebook-geracao-de-leads-qualificados-2-1-1.png",
+      "featuredImageAlt": "Geração de Leads Qualificados: como tornar este processo mais inteligente para o seu negócio",
+      "url": "https://pages.cortex-intelligence.com/gera%C3%A7%C3%A3o-de-leads-qualificados-como-tornar-este-processo-mais-inteligente-para-o-seu-neg%C3%B3cio",
+      "category": "vendas",
+      "materialType": "ebook"
+    },
+    {
+      "id": "69762773003",
+      "index": "19",
+      "title": "[eBook] Guia completo de estratégia de Prospecção em Vendas B2B",
+      "description": "Saiba quais são os desafios e facilidades que a era de dados trouxe para a prospecção de vendas além de técnicas e ferramentas que serão divisores de águas nesse processo",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/si-post-lp-ebook-estrategia-de-prospeccao-b2b2-3-1-1.png",
+      "featuredImageAlt": "Guia completo de estratégia de Prospecção em Vendas B2B",
+      "url": "https://pages.cortex-intelligence.com/si-guia-completo-de-estrat%C3%A9gia-de-prospec%C3%A7%C3%A3o-em-vendas-b2b",
+      "category": "vendas",
+      "materialType": "ebook"
+    },
+    {
+      "id": "69761469957",
+      "index": "20",
+      "title": "[eBook] Guia completo da mensuração de resultados na comunicação",
+      "description": "Preparamos este guia para detalhar tudo que você precisa saber sobre mensuração de resultados e o uso de dados na Comunicação Corporativa!",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/post-ebook-guia-de-mensuracao-de-resultados-em-comunicacao.png",
+      "featuredImageAlt": "Guia completo da mensuração de resultados na comunicação",
+      "url": "https://pages.cortex-intelligence.com/guia-completo-mensuracao-resultados",
+      "category": "comunicacao",
+      "materialType": "ebook"
+    },
+    {
+      "id": "69761472402",
+      "index": "21",
+      "title": "[eBook] Métricas de vendas: aprenda o que precisa monitorar para ter sucesso",
+      "description": "Saiba quais são as métricas que sua área precisa analisar para alavancar suas vendas usando dados",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/si-post-ebook-metricas-de-vendas-reev-1.png",
+      "featuredImageAlt": "Métricas de vendas: aprenda o que precisa monitorar para ter sucesso",
+      "url": "https://pages.cortex-intelligence.com/metricas-de-vendas-aprenda-o-que-precisa-monitorar-para-ter-sucesso",
+      "category": "vendas",
+      "materialType": "ebook"
+    },
+    {
+      "id": "69761468836",
+      "index": "22",
+      "title": "[eBook] Guia de vendas B2B: a nova era da geração de oportunidades",
+      "description": "Baixe este eBook e descubra como gerar novas oportunidades e aumentar suas vendas B2B.",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/post-ebook-si-guia-de-vendas-b2b-Jul-21-2021-01-29-56-68-PM-1-2.png",
+      "featuredImageAlt": "Guia de vendas B2B: a nova era da geração de oportunidades",
+      "url": "https://pages.cortex-intelligence.com/guia-vendas-b2b",
+      "category": "vendas",
+      "materialType": "ebook"
+    },
+    {
+      "id": "69748729676",
+      "index": "23",
+      "title": "[Kit] Marketing e Vendas: os materiais campeões para estruturar a estratégia de ponta a ponta",
+      "description": "Entenda tudo o que precisa para fazer a integração entre marketing e vendas, além de estruturar sua estratégia de ponta a ponta.",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/si-post-kit-marketing-e-vendas-co-mkt-ploomes-1.jpg",
+      "featuredImageAlt": "Marketing e Vendas: os materiais campeões para estruturar a estratégia de ponta a ponta",
+      "url": "https://pages.cortex-intelligence.com/ebook-marketing-e-vendas",
+      "category": "vendas",
+      "materialType": "kit"
+    },
+    {
+      "id": "69492773427",
+      "index": "24",
+      "title": "[eBook] Previsão de vendas: tecnologias, técnicas e processos que você precisa para se antecipar",
+      "description": "Entenda por que é preciso considerar alguns fatores importantes para fazer uma previsão de vendas mais assertiva com o nosso eBook!",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/ebook_post%20%282%29.jpg",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/previsao-de-vendas-tecnologias-tecnicas-e-processos",
+      "category": "vendas",
+      "materialType": "ebook"
+    },
+    {
+      "id": "69486529953",
+      "index": "25",
+      "title": "[eBook] Guia para planejar estratégias de Comunicação alinhadas aos objetivos de negócio",
+      "description": "Aprenda a alinhar objetivos de Comunicação aos do negócio ao usar dados para desenvolver estratégias mais integradas e assertivas!",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/ebook_post%20Guia%20para%20planejar%20estrat%C3%A9gias%20de%20Comunica%C3%A7%C3%A3o%20alinhadas%20aos%20objetivos%20de%20neg%C3%B3cio-1.png",
+      "featuredImageAlt": "Guia para planejar estratégias de Comunicação alinhadas aos objetivos de negócio",
+      "url": "https://pages.cortex-intelligence.com/guia-para-planejar-estrategias-de-comunicacao-alinhadas-aos-objetivos-de-negocio",
+      "category": "comunicacao",
+      "materialType": "ebook"
+    },
+    {
+      "id": "68808670233",
+      "index": "26",
+      "title": "Reputação para C-levels: o impacto de ferramentas e técnicas para uma Comunicação eficaz",
+      "description": "Conheça o impacto do posicionamento dos c-levels para a reputação corporativa e aprenda a treiná-los!",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/ebook_post-reputacao-para-c-levels-1.png",
+      "featuredImageAlt": "Reputação para C-levels: o impacto de ferramentas e técnicas para uma Comunicação eficaz",
+      "url": "https://pages.cortex-intelligence.com/reputacao-para-c-levels",
+      "category": "comunicacao",
+      "materialType": "ebook"
+    },
+    {
+      "id": "68696513830",
+      "index": "27",
+      "title": "[Pesquisa] Maturidade digital nas empresas brasileiras: conheça os setores que mais investem em tecnologia",
+      "description": "Para saber o nível de maturidade digital nas empresas, a Cortex avaliou 233 mil organizações no Brasil. Saiba como isso impacta o mundo dos negócios.",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/ebook_post%20%284%29-1.png",
+      "featuredImageAlt": "pesquisa maturidade digital nas empresas brasileiras - cortex intelligence",
+      "url": "https://pages.cortex-intelligence.com/pesquisa-maturidade-digital-nas-empresas-brasileiras",
+      "category": "inteligencia",
+      "materialType": "ebook"
+    },
+    {
+      "id": "66787893083",
+      "index": "28",
+      "title": "[eBook] Análise de dados nos negócios: um passo a passo para a cultura data driven em 2022",
+      "description": "Entenda o que é a cultura baseada em dados, os principais tipos de análises, as vantagens e como conquistar bons resultados para o seu time.",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/ebook_post_analise-de-dados-nos-negocios.jpg",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/analise-de-dados-nos-negocios",
+      "category": "comunicacao",
+      "materialType": "ebook"
+    },
+    {
+      "id": "66935474352",
+      "index": "29",
+      "title": "[eBook] Guia do benchmarking competitivo em Comunicação",
+      "description": "Saiba por que comparar o impacto dos seus principais concorrentes e confira dicas imperdíveis de como fazer isso.",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/ebook_post-guia-do-benchmarking-competitivo-em-comunicacao.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/guia-do-benchmarking-competitivo-em-comunicacao",
+      "category": "vendas",
+      "materialType": "ebook"
+    },
+    {
+      "id": "65446768299",
+      "index": "30",
+      "title": "[eBook] Coletânea de Cases de Sucesso em Vendas: o impacto da inteligência em dados na prática",
+      "description": "Veja cases de sucesso que mostram como a nossa solução atuou para elevar os resultados de empresas, otimizando o tempo e os processos de times de Vendas! ",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/ebook_post%20-%20Colet%C3%A2nea%20de%20Cases%20de%20Sucesso%20em%20Vendas.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/coletanea-cases-de-sucesso-em-vendas",
+      "category": "vendas",
+      "materialType": "ebook"
+    },
+    {
+      "id": "65645674551",
+      "index": "31",
+      "title": "[eBook] Coletânea de Cases de Comunicação",
+      "description": "Descubra, de forma prática como a inteligência de Comunicação atua a favor da sua empresa com esses três cases de sucesso!",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/ebook_post-coletanea-de-cases-de-comunicacao-1.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/coletanea-de-cases-de-comunicacao",
+      "category": "comunicacao",
+      "materialType": "ebook"
+    },
+    {
+      "id": "69210152103",
+      "index": "32",
+      "title": "[eBook] Comunicação Integrada e Inteligência: como e por que aliá-las",
+      "description": "Saiba por quê é importante analisar dados para endereçar canais de comunicação de forma consistente e unificada",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/post-pr-ebook-comunicacao-integrada.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/comunicacao-integrada-e-inteligencia-como-e-por-que-alia-las",
+      "category": "comunicacao",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62339351591",
+      "index": "33",
+      "title": "[eBook] Data driven Brand Awareness: combine dados para entender o impacto das ações de Branding",
+      "description": "[eBook] Data driven Brand Awareness: entenda por que e como a ciência de dados pode contribuir às estratégias de branding da sua empresa!",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/ebook_post_brand-2.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/ebook-data-driven-brand-awareness",
+      "category": "marketing",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62339831684",
+      "index": "34",
+      "title": "[eBook] Dimensionamento de Mercado: aprenda na prática como fazer esse tipo de análise",
+      "description": "Entenda a importância do dimensionamento de mercado e qual é a fatia que a sua empresa ocupa nele em relação aos demais players do mercado",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/si-post-ebook-dimensionamento-de-mercado-2.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/dimensionamento-de-mercado",
+      "category": "vendas",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62339794821",
+      "index": "35",
+      "title": "[eBook] 15 Hacks de Comunicação Corporativa na era digital",
+      "description": "Saiba como a Comunicação Corporativa pode melhorar seu planejamento, estratégias e ferramentas para alcançar os melhores resultados!",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/post-15-Hacks-de-Comunicacao-Corporativa-na-era-digital-2.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/15-hacks-de-comunicacao-corporativa-na-era-digital",
+      "category": "comunicacao",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62339927147",
+      "index": "36",
+      "title": "[eBook] Posicionamento da Marca e Big Data: descubra como aliar dados à sua estratégia",
+      "description": "Descubra agora mesmo como conectar dados a estratégia de posicionamento da marca para que a sua empresa se mantenha relevante!",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/pr-ebook-posicionamento-da-marca-e-big-data-1.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/ebook-posicionamento-da-marca-e-big-data",
+      "category": "comunicacao",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62339794800",
+      "index": "37",
+      "title": "[eBook] Reputação de marca e Black Friday 2021: O guia para se destacar no grande evento do ano",
+      "description": "Entenda como a reputação corporativa pode ajudar a sua marca a se diferenciar no momento mais esperado por compradores e vendedores: a Black Friday!",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/ebook_post_-reputacao-de-marca-e-Black-Friday-2.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/ebook-reputacao-de-marca-e-black-friday-2021",
+      "category": "comunicacao",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62339351947",
+      "index": "38",
+      "title": "[eBook] Guia de vendas para a Black Friday 2021: aprenda a vender mais no ambiente digital",
+      "description": "Saiba o que a sua empresa pode  fazer para alcançar resultados impressionantes na Black Friday, uma das datas mais importantes do ano para o varejo!",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/si-post-ebook-guia-de-vendas-black-friday-2021-2.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/guia-de-vendas-black-friday-2021",
+      "category": "vendas",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62339794593",
+      "index": "39",
+      "title": "[eBook] Novas métricas e indicadores de comunicação 3ª edição",
+      "description": "Descubra quais métricas e indicadores de comunicação usar para mensurar a reputação da sua marca na Era dos Dados. ",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/ebook_post_novas_metricas-2.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/novas-metricas-e-indicadores-de-comunicacao-3edicao",
+      "category": "comunicacao",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62338718992",
+      "index": "40",
+      "title": "[eBook] Marketing de Conteúdo: como explorar a estratégia para repercutir nas mídias digitais?",
+      "description": "Entenda por que apostar no Marketing de Conteúdo é uma estratégia essencial para atrair e engajar seu público.",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/ebook_post_-2.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/ebook-marketing-de-conteudo",
+      "category": "marketing",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62338720040",
+      "index": "41",
+      "title": "[eBook] Relatório de Vendas: da mensuração de resultados à criação de estratégias",
+      "description": "Conheça, de forma prática, as melhores dicas para desenvolver um relatório de Vendas e melhore a performance do seu time!",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/si-ebook-post-relatorio-de-vendas-2.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/relatorio-de-vendas-da-mensuracao-de-resultados-a-criacao-de-estrategias",
+      "category": "vendas",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62338718982",
+      "index": "42",
+      "title": "[eBook] Data Storytelling: aprenda a criar relatórios que contam histórias",
+      "description": "Data Storytelling: tudo o que você precisa saber para reunir, processar e analisar os dados para criar narrativas cativantes. ",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/ebook_post_data-storytelling-2.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/data-storytelling",
+      "category": "comunicacao",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62339968389",
+      "index": "43",
+      "title": "[eBook] Guia completo da qualificação de leads",
+      "description": "Venda mais e melhor ao qualificar sua base de leads com prospects que, de fato, têm fit com a sua empresa ",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/si-ebook-post-qualificacao-de-leads-1.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/guia-completo-da-qualificacao-de-leads",
+      "category": "vendas",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62339351608",
+      "index": "44",
+      "title": "[eBook] Guia completo para a Comunicação Interna na era de dados",
+      "description": "Entenda como a transformação digital está promovendo inovação e inteligência na Comunicação e como aplicá-la na sua empresa! ",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/pr_ebook_post_comunicacao_interna-2.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/guia-completo-comunicacao-interna-era-dos-dados",
+      "category": "comunicacao",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62338720123",
+      "index": "45",
+      "title": "[eBook] Brand equity: como melhorá-lo usando dados?",
+      "description": "Entenda o que significa esse termo para a definição do valor da sua marca e saiba como os dados podem te ajudar a mensurá-lo e melhorá-lo",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/pr-post-ebook-brand-equity-2.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/brand-equity-como-melhora-lo-usando-dados",
+      "category": "marketing",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62339927175",
+      "index": "46",
+      "title": "[eBook] Inteligência de Marketing e Vendas: transformando dados em acionáveis",
+      "description": "Descubra a importância da análise de dados em Marketing e Vendas, as vantagens de realizar esse processo e como conquistar bons resultados! ",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/SI-banner-post-inteligencia-em-mkt-vendas-dados-acionaveis-1-1-1.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/ebook-inteligencia-mkt-vendas-transformando-dados-acionaveis",
+      "category": "inteligencia",
+      "materialType": "cartilha"
+    },
+    {
+      "id": "62338719248",
+      "index": "47",
+      "title": "[eBook] Gestão de relacionamento com stakeholders: como usar dados para estabelecer relações eficazes com públicos de interesse?",
+      "description": "Aprenda a identificar seus stakeholders e como trabalhar a comunicação da sua empresa com cada um deles",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/pr-post-ebook-gestao-de-relacionamento-com-stakeholders-2-1-3.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/ebook-gest%C3%A3o-de-relacionamento-com-stakeholders-como-usar-dados-para-estabelecer-rela%C3%A7%C3%B5es-eficazes-com-p%C3%BAblicos-de-interesse",
+      "category": "comunicacao",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62339794842",
+      "index": "48",
+      "title": "[eBook] Guia completo da Inteligência de Mercado",
+      "description": "Saiba o que é inteligência de mercado e porque cada vez mais negócios estão considerando essa área de conhecimento como fator-chave para o crescimento.",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/banner-post-guia-completo-de-inteligencia-de-mercado-3-1-2.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/si-guia-completo-da-inteligencia-de-mercado",
+      "category": "inteligencia",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62339352232",
+      "index": "49",
+      "title": "[Cartilha] BBB 21: o que o “Big dos Bigs” nos ensinou sobre Inbound PR",
+      "description": "Saiba como grandes marcas trabalharam suas exposições como estratégia de Inbound PR e confira os resultados dessas ações ",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/pr-post-cartilha-bbb21-inbound-pr-3-1-2.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/cartilha-bbb21-o-que-o-big-dos-bigs-nos-ensinou-sobre-inbound-pr",
+      "category": "comunicacao",
+      "materialType": "cartilha"
+    },
+    {
+      "id": "62339351839",
+      "index": "50",
+      "title": "[eBook] Guia completo sobre Inbound PR",
+      "description": "Tudo que você precisa saber sobre Inbound PR para alavancar seus resultados de Comunicação, Marketing e Vendas",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/post-6-3-1-2.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/ebook-guia-completo-inbound-pr",
+      "category": "comunicacao",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62338720154",
+      "index": "51",
+      "title": "[eBook] Sales Intelligence: o que é e como utilizar para aumentar sua receita",
+      "description": "Saiba como Sales Intelligence ajuda no aumento de receita da sua empresa ao ser desenvolvida por times orientados a resultados ",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/post-4-Jul-21-2021-01-49-01-52-PM-1-2.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/sales-intelligence-o-que-e-como-utilizar",
+      "category": "vendas",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62339832647",
+      "index": "52",
+      "title": "[eBook] Inteligência de Varejo na Era dos Dados",
+      "description": "Baixe este eBook e descubra a importância da tecnologia no suporte às estratégias de vendas das gigantes do varejo!",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/post-1-2-4-1-1.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/inteligencia-de-varejo",
+      "category": "inteligencia",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62339794515",
+      "index": "53",
+      "title": "[eBook] Inteligência de Suprimentos 2020",
+      "description": "Conheça as principais tendências da área no eBook lançado em parceria com a Cadarn Consultoria",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/post-2-Jul-21-2021-01-48-42-98-PM-1-2.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/inteligencia-de-suprimentos-2020",
+      "category": "inteligencia",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62339351643",
+      "index": "54",
+      "title": "[Revista] MI Trends #1: inteligência de mercado 2020",
+      "description": "Revista lançada em parceria com Ibramerc traz principais tendências da área",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/Trends_tendencias_post-4-1-2.jpg",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/mi-trends-1",
+      "category": "inteligencia",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62340007500",
+      "index": "55",
+      "title": "[eBook] Monitoramento integrado de mídias na comunicação",
+      "description": "Conheça, nesta parceria com a Ideal Marketing, 7 passos para vencer os desafios da transformação digital na comunicação",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/post_monitoramento_integrado-3-1-1.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/monitoramento-integrado",
+      "category": "comunicacao",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62339351907",
+      "index": "56",
+      "title": "[Revista] B2Gov Trends #3",
+      "description": "Nos últimos anos, vender para o governo se tornou ainda mais desafiador. Saiba como se diferenciar para não perder espaço!",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/Post_vender_mais-4-1-2.jpg",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/b2gov-trends-3",
+      "category": "vendas",
+      "materialType": "cartilha"
+    },
+    {
+      "id": "62339351939",
+      "index": "57",
+      "title": "[eBook] Novas métricas e indicadores de comunicação - 2ª edição",
+      "description": "Descubra como mensurar a reputaçãoda sua marca na Era dos Dados",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/blogpost-Jul-21-2021-01-38-12-65-PM-1-2.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/novas-metricas-e-indicadores-de-comunicacao-3edicao",
+      "category": "comunicacao",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62339968331",
+      "index": "58",
+      "title": "[Caso de sucesso] Como a Caminhões S.A. reduziu em 25% as notícias detratoras sobre a marca com o uso de dados",
+      "description": "A empresa conseguiu ainda crescer seu índice de reputação em 5% com o uso de big data e ciência de dados",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/post-Jul-21-2021-01-46-00-75-PM-1-1.jpg",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/caso-de-sucesso-caminhoes",
+      "category": "comunicacao",
+      "materialType": "caso_de_sucesso"
+    },
+    {
+      "id": "62340007484",
+      "index": "59",
+      "title": "[Caso de sucesso] Como a English Course S.A. aumentou a captação ﻿de alunos com Growth Intelligence",
+      "description": "A English Course S.A. observava uma perda de 10% da sua base de alunos por conta da lentidão em seu tempo de resposta. ",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/post2-Jul-21-2021-01-59-34-40-PM-1-1.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/caso-de-sucesso-englishcourse",
+      "category": "vendas",
+      "materialType": "caso_de_sucesso"
+    },
+    {
+      "id": "62339794098",
+      "index": "60",
+      "title": "[Revista] B2Gov Trends #2",
+      "description": "Conheça os pontos mais importantes das novas legislações do mercado público e como se manter competitivo diante desse cenário",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/post-revista-b2gov-Jul-21-2021-01-46-39-35-PM-1-2.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/b2gov-trends-2",
+      "category": "inteligencia",
+      "materialType": "cartilha"
+    },
+    {
+      "id": "62339832645",
+      "index": "61",
+      "title": "[eBook] Gestão de reputação e crise",
+      "description": "Saiba como usar dados para fortalecer a imagem da sua empresa",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/post2-Jul-21-2021-01-28-35-98-PM-1-1.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/ebook-gestao-de-reputacao-e-crise",
+      "category": "comunicacao",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62339794586",
+      "index": "62",
+      "title": "[eBook] Inteligência de comunicação e RP - 2ª edição",
+      "description": "Conheça os 7 pilares que fundamentam a nova comunicação empresarial, e como aplicá-los na sua empresa",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/Blogpost-Jul-21-2021-01-39-21-42-PM-1-2.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/inteligencia-de-comunicacao-e-rp",
+      "category": "comunicacao",
+      "materialType": "ebook"
+    },
+    {
+      "id": "62338719753",
+      "index": "63",
+      "title": "[Caso de sucesso] Como a Alimentos S.A. usou dados para monitorar importações e alavancar vendas",
+      "description": "Com decisões de importação e exportação obtidas por um novo fluxo de trabalho, baseado em dados, a Alimentos S.A. alavancou seu crescimento.",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/Mi-caso-de-sucesso-Alimentos-3-1-2.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/caso-de-sucesso-alimentos",
+      "category": "vendas",
+      "materialType": "caso_de_sucesso"
+    },
+    {
+      "id": "62339831808",
+      "index": "64",
+      "title": "[Caso de sucesso] Um novo workflow fez a Farmacêutica S.A. ganhar mais licitações",
+      "description": "Fornecedora do governo, a Farmacêutica S.A. tinha gargalos de processo pelo excesso de trabalho manual.",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/B2Gov-caso-sucesso-farmaceutica-3-1-2.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/caso-de-sucesso-farmaceutica",
+      "category": "vendas",
+      "materialType": "caso_de_sucesso"
+    },
+    {
+      "id": "62339351634",
+      "index": "65",
+      "title": "[Caso de Sucesso] Entenda o que pegou de surpresa a comunicação da Atacadista S/A",
+      "description": "O que os profissionais de empresas líderes têm adotado como premissa e o novo modelo voltado à geração de resultados para o negócio",
+      "featuredImage": "https://pages.cortex-intelligence.com/hubfs/Imported_Blog_Media/casodeuso-4-1-2.png",
+      "featuredImageAlt": "",
+      "url": "https://pages.cortex-intelligence.com/caso-de-sucesso-atacadista",
+      "category": "comunicacao",
+      "materialType": "caso_de_sucesso"
     }
   ]
 }
