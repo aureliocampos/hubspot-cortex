@@ -1,21 +1,47 @@
-  {% inline_text field="detalhes.duration" value="{{ module.detalhes.duration }}" %}
-{% inline_text field="detalhes.categoria" value="{{ module.detalhes.categoria }}" %}
-{% inline_text field="detalhes.metodo" value="{{ module.detalhes.metodo }}" %}
-{% inline_text field="detalhes.investimento" value="{{ module.detalhes.investimento }}" %}
-{% for item in module.detalhes.objetivo %}
-	{% inline_text field="detalhes.objetivo" value="{{ item }}" %}
-{% endfor %}
-{% inline_text field="detalhes.produto_utilizado" value="{{ module.detalhes.produto_utilizado }}" %}
-
-<secttion class="section section__recommend">
+<section class="section section__recommend">
 	<div class="section__container">
 		<div class="section__content">
 			<h2 class="section__title">
 				{{ module.section_title }}
 			</h2>
-			<p class="section__text">
+			<div class="section__text">
 				{{ module.texto }}
-			</p>
+			</div>
+		</div>
+		<hr>
+		<div class="section__content">
+			<ul class="list-recommend-info">
+				<li class="list-recommend-info__item">
+					<h3 class="list-recommend-info__title">Duração</h3>
+					<p class="list-recommend-info__text">{{ module.detalhes.duration }}</p>
+				</li>
+				<li class="list-recommend-info__item">
+					<h3 class="list-recommend-info__title">Categoria</h3>
+					<p class="list-recommend-info__text">{{ module.detalhes.categoria }}</p>
+				</li>
+				<li class="list-recommend-info__item">
+					<h3 class="list-recommend-info__title">Método</h3>
+					<p class="list-recommend-info__text">{{ module.detalhes.metodo }}</p>
+				</li>
+				<li class="list-recommend-info__item">
+					<h3 class="list-recommend-info__title">Investimento</h3>
+					<p class="list-recommend-info__text">{{ module.detalhes.investimento }}</p>
+				</li>
+				<li class="list-recommend-info__item">
+					<h3 class="list-recommend-info__title">Objetivo</h3>
+					<div class="list-recommend-info__text">
+						<ul>
+							{% for item in module.detalhes.objetivo %}
+								<li>{{ item }}</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</li>
+				<li class="list-recommend-info__item">
+					<h3 class="list-recommend-info__title">Produto utilizado</h3>
+					<p class="list-recommend-info__text">{{ module.detalhes.produto_utilizado }}</p>
+				</li>
+			</ul>
 		</div>
 	</div>
-</secttion>
+</section>

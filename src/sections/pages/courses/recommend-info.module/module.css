@@ -1,0 +1,112 @@
+
+/* sobre */
+.section__recommend {
+  padding: 3em 1.5em;
+  position: relative;
+}
+.section__recommend:before {
+  display: block;
+  content: '';
+  height: 50%;
+  width: 100%;
+  background: var(--lightest);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.section__recommend > .section__container {
+  padding: 1.5em;
+  background: var(--white);
+  border-radius: 1.25em;
+  box-shadow: 0px 20px 50px rgba(204, 204, 230, 0.27);
+}
+.section__recommend .section__content ~ hr {
+  display: none;
+}
+.section__recommend .section__title {
+  font: 600 2em / 100% var(--primary-font);
+  color: var(--darkest);
+  margin-bottom: 1em;
+}
+.section__recommend .section__text {
+  font: 400 1em / 148% var(--primary-font);
+  color: var(--darkest);
+  margin: 0.5em 0;
+}
+.list-recommend-info {
+  margin-top: 2em;
+}
+.list-recommend-info__item {
+  margin: 0.75em 0;
+}
+.list-recommend-info__title {
+  font: 600 1em / 120% var(--primary-font);
+  color: var(--darkest);
+}
+.list-recommend-info__text {
+  font: 400 0.875em / 148% var(--primary-font);
+  font-style: italic;
+  color: var(--darkest);
+}
+.list-recommend-info__text > ul{
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+.list-recommend-info__text > ul > li{
+  margin: 0.5em 0;
+}
+@media (min-width: 768px) { 
+  .section__recommend>.section__container {
+    position: relative;
+  }
+  .section__recommend .section__content ~ hr {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+    display: block;
+    transform: rotate(90deg);
+    width: 420px;
+    height: 1px;
+    border: none;
+    border-top: 1px solid #bdbdbd;
+  }
+  .section__recommend > .section__container {
+    border-radius: 2rem;
+  }
+  .list-recommend-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .list-recommend-info__item {
+    width: 30%;
+  }
+}
+@media (min-width: 1024px) {
+    /* sobre */
+  .section__recommend {
+    padding: 3.75em 1.5em;
+  }
+  .section__recommend > .section__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1114px;
+    margin: 0 auto;
+    padding: 4em 3.5em;
+  }
+  .section__recommend .section__content {
+    width: 45%;
+  }
+  .section__recommend .section__title {
+    font-size: 3em;
+  }
+  .section__recommend .section__text {
+    font-size: 1.125em;
+  }
+  .list-recommend-info__item {
+    width: 45%;
+  }
+}

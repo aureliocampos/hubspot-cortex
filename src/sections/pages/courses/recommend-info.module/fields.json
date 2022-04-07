@@ -91,8 +91,8 @@
     "allow_new_line" : false,
     "show_emoji_picker" : false,
     "type" : "text",
-    "default" : [
-      "Fundamentos do RP baseado em dados",
+    "default": [
+      "Fundamentos do RP baseado em dados v2",
       "Contexto da área de RP na era dos dados e seus desafios e oportunidades",
       "Quais análises básicas realizar para mensurar e comprovar o trabalho de RP"
     ]
