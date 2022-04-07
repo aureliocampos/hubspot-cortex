@@ -60,18 +60,6 @@
   .section__recommend>.section__container {
     position: relative;
   }
-  .section__recommend .section__content ~ hr {
-    position: absolute;
-    top: 250px;
-    left: 0;
-    right: 0;
-    display: block;
-    transform: rotate(90deg);
-    width: 420px;
-    height: 1px;
-    border: none;
-    border-top: 1px solid #bdbdbd;
-  }
   .section__recommend > .section__container {
     border-radius: 2rem;
   }
@@ -89,6 +77,18 @@
     /* sobre */
   .section__recommend {
     padding: 3.75em 1.5em;
+  }
+  .section__recommend .section__content ~ hr {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+    display: block;
+    transform: rotate(90deg);
+    width: 420px;
+    height: 1px;
+    border: none;
+    border-top: 1px solid #bdbdbd;
   }
   .section__recommend > .section__container {
     display: flex;

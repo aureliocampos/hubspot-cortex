@@ -1,0 +1,24 @@
+<section class="section section__about-course" style="background-color:{{ module.style.background.color }};">
+	<div class="section__container">
+		<div class="about-course__content">
+			<h2 class="about-course__title">{{ module.section_title }}</h2>
+			<div class="about-course__text">
+				{{ module.description }}
+			</div>
+		</div>
+		<div class="about-course__instructor">
+			<div class="instructor__container">
+				<h2 class="instructor__title">Conheça o instrutor</h2>
+				{% if module.instrutor.image_field.src %}
+					{% set loadingAttr = module.instrutor.image_field.loading != 'disabled' ? 'loading="{{ module.instrutor.image_field.loading }}"' : '' %}
+					<figure class="instructor__image">
+						<img src="{{ module.instrutor.image_field.src }}" alt="{{ module.instrutor.image_field.alt }}" {{ loadingAttr }}>
+					</figure>
+				{% endif %}
+				<h3 class="instructor__name">{{ module.instrutor.name_field }}</h3>
+				<p class="instructor__job">{{ module.instrutor.cargo }}</p>
+				<div class="instructor__bio">{{ module.instrutor.bio }}</div>
+			</div>
+		</div>
+	</div>
+</section>

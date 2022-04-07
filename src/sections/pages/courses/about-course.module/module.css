@@ -1,0 +1,83 @@
+.section__about-course {
+  padding: 2.5em 1.5em;
+
+}
+.section__about-course .section__container {
+  max-width: 1114px;
+  margin: 0 auto;
+}
+
+.about-course__title {
+  font: 600 2em / 100% var(--primary-font);
+  color: var(--darkest);
+  margin-bottom: 1em;
+}
+.about-course__text p {
+  font: 400 1em / 148% var(--secondary-font);
+  color: var(--darkest);
+  margin: 0.5em 0;
+}
+
+.about-course__instructor {
+  margin-top: 2em;
+}
+.instructor__container {
+  background: #FFFFFF;
+  border: 1px solid #C5BFCA;
+  box-sizing: border-box;
+  border-radius: 32px;
+  padding: 1.5em;
+}
+.instructor__title {
+  font: 400 1.5em / 148% var(--primary-font);
+  color: var(--darkest);
+}
+.instructor__image {
+  margin: 1.5em 0;
+}
+.instructor__image img {
+  width: 190px;
+  height: 190px;
+  border-radius: 100%;
+}
+.instructor__name {
+  font: 600 1.25em / 148% var(--primary-font);
+  color: var(--darkest);
+}
+.instructor__job {
+  font: 400 0.875em / 148% var(--primary-font);
+  color: var(--darkest);
+}
+.instructor__bio {
+  font: 400 1em / 148% var(--primary-font);
+  color: var(--darkest);
+  margin-top: 1em;
+}
+.instructor__bio p {
+  margin: 0.5em 0;
+}
+
+@media (min-width: 1024px) {
+  .section__about-course .section__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-course__content{
+    width: 50%;
+  }
+  .about-course__title {
+    font-size: 48px;
+  }
+  .about-course__text {
+    font-size: 18px;
+  }
+  .about-course__instructor {
+    width: 400px;
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .instructor__container {
+    padding: 2em;
+  }
+}

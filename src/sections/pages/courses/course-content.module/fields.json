@@ -1,0 +1,73 @@
+[ {
+  "id" : "315fa359-bbfa-da4f-edc8-7d5fcfc2d119",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Conteúdo"
+}, {
+  "id" : "af537c45-f21e-9b0f-a26a-f46b811505ef",
+  "name" : "modules",
+  "display_width" : null,
+  "label" : "Módulos",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "789bd554-ec28-7288-f30f-eada57c2ca5c",
+    "name" : "name_field",
+    "display_width" : null,
+    "label" : "name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "MÓDULO"
+  }, {
+    "id" : "8325c57b-a52f-673e-b3aa-5b3311ea7a91",
+    "name" : "title_module",
+    "display_width" : null,
+    "label" : "Título",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "cd2edbe4-6116-0d70-a77a-a03d6b8835ea",
+    "name" : "submodule",
+    "display_width" : null,
+    "label" : "submodule",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "name_field" : "MÓDULO"
+  }
+} ]

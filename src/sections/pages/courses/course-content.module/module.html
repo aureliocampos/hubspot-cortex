@@ -1,0 +1,26 @@
+<section class="section section__course-content">
+	<div class="section__container">
+		<h2 class="course-content__title">{{ module.title }}</h2>
+		<div class="module__items">
+			{% for item in module.modules %}
+			<article class="module__item">
+				<header class="module__header">
+					<h3 class="module__name">{{ item.name_field }}</h3>
+					{% if loop.index < 10 %}
+						{% set index = "0" + loop.index %}
+					{% else %}
+						{% set index = loop.index %}
+					{% endif %}
+					<p class="module__index">{{index}}</p>
+				</header>
+				<h2 class="module__title">{{ item.title_module }}</h2>
+				<ul class="module__submodules submodules__items">
+					{% for submodule in item.submodule %}
+						<li class="submodules__item">{{ submodule }}</li>
+					{% endfor %}
+				</ul>
+			</article>
+			{% endfor %}
+		</div>
+	</div>
+</section>
