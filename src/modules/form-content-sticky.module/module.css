@@ -47,7 +47,7 @@
     position: -o-sticky;
     position: -ms-sticky;
     position: sticky;
-    top: 30px;
+    top: 100px;
   }
   .form-content-sticky .section__form-content-sticky {
     width: 45%;

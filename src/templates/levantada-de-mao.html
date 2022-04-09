@@ -1,0 +1,15 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+    label: Levantada de mão
+-->
+
+{% extends "./layouts/base-lp.html" %}
+
+
+{% block body %}
+<!-- Seletor de Cores Cortex -->
+{% module "module_16415189198955" path="/cortex-intelligence/modules/color-theme-config", label="Configurar tema de cores" %}
+
+  {% module "module_16494447410866" path="/cortex-intelligence/modules/all-hands-fields", label="Campos de conteúdo - Levantada de mão" %}
+{% endblock body %}

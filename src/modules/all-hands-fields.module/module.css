@@ -1,0 +1,194 @@
+.section__main-hands {
+  padding: 2em 1.5em;
+}
+
+.main-hands__image {
+  margin: 1em 0;
+}
+.main-hands__image img {
+  width: 100%;
+  height: auto;
+}
+.main-hands__text {
+  font: 400 1em / 148% var(--secondary-font);
+  color: var(--dark);
+  margin: 1em 0 1.5em 0;
+}
+.main-hands__title {
+  font: 700 1.5em / 120% var(--secondary-font);
+  color: var(--brand_official);
+  margin: 2em 0 1em 0;
+}
+.section__form-all-hands .form-title {
+  color: var(--brand_official) !important;
+}
+.main-hands__icon {
+  width: 65px;
+  height: auto;
+}
+
+#cortex-form .hs_cos_wrapper_type_form fieldset input[type="text"], #cortex-form .hs_cos_wrapper_type_form fieldset input[type="email"], #cortex-form .hs_cos_wrapper_type_form fieldset input[type="tel"], #cortex-form .hs_cos_wrapper_type_form fieldset select {
+  border: 1px solid #E1DCE6;
+  background-color: #f3f3fc;
+}
+.legal-consent-container .hs-form-booleancheckbox-display>span {
+  font-weight: bold;
+}
+#cortex-form .hs_cos_wrapper_type_form input[type="submit"] {
+  background-color: var(--brand_official);
+}
+
+.section__market-clients {
+  padding: 2.5em 1.5em;
+  background-color: var(--lightest);
+}
+.section__market-clients > .section__container > .section__title {
+  font: bold 1.5em / 148% var(--secondary-font);
+  color: var(--darkest);
+  text-align: center;
+}
+
+.market-clients__depo {
+  margin: 2.5em 0;
+}
+.market-depo__figure {
+  margin-bottom: 1em;
+}
+.market-depo__figure img {
+  width: auto;
+  height: 40px;
+}
+.market-depo__blockquote,
+.market-depo__job,
+.market-depo__name {
+  font: 400 1em / 148% var(--secondary-font);
+  color: var(--darkest);
+}
+.market-depo__name {
+  font-weight: bold;
+  margin-top: 1.5em;
+}
+.section__market-clients > .section__container .button--lp-cta {
+  font-size: 0.875em;
+  background-color: var(--brand_official);
+  margin: 0 auto;
+}
+
+.section__support {
+  padding: 2.5em 1.5em;
+}
+.support__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 380px;
+  gap: 1em;
+  margin: 3em auto;
+}
+.support__image {
+  width: auto;
+  display: flex;
+  place-items: center;
+}
+.support__image img {
+  width: 80px;
+  height: auto;
+}
+.support__card-content {
+  width: 70%;
+}
+.support__title {
+  font: bold 1em / 120% var(--secondary-font);
+  color: var(--darkest);
+}
+.support__text {
+  font: 400 0.75em / 148% var(--secondary-font);
+  color: var(--darkest);
+}
+.support__text a {
+  color: var(--darkest);
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .section__main-hands > .section__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .section__main-hands > .section__container .section__content:first-of-type {
+    width: 40%;
+  }
+  .main-hands__image:first-of-type {
+    max-width: 375px;
+  }
+  .main-hands__image:last-of-type {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section__main-hands > .section__container .section__content:first-of-type {
+    width: 45%;
+  }
+  .main-hands__text {
+    font-size: 1.25em;
+  }
+  .main-hands__title {
+    font-size: 2em;
+  }
+  #cortex-form .hs_cos_wrapper_type_form {
+    padding-top: 0;
+  }
+  .section__market-clients {
+    padding: 3em 0;
+  }
+  .section__market-clients>.section__container>.section__title {
+    font-size: 2em;
+  }
+  .market-clients__items {
+    display: flex;
+    gap: 2em;
+    
+  }
+  .section__support .section__container {
+    display: flex;
+    max-width: 1114px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .section__main-hands > .section__container {
+    max-width: 1114px;
+    margin: 0 auto;
+  }
+  .section__main-hands > .section__container .section__content:first-of-type {
+    width: 50%;
+  }
+  .main-hands__title {
+    margin-bottom: 1.25em;
+  }
+  .main-hands__item {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    }
+  .main-hands__icon {
+    width: 65px;
+  }
+  .main-hands__item .main-hands__text {
+    font-size: 1em;
+  }
+  .main-hands__image.clients img { 
+    display: block;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .market-clients__items {
+    max-width: 1114px;
+    margin: 0 auto;
+  }
+  .section__main-hands #cortex-form .form-title {
+    font-size: 1.5em;
+  }
+}

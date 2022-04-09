@@ -1,0 +1,121 @@
+<section class="section section__main-hands">
+    <div class="section__container">
+      <div class="section__content">
+        {% if module.main.image_field.src %}
+           {% set loadingAttr = module.main.image_field.loading != 'disabled' ? 'loading="{{ module.main.image_field.loading }}"' : '' %}
+          <figure class="main-hands__image">
+            <img src="{{ module.main.image_field.src }}" alt="{{ module.main.image_field.alt }}" {{ loadingAttr }}>
+        </figure>
+        {% endif %}
+        <div class="main-hands__text">{{ module.main.richtext_field }}</div>
+        <ul class="main-hands__items">
+          {% for item in module.main.main_items %}
+          <li class="main-hands__item">
+            {% if item.icone.src %}
+              {% set sizeAttrs = 'width="{{ item.icone.width }}" height="{{ item.icone.height }}"' %}
+              {% if item.icone.size_type == 'auto' %}
+                {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+              {% elif item.icone.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ item.icone.max_width }}" height="{{ item.icone.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+               {% set loadingAttr = item.icone.loading != 'disabled' ? 'loading="{{ item.icone.loading }}"' : '' %}
+              <img class="main-hands__icon" src="{{ item.icone.src }}" alt="{{ item.icone.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+            <p class="main-hands__text">
+              {{ item.text_field }}
+            </p>
+            </li>
+          {% endfor %}
+         </ul>
+        <h2 class="main-hands__title">{{ module.main.title }}</h2>
+        {% if module.main.imagem_clients.src %}
+         {% set loadingAttr = module.main.imagem_clients.loading != 'disabled' ? 'loading="{{ module.main.imagem_clients.loading }}"' : '' %}
+         <figure class="main-hands__image clients">
+          <img src="{{ module.main.imagem_clients.src }}" alt="{{ module.main.imagem_clients.alt }}" {{ loadingAttr }}>
+        </figure>
+      {% endif %}
+      </div>
+      <div class="section__content">
+        <div id="cortex-form" class="section__form-all-hands cortex-form--{{ module.style.form_color }}"> 
+        {% if module.form.title is truthy %}
+          {% set no_title = False %}
+        {% else %} 
+          {% set no_title = True %}
+        {% endif %}
+        
+
+        {% if module.form.form.form_id %}
+          {% form
+            form_key='{{ name }}',
+            form_to_use='{{ module.form.form.form_id }}',
+            title='{{ module.form.title }}',
+            no_title='{{ no_title }}',
+            follow_up_type_simple='{{ module.form.follow_up_type_simple }}',
+            simple_email_for_live_id='{{ module.form.simple_email_for_live_id }}',
+            follow_up_type_automation='{{ module.form.follow_up_type_automation }}',
+            form_follow_ups_workflow_id='{{ module.form.form_follow_ups_workflow_id }}',
+            response_response_type='{{ module.form.form.response_type }}',
+            response_redirect_id='{{ module.form.form.redirect_id }}',
+            response_redirect_url='{{ module.form.form.redirect_url }}',
+            response_message='{{ module.form.form.message }}',
+            notifications_are_overridden='{{ module.form.notifications_are_overridden }}',
+            notifications_override_email_addresses='{{ module.form.notifications_override_email_addresses }}'
+            gotowebinar_webinar_key='{{ module.form.form.gotowebinar_webinar_key }}'
+            sfdc_campaign='{{ module.form.sfdc_campaign }}'
+          %}
+        {% else %}
+          {% form
+            title='{{ module.form.title }}',
+            no_title='{{ no_title }}',
+          %}
+        {% endif %}
+      </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section__market-clients">
+    <div class="section__container">
+      <h2 class="section__title">O que o mercado está dizendo</h2>
+      <div class="market-clients__items">
+        {% for item in module.depoimentos %}
+          <article class="market-clients__depo">
+            <figure class="market-depo__figure">
+              {% if item.image_field_1.src %}
+                 {% set loadingAttr = item.image_field_1.loading != 'disabled' ? 'loading="{{ item.image_field_1.loading }}"' : '' %}
+                <img src="{{ item.image_field_1.src }}" alt="{{ item.image_field_1.alt }}" {{ loadingAttr }}>
+              {% endif %}
+            </figure>
+            <blockquote class="market-depo__blockquote">{{ item.texto }}</blockquote>
+            <h3 class="market-depo__name">{{ item.autor }}</h3>
+            <p class="market-depo__job">{{ item.cargo }}</p>
+          </article>
+         {% endfor %}
+      </div>
+      <div class="button-container">
+        <a href="#cortex-form" class="button button--lp-cta">QUERO FALAR COM UM ESPECIALISTA</a>
+      </div>
+    </div>
+  </section>
+  <section class="section section__support">
+    <div class="section__container">
+      <aside class="support__card">
+        <figure class="support__image">
+          <img src="https://pages.cortex-intelligence.com/hs-fs/hubfs/Ativo%209@2x.png?width=80&name=Ativo%209@2x.png" alt="Ícone Assuntos gerais">
+        </figure>
+        <div class="support__card-content">
+          <h2 class="support__title">Assuntos gerais</h2>
+          <div class="support__text">Para tratar de assuntos gerais e oportunidades de parceria, envie um e-mail para <br> <a href="mailto:marketing@cortex-intelligence.com">marketing@cortex-intelligence.com</a></div>
+        </div>
+      </aside>
+      <aside class="support__card">
+        <figure class="support__image">
+          <img src="https://pages.cortex-intelligence.com/hs-fs/hubfs/Ativo%208@2x.png?width=80&name=Ativo%208@2x.png" alt="Ícone Suporte técnico">
+        </figure>
+        <div class="support__card-content">
+          <h2 class="support__title">Suporte técnico</h2>
+          <div class="support__text">Estamos aqui para ajudar. 
+            Se estiver com dúvidas ou algum outro problema técnico,<br> <a href="http://atendimentocortex.zendesk.com/" rel="noopener noreferrer" target="_blank" title="" style="color: #37324b;"><u>fale com nosso time</u></a></div>
+        </div>
+      </aside>
+    </div>
+  </section>

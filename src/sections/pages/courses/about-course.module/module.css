@@ -2,7 +2,7 @@
   padding: 2.5em 1.5em;
 
 }
-.section__about-course .section__container {
+.section__about-course > .section__container {
   max-width: 1114px;
   margin: 0 auto;
 }
@@ -58,7 +58,7 @@
 }
 
 @media (min-width: 1024px) {
-  .section__about-course .section__container {
+  .section__about-course > .section__container {
     display: flex;
     justify-content: space-between;
   }
