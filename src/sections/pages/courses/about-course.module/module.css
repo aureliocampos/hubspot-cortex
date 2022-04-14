@@ -56,7 +56,12 @@
 .instructor__bio p {
   margin: 0.5em 0;
 }
-
+.instructor-social__items {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 1em;
+}
 @media (min-width: 1024px) {
   .section__about-course > .section__container {
     display: flex;

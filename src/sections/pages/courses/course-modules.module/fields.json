@@ -1,0 +1,82 @@
+[ {
+  "id" : "755fbe13-48b1-6620-8ecf-29730d80c025",
+  "name" : "modulo",
+  "display_width" : null,
+  "label" : "Módulo",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "5f7f1f83-b30b-578a-f027-842718401a51",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Titulo",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : ""
+  }, {
+    "id" : "57845d1d-1443-d8e1-1335-68adf400dc18",
+    "name" : "topico",
+    "display_width" : null,
+    "label" : "Tópico",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "128677c6-5f55-f942-9380-fbc9019b3203",
+      "name" : "title_topico",
+      "display_width" : null,
+      "label" : "Título do tópico",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    }, {
+      "id" : "02c3f029-27aa-42f4-72f4-2704219f7be9",
+      "name" : "material",
+      "display_width" : null,
+      "label" : "Material",
+      "required" : false,
+      "locked" : false,
+      "type" : "page"
+    }, {
+      "id" : "fb101ccf-7e5d-7ace-aada-f07cea269fbf",
+      "name" : "videoplayer_field",
+      "display_width" : null,
+      "label" : "Vídeo",
+      "required" : false,
+      "locked" : false,
+      "resizable" : true,
+      "show_preview" : true,
+      "show_advanced_options" : false,
+      "type" : "videoplayer"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : { }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : "",
+    "topico" : { }
+  }
+} ]

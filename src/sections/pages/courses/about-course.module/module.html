@@ -7,6 +7,13 @@ style="background-color:{{ module.style.background.color }};"
 			<div class="about-course__text">
 				{{ module.description }}
 			</div>
+      {% set href = module.bot_o_cta.link_field.url.href %}
+      <a href="{{ href }}" class="button button--lp-cta"
+         {% if module.bot_o_cta.link_field.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.bot_o_cta.link_field.rel %}rel="{{ module.bot_o_cta.link_field.rel }}"{% endif %}
+         >
+        {{ module.bot_o_cta.texto_do_link }}
+      </a>
 		</div>
 		<div class="about-course__instructor">
 			<div class="instructor__container">
@@ -19,6 +26,23 @@ style="background-color:{{ module.style.background.color }};"
 				{% endif %}
 				<h3 class="instructor__name">{{ module.instrutor.name_field }}</h3>
 				<p class="instructor__job">{{ module.instrutor.cargo }}</p>
+				<nav class="instructor-social__nav">
+					<ul class="instructor-social__items">
+            {% for item in module.instrutor.social %}
+              {% set href = item.link_social.url.href %}
+              <li class="instructor-social__item">
+                <a href="{{ href }}" target="_blank"
+                  rel="noopener noreferrer" class="instructor-social__link"
+                  aria-label="Link externo para a rede de {{ module.instrutor.name_field }}">
+                    {% if item.icon_social.src %}
+                      {% set loadingAttr = item.icon_social.loading != 'disabled' ? 'loading="{{ item.icon_social.loading }}"' : '' %}
+                      <img src="{{ item.icon_social.src }}" alt="{{ item.icon_social.alt }}" {{ loadingAttr }}>
+                    {% endif %}
+                </a>
+              </li>
+            {% endfor %}
+					</ul>
+				</nav>
 				<div class="instructor__bio">{{ module.instrutor.bio }}</div>
 			</div>
 		</div>

@@ -1,0 +1,76 @@
+<section class="section section__modules">
+	<div class="section__container">
+		<ul class="modules__items">
+			<button class="module-menu close-menu">Close</button>
+			{% for item in module.modulo %}
+			{% if loop.index < 10 %}
+				{% set module_index = "0" + loop.index %}
+			{% else %}
+				{% set module_index = loop.index %}
+			{% endif %}
+			 <li class="module__item" data-module="module-{{module_index}}">
+				<small class="module__item__pretitle">Módulo {{module_index}}</small>
+				<h2 class="module__item__title">{{ item.title }}</h2>
+				<ol class="module__item__list">
+					{% for item2 in item.topico %}
+						{% set material = content_by_id(item2.material) %}
+						{% if loop.index < 10 %}
+							{% set topico_index = "0" + loop.index %}
+						{% else %}
+							{% set topico_index = loop.index %}
+						{% endif %}
+						<li class="module__item__list__item" data-target="module-{{module_index}}--{{topico_index}}">
+							<h3 class="module__item__list__title">{{ item2.title_topico }}</h3>
+
+							{% if material %}
+								<a class="module__item__list__link" href="{{material.absolute_url}}" target="_blank" rel="noopener noreferrer">
+									Material: {{material.title}}
+								</a>
+							{% endif %}		
+						</li>
+					{% endfor %}
+				</ol>
+			 </li>
+			{% endfor %}
+		</ul>
+		<ul class="module__videos-items">
+			{% for item in module.modulo %}
+				{% if loop.index < 10 %}
+					{% set module_index = "0" + loop.index %}
+				{% else %}
+					{% set module_index = loop.index %}
+				{% endif %}
+				{% for item2 in item.topico %}
+					{% if loop.index < 10 %}
+						{% set topico_index = "0" + loop.index %}
+					{% else %}
+						{% set topico_index = loop.index %}
+					{% endif %}
+				{% if item2.videoplayer_field.player_id %}
+					<li id="module-{{module_index}}--{{topico_index}}" class="module__videos-item">
+						<h2 class="module__videos-item__title"> Módulo {{module_index}}: <br/> {{ item2.title_topico }}</h2>
+							{% set max_width = item2.videoplayer_field.size_type == 'auto_custom_max' ? item2.videoplayer_field.max_width : item2.videoplayer_field.width %}
+							{% set max_height = item2.videoplayer_field.size_type == 'auto_custom_max' ? item2.videoplayer_field.max_height : item2.videoplayer_field.height %}
+							{% widget_block video_player "embed_player"
+								overrideable=False,
+								type='scriptV4',
+								hide_playlist=True,
+								viral_sharing=False,
+								embed_button=False,
+								full_width={{ item2.videoplayer_field.size_type == 'auto_full_width' }},
+								width="{{ max_width }}",
+								height="{{ max_height }}",
+								player_id="{{ item2.videoplayer_field.player_id }}"
+							%}
+								{% widget_attribute "conversion_asset" %}
+									{{ item2.videoplayer_field.conversion_asset|tojson|safe }}
+								{% end_widget_attribute %}
+							{% end_widget_block %}
+						</li>
+					{% endif %} 
+				{% endfor %}
+			{% endfor %}
+		</ul>
+	</div>
+	<button class="module-menu open-menu">Open</button>
+</section>

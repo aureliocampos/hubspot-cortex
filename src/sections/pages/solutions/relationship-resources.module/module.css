@@ -99,8 +99,8 @@
 @media (min-width: 1200px) {
   .relationship-resources {
     max-width: 1219px;
-    margin: 0 auto 100px auto;
-    padding: 0;
+    margin: 0 auto;
+    padding: 6em 0;
   }
   .rel-resources__title {
     font-size: 2em;

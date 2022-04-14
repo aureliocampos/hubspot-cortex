@@ -17,7 +17,91 @@
   "label" : "descrição",
   "required" : false,
   "locked" : false,
-  "type" : "richtext"
+  "type" : "richtext",
+  "default" : "<p>Os dados estão provocando uma revolução sem precedentes na comunicação empresarial. Hoje, profissionais da área têm o desafio de gerir a reputação das marcas num mundo extremamente volátil, incerto, complexo e ambíguo.</p>\n<p>Não por acaso, 87% dos executivos de relações públicas acreditam que, em cinco anos, esse termo não será mais suficiente para descrever seu trabalho.</p>\n<p>Diante desse contexto, espera-se cada vez mais dos profissionais de comunicação que sejam analíticos e orientados para resultados. Analytics, Big Data e ciência de dados deixaram de ser uma tendência. São, agora, fatores determinantes para o sucesso de quem atua nesse mercado.<br><br>O curso de Introdução à Comunicação Baseada em Dados vai apresentar os principais fundamentos da comunicação corporativa data driven, explorando como profissionais de relações públicas e jornalistas podem tirar valor do analytics e tornar seu trabalho ainda mais relevante nas organizações.</p>"
+}, {
+  "id" : "3cab81d8-235c-5819-e1c6-e8622eef2f37",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "3588c4c9-71cf-b597-a77e-cc626ac57ace",
+    "name" : "background",
+    "display_width" : null,
+    "label" : "Background",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#fff",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "background" : {
+      "color" : "#fff",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "23260ea0-1ef4-1556-aee6-cbb805a465c0",
+  "name" : "bot_o_cta",
+  "display_width" : null,
+  "label" : "Botão CTA",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "dffd7264-3f59-a569-75ce-54caf01ff7eb",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#section-form",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "38d570eb-76c1-8512-ed91-c7073c16ce4b",
+    "name" : "texto_do_link",
+    "display_width" : null,
+    "label" : "Texto do link",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Inscreva-se gratuitamente"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "link_field" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#section-form",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "texto_do_link" : "Inscreva-se gratuitamente"
+  }
 }, {
   "id" : "4e3113fd-58ac-802e-0ae6-66204eea486a",
   "name" : "instrutor",
@@ -79,6 +163,76 @@
     "locked" : false,
     "type" : "richtext",
     "default" : "<p>Jornalista de formação, especializado em ciência de dados. Tem trabalhado com mensuração e análise de mídia para estratégia de comunicação desde 2006. Ocupou cargo de coordenador em análise de mídia na CDN e foi diretor da .Map, do Grupo In Press. Hoje, tem o desafio de ser Evangelista na Cortex Intelligence, usando inteligência de dados - ciência de dados e Big Data - para ajudar executivos na tomada de decisões. Atende atualmente grandes clientes, como FCA, SulAmérica, Instituto Ayrton Senna, Grupo Boticário, Grupo CPFL, Grupo CCR, entre outros.</p>"
+  }, {
+    "id" : "9a97e5c9-f10f-a480-028a-9837fe5bfe78",
+    "name" : "social",
+    "display_width" : null,
+    "label" : "Social",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "7ccbef5d-fa5e-35ed-49d8-a413b70aae4f",
+      "name" : "icon_social",
+      "display_width" : null,
+      "label" : "Ícone",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    }, {
+      "id" : "f549e08f-4a5f-7c87-0361-a8932eb887a4",
+      "name" : "link_social",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "icon_social" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      },
+      "link_social" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
@@ -96,6 +250,23 @@
     },
     "name_field" : "Cláudio Bruno",
     "cargo" : "Evangelista de dados na Cortex",
-    "bio" : "<p>Jornalista de formação, especializado em ciência de dados. Tem trabalhado com mensuração e análise de mídia para estratégia de comunicação desde 2006. Ocupou cargo de coordenador em análise de mídia na CDN e foi diretor da .Map, do Grupo In Press. Hoje, tem o desafio de ser Evangelista na Cortex Intelligence, usando inteligência de dados - ciência de dados e Big Data - para ajudar executivos na tomada de decisões. Atende atualmente grandes clientes, como FCA, SulAmérica, Instituto Ayrton Senna, Grupo Boticário, Grupo CPFL, Grupo CCR, entre outros.</p>"
+    "bio" : "<p>Jornalista de formação, especializado em ciência de dados. Tem trabalhado com mensuração e análise de mídia para estratégia de comunicação desde 2006. Ocupou cargo de coordenador em análise de mídia na CDN e foi diretor da .Map, do Grupo In Press. Hoje, tem o desafio de ser Evangelista na Cortex Intelligence, usando inteligência de dados - ciência de dados e Big Data - para ajudar executivos na tomada de decisões. Atende atualmente grandes clientes, como FCA, SulAmérica, Instituto Ayrton Senna, Grupo Boticário, Grupo CPFL, Grupo CCR, entre outros.</p>",
+    "social" : {
+      "icon_social" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      },
+      "link_social" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
   }
 } ]

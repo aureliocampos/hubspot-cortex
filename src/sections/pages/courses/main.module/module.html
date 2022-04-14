@@ -3,13 +3,15 @@
 		<div class="section__content">
 			<span class="section__tag">{{ module.tag }}</span>
 			<h1 class="section__title">{{ module.title }}</h1>
-			{% set href = module.button_cta.link.url.href %}
-				<a href="{{ href }}" class="button button--lp-cta"
-					{% if module.button_cta.link.open_in_new_tab %}target="_blank"{% endif %}
-					{% if module.button_cta.link.rel %}rel="{{ module.button_cta.link.rel }}"{% endif %}
-					>
-					{{ module.button_cta.text }}
-				</a>
+			{% if module.button_cta.link.url.href %}
+				{% set href = module.button_cta.link.url.href %}
+					<a href="{{ href }}" class="button button--lp-cta"
+						{% if module.button_cta.link.open_in_new_tab %}target="_blank"{% endif %}
+						{% if module.button_cta.link.rel %}rel="{{ module.button_cta.link.rel }}"{% endif %}
+						>
+						{{ module.button_cta.text }}
+					</a>
+			{% endif %}
 		</div>
 		<figure class="section__figure">
 			{% if module.image_field.src %}

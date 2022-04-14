@@ -1,0 +1,16 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Página interna de curso
+-->
+
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+  <main id="main-content" class="body-container-wrapper courses-template template-single-course" role="main">
+    {% module "module_16470032038398" path="/cortex-intelligence/sections/pages/courses/main", label="Main" %}
+    {% module "module_16498774776501" path="/cortex-intelligence/sections/pages/courses/course-modules", label="Módulos" %}
+    {% module "module_164935222681818" path="/cortex-intelligence/sections/pages/courses/about-course", label="Sobre o Curso" %}
+    {% module "module_163284130774212" path='/cortex-intelligence/sections/pages/solutions/relationship-resources', label="Materiais Relacionados" %}
+  </main>
+{% endblock body %}
