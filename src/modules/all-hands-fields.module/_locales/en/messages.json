@@ -1,4 +1,34 @@
 {
+  "depoimento_cta_text.default" : {
+    "message" : "QUERO FALAR COM UM ESPECIALISTA",
+    "description" : null,
+    "placeholders" : null
+  },
+  "depoimento_cta_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "depoimento_cta_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "depoimento_cta_text.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "depoimento_cta_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "depoimento_cta_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
   "depoimentos.autor.default" : {
     "message" : "",
     "description" : null,
@@ -150,6 +180,36 @@
     "placeholders" : null
   },
   "depoimentos.texto.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "depoimentos_t_tulo.default" : {
+    "message" : "O que o mercado está dizendo",
+    "description" : null,
+    "placeholders" : null
+  },
+  "depoimentos_t_tulo.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "depoimentos_t_tulo.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "depoimentos_t_tulo.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "depoimentos_t_tulo.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "depoimentos_t_tulo.validation_regex" : {
     "message" : "",
     "description" : null,
     "placeholders" : null

@@ -1,0 +1,343 @@
+[ {
+  "id" : "a9d15bc9-c3fc-69df-f248-165be5c52787",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Neste eBook, vamos te provar que na verdade você está diante de uma grande oportunidade."
+}, {
+  "id" : "1bf0a293-8a58-a0b4-d7e5-bdcd03a8db93",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Ao contrário dos departamentos de marketing, que já se deram conta há anos da importância de ser data driven, as áreas de comunicação e relações públicas iniciaram a transformação digital com mais intensidade somente nos últimos anos.</p>\n<p>Agora, esse movimento foi ainda mais intensificado com a pandemia da Covid-19, que forçou as empresas a se adaptarem ao digital do dia para a noite e enxugou os orçamentos das áreas. <strong>Ou seja, não há espaço para erros.</strong> É preciso ser assertivo nas decisões.</p>"
+}, {
+  "id" : "101a5e12-d873-1d71-1cfe-ebf2e0f8f305",
+  "name" : "tag_field",
+  "display_width" : null,
+  "label" : "Tag",
+  "required" : false,
+  "locked" : false,
+  "tag_value" : "SLUG",
+  "type" : "tag",
+  "default" : "ebook"
+}, {
+  "id" : "b25e6e6f-765a-d10e-4702-3be8ff13280f",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Imagem",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "c2cc278f-f01d-1365-ed44-aa3d51cc55d5",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "bc54cfd4-17b8-5e55-2e46-5e796bc7c2de",
+    "name" : "change_section_custom_form",
+    "display_width" : null,
+    "label" : "Deseja personalizar a seção do formulário?",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "b2109c32-33ee-401e-af75-50d958e42f69",
+    "name" : "plano_de_fundo",
+    "display_width" : null,
+    "label" : "Plano de fundo",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "bc54cfd4-17b8-5e55-2e46-5e796bc7c2de",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "children" : [ {
+      "id" : "9bd26a09-fac9-e20a-3f5c-3966a2ef2a8d",
+      "name" : "types",
+      "display_width" : null,
+      "label" : "Tipos",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "bc54cfd4-17b8-5e55-2e46-5e796bc7c2de",
+        "controlling_value_regex" : "true",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "display" : "select",
+      "choices" : [ [ "bg_color", "Background Color" ], [ "bg_gradient", "Gradiente" ] ],
+      "type" : "choice"
+    }, {
+      "id" : "b2a829f7-2b6a-f8c5-6fc1-a3cccb9433fb",
+      "name" : "gradient",
+      "display_width" : null,
+      "label" : "Gradiente",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "9bd26a09-fac9-e20a-3f5c-3966a2ef2a8d",
+        "controlling_value_regex" : "bg_gradient",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "gradient",
+      "default" : { }
+    }, {
+      "id" : "c8490372-1a53-0506-b5c8-93a5f9179ac3",
+      "name" : "background_color",
+      "display_width" : null,
+      "label" : "Background Color",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "9bd26a09-fac9-e20a-3f5c-3966a2ef2a8d",
+        "controlling_value_regex" : "bg_color",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "color",
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "gradient" : { },
+      "background_color" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }
+  }, {
+    "id" : "0f57deb2-76fa-f8b4-8870-73d979a0a759",
+    "name" : "form_color",
+    "display_width" : null,
+    "label" : "Cor do formulário",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "bc54cfd4-17b8-5e55-2e46-5e796bc7c2de",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "display" : "radio",
+    "choices" : [ [ "black", "Preto" ], [ "white", "Branco" ] ],
+    "type" : "choice",
+    "default" : "black"
+  }, {
+    "id" : "c6320bb3-9aea-21aa-cae0-ac85995efe0a",
+    "name" : "cor_da_fonte",
+    "display_width" : null,
+    "label" : "Cor da fonte",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "bc54cfd4-17b8-5e55-2e46-5e796bc7c2de",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "display" : "radio",
+    "choices" : [ [ "black", "Preto" ], [ "white", "Branco" ] ],
+    "type" : "choice",
+    "default" : "black"
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "change_section_custom_form" : false,
+    "plano_de_fundo" : {
+      "gradient" : { },
+      "background_color" : {
+        "color" : null,
+        "opacity" : null
+      }
+    },
+    "form_color" : "black",
+    "cor_da_fonte" : "black"
+  }
+}, {
+  "id" : "514d3a62-c3b4-ca46-1a95-62226bc305c5",
+  "name" : "form",
+  "display_width" : null,
+  "label" : "Formulário",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "e355a361-931b-ac2a-d06f-244ef8e3a1ca",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Form Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Cadastre-se para receber nossos conteúdos do blog"
+  }, {
+    "id" : "e4adbe47-d462-2396-c7e7-62d52c812966",
+    "name" : "form",
+    "display_width" : null,
+    "label" : "Form",
+    "required" : false,
+    "locked" : false,
+    "type" : "form",
+    "default" : {
+      "form_id" : "e6d612c9-ff1c-4847-ab97-6cf97f17db85",
+      "response_type" : "inline",
+      "message" : "Obrigado por enviar o formulário.",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    }
+  }, {
+    "id" : "96a2942d-c746-0299-c0a9-6b16d7a20c1d",
+    "name" : "notifications_are_overridden",
+    "display_width" : null,
+    "label" : "Send form notifications to specified email addresses instead of the form defaults",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "e4adbe47-d462-2396-c7e7-62d52c812966",
+      "controlling_value_regex" : "^((?!\\\"form_type\\\":\\\"TICKET_FORM\\\").)*$",
+      "operator" : "MATCHES_REGEX",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "e496f0fb-4c96-8a5f-5fa3-54a5838f02a2",
+    "name" : "notifications_override_email_addresses",
+    "display_width" : null,
+    "label" : "Email Addresses",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "96a2942d-c746-0299-c0a9-6b16d7a20c1d",
+      "controlling_value_regex" : "true",
+      "operator" : "MATCHES_REGEX",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "allow_custom_email_addresses" : true,
+    "type" : "email"
+  }, {
+    "id" : "fc055bb2-4052-dee0-a007-2dc5a6bfe906",
+    "name" : "follow_up_type_automation",
+    "display_width" : null,
+    "label" : "Add to workflow",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_value_regex" : null,
+      "operator" : "NOT_EMPTY",
+      "access" : {
+        "operator" : "HAS_ALL",
+        "scopes" : [ "workflows-access" ]
+      },
+      "hidden_subfields" : null
+    },
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "072ce88d-62f2-604d-feab-f8199eeb40f7",
+    "name" : "follow_up_type_simple",
+    "display_width" : null,
+    "label" : "Send a follow-up email",
+    "help_text" : "To send a follow-up email, make sure the 'Set contacts created as marketing contacts’ setting is turned on. You can manage this in options. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>Learn more</a>",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_value_regex" : null,
+      "operator" : "NOT_EMPTY",
+      "access" : {
+        "operator" : "HAS_ALL",
+        "scopes" : [ "email-marketing-product-access" ]
+      },
+      "hidden_subfields" : null
+    },
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "fa108c7e-d78d-9edd-f015-f3d8e35fb790",
+    "name" : "simple_email_for_live_id",
+    "display_width" : null,
+    "label" : "Email",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "072ce88d-62f2-604d-feab-f8199eeb40f7",
+      "controlling_value_regex" : "true",
+      "operator" : "MATCHES_REGEX",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "followupemail"
+  }, {
+    "id" : "82375ac5-e902-3628-b674-1eb8f5397c41",
+    "name" : "sfdc_campaign",
+    "display_width" : null,
+    "label" : "Salesforce campaign",
+    "required" : false,
+    "locked" : false,
+    "type" : "salesforcecampaign"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : "Cadastre-se para receber nossos conteúdos do blog",
+    "form" : {
+      "form_id" : "e6d612c9-ff1c-4847-ab97-6cf97f17db85",
+      "response_type" : "inline",
+      "message" : "Obrigado por enviar o formulário.",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    },
+    "notifications_are_overridden" : false,
+    "follow_up_type_automation" : false,
+    "follow_up_type_simple" : false
+  }
+} ]

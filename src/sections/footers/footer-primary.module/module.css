@@ -95,10 +95,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
 }
 .footer-social__item {
   font-size: 2.25em;
+  margin: 1rem;
 }
 .footer-social__item .icon-linkedin .path1:before,
 .footer-social__item .icon-facebook .path1:before,

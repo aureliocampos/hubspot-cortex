@@ -1,0 +1,18 @@
+  <section class="section section__support">
+    <div class="section__container">
+      {% for item in module.cart_o_de_suporte %}
+        <aside class="support__card">
+          {% if item.image_field.src %}
+             {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+            <figure class="support__image">
+                <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }}>
+            </figure>
+          {% endif %}
+          <div class="support__card-content">
+            <h2 class="support__title">{{ item.t_tulo }}</h2>
+            <div class="support__text">{{ item.texto }}</div>
+          </div>
+        </aside>
+      {% endfor %}
+    </div>
+  </section>

@@ -41,7 +41,7 @@
     "default" : {
       "url" : {
         "type" : "EXTERNAL",
-        "href" : "https://pages.cortex-intelligence.com/agendar-conversa-com-especialistas-cortex-3",
+        "href" : "https://www.cortex-intelligence.com/agendar-conversa-com-especialistas-cortex",
         "content_id" : null
       },
       "open_in_new_tab" : true,
@@ -67,7 +67,7 @@
     "link_field" : {
       "url" : {
         "type" : "EXTERNAL",
-        "href" : "https://pages.cortex-intelligence.com/agendar-conversa-com-especialistas-cortex-3",
+        "href" : "https://www.cortex-intelligence.com/agendar-conversa-com-especialistas-cortex",
         "content_id" : null
       },
       "open_in_new_tab" : true,

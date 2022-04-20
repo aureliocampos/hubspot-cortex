@@ -1,0 +1,94 @@
+
+.form-content-sticky {
+  padding: 2rem 2rem 4rem 2rem;
+}
+.lp-main__tag {
+  width: max-content;
+  font: 400 12px var(--secondary-font);
+  color: var(--lightest);
+  padding: 6px 16px;
+  background-color: var(--brand_official);
+  border-radius: 20px;
+}
+
+.form-content-sticky .section__content .section__title {
+  font: bold 2em var(--primary-font);
+  color: var(--darkest);
+  line-height: 120%;
+  margin-top: 1.25rem;
+}
+.form-content-sticky .section__content .section__text {
+  font: 400 1.125em var(--secondary-font);
+  line-height: 148%;
+}
+.form-content-sticky .section__content .section__image {
+  max-width: 400px;
+  margin: 1.5em auto;
+}
+.form-content-sticky .section__content .section__title.section__title--black,
+.form-content-sticky .section__content .section__text.section__text--black {
+  color: var(--darkest);
+}
+.form-content-sticky .section__content .section__title.section__title--white,
+.form-content-sticky .section__content .section__text.section__text--white {
+  color: var(--lightest);
+}
+
+.form-content-sticky .section__content .section__text p {
+  margin: 1rem 0;
+}
+@media (min-width: 768px) {
+  .section__form-content-sticky{
+    padding-top: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .form-content-sticky {
+    padding: 4rem 0;
+    position: relative;
+  }
+  .form-content-sticky .section__container--flex {
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .form-content-sticky .section__content {
+    width: 48%;
+    height: max-content;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -o-sticky;
+    position: -ms-sticky;
+    position: sticky;
+    top: 100px;
+  }
+  .form-content-sticky .section__form-content-sticky {
+    width: 45%;
+    padding-top: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .form-content-sticky .section__container--flex {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1152px;
+    margin: 0 auto;
+  }
+  .form-content-sticky .section__content {
+    width: 572px;
+  }
+  .form-content-sticky .section__content .section__title {
+    font-size: 2.5em;
+  }
+  .form-content-sticky .section__content .section__text {
+    font-size: 1.5em;
+    margin-top: 1.5rem;
+  }
+  .form-content-sticky .section__content .section__image {
+    max-width: 500px;
+  }
+  .form-content-sticky .section__form-content-sticky {
+    width: 477px;
+  }
+}

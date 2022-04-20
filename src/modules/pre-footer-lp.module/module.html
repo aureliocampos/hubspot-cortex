@@ -1,0 +1,22 @@
+<section class="section section__pre-footer">
+	<div class="section__container">
+		<div class="section__content">
+			<h2 class="section__title">{{ module.title }}</h2>
+			<div class="container__button">
+				{% set href = module.cta.link.url.href %}
+				{% if module.cta.link.url.type is equalto "EMAIL_ADDRESS" %}
+					{% set href = "mailto:" + href %}
+				{% endif %}
+				<a href="{{ href }}" class="button button--lp-cta"
+					{% if module.cta.link.open_in_new_tab %}target="_blank"{% endif %}
+					{% if module.cta.link.rel %}rel="{{ module.cta.link.rel }}"{% endif %}
+					>
+					{{ module.cta.texto }}
+				</a>
+			</div>
+		</div>
+		<div class="section__content">
+			<div class="section__text">{{ module.texto }}</div>
+		</div>
+	</div>
+</section>

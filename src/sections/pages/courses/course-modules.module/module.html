@@ -1,7 +1,12 @@
 <section class="section section__modules">
 	<div class="section__container">
 		<ul class="modules__items">
-			<button class="module-menu close-menu">Close</button>
+			<button class="module-menu close-menu">
+				<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line x1="15.1562" y1="1.87975" x2="2.37585" y2="14.6602" stroke="#F1F1FA" stroke-width="2.43188" stroke-linecap="round"/>
+					<line x1="1.22406" y1="-1.22406" x2="19.282" y2="-1.22406" transform="matrix(0.707107 0.707107 0.707107 -0.707107 1.90625 0.0976562)" stroke="#F1F1FA" stroke-width="2.44812" stroke-linecap="round"/>
+					</svg>					
+			</button>
 			{% for item in module.modulo %}
 			{% if loop.index < 10 %}
 				{% set module_index = "0" + loop.index %}
@@ -21,10 +26,9 @@
 						{% endif %}
 						<li class="module__item__list__item" data-target="module-{{module_index}}--{{topico_index}}">
 							<h3 class="module__item__list__title">{{ item2.title_topico }}</h3>
-
-							{% if material %}
-								<a class="module__item__list__link" href="{{material.absolute_url}}" target="_blank" rel="noopener noreferrer">
-									Material: {{material.title}}
+							{% if item2.material_complementar.material_pdf %}
+								<a class="module__item__list__link" href="{{ item2.material_complementar.material_pdf }}" target="_blank" rel="noopener noreferrer">
+									Material: {{ item2.material_complementar.nome_do_material }}
 								</a>
 							{% endif %}		
 						</li>
@@ -72,5 +76,10 @@
 			{% endfor %}
 		</ul>
 	</div>
-	<button class="module-menu open-menu">Open</button>
+	<button class="module-menu open-menu">
+		<svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M7.45879 12.1559C7.68277 11.7256 7.5963 11.1991 7.24645 10.863L3.87689 7.62608C3.1678 6.94489 3.1678 5.81057 3.87689 5.12939L7.24645 1.89245C7.5963 1.55636 7.68277 1.02989 7.45879 0.599555C7.12201 -0.0474831 6.25803 -0.189381 5.73199 0.315952L0.721363 5.12939C0.0122698 5.81057 0.0122685 6.94489 0.721362 7.62608L5.732 12.4395C6.25803 12.9448 7.12201 12.8029 7.45879 12.1559Z" fill="#F2F2F2"/>
+			</svg>
+		<span>Navegue pelos conteúdos do curso</span>			
+	</button>
 </section>

@@ -75,7 +75,7 @@
   </section>
   <section class="section section__market-clients">
     <div class="section__container">
-      <h2 class="section__title">O que o mercado está dizendo</h2>
+      <h2 class="section__title">{{ module.depoimentos_t_tulo }}</h2>
       <div class="market-clients__items">
         {% for item in module.depoimentos %}
           <article class="market-clients__depo">
@@ -92,30 +92,7 @@
          {% endfor %}
       </div>
       <div class="button-container">
-        <a href="#cortex-form" class="button button--lp-cta">QUERO FALAR COM UM ESPECIALISTA</a>
+        <a href="#cortex-form" class="button button--lp-cta">{{ module.depoimento_cta_text }}</a>
       </div>
-    </div>
-  </section>
-  <section class="section section__support">
-    <div class="section__container">
-      <aside class="support__card">
-        <figure class="support__image">
-          <img src="https://pages.cortex-intelligence.com/hs-fs/hubfs/Ativo%209@2x.png?width=80&name=Ativo%209@2x.png" alt="Ícone Assuntos gerais">
-        </figure>
-        <div class="support__card-content">
-          <h2 class="support__title">Assuntos gerais</h2>
-          <div class="support__text">Para tratar de assuntos gerais e oportunidades de parceria, envie um e-mail para <br> <a href="mailto:marketing@cortex-intelligence.com">marketing@cortex-intelligence.com</a></div>
-        </div>
-      </aside>
-      <aside class="support__card">
-        <figure class="support__image">
-          <img src="https://pages.cortex-intelligence.com/hs-fs/hubfs/Ativo%208@2x.png?width=80&name=Ativo%208@2x.png" alt="Ícone Suporte técnico">
-        </figure>
-        <div class="support__card-content">
-          <h2 class="support__title">Suporte técnico</h2>
-          <div class="support__text">Estamos aqui para ajudar. 
-            Se estiver com dúvidas ou algum outro problema técnico,<br> <a href="http://atendimentocortex.zendesk.com/" rel="noopener noreferrer" target="_blank" title="" style="color: #37324b;"><u>fale com nosso time</u></a></div>
-        </div>
-      </aside>
     </div>
   </section>

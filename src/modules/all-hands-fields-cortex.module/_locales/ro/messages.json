@@ -1,0 +1,642 @@
+{
+  "depoimentos.name" : {
+    "message" : "all-hands-fields",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.follow_up_type_automation.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.follow_up_type_automation.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.follow_up_type_automation.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.follow_up_type_automation.label" : {
+    "message" : "Add to workflow",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.follow_up_type_automation.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.follow_up_type_simple.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.follow_up_type_simple.help_text" : {
+    "message" : "To send a follow-up email, make sure the 'Set contacts created as marketing contacts’ setting is turned on. You can manage this in options. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>Learn more</a>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.follow_up_type_simple.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.follow_up_type_simple.label" : {
+    "message" : "Send a follow-up email",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.follow_up_type_simple.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.form.default.message" : {
+    "message" : "Obrigado por enviar o formulário.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.form.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.form.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.form.label" : {
+    "message" : "Form",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.form.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "Grupo de campo",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.notifications_are_overridden.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.notifications_are_overridden.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.notifications_are_overridden.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.notifications_are_overridden.label" : {
+    "message" : "Send form notifications to specified email addresses instead of the form defaults",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.notifications_are_overridden.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.notifications_override_email_addresses.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.notifications_override_email_addresses.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.notifications_override_email_addresses.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.notifications_override_email_addresses.label" : {
+    "message" : "Email Addresses",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.notifications_override_email_addresses.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.sfdc_campaign.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.sfdc_campaign.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.sfdc_campaign.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.sfdc_campaign.label" : {
+    "message" : "Salesforce campaign",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.sfdc_campaign.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.simple_email_for_live_id.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.simple_email_for_live_id.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.simple_email_for_live_id.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.simple_email_for_live_id.label" : {
+    "message" : "Email",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.simple_email_for_live_id.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "Flux de lucru",
+    "description" : "",
+    "placeholders" : null
+  },
+  "imagem_clients.default.alt" : {
+    "message" : "Imagem com o texto Comunicação e Marketing",
+    "description" : null,
+    "placeholders" : null
+  },
+  "imagem_clients.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "imagem_clients.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "imagem_clients.label" : {
+    "message" : "Cópia de Imagem",
+    "description" : null,
+    "placeholders" : null
+  },
+  "imagem_clients.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.cta_button.cta.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.cta_button.cta.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.cta_button.cta.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.cta_button.cta.label" : {
+    "message" : "CTA",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.cta_button.cta.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.cta_button.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.cta_button.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.cta_button.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.cta_button.label" : {
+    "message" : "Grupo de campo",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.cta_button.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.cta_button.text_link.default" : {
+    "message" : "Quero agendar uma conversa",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.cta_button.text_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.cta_button.text_link.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.cta_button.text_link.label" : {
+    "message" : "Texto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.cta_button.text_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.cta_button.text_link.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.image_field.default.alt" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.image_field.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.image_field.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.image_field.label" : {
+    "message" : "Imagem",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.image_field.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.label" : {
+    "message" : "Grupo de campo",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.name" : {
+    "message" : "all-hands-fields-cortex",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.richtext_field.default" : {
+    "message" : "<p>Ao contrário dos departamentos de marketing, que já se deram conta há anos da importância de ser data driven, as áreas de comunicação e relações públicas iniciaram a transformação digital com mais intensidade somente nos últimos anos.</p>\n<p>Agora, esse movimento foi ainda mais intensificado com a pandemia da Covid-19, que forçou as empresas a se adaptarem ao digital do dia para a noite e enxugou os orçamentos das áreas. <strong>Ou seja, não há espaço para erros.</strong> É preciso ser assertivo nas decisões.</p>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.richtext_field.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.richtext_field.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.richtext_field.label" : {
+    "message" : "Texto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.richtext_field.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "all-hands-fields-cortex",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.change_section_custom_form.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.change_section_custom_form.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.change_section_custom_form.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.change_section_custom_form.label" : {
+    "message" : "Booleano",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.change_section_custom_form.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.cor_da_fonte.choices.black" : {
+    "message" : "Preto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.cor_da_fonte.choices.white" : {
+    "message" : "Branco",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.cor_da_fonte.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.cor_da_fonte.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.cor_da_fonte.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.cor_da_fonte.label" : {
+    "message" : "Cópia de Cor do formulário",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.cor_da_fonte.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.form_color.choices.valor 1" : {
+    "message" : "Rótulo 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.form_color.choices.valor 2" : {
+    "message" : "Rótulo 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.form_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.form_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.form_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.form_color.label" : {
+    "message" : "Escolha",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.form_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.name" : {
+    "message" : "form-content-sticky",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.background_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.background_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.background_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.background_color.label" : {
+    "message" : "Background Color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.background_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.choices.valor 1" : {
+    "message" : "Rótulo 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.choices.valor 2" : {
+    "message" : "Rótulo 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.gradient.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.gradient.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.gradient.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.gradient.label" : {
+    "message" : "Gradiente",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.gradient.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.label" : {
+    "message" : "Grupo de campo",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.types.choices.bg_color" : {
+    "message" : "Background Color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.types.choices.bg_gradient" : {
+    "message" : "Gradiente",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.types.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.types.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.types.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.types.label" : {
+    "message" : "Plano de fundo",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.plano_de_fundo.types.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

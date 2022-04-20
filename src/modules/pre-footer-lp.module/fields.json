@@ -1,0 +1,76 @@
+[ {
+  "id" : "b74fec47-dc2c-032f-5d42-25afcdc475cc",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Neste eBook, vamos te provar que na verdade você está diante de uma grande oportunidade."
+}, {
+  "id" : "88b31c73-eb70-8059-6570-877281594134",
+  "name" : "texto",
+  "display_width" : null,
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Ao contrário dos departamentos de marketing, que já se deram conta há anos da importância de ser data driven, as áreas de comunicação e relações públicas iniciaram a transformação digital com mais intensidade somente nos últimos anos.<br><br>Agora, esse movimento foi ainda mais intensificado com a pandemia da Covid-19, que forçou as empresas a se adaptarem ao digital do dia para a noite e enxugou os orçamentos das áreas. Ou seja, não há espaço para erros. É preciso ser assertivo nas decisões."
+}, {
+  "id" : "d1f4f020-d024-da4f-3e15-53e2aa3d997b",
+  "name" : "cta",
+  "display_width" : null,
+  "label" : "CTA",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "ff27fb04-98bf-f662-a5f9-2ec49bda097f",
+    "name" : "link",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#section-form",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "58f40e93-4b40-4e82-9ba2-8b16a15b80bd",
+    "name" : "texto",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Baixar eBook"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#section-form",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "texto" : "Baixar eBook"
+  }
+} ]

@@ -1,0 +1,85 @@
+.section__main-hands {
+  padding: 2em 1.5em;
+}
+.main-hands__text {
+  font: 400 1em / 148% var(--secondary-font);
+  color: var(--darkest);
+  margin: 1em 0 1.5em 0;
+}
+.button-green {
+  background-color: var(--green_official);
+  color: var(--lightest);
+  margin: 0 auto;
+}
+.main-hands__image {
+  margin: 2em 0;
+}
+.main-hands__image img {
+  width: 100%;
+  height: auto;
+}
+.section__convert {
+  padding: 2em 1.5em;  
+}
+#cortex-form .hs_cos_wrapper_type_form fieldset input[type="text"], #cortex-form .hs_cos_wrapper_type_form fieldset input[type="email"], #cortex-form .hs_cos_wrapper_type_form fieldset input[type="tel"], #cortex-form .hs_cos_wrapper_type_form fieldset select {
+  border: 1px solid #E1DCE6;
+  background-color: #f3f3fc;
+}
+.legal-consent-container .hs-form-booleancheckbox-display>span {
+  font-weight: bold;
+}
+#cortex-form .hs_cos_wrapper_type_form input[type="submit"] {
+  background-color: var(--green_official);
+}
+
+@media (min-width: 768px) {
+  .section__main-hands > .section__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section__main-hands > .section__container .section__content:first-of-type {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section__main-hands > .section__container .section__content:first-of-type {
+    width: 45%;
+  }
+  .main-hands__text {
+    font-size: 1.5em;
+  }
+  .main-hands__image{
+    width: 50%;
+  }
+  .button-green {
+    margin: 0;
+  }
+  #cortex-form .hs_cos_wrapper_type_form {
+    padding-top: 0;
+  }
+  .section__convert > .section__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1114px;
+    margin: 0 auto;
+  }
+  .section__convert > .section__content > img {
+    width: 50%;
+    height: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .section__main-hands > .section__container {
+    max-width: 1114px;
+    margin: 0 auto;
+  }
+  .section__main-hands > .section__container .section__content:first-of-type {
+    width: 47%;
+  }
+  .section__main-hands #cortex-form .form-title {
+    font-size: 1.5em;
+  }
+}

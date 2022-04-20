@@ -48,13 +48,37 @@
       "show_emoji_picker" : false,
       "type" : "text"
     }, {
-      "id" : "02c3f029-27aa-42f4-72f4-2704219f7be9",
-      "name" : "material",
+      "id" : "6dd9089a-95df-d763-69e7-3c8f0ca7b6e0",
+      "name" : "material_complementar",
       "display_width" : null,
-      "label" : "Material",
+      "label" : "Material Complementar",
       "required" : false,
       "locked" : false,
-      "type" : "page"
+      "children" : [ {
+        "id" : "ccc55557-3ef6-cefd-7664-a4cd8ed1c2e5",
+        "name" : "nome_do_material",
+        "display_width" : null,
+        "label" : "Nome do material",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text"
+      }, {
+        "picker" : "document",
+        "id" : "1c22b454-ae74-6e1b-a3be-5d0af0e0c173",
+        "name" : "material_pdf",
+        "display_width" : null,
+        "label" : "Material",
+        "required" : false,
+        "locked" : false,
+        "type" : "file"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group",
+      "default" : { }
     }, {
       "id" : "fb101ccf-7e5d-7ace-aada-f07cea269fbf",
       "name" : "videoplayer_field",
@@ -70,13 +94,17 @@
     "tab" : "CONTENT",
     "expanded" : false,
     "type" : "group",
-    "default" : { }
+    "default" : {
+      "material_complementar" : { }
+    }
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
   "type" : "group",
   "default" : {
     "title" : "",
-    "topico" : { }
+    "topico" : {
+      "material_complementar" : { }
+    }
   }
 } ]

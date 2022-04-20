@@ -1,0 +1,17 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Landing Page - Ebook (TESTE A/B)
+-->
+
+{% extends "../layouts/base-lp.html" %}
+
+{% include '/cortex-intelligence/templates/metadata-schemas/ebook.html' %}
+
+{% block body %}
+  <main id="main-content" class="body-container-wrapper landing-page--ebook" role="main">
+    {% module "module_165048034534813" path="/cortex-intelligence/modules/form-content-sticky-main", label="form-content-sticky-main" %}
+    {% module "module_16408033469389" path="/cortex-intelligence/sections/landing-pages/content-slide-vertical", label="Slide de conteúdo do material" %}
+    {% module "module_165047418179412" path="/cortex-intelligence/modules/pre-footer-lp", label="pre-footer-lp" %}
+  </main>
+{% endblock body %}

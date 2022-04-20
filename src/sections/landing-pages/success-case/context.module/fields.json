@@ -11,6 +11,30 @@
   "type" : "text",
   "default" : "Contexto"
 }, {
+  "id" : "3ed4b720-f48b-9671-85ae-87ca00c13f52",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "9b6a0013-d75a-4926-07e3-defca4138164",
+    "name" : "display_none",
+    "display_width" : null,
+    "label" : "Display none",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "display_none" : false
+  }
+}, {
   "id" : "e5356a73-78ce-e976-cb51-4d9495a572b4",
   "name" : "texto",
   "display_width" : null,

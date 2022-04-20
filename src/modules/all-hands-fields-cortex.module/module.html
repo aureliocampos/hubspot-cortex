@@ -1,0 +1,67 @@
+<section class="section section__main-hands">
+    <div class="section__container">
+      <div class="section__content">
+        <div class="main-hands__text">{{ module.main.richtext_field }}</div>
+        {% set href = module.main.cta_button.cta.url.href %}
+        <a href="{{ href }}" class="button button-green"
+          {% if module.main.cta_button.cta.open_in_new_tab %}target="_blank"{% endif %}
+          {% if module.main.cta_button.cta.rel %}rel="{{ module.main.cta_button.cta.rel }}"{% endif %}
+          >
+          {{ module.main.cta_button.text_link }}
+        </a>
+      </div>
+      {% if module.main.image_field.src %}
+        {% set loadingAttr = module.main.image_field.loading != 'disabled' ? 'loading="{{ module.main.image_field.loading }}"' : '' %}
+      <figure class="main-hands__image">
+        <img src="{{ module.main.image_field.src }}" alt="{{ module.main.image_field.alt }}" {{ loadingAttr }}>
+    </figure>
+    {% endif %}
+    </div>
+  </section>
+  <section class="section section__convert">
+    <div class="section__content">
+      {% if module.imagem_clients.src %}
+      {% set sizeAttrs = 'width="{{ module.imagem_clients.width }}" height="{{ module.imagem_clients.height }}"' %}
+      {% if module.imagem_clients.size_type == 'auto' %}
+      {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+      {% elif module.imagem_clients.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.imagem_clients.max_width }}" height="{{ module.imagem_clients.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = module.imagem_clients.loading != 'disabled' ? 'loading="{{ module.imagem_clients.loading }}"' : '' %}
+      <img src="{{ module.imagem_clients.src }}" alt="{{ module.imagem_clients.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+      <div id="cortex-form" class="section__form-all-hands cortex-form--{{ module.style.form_color }}"> 
+        {% if module.form.title is truthy %}
+        {% set no_title = False %}
+        {% else %} 
+        {% set no_title = True %}
+        {% endif %}
+
+        {% if module.form.form.form_id %}
+        {% form
+            form_key='{{ name }}',
+            form_to_use='{{ module.form.form.form_id }}',
+            title='{{ module.form.title }}',
+            no_title='{{ no_title }}',
+            follow_up_type_simple='{{ module.form.follow_up_type_simple }}',
+            simple_email_for_live_id='{{ module.form.simple_email_for_live_id }}',
+            follow_up_type_automation='{{ module.form.follow_up_type_automation }}',
+            form_follow_ups_workflow_id='{{ module.form.form_follow_ups_workflow_id }}',
+            response_response_type='{{ module.form.form.response_type }}',
+            response_redirect_id='{{ module.form.form.redirect_id }}',
+            response_redirect_url='{{ module.form.form.redirect_url }}',
+            response_message='{{ module.form.form.message }}',
+            notifications_are_overridden='{{ module.form.notifications_are_overridden }}',
+            notifications_override_email_addresses='{{ module.form.notifications_override_email_addresses }}'
+            gotowebinar_webinar_key='{{ module.form.form.gotowebinar_webinar_key }}'
+            sfdc_campaign='{{ module.form.sfdc_campaign }}'
+          %}
+        {% else %}
+        {% form
+            title='{{ module.form.title }}',
+            no_title='{{ no_title }}',
+          %}
+        {% endif %}
+      </div>
+    </div>
+</section>

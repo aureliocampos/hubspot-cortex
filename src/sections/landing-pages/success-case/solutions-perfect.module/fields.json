@@ -54,7 +54,7 @@
     "validation_regex" : "",
     "allow_new_line" : false,
     "show_emoji_picker" : false,
-    "type" : "text",
+    "type" : "richtext",
     "default" : "Integre com facilidade os dados da sua plataforma de social listening e tenha as informações importantes em um único lugar"
   } ],
   "tab" : "CONTENT",

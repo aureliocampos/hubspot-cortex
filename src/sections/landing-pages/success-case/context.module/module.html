@@ -1,4 +1,8 @@
-<section class="section section--lp-context">
+<section class="section section--lp-context"
+    {% if module.style.display_none %}
+     style="display:none"
+    {% endif %}
+   >
   <div class="section__container">
     <h2 class="lp-context__title">{{ module.title }}</h2>
     <div class="lp-context__content">
@@ -6,3 +10,4 @@
     </div>
   </div>
 </section>
+

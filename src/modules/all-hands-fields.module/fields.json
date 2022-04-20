@@ -467,6 +467,30 @@
     "follow_up_type_simple" : false
   }
 }, {
+  "id" : "59724499-8c1b-eccb-587a-97c453a1aabd",
+  "name" : "depoimentos_t_tulo",
+  "display_width" : null,
+  "label" : "Depoimentos Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "O que o mercado está dizendo"
+}, {
+  "id" : "e0977cbc-74fc-2982-3b01-d71249276d12",
+  "name" : "depoimento_cta_text",
+  "display_width" : null,
+  "label" : "Depoimento cta text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "QUERO FALAR COM UM ESPECIALISTA"
+}, {
   "id" : "0467356c-c499-9d63-3b61-20c27dbebbc0",
   "name" : "depoimentos",
   "display_width" : null,

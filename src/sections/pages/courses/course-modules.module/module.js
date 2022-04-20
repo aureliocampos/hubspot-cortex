@@ -52,6 +52,14 @@ allList.forEach( list => {
 
       if (window.matchMedia("(max-width: 1200px)").matches) {
         handleModulesMenu()
+      } else {
+        document.querySelector(".module__videos-items").scrollIntoView(
+          {
+            behavior: "smooth", 
+            block: "center",
+            inline: "center"
+          }
+        )
       }
     }
   })

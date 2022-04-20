@@ -1,0 +1,17 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+    label: Levantada de mão - Todas as Audiências
+-->
+
+{% extends "./layouts/base-lp.html" %}
+
+
+{% block body %}
+<!-- Seletor de Cores Cortex -->
+{% module "module_16415189198955" path="/cortex-intelligence/modules/color-theme-config", label="Configurar tema de cores" %}
+
+{% module "module_165037112173629" path="/cortex-intelligence/modules/all-hands-fields-cortex", label="Campos personalizados" %}
+{% module "module_165037116264030" path="/cortex-intelligence/sections/generic/cards-solutions", label="Cartões das soluções" %}
+{% module "module_165037109691127" path="/cortex-intelligence/modules/cards-help-support-cortex", label="Cartões de suporte Cortex" %}
+{% endblock body %}

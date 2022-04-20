@@ -73,43 +73,6 @@
   background-color: var(--brand_official);
   margin: 0 auto;
 }
-
-.section__support {
-  padding: 2.5em 1.5em;
-}
-.support__card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 380px;
-  gap: 1em;
-  margin: 3em auto;
-}
-.support__image {
-  width: auto;
-  display: flex;
-  place-items: center;
-}
-.support__image img {
-  width: 80px;
-  height: auto;
-}
-.support__card-content {
-  width: 70%;
-}
-.support__title {
-  font: bold 1em / 120% var(--secondary-font);
-  color: var(--darkest);
-}
-.support__text {
-  font: 400 0.75em / 148% var(--secondary-font);
-  color: var(--darkest);
-}
-.support__text a {
-  color: var(--darkest);
-  text-decoration: underline;
-}
-
 @media (min-width: 768px) {
   .section__main-hands > .section__container {
     display: flex;
@@ -149,11 +112,6 @@
     display: flex;
     gap: 2em;
     
-  }
-  .section__support .section__container {
-    display: flex;
-    max-width: 1114px;
-    margin: 0 auto;
   }
 }
 @media (min-width: 1200px) {

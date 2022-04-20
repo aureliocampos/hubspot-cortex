@@ -6,13 +6,16 @@
         <div class="rel-resources__items swiper-wrapper">
           {% for item in module.materiais %}
           {% set resource = content_by_id(item.material) %}
+
           <article class="rel-resources__card swiper-slide">
             <section class="rel-resources__card-content">
               <figure class="rel-resources__card-figure">
-                <!-- {% if item.tag_field %}
-                  <small class="rel-resources__card-tag">{{ item.tag_field }}</small>
-                {% endif %} -->
-                <a href="{{ resource.absolute_url }}" >
+                {% if resource.link_rel_canonical_url %}
+                  {% set href = resource.link_rel_canonical_url %}
+                {% else %}
+                  {% set href = resource.absolute_url %}
+                {% endif %}
+                <a href="{{ href }}" >
                   <img src="{{ resource.featuredImage }}" alt="{{ resource.featuredImageAltText }}" 
                   class="rel-resources__card-image"
                   />
@@ -21,9 +24,7 @@
               <div class="rel-resources__card-description">
                 <h2 class="rel-resources__card-title">{{resource.title}}</h2>
                 <ul class="rel-resources__card-categories">
-
                   {% set all_categories = blog_tags('default', 250) %}
-
                   {% for tag in item.categorias %}
                     {% for category in all_categories %}
                       {% if category.slug == tag %}
@@ -44,7 +45,7 @@
               {% else %}
                 {% set button_text = 'Baixar' %}
               {% endif %}
-              <a href="{{ resource.absolute_url }}" class="button button--primary">{{ button_text }}</a>
+              <a href="{{ href }}" class="button button--primary">{{ button_text }}</a>
             </div>
           </article>
     
