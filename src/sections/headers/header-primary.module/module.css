@@ -154,21 +154,20 @@
   display: none;
 }
 .header__language-switcher .language-icon {
-  font-size: 1.1em;
   margin-right: 10px;
 }
 
 .header__language-switcher-options {
   position: absolute;
   top: -140px;
-  left: 0;
+  left: -16px;
   right: 0;
   display: none;
   flex-direction: column;
   align-items: center;
   gap: 8px;
   width: max-content;
-  padding: 1em;
+  padding: 1em 1.125em;
   margin: 0 auto;
   background: var(--white);
   box-shadow: 20px 20px 50px rgb(204 204 230 / 10%), -10px 0px 30px rgb(204 204 229 / 10%);
@@ -186,17 +185,8 @@
   color: var(--dark);
   pointer-events: none;
 }
-.header__language-switcher-label-option.disabled .icon-bandeira-estados-unidos span:before{
-  color: var(--light);
-}
-.header__language-switcher-label-option.disabled .icon-bandeira-brasil span.path1:before {
-  color: var(--light);
-}
-.header__language-switcher-label-option.disabled .icon-bandeira-brasil span.path2:before {
-  color: var(--lightest);
-}
-.header__language-switcher-label-option.disabled .icon-bandeira-brasil span.path3:before {
-  color: var(--dark);
+.header__language-switcher-label-option.disabled img {
+  filter: grayscale(1);
 }
 
 /* Ajustes Especiais */
