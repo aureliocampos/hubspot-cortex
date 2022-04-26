@@ -253,7 +253,6 @@
     position: absolute;
     left: -20px;
     width: 330px;
-    padding: 0 1.5rem;
     background: var(--white);
     z-index: -1;
     border-radius: 8px;
@@ -278,7 +277,7 @@
   .header .hs-menu-children-wrapper.active {
     top: 50px;
     max-height: 400px;
-    padding-bottom: 1.5rem;
+    padding: 1.5rem;
     box-shadow:  var(--box-shadow);
   }
 

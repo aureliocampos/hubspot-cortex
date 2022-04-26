@@ -222,6 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
       event.preventDefault()
       const drivingElements = ['A', 'SVG'];
       const elementClicked = event.target;
+      const otherMenuItems = document.querySelectorAll(".hs-menu-depth-1.active");
 
       if (drivingElements.includes(elementClicked.tagName)) {
 
@@ -230,6 +231,17 @@ document.addEventListener('DOMContentLoaded', () => {
         let parent = elementClicked.parentElement;
         let content = elementClicked.nextElementSibling;
 
+        if (otherMenuItems.length > 0 ) {
+          otherMenuItems.forEach(
+            itemMenu => {
+              if (itemMenu !== parent) {
+                itemMenu.classList.remove('active')
+                itemMenu.firstElementChild.classList.remove('active')
+                itemMenu.lastElementChild.classList.remove('active')
+              }
+            }
+          );
+        }
         parent.classList.toggle('active');
         content.classList.toggle('active');
 

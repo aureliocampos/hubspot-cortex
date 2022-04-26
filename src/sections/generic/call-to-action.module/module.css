@@ -28,15 +28,15 @@
 }
 .button-cta--solutions {
   color: var(--white);
+  margin-top: 1.5em;
 }
-
 .button-cta--solutions .icon-input-seta {
   font-size: 10px;
   margin-left: 0.5em;
 }
 @media (min-width: 1024px) {
   .cta-solutions {
-    margin: 7.5em 0;
+    margin: 7.5em 2em;
   }
   .section-cta__box {
     display: flex;
@@ -79,6 +79,8 @@
     margin: 0.5rem 0 0 0;
   }
   .button-cta--solutions {
+    min-width: 200px;
     color: var(--white);
+    margin-top: 0;
   }
 }
