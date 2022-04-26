@@ -1,0 +1,21 @@
+[ {
+  "id" : "5652ab46-6272-ebe3-368e-caf6ed3ed78e",
+  "name" : "texto",
+  "display_width" : null,
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Veja como funciona a nossa ferramenta de monitoramento de reputação"
+}, {
+  "id" : "3b1310bd-f88d-87d2-075a-781c740037d6",
+  "name" : "videoplayer_field",
+  "display_width" : null,
+  "label" : "Vídeo",
+  "required" : false,
+  "locked" : false,
+  "resizable" : true,
+  "show_preview" : true,
+  "show_advanced_options" : false,
+  "type" : "videoplayer"
+} ]

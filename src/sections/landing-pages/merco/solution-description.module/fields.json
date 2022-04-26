@@ -1,0 +1,112 @@
+[ {
+  "id" : "26ef84e9-5ca6-3e6c-8eae-d3290e3afdbb",
+  "name" : "section_title",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Com a solução de comunicação estratégica e reputação da Cortex você vai ter:"
+}, {
+  "id" : "2f5a9856-94ce-5d20-43fe-ac4e2f9308a9",
+  "name" : "description",
+  "display_width" : null,
+  "label" : "description",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "46230f07-03b2-03b1-51e9-4b8a0b737f3d",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "986e3cb4-2e2e-e6b6-b964-33e5db83eb3b",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "46230f07-03b2-03b1-51e9-4b8a0b737f3d",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Título",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "4a43d70b-de1c-75fd-712d-7c69b16c9e5e",
+    "name" : "texto",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "title": "Exposição promotora de marca",
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/website-cortex/icons/Group%202908.png",
+      "alt" : "Icone estrela",
+      "loading" : "lazy"
+    },
+    "texto": "<p>Ao utilizar a solução integrada da Cortex, você conseguirá cruzar diferentes tipos de ações de comunicação, com o objetivo de monitorar a exposição promotora da marca.</p><p>Obtendo os indicadores, de quais ações estão sendo mais efetivas para a exposição positiva da marca. Permitindo que a área de comunicação possa comprovar seus resultados baseando-se em dados como as demais áreas da companhia.</p>"
+  }, {
+    "title": "Tendências na mídia",
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/website-cortex/icons/Group%202907.png",
+      "alt" : "Icone seta",
+      "loading" : "lazy"
+    },
+    "texto": "<p>Painel de monitoramento para acompanhar os principais assuntos debatidos na sociedade, agenda da imprensa e líderes de opinião.</p><p>Com essa funcionalidade é possível compreender as tendências da agenda das mídias, mapeando pautas que estão ganhando ou perdendo espaço no interesse da opinião pública.</p><p>Possibilitando executar estratégias de comunicação mais alinhadas e assertivas ao momento da imprensa e dos líderes de opinião.</p>"
+  }, {
+    "title": "Bolhas ideológicas",
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/website-cortex/icons/Group%202905.png",
+      "alt" : "Ícone bolhas",
+      "loading" : "lazy"
+    },
+    "texto": "<p>Funcionalidade exclusiva da Cortex, que possibilita a visualização da repercussão de temas nas bolhas ideológicas progressista, centro e conservador. São mais de 1700 líderes de opinião mapeados (influenciadores, veículos de imprensa, jornalistas, instituições, entidades, ONGs, poder público, políticos etc.) e categorizados, de acordo com a audiência, em viés ideológico (progressista, centro e conservador), Twitter, Facebook e Instagram.</p>"
+  }, {
+    "title": "Gestão de KPI’s de comunicação",
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/website-cortex/icons/Group%202906%20(1).png",
+      "alt" : "Ícone Flecha no alvo",
+      "loading" : "lazy"
+    },
+    "texto": "<p>Painel para gerenciamento dos Key Performance Indicator (KPIs) definidos para a área de Comunicação e Marketing. Acompanhe as principais metas, elabore estratégias assertivas para o atingimento ou correção de rota e receba alertas de gatilho de outliers (queda ou crescimento de indicadores). Disponibilizamos também um painel executivo para reports internos para o board da empresa.</p>"
+  } ]
+}, {
+  "id" : "32143f1a-82ff-a0f5-9c9d-1e0b6ed806b1",
+  "name" : "section_text",
+  "display_width" : null,
+  "label" : "Texto da seção",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<strong>Tudo isso e muito mais!</strong> A única solução end-to-end de Comunicação"
+} ]

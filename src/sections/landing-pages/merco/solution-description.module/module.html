@@ -1,0 +1,18 @@
+<section class="secton section__solution-description">
+	<div class="section__container">
+		<h2 class="section__title">{{ module.section_title }}</h2>
+		<div class="solution-description__items">
+			{% for item in module.description %}
+				<article class="solution-description__item">
+					{% if item.icon.src %}
+						{% set loadingAttr = item.icon.loading != 'disabled' ? 'loading="{{ item.icon.loading }}"' : '' %}
+						<img src="{{ item.icon.src }}" alt="{{ item.icon.alt }}" {{ loadingAttr }} width="76" height="76">
+					{% endif %}
+					<h3 class="solution-description__title">{{ item.title }}</h3>
+					<div class="solution-description__text">{{ item.texto }}</div>
+				</article>
+			{% endfor %}
+		</div>
+		<div class="section__text">{{ module.section_text }}</div>
+	</div>
+</section>

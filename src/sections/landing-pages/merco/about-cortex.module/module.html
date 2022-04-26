@@ -1,0 +1,36 @@
+{% inline_rich_text field="se_o_de_destaque.texto" value="{{ module.se_o_de_destaque.texto }}" %}
+{% set href = module.se_o_de_destaque.cta.link_field.url.href %}
+{% if module.se_o_de_destaque.cta.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+<a href="{{ href }}"
+	{% if module.se_o_de_destaque.cta.link_field.open_in_new_tab %}target="_blank"{% endif %}
+	{% if module.se_o_de_destaque.cta.link_field.rel %}rel="{{ module.se_o_de_destaque.cta.link_field.rel }}"{% endif %}
+	>
+	Link text
+</a>
+{% inline_text field="se_o_de_destaque.cta.text_field" value="{{ module.se_o_de_destaque.cta.text_field }}" %}
+{% if module.se_o_de_destaque.image_field.src %}
+	{% set sizeAttrs = 'width="{{ module.se_o_de_destaque.image_field.width }}" height="{{ module.se_o_de_destaque.image_field.height }}"' %}
+	{% if module.se_o_de_destaque.image_field.size_type == 'auto' %}
+		{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+	{% elif module.se_o_de_destaque.image_field.size_type == 'auto_custom_max' %}
+		{% set sizeAttrs = 'width="{{ module.se_o_de_destaque.image_field.max_width }}" height="{{ module.se_o_de_destaque.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+	{% endif %}
+	 {% set loadingAttr = module.se_o_de_destaque.image_field.loading != 'disabled' ? 'loading="{{ module.se_o_de_destaque.image_field.loading }}"' : '' %}
+	<img src="{{ module.se_o_de_destaque.image_field.src }}" alt="{{ module.se_o_de_destaque.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+{% endif %}
+
+{% inline_rich_text field="marcas.texto" value="{{ module.marcas.texto }}" %}
+{% for item in module.marcas.logo %}
+	{% if item.src %}
+		{% set sizeAttrs = 'width="{{ item.width }}" height="{{ item.height }}"' %}
+		{% if item.size_type == 'auto' %}
+			{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+		{% elif item.size_type == 'auto_custom_max' %}
+			{% set sizeAttrs = 'width="{{ item.max_width }}" height="{{ item.max_height }}" style="max-width: 100%; height: auto;"' %}
+		{% endif %}
+		 {% set loadingAttr = item.loading != 'disabled' ? 'loading="{{ item.loading }}"' : '' %}
+		<img src="{{ item.src }}" alt="{{ item.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+	{% endif %}
+{% endfor %}

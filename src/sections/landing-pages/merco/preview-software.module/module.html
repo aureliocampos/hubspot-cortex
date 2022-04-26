@@ -1,0 +1,21 @@
+{% inline_rich_text field="texto" value="{{ module.texto }}" %}
+
+{% if module.videoplayer_field.player_id %}
+	{% set max_width = module.videoplayer_field.size_type == 'auto_custom_max' ? module.videoplayer_field.max_width : module.videoplayer_field.width %}
+	{% set max_height = module.videoplayer_field.size_type == 'auto_custom_max' ? module.videoplayer_field.max_height : module.videoplayer_field.height %}
+	{% widget_block video_player "embed_player"
+		overrideable=False,
+		type='scriptV4',
+		hide_playlist=True,
+		viral_sharing=False,
+		embed_button=False,
+		full_width={{ module.videoplayer_field.size_type == 'auto_full_width' }},
+		width="{{ max_width }}",
+		height="{{ max_height }}",
+		player_id="{{ module.videoplayer_field.player_id }}"
+	%}
+		{% widget_attribute "conversion_asset" %}
+			{{ module.videoplayer_field.conversion_asset|tojson|safe }}
+		{% end_widget_attribute %}
+	{% end_widget_block %}
+{% endif %}

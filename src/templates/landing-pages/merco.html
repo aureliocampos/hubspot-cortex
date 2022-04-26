@@ -1,0 +1,30 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Landing Page - Campeões da Merco
+-->
+
+{% extends "../layouts/base-lp.html" %}
+
+{% block body %}
+  <main id="main-content" class="body-container-wrapper landing-page--meetup" role="main">
+      {% dnd_area "dnd_area" label="Main section" %}
+
+      {% dnd_section %}
+         {% dnd_module "module_165099863990546" path="/cortex-intelligence/sections/landing-pages/main-case-primary", label="Main" %}{% end_dnd_module %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+         {% dnd_module "module_165099567213912" path="/cortex-intelligence/sections/landing-pages/merco/solution-description", label="Descrição da solução" %}{% end_dnd_module %}
+      {% end_dnd_section %}
+       {% dnd_section %}
+         {% dnd_module "module_165099619970329" path="/cortex-intelligence/sections/landing-pages/merco/about-cortex", label="Quero conhecer a Cortex" %}{% end_dnd_module %}
+      {% end_dnd_section %}
+     {% dnd_section %}
+         {% dnd_module "module_165099630731333" path="/cortex-intelligence/sections/landing-pages/merco/preview-software", label="Como funciona a ferramenta" %}{% end_dnd_module %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+         {% dnd_module "module_165099650653536" path="/cortex-intelligence/modules/form-content-sticky", label="Formulário" %}{% end_dnd_module %}
+      {% end_dnd_section %}
+    {% end_dnd_area %}
+  </main>
+{% endblock body %}

@@ -1,14 +1,18 @@
+
 <section class="section section__main-case--primary">
+  
   <div class="section__container">
     <div class="section__content">
       <p class="main-case__subtitle--1">{{ module.subtitle_1 }}</p>
       <h1 class="main-case__title">{{ module.title }}</h1>
       <p class="main-case__subtitle--2">{{ module.subtitle_2 }}</p>
       {% set href = module.button.link_field.url.href %}
+      {% if href %}
         <a href="{{ href }}" class="button button--lp-cta"
           >
         {{ module.button.texto_do_link }}
         </a>
+      {% endif %}
     </div>
     {% if module.image_field.src %}
       {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
@@ -24,4 +28,42 @@
     {% endif %}
   </div>
 </section>
-
+ {% if module.style.backgroundimage_field.src %}
+      {% require_css %}
+         <style>
+           .section__main-case--primary {
+             {{ module.style.backgroundimage_field.css }}
+           }
+          </style>
+      {% end_require_css %}
+    {% elif module.usar_imagem_como_plano_de_fundo %}
+     {% require_css %}
+         <style>
+           .section__main-case--primary {
+             position: relative;
+           }
+           .section__main-case--primary:after {
+             content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-image: linear-gradient(rgb(255 255 255 / 70%), rgb(255 255 255 / 70%)), url({{ module.image_field.src }});
+              background-size: cover;
+              background-position: center center;
+              filter: blur(25px);
+           }
+           .section__main-case--primary > .section__container {
+             position: relative;
+             z-index: 6;
+           }
+          </style>
+      {% end_require_css %}
+     {% else %}
+      {% require_css %}
+         <style>
+          
+          </style>
+      {% end_require_css %}
+  {% endif %}

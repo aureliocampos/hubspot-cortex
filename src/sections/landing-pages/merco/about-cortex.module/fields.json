@@ -1,0 +1,193 @@
+[ {
+  "id" : "361daae7-5427-bc86-2e0e-1b6bdac99450",
+  "name" : "se_o_de_destaque",
+  "display_width" : null,
+  "label" : "Seção de destaque",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "fa8cf9f6-b9b8-b18c-0a61-28a5dd3f16d7",
+    "name" : "texto",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "Na Cortex, você conta com um <strong>time de especialistas</strong> que vai te ajudar a <strong>desenvolver insights poderosos</strong>, e a torna-se um <strong>campeão no Ranking Merco</strong>."
+  }, {
+    "id" : "9913e672-4ac3-0b1b-8f2c-17eb6bd08fcc",
+    "name" : "cta",
+    "display_width" : null,
+    "label" : "CTA",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "3535957c-3561-6181-3b14-cc0f9462d64c",
+      "name" : "link_field",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.cortex-intelligence.com/agendar-conversa-com-especialistas-cortex",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "50a2f03b-3864-6e54-ebbd-4c60f2abb967",
+      "name" : "text_field",
+      "display_width" : null,
+      "label" : "Texto",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Quero conhecer a cortex"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "link_field" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.cortex-intelligence.com/agendar-conversa-com-especialistas-cortex",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "text_field" : "Quero conhecer a cortex"
+    }
+  }, {
+    "id" : "9925cc96-aaa2-4b82-e92e-c499a4409868",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Imagem",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Destaque-LP-Meios-de-pagamento-1.png",
+      "alt" : "mulher segurando tablet",
+      "loading" : "lazy",
+      "width" : 963,
+      "height" : 751,
+      "max_width" : 963,
+      "max_height" : 751
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "texto" : "Na Cortex, você conta com um <strong>time de especialistas</strong> que vai te ajudar a <strong>desenvolver insights poderosos</strong>, e a torna-se um <strong>campeão no Ranking Merco</strong>.",
+    "cta" : {
+      "link_field" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.cortex-intelligence.com/agendar-conversa-com-especialistas-cortex",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "text_field" : "Quero conhecer a cortex"
+    },
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Destaque-LP-Meios-de-pagamento-1.png",
+      "alt" : "mulher segurando tablet",
+      "loading" : "lazy",
+      "width" : 963,
+      "height" : 751,
+      "max_width" : 963,
+      "max_height" : 751
+    }
+  }
+}, {
+  "id" : "7bc9077c-98e0-d572-cb89-815fc7db662a",
+  "name" : "marcas",
+  "display_width" : null,
+  "label" : "Marcas",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "910391eb-402c-7c83-7413-d5827830d199",
+    "name" : "texto",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "Conheça algumas marcas que já utilizam Cortex&nbsp; e estão liderando no ranking setorial da Merco:"
+  }, {
+    "id" : "be139bd1-e331-2b6c-8a90-8d7f10db00a8",
+    "name" : "logo",
+    "display_width" : null,
+    "label" : "Logo",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 3
+    },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : [ {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }, {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }, {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "texto" : "Conheça algumas marcas que já utilizam Cortex&nbsp; e estão liderando no ranking setorial da Merco:",
+    "logo" : [ {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }, {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }, {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    } ]
+  }
+} ]
