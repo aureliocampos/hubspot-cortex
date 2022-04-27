@@ -9,7 +9,10 @@
 					{% set sizeAttrs = 'width="{{ module.logo_cortex.max_width }}" height="{{ module.logo_cortex.max_height }}" style="max-width: 100%; height: auto;"' %}
 				{% endif %}
 				{% set loadingAttr = module.logo_cortex.loading != 'disabled' ? 'loading="{{ module.logo_cortex.loading }}"' : '' %}
-				<img src="{{ module.logo_cortex.src }}" alt="{{ module.logo_cortex.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+				<a href="https://www.cortex-intelligence.com/">
+					<img src="{{ module.logo_cortex.src }}" alt="{{ module.logo_cortex.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+				</a>
+				
 			{% endif %}
 		</figure>
 		
