@@ -51,7 +51,7 @@
       "allow_new_line" : false,
       "show_emoji_picker" : false,
       "type" : "text",
-      "default" : "Quero conhecer a cortex"
+      "default" : "QUERO CONHECER A CORTEX"
     } ],
     "tab" : "CONTENT",
     "expanded" : false,
@@ -60,13 +60,13 @@
       "link_field" : {
         "url" : {
           "type" : "EXTERNAL",
-          "href" : "https://www.cortex-intelligence.com/agendar-conversa-com-especialistas-cortex",
+          "href" : "#secton-form",
           "content_id" : null
         },
         "open_in_new_tab" : false,
         "no_follow" : false
       },
-      "text_field" : "Quero conhecer a cortex"
+      "text_field" : "QUERO CONHECER A CORTEX"
     }
   }, {
     "id" : "9925cc96-aaa2-4b82-e92e-c499a4409868",
@@ -135,10 +135,10 @@
     "type" : "richtext",
     "default" : "Conheça algumas marcas que já utilizam Cortex&nbsp; e estão liderando no ranking setorial da Merco:"
   }, {
-    "id" : "be139bd1-e331-2b6c-8a90-8d7f10db00a8",
-    "name" : "logo",
+    "id" : "818a4828-cc8a-5b9b-22be-821339ed3c3c",
+    "name" : "marca",
     "display_width" : null,
-    "label" : "Logo",
+    "label" : "Marca",
     "required" : false,
     "locked" : false,
     "occurrence" : {
@@ -147,47 +147,149 @@
       "sorting_label_field" : null,
       "default" : 3
     },
-    "responsive" : true,
-    "resizable" : true,
-    "show_loading" : false,
-    "type" : "image",
+    "children" : [ {
+      "id" : "be139bd1-e331-2b6c-8a90-8d7f10db00a8",
+      "name" : "logo",
+      "display_width" : null,
+      "label" : "Logo",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    }, {
+      "id" : "b7e46c8d-1863-0b38-ec31-384dee0e9bb4",
+      "name" : "link_field_1",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
     "default" : [ {
-      "size_type" : "auto",
-      "src" : "",
-      "alt" : null,
-      "loading" : "lazy"
+      "logo" : {
+        "size_type" : "auto",
+        "src" : "https://pages.cortex-intelligence.com/hubfs/website-cortex/logos/logo-xp-investimentos.png",
+        "alt" : "Logo XP investimentos",
+        "loading" : "lazy"
+      },
+      "link_field_1" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
     }, {
-      "size_type" : "auto",
-      "src" : "",
-      "alt" : null,
-      "loading" : "lazy"
+      "logo" : {
+        "size_type" : "auto",
+        "src" : "https://pages.cortex-intelligence.com/hubfs/website-cortex/logos/logo-vivo.png",
+        "alt" : "Logo Vivo",
+        "loading" : "lazy"
+      },
+      "link_field_1" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
     }, {
-      "size_type" : "auto",
-      "src" : "",
-      "alt" : null,
-      "loading" : "lazy"
+      "logo" : {
+        "size_type" : "auto",
+        "src" : "https://pages.cortex-intelligence.com/hubfs/website-cortex/logos/logo-visa.png",
+        "alt" : "Logo Visa",
+        "loading" : "lazy"
+      },
+      "link_field_1" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
     } ]
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
   "type" : "group",
   "default" : {
-    "texto" : "Conheça algumas marcas que já utilizam Cortex&nbsp; e estão liderando no ranking setorial da Merco:",
-    "logo" : [ {
-      "size_type" : "auto",
-      "src" : "",
-      "alt" : null,
-      "loading" : "lazy"
+    "texto" : "Conheça algumas marcas que já utilizam Cortex e estão liderando no ranking setorial da Merco:",
+    "marca" : [ {
+      "logo" : {
+        "size_type" : "auto",
+        "src" : "https://pages.cortex-intelligence.com/hubfs/website-cortex/logos/logo-xp-investimentos.png",
+        "alt" : "Logo XP investimentos",
+        "loading" : "lazy"
+      },
+      "link_field_1" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
     }, {
-      "size_type" : "auto",
-      "src" : "",
-      "alt" : null,
-      "loading" : "lazy"
+      "logo" : {
+        "size_type" : "auto",
+        "src" : "https://pages.cortex-intelligence.com/hubfs/website-cortex/logos/logo-vivo.png",
+        "alt" : "Logo Vivo",
+        "loading" : "lazy"
+      },
+      "link_field_1" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
     }, {
-      "size_type" : "auto",
-      "src" : "",
-      "alt" : null,
-      "loading" : "lazy"
+      "logo" : {
+        "size_type" : "auto",
+        "src" : "https://pages.cortex-intelligence.com/hubfs/website-cortex/logos/logo-visa.png",
+        "alt" : "Logo Visa",
+        "loading" : "lazy"
+      },
+      "link_field_1" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
     } ]
   }
 } ]

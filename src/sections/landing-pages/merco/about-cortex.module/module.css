@@ -1,0 +1,118 @@
+.section__summary-cortex {
+  padding: 2.5em 1.5em;
+  background-color: var(--lightest);
+}
+
+.summary__container--card {
+  padding: 1.5em;
+  background-color: white;
+  border-radius: 1.5em;
+}
+.summary__title {
+  font: 400 1.25em / 120% var(--primary-font);
+  color: var(--darkest);
+}
+.summary__figure {
+  margin-top: 1.5em;
+}
+.summary__figure img {
+  width: 100%;
+  height: auto;
+}
+.summary__container {
+  padding-top: 2em;
+}
+.summary__brands-title {
+  font: 400 1.25em / 120% var(--primary-font);
+  color: var(--darkest);
+  text-align: center;
+}
+.summary-brands__items {
+  margin-top: 1em;
+}
+.summary-brands__item > a {
+  display: block;
+  max-width: max-content;
+  margin: 0 auto;
+}
+.summary-brands__item img {
+  width: 220px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .summary__container--card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .summary__content {
+    width: 300px;
+  }
+  .summary__title {
+    font-size: 1.125em;
+  }
+  .summary__figure {
+    width: 350px;
+    margin: 0;
+  }
+  .summary__container {
+    margin-top: 2.5em;
+    
+  }
+  .summary-brands__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
+}
+@media (min-width: 1024px) {
+  .summary__container--card {
+    max-width: 976px;
+    padding: 3em 2em;
+  }
+  .summary__content {
+    width: 460px;
+  }
+  .summary__title {
+    font-size: 1.75em;
+    margin-bottom: 2.5em;
+  }
+  .summary__figure {
+    width: 400px;
+  }
+  .summary__brands-title {
+    max-width: 680px;
+    font-size: 1.75em;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section__summary-cortex {
+    padding: 5em 0;
+  }
+  .summary__container--card {
+    max-width: 1114px;
+    margin: 0 auto;
+    padding: 5em 3em;
+  }
+  .summary__content {
+    width: 550px;
+  }
+  .summary__title {
+    font-size: 2em;
+  }
+  .summary__figure {
+    width: 420px;
+  }
+  .summary__brands-title {
+    max-width: 768px;
+    font-size: 2em;
+  }
+  .summary__container {
+    padding-top: 5em;
+  }
+}
