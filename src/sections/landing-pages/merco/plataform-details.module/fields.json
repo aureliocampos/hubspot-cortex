@@ -1,1 +1,40 @@
-[ ]
+[ {
+  "id" : "767bc0c1-f139-918c-9a82-ac60aaa9656f",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Mais detalhes sobre a plataforma"
+}, {
+  "id" : "60f4d1d6-bc8e-e853-bfb3-e558007ab30c",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Imagem",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://pages.cortex-intelligence.com/hubfs/%5BPortugu%C3%AAs%5D%20Pitch%20Comunica%C3%A7%C3%A3o%20Estrat%C3%A9gica%20e%20Reputa%C3%A7%C3%A3o_fevereiro2022%201.png",
+    "alt" : "[Português] Pitch Comunicação Estratégica e Reputação_fevereiro2022 1",
+    "loading" : "lazy",
+    "width" : 1934,
+    "height" : 1030,
+    "max_width" : 1934,
+    "max_height" : 1030
+  }
+} ]

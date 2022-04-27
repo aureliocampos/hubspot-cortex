@@ -2,19 +2,19 @@
   padding: 2.5em 1.5em;
 }
 
-.section__title {
+.section__preview-software .section__title {
   font: 400 1em / 148% var(--primary-font);
   color: var(--darkest);
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
 }
-.section__title h2,
-.section__title h3,
-.section__title h4 {
+.section__preview-software .section__title h2,
+.section__preview-software .section__title h3,
+.section__preview-software .section__title h4 {
   font-weight: bold;
 }
-.section__title h2 {
+.section__preview-software .section__title h2 {
   font-size: 1.5em;
   
 }
@@ -36,11 +36,11 @@
     margin: 0 auto;
     padding: 1em;
   }
-  .section__title {
+  .section__preview-software .section__title {
     text-align: left;
     width: 300px;
   }
-  .section__title h2 {
+  .section__preview-software .section__title h2 {
     font-size: 2em;
     line-height: 125%;
   }

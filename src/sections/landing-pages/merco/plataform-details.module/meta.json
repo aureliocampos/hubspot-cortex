@@ -2,5 +2,6 @@
   "global" : false,
   "host_template_types" : [ "PAGE" ],
   "module_id" : 72000115026,
+  "label" : "Detalhes da plataforma",
   "is_available_for_new_content" : true
 }
