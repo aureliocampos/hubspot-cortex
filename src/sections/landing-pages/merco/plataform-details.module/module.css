@@ -6,21 +6,26 @@
   color: var(--darkest);
   text-align: center;
 }
+.plataform-details__items {
+  margin-top: 1.5em;
+}
 .plataform-details__figure {
   overflow-x: scroll;
 }
 .plataform-details__figure img {
-  width: 100%;
+  width: 768px;
   height: auto;
 }
+
 @media (min-width:768px) {
-  .plataform-details__items {
-    margin-top: 1.5em;
-  }
   .plataform-details__figure {
     width: 720px;
     margin: 0 auto;
     overflow: auto;
+  }
+  .plataform-details__figure img {
+    width: 100%;
+    height: auto;
   }
 }
 @media (min-width:1024px) {

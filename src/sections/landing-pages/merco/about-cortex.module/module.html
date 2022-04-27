@@ -23,16 +23,23 @@
 			<ul class="summary-brands__items">
 				{% for item in module.marcas.marca %}
 					<li class="summary-brands__item">
-						{% set href = item.link_field_1.url.href %}
-							<a href="{{ href }}"
-								{% if item.link_field_1.open_in_new_tab %}target="_blank"{% endif %}
-								{% if item.link_field_1.rel %}rel="{{ item.link_field_1.rel }}"{% endif %}
-								>
+						{% if item.link_field_1.url.href %}
+							{% set href = item.link_field_1.url.href %}
+								<a href="{{ href }}"
+									{% if item.link_field_1.open_in_new_tab %}target="_blank"{% endif %}
+									{% if item.link_field_1.rel %}rel="{{ item.link_field_1.rel }}"{% endif %}
+									>
+									{% if item.logo.src %}
+										{% set loadingAttr = item.logo.loading != 'disabled' ? 'loading="{{ item.logo.loading }}"' : '' %}
+										<img src="{{ item.logo.src }}" alt="{{ item.logo.alt }}" {{ loadingAttr }} width="300" height="180">
+									{% endif %}
+								</a>
+							{% else %}
 								{% if item.logo.src %}
 									{% set loadingAttr = item.logo.loading != 'disabled' ? 'loading="{{ item.logo.loading }}"' : '' %}
 									<img src="{{ item.logo.src }}" alt="{{ item.logo.alt }}" {{ loadingAttr }} width="300" height="180">
 								{% endif %}
-							</a>
+						{% endif %}
 					</li>
 				{% endfor %}
 			</ul>
