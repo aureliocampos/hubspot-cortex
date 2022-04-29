@@ -1,0 +1,48 @@
+    {% if module.style.plano_de_fundo == "cor" %}
+      <section class="section section__blocks" style="background-color:{{ module.style.cor.color }};">
+    {% elif module.style.plano_de_fundo == "gradiente" %}
+      <section class="section section__blocks" style="background:{{ module.style.gradient_field.css }};">
+    {% else %}
+      <section class="section section__blocks">
+    {% endif %}
+  <div class="section__container">
+    {% if module.title %}
+        <h2 class="section__title">{{ module.title }}</h2>
+    {% endif %}
+    <div class="section__content">
+        {% for item in module.bloco %}
+         <div class="content">
+            <div class="text">
+                {{ item.texto }}
+              </div>
+              {% if item.image_field.src %}
+                 {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+                <figure>
+                  <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} width="485" height="300">
+                </figure>
+              {% endif %}
+          </div>
+        {% endfor %}
+    </div>
+    {% if module.subtitle %}
+        <h2 class="section__title">{{ module.subtitle }}</h2>
+    {% endif %}
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

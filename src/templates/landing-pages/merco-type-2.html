@@ -1,7 +1,7 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: Landing Page - Merco
+  label: Landing Page - Campeões da Merco
 -->
 
 {% extends "../layouts/base-lp.html" %}
@@ -9,13 +9,23 @@
 {% block body %}
   <main id="main-content" class="body-container-wrapper landing-page--merco" role="main">
       {% dnd_area "dnd_area" label="Main section" %}
-
+ 
       {% dnd_section %}
          {% dnd_module "module_165099863990546" path="/cortex-intelligence/sections/landing-pages/main-case-primary", label="Main" %}{% end_dnd_module %}
       {% end_dnd_section %}
       {% dnd_section %}
+          {% dnd_module "module_16512499639482" path="/cortex-intelligence/sections/landing-pages/merco/text-simple", label="Texto"  %}{% end_dnd_module %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+          {% dnd_module "module_165125053452417" path="/cortex-intelligence/sections/landing-pages/merco/image-and-text", label="blocos de imagem e texto"  %}{% end_dnd_module %}
+      {% end_dnd_section %}
+    
+      {% dnd_section %}
          {% dnd_module "module_165099567213912" path="/cortex-intelligence/sections/landing-pages/merco/solution-description", label="Descrição da solução" %}{% end_dnd_module %}
       {% end_dnd_section %}
+         {% dnd_section %}
+            {% dnd_module "module_165125053452417" path="/cortex-intelligence/sections/landing-pages/merco/image-and-text", label="blocos de imagem e texto"  %}{% end_dnd_module %}
+        {% end_dnd_section %}
        {% dnd_section %}
          {% dnd_module "module_165099619970329" path="/cortex-intelligence/sections/landing-pages/merco/about-cortex", label="Quero conhecer a Cortex" %}{% end_dnd_module %}
       {% end_dnd_section %}

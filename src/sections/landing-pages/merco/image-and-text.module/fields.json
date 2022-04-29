@@ -1,0 +1,178 @@
+[ {
+  "id" : "6550f864-9d89-cd1d-b138-29cad8106512",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "224f0157-87a4-f402-ea3f-ea0f56da9e54",
+  "name" : "bloco",
+  "display_width" : null,
+  "label" : "Bloco",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "f792a50c-1bb5-76bc-1442-94874b5ac237",
+    "name" : "texto",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext"
+  }, {
+    "id" : "176c841f-ecdc-8b5e-7b6d-ad4118205fa4",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Imagem",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }
+}, {
+  "id" : "ace71a79-c7e6-23d8-d744-cd7aff1e2efb",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "de6e9842-920b-a736-8c2e-c359edf0bce9",
+    "name" : "plano_de_fundo",
+    "display_width" : null,
+    "label" : "Plano de fundo",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "cor", "Cor" ], [ "gradiente", "Gradiente" ] ],
+    "type" : "choice",
+    "default" : "cor"
+  }, {
+    "id" : "7e830ff1-da96-dfcf-19c4-80f845f2c187",
+    "name" : "cor",
+    "display_width" : null,
+    "label" : "Cor",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "de6e9842-920b-a736-8c2e-c359edf0bce9",
+      "controlling_value_regex" : "cor",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#37324B",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "37bd1c6a-6291-c63f-cfa3-27dd3b2b70b1",
+    "name" : "gradient_field",
+    "display_width" : null,
+    "label" : "Gradiente",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "de6e9842-920b-a736-8c2e-c359edf0bce9",
+      "controlling_value_regex" : "gradiente",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "gradient",
+    "default" : {
+      "side_or_corner" : {
+        "horizontalSide" : "RIGHT",
+        "verticalSide" : null
+      },
+      "colors" : [ {
+        "color" : {
+          "r" : 55,
+          "g" : 50,
+          "b" : 75,
+          "a" : 1
+        }
+      }, {
+        "color" : {
+          "r" : 100,
+          "g" : 45,
+          "b" : 150,
+          "a" : 1
+        }
+      } ]
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "plano_de_fundo" : "cor",
+    "cor" : {
+      "color" : "#37324B",
+      "opacity" : 100
+    },
+    "gradient_field" : {
+      "side_or_corner" : {
+        "horizontalSide" : "RIGHT",
+        "verticalSide" : null
+      },
+      "colors" : [ {
+        "color" : {
+          "r" : 55,
+          "g" : 50,
+          "b" : 75,
+          "a" : 1
+        }
+      }, {
+        "color" : {
+          "r" : 100,
+          "g" : 45,
+          "b" : 150,
+          "a" : 1
+        }
+      } ]
+    }
+  }
+}, {
+  "id" : "0d48d4d4-66ce-19d7-1be9-b62302f17cb9",
+  "name" : "subtitle",
+  "display_width" : null,
+  "label" : "Subtítulo",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

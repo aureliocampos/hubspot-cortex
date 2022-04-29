@@ -1,0 +1,30 @@
+.section__simple-text {
+  padding: 2.5em 1.5em;
+}
+.simple-text__content {
+  font: 400 1em / 148% var(--secondary-font);
+  color: var(--darkest);
+}
+.simple-text__content h2, h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0.83em 0;
+  line-height: 120%;
+}
+.simple-text__content p {
+  margin: 1em 0;
+}
+
+@media (min-width: 1024px) {
+  .section__simple-text .section__container {
+     max-width: 960px;
+    margin: 0 auto;
+  }
+  .simple-text__content h2, h3 {
+    font-size: 2em;
+    margin: 1.5em 0;
+  }
+  .simple-text__content {
+    font-size: 1.125em;
+  }
+}
