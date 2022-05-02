@@ -48,12 +48,13 @@ body.overflow {
 /* Image */
 .card-primary__figure {
   position: relative;
+  border-radius: 0.75em;
+  overflow: hidden;
 }
 .card-primary__image {
   display: block;
   width: 100%;
-  object-fit: cover;
-  border-radius: 0.75em;
+  height: auto;
 }
 
 /* Avatar */
@@ -189,6 +190,9 @@ body.overflow {
   color: var(--darkest);
   cursor: pointer;
 }
+#input-search {
+  display: none;
+}
 
 /* Button filter*/
 .mobile-filter {
@@ -286,6 +290,25 @@ body.overflow {
   .main-lib .section__content > p {
     font-size: 1.25em;
     max-width: 45%;
+  }
+
+  /* filters */
+  .search-label {
+    display: flex;
+    align-items: center;
+  }
+  #input-search {
+    display: block;
+    width: 80%;
+    height: 48px;
+    font: 400 1em var(--primary-font);
+    color: var(--dark);
+    padding: 0.875em 1.5em;
+    border: 1px solid var(--darkest);
+    border-radius: 1.5em 0 0 1.5em;
+  }
+  #input-search:focus-visible {
+    outline: none;
   }
 }
 

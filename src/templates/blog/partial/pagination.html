@@ -4,53 +4,38 @@
 -->
 {% require_css %}
 <style type="text/css" id="pagination">
- .pagination__nav{margin:5em auto 7em auto}.pagination__items{display:flex;align-items:baseline;justify-content:center;max-width:600px;margin:0 auto}.elipses__item,.pagination__item{margin:0 .675em}.pagination__link{font:300 1.125em var(--secondary-font);line-height:26px;letter-spacing:-.01em;color:var(--darkest)}.pagination__link#active{font:700 1.125em var(--secondary-font);line-height:26px;letter-spacing:-.01em;color:var(--darkest)}
+ .pagination__nav{margin:5em auto 7em auto}.pagination__items{display:flex;align-items:baseline;justify-content:center;max-width:600px;margin:0 auto}.elipses__item,.pagination__item{margin:0 .675em}.pagination__link{font:300 1.125em var(--secondary-font);line-height:26px;letter-spacing:-.01em;color:var(--darkest)}
+ .blog-pagination__link--active{font:700 1.125em var(--secondary-font);line-height:26px;letter-spacing:-.01em;color:var(--darkest)}
 </style>
 {% end_require_css%}
-{% set page_list = [-2, -1, 0, 1] %}
-    
-{% if contents.total_page_count - current_page_num == 1 %}
-  {% set offset = -1 %}
-{% elif contents.total_page_count - current_page_num == 0 %}
-  {% set offset = -2 %}
-{% elif current_page_num == 2 %}
-  {% set offset = 1 %}
-{% elif current_page_num == 1 %}
-  {% set offset = 2 %}
-{% else %}
-  {% set offset = 0 %}
-{% endif %}
 <nav class="pagination__nav" aria-label="Pagination" role="navigation">
-  <ul class="pagination__items">
-    {# {% if last_page_num %}<a class="pagination__link" href="{{ blog_page_link(last_page_num) }}">❮</a>{% endif %}#}
-    {% if contents.total_page_count > 5 %}
-      {% if current_page_num >= 4 %}
-        <li class="pagination__item">
-        <a href="{{ blog_page_link(1) }}" class="pagination__link">1</a>
-          </li>
-        <li class="elipses__item">
-          <a class="elipses pagination__link" href="{% if current_page_num <= 5 %}{{ blog_page_link(1) }}{% else %}{{ blog_page_link(current_page_num - 5) }}{% endif %}">...</a>
-        </li>
-      {% endif %}
-   {% endif %}
-   {% for page in page_list %}
-      {% set this_page = current_page_num + page + offset %}
+{% if contents.total_page_count > 1 %}
+<ul class="pagination__items">
+    {% set page_list = [-2, -1, 0, 1, 2] %}
+    {% if contents.total_page_count - current_page_num == 1 %}{% set offset = -1 %}
+    {% elif contents.total_page_count - current_page_num == 0 %}{% set offset = -2 %}
+    {% elif current_page_num == 2 %}{% set offset = 1 %}
+    {% elif current_page_num == 1 %}{% set offset = 2 %}
+    {% else %}{% set offset = 0 %}{% endif %}
+
+    {% for page in page_list %}
+    {% set this_page = current_page_num + page + offset %}
       {% if this_page > 0 and this_page <= contents.total_page_count %}
-          <li class="pagination__item">
-            <a {% if this_page == current_page_num %}id="active"{% endif %} href="{{ blog_page_link(this_page) }}" class="pagination__link" aria-label="Vá para a página {{ this_page }}">{{ this_page }}</a>
-          </li>
+        <li class="pagination__item">
+            <a class="pagination__link {{ "blog-pagination__link--active" if this_page == current_page_num }}" aria-label="Vá para a página {{ this_page }}" href="{{ blog_page_link(this_page) }}">{{ this_page }}</a>
+        </li>
       {% endif %}
     {% endfor %}
     {% if contents.total_page_count > 5 %}
-        {% if contents.total_page_count - current_page_num > 2 %}
-            <li class="elipses__item">
-              <a class="elipses" href="{% if contents.total_page_count - current_page_num <= 5 %}{{ contents.total_page_count }}{% else %}{{ blog_page_link(current_page_num + 5) }}{% endif %}">...</a>
-            </li>
-            <li class="pagination__item">
-                <a href="{{ blog_page_link(contents.total_page_count) }}" class="pagination__link" >{{ contents.total_page_count }}</a>
-             </li>
-        {% endif %}
-    {% endif %}
-   {#  {% if next_page_num %}<a class="next-link" href="{{ blog_page_link(current_page_num + 1) }}">❯</a>{% endif %}#}
+    {% if contents.total_page_count - current_page_num > 2 %}
+          <li class="elipses__item">
+            <a class="elipses" href="{% if contents.total_page_count - current_page_num <= 5 %}{{ contents.total_page_count }}{% else %}{{ blog_page_link(current_page_num + 5) }}{% endif %}">...</a>
+          </li>
+          <li class="pagination__item">
+              <a href="{{ blog_page_link(contents.total_page_count) }}" class="pagination__link" >{{ contents.total_page_count }}</a>
+          </li>
+      {% endif %}
+  {% endif %}
   </ul>
-</nav>   
+{% endif %}
+</nav>

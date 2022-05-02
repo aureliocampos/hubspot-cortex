@@ -5,7 +5,8 @@
   font: 400 1em / 148% var(--secondary-font);
   color: var(--darkest);
 }
-.simple-text__content h2, h3 {
+.simple-text__content h2, 
+.simple-text__content h3 {
   font-size: 1.5em;
   font-weight: bold;
   margin: 0.83em 0;
@@ -20,7 +21,8 @@
      max-width: 960px;
     margin: 0 auto;
   }
-  .simple-text__content h2, h3 {
+  .simple-text__content h2, 
+  .simple-text__content h3 {
     font-size: 2em;
     margin: 1.5em 0;
   }

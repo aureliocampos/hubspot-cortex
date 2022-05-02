@@ -50,6 +50,14 @@ export_to_template_context=True
     </section>
     <div class="grid-flex">
       <div class="filters mobile-filter--float">
+        <label for="input-search" class="search-label">
+          <input type="text" name="input-search" id="input-search" placeholder="Buscar">
+          <svg width="52" height="48" viewBox="0 0 52 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0H28C41.2548 0 52 10.7452 52 24V24C52 37.2548 41.2548 48 28 48H0V0Z" fill="#37324B"/>
+            <path d="M28.6042 21.5791C28.6096 25.3453 25.578 28.3892 21.8444 28.3892C18.1108 28.3892 15.0705 25.3453 15.0652 21.5791C15.0598 17.813 18.0914 14.7691 21.825 14.7691C25.5587 14.7691 28.5989 17.813 28.6042 21.5791Z" stroke="white" stroke-width="2.07969"/>
+            <line x1="27.1849" y1="26.5998" x2="33.7437" y2="33.1586" stroke="white" stroke-width="2.07969" stroke-linecap="round"/>
+            </svg>
+        </label>
         <div class="mobile-filter__closed">
           <button id="closed-filter" class="button-closed">X</button>
         </div>
@@ -149,4 +157,5 @@ export_to_template_context=True
       ]
     }
   </script>
+ 
 {% end_require_js%}

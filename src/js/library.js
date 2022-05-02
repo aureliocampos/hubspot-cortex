@@ -8,6 +8,7 @@ const buttonOpenFilter = document.querySelector('#open-filter');
 const buttonClosedFilter = document.querySelector('#closed-filter');
 const buttonActionFilter = document.querySelector("#action-filter");
 const clearFilter = document.querySelector("#clear-filter");
+const InputSearch = document.getElementById("input-search");
 
 const errorMessage = () => {
   const tagMessage = `
@@ -176,7 +177,9 @@ filterForm.addEventListener("click", (event) => {
       })
     }
 
-    insertGrid(data)
+    const dataFilter = data.filter( post => post.title.toLowerCase().includes(InputSearch.value));
+
+    insertGrid(dataFilter)
   } 
 })
 buttonLoadMore.addEventListener("click", () => {
@@ -217,12 +220,18 @@ clearFilter.addEventListener("click", (event) => {
   a.forEach( item => item.checked = false )
   categories = []
   materialTypes = []
-
+  InputSearch.value = ""
   data = handleDataJson(jsonInHTMLScript)
   insertGrid(data)
 
   containerFilter.classList.remove('active');
 })
 
-console.log("Revisão 47");
+InputSearch.addEventListener('input', (event) => {
+  const filterText = event.target.value.toLowerCase();
+  const dataFilter = data.filter( post => post.title.toLowerCase().includes(filterText));
+  insertGrid(dataFilter)
+})
+
+
 mountLibraryGrid(data)

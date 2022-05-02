@@ -16,12 +16,13 @@
 /* Image */
 .card-primary__figure {
   position: relative;
+  border-radius: 0.75em;
+  overflow: hidden;
 }
 .card-primary__image {
   display: block;
   width: 100%;
-  object-fit: cover;
-  border-radius: 0.75em;
+  height: auto;
 }
 
 /* Avatar */
