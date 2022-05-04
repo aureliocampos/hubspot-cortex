@@ -1,0 +1,61 @@
+[ {
+  "id" : "ff4f9273-cbb7-853e-3abe-b54890c92b6d",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : " Cases de sucesso"
+}, {
+  "id" : "766986d3-3fbc-4dc7-3a72-ad9c9cd87151",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "c7ea1ae3-c67a-e4c5-191a-1b792434d8d7",
+    "name" : "backgroundimage_field",
+    "display_width" : null,
+    "label" : "Imagem de fundo",
+    "required" : false,
+    "locked" : false,
+    "type" : "backgroundimage",
+    "default" : {
+      "background_position" : "MIDDLE_CENTER",
+      "background_size" : "cover",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/destaque-v2.webp"
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "backgroundimage_field" : {
+      "background_position" : "MIDDLE_CENTER",
+      "background_size" : "cover",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/destaque-v2.webp"
+    }
+  }
+}, {
+  "id" : "2423e44c-cd58-aebc-fa91-e042be914e80",
+  "name" : "texto",
+  "display_width" : null,
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<span>Materiais gratuitos sobre marketing e vendas para auxiliar na sua jornada de crescimento</span>"
+}, {
+  "id" : "f21bc61b-e0e7-74e0-ef3f-ce0289be996e",
+  "name" : "case_de_destaque",
+  "display_width" : null,
+  "label" : "Case de destaque",
+  "required" : false,
+  "locked" : false,
+  "type" : "page"
+} ]

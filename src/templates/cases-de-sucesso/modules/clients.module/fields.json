@@ -1,0 +1,72 @@
+[ {
+  "id" : "0fb4d552-f958-18e9-83a6-9cfa18d50a00",
+  "name" : "logo",
+  "display_width" : null,
+  "label" : "Logo",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 2
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : [ {
+    "size_type" : "auto",
+    "src" : "https://pages.cortex-intelligence.com/hubfs/website-cortex/paginas/cases/home_clientes_mobile_BTG-Pactual-1.png",
+    "alt" : "Logo empresa BTG Pactual",
+    "loading" : "lazy"
+  }, {
+    "size_type" : "auto",
+    "src" : "https://pages.cortex-intelligence.com/hubfs/website-cortex/paginas/cases/home_clientes_mobile_Unilever-1.png",
+    "alt" : "Logo empresa Unilever",
+    "loading" : "lazy"
+  },
+  {
+    "size_type" : "auto",
+    "src" : "https://pages.cortex-intelligence.com/hubfs/website-cortex/paginas/cases/home_clientes_mobile_Google.png",
+    "alt" : "Logo Google",
+    "loading" : "lazy"
+  },
+  {
+    "size_type" : "auto",
+    "src" : "https://pages.cortex-intelligence.com/hubfs/website-cortex/paginas/cases/home_clientes_mobile_iFood.png",
+    "alt" : "Logo Ifood",
+    "loading" : "lazy"
+  },
+  {
+    "size_type" : "auto",
+    "src" : "https://pages.cortex-intelligence.com/hubfs/website-cortex/paginas/cases/home_clientes_mobile_Globo.png",
+    "alt" : "Logo Rede globo",
+    "loading" : "lazy"
+  }, 
+  {
+    "size_type" : "auto",
+    "src" : "https://pages.cortex-intelligence.com/hubfs/website-cortex/paginas/cases/home_clientes_mobile_Amazon-1.png",
+    "alt" : "Logo Amazon",
+    "loading" : "lazy"
+  },
+  {
+    "size_type" : "auto",
+    "src" : "https://pages.cortex-intelligence.com/hubfs/website-cortex/paginas/cases/home_clientes_mobile_Bradesco.png",
+    "alt" : "Logo Bradesco",
+    "loading" : "lazy"
+  },
+  {
+    "size_type" : "auto",
+    "src" : "https://pages.cortex-intelligence.com/hubfs/website-cortex/paginas/cases/home_clientes_mobile_Adobe.png",
+    "alt" : "Logo Adobe",
+    "loading" : "lazy"
+  },
+  {
+    "size_type" : "auto",
+    "src" : "https://pages.cortex-intelligence.com/hubfs/website-cortex/paginas/cases/home_clientes_mobile_Oracle-1.png",
+    "alt" : "Logo Oracle",
+    "loading" : "lazy"
+  }
+]
+} ]

@@ -1,0 +1,28 @@
+{% set content = content_by_id(module.case_de_destaque) %}
+<section class="main-lib main-cases">
+  <div class="section__container">
+    <div class="section__content">
+      <h1 class="title">{{ module.title }}</h1>
+      <div class="text">
+        {{ module.texto }}
+      </div>
+    </div>
+  </div>
+  <div class="section__container-spotlight">
+    <article class="spotlight-article">
+      <a href="{{ content.absolute_url }}">
+        <figure class="spotlight__figure">
+          <img src="{{ content.featured_image }}" alt="{{ content.featured_image_alt_text }}">
+          <h2 class="spotlight__title">{{ content.title}}</h2>
+        </figure>
+      </a>
+    </article>
+  </div>
+</section>
+{% require_css %}
+<style>
+  .main-lib .section__container {
+    {{ module.style.backgroundimage_field.css }}
+  }
+</style>
+{% end_require_css %}

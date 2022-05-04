@@ -1,0 +1,40 @@
+.main-lib .section__container {
+  margin-bottom: 0;
+}
+.main-cases .title {
+  font: 600 1.5em / 120% var(--primary-font);
+  color: var(--darkest);
+}
+.main-cases .text {
+  font: 400 1em / 148% var(--primary-font);
+  color: var(--darkest);
+}
+.cases-listing__section .section__title {
+  font: 400 1.5em / 120% var(--primary-font);
+  color: var(--darkest);
+}
+.cases-listing__section {
+  padding: 1.25em 1.5em;
+}
+
+@media (min-width: 768px) {
+  .main-cases .section__content {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-lib.main-cases .section__container {
+    height: auto;
+  }
+  .main-lib .section__content {
+    padding: 3em 1.5em;
+  }
+  .cases-listing__section {
+    width: 768px;
+  }
+  .main-cases .text {
+    width: 550px;
+  }
+
+}

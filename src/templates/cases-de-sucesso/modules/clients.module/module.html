@@ -1,0 +1,17 @@
+<section class="section section__cases-clients">
+  <div class="section__container">
+    <h2 class="section__title">Text Text Text</h2>
+    <ul class="cases-clients__items">
+    {% for item in module.logo %}
+
+      <li class="cases-clients__item">
+        {% if item.src %}
+          {% set loadingAttr = item.loading != 'disabled' ? 'loading="{{ item.loading }}"' : '' %}
+        <img src="{{ item.src }}" alt="{{ item.alt }}" {{ loadingAttr }}  width="106" height="80">
+      {% endif %}
+      </li>
+   
+    {% endfor %}
+  </ul>
+  </div>
+</section>

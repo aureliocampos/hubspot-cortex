@@ -1,0 +1,30 @@
+.spotlight__figure {
+  position: relative;
+}
+
+.spotlight__title {
+  position: absolute;
+  bottom: 0;
+  font: 500 1.125em / 122% var(--primary-font);
+  color: var(--darkest);
+  letter-spacing: -0.015em;
+  padding: 1.5em;
+}
+.spotlight__figure img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .spotlight__figure {
+    height: 198px;
+    overflow: hidden;
+  }
+  .spotlight__figure img {
+    object-fit: cover;
+    object-position: center -60px;
+  }
+  .spotlight__title {
+    display: none;
+  }
+}

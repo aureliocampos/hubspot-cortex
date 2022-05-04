@@ -1,0 +1,172 @@
+<!--
+    templateType: blog_listing
+    isAvailableForNewContent: true
+    label: Cases de Sucesso Listagem
+-->
+{% extends "../layouts/base.html" %}
+
+{% choice "size_company_filter" label='Filtro Tamanho da empresa', value='type', 
+choices='[
+  ["slug", "Label"]
+]', 
+export_to_template_context=True 
+%}
+
+{% choice "product_type_filter" label='Filtro Produto', value='type', 
+choices='[
+  ["slug", "Label"]
+]', 
+export_to_template_context=True 
+%}
+
+{% choice "challenge_type_filter" label='Filtro Desafio', value='type', 
+choices='[
+  ["slug", "Label"]
+]', 
+export_to_template_context=True 
+%}
+
+{% choice "sector_type_filter" label='Filtro Setor', value='type', 
+choices='[
+  ["slug", "Label"]
+]', 
+export_to_template_context=True 
+%}
+
+{{ require_css(get_asset_url('/cortex-intelligence/css/materials/index.css')) }}
+{{ require_css(get_asset_url('/cortex-intelligence/css/cases/index.css')) }}
+
+{{ require_js(get_asset_url('/cortex-intelligence/js/cases.js'), { position: 'footer', async: true }) }}
+
+{% block body %}
+
+<main id="main-content" class="body-container-wrapper main--materials" role="main">
+  {% module "module_165160147172943" path="/cortex-intelligence/templates/cases-de-sucesso/modules/main-cases", label="main-cases" %}
+  {% module "module_165159687335232" path="/cortex-intelligence/templates/cases-de-sucesso/modules/clients", label="Clientes" %}
+  <div class="grid-flex">
+    <div class="filters mobile-filter--float">
+      <label for="input-search" class="search-label">
+        <input type="text" name="input-search" id="input-search" placeholder="Buscar">
+        <svg width="52" height="48" viewBox="0 0 52 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0H28C41.2548 0 52 10.7452 52 24V24C52 37.2548 41.2548 48 28 48H0V0Z" fill="#37324B"/>
+          <path d="M28.6042 21.5791C28.6096 25.3453 25.578 28.3892 21.8444 28.3892C18.1108 28.3892 15.0705 25.3453 15.0652 21.5791C15.0598 17.813 18.0914 14.7691 21.825 14.7691C25.5587 14.7691 28.5989 17.813 28.6042 21.5791Z" stroke="white" stroke-width="2.07969"/>
+          <line x1="27.1849" y1="26.5998" x2="33.7437" y2="33.1586" stroke="white" stroke-width="2.07969" stroke-linecap="round"/>
+          </svg>
+      </label>
+      <div class="mobile-filter__closed">
+        <button id="closed-filter" class="button-closed">X</button>
+      </div>
+      <form id="form-filters">
+        <h2>Filtro</h2>
+        <div class="filter__items">
+          <h3>Tamanho da empresa</h3>
+
+          {% for choice in widget_data.size_company_filter.choices_list %}
+
+          <div class="filter__item">
+            <input type="checkbox" name="categories" id="{{ choice[0]|lower }}" 
+              value="{{ choice[0]|lower }}" {{ html_attributes|xmlattr }}>
+            <label for="{{ choice[0]|lower }}">
+              {{ choice[1] }}
+            </label>
+          </div>
+        {% endfor %}
+        </div>
+        <div class="filter__items">
+          <h3>Produto</h3>
+ 
+          {% for choice in widget_data.product_type_filter.choices_list %}
+
+          <div class="filter__item">
+            <input type="checkbox" name="categories" id="{{ choice[0]|lower }}" 
+              value="{{ choice[0]|lower }}" {{ html_attributes|xmlattr }}>
+            <label for="{{ choice[0]|lower }}">
+              {{ choice[1] }}
+            </label>
+          </div>
+        {% endfor %}
+        </div>
+        <div class="filter__items">
+          <h3>Desafio</h3>
+ 
+          {% for choice in widget_data.challenge_type_filter.choices_list %}
+
+          <div class="filter__item">
+            <input type="checkbox" name="categories" id="{{ choice[0]|lower }}" 
+              value="{{ choice[0]|lower }}" {{ html_attributes|xmlattr }}>
+            <label for="{{ choice[0]|lower }}">
+              {{ choice[1] }}
+            </label>
+          </div>
+        {% endfor %}
+        </div>
+        <div class="filter__items">
+          <h3>Setor</h3>
+ 
+          {% for choice in widget_data.sector_type_filter.choices_list %}
+
+          <div class="filter__item">
+            <input type="checkbox" name="categories" id="{{ choice[0]|lower }}" 
+              value="{{ choice[0]|lower }}" {{ html_attributes|xmlattr }}>
+            <label for="{{ choice[0]|lower }}">
+              {{ choice[1] }}
+            </label>
+          </div>
+        {% endfor %}
+        </div>
+        <div class="button-container">
+          <button id="action-filter" class="button button--primary-invert">Filtrar</button>
+          <a id="clear-filter" href="javascript();" class="clear-filter">Limpar filtro</a>
+        </div>
+      </form>
+    </div>
+    <section class="cases-listing__section">
+      <h2 class="section__title"> Cases de sucesso</h2>
+      <div id="library-grid" class="library-grid-items"></div>
+
+      <div id="loadmore-container">
+        <button id="button__loadmore" style="display: block;">
+          <span class="icon"><svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="12.584" y1="0.994911" x2="6.58402" y2="6.99491" stroke="#37324B"/>
+            <line x1="1.12575" y1="0.750936" x2="6.77224" y2="6.46773" stroke="#37324B"/>
+            </svg>
+            </span>
+          <span >Mostrar mais</span>
+        </button>
+      </div>
+    </section>
+  </div>
+
+  {% module "module_16427922005877" path="/cortex-intelligence/modules/form-newsletter", label="form-newsletter" %}
+
+  <div class="mobile-filter">
+    <button id="open-filter" class="mobile-filter__button">
+      <img src="{{ get_asset_url('/cortex-intelligence/images/icon-lupa.png') }}" width="34" height="34"/>
+    </button>
+  </div>
+</main>
+{% endblock body %}
+
+
+{% require_js async="true" position="header" %}
+  <script type="application/json" id="data-library">
+    {
+      "data": [
+      {% for content in contents %}
+      {% set category = content.widgets.module_16467570902134.body.categoria|lower %} 
+      {% set material = content.widgets.module_16467570902134.body.tipo_de_material|lower %}
+        {
+          "title": "{{content.name}}",
+          "description": "{{ content.meta_description}}",
+          "featuredImage": "{{ resize_image_url( content.featured_image, 345, 190, 345 ) }}",
+          "featuredImageAlt": "{{ content.featured_image_alt_text }}",
+          "url": "{{content.link_rel_canonical_url}}",
+          "category": "{{ category }}",
+          "materialType": "{{material}}"
+        }{% if loop.index != contents.total_count %},{% endif %}
+      {% endfor %}
+      ]
+    }
+  </script>
+ 
+{% end_require_js%} 

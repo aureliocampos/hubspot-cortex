@@ -4,7 +4,7 @@
    <section class="section section__clients--lp" style="background: {{ module.style.gradient_field.css }};">
 {% endif %}
 	<div class="section__container">
-		<h2 class="section__title">{{ module.text_field }}</h2>
+		<h2 class="section__title" style="color:{{ module.style.cor_da_fonte.css }}; ">{{ module.text_field }}</h2>
 		<ul class="clients__items">
 			{% for item in module.logos %}
 			{% if item.image_field.src %}

@@ -63,6 +63,18 @@
     },
     "type" : "gradient",
     "default" : { }
+  }, {
+    "id" : "22ec7955-8ef6-f366-2fc2-2e8fab10f467",
+    "name" : "cor_da_fonte",
+    "display_width" : null,
+    "label" : "Cor da fonte",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#f6f6fb",
+      "opacity" : 100
+    }
   } ],
   "tab" : "STYLE",
   "expanded" : false,
@@ -71,6 +83,11 @@
     "personalizar_cor_de_fundo" : "color",
     "background_color" : {
       "color" : "#28354C",
+      "opacity" : 100
+    },
+    "gradient_field" : { },
+    "cor_da_fonte" : {
+      "color" : "#f6f6fb",
       "opacity" : 100
     }
   }
