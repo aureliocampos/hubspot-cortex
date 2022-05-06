@@ -1,0 +1,46 @@
+<section class="section customer-testimonial">
+	<div class="customer-testimonial__container">
+    <h2 class="section__title">
+      {{ module.title }}
+    </h2>
+		<div class="swiper swiper-double-testimonial">
+			<div class="swiper-wrapper">
+				{% for item in module.depoimentos %}
+					<aside class="customer-testimonial__article swiper-slide">
+						{% if item.imagem.src %}
+							{% set loadingAttr = item.imagem.loading != 'disabled' ? 'loading="{{ item.imagem.loading }}"' : '' %}
+							<figure class="customer-testimonial__figure">
+								<img src="{{ item.imagem.src }}" alt="{{ item.imagem.alt }}" {{ loadingAttr }} width="163" height="48">
+							</figure>
+						{% endif %}
+						<section class="customer-testimonial__content">
+							<div class="customer-testimonial__content-specific">
+								<blockquote class="customer-testimonial__text">
+									{{ item.texto }}
+								</blockquote>
+								<address class="customer-testimonial__author">
+									<h3 class="customer-testimonial__name">{{ item.nome }}</h3>, 
+									<p class="customer-testimonial__job">{{ item.cargo }}</p>
+								</address>
+							</div>
+						</section>
+					</aside>
+				{% endfor %}
+			</div>
+			<div class="customer-testimonial__controls">
+				<div class="icon-arrow">
+					<svg class="arrow-prev" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M24.6074 27.8379L18.6074 22.3803L24.6074 16.9228" stroke="#37324B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<rect x="44.1074" y="43.8799" width="43" height="43" rx="21.5" transform="rotate(-180 44.1074 43.8799)" stroke="#37324B"/>
+						</svg>						
+				</div>
+				<div class="icon-arrow">
+					<svg class="arrow-next" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M20.6074 16.9224L26.6074 22.3799L20.6074 27.8375" stroke="#37324B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<rect x="1.10742" y="0.879883" width="43" height="43" rx="21.5" stroke="#37324B"/>
+					</svg>						
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

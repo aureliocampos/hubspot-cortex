@@ -79,7 +79,7 @@
     margin: 0.5rem 0 0 0;
   }
   .button-cta--solutions {
-    min-width: 200px;
+    min-width: max-content;
     color: var(--white);
     margin-top: 0;
   }

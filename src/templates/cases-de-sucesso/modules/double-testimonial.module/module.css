@@ -1,0 +1,100 @@
+.customer-testimonial {
+  padding: 2em;
+
+}
+.customer-testimonial .customer-testimonial__container {
+  padding: 2.5em 1.75em;
+  border: 6px solid #F6F6FB;
+  border-radius: 1.25em;
+}
+.customer-testimonial .customer-testimonial__container .section__title {
+  font: 500 1.25em / 120% var(--primary-font);
+  color: var(--darkest);
+  text-align: center;
+}
+.swiper-double-testimonial {
+  margin-top: 2em;
+}
+.customer-testimonial__text {
+  font: 600 0.875em / 148% var(--secondary-font);
+  color: var(--darkest);
+  margin: 1.5em 0;
+}
+.customer-testimonial__text p {
+  margin: 1em 0;
+}
+.customer-testimonial__author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  font: 400 0.875em var(--secondary-font);
+  line-height: 148%;
+}
+.customer-testimonial__name {
+  font-weight: bold;
+}
+.customer-testimonial__job {
+  width: 100%;
+  font-weight: 300;
+}
+
+/* controls */
+.customer-testimonial__controls {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  font-size: 2.75em;
+  margin: 3.5rem auto 0 auto;
+  z-index: 9;
+}
+.customer-testimonial__controls .icon-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    font-size: 14px;
+    font-weight: 100;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 400ms;
+}
+.customer-testimonial__controls .icon-arrow-next:before {
+  margin-left: 3px;
+}
+
+@media (min-width: 768px) {
+  .customer-testimonial .customer-testimonial__container {
+    max-width: 692px;
+    margin: 0 auto;
+    padding: 2.5em 2.875em;
+  }
+  .customer-testimonial .customer-testimonial__container .section__title {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+  .swiper-double-testimonial {
+    margin-top: 2.5em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .customer-testimonial .customer-testimonial__container {
+    max-width: 942px;
+    padding: 2.5em 3.75em;
+  }
+  .customer-testimonial .customer-testimonial__container .section__title {
+    max-width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .customer-testimonial .customer-testimonial__container {
+    max-width: 1114px;
+    padding: 3em 4.375em;
+  }
+  .customer-testimonial .customer-testimonial__container .section__title {
+    max-width: 565px;
+    font-size: 2em;
+  }
+}

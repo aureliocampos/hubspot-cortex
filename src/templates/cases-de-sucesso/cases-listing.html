@@ -40,7 +40,7 @@ export_to_template_context=True
 
 {% block body %}
 
-<main id="main-content" class="body-container-wrapper main--materials" role="main">
+<main id="main-content" class="body-container-wrapper main--cases" role="main">
   {% module "module_165160147172943" path="/cortex-intelligence/templates/cases-de-sucesso/modules/main-cases", label="main-cases" %}
   {% module "module_165159687335232" path="/cortex-intelligence/templates/cases-de-sucesso/modules/clients", label="Clientes" %}
   <div class="grid-flex">
@@ -137,7 +137,9 @@ export_to_template_context=True
     </section>
   </div>
 
-  {% module "module_16427922005877" path="/cortex-intelligence/modules/form-newsletter", label="form-newsletter" %}
+  {% module "module_163171836850828" path='/cortex-intelligence/sections/generic/call-to-action', label="Call to Action" %}
+
+  {% module "module_16516762746911" path="/cortex-intelligence/templates/cases-de-sucesso/modules/double-testimonial", label="Depoimento dos clientes" %}
 
   <div class="mobile-filter">
     <button id="open-filter" class="mobile-filter__button">

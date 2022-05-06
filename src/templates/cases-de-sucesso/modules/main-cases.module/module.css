@@ -14,17 +14,13 @@
   width: 100%;
   height: auto;
 }
+.spotlight-article {
+  max-width: 720px;
+  margin: 0 auto;
+}
 
 @media (min-width: 768px) {
-  .spotlight__figure {
-    height: 198px;
-    overflow: hidden;
-  }
-  .spotlight__figure img {
-    object-fit: cover;
-    object-position: center -60px;
-  }
-  .spotlight__title {
-    display: none;
+  .spotlight-article {
+    margin-top: 2em;
   }
 }

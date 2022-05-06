@@ -69,7 +69,8 @@
   margin-right: 8px;
 }
 
-#cortex-form .hs_cos_wrapper_type_form .legal-consent-container p {
+#cortex-form .hs_cos_wrapper_type_form .legal-consent-container p,
+#cortex-form .hs_cos_wrapper_type_form .legal-consent-container .hs-richtext {
   font: 400 12px var(--secondary-font);
   color: var(--lightest);
   line-height: 148%;
@@ -154,7 +155,8 @@
 
   /* label */
   #cortex-form .hs_cos_wrapper_type_form label,
-  #cortex-form .hs_cos_wrapper_type_form .legal-consent-container p  {
+  #cortex-form .hs_cos_wrapper_type_form .legal-consent-container p,
+  #cortex-form .hs_cos_wrapper_type_form .legal-consent-container .hs-richtext {
     font-size: 1em;
   }
   #cortex-form .hs_cos_wrapper_type_form .legal-consent-container .hs-input[type="checkbox"] {
@@ -179,7 +181,8 @@
 #cortex-form.cortex-form--white .hs_cos_wrapper_type_form label {
   color: var(--darkest);
 }
-#cortex-form.cortex-form--white .hs_cos_wrapper_type_form .legal-consent-container p {
+#cortex-form.cortex-form--white .hs_cos_wrapper_type_form .legal-consent-container p,
+#cortex-form .hs_cos_wrapper_type_form .legal-consent-container .hs-richtext {
   color: var(--darkest);
 }
 #cortex-form.cortex-form--white .hs_cos_wrapper_type_form label.hs-error-msg, 

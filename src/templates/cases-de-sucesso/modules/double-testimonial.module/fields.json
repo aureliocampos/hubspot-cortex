@@ -1,0 +1,109 @@
+[ {
+  "id" : "bb0518cc-1c23-2666-b01a-a0cc6ef39619",
+  "name" : "depoimentos",
+  "display_width" : null,
+  "label" : "Depoimentos",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "e55ac48c-af93-0ca7-b0c4-d60424827662",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "7f235a83-ef15-0a94-70c6-a8d4e9135780",
+    "name" : "imagem",
+    "display_width" : null,
+    "label" : "Imagem",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Frame%202449.png",
+      "alt" : "Frame 2449",
+      "loading" : "lazy",
+      "width" : 326,
+      "height" : 96,
+      "max_width" : 326,
+      "max_height" : 96
+    }
+  }, {
+    "id" : "1b5955c8-5a02-5db3-3936-62266bc60646",
+    "name" : "texto",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "“A partir do momento que começamos a usar os serviços da Cortex, notamos uma melhora muito grande na qualidade dos dados. Chegamos a 90% de acuracidade dos dados recebidos, o que impactou diretamente nos resultados das nossas campanhas”"
+  }, {
+    "id" : "e55ac48c-af93-0ca7-b0c4-d60424827662",
+    "name" : "nome",
+    "display_width" : null,
+    "label" : "Nome",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Nome"
+  }, {
+    "id" : "3f041be5-bd64-79b3-a86f-00a4ca307284",
+    "name" : "cargo",
+    "display_width" : null,
+    "label" : "Cargo",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Cargo"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "imagem" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Frame%202449.png",
+      "alt" : "Frame 2449",
+      "loading" : "lazy",
+      "width" : 326,
+      "height" : 96,
+      "max_width" : 326,
+      "max_height" : 96
+    },
+    "texto" : "“A partir do momento que começamos a usar os serviços da Cortex, notamos uma melhora muito grande na qualidade dos dados. Chegamos a 90% de acuracidade dos dados recebidos, o que impactou diretamente nos resultados das nossas campanhas”",
+    "nome" : "Nome",
+    "cargo" : "Cargo"
+  } ]
+}, {
+  "id" : "b08d00de-d284-7d96-9b2a-40380268ffa4",
+  "name" : "lista_de_logos_dos_clientes",
+  "display_width" : null,
+  "label" : "Lista de logos dos clientes",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "comunicacao_e_marketing", "Comunicação e Marketing" ], [ "inteligencia_de_mercado", "Inteligência de Mercado" ], [ "inteligencia_de_vendas_b2b", "Inteligência de Vendas B2B" ] ],
+  "type" : "choice"
+}, {
+  "id" : "c8ebb622-08a7-07b9-657f-5f5a2682cf8a",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Título da seção dos depoimentos"
+} ]

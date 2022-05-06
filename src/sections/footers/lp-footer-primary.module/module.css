@@ -42,7 +42,11 @@
 .icon-youtube .path2:before {
   margin-left: -0.9658203125em;
 }
-
+.privacy-policy {
+  font: 400 1em / 120% var(--primary-font);
+  color: var(--darkest);
+  text-decoration: underline;
+}
 @media (min-width: 768px) {
   .lp-footer .footer__container {
     flex-direction: row;
