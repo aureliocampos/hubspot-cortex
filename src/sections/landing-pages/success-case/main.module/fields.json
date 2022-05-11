@@ -30,22 +30,61 @@
   "required" : false,
   "locked" : false,
   "children" : [ {
+    "id" : "7e800217-bd0a-e78d-e3e5-9c3414f8622c",
+    "name" : "plano_de_fundo",
+    "display_width" : null,
+    "label" : "Plano de fundo",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "bg_color", "Cor" ], [ "bg_image", "Imagem" ] ],
+    "type" : "choice",
+    "default" : "bg_color"
+  }, {
     "id" : "afa431c3-2739-e471-d228-ed6b46a59047",
     "name" : "background",
     "display_width" : null,
     "label" : "Background",
     "required" : false,
     "locked" : false,
+    "visibility" : {
+      "controlling_field" : "7e800217-bd0a-e78d-e3e5-9c3414f8622c",
+      "controlling_value_regex" : "bg_color",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
     "type" : "color",
     "default" : {
       "color" : "#285FC3",
       "opacity" : 100
+    }
+  }, {
+    "id" : "4d8e0b9e-9851-ac5c-6483-28e1376d16a0",
+    "name" : "backgroundimage_field",
+    "display_width" : null,
+    "label" : "Imagem de fundo",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "7e800217-bd0a-e78d-e3e5-9c3414f8622c",
+      "controlling_value_regex" : "bg_image",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "backgroundimage",
+    "default" : {
+      "src" : "",
+      "background_position" : "MIDDLE_CENTER",
+      "background_size" : "cover"
     }
   } ],
   "tab" : "STYLE",
   "expanded" : false,
   "type" : "group",
   "default" : {
+    "plano_de_fundo" : "bg_color",
     "background" : {
       "color" : "#285FC3",
       "opacity" : 100

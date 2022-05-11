@@ -1,9 +1,8 @@
 {
-  "label": "Cortex Intelligence",
-  "preview_path": "./templates/home.html",
-  "screenshot_path": "./images/template-previews/home.png",
   "enable_domain_stylesheets": false,
+  "label": "Cortex Intelligence",
   "license": "./license.txt",
+  "preview_path": "./templates/home.html",
   "responsive_breakpoints": [
     {
       "name": "mobile",
@@ -12,5 +11,7 @@
         "value": 477
       }
     }
-  ]
+  ],
+  "screenshot_path": "./images/template-previews/home.png",
+  "version": 2
 }

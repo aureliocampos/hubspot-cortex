@@ -56,6 +56,7 @@
     "access" : null,
     "hidden_subfields" : null
   },
+  "allow_custom_email_addresses" : true,
   "type" : "email"
 }, {
   "id" : "fc055bb2-4052-dee0-a007-2dc5a6bfe906",

@@ -20,7 +20,7 @@
   "occurrence" : {
     "min" : null,
     "max" : null,
-    "sorting_label_field" : null,
+    "sorting_label_field" : "8325c57b-a52f-673e-b3aa-5b3311ea7a91",
     "default" : null
   },
   "children" : [ {

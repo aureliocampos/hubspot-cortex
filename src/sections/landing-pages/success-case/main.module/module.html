@@ -21,8 +21,17 @@
 
 {% require_css %}
 <style>
-  .section--main-success-case {
-    background-color: {{ module.style.background.color }};
+  
+  {% if module.style.plano_de_fundo == "bg_image" %} 
+ .section--main-success-case {
+    {{ module.style.backgroundimage_field.css }}
   }
+  {% else %}
+    .section--main-success-case {
+      background-color: {{ module.style.background.color }};
+    }
+  {% endif %}
+
+  
 </style>
 {% end_require_css%}
