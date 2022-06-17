@@ -97,4 +97,58 @@
     "title" : "Enriquecimento de leads",
     "texto" : "<p>O futuro tem muito de imprevisível, mas não significa que precisamos tatear no absoluto escuro. Sob a esteira desse pensamento que sempre buscamos conhecer as tendências.</p>\n<p>O futuro tem muito de imprevisível, mas não significa que precisamos tatear no absoluto escuro. Sob a esteira desse pensamento que sempre buscamos conhecer as tendências.</p>"
   } ]
+}, {
+  "id" : "14f8de02-5ce5-5133-fb47-f2659b7a06d2",
+  "name" : "cta",
+  "display_width" : null,
+  "label" : "CTA",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "3f671b05-ed5d-e125-4a61-cd0e7cf28852",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#section-form",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "67121521-404a-dbfa-e11c-789aded85808",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Quero enriquecer a minha base!"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "link_field" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#section-form",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "text_field" : "Quero enriquecer a minha base!"
+  }
 } ]

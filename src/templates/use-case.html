@@ -1,0 +1,17 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Caso de Uso - Página
+-->
+
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+  <main id="main-content" class="body-container-wrapper use-case-page" role="main">
+      {% dnd_area "dnd_area" label="Main section" %}
+      {% dnd_section %}
+         {% dnd_module "module_165099863990546" path="/cortex-intelligence/sections/landing-pages/main-case-primary", label="Main" %}{% end_dnd_module %}
+      {% end_dnd_section %}
+    {% end_dnd_area %}
+  </main>
+{% endblock body %}

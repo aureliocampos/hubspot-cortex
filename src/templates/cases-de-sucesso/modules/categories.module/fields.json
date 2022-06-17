@@ -1,0 +1,50 @@
+[ {
+  "id" : "e8646771-40ae-b63b-df96-828d147526c4",
+  "name" : "empresa",
+  "display_width" : null,
+  "label" : "Empresa",
+  "required" : true,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Nome e sobre a empresa"
+}, {
+  "id" : "d233ae03-356f-0803-0115-04b1311f87ac",
+  "name" : "setor",
+  "display_width" : null,
+  "label" : "Setor",
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "agronegocio", "Agronegócio" ], [ "automotivo", "Automotivo" ], [ "bens_de_consumo", "Bens de Consumo" ], [ "educacao", "Educação" ], [ "eletrodomesticos_e_eletronicos", "Eletrodomésticos e Eletrônicos" ], [ "engenharia_e_construcao", "Engenharia e Construção" ], [ "farmaceutica", "Farmacêutica" ], [ "financeiro", "Financeiro" ], [ "governo_e_terceiro_setor", "Governo e Terceiro Setor" ], [ "imobiliario", "Imobiliário" ], [ "maquinas_e_equipamentos", "Máquinas e Equipamentos" ], [ "midia", "Mídia" ], [ "oleo_e_gas", "Óleo e Gás" ], [ "papel_e_celulose", "Papel e celulose" ], [ "quimica", "Química" ], [ "saude", "Saúde" ], [ "servicos", "Serviços" ], [ "tecnologia", "Tecnologia" ], [ "transporte_e_logistica", "Transporte e Logística" ], [ "turismo_e_hotelaria", "Turismo e Hotelaria" ], [ "utilities", "Utilities" ], [ "varejo", "Varejo" ] ],
+  "type" : "choice"
+}, {
+  "id" : "6182e91b-ca13-dcd3-73e7-8cbdba10ee60",
+  "name" : "desafio",
+  "display_width" : null,
+  "label" : "Desafio",
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "dimensionamento_de_nichos_de_mercado", "Dimensionamento de nichos de mercado" ], [ "contatos_precisos_e_atualizados_de_decisores", "Contatos precisos e atualizados de decisores" ], [ "enriquecimento_de_crm", "Enriquecimento de CRM" ], [ "identificacao_de_cliente_ideal", "Identificação de Cliente ideal" ], [ "recomendacao_e_priorizacao_de_negocios", "Recomendação e priorização de negócios" ], [ "performance_e_previsao_de_vendas", "Performance e Previsão de vendas" ], [ "identificacao_de_sellers_para_marketplace", "Identificação de Sellers para Marketplace" ], [ "mapeamento_de_tecnologia_para_e-commerce", "Mapeamento de tecnologia para e-commerce" ], [ "mapeamento_de_tecnologia_de_pagamento_online", "Mapeamento de tecnologia de pagamento online" ], [ "mapeamento_de_tecnologia_para_licenciamento", "Mapeamento de tecnologia para licenciamento" ], [ "mapeamento_de_tecnologia_cloud", "Mapeamento de tecnologia Cloud" ], [ "gestao_de_canais_indiretos_ampliacao_de_canais", "Gestão de Canais Indiretos - Ampliação de Canais" ], [ "gestao_de_canais_indiretos_ativacao_de_pdvs", "Gestão de Canais Indiretos - Ativação de PDVs" ], [ "prospecao_de_venda_de_beneficios", "Prospecção de Venda de Benefícios" ], [ "prospecao_para_venda_de_servicos_de_recrutamento", "Prospecção para venda de Serviços de Recrutamento" ], [ "prospecao_de_servicos_logisticos", "Prospecção de Serviços Logísticos" ], [ "mapeamento_de_servico_de_frotas", "Mapeamento de serviço de frotas" ], [ "mapeamento_de_ecossistema_de_inovacao", "Mapeamento de Ecossistema de Inovação" ], [ "mapeamento_de_propriedades_rurais", "Mapeamento de propriedades rurais" ], [ "exposicao_de_marca_concorrentes_e_benchmarks", "Exposição de marca, concorrentes e benchmarks" ], [ "reputacao_e_pilares_estrategicos", "Reputação e Pilares Estratégicos" ], [ "retorno_das_acoes_de_comunicacao", "Retorno das ações de Comunicação" ], [ "monitoramento_de_tendencias_na_midia", "Monitoramento de Tendências na Mídia" ], [ "mapeamento_de_bolhas_de_influencia", "Mapeamento de Bolhas de Influência" ] ],
+  "type" : "choice"
+}, {
+  "id" : "2bcd4f21-1c1e-cd1d-e2f6-5694a75c8d0d",
+  "name" : "produto",
+  "display_width" : null,
+  "label" : "Produto",
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "inteligencia_de_vendas_b2b", "Inteligência de Vendas B2B" ], [ "comunicacao_estrategica_e_reputacao", "Comunicação estratégica e reputação" ] ],
+  "type" : "choice"
+}, {
+  "id" : "0916a4fe-4afa-c3f0-c166-24e080e0e87b",
+  "name" : "tamanho_da_empresa",
+  "display_width" : null,
+  "label" : "Tamanho da empresa",
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "small_company", "Pequena" ], [ "media_company", "Média" ], [ "big_company", "Grande" ]],
+  "type" : "choice"
+} ]

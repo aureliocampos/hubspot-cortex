@@ -38,7 +38,8 @@
 {% end_require_css %}
 {% block body %}
 <main id="main-content" class="body-container-wrapper privacy-policy">
-  <h1 class="section__title">Aviso de Privacidade | Site e Plataforma Cortex
+  <h1 class="section__title">
+    {% text "simple_text_field" label="Título", value="Aviso de Privacidade | Site e Plataforma Cortex" %}
   </h1>
   {% widget_block rich_text "text" overrideable=True, label="Texto Corrido"  %}
     {% widget_attribute "html" %}

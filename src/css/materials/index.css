@@ -135,6 +135,7 @@ body.overflow {
   color: var(--darkest); 
   text-align: center;
   margin-top: 1.25em;
+  cursor: pointer;
 }
 
 .mobile-filter--float {
@@ -186,11 +187,14 @@ body.overflow {
   cursor: pointer;
 }
 .filter__item label {
-  font: 400 1em /120% var(--primary-font);
+  font: 400 1em /1.3 var(--primary-font);
   color: var(--darkest);
   cursor: pointer;
 }
 #input-search {
+  display: none;
+}
+#input-search ~ svg {
   display: none;
 }
 
@@ -240,6 +244,10 @@ body.overflow {
   cursor: pointer;
 }
 
+.main--cases .section-cta__box {
+  border: none;
+  box-shadow: 10px 10px 25px rgba(204, 204, 230, 0.27);
+}
 @media (min-width: 768px) {
   .library-grid-items {
     position: relative;
@@ -310,6 +318,10 @@ body.overflow {
   #input-search:focus-visible {
     outline: none;
   }
+  #input-search ~ svg {
+    display: block;
+  }
+  
 }
 
 @media (min-width: 1200px) {
@@ -346,6 +358,7 @@ body.overflow {
   }
   #clear-filter {
     text-decoration: underline;
+    cursor: pointer;
   }
   .blog-listing__section {
     width: 770px;

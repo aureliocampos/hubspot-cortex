@@ -7,28 +7,86 @@
 
 {% choice "size_company_filter" label='Filtro Tamanho da empresa', value='type', 
 choices='[
-  ["slug", "Label"]
+  [ "small_company", "Pequena" ], 
+  [ "media_company", "Média" ], 
+  [ "big_company", "Grande" ]
 ]', 
 export_to_template_context=True 
 %}
 
 {% choice "product_type_filter" label='Filtro Produto', value='type', 
 choices='[
-  ["slug", "Label"]
+  ["inteligencia_de_vendas_b2b", "Inteligência de Vendas B2B"],
+  ["comunicacao_estrategica_e_reputacao", "Comunicação estratégica e reputação"]
 ]', 
 export_to_template_context=True 
 %}
+
+  <!-- A lista a seguir possui todos os itens mapeados que por enquanto não serão
+  utilizados, quando solicitado excluir o item da lista comentada abaixo e 
+  adicionar ao array de desafio.
+
+  obs: verificar se o item adicionado existe no javascript e 
+  no module de categorias dos cases-de-sucesso -->
+
+<!-- ["contatos_precisos_e_atualizados_de_decisores", "Contatos precisos e atualizados de decisores"],
+["identificacao_de_cliente_ideal", "Identificação de Cliente ideal"],
+["performance_e_previsao_de_vendas", "Performance e Previsão de vendas"],
+["identificacao_de_sellers_para_marketplace", "Identificação de Sellers para Marketplace"],
+["mapeamento_de_tecnologia_para_e-commerce", "Mapeamento de tecnologia para e-commerce"],
+["mapeamento_de_tecnologia_de_pagamento_online", "Mapeamento de tecnologia de pagamento online"],
+["mapeamento_de_tecnologia_para_licenciamento", "Mapeamento de tecnologia para licenciamento"],
+["mapeamento_de_tecnologia_cloud", "Mapeamento de tecnologia Cloud"],
+["gestao_de_canais_indiretos_ampliacao_de_canais", "Gestão de Canais Indiretos - Ampliação de Canais"],
+["gestao_de_canais_indiretos_ativacao_de_pdvs", "Gestão de Canais Indiretos - Ativação de PDVs"],
+["prospecao_de_venda_de_beneficios", "Prospecção de Venda de Benefícios"],
+["prospecao_para_venda_de_servicos_de_recrutamento", "Prospecção para venda de Serviços de Recrutamento"],
+["prospecao_de_servicos_logisticos", "Prospecção de Serviços Logísticos"],
+["mapeamento_de_servico_de_frotas", "Mapeamento de serviço de frotas"],
+["mapeamento_de_ecossistema_de_inovacao", "Mapeamento de Ecossistema de Inovação"],
+["mapeamento_de_propriedades_rurais", "Mapeamento de propriedades rurais"] -->
+
 
 {% choice "challenge_type_filter" label='Filtro Desafio', value='type', 
 choices='[
-  ["slug", "Label"]
-]', 
+  ["dimensionamento_de_nichos_de_mercado", "Dimensionamento de nichos de mercado"],
+  ["enriquecimento_de_crm", "Enriquecimento de CRM"],
+  ["recomendacao_e_priorizacao_de_negocios", "Recomendação e priorização de negócios"]
+]',
 export_to_template_context=True 
 %}
 
+  <!-- A lista a seguir possui todos os itens mapeados que por enquanto não serão
+  utilizados, quando solicitado excluir o item da lista comentada abaixo e 
+  adicionar ao array de Setor.
+
+  obs: verificar se o item adicionado existe no javascript e 
+  no module de categorias dos cases-de-sucesso -->
+  <!-- ["agronegocio", "Agronegócio"],
+  ["automotivo", "Automotivo"],
+  ["bens_de_consumo", "Bens de Consumo"],
+  ["educacao", "Educação"],
+  ["eletrodomesticos_e_eletronicos", "Eletrodomésticos e Eletrônicos"],
+  ["engenharia_e_construcao", "Engenharia e Construção"],
+  ["transporte_e_logistica", "Transporte e Logística"],
+  ["turismo_e_hotelaria", "Turismo e Hotelaria"],
+  ["utilities", "Utilities"],
+  ["governo_e_terceiro_setor", "Governo e Terceiro Setor"],
+  ["imobiliario", "Imobiliário"],
+  ["maquinas_e_equipamentos", "Máquinas e Equipamentos"],
+  ["midia", "Mídia"],
+  ["oleo_e_gas", "Óleo e Gás"],
+  ["papel_e_celulose", "Papel e celulose"],
+  ["quimica", "Química"], -->
+
 {% choice "sector_type_filter" label='Filtro Setor', value='type', 
 choices='[
-  ["slug", "Label"]
+  ["farmaceutica", "Farmacêutica"],
+  ["financeiro", "Financeiro"],
+  ["saude", "Saúde"],
+  ["servicos", "Serviços"],
+  ["tecnologia", "Tecnologia"],
+  ["varejo", "Varejo"]
 ]', 
 export_to_template_context=True 
 %}
@@ -64,7 +122,7 @@ export_to_template_context=True
           {% for choice in widget_data.size_company_filter.choices_list %}
 
           <div class="filter__item">
-            <input type="checkbox" name="categories" id="{{ choice[0]|lower }}" 
+            <input type="checkbox" name="size-company" id="{{ choice[0]|lower }}" 
               value="{{ choice[0]|lower }}" {{ html_attributes|xmlattr }}>
             <label for="{{ choice[0]|lower }}">
               {{ choice[1] }}
@@ -78,7 +136,7 @@ export_to_template_context=True
           {% for choice in widget_data.product_type_filter.choices_list %}
 
           <div class="filter__item">
-            <input type="checkbox" name="categories" id="{{ choice[0]|lower }}" 
+            <input type="checkbox" name="product" id="{{ choice[0]|lower }}" 
               value="{{ choice[0]|lower }}" {{ html_attributes|xmlattr }}>
             <label for="{{ choice[0]|lower }}">
               {{ choice[1] }}
@@ -92,7 +150,7 @@ export_to_template_context=True
           {% for choice in widget_data.challenge_type_filter.choices_list %}
 
           <div class="filter__item">
-            <input type="checkbox" name="categories" id="{{ choice[0]|lower }}" 
+            <input type="checkbox" name="challenge" id="{{ choice[0]|lower }}" 
               value="{{ choice[0]|lower }}" {{ html_attributes|xmlattr }}>
             <label for="{{ choice[0]|lower }}">
               {{ choice[1] }}
@@ -106,7 +164,7 @@ export_to_template_context=True
           {% for choice in widget_data.sector_type_filter.choices_list %}
 
           <div class="filter__item">
-            <input type="checkbox" name="categories" id="{{ choice[0]|lower }}" 
+            <input type="checkbox" name="sector" id="{{ choice[0]|lower }}" 
               value="{{ choice[0]|lower }}" {{ html_attributes|xmlattr }}>
             <label for="{{ choice[0]|lower }}">
               {{ choice[1] }}
@@ -116,7 +174,7 @@ export_to_template_context=True
         </div>
         <div class="button-container">
           <button id="action-filter" class="button button--primary-invert">Filtrar</button>
-          <a id="clear-filter" href="javascript();" class="clear-filter">Limpar filtro</a>
+          <span id="clear-filter" class="clear-filter">Limpar filtro</span>
         </div>
       </form>
     </div>
@@ -151,20 +209,20 @@ export_to_template_context=True
 
 
 {% require_js async="true" position="header" %}
-  <script type="application/json" id="data-library">
+  <script type="application/json" id="data-cases">
     {
       "data": [
       {% for content in contents %}
-      {% set category = content.widgets.module_16467570902134.body.categoria|lower %} 
-      {% set material = content.widgets.module_16467570902134.body.tipo_de_material|lower %}
         {
           "title": "{{content.name}}",
           "description": "{{ content.meta_description}}",
           "featuredImage": "{{ resize_image_url( content.featured_image, 345, 190, 345 ) }}",
           "featuredImageAlt": "{{ content.featured_image_alt_text }}",
-          "url": "{{content.link_rel_canonical_url}}",
-          "category": "{{ category }}",
-          "materialType": "{{material}}"
+          "url": "{{content.absolute_url}}",
+          "sizeCompany": "{{content.widgets.module_16527342519113.body.tamanho_da_empresa}}",
+          "product": "{{content.widgets.module_16527342519113.body.produto}}",
+          "challenge": "{{content.widgets.module_16527342519113.body.desafio}}",
+          "sector": "{{content.widgets.module_16527342519113.body.setor}}"
         }{% if loop.index != contents.total_count %},{% endif %}
       {% endfor %}
       ]

@@ -9,7 +9,7 @@
   "allow_new_line" : false,
   "show_emoji_picker" : false,
   "type" : "text",
-  "default" : " Cases de sucesso"
+  "default" : "Cases de sucesso"
 }, {
   "id" : "766986d3-3fbc-4dc7-3a72-ad9c9cd87151",
   "name" : "style",
@@ -28,7 +28,7 @@
     "default" : {
       "background_position" : "MIDDLE_CENTER",
       "background_size" : "cover",
-      "src" : "https://pages.cortex-intelligence.com/hubfs/destaque-v2.webp"
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Destaque%20Blog.png"
     }
   } ],
   "tab" : "STYLE",
@@ -38,7 +38,7 @@
     "backgroundimage_field" : {
       "background_position" : "MIDDLE_CENTER",
       "background_size" : "cover",
-      "src" : "https://pages.cortex-intelligence.com/hubfs/destaque-v2.webp"
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Destaque%20Blog.png"
     }
   }
 }, {
@@ -49,7 +49,7 @@
   "required" : false,
   "locked" : false,
   "type" : "richtext",
-  "default" : "<span>Materiais gratuitos sobre marketing e vendas para auxiliar na sua jornada de crescimento</span>"
+  "default" : "<span>Descubra na prática como a Cortex ajudou seus clientes e como podemos transformar a sua empresa</span>"
 }, {
   "id" : "f21bc61b-e0e7-74e0-ef3f-ce0289be996e",
   "name" : "case_de_destaque",

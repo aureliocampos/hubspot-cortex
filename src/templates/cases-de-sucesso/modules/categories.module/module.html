@@ -1,0 +1,132 @@
+<section class="section section__categories">
+  <div class="section__container">
+    <ul class="categories__items">
+      <li class="categories__item">
+        <h3 class="categories__title">Empresa</h3>
+        <div class="categories__text">{{ module.empresa }}</div>
+      </li>
+      <li class="categories__item">
+        <h3 class="categories__title">Setor</h3>
+        {% if module.setor == "agronegocio" %}
+          {% set setor = "Agronegócio" %}
+        {% elif module.setor == "automotivo" %}
+          {% set setor = "Automotivo" %}
+        {% elif module.setor == "bens_de_consumo" %}
+          {% set setor = "Bens de Consumo" %}
+        {% elif module.setor == "educacao" %}
+          {% set setor = "Educação" %}
+        {% elif module.setor == "eletrodomesticos_e_eletronicos" %}
+          {% set setor = "Eletrodomésticos e Eletrônicos" %}
+        {% elif module.setor == "engenharia_e_construcao" %}
+          {% set setor = "Engenharia e Construção" %}
+        {% elif module.setor == "farmaceutica" %}
+          {% set setor = "Farmacêutica" %}
+        {% elif module.setor == "financeiro" %}
+          {% set setor = "Financeiro" %}
+        {% elif module.setor == "governo_e_terceiro_setor" %}
+          {% set setor = "Governo e Terceiro Setor" %}
+        {% elif module.setor == "imobiliario" %}
+          {% set setor = "Imobiliário" %}
+        {% elif module.setor == "maquinas_e_equipamentos" %}
+          {% set setor = "Máquinas e Equipamentos" %}
+        {% elif module.setor == "midia" %}
+          {% set setor = "Mídia" %}
+        {% elif module.setor == "oleo_e_gas" %}
+          {% set setor = "Óleo e Gás" %}
+        {% elif module.setor == "papel_e_celulose" %}
+          {% set setor = "Papel e celulose" %}
+        {% elif module.setor == "quimica" %}
+          {% set setor = "Química" %}
+        {% elif module.setor == "saude" %}
+          {% set setor = "Saúde" %}
+        {% elif module.setor == "servicos" %}
+          {% set setor = "Serviços" %}
+        {% elif module.setor == "tecnologia" %}
+          {% set setor = "Tecnologia" %}
+        {% elif module.setor == "transporte_e_logistica" %}
+          {% set setor = "Transporte e Logística" %}
+        {% elif module.setor == "turismo_e_hotelaria" %}
+          {% set setor = "Turismo e Hotelaria" %}
+        {% elif module.setor == "utilities" %}
+          {% set setor = "Utilities" %}
+        {% elif module.setor == "varejo" %}
+          {% set setor = "Varejo" %}
+        {% endif %}
+        <p class="categories__defined">{{ setor }}</p>
+      </li>
+      <li class="categories__item">
+        <h3 class="categories__title">Desafio</h3>
+        {% if module.desafio == "dimensionamento_de_nichos_de_mercado" %}
+          {% set desafio = "Dimensionamento de nichos de mercado" %}
+        {% elif module.desafio == "contatos_precisos_e_atualizados_de_decisores" %}
+          {% set desafio = "Contatos precisos e atualizados de decisores" %}
+        {% elif module.desafio == "enriquecimento_de_crm" %}
+          {% set desafio = "Enriquecimento de CRM" %}
+        {% elif module.desafio == "identificacao_de_cliente_ideal" %}
+          {% set desafio = "Identificação de Cliente ideal" %}
+        {% elif module.desafio == "recomendacao_e_priorizacao_de_negocios" %}
+          {% set desafio = "Recomendação e priorização de negócios" %}
+        {% elif module.desafio == "performance_e_previsao_de_vendas" %}
+          {% set desafio = "Performance e Previsão de vendas" %}
+        {% elif module.desafio == "identificacao_de_sellers_para_marketplace" %}
+          {% set desafio = "Identificação de Sellers para Marketplace" %}
+        {% elif module.desafio == "mapeamento_de_tecnologia_para_e-commerce" %}
+          {% set desafio = "Mapeamento de tecnologia para e-commerce" %}
+        {% elif module.desafio == "mapeamento_de_tecnologia_de_pagamento_online" %}
+          {% set desafio = "Mapeamento de tecnologia de pagamento online" %}
+        {% elif module.desafio == "mapeamento_de_tecnologia_para_licenciamento" %}
+          {% set desafio = "Mapeamento de tecnologia para licenciamento" %}
+        {% elif module.desafio == "mapeamento_de_tecnologia_cloud" %}
+          {% set desafio = "Mapeamento de tecnologia Cloud" %}
+        {% elif module.desafio == "gestao_de_canais_indiretos_ampliacao_de_canais" %}
+          {% set desafio = "Gestão de Canais Indiretos - Ampliação de Canais" %}
+        {% elif module.desafio == "gestao_de_canais_indiretos_ativacao_de_pdvs" %}
+          {% set desafio = "Gestão de Canais Indiretos - Ativação de PDVs" %}
+        {% elif module.desafio == "prospecao_de_venda_de_beneficios" %}
+          {% set desafio = "Prospecção de Venda de Benefícios" %}
+        {% elif module.desafio == "prospecao_para_venda_de_servicos_de_recrutamento" %}
+          {% set desafio = "Prospecção para venda de Serviços de Recrutamento" %}
+        {% elif module.desafio == "prospecao_de_servicos_logisticos" %}
+          {% set desafio = "Prospecção de Serviços Logísticos" %}
+        {% elif module.desafio == "mapeamento_de_servico_de_frotas" %}
+          {% set desafio = "Mapeamento de serviço de frotas" %}
+        {% elif module.desafio == "mapeamento_de_ecossistema_de_inovacao" %}
+          {% set desafio = "Mapeamento de Ecossistema de Inovação" %}
+        {% elif module.desafio == "mapeamento_de_propriedades_rurais" %}
+          {% set desafio = "Mapeamento de propriedades rurais" %}
+        {% elif module.desafio == "exposicao_de_marca_concorrentes_e_benchmarks" %}
+          {% set desafio = "Exposição de marca, concorrentes e benchmarks" %}
+        {% elif module.desafio == "reputacao_e_pilares_estrategicos" %}
+          {% set desafio = "Reputação e Pilares Estratégicos" %}
+        {% elif module.desafio == "retorno_das_acoes_de_comunicacao" %}
+          {% set desafio = "Retorno das ações de Comunicação" %}
+        {% elif module.desafio == "monitoramento_de_tendencias_na_midia" %}
+          {% set desafio = "Monitoramento de Tendências na Mídia" %}
+        {% elif module.desafio == "mapeamento_de_bolhas_de_influencia" %}
+          {% set desafio = "Mapeamento de Bolhas de Influência" %}
+        {% endif %}
+        <p class="categories__defined">{{ desafio }}</p>
+      </li>
+      <li class="categories__item">
+        <h3 class="categories__title">Produto</h3>
+         {% if module.produto == "inteligencia_de_vendas_b2b" %}
+          {% set produto = "Inteligência de Vendas B2B" %}
+        {% elif module.produto == "comunicacao_estrategica_e_reputacao" %}
+          {% set produto = "Comunicação estratégica e reputação" %}
+        {% endif %}
+        <p class="categories__defined">{{ produto }}</p>
+      </li>
+      <li class="categories__item">
+        <h3 class="categories__title">Tamanho da empresa</h3>
+        {% if module.tamanho_da_empresa  == "small_company" %}
+          {% set tam = "Pequena" %}
+        {% elif module.tamanho_da_empresa  == "media_company" %}
+          {% set tam = "Média" %}
+        {% elif module.tamanho_da_empresa  == "big_company" %}
+          {% set tam = "Grande" %}
+        {% endif %}
+        <p class="categories__defined">{{ tam }}</p>
+      </li>
+    </ul>
+  </div>
+</section>

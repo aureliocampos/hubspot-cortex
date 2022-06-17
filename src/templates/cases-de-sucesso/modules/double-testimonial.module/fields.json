@@ -80,10 +80,41 @@
       "max_width" : 326,
       "max_height" : 96
     },
-    "texto" : "“A partir do momento que começamos a usar os serviços da Cortex, notamos uma melhora muito grande na qualidade dos dados. Chegamos a 90% de acuracidade dos dados recebidos, o que impactou diretamente nos resultados das nossas campanhas”",
-    "nome" : "Nome",
-    "cargo" : "Cargo"
-  } ]
+    "texto" : "A partir do momento que começamos a usar os serviços da Cortex, notamos uma melhora muito grande na qualidade dos dados. Chegamos a 90% de acuracidade dos dados recebidos, o que impactou diretamente nos resultados das nossas campanhas.",
+    "nome" : "Flavio Godinho",
+    "cargo" : "Head of Marketing Analytics"
+  },
+  {
+    "imagem" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Frame%202449.png",
+      "alt" : "Frame 2449",
+      "loading" : "lazy",
+      "width" : 326,
+      "height" : 96,
+      "max_width" : 326,
+      "max_height" : 96
+    },
+    "texto" : "Estamos conseguindo ganhar muita escala na nossa operação de dados. Já trabalhamos com dados há 10 anos, mas somente conseguimos este nível de escala depois de começar a trabalhar com a solução Cortex.",
+    "nome" : "Irving Prochnow",
+    "cargo" : "Coordenador de Product Marketing"
+  },
+  {
+    "imagem" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Frame%202449.png",
+      "alt" : "Frame 2449",
+      "loading" : "lazy",
+      "width" : 326,
+      "height" : 96,
+      "max_width" : 326,
+      "max_height" : 96
+    },
+    "texto" : "Percebemos que as taxas de conversão de leads aumentaram significativamente após as recomendações específicas geradas para o nosso mercado.",
+    "nome" : "José Carlos Yazbek",
+    "cargo" : "Head de Vendas"
+  }
+]
 }, {
   "id" : "b08d00de-d284-7d96-9b2a-40380268ffa4",
   "name" : "lista_de_logos_dos_clientes",

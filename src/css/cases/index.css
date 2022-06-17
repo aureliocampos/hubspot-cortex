@@ -6,6 +6,7 @@
   color: var(--darkest);
 }
 .main-cases .text {
+  max-width: 443px;
   font: 400 1em / 148% var(--primary-font);
   color: var(--darkest);
 }
@@ -17,27 +18,191 @@
   padding: 1.25em 1.5em;
 }
 
-@media (min-width: 768px) {
-  .main-cases .section__content {
-    font-size: 20px;
-  }
-  .main--cases .cta-solutions {
-    margin: 2.5em 2em;
-  }
+/* Single */
+/* Responsividade de imagens dentro do post */
+.blog-post__content .hs-cta-img {
+  width: 100%;
+  height: auto;
 }
 
-@media (min-width: 1200px) {
-  .main-lib.main-cases .section__container {
-    height: auto;
+/* CTA */
+.case-post .cta-solutions {
+  margin: 3em 2em 0;
+}
+.case-post .cta-solutions .section-cta__box {
+  border: none;
+}
+
+.case-post__header__item {
+  padding: 0 2em;
+}
+/* blog post */
+.case-post {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.case-post__image img {
+  width: 100%;
+  height: auto;
+}
+.case-post__title {
+  font: 400 1.5em var(--primary-font);
+  color: var(--darkest);
+  line-height: 120%;
+  letter-spacing: -0.035em;
+  margin: 1rem 0 0 0;
+}
+.case-post__subtitle {
+  font: 400 1em var(--secondary-font);
+  color: var(--darker);
+  line-height: 148%;
+  margin: 1rem 0;
+}
+
+.case-post__content {
+  font: 400 1em var(--secondary-font);
+  color: var(--darkest);
+  line-height: 148%;
+  margin-top: 3.5em;
+  padding: 0 1.5em;
+}
+.case-post__content p {
+  line-height: 148%;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+.case-post__content a {
+  font-weight: 700;
+  color: var(--blue_official);
+  text-decoration: underline;
+}
+
+.case-post__content h2,
+.case-post__content h3,
+.case-post__content h4 {
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  color: var(--darkest);
+  line-height: 120%;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+.case-post__content h2 {
+  font-size: 1.5em;
+}
+.case-post__content h3 {
+  font-size: 1.17em;
+}
+.case-post__content h4 {
+  font-size: 1em;
+}
+.case-post__content ul {
+  list-style: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.case-post__content ul li {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+
+/* sharing */
+#sharing-mobile {
+  background-color:var(--lightest);
+  margin: 3.5em 0;
+}
+#sharing-mobile .case-post__sharing-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em;
+  margin: 0 auto;
+}
+#sharing-mobile.case-post__sharing .case-post__sharing-container .title {
+  font: 400 1em / 120% var(--primary-font);
+  color: var(--darkest);
+}
+#sharing-mobile.case-post__sharing .sharing_items {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+.sharing__item {
+  font-size: 2em;
+}
+#sharing-desktop,
+.separator-desktop-blog {
+  display: none;
+}
+
+
+@media (min-width: 768px) {
+  .case-post__header__item,
+  .case-post__content {
+    max-width: 620px;
+    margin: 0 auto;
   }
-  .main-lib .section__content {
-    padding: 3em 1.5em;
+  .case-post .cta-solutions .section-cta__box {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 620px;
+    box-shadow: 10px 10px 25px rgba(204, 204, 230, 0.27);
   }
-  .cases-listing__section {
-    width: 768px;
+  .case-post .cta-solutions .button-cta--solutions {
+    margin-top: 0;
   }
-  .main-cases .text {
-    width: 550px;
+  .case-post .cta-solutions .section-cta__title {
+    width: 272px;
+    font-size: 21px;
+    text-align: left;
+    line-height: 148%;
+  }
+  .case-post .cta-solutions .section-cta__text {
+    margin: 0;
   }
 
+  #sharing-mobile .case-post__sharing-container {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+}
+@media (min-width: 1024px) {
+  .case-post__header__item,
+  .case-post__content,
+  .case-post .cta-solutions .section-cta__box {
+    max-width: 760px;
+  }
+  .cta-solutions {
+    margin: 2em auto !important;
+  }
+}
+@media (min-width: 1200px) {
+  .case-post__header__item,
+  .case-post__content,
+  .case-post .cta-solutions .section-cta__box {
+    max-width: 736px;
+  }
+  .case-post__title {
+    font-size: 2.25em;
+  }
+  .case-post__subtitle {
+    font-size: 1.125em;
+  }
+  .case-post .cta-solutions .section-cta__title {
+    width: 315px;
+    font-size: 24px;
+  }
+  #sharing-mobile {
+    display: block;
+  }
+  .cases-listing__section {
+    width: 760px;
+  }
+  .cases-listing__section .section__title {
+    font-size: 2em;
+  }
 }

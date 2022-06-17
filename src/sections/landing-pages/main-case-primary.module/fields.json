@@ -38,7 +38,7 @@
   "id" : "51b8d414-dcbc-a671-724c-30eb870b2899",
   "name" : "button",
   "display_width" : null,
-  "label" : "Botão",
+  "label" : "CTA",
   "required" : false,
   "locked" : false,
   "children" : [ {

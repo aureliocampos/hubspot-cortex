@@ -11,6 +11,7 @@
   border: 6px solid var(--lightest);
   border-radius: 20px;
   padding: 2.875em;
+  background-color: var(--white);
 }
 .section-cta__title {
   font: bold 1.125em var(--primary-font);

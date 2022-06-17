@@ -1,50 +1,156 @@
 <!--
     templateType: blog_post
     isAvailableForNewContent: true
-    label: Blog post
+    label: Cases Post
 -->
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>{{ content.html_title }}</title>
-    <meta name="description" content="{{ content.meta_description }}" />
-    {{ standard_header_includes }}
-  </head>
-  <body>
-    <main>
+
+{% module "module_16528056786393" path="/cortex-intelligence/modules/color-theme-config", label="color-theme-config" %}
+
+{% extends "../layouts/base.html" %}
+{{ require_css(get_asset_url('/cortex-intelligence/css/blog/index.css')) }}
+{{ require_css(get_asset_url('/cortex-intelligence/css/cases/index.css')) }}
+
+{% include '/cortex-intelligence/templates/metadata-schemas/articles.html' %}
+
+  <main id="main-content" class="body-container-wrapper single-page main--cases" role="main">
+
+    {% block body %}
+    {# Blog post #}
+    <article class="case-post">
+      <figure class="case-post__image">
+        <img src="{{ content.featured_image }}" alt="{{ content.featured_image_alt_text }}" width="732" height="407">
+      </figure>
+      <section class="case-post__header">
+        <header class="case-post__header__item">
+          <h1 class="case-post__title">{{ content.name }}</h1>
+          <!-- <p class="case-post__subtitle">{{ content.meta_description }}</p> -->
+        </header>
+        {% module "module_16527342519113" path="/cortex-intelligence/templates/cases-de-sucesso/modules/categories", label="Categorias" %}
+        {% module "module_16528051181652" path="/cortex-intelligence/sections/generic/call-to-action", label="call-to-action" 
+          style={
+            esconder_elementos:True
+          }
+        %}
+      </section>
+
+      <section class="case-post__content">
+        {{ content.post_body }}
+      </section>
       
-      {# Blog post #}
-      <article>
-        <h1>{{ content.name }}</h1>
-        <div>
-          <a href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}" rel="author">
-            {{ content.blog_post_author.display_name }}
-          </a>
-          <time>
-            {{ content.publish_date_localized }}
-          </time>
-        </div>
-        <div>
-          {{ content.post_body }}
-        </div>
-        {% if content.tag_list %}
-        <div>
-        {% for tag in content.tag_list %}
-          <a href="{{ blog_tag_url(group.id, tag.slug) }}" rel="tag">{{ tag.name }}</a> {% if not loop.last %},{% endif %} 
-        {% endfor %}
-        </div>
-        {% endif %}
-      </article>
-
-      {% if group.allow_comments %}
-      <div>
-        {% module 'blog_comments' path='@hubspot/blog_comments', label="Blog comments" %}
+    </article>
+    <div id="sharing-mobile" class="case-post__sharing">
+      <div class="case-post__sharing-container">
+        <h3 class="title">Compartilhe esse artigo</h3>
+        <ul class="sharing_items">
+          <li class="sharing__item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url={{content.absolute_url}}" target="_blank"
+              rel="noopener noreferrer" aria-label="Link de compartilhamento no Linkedin">
+              <span class="icon-linkedin"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
+            </a>
+          </li>
+          <li class="sharing__item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{content.absolute_url}}" target="_blank"
+              rel="noopener noreferrer" aria-label="Link de compartilhamento no Facebook">
+              <span class="icon-facebook"><span class="path1"></span><span class="path2"></span></span>
+            </a>
+        </ul>
       </div>
-      {% endif %}
-      {# End blog post #} 
+    </div>
 
-    </main>
-    {{ standard_footer_includes }}
-  </body>
-</html>
+    <hr class="separator-desktop-blog">
+    {# Recent posts listing #}
+    {# This macro is used to format each recent post card and gets passed to the related_blog_posts HubL tag below #}
+    {% macro related_posts(post, count, total) %}
+      {% if count == 1 %}
+        <section class="blog-listing__section">
+          <h2 class="section__title">Cases recentes</h2>
+          <div class="blog-listing__items">
+            {% endif %}
+            <article class="card-primary__article">
+              {% if post.featured_image and group.use_featured_image_in_summary %}
+                <figure class="card-primary__figure">
+                  <a href="{{ post.absolute_url }}">
+                    <img 
+                      data-src="{{ post.featured_image }}" 
+                      data-srcset="{{ resize_image_url( post.featured_image, 345, 190, 345 ) }} 345w" 
+                      sizes="345px" 
+                      alt="{{ post.featured_image_alt_text }}"
+                      class="lazyload card-primary__image"
+                      width="345px"
+                      height="190px"
+                    />
+                  </a>
+                  <a href="{{ blog_author_url(group.id, post.blog_post_author.slug) }}" class="card-primary__avatar" rel="author">
+                    <small class="card-primary__avatar__name"><em>por</em> {{post.blog_post_author.name }}</small>
+                    <img class="card-primary__avatar__image" src="{{post.blog_post_author.avatar }}" alt="{{post.blog_post_author.name }}" width="24" height="24" />
+                  </a>
+                </figure>
+              {% endif %}
+              <div class="card-primary__summary">
+                <a href="{{ post.absolute_url }}">
+                  <h2 class="card-primary__name">{{ post.name }}</h2>
+                  {% if post_group.show_summary_in_listing %}
+                    <p class="card-primary__description">{{ post.meta_description }}</p>
+                  {% endif %}
+                </a>
+                {% if post.tag_list != [] %}
+                  {% for tag in post.topic_list %}
+                    <a href="{{ blog_tag_url('default', tag.slug) }}" class="card-primary__tag">{{tag}}</a>
+                  {% endfor %}       
+                {% endif %}
+              </div>
+            </article>
+            <hr class="blog-listing__items__separator">
+            {% if count == total %}
+          </div>
+        </section>
+      {% endif %}
+    {% endmacro %}
+
+    {% related_blog_posts
+      limit=3,
+      no_wrapper=True,
+      post_formatter="related_posts"
+    %}
+    {# End recent posts listing #}
+
+  </main>
+  {% if content.blog_author.slug != null %}
+    {% set slug = content.blog_author.slug %}
+  {% else %}
+    {% set slug = 'cortex-intelligence' %}
+  {% endif %}
+
+  {% require_js position="footer" async="true" %}
+    <script>
+      function readingRate(textContainerID) {
+        // Validação
+        if (typeof textContainerID !== "string" || textContainerID.length === 0)
+          throw new Error("Parametro 'textContainerID' inválido");
+
+        let readingRateInSeconds = 0;
+        // Recuperando elemento HTML
+        const textContainer = window.document.getElementById(textContainerID);
+        // Pegando todos os textos
+        const content = textContainer.innerText;
+        // Quantidade de palavras do texto
+        const wordCount = content.split(" ").length;
+        // Processando o tempo de leitura
+        readingRateInSeconds = (wordCount * 60) / 200;
+
+        let minutes = Math.floor(readingRateInSeconds / 60);
+        const container = document.querySelector('.case-post__read-time em');
+
+        container.textContent = `${minutes}min de leitura`;
+
+        if (minutes == 0) {
+          container.textContent = `1min de leitura`;
+          return
+        }
+
+      }
+
+      readingRate('hs_cos_wrapper_post_body')
+    </script>
+  {% end_require_js %}
+{% endblock body %}
