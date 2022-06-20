@@ -1,0 +1,126 @@
+
+/* Section 3 - Como a cortex */
+.section__what-cortex .section__container {
+  padding: 2.5em 2em;
+}
+.section__what-cortex .section__container .section__title {
+  font: 500 1.3125em / 132% var(--primary-font);
+  letter-spacing: -0.02em;
+  color: var(--darkest);
+}
+.what-cortex__item {
+  margin-top: 2em;
+}
+.what-cortex__item__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.what-cortex__item__header > h3 {
+  width: 206px;
+  font: 500 1.125em / 132% var(--primary-font);
+  letter-spacing: -0.02em;
+  color: var(--brand_official);
+}
+.what-cortex__item > .hs_cos_wrapper_type_inline_rich_text {
+  font: 400 1em / 148% var(--secondary-font);
+  color: var(--darker);
+  margin-top: 1.25em;
+}
+.what-cortex__figure {
+  padding: 0 2em 2em;
+}
+.what-cortex__figure > img {
+  width: 100%;
+  height: auto;
+}
+
+.what-cortex__results {
+  background-color: var(--darkest);
+  padding: 2.25em 2em;
+}
+.what-cortex__results > h2 {
+  font: 500 1.125em / 132% var(--primary-font);
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+.what-cortex__results__list {
+  margin-top: 1.5em;
+}
+.what-cortex__results__list li {
+  font: 400 1em / 132% var(--primary-font);
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+.results {
+  background-color: var(--lightest);
+}
+@media (min-width: 768px) {
+  .what-cortex__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+  }
+  .what-cortex__item__header {
+    justify-content: flex-start;
+  }
+  .what-cortex__item__header > span {
+    margin-right: 1.5em;
+  }
+  .what-cortex__item__header > h3 {
+    width: auto;
+  }
+  .results {
+    display: flex;
+    justify-content: space-between;
+  }
+  .what-cortex__figure {
+    padding: 2em;
+  }
+}
+@media (min-width: 1024px) {
+  .what-cortex__results > h2 {
+    font-size: 1.5em;
+  }
+  .what-cortex__results__list li {
+    font-size: 1.1312em;
+    margin: 0.5em 0;
+  }
+}
+@media (min-width: 1200px) {
+
+  .section__what-cortex {
+    padding-top: 5.5em;
+  }
+  .section__what-cortex .section__container {
+    max-width: 1114px;
+    margin: 0 auto;
+    padding: 0 0 5.5em 0;
+  }
+  .section__what-cortex .section__container .section__title {
+    font-size: 2em;
+  }
+  .what-cortex__item {
+    margin-top: 3em;
+  }
+  .what-cortex__item__header > h3 {
+    font-size: 1.5em;
+  }
+  .what-cortex__item > .hs_cos_wrapper_type_inline_rich_text {
+    font-size: 1.125em;
+  }
+  .what-cortex__figure {
+    padding: 4em;
+    margin: 0 auto;
+  }
+  .what-cortex__results {
+    width: 45%;
+    padding: 4em 4.75em;
+  }
+  .what-cortex__results>h2 {
+    width: 364px;
+  }
+  .what-cortex__results__list {
+    width: 364px;
+  }
+}

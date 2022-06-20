@@ -1,0 +1,138 @@
+[ {
+  "id" : "48a2aa40-e898-930c-9397-c260b46f3b85",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Como a Cortex pode ajudar empresas provedoras de Cloud a mapear potenciais clientes pelo perfil tecnológico"
+}, {
+  "id" : "8e537ccf-c666-2cc5-8074-d6e45b077495",
+  "name" : "item",
+  "display_width" : null,
+  "label" : "Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "a0a5c3a4-afdb-8819-40c6-2115fa303fa7",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Título",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Painel analítico com overview tecnológico"
+  }, {
+    "id" : "273881da-2eab-7e57-3f3a-fed6797c8398",
+    "name" : "texto",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Confira a representação gráfica de todos os dados coletados pela plataforma e personalize a sua análise. Selecione filtros como nível de adoção tecnológica, localização das empresas, principais verticais de atuação, número de funcionários, faturamento e tecnologias em alta.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "title" : "Painel analítico com overview tecnológico",
+    "texto" : "<p>Confira a representação gráfica de todos os dados coletados pela plataforma e personalize a sua análise. Selecione filtros como nível de adoção tecnológica, localização das empresas, principais verticais de atuação, número de funcionários, faturamento e tecnologias em alta.</p>"
+  },{
+    "title" : "Exportação de contatos profissionais B2B",
+    "texto" : "<p>Descubra o contato dos tomadores de decisão nas empresas contratantes de Cloud em todo o país.</p>"
+  },{
+    "title" : "Exportação de dados sobre as empresas",
+    "texto" : "<p>Tenha acesso às informações detalhadas das empresas que utilizam tecnologia Cloud.</p>"
+  },{
+    "title" : "Integração com CRM e fontes de dados internos com API",
+    "texto" : "<p>Integre seus dados e acompanhe o resultado em tempo real, obtenha insights a partir de painéis flexíveis e dispare ações de melhoria. Tudo em um só lugar.</p>"
+  } ]
+}, {
+  "id" : "4bb82370-95c0-417a-0e63-bbe5af47e734",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Imagem",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://pages.cortex-intelligence.com/hubfs/Group%202877.png",
+    "alt" : "Group 2877",
+    "loading" : "lazy",
+    "width" : 578,
+    "height" : 363,
+    "max_width" : 578,
+    "max_height" : 363
+  }
+}, {
+  "id" : "66175291-f702-434a-6c8c-8cce7505c340",
+  "name" : "resultados",
+  "display_width" : null,
+  "label" : "Resultados",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d793cc92-4c59-957b-c0db-2192bf8060b4",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Título",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Resultados que a nossa solução pode te ajudar a conquistar"
+  }, {
+    "id" : "fd558901-3c0e-24a7-2ff7-0367cea96653",
+    "name" : "item_da_lista",
+    "display_width" : null,
+    "label" : "Item da lista",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : [ 
+      "Crescimento da base de clientes", 
+      "Maior market share",
+      "Aumento do faturamento" 
+    ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : "Resultados que a nossa solução pode te ajudar a conquistar",
+    "item_da_lista" : [ 
+      "Crescimento da base de clientes", 
+      "Maior market share",
+      "Aumento do faturamento" 
+    ]
+  }
+} ]

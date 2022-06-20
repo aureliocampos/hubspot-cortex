@@ -6,12 +6,19 @@
 
 {% extends "./layouts/base.html" %}
 
+{{ require_css(get_asset_url('/cortex-intelligence/css/use-case-page.css')) }}
+
 {% block body %}
+{% module "module_16557416269253" path="/cortex-intelligence/modules/color-theme-config", label="color-theme-config" %}
   <main id="main-content" class="body-container-wrapper use-case-page" role="main">
-      {% dnd_area "dnd_area" label="Main section" %}
+    {% dnd_area "dnd_area" label="Main section" %}
       {% dnd_section %}
-         {% dnd_module "module_165099863990546" path="/cortex-intelligence/sections/landing-pages/main-case-primary", label="Main" %}{% end_dnd_module %}
+         {% dnd_module "module_16557358633432" path="/cortex-intelligence/sections/pages/use-case/main-case", label="Main" %}{% end_dnd_module %}
       {% end_dnd_section %}
     {% end_dnd_area %}
+    {% module "module_165575221356411" path="/cortex-intelligence/sections/pages/use-case/challenge", label="Desafios" %}
+    {% module "module_165575257626612" path="/cortex-intelligence/sections/pages/use-case/how-cortex", label="Como a Cortex" %}
+    {% module "module_163171835946125" path='/cortex-intelligence/sections/pages/solutions/customer-testimonial', label="Depoimentos dos Clientes" %}
+    {% module "module_16408200462891" path="/cortex-intelligence/modules/form-content-sticky", label="Formulário" %}
   </main>
 {% endblock body %}

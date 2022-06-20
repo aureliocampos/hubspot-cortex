@@ -1,0 +1,72 @@
+/* Section 2 - Desafios  */
+.section-challenge .section__container:first-child {
+  padding: 1.5em 2em;
+  background-color: var(--lightest);
+}
+.section-challenge .section__container:first-child .section__text {
+  font: 400 1em /1.5 var(--secondary-font);
+  color: var(--darkest);
+}
+.section-challenge .section__container:last-child {
+  padding: 2em;
+  background-color: var(--brand_official);
+} 
+.section-challenge .section__container:last-child .challenge__title {
+  font: 500 1.3125em / 124% var(--primary-font);
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+.section-challenge .section__container:last-child .challenge__text {
+  font: 400 1em / 148% var(--secondary-font);
+  color: var(--white);
+  margin-top: 1.5em;
+}
+.challenge__item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 1.5em;
+}
+.challenge__item > span {
+  margin-right: 30px;
+}
+.challenge__item > .hs_cos_wrapper > p {
+  font: 400 1em/148% var(--secondary-font);
+  color: var(--white);
+}
+@media (min-width: 768px) {
+  .challenge__item {
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-challenge .section__container:first-child {
+    padding: 3.5em 0;
+  }
+  .section-challenge .section__container:first-child .section__text {
+    max-width: 1114px;
+    font-size: 1.125em;
+    margin: 0 auto;
+  }
+  .section-challenge .section__container:last-child {
+    padding: 4em 0;
+  }
+  .section-challenge .section__container:last-child .challenge__title,
+  .challenge__list,
+  .section-challenge .section__container:last-child .challenge__text {
+    max-width: 1114px;
+    margin: 0 auto;
+  }
+  .section-challenge .section__container:last-child .challenge__title {
+    font-size: 1.75em;
+  }
+  .challenge__item > p {
+    font-size: 1.3125em;
+  }
+  .section-challenge .section__container:last-child .challenge__text {
+    font-size: 1.125em;
+    margin-top: 1.5em;
+  }
+}

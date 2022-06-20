@@ -1,0 +1,26 @@
+    <section class="section section-challenge">
+      <div class="section__container">
+        <div class="section__text">{{ module.intro }}</div>
+      </div>
+      <div class="section__container">
+        <h2 class="challenge__title">{{ module.title }}</h2>
+        <ul class="challenge__list">
+          {% for item in module.texto_do_item %}
+            <li class="challenge__item">
+              <span><svg width="54" height="65" viewBox="0 0 54 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M42.1953 27.0835C44.5261 32.9754 43.2598 39.8984 38.4218 44.6521C37.3198 45.871 36.5028 47.3308 35.9461 48.7392C35.3235 50.3144 35.042 51.7859 35.0345 52.7313L35.0209 54.4362L18.3616 54.3015L18.3721 52.9741C18.3793 52.0715 18.109 50.6539 17.4805 49.1267C16.8545 47.6055 15.8888 46.0146 14.5386 44.745C14.4995 44.7082 14.4672 44.667 14.4418 44.6228C9.19621 39.3033 8.32261 31.3187 11.7857 25.1126C13.0465 22.1846 15.3195 19.6553 19.0815 18.2529C23.8028 15.9646 29.3804 15.9906 34.0793 18.3169C38.6784 20.0442 41.1188 23.3865 42.1953 27.0835ZM18.3465 56.1948L18.3237 59.0679L34.9831 59.2026L35.0059 56.3294L18.3465 56.1948ZM18.3087 60.9611L34.968 61.0958L34.9475 63.6776C34.9452 63.9708 34.7057 64.2066 34.4125 64.2042L18.8148 64.0781C18.5216 64.0757 18.2858 63.8361 18.2882 63.543L18.3087 60.9611Z" fill="#28C8FF"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.8954 24.6923C21.0276 24.661 17.8348 27.8308 17.8038 31.7327C17.8008 32.1157 17.4905 32.4237 17.1109 32.4207C16.7312 32.4176 16.4259 32.1046 16.4289 31.7216C16.466 27.0537 20.2793 23.2679 24.9064 23.3053C25.2861 23.3084 25.5914 23.6213 25.5883 24.0043C25.5853 24.3874 25.2751 24.6954 24.8954 24.6923Z" fill="#285FC3" stroke="#285FC3" stroke-width="0.530846" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="1" y1="-1" x2="7.98148" y2="-1" transform="matrix(-0.78912 0.614239 -0.547824 -0.836593 52.6421 15.4258)" stroke="#28C8FF" stroke-width="2" stroke-linecap="round"/>
+                <line x1="1" y1="-1" x2="7.98148" y2="-1" transform="matrix(0.78912 0.614239 0.547824 -0.836593 0.79541 15.4258)" stroke="#28C8FF" stroke-width="2" stroke-linecap="round"/>
+                <line x1="1" y1="-1" x2="8.51715" y2="-1" transform="matrix(-0.460295 0.887766 -0.851303 -0.524674 41.7759 4.43359)" stroke="#28C8FF" stroke-width="2" stroke-linecap="round"/>
+                <line x1="1" y1="-1" x2="8.51715" y2="-1" transform="matrix(0.460295 0.887766 0.851303 -0.524674 12.6448 4.43359)" stroke="#28C8FF" stroke-width="2" stroke-linecap="round"/>
+                <line x1="26.6836" y1="1.5293" x2="26.6836" y2="9.61289" stroke="#28C8FF" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                </span>
+                {% inline_rich_text field="texto_do_item" value="{{ item }}" %}
+            </li>
+          {% endfor %}
+        </ul>
+        <div class="challenge__text">{{ module.texto }}</div>
+      </div>
+    </section>

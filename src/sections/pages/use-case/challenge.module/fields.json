@@ -1,0 +1,49 @@
+[ {
+  "id" : "44195a95-1147-75e9-d0ff-57cd24615e5c",
+  "name" : "intro",
+  "display_width" : null,
+  "label" : "Intro",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "O mapeamento de empresas que utilizam tecnologias Cloud para obter novos clientes pode ser mais fácil com a inteligência de vendas B2B. Você vai descobrir por que esse é um divisor de águas para aumento de faturamento e market share em um mercado variado, extenso e desafiador."
+}, {
+  "id" : "8e56e5e6-516d-ccbf-e898-6417bcd7edee",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Seus desafios ao mapear dados de tecnologia passam por"
+}, {
+  "id" : "8fddce58-97d0-bb37-ad01-b0572275e947",
+  "name" : "texto_do_item",
+  "display_width" : null,
+  "label" : "Texto do item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "type" : "richtext",
+  "default" : [ "<p>Dificuldade em obter informações referentes ao perfil tecnológico, nível de adoção de tecnologia, área de atuação, localização e muitos outros dados das empresas a serem prospectadas.</p>",
+    "<p>Erros e imprecisões nos dados de contato de decisores para fechamento dos negócios fazem com que a prospecção precise ser feita de forma manual.</p>",
+    "<p>Falta de flexibilidade na seleção de parâmetros de busca.</p>"
+   ]
+}, {
+  "id" : "86ae50bf-aa49-2d80-4a24-a2a2e07f6276",
+  "name" : "texto",
+  "display_width" : null,
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Essa é a realidade da sua empresa? Então você precisa saber como uma solução de inteligência de vendas B2B vai trazer muito mais qualidade e precisão para a sua análise."
+} ]
