@@ -17,6 +17,9 @@
 .cases-listing__section {
   padding: 1.25em 1.5em;
 }
+#main-content > .grid-flex {
+  margin: 2rem auto 0 auto;
+}
 
 /* Single */
 /* Responsividade de imagens dentro do post */
@@ -181,6 +184,9 @@
   }
 }
 @media (min-width: 1200px) {
+  #main-content > .grid-flex {
+    margin: 4rem auto 0 auto;
+  }
   .case-post__header__item,
   .case-post__content,
   .case-post .cta-solutions .section-cta__box {

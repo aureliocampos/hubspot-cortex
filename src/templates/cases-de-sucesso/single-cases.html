@@ -123,34 +123,21 @@
 
   {% require_js position="footer" async="true" %}
     <script>
-      function readingRate(textContainerID) {
-        // Validação
-        if (typeof textContainerID !== "string" || textContainerID.length === 0)
-          throw new Error("Parametro 'textContainerID' inválido");
+      const productTag = document.querySelector('.categories__defined[data-js]');
+      const buttonCTA = document.querySelector('.button-cta--solutions');
 
-        let readingRateInSeconds = 0;
-        // Recuperando elemento HTML
-        const textContainer = window.document.getElementById(textContainerID);
-        // Pegando todos os textos
-        const content = textContainer.innerText;
-        // Quantidade de palavras do texto
-        const wordCount = content.split(" ").length;
-        // Processando o tempo de leitura
-        readingRateInSeconds = (wordCount * 60) / 200;
-
-        let minutes = Math.floor(readingRateInSeconds / 60);
-        const container = document.querySelector('.case-post__read-time em');
-
-        container.textContent = `${minutes}min de leitura`;
-
-        if (minutes == 0) {
-          container.textContent = `1min de leitura`;
-          return
+      const getProduct = () => {
+        return productTag.getAttribute('data-js');
+      } 
+      const handleLinkCTA = (product) => {
+        if (product === "inteligencia_de_vendas_b2b") {
+          buttonCTA.setAttribute('href', 'https://www.cortex-intelligence.com/solicitar-apresentacao-inteligencia-de-vendas-b2b')
+        } else {
+          buttonCTA.setAttribute('href', 'https://www.cortex-intelligence.com/solicitar-apresentacao-comunicacao-estrategica-e-reputacao')
         }
-
       }
+      handleLinkCTA(getProduct());
 
-      readingRate('hs_cos_wrapper_post_body')
     </script>
   {% end_require_js %}
 {% endblock body %}

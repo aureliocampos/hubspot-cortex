@@ -176,9 +176,13 @@
   .footer__menu .hs-menu-wrapper>ul[role="menu"] {
     display: flex;
     justify-content: space-between;
+    grid-gap: 0.5rem;
   }
   .footer__menu .hs-menu-item.hs-menu-depth-1.hs-item-has-children>a[role="menuitem"] {
     pointer-events: none;
+  }
+  .footer__menu .hs-menu-depth-1 {
+    flex: 1 1;
   }
   .footer__menu .hs-menu-depth-1>a[role="menuitem"] {
     display: block;

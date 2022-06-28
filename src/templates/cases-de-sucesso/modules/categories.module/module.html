@@ -114,7 +114,7 @@
         {% elif module.produto == "comunicacao_estrategica_e_reputacao" %}
           {% set produto = "Comunicação estratégica e reputação" %}
         {% endif %}
-        <p class="categories__defined">{{ produto }}</p>
+        <p class="categories__defined" data-js="{{module.produto}}">{{ produto }}</p>
       </li>
       <li class="categories__item">
         <h3 class="categories__title">Tamanho da empresa</h3>
