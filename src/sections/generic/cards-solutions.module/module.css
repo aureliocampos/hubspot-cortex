@@ -378,4 +378,7 @@
     line-height: 120%;
     letter-spacing: -0.02em;
   }
+  .main-home__card:last-of-type .button--main-home {
+    margin-top: 74px;
+  }
 }

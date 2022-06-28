@@ -296,6 +296,9 @@
   .button--main-home {
     margin: 1.8125em 0 0;
   }
+  #card-2 .button--main-home {
+    margin: 74px 0 0;
+  }
 
   /* animation */
   .main-home__card-video.active {
