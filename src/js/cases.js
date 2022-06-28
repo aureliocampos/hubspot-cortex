@@ -161,10 +161,25 @@ filterForm.addEventListener("click", (event) => {
       data = handleDataJson(jsonInHTMLScript)
     } else {
       data = handleDataJson(jsonInHTMLScript).filter((item) => {
-        
+
         const verify = sizeCompany.includes(item.sizeCompany) || product.includes(item.product) || challenge.includes(item.challenge) || sector.includes(item.sector);
+
+        console.log(verify);
+
         return verify ? item : false;
         
+        
+        // if ( sizeCompany.includes(item.sizeCompany) && !product.length && !challenge.length) {
+        //   return item
+        // } else if (!sizeCompany.length && product.includes(item.product) && !challenge.length) {
+        //   return item
+        // } else if (!sizeCompany.length && !product.length && challenge.includes(item.challenge)) {
+        //   return item
+        // } else if(product.includes(item.product) && sizeCompany.includes(item.sizeCompany) && challenge.includes(item.challenge)) {
+        //   return item
+        // } else {
+        //   return
+        // }
       })
     }
 

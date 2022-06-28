@@ -120,11 +120,11 @@
 }
 .main-home__card:first-of-type .main-home__card-title span:nth-of-type(2n),
 .main-home__cards-control .main-home__card-title:first-of-type span:nth-of-type(2n) {
-  color: var(--purple_light);
+  color: var(--purple_official);
 }
 .main-home__card:first-of-type .main-home__card-title span:nth-of-type(3n),
 .main-home__cards-control .main-home__card-title:first-of-type span:nth-of-type(3n) {
-  color: var(--purple_official);
+  color: var(--purple_light);
 }
 /* default */
 .main-home__card:first-of-type .button--main-home {
@@ -348,5 +348,8 @@
   .main-home__card-item--title {
     line-height: 120%;
     letter-spacing: -0.02em;
+  }
+  .main-home__card:last-of-type .button--main-home {
+    margin-top: 74px;
   }
 }

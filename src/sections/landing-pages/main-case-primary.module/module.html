@@ -1,5 +1,8 @@
+{% if module.style.herdar_estilo_do_template %}
+	{% set className = "inherited-style"%}
+{% endif %}
 
-<section class="section section__main-case--primary">
+<section class="section section__main-case--primary {{className}}">
   
   <div class="section__container">
     <div class="section__content">

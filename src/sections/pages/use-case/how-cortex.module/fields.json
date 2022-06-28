@@ -36,6 +36,27 @@
     "type" : "text",
     "default" : "Painel analítico com overview tecnológico"
   }, {
+    "id" : "4980c5b4-ed7a-ab1c-4347-f00c09493ee8",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Ícone",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/home_clientes_desktop_solucoes-unicas%20(1).svg",
+      "alt" : "home_clientes_desktop_solucoes-unicas (1)",
+      "loading" : "lazy",
+      "width" : 81,
+      "height" : 80,
+      "max_width" : 81,
+      "max_height" : 80
+    }
+  }, {
     "id" : "273881da-2eab-7e57-3f3a-fed6797c8398",
     "name" : "texto",
     "display_width" : null,
@@ -50,38 +71,28 @@
   "type" : "group",
   "default" : [ {
     "title" : "Painel analítico com overview tecnológico",
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/home_clientes_desktop_solucoes-unicas%20(1).svg",
+      "alt" : "home_clientes_desktop_solucoes-unicas (1)",
+      "loading" : "lazy",
+      "width" : 81,
+      "height" : 80,
+      "max_width" : 81,
+      "max_height" : 80
+    },
     "texto" : "<p>Confira a representação gráfica de todos os dados coletados pela plataforma e personalize a sua análise. Selecione filtros como nível de adoção tecnológica, localização das empresas, principais verticais de atuação, número de funcionários, faturamento e tecnologias em alta.</p>"
-  },{
-    "title" : "Exportação de contatos profissionais B2B",
-    "texto" : "<p>Descubra o contato dos tomadores de decisão nas empresas contratantes de Cloud em todo o país.</p>"
-  },{
-    "title" : "Exportação de dados sobre as empresas",
-    "texto" : "<p>Tenha acesso às informações detalhadas das empresas que utilizam tecnologia Cloud.</p>"
-  },{
-    "title" : "Integração com CRM e fontes de dados internos com API",
-    "texto" : "<p>Integre seus dados e acompanhe o resultado em tempo real, obtenha insights a partir de painéis flexíveis e dispare ações de melhoria. Tudo em um só lugar.</p>"
   } ]
 }, {
-  "id" : "4bb82370-95c0-417a-0e63-bbe5af47e734",
-  "name" : "image_field",
+  "picker" : "video",
+  "id" : "c7c2c2b7-2ac7-f8dc-fe75-d22712c8acce",
+  "name" : "file_field",
   "display_width" : null,
-  "label" : "Imagem",
+  "label" : "Arquivo",
   "required" : false,
   "locked" : false,
-  "responsive" : true,
-  "resizable" : true,
-  "show_loading" : false,
-  "type" : "image",
-  "default" : {
-    "size_type" : "auto",
-    "src" : "https://pages.cortex-intelligence.com/hubfs/Group%202877.png",
-    "alt" : "Group 2877",
-    "loading" : "lazy",
-    "width" : 578,
-    "height" : 363,
-    "max_width" : 578,
-    "max_height" : 363
-  }
+  "type" : "file",
+  "default" : "https://pages.cortex-intelligence.com/hubfs/Tend%C3%AAncias%20de%20m%C3%ADdia%20(573%C2%A0%C3%97%C2%A0363%C2%A0px).mp4"
 }, {
   "id" : "66175291-f702-434a-6c8c-8cce7505c340",
   "name" : "resultados",
@@ -118,21 +129,13 @@
     "allow_new_line" : false,
     "show_emoji_picker" : false,
     "type" : "text",
-    "default" : [ 
-      "Crescimento da base de clientes", 
-      "Maior market share",
-      "Aumento do faturamento" 
-    ]
+    "default" : [ "Crescimento da base de clientes" ]
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
   "type" : "group",
   "default" : {
     "title" : "Resultados que a nossa solução pode te ajudar a conquistar",
-    "item_da_lista" : [ 
-      "Crescimento da base de clientes", 
-      "Maior market share",
-      "Aumento do faturamento" 
-    ]
+    "item_da_lista" : [ "Crescimento da base de clientes" ]
   }
 } ]

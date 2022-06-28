@@ -2,9 +2,8 @@
   padding: 2rem 2rem 4rem 2rem;
 }
 .form-content-sticky .section__content .section__title {
-  font: 350 2em var(--primary-font);
+  font: 350 2em / 120% var(--primary-font);
   color: var(--darkest);
-  line-height: 120%;
 }
 .form-content-sticky .section__content .section__text {
   font: 400 1em var(--secondary-font);
@@ -47,7 +46,7 @@
     position: -o-sticky;
     position: -ms-sticky;
     position: sticky;
-    top: 100px;
+    top: 150px;
   }
   .form-content-sticky .section__form-content-sticky {
     width: 45%;

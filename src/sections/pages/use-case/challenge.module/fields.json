@@ -20,23 +20,65 @@
   "type" : "text",
   "default" : "Seus desafios ao mapear dados de tecnologia passam por"
 }, {
-  "id" : "8fddce58-97d0-bb37-ad01-b0572275e947",
-  "name" : "texto_do_item",
+  "id" : "e2ad673b-ddfa-0d53-c02f-a67e2f9aa619",
+  "name" : "item",
   "display_width" : null,
-  "label" : "Texto do item",
+  "label" : "Item",
   "required" : false,
   "locked" : false,
   "occurrence" : {
     "min" : 1,
     "max" : null,
-    "sorting_label_field" : null,
+    "sorting_label_field" : "8fddce58-97d0-bb37-ad01-b0572275e947",
     "default" : null
   },
-  "type" : "richtext",
-  "default" : [ "<p>Dificuldade em obter informações referentes ao perfil tecnológico, nível de adoção de tecnologia, área de atuação, localização e muitos outros dados das empresas a serem prospectadas.</p>",
-    "<p>Erros e imprecisões nos dados de contato de decisores para fechamento dos negócios fazem com que a prospecção precise ser feita de forma manual.</p>",
-    "<p>Falta de flexibilidade na seleção de parâmetros de busca.</p>"
-   ]
+  "children" : [ {
+    "id" : "4f2b8f1b-08f9-e281-bc29-c6a7f1abe623",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Ícone",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Group%202771.png",
+      "alt" : "Group 2771",
+      "loading" : "lazy",
+      "width" : 54,
+      "height" : 65,
+      "max_width" : 54,
+      "max_height" : 65
+    }
+  }, {
+    "id" : "8fddce58-97d0-bb37-ad01-b0572275e947",
+    "name" : "texto_do_item",
+    "display_width" : null,
+    "label" : "Texto do item",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Dificuldade em obter informações referentes ao perfil tecnológico, nível de adoção de tecnologia, área de atuação, localização e muitos outros dados das empresas a serem prospectadas.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Group%202771.png",
+      "alt" : "Group 2771",
+      "loading" : "lazy",
+      "width" : 54,
+      "height" : 65,
+      "max_width" : 54,
+      "max_height" : 65
+    },
+    "texto_do_item" : "<p>Dificuldade em obter informações referentes ao perfil tecnológico, nível de adoção de tecnologia, área de atuação, localização e muitos outros dados das empresas a serem prospectadas.</p>"
+  } ]
 }, {
   "id" : "86ae50bf-aa49-2d80-4a24-a2a2e07f6276",
   "name" : "texto",

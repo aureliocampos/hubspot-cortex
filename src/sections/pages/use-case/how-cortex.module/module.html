@@ -5,16 +5,11 @@
       {% for item in module.item %}
         <li class="what-cortex__item">
           <div class="what-cortex__item__header">
-            <span><svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M64.7188 32.1133C64.7188 49.7864 50.3919 64.1133 32.7188 64.1133C15.0456 64.1133 0.71875 49.7864 0.71875 32.1133C0.71875 14.4402 15.0456 0.113281 32.7188 0.113281C50.3919 0.113281 64.7188 14.4402 64.7188 32.1133Z" fill="#DCF0FF"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M42.4174 25.1759C45.1611 29.5365 44.5999 35.3035 40.7605 39.0792C40.0337 39.8842 39.4919 40.8511 39.1215 41.7882C38.706 42.8394 38.5217 43.8136 38.5168 44.4269L38.5076 45.5804L26.8947 45.4866L26.9019 44.5884C26.9065 44.0064 26.7305 43.0704 26.3116 42.0525C25.8952 41.0407 25.2544 39.9867 24.3627 39.1482C24.3298 39.1172 24.3016 39.0831 24.2784 39.0466C20.1471 34.8424 19.9809 28.2262 23.7431 23.8292C24.2235 23.2137 24.8034 22.6531 25.4972 22.1691C29.5858 19.038 35.3056 18.9908 39.4433 22.0014C40.7892 22.8432 41.7536 23.944 42.4174 25.1759ZM26.8845 46.7672L26.8691 48.7106L38.482 48.8045L38.4975 46.8611L26.8845 46.7672ZM26.8589 49.9913L38.4719 50.0852L38.458 51.8317C38.4557 52.1249 38.2161 52.3606 37.9229 52.3583L27.3717 52.273C27.0785 52.2706 26.8427 52.031 26.8451 51.7379L26.8589 49.9913Z" fill="#285FC3"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M31.4863 25.4589C28.8699 25.4377 26.7101 27.5819 26.6891 30.2214C26.6871 30.4805 26.4772 30.6889 26.2204 30.6868C25.9636 30.6847 25.757 30.473 25.7591 30.2139C25.7842 27.0562 28.3637 24.4953 31.4938 24.5206C31.7506 24.5227 31.9571 24.7344 31.9551 24.9935C31.953 25.2526 31.7432 25.4609 31.4863 25.4589Z" fill="#DCF0FF" stroke="#DCF0FF" stroke-width="0.530846" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <line x1="0.796269" y1="-0.796269" x2="5.27937" y2="-0.796269" transform="matrix(-0.78912 0.614239 -0.547824 -0.836593 50.256 19.1904)" stroke="#285FC3" stroke-width="1.59254" stroke-linecap="round"/>
-              <line x1="0.796269" y1="-0.796269" x2="5.27937" y2="-0.796269" transform="matrix(0.78912 0.614239 0.547824 -0.836593 15.1836 19.1904)" stroke="#285FC3" stroke-width="1.59254" stroke-linecap="round"/>
-              <line x1="0.796269" y1="-0.796269" x2="5.64173" y2="-0.796269" transform="matrix(-0.460295 0.887766 -0.851303 -0.524674 42.9053 11.7549)" stroke="#285FC3" stroke-width="1.59254" stroke-linecap="round"/>
-              <line x1="0.796269" y1="-0.796269" x2="5.64173" y2="-0.796269" transform="matrix(0.460295 0.887766 0.851303 -0.524674 23.1992 11.7549)" stroke="#285FC3" stroke-width="1.59254" stroke-linecap="round"/>
-              <line x1="32.8158" y1="9.90955" x2="32.8158" y2="15.1382" stroke="#285FC3" stroke-width="1.59254" stroke-linecap="round"/>
-              </svg>
+            <span>
+              {% if item.icon.src %}
+                 {% set loadingAttr = item.icon.loading != 'disabled' ? 'loading="{{ item.icon.loading }}"' : '' %}
+                <img src="{{ item.icon.src }}" alt="{{ item.icon.alt }}" {{ loadingAttr }}>
+              {% endif %}
               </span>
               <h3>{{ item.title }}</h3>
           </div>
@@ -24,19 +19,20 @@
     </ul>
   </div>
   <div class="results">
-    {% if module.image_field.src %}
-    {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
-     <figure class="what-cortex__figure">
-        <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }}>
-     </figure>
-    {% endif %}
-    <div class="what-cortex__results">
-      <h2>{{ module.resultados.title }}</h2>
-      <ul class="what-cortex__results__list">
-        {% for item in module.resultados.item_da_lista %}
-        <li>→  {{ item }}</li>
-        {% endfor %}
-      </ul>
+    <div class="container">
+      <div class="video">
+        <video loop autoplay muted>
+          <source src="{{ module.file_field }}" type="video/mp4"/>
+        </video>
+      </div>
+      <div class="what-cortex__results">
+        <h2>{{ module.resultados.title }}</h2>
+        <ul class="what-cortex__results__list">
+          {% for item in module.resultados.item_da_lista %}
+          <li>→  {{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
   </div>
 </section>

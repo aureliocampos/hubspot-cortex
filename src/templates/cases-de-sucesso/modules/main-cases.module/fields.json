@@ -28,7 +28,7 @@
     "default" : {
       "background_position" : "MIDDLE_CENTER",
       "background_size" : "cover",
-      "src" : "https://pages.cortex-intelligence.com/hubfs/Destaque%20Blog.png"
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Destaque%20Cases%20de%20Sucesso.png"
     }
   } ],
   "tab" : "STYLE",
@@ -38,7 +38,7 @@
     "backgroundimage_field" : {
       "background_position" : "MIDDLE_CENTER",
       "background_size" : "cover",
-      "src" : "https://pages.cortex-intelligence.com/hubfs/Destaque%20Blog.png"
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Destaque%20Cases%20de%20Sucesso.png"
     }
   }
 }, {

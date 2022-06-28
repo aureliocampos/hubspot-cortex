@@ -109,20 +109,27 @@
       "background_size" : "cover"
     }
   }, {
-    "id" : "fce985bc-496f-da7a-1974-3870319d1f02",
-    "name" : "choice_field",
+    "id" : "4f859f9c-867b-0464-dd66-4ced5a64331f",
+    "name" : "herdar_estilo_do_template",
     "display_width" : null,
-    "label" : "Escolha",
+    "label" : "Herdar Estilo do template",
     "required" : false,
     "locked" : false,
-    "display" : "select",
-    "choices" : [ [ "valor 1", "Rótulo 1" ], [ "valor 2", "Rótulo 2" ] ],
-    "type" : "choice"
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
   } ],
   "tab" : "STYLE",
   "expanded" : false,
   "type" : "group",
-  "default" : { }
+  "default" : {
+    "backgroundimage_field" : {
+      "src" : "",
+      "background_position" : "MIDDLE_CENTER",
+      "background_size" : "cover"
+    },
+    "herdar_estilo_do_template" : false
+  }
 }, {
   "id" : "fad2931b-b3c4-2b96-be4b-3691d8e5cb6e",
   "name" : "image_field",

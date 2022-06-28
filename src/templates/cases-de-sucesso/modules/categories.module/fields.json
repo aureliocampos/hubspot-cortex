@@ -45,6 +45,6 @@
   "required" : true,
   "locked" : false,
   "display" : "select",
-  "choices" : [ [ "small_company", "Pequena" ], [ "media_company", "Média" ], [ "big_company", "Grande" ]],
+  "choices" : [ [ "small_company", "Pequena" ], [ "media_company", "Média" ], [ "big_company", "Grande" ] ],
   "type" : "choice"
 } ]

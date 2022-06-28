@@ -55,6 +55,10 @@
 .results {
   background-color: var(--lightest);
 }
+.results .container .video video {
+  position: relative;
+  width: 100%;
+}
 @media (min-width: 768px) {
   .what-cortex__list {
     display: grid;
@@ -70,12 +74,12 @@
   .what-cortex__item__header > h3 {
     width: auto;
   }
-  .results {
-    display: flex;
-    justify-content: space-between;
-  }
   .what-cortex__figure {
     padding: 2em;
+  }
+  .results .container {
+    width: 585px;
+    margin: 2.5em auto;
   }
 }
 @media (min-width: 1024px) {
@@ -86,6 +90,17 @@
     font-size: 1.1312em;
     margin: 0.5em 0;
   }
+  .results .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
+  .results .container .video,
+  .what-cortex__results {
+    width: 55%;
+  }
+
 }
 @media (min-width: 1200px) {
 
@@ -122,5 +137,31 @@
   }
   .what-cortex__results__list {
     width: 364px;
+  }
+  .results {
+    position: relative;
+    background: var(--darkest);
+  }
+  .results:before {
+    content: '';
+    width: 53%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--lightest);
+  } 
+  .results .container {
+    max-width: 1114px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .results .container .video {
+    padding: 4em 4.75em 4em 0;
+  }
+  .results .container .video video {
+    width: auto;
   }
 }
