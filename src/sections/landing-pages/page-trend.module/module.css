@@ -327,4 +327,18 @@
     margin: 5em auto 7em;
     gap: 6em 8.5em;
   }
+  
+  .secton__map-trend {
+    padding-bottom: 0;
+  }
+}
+
+
+/* Configra outras seções */
+.rel-resources__title {
+  max-width: 761px;
+  margin: 0 auto;
+}
+.rel-button--container {
+  display: none !important;
 }

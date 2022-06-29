@@ -1,0 +1,77 @@
+[ {
+  "id" : "747a37d3-5f93-2f31-57e0-7c2cbb089dd8",
+  "name" : "main",
+  "display_width" : null,
+  "label" : "Main",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "3e5a5de3-c356-df78-1165-5fb64d29fef5",
+    "name" : "subtitle_1",
+    "display_width" : null,
+    "label" : "Sobretítulo",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "conheça a cortex"
+  }, {
+    "id" : "912cf32d-46dd-6342-107b-7b8167d8acd5",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Título",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Inteligência que simplifica o crescimento"
+  }, {
+    "id" : "6ee413ec-f8cd-f0f7-dbae-5ccb8d14c5a7",
+    "name" : "texto",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>A Cortex é a empresa de tecnologia líder em inteligência de Comunicação, Mkt e Vendas de ponta a ponta para impulsionar o crescimento do negócio.</p>"
+  }, {
+    "id" : "fad2931b-b3c4-2b96-be4b-3691d8e5cb6e",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Imagem",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Group%202744.png",
+      "alt" : "Group 2744",
+      "width" : 635,
+      "height" : 420,
+      "max_width" : 635,
+      "max_height" : 420
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "subtitle_1" : "conheça a cortex",
+    "title" : "Inteligência que simplifica o crescimento",
+    "texto" : "<p>A Cortex é a empresa de tecnologia líder em inteligência de Comunicação, Mkt e Vendas de ponta a ponta para impulsionar o crescimento do negócio.</p>",
+    "image_field" : {
+      "src" : "https://pages.cortex-intelligence.com/hubfs/Group%202744.png",
+      "alt" : "Group 2744",
+      "width" : 635,
+      "height" : 420,
+      "max_width" : 635,
+      "max_height" : 420
+    }
+  }
+} ]
