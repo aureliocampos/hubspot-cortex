@@ -1,0 +1,330 @@
+ /* Buttons */
+.button--brand-invert {
+  display: flex;
+  align-items: center;
+  grid-gap: 8px;
+  font-size: 0.875em;
+  line-height: initial;
+  margin: 0 auto;
+  background-color: var(--brand_lightest);
+  color: var(--brand_official);
+}
+.icon-input-seta:before {
+  font-size: 0.75rem;
+  color: var(--brand_spotlight);
+  margin-top: 2px;
+}
+.button--brand-invert:hover {
+  background-color: var(--brand_official);
+  color: var(--brand_lightest);
+}
+
+/* Main */
+.main__container {
+  padding: 2em 1.5em;
+}
+.main__content .tag {
+  font: 400 80% / 120% var(--primary-font);
+  color: var(--brand_official);
+  text-transform: uppercase;
+}
+.main__content .title {
+  font: 700 2em / 120% var(--primary-font);
+  color: var(--darkest);
+  letter-spacing: -0.035em;
+  margin: 1rem 0;
+}
+.main__content .text {
+  font: 400 1em / 148% var(--primary-font);
+  color: var(--darkest);
+  margin-bottom: 1.5em;
+}
+.main__figure {
+  margin-top: 2em;
+}
+.main__figure > img {
+  width: 100%;
+  height: auto;
+}
+
+/* Novas tecnologias - section 2 */
+.section__logos {
+  padding: 2em 1.5em;
+}
+.section__logos .section__title {
+  font: 400 1em / 120% var(--primary-font);
+  color: var(--darkest);
+  text-align: center;
+}
+.logos__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  grid-gap: 1em;
+  margin-top: 1.5em;
+}
+
+/* Desafios - section 3 */
+.section__challenge {
+  padding: 2em 1.5em;
+  background-color: var(--red_lightest);
+}
+.section__challenge .section__title {
+  font: bold 1.25em / 108% var(--primary-font);
+  color: #560618;
+  text-align: center;
+  letter-spacing: -0.035em;
+}
+.section__challenge .section__title mark {
+  color: #FF3C82;
+  background: none;
+}
+.challenge__item {
+  margin: 1.5em 0;
+}
+.challenge__item h2 {
+  font: bold 1.5em / 108% var(--primary-font);
+  color: var(--red_official);
+  letter-spacing: -0.035em;
+  margin-bottom: 1rem;
+}
+.challenge__item ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+.challenge__item li {
+  font: 400 1em / 148% var(--primary-font);
+  letter-spacing: -0.01em;
+  color: #560618;
+  margin: 0.25rem 0;
+}
+
+/* Mapeamento - Section 4 */ 
+.secton__map-trend {
+  padding: 2em 1.5em;
+}
+.secton__map-trend .section__title {
+  font: 400 1.25em / 108% var(--primary-font);
+  color: var(--darkest);
+  text-align: center;
+}
+.newtech {
+  margin: 3em 0;
+}
+.newtech__highlight .image img {
+  width: 100%;
+  height: auto;
+}
+.newtech__highlight .image {
+  margin-bottom: 1.5rem;
+}
+.newtech__highlight .content .tag {
+  font: 400 80% / 120% var(--primary-font);
+  color: var(--brand_official);
+  text-transform: uppercase;
+}
+.newtech__highlight .content .title {
+  font: 900 1.5em / 100% var(--primary-font);
+  color: var(--darkest);
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+}
+.newtech__highlight .content .text {
+  font: 400 1em / 148% var(--secondary-font);
+  color: var(--dark);
+  letter-spacing: -0.01em;
+}
+.newtech__props {
+  margin-top: 3em;
+}
+.newtech__props .title {
+  font: 700 1.125em / 148% var(--secondary-font);
+  color: var(--darkest);
+  text-align: center;
+  letter-spacing: -0.035em;
+}
+.newtech__grid {
+  margin-top: 2em;
+}
+.newtech__item {
+  margin: 1.5em 0;
+}
+.newtech__item .text {
+  font: 400 1em / 148% var(--secondary-font);
+  color: var(--darkest);
+  letter-spacing: -0.01em;
+}
+
+@media (min-width: 768px ) {
+
+  /* Buttons */
+  .button--brand-invert {
+    margin: 2em 0;
+  }
+  /* Main */
+  .main__container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+  .main__container .main__content,
+  .main__container .main__figure {
+    width: 50%;
+  }
+
+  /* Section 2 */
+  .section__logos {
+    padding: 2em 1.5em 4em;
+  } 
+
+  /* Section 3 */
+  .section__challenge {
+    padding: 3.5em 0;
+  }
+  .section__challenge .section__title {
+    max-width: 536px;
+    font-size: 1.5em;
+    margin: 0 auto;
+  }
+  .challenges__list {
+    max-width: 680px;
+    margin: 3em auto 0 auto;
+  }
+  .challenge__item {
+    display: flex;
+    justify-content: space-between;
+  }
+  .challenge__item h2 {
+    width: 35%;
+    font-size: 2em;
+  }
+  .challenge__item ul {
+    width: 60%;
+  }
+
+  /* Section 4 */
+  .secton__map-trend {
+    padding: 4em 0;
+  }
+  .secton__map-trend .section__title {
+    max-width: 714px;
+    font-size: 1.5em;
+    margin: 0 auto;
+  }
+  .newtech__highlight {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .newtech__highlight .image,
+  .newtech__highlight .content {
+    width: 50%;
+  }
+  .newtech__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    max-width: 700px;
+    margin: 2em auto;
+  }
+  .newtech__item {
+    margin: 0;
+  }
+  .secton__map-trend .button--brand-invert {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 4em 0;
+  }
+  .main__content .tag {
+    font-size: 1em;
+  }
+  .main__content .title {
+    font-size: 44px;
+  }
+  .main__content .text {
+    font-size: 1.125em;
+  }
+  .main__figure {
+    margin: 0;
+  }
+  .main__figure>img {
+    width: initial;
+    height: initial;
+  }
+  .button--brand-invert {
+    font-weight: 700;
+  }
+
+  /* Section 2 */
+  .section__logos {
+    padding-top: 18px;
+  }
+  .logos__list {
+    max-width: 1145px;
+    margin: 35px auto 18px;
+    justify-content: space-between;
+  }
+
+  /* Section 3*/
+  .section__challenge {
+    padding: 5.5em 0 3.5em;
+  }
+  .section__challenge .section__title {
+    font-size: 1.5em;
+  }
+  .challenges__list {
+    max-width: 1087px;
+    margin-top: 5.5em;
+  }
+  .challenge__item {
+    margin: 4em 0;
+  }
+  .challenge__item h2 {
+    width: 374px;
+    font-size: 2.75em;
+  }
+  .challenge__item ul {
+    width: 687px;
+  }
+  .challenge__item li {
+    font-size: 1.125em;
+  }
+
+  /* Section 4 */
+  .newtech__highlight {
+    max-width: 1058px;
+    gap: 8.5em;
+    margin: 7em auto 9.375em;
+  }
+  .newtech__highlight .content .tag {
+    font-size: 1em;
+  }
+  .newtech__highlight .content .title {
+    max-width: 342px;
+    font-size: 2.75em;
+  }
+  .newtech__highlight .content .text {
+    font-size: 1.125em;
+  }
+  .newtech__props .title {
+    font-size: 1.5em;
+  }
+  .newtech__item .text {
+    font-size: 1.125em;
+  }
+  .newtech__grid {
+    max-width: 1085px;
+    margin: 5em auto 7em;
+    gap: 6em 8.5em;
+  }
+}

@@ -1,0 +1,101 @@
+<section class="main__container">
+  <div class="main__content">
+    <small class="tag">{{ module.main.subtitle_1 }}</small>
+    <h1 class="title">{{ module.main.title }}</h1>
+    <div class="text">{{ module.main.texto }}</div>
+    {% set href = module.main.button.link_field.url.href %}
+      <a href="{{ href }}" class="button button--brand-invert"
+        {% if module.main.button.link_field.open_in_new_tab %}target="_blank"{% endif %}
+        {% if module.main.button.link_field.rel %}rel="{{ module.main.button.link_field.rel }}"{% endif %}
+        >
+        {{ module.main.button.texto_do_link }}
+        <span class="icon-input-seta"></span>
+      </a>
+  </div>
+  {% if module.main.image_field.src %}
+     {% set loadingAttr = module.main.image_field.loading != 'disabled' ? 'loading="{{ module.main.image_field.loading }}"' : '' %}
+    <figure class="main__figure">
+      <img src="{{ module.main.image_field.src }}" alt="{{ module.main.image_field.alt }}" {{ loadingAttr }} width="537" height="418">
+    </figure>
+  {% endif %}
+</section>
+<section class="section section__logos">
+  <div class="section__container">
+    <h2 class="section__title">{{ module.section_2.title }}</h2>
+    <ul class="logos__list">
+      {% for item in module.section_2.image_logo %}
+        {% if item.src %}
+           {% set loadingAttr = item.loading != 'disabled' ? 'loading="{{ item.loading }}"' : '' %}
+             <li>
+              <figure class="logo">
+                <img src="{{ item.src }}" alt="{{ item.alt }}" {{ loadingAttr }}>
+              </figure>
+            </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+<section class="section section__challenge">
+  <div class="section__container">
+    <h2 class="section__title">{{ module.section_3.title }}</h2>
+      <div class="challenges__list">
+        {% for item in module.section_3.desafios %}
+           <article class="challenge__item">
+            <h2>{{ item.title }}</h2>
+            <ul>
+              {% for item2 in item.item %}
+                <li>{{ item2 }}</li>
+              {% endfor %}
+            </ul>
+          </article>
+        {% endfor %}
+      </div>
+  </div>
+</section>
+<section class="section secton__map-trend">
+  <div class="section__container">
+    <h2 class="section__title">{{ module.section_4.title }}</h2>
+
+    {% for item in module.section_4.nova_tecnologia %}
+        <div class="newtech">
+          <div class="newtech__highlight">
+            {% if item.image_field_1.src %}
+               {% set loadingAttr = item.image_field_1.loading != 'disabled' ? 'loading="{{ item.image_field_1.loading }}"' : '' %}
+              <figure class="image">
+                <img src="{{ item.image_field_1.src }}" alt="{{ item.image_field_1.alt }}" {{ loadingAttr }}>
+              </figure>
+            {% endif %}
+            <div class="content">
+              <small class="tag">{{ item.tag }}</small>
+              <h2 class="title">{{ item.nome }}</h2>
+              <div class="text">{{ item.texto }}</div>
+            </div>
+          </div>
+          <div class="newtech__props">
+            <h2 class="title">{{ item.grid_title}}</h2>
+            <ul class="newtech__grid">
+           {% for item2 in item.item_de_mapeamento %}
+            <li class="newtech__item">
+              <div class="text">
+                {{ item2 }}
+              </div>
+            </li>
+          {% endfor %}
+          </ul>
+          </div>
+          {% set href = item.cta.link_field.url.href %}
+          {% if item.cta.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}" class="button button--brand-invert"
+             {% if item.cta.link_field.open_in_new_tab %}target="_blank"{% endif %}
+             {% if item.cta.link_field.rel %}rel="{{ item.cta.link_field.rel }}"{% endif %}
+             >
+            {{ item.cta.texto_do_link }}
+            <span class="icon-input-seta"></span>
+          </a>
+        </div>
+    {% endfor %}
+  </div>
+</section>

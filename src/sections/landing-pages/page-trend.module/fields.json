@@ -1,0 +1,590 @@
+[ {
+  "id" : "747a37d3-5f93-2f31-57e0-7c2cbb089dd8",
+  "name" : "main",
+  "display_width" : null,
+  "label" : "Main",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "3e5a5de3-c356-df78-1165-5fb64d29fef5",
+    "name" : "subtitle_1",
+    "display_width" : null,
+    "label" : "Sobretítulo",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "tecnologia inédita"
+  }, {
+    "id" : "912cf32d-46dd-6342-107b-7b8167d8acd5",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Título",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Tendências de Mídia e Bolhas de Informação"
+  }, {
+    "id" : "6ee413ec-f8cd-f0f7-dbae-5ccb8d14c5a7",
+    "name" : "texto",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Agora você pode saber como sua marca está posicionada nas bolhas de influência e mapear a relevância de temas sensíveis para o negócio.</p>"
+  }, {
+    "id" : "51b8d414-dcbc-a671-724c-30eb870b2899",
+    "name" : "button",
+    "display_width" : null,
+    "label" : "CTA",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "d1fa94c8-9064-89b6-5dc1-3c3cacce7ae6",
+      "name" : "link_field",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "#section-form",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "b555ab96-c7f4-aaaa-cc63-c981b5ae2ff1",
+      "name" : "texto_do_link",
+      "display_width" : null,
+      "label" : "Texto do link",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Quero enriquecer a minha base!"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "link_field" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "#section-form",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "texto_do_link" : "Quero enriquecer a minha base!"
+    }
+  }, {
+    "id" : "fad2931b-b3c4-2b96-be4b-3691d8e5cb6e",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Imagem",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/image%2039-1.jpg",
+      "alt" : "image 39-1",
+      "loading" : "disabled",
+      "width" : 537,
+      "height" : 419,
+      "max_width" : 537,
+      "max_height" : 419
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "subtitle_1" : "tecnologia inédita",
+    "title" : "Tendências de Mídia e Bolhas de Informação",
+    "texto" : "<p>Agora você pode saber como sua marca está posicionada nas bolhas de influência e mapear a relevância de temas sensíveis para o negócio.</p>",
+    "button" : {
+      "link_field" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "#section-form",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "texto_do_link" : "Quero enriquecer a minha base!"
+    },
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/image%2039-1.jpg",
+      "alt" : "image 39-1",
+      "loading" : "disabled",
+      "width" : 537,
+      "height" : 419,
+      "max_width" : 537,
+      "max_height" : 419
+    }
+  }
+}, {
+  "id" : "ca4a363e-92a7-8b00-d944-e6ffdce52dca",
+  "name" : "section_2",
+  "display_width" : null,
+  "label" : "Seção 2",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "70d66cb1-089c-2d4e-eb6c-3a1ebbb26c6c",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Título",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Nossa tecnologia nas mídias"
+  }, {
+    "id" : "26bfe245-1b41-a3d3-d296-db5db50f10ae",
+    "name" : "image_logo",
+    "display_width" : null,
+    "label" : "Logo",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 5
+    },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : [ {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/image%2042.jpg",
+      "alt" : "image 42",
+      "loading" : "lazy",
+      "width" : 97,
+      "height" : 75,
+      "max_width" : 97,
+      "max_height" : 75
+    }, {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/image%2042.jpg",
+      "alt" : "image 42",
+      "loading" : "lazy",
+      "width" : 97,
+      "height" : 75,
+      "max_width" : 97,
+      "max_height" : 75
+    }, {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/image%2042.jpg",
+      "alt" : "image 42",
+      "loading" : "lazy",
+      "width" : 97,
+      "height" : 75,
+      "max_width" : 97,
+      "max_height" : 75
+    }, {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/image%2042.jpg",
+      "alt" : "image 42",
+      "loading" : "lazy",
+      "width" : 97,
+      "height" : 75,
+      "max_width" : 97,
+      "max_height" : 75
+    }, {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/image%2042.jpg",
+      "alt" : "image 42",
+      "loading" : "lazy",
+      "width" : 97,
+      "height" : 75,
+      "max_width" : 97,
+      "max_height" : 75
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : "Nossa tecnologia nas mídias",
+    "image_logo" : [ {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/image%2042.jpg",
+      "alt" : "image 42",
+      "loading" : "lazy",
+      "width" : 97,
+      "height" : 75,
+      "max_width" : 97,
+      "max_height" : 75
+    }, {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/image%2042.jpg",
+      "alt" : "image 42",
+      "loading" : "lazy",
+      "width" : 97,
+      "height" : 75,
+      "max_width" : 97,
+      "max_height" : 75
+    }, {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/image%2042.jpg",
+      "alt" : "image 42",
+      "loading" : "lazy",
+      "width" : 97,
+      "height" : 75,
+      "max_width" : 97,
+      "max_height" : 75
+    }, {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/image%2042.jpg",
+      "alt" : "image 42",
+      "loading" : "lazy",
+      "width" : 97,
+      "height" : 75,
+      "max_width" : 97,
+      "max_height" : 75
+    }, {
+      "size_type" : "auto",
+      "src" : "https://pages.cortex-intelligence.com/hubfs/image%2042.jpg",
+      "alt" : "image 42",
+      "loading" : "lazy",
+      "width" : 97,
+      "height" : 75,
+      "max_width" : 97,
+      "max_height" : 75
+    } ]
+  }
+}, {
+  "id" : "7db82b51-fd24-cf9c-1a44-7d1f34746dbb",
+  "name" : "section_3",
+  "display_width" : null,
+  "label" : "Section 3",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "fbf7bc04-51cb-2727-951c-822763cd8269",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Título",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "Esses são os <mark>principais desafios</mark> ao se lidar com o ecossistema de mídia digital"
+  }, {
+    "id" : "eab28ff3-ce6e-d4b9-a565-fafac242bacc",
+    "name" : "desafios",
+    "display_width" : null,
+    "label" : "Desafios",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : "f962656c-375e-d339-1a03-ab1152c3a2ec",
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "f962656c-375e-d339-1a03-ab1152c3a2ec",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "Título",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Pulverização da informação"
+    }, {
+      "id" : "b3ffb315-a749-f238-0d77-503140962098",
+      "name" : "item",
+      "display_width" : null,
+      "label" : "Item",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : null,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : 3
+      },
+      "type" : "richtext",
+      "default" : [ "Fontes de dados diversas que <strong>não possibilitam uma visualização integrada.</strong>", "Fontes de dados diversas que <strong>não possibilitam uma visualização integrada.</strong>", "Fontes de dados diversas que <strong>não possibilitam uma visualização integrada.</strong>" ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "title" : "Pulverização da informação",
+      "item" : [ "Fontes de dados diversas que <strong>não possibilitam uma visualização integrada.</strong>", "Fontes de dados diversas que <strong>não possibilitam uma visualização integrada.</strong>", "Fontes de dados diversas que <strong>não possibilitam uma visualização integrada.</strong>" ]
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : "Esses são os <mark>principais desafios</mark> ao se lidar com o ecossistema de mídia digital",
+    "desafios" : {
+      "title" : "Pulverização da informação",
+      "item" : [ "Fontes de dados diversas que <strong>não possibilitam uma visualização integrada.</strong>", "Fontes de dados diversas que <strong>não possibilitam uma visualização integrada.</strong>", "Fontes de dados diversas que <strong>não possibilitam uma visualização integrada.</strong>" ]
+    }
+  }
+}, {
+  "id" : "04e72722-fff4-3dfe-fc3d-bd59e66311fb",
+  "name" : "section_4",
+  "display_width" : null,
+  "label" : "Section 4",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d938ac11-5ae7-13f4-85c5-b49f3deb06dc",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Título",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "A Cortex desenvolveu <strong>a solução para mapear assuntos estratégicos para a sua marca,</strong> assim como o <strong>posicionamento dos stakeholders</strong> em cada um deles"
+  }, {
+    "id" : "294aa0ca-51c9-0d50-5890-61f7bab29343",
+    "name" : "nova_tecnologia",
+    "display_width" : null,
+    "label" : "Nova Tecnologia",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "9662164b-fa98-ca5c-5f39-d7ef214ee1a0",
+      "name" : "image_field_1",
+      "display_width" : null,
+      "label" : "Imagem",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://pages.cortex-intelligence.com/hubfs/Tend%C3%AAncias%20de%20m%C3%ADdia%201.png",
+        "alt" : "Tendências de mídia 1",
+        "loading" : "lazy",
+        "width" : 445,
+        "height" : 265,
+        "max_width" : 445,
+        "max_height" : 265
+      }
+    }, {
+      "id" : "427dc21e-d769-1d38-ba39-ba4269622b37",
+      "name" : "tag",
+      "display_width" : null,
+      "label" : "Tag",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "tecnologia inédita"
+    }, {
+      "id" : "ec7ea80d-937c-6148-c6e8-0f401a7ab073",
+      "name" : "nome",
+      "display_width" : null,
+      "label" : "´Nome",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Tendências na mídia"
+    }, {
+      "id" : "77d50a6a-1579-fa58-9c7e-639e15250ba6",
+      "name" : "texto",
+      "display_width" : null,
+      "label" : "Texto",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "zzz"
+    }, {
+      "id" : "868f72a3-c435-888e-2be3-3a9268f3c71c",
+      "name" : "grid_title",
+      "display_width" : null,
+      "label" : "´Título do Grid",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Mapeando as tendências na mídia você poderá"
+    }, {
+      "id" : "d7aa3686-95a5-faa3-d975-3c354a57c314",
+      "name" : "item_de_mapeamento",
+      "display_width" : null,
+      "label" : "Item de Mapeamento",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : null,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : 6
+      },
+      "type" : "richtext",
+      "default" : [ "<p><strong>Monitore em tempo real</strong> a intensidade das pautas nas redes sociais conforme a tendência do debate no dia.</p>", "<p><strong>Monitore em tempo real</strong> a intensidade das pautas nas redes sociais conforme a tendência do debate no dia.</p>", "<p><strong>Monitore em tempo real</strong> a intensidade das pautas nas redes sociais conforme a tendência do debate no dia.</p>", "<p><strong>Monitore em tempo real</strong> a intensidade das pautas nas redes sociais conforme a tendência do debate no dia.</p>", "<p><strong>Monitore em tempo real</strong> a intensidade das pautas nas redes sociais conforme a tendência do debate no dia.</p>", "<p><strong>Monitore em tempo real</strong> a intensidade das pautas nas redes sociais conforme a tendência do debate no dia.</p>" ]
+    }, {
+      "id" : "3a4afc9e-d9f4-a1ff-3300-210ca2284788",
+      "name" : "cta",
+      "display_width" : null,
+      "label" : "CTA",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "4731b360-a9ff-d61f-51a2-c6c3ad305554",
+        "name" : "link_field",
+        "display_width" : null,
+        "label" : "Link",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "default" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "#section-form",
+            "content_id" : null
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }, {
+        "id" : "e20d8062-173c-6b85-f1d0-8eda55065a78",
+        "name" : "texto_do_link",
+        "display_width" : null,
+        "label" : "Texto do link",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Conheça esse lançamento"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group",
+      "default" : {
+        "link_field" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "#section-form",
+            "content_id" : null
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "texto_do_link" : "Conheça esse lançamento"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "image_field_1" : {
+        "size_type" : "auto",
+        "src" : "https://pages.cortex-intelligence.com/hubfs/Tend%C3%AAncias%20de%20m%C3%ADdia%201.png",
+        "alt" : "Tendências de mídia 1",
+        "loading" : "lazy",
+        "width" : 445,
+        "height" : 265,
+        "max_width" : 445,
+        "max_height" : 265
+      },
+      "tag" : "tecnologia inédita",
+      "nome" : "Tendências na mídia",
+      "texto" : "zzz",
+      "grid_title" : "Mapeando as tendências na mídia você poderá",
+      "item_de_mapeamento" : [ "<p><strong>Monitore em tempo real</strong> a intensidade das pautas nas redes sociais conforme a tendência do debate no dia.</p>", "<p><strong>Monitore em tempo real</strong> a intensidade das pautas nas redes sociais conforme a tendência do debate no dia.</p>", "<p><strong>Monitore em tempo real</strong> a intensidade das pautas nas redes sociais conforme a tendência do debate no dia.</p>", "<p><strong>Monitore em tempo real</strong> a intensidade das pautas nas redes sociais conforme a tendência do debate no dia.</p>", "<p><strong>Monitore em tempo real</strong> a intensidade das pautas nas redes sociais conforme a tendência do debate no dia.</p>", "<p><strong>Monitore em tempo real</strong> a intensidade das pautas nas redes sociais conforme a tendência do debate no dia.</p>" ],
+      "cta" : {
+        "link_field" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "#section-form",
+            "content_id" : null
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "texto_do_link" : "Conheça esse lançamento"
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : "A Cortex desenvolveu <strong>a solução para mapear assuntos estratégicos para a sua marca,</strong> assim como o <strong>posicionamento dos stakeholders</strong> em cada um deles",
+    "nova_tecnologia" : {
+      "image_field_1" : {
+        "size_type" : "auto",
+        "src" : "https://pages.cortex-intelligence.com/hubfs/Tend%C3%AAncias%20de%20m%C3%ADdia%201.png",
+        "alt" : "Tendências de mídia 1",
+        "loading" : "lazy",
+        "width" : 445,
+        "height" : 265,
+        "max_width" : 445,
+        "max_height" : 265
+      },
+      "tag" : "tecnologia inédita",
+      "nome" : "Tendências na mídia",
+      "texto" : "zzz",
+      "grid_title" : "Mapeando as tendências na mídia você poderá",
+      "item_de_mapeamento" : [ "<p><strong>Monitore em tempo real</strong> a intensidade das pautas nas redes sociais conforme a tendência do debate no dia.</p>", "<p><strong>Monitore em tempo real</strong> a intensidade das pautas nas redes sociais conforme a tendência do debate no dia.</p>", "<p><strong>Monitore em tempo real</strong> a intensidade das pautas nas redes sociais conforme a tendência do debate no dia.</p>", "<p><strong>Monitore em tempo real</strong> a intensidade das pautas nas redes sociais conforme a tendência do debate no dia.</p>", "<p><strong>Monitore em tempo real</strong> a intensidade das pautas nas redes sociais conforme a tendência do debate no dia.</p>", "<p><strong>Monitore em tempo real</strong> a intensidade das pautas nas redes sociais conforme a tendência do debate no dia.</p>" ],
+      "cta" : {
+        "link_field" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "#section-form",
+            "content_id" : null
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "texto_do_link" : "Conheça esse lançamento"
+      }
+    }
+  }
+} ]
