@@ -47,7 +47,14 @@
   height: auto;
 }
 
-/* Novas tecnologias - section 2 */
+/* Novas tecnologias - section 2 
+
+  Desabilitada porque ainda não temos os conteúdos!
+
+*/
+.section__logos {
+  display: none;
+}   
 .section__logos {
   padding: 2em 1.5em;
 }
@@ -240,7 +247,7 @@
 }
 
 @media (min-width: 1200px) {
-  .main__container {
+  section.main__container {
     max-width: 1170px;
     margin: 0 auto;
     padding: 4em 0;
