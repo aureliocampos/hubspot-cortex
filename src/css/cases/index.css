@@ -116,7 +116,7 @@
 /* sharing */
 #sharing-mobile {
   background-color:var(--lightest);
-  margin: 3.5em 0;
+  margin: 0 0 3.5em 0;
 }
 #sharing-mobile .case-post__sharing-container {
   display: flex;

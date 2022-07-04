@@ -1,0 +1,38 @@
+{% if module.escolha_o_produto == "comunicacao_estrategica" %}
+  {% set product = module.comunicacao_estrategica_e_reputacao %}
+{% else %}
+  {% set product = module.inteligencia_de_vendas_b2b %}    
+{% endif %}
+
+<div class="section cortex-product">
+  <section class="section_1">
+    <h2 class="title">{{ product.section_1.title }}</h2>
+    {% if product.section_1.imagem_fluxo_da_plataforma.src %}
+      {% set loadingAttr = product.section_1.imagem_fluxo_da_plataforma.loading != 'disabled' ? 'loading="{{ product.section_1.imagem_fluxo_da_plataforma.loading }}"' : '' %}
+      <figure class="image">
+        <img src="{{ product.section_1.imagem_fluxo_da_plataforma.src }}" alt="{{ product.section_1.imagem_fluxo_da_plataforma.alt }}" {{ loadingAttr }} width="1000" height="358">
+      </figure>
+    {% endif %}
+  </section>
+  <section class="section_2">
+    <div class="container">
+      <h2 class="title">{{ product.section_2.title }}</h2>
+      <div class="text">{{ product.section_2.texto }}</div>
+    </div>
+  </section>
+  <section class="section_3">
+    <div class="container">
+      <h2 class="title">{{ product.section_3.title }}</h2>
+      <ul class="details__list">
+        {% for item in product.section_3.item_de_detalhes %}
+          <li class="details__item">
+            <h3>{{ item.title_description }}</h3>
+            <p>{{ item.description }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+</div>
+
+  

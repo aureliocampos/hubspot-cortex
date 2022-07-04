@@ -1,0 +1,116 @@
+.cortex-product {
+  padding: 4em 0;
+}
+
+.section_1 .title {
+  font: bold 1.5em / 120% var(--primary-font);
+  color: var(--darkest);
+  text-align: center;
+  padding: 0 1.5em;
+}
+.section_1 .image {
+  width: 100%;
+  overflow: scroll;
+  padding-left: 1.5em;
+}
+.section_1 .image > img {
+  width: 900px;
+  overflow: scroll;
+}
+
+.section_2 {
+  padding: 3em 1.5em;
+  background-color: var(--lightest);
+}
+.section_2 .title {
+  font: bold 1.5em / 120% var(--secondary-font);
+  color: var(--brand_official);
+  text-align: center;
+}
+.section_2 .text {
+  font: 400 1em / 148% var(--secondary-font);
+  color: var(--darkest);
+} 
+.section_2 .text p {
+  margin: 1em 0;
+}
+
+.section_3 {
+  padding: 3em 1.5em;
+}
+
+.section_3 .title {
+  font: bold 2em / 148% var(--secondary-font);
+  color: var(--darkest);
+}
+.section_3 .details__list {
+  margin-top: 1.5em;
+}
+.section_3 .details__item > h3 {
+  font: bold 1.25em / 120% var(--secondary-font);
+  color: var(--brand_official);
+  margin-top: 2em;
+} 
+.section_3 .details__item > p {
+  font: 400 1em / 148% var(--secondary-font);
+  color: var(--darkest);
+  margin: 1em 0;
+}
+
+@media (min-width: 768px) {
+  .section_1 {
+    padding: 3em 1.5em;
+  }
+  .section_1 .image {
+    overflow: auto;
+    padding: 0;
+  }
+  .section_1 .image > img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section_1 .title {
+    font-size: 2.25em;
+  }
+  .section_2 .container {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    padding: 4em 0;
+  }
+  .section_2 .title {
+    width: 50%;
+    font-size: 2.25em;
+    text-align: left;
+  }
+  .section_2 .text {
+    width: 50%;
+  }
+  .section_3 .details__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .section_1 .image {
+    max-width: 1114px;
+    margin: 1.5em auto;
+  }
+  .section_1 .image > img {
+    width: 1000px;
+    height: 358px;
+    margin: 0 auto;
+  }
+
+  .section_2 .container,
+  .section_3 .container {
+    max-width: 1114px;
+    margin: 0 auto;
+  }
+}

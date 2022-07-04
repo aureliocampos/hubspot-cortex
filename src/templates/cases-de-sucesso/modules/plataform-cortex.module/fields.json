@@ -1,0 +1,511 @@
+[ {
+  "id" : "8811a865-4b81-81d0-e5d6-b255b0120fe2",
+  "name" : "escolha_o_produto",
+  "display_width" : null,
+  "label" : "Escolha o produto",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "vendas_b2b", "Inteligência de vendas B2B" ], [ "comunicacao_estrategica", "Comunicação estratégica e reputação" ] ],
+  "type" : "choice",
+  "default" : "vendas_b2b"
+}, {
+  "id" : "eb254b22-418a-5f9d-38fc-50fd9ec7f179",
+  "name" : "comunicacao_estrategica_e_reputacao",
+  "display_width" : null,
+  "label" : "Comunicação estratégica e reputação",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "8811a865-4b81-81d0-e5d6-b255b0120fe2",
+    "controlling_value_regex" : "comunicacao_estrategica",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "children" : [ {
+    "id" : "bc7ba08c-ae2b-a208-ffb3-8c042eea27dd",
+    "name" : "section_1",
+    "display_width" : null,
+    "label" : "Seção 1",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "229bad73-5084-0658-0bbf-ffda731144ef",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "Título",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Veja como funciona nossa plataforma"
+    }, {
+      "id" : "54ddf3c5-5387-2cfa-6c96-db5c6483d849",
+      "name" : "imagem_fluxo_da_plataforma",
+      "display_width" : null,
+      "label" : "Imagem - Fluxo da plataforma",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://pages.cortex-intelligence.com/hubfs/imagem%20pitch%20pr.png",
+        "alt" : "imagem pitch pr",
+        "loading" : "lazy",
+        "width" : 1396,
+        "height" : 500,
+        "max_width" : 1396,
+        "max_height" : 500
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "title" : "Veja como funciona nossa plataforma",
+      "imagem_fluxo_da_plataforma" : {
+        "size_type" : "auto",
+        "src" : "https://pages.cortex-intelligence.com/hubfs/imagem%20pitch%20pr.png",
+        "alt" : "imagem pitch pr",
+        "loading" : "lazy",
+        "width" : 1396,
+        "height" : 500,
+        "max_width" : 1396,
+        "max_height" : 500
+      }
+    }
+  }, {
+    "id" : "c3fc55b3-a476-53f2-05e8-929023651f11",
+    "name" : "section_2",
+    "display_width" : null,
+    "label" : "Seção 2",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "7de4d4cb-5e2c-cd7d-351b-aaa28375f841",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "Título",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Somos a única solução feita para a nova erada gestão integradade Comunicação estratégica e reputação"
+    }, {
+      "id" : "b8f9b023-2518-3a5c-a5b4-f60d4ee9c2d2",
+      "name" : "texto",
+      "display_width" : null,
+      "label" : "Texto",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<span>Resultados como esse só são alcançados quando se leva a estratégia do negócio para o dia a dia da Comunicação, conectando os objetivos macro com os da área, integrando diferentes mídias e canais.</span><br><br><span>Para conquistar esse resultado estratégico com a comunicação, é fundamental, principalmente, entender que a Comunicação e o Marketing, cada vez mais, andam juntos. Por isso, nossa solução foi moldada para atender uma gestão integrada entre essas áreas, unindo canais próprios, pagos e conquistados.</span><br><br><span>Essa é uma visão que empresas no caminho de se tornarem líderes em reputação estão adquirindo, pois todos os canais de comunicação contribuem para a visão externa sobre a companhia.</span><br><br><span>Mas também existem outros aspectos que precisam ser analisados com atenção para ganhar um destaque como esse. Um deles é comparar os seus resultados com os principais concorrentes e monitorar as tendências de mercado, assim como temas estratégicos para a marca.</span><br><br><span>A solução da Cortex também é a líder em inteligência competitiva de comunicação.</span>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "title" : "Somos a única solução feita para a nova erada gestão integradade Comunicação estratégica e reputação",
+      "texto" : "<span>Resultados como esse só são alcançados quando se leva a estratégia do negócio para o dia a dia da Comunicação, conectando os objetivos macro com os da área, integrando diferentes mídias e canais.</span><br><br><span>Para conquistar esse resultado estratégico com a comunicação, é fundamental, principalmente, entender que a Comunicação e o Marketing, cada vez mais, andam juntos. Por isso, nossa solução foi moldada para atender uma gestão integrada entre essas áreas, unindo canais próprios, pagos e conquistados.</span><br><br><span>Essa é uma visão que empresas no caminho de se tornarem líderes em reputação estão adquirindo, pois todos os canais de comunicação contribuem para a visão externa sobre a companhia.</span><br><br><span>Mas também existem outros aspectos que precisam ser analisados com atenção para ganhar um destaque como esse. Um deles é comparar os seus resultados com os principais concorrentes e monitorar as tendências de mercado, assim como temas estratégicos para a marca.</span><br><br><span>A solução da Cortex também é a líder em inteligência competitiva de comunicação.</span>"
+    }
+  }, {
+    "id" : "0614c745-e552-486f-39ee-7b91ba8e46a9",
+    "name" : "section_3",
+    "display_width" : null,
+    "label" : "Seção 3",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "146bcb27-8f17-e1c8-feab-6c7319138ded",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "Título",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "No detalhe"
+    }, {
+      "id" : "b15c5ef6-2bbf-b711-fda1-538db2f4542e",
+      "name" : "item_de_detalhes",
+      "display_width" : null,
+      "label" : "Item de detalhes",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : null,
+        "sorting_label_field" : "c82fc775-5019-fb99-e513-eadd403e4b40",
+        "default" : 6
+      },
+      "children" : [ {
+        "id" : "c82fc775-5019-fb99-e513-eadd403e4b40",
+        "name" : "title_description",
+        "display_width" : null,
+        "label" : "Título da descrição",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Gestão de reputação por pilar estratégico"
+      }, {
+        "id" : "d8901fb2-99e4-10b2-1a3d-549a355a27a0",
+        "name" : "description",
+        "display_width" : null,
+        "label" : "Descrição",
+        "required" : false,
+        "locked" : false,
+        "type" : "richtext",
+        "default" : "<span>Monitore tendências e potenciais riscos de imagem da sua marca, analisando cada frente estratégica. Saiba como cada um deles está impactando na sua reputação.</span>"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group",
+      "default" : [ {
+        "title_description" : "Gestão de reputação por pilar estratégico",
+        "description" : "<p>Monitore tendências e potenciais riscos de imagem da sua marca, analisando cada frente estratégica. Saiba como cada um deles está impactando na sua reputação.</p>"
+      }, {
+        "title_description" : "Gestão de KPIs de Comunicação",
+        "description" : "<p>Acompanhe as principais metas, crie estratégias para atingimento ou correção de rota e receba alertas de gatilho de outliers (queda ou crescimento de indicadores). Temos uma  fonte de dados (feed ou integração) já configurada dentro da Cortex e conseguimos rodar o caso de uso sem depender do engajamento do parceiro do cliente para mantê-lo em pé</p>"
+      }, {
+        "title_description" : "Gestão de jornalistas e veículos",
+        "description" : "<p>É possível gerir quais jornalistas e veículos vão impulsionar a reputação da sua empresa ao integrar fontes de dados e monitorar assuntos estratégicos para a companhia.</p>"
+      }, {
+        "title_description" : "Media trends",
+        "description" : "<p>Também conhecido como agendamento temático, permite a compreensão das pautas que estão ganhando ou perdendo espaço no interesse da opinião pública. Com isso, crie e execute estratégias de forma mais assertiva, compreendendo o melhor momento a partir do “humor” da imprensa e dos formadores de opinião.</p>"
+      }, {
+        "title_description" : "Media Bias",
+        "description" : "<p>Visualize as agendas da sociedade por meio dos principais grupos de líderes de opinião (políticos, influenciadores, jornalistas, ONGs, entidades etc) além da repercussão de temas por meio das bolhas de vieses ideológicos progressista, centro e conservador. Assim, a Comunicação consegue dialogar melhor com cada audiência.</p>"
+      }, {
+        "title_description" : "Reputação e impacto dos concorrentes",
+        "description" : "<p>Entenda como cada concorrente está exposto na mídia. Isso é essencial para o mapeamento de posicionamento do mercado e possíveis tendências e oportunidades.</p>"
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "title" : "No detalhe",
+      "item_de_detalhes" : [ {
+        "title_description" : "Gestão de reputação por pilar estratégico",
+        "description" : "<p>Monitore tendências e potenciais riscos de imagem da sua marca, analisando cada frente estratégica. Saiba como cada um deles está impactando na sua reputação.</p>"
+      }, {
+        "title_description" : "Gestão de KPIs de Comunicação",
+        "description" : "<p>Acompanhe as principais metas, crie estratégias para atingimento ou correção de rota e receba alertas de gatilho de outliers (queda ou crescimento de indicadores). Temos uma  fonte de dados (feed ou integração) já configurada dentro da Cortex e conseguimos rodar o caso de uso sem depender do engajamento do parceiro do cliente para mantê-lo em pé</p>"
+      }, {
+        "title_description" : "Gestão de jornalistas e veículos",
+        "description" : "<p>É possível gerir quais jornalistas e veículos vão impulsionar a reputação da sua empresa ao integrar fontes de dados e monitorar assuntos estratégicos para a companhia.</p>"
+      }, {
+        "title_description" : "Media trends",
+        "description" : "<p>Também conhecido como agendamento temático, permite a compreensão das pautas que estão ganhando ou perdendo espaço no interesse da opinião pública. Com isso, crie e execute estratégias de forma mais assertiva, compreendendo o melhor momento a partir do “humor” da imprensa e dos formadores de opinião.</p>"
+      }, {
+        "title_description" : "Media Bias",
+        "description" : "<p>Visualize as agendas da sociedade por meio dos principais grupos de líderes de opinião (políticos, influenciadores, jornalistas, ONGs, entidades etc) além da repercussão de temas por meio das bolhas de vieses ideológicos progressista, centro e conservador. Assim, a Comunicação consegue dialogar melhor com cada audiência.</p>"
+      }, {
+        "title_description" : "Reputação e impacto dos concorrentes",
+        "description" : "<p>Entenda como cada concorrente está exposto na mídia. Isso é essencial para o mapeamento de posicionamento do mercado e possíveis tendências e oportunidades.</p>"
+      } ]
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "section_1" : {
+      "title" : "Veja como funciona nossa plataforma",
+      "imagem_fluxo_da_plataforma" : {
+        "size_type" : "auto",
+        "src" : "https://pages.cortex-intelligence.com/hubfs/imagem%20pitch%20pr.png",
+        "alt" : "imagem pitch pr",
+        "loading" : "lazy",
+        "width" : 1396,
+        "height" : 500,
+        "max_width" : 1396,
+        "max_height" : 500
+      }
+    },
+    "section_2" : {
+      "title" : "Somos a única solução feita para a nova erada gestão integradade Comunicação estratégica e reputação",
+      "texto" : "<span>Resultados como esse só são alcançados quando se leva a estratégia do negócio para o dia a dia da Comunicação, conectando os objetivos macro com os da área, integrando diferentes mídias e canais.</span><br><br><span>Para conquistar esse resultado estratégico com a comunicação, é fundamental, principalmente, entender que a Comunicação e o Marketing, cada vez mais, andam juntos. Por isso, nossa solução foi moldada para atender uma gestão integrada entre essas áreas, unindo canais próprios, pagos e conquistados.</span><br><br><span>Essa é uma visão que empresas no caminho de se tornarem líderes em reputação estão adquirindo, pois todos os canais de comunicação contribuem para a visão externa sobre a companhia.</span><br><br><span>Mas também existem outros aspectos que precisam ser analisados com atenção para ganhar um destaque como esse. Um deles é comparar os seus resultados com os principais concorrentes e monitorar as tendências de mercado, assim como temas estratégicos para a marca.</span><br><br><span>A solução da Cortex também é a líder em inteligência competitiva de comunicação.</span>"
+    },
+    "section_3" : {
+      "title" : "No detalhe",
+      "item_de_detalhes" : [ {
+        "title_description" : "Gestão de reputação por pilar estratégico",
+        "description" : "<p>Monitore tendências e potenciais riscos de imagem da sua marca, analisando cada frente estratégica. Saiba como cada um deles está impactando na sua reputação.</p><span></span>"
+      }, {
+        "title_description" : "Gestão de KPIs de Comunicação",
+        "description" : "<p>Acompanhe as principais metas, crie estratégias para atingimento ou correção de rota e receba alertas de gatilho de outliers (queda ou crescimento de indicadores). Temos uma  fonte de dados (feed ou integração) já configurada dentro da Cortex e conseguimos rodar o caso de uso sem depender do engajamento do parceiro do cliente para mantê-lo em pé</p>"
+      }, {
+        "title_description" : "Gestão de jornalistas e veículos",
+        "description" : "<p>É possível gerir quais jornalistas e veículos vão impulsionar a reputação da sua empresa ao integrar fontes de dados e monitorar assuntos estratégicos para a companhia.</p>"
+      }, {
+        "title_description" : "Media trends",
+        "description" : "<p>Também conhecido como agendamento temático, permite a compreensão das pautas que estão ganhando ou perdendo espaço no interesse da opinião pública. Com isso, crie e execute estratégias de forma mais assertiva, compreendendo o melhor momento a partir do “humor” da imprensa e dos formadores de opinião.</p>"
+      }, {
+        "title_description" : "Media Bias",
+        "description" : "<p>Visualize as agendas da sociedade por meio dos principais grupos de líderes de opinião (políticos, influenciadores, jornalistas, ONGs, entidades etc) além da repercussão de temas por meio das bolhas de vieses ideológicos progressista, centro e conservador. Assim, a Comunicação consegue dialogar melhor com cada audiência.</p>"
+      }, {
+        "title_description" : "Reputação e impacto dos concorrentes",
+        "description" : "<p>Entenda como cada concorrente está exposto na mídia. Isso é essencial para o mapeamento de posicionamento do mercado e possíveis tendências e oportunidades.</p>"
+      } ]
+    }
+  }
+}, {
+  "id" : "f5f60cc1-828c-3191-ce25-c2228f6e2092",
+  "name" : "inteligencia_de_vendas_b2b",
+  "display_width" : null,
+  "label" : "Inteligência de vendas B2B",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "8811a865-4b81-81d0-e5d6-b255b0120fe2",
+    "controlling_value_regex" : "vendas_b2b",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "children" : [ {
+    "id" : "6cd00660-5bff-b2d3-0b3b-a7a5eea47289",
+    "name" : "section_1",
+    "display_width" : null,
+    "label" : "Seção 1",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "9cf41574-6667-7fff-25ea-3e3cb3710622",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "Título",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Veja como funciona nossa plataforma"
+    }, {
+      "id" : "c16e0544-de1a-cf30-4b88-28e4ef34c7e3",
+      "name" : "imagem_fluxo_da_plataforma",
+      "display_width" : null,
+      "label" : "Imagem - Fluxo da plataforma",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://pages.cortex-intelligence.com/hubfs/imagem%20pitch%20pr.png",
+        "alt" : "imagem pitch pr",
+        "loading" : "lazy",
+        "width" : 1396,
+        "height" : 500,
+        "max_width" : 1396,
+        "max_height" : 500
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "title" : "Veja como funciona nossa plataforma",
+      "imagem_fluxo_da_plataforma" : {
+        "size_type" : "auto",
+        "src" : "https://pages.cortex-intelligence.com/hubfs/imagem%20pitch%20pr.png",
+        "alt" : "imagem pitch pr",
+        "loading" : "lazy",
+        "width" : 1396,
+        "height" : 500,
+        "max_width" : 1396,
+        "max_height" : 500
+      }
+    }
+  }, {
+    "id" : "7064c88a-a9c2-37ed-9bd3-7fb3c90c2b2a",
+    "name" : "section_2",
+    "display_width" : null,
+    "label" : "Seção 2",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "1bb8e241-c1d4-bf92-85ab-636d76d6fded",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "Título",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Somos a solução feita para identificar oportunidades, engajar leads e fechar negócios como você nunca viu"
+    }, {
+      "id" : "bccb1306-095e-a492-f4a2-7c1af94f60fa",
+      "name" : "texto",
+      "display_width" : null,
+      "label" : "Texto",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<p>Resultados como esse só são possíveis de serem alcançados quando se tem conhecimento do potencial da inteligência de vendas, especialmente no mercado B2B.</p>\n<p>Afinal, ao contar com soluções desse caráter, sua equipe Comercial não irá quebrar a cabeça com dados imprecisos, tampouco irá precisar perder tempo prospectando clientes que não têm fit com a marca.</p>\n<p>Usar dados a favor das Vendas é, portanto, uma virada de chave para a geração de oportunidades. Quer saber mais sobre isso? Saib</p>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "title" : "Somos a solução feita para identificar oportunidades, engajar leads e fechar negócios como você nunca viu",
+      "texto" : "<p>Resultados como esse só são possíveis de serem alcançados quando se tem conhecimento do potencial da inteligência de vendas, especialmente no mercado B2B.</p>\n<p>Afinal, ao contar com soluções desse caráter, sua equipe Comercial não irá quebrar a cabeça com dados imprecisos, tampouco irá precisar perder tempo prospectando clientes que não têm fit com a marca.</p>\n<p>Usar dados a favor das Vendas é, portanto, uma virada de chave para a geração de oportunidades. Quer saber mais sobre isso? Saib</p>"
+    }
+  }, {
+    "id" : "0931daeb-c073-a6aa-842f-1e717e155c1e",
+    "name" : "section_3",
+    "display_width" : null,
+    "label" : "Seção 3",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "754990b2-8ecb-1ed2-c446-fe2c79c857c5",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "Título",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "No detalhe"
+    }, {
+      "id" : "67bab159-884d-0a28-3bf2-5dc9382ec03b",
+      "name" : "item_de_detalhes",
+      "display_width" : null,
+      "label" : "Item de detalhes",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : null,
+        "sorting_label_field" : "c82fc775-5019-fb99-e513-eadd403e4b40",
+        "default" : 5
+      },
+      "children" : [ {
+        "id" : "42cfd985-993f-17ae-b9c7-55dc0ad8ae14",
+        "name" : "title_description",
+        "display_width" : null,
+        "label" : "Título da descrição",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Gestão de reputação por pilar estratégico"
+      }, {
+        "id" : "4b0fc7b7-f46d-269f-3a3b-be094ddfa92b",
+        "name" : "description",
+        "display_width" : null,
+        "label" : "Descrição",
+        "required" : false,
+        "locked" : false,
+        "type" : "richtext",
+        "default" : "<span>Monitore tendências e potenciais riscos de imagem da sua marca, analisando cada frente estratégica. Saiba como cada um deles está impactando na sua reputação.</span>"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group",
+      "default" : [ {
+        "title_description" : "Geração de Leads",
+        "description" : "<p>Acesse informações de contato dos tomadores de decisão em mais de 179 milhões de empresas no mundo todo. Você vai encontrar leads com os melhores metadados do mercado e a maior taxa de precisão nas informações de contatos profissionais (até 7x maior, segundo nossos clientes). E ainda conseguirá manter a sua base sempre atualizada com a nossa integração com os principais CRMs do mercado.</p>"
+      }, {
+        "title_description" : "Market Sizing",
+        "description" : "<p>Por meio da nossa plataforma de inteligência com insights em tempo real, a empresa conta com um dashboard de dimensionamento de mercado, permitindo que seja avaliado o potencial que a mesma pode alcançar. Ou seja, localizando, dentro do nicho, quais são as possibilidades dela em relação aos concorrentes ou às lacunas ainda não cobertas por outros players. </p>"
+      }, {
+        "title_description" : "Inteligência de Mercado",
+        "description" : "<p>Entenda o potencial do seu mercado e identifique segmentos ou regiões ainda não explorados, monitore concorrentes e market share por meio de uma plataforma flexível. Isso é possível com o acesso a mais de 17 mil fontes de dados, em mais de 150 países.</p>"
+      }, {
+        "title_description" : "Enriquecimento de dados",
+        "description" : "<p>Estruture e mantenha sempre atualizadas as bases internas e enriqueça informações dos seus leads. Tenha sempre em mãos listas com informações em tempo real e com os contatos certos. Assim, é possível otimizar o trabalho das suas equipes com melhor qualificação e priorização dos prospects.</p>"
+      }, {
+        "title_description" : "Leads Propensity",
+        "description" : "<p>Receba as recomendações dos melhores leads. Converta mais negócios, mais rapidamente, e com uma eficiência muito maior. Para isso, utilize a nossa Inteligência Artificial baseada em diversas variáveis exclusivas para aumentar a acurácia das previsões.</p>"
+      }]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "title" : "No detalhe",
+      "item_de_detalhes" : [ {
+        "title_description" : "Geração de Leads",
+        "description" : "<p>Acesse informações de contato dos tomadores de decisão em mais de 179 milhões de empresas no mundo todo. Você vai encontrar leads com os melhores metadados do mercado e a maior taxa de precisão nas informações de contatos profissionais (até 7x maior, segundo nossos clientes). E ainda conseguirá manter a sua base sempre atualizada com a nossa integração com os principais CRMs do mercado.</p>"
+      }, {
+        "title_description" : "Market Sizing",
+        "description" : "<p>Por meio da nossa plataforma de inteligência com insights em tempo real, a empresa conta com um dashboard de dimensionamento de mercado, permitindo que seja avaliado o potencial que a mesma pode alcançar. Ou seja, localizando, dentro do nicho, quais são as possibilidades dela em relação aos concorrentes ou às lacunas ainda não cobertas por outros players. </p>"
+      }, {
+        "title_description" : "Inteligência de Mercado",
+        "description" : "<p>Entenda o potencial do seu mercado e identifique segmentos ou regiões ainda não explorados, monitore concorrentes e market share por meio de uma plataforma flexível. Isso é possível com o acesso a mais de 17 mil fontes de dados, em mais de 150 países.</p>"
+      }, {
+        "title_description" : "Enriquecimento de dados",
+        "description" : "<p>Estruture e mantenha sempre atualizadas as bases internas e enriqueça informações dos seus leads. Tenha sempre em mãos listas com informações em tempo real e com os contatos certos. Assim, é possível otimizar o trabalho das suas equipes com melhor qualificação e priorização dos prospects.</p>"
+      }, {
+        "title_description" : "Leads Propensity",
+        "description" : "<p>Receba as recomendações dos melhores leads. Converta mais negócios, mais rapidamente, e com uma eficiência muito maior. Para isso, utilize a nossa Inteligência Artificial baseada em diversas variáveis exclusivas para aumentar a acurácia das previsões.</p>"
+      }]
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "section_1" : {
+      "title" : "Veja como funciona nossa plataforma",
+      "imagem_fluxo_da_plataforma" : {
+        "size_type" : "auto",
+        "src" : "https://pages.cortex-intelligence.com/hubfs/imagem%20pitch%20pr.png",
+        "alt" : "imagem pitch pr",
+        "loading" : "lazy",
+        "width" : 1396,
+        "height" : 500,
+        "max_width" : 1396,
+        "max_height" : 500
+      }
+    },
+    "section_2" : {
+      "title" : "Somos a solução feita para identificar oportunidades, engajar leads e fechar negócios como você nunca viu",
+      "texto" : "<p>Resultados como esse só são possíveis de serem alcançados quando se tem conhecimento do potencial da inteligência de vendas, especialmente no mercado B2B.</p>\n<p>Afinal, ao contar com soluções desse caráter, sua equipe Comercial não irá quebrar a cabeça com dados imprecisos, tampouco irá precisar perder tempo prospectando clientes que não têm fit com a marca.</p>\n<p>Usar dados a favor das Vendas é, portanto, uma virada de chave para a geração de oportunidades. Quer saber mais sobre isso? Saib</p>"
+    },
+    "section_3" : {
+      "title" : "No detalhe",
+      "item_de_detalhes" : [ {
+        "title_description" : "Geração de Leads",
+        "description" : "<p>Acesse informações de contato dos tomadores de decisão em mais de 179 milhões de empresas no mundo todo. Você vai encontrar leads com os melhores metadados do mercado e a maior taxa de precisão nas informações de contatos profissionais (até 7x maior, segundo nossos clientes). E ainda conseguirá manter a sua base sempre atualizada com a nossa integração com os principais CRMs do mercado.</p>"
+      }, {
+        "title_description" : "Market Sizing",
+        "description" : "<p>Por meio da nossa plataforma de inteligência com insights em tempo real, a empresa conta com um dashboard de dimensionamento de mercado, permitindo que seja avaliado o potencial que a mesma pode alcançar. Ou seja, localizando, dentro do nicho, quais são as possibilidades dela em relação aos concorrentes ou às lacunas ainda não cobertas por outros players. </p>"
+      }, {
+        "title_description" : "Inteligência de Mercado",
+        "description" : "<p>Entenda o potencial do seu mercado e identifique segmentos ou regiões ainda não explorados, monitore concorrentes e market share por meio de uma plataforma flexível. Isso é possível com o acesso a mais de 17 mil fontes de dados, em mais de 150 países.</p>"
+      }, {
+        "title_description" : "Enriquecimento de dados",
+        "description" : "<p>Estruture e mantenha sempre atualizadas as bases internas e enriqueça informações dos seus leads. Tenha sempre em mãos listas com informações em tempo real e com os contatos certos. Assim, é possível otimizar o trabalho das suas equipes com melhor qualificação e priorização dos prospects.</p>"
+      }, {
+        "title_description" : "Leads Propensity",
+        "description" : "<p>Receba as recomendações dos melhores leads. Converta mais negócios, mais rapidamente, e com uma eficiência muito maior. Para isso, utilize a nossa Inteligência Artificial baseada em diversas variáveis exclusivas para aumentar a acurácia das previsões.</p>"
+      }]
+    }
+  }
+} ]
