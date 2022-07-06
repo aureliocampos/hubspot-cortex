@@ -24,7 +24,8 @@ const keywordsPT = [
   "estratégico",
   "próprio",
   "comparação",
-  "pagos"
+  "prospecção"
+  "pagos",
 ]
 const prepositionsPT = ['a', 'e', 'o', 'da', 'das', 'de', 'do', 'dos', 
 'com', 'em', '&'];

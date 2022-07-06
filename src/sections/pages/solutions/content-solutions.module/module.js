@@ -16,7 +16,6 @@ const keywordsPT = [
   "previsibilidade",
   "propensão",
   "retorno",
-  "monitoramento",
   "gestão",
   "tempo",
   "real",
@@ -24,7 +23,10 @@ const keywordsPT = [
   "estratégico",
   "próprio",
   "comparação",
-  "pagos"
+  "pagos",
+  "prospecção",
+  "análise",
+  "carteira"
 ]
 const prepositionsPT = ['a', 'e', 'o', 'da', 'das', 'de', 'do', 'dos', 
 'com', 'em', '&'];

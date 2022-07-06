@@ -89,9 +89,7 @@
   text-transform: uppercase;
   cursor: pointer;
 }
-.main-home__card-title span:first-of-type {
-  display: block;
-}
+
 /* Texto */
 .main-home__card-text {
   width: 80%;
