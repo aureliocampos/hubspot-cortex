@@ -2,9 +2,7 @@
   padding: 3.5em 2em;
 }
 .main-about__title {
-  font: 325 1.5em var(--primary-font);
-  line-height: 120%;
-  /* or 38px */
+  font: 325 1.5em / 120% var(--primary-font);
   letter-spacing: -0.035em;
   color: var(--darkest); 
   margin-bottom: 2.5rem; 

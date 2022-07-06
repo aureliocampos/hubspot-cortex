@@ -70,10 +70,10 @@
   letter-spacing: -0.04em;
   text-transform: uppercase;
 }
-.main-home__card-title span:first-of-type {
+/* .main-home__card-title span:first-of-type {
   display: block;
   height: 40%;
-}
+} */
 /* Texto */
 .main-home__card-text {
   width: 80%;
