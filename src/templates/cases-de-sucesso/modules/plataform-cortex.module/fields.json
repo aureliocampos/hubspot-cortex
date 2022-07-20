@@ -55,13 +55,13 @@
       "type" : "image",
       "default" : {
         "size_type" : "auto",
-        "src" : "https://pages.cortex-intelligence.com/hubfs/imagem%20pitch%20pr.png",
-        "alt" : "imagem pitch pr",
+        "src" : "https://pages.cortex-intelligence.com/hubfs/Fluxo%20Produto%20Comunica%C3%A7%C3%A3o%20%7BPortugu%C3%AAs%7D.png",
+        "alt" : "Fluxo Produto Comunicação {Português}",
         "loading" : "lazy",
-        "width" : 1396,
-        "height" : 500,
-        "max_width" : 1396,
-        "max_height" : 500
+        "width" : 2720,
+        "height" : 978,
+        "max_width" : 2720,
+        "max_height" : 978
       }
     } ],
     "tab" : "CONTENT",
@@ -71,13 +71,13 @@
       "title" : "Veja como funciona nossa plataforma",
       "imagem_fluxo_da_plataforma" : {
         "size_type" : "auto",
-        "src" : "https://pages.cortex-intelligence.com/hubfs/imagem%20pitch%20pr.png",
-        "alt" : "imagem pitch pr",
+        "src" : "https://pages.cortex-intelligence.com/hubfs/Fluxo%20Produto%20Comunica%C3%A7%C3%A3o%20%7BPortugu%C3%AAs%7D.png",
+        "alt" : "Fluxo Produto Comunicação {Português}",
         "loading" : "lazy",
-        "width" : 1396,
-        "height" : 500,
-        "max_width" : 1396,
-        "max_height" : 500
+        "width" : 2720,
+        "height" : 978,
+        "max_width" : 2720,
+        "max_height" : 978
       }
     }
   }, {
@@ -227,13 +227,13 @@
       "title" : "Veja como funciona nossa plataforma",
       "imagem_fluxo_da_plataforma" : {
         "size_type" : "auto",
-        "src" : "https://pages.cortex-intelligence.com/hubfs/imagem%20pitch%20pr.png",
-        "alt" : "imagem pitch pr",
+        "src" : "https://pages.cortex-intelligence.com/hubfs/Fluxo%20Produto%20Comunica%C3%A7%C3%A3o%20%7BPortugu%C3%AAs%7D.png",
+        "alt" : "Fluxo Produto Comunicação {Português}",
         "loading" : "lazy",
-        "width" : 1396,
-        "height" : 500,
-        "max_width" : 1396,
-        "max_height" : 500
+        "width" : 2720,
+        "height" : 978,
+        "max_width" : 2720,
+        "max_height" : 978
       }
     },
     "section_2" : {
@@ -244,7 +244,7 @@
       "title" : "No detalhe",
       "item_de_detalhes" : [ {
         "title_description" : "Gestão de reputação por pilar estratégico",
-        "description" : "<p>Monitore tendências e potenciais riscos de imagem da sua marca, analisando cada frente estratégica. Saiba como cada um deles está impactando na sua reputação.</p><span></span>"
+        "description" : "<p>Monitore tendências e potenciais riscos de imagem da sua marca, analisando cada frente estratégica. Saiba como cada um deles está impactando na sua reputação.</p>"
       }, {
         "title_description" : "Gestão de KPIs de Comunicação",
         "description" : "<p>Acompanhe as principais metas, crie estratégias para atingimento ou correção de rota e receba alertas de gatilho de outliers (queda ou crescimento de indicadores). Temos uma  fonte de dados (feed ou integração) já configurada dentro da Cortex e conseguimos rodar o caso de uso sem depender do engajamento do parceiro do cliente para mantê-lo em pé</p>"
@@ -309,13 +309,13 @@
       "type" : "image",
       "default" : {
         "size_type" : "auto",
-        "src" : "https://pages.cortex-intelligence.com/hubfs/imagem%20pitch%20pr.png",
-        "alt" : "imagem pitch pr",
+        "src" : "https://pages.cortex-intelligence.com/hubfs/Fluxo%20Produto%20Vendas%20%7BPortugu%C3%AAs%7D.png",
+        "alt" : "Fluxo Produto Vendas {Português}",
         "loading" : "lazy",
-        "width" : 1396,
-        "height" : 500,
-        "max_width" : 1396,
-        "max_height" : 500
+        "width" : 2316,
+        "height" : 872,
+        "max_width" : 2316,
+        "max_height" : 872
       }
     } ],
     "tab" : "CONTENT",
@@ -325,13 +325,13 @@
       "title" : "Veja como funciona nossa plataforma",
       "imagem_fluxo_da_plataforma" : {
         "size_type" : "auto",
-        "src" : "https://pages.cortex-intelligence.com/hubfs/imagem%20pitch%20pr.png",
-        "alt" : "imagem pitch pr",
+        "src" : "https://pages.cortex-intelligence.com/hubfs/Fluxo%20Produto%20Vendas%20%7BPortugu%C3%AAs%7D.png",
+        "alt" : "Fluxo Produto Vendas {Português}",
         "loading" : "lazy",
-        "width" : 1396,
-        "height" : 500,
-        "max_width" : 1396,
-        "max_height" : 500
+        "width" : 2316,
+        "height" : 872,
+        "max_width" : 2316,
+        "max_height" : 872
       }
     }
   }, {
@@ -442,7 +442,7 @@
       }, {
         "title_description" : "Leads Propensity",
         "description" : "<p>Receba as recomendações dos melhores leads. Converta mais negócios, mais rapidamente, e com uma eficiência muito maior. Para isso, utilize a nossa Inteligência Artificial baseada em diversas variáveis exclusivas para aumentar a acurácia das previsões.</p>"
-      }]
+      } ]
     } ],
     "tab" : "CONTENT",
     "expanded" : false,
@@ -464,7 +464,7 @@
       }, {
         "title_description" : "Leads Propensity",
         "description" : "<p>Receba as recomendações dos melhores leads. Converta mais negócios, mais rapidamente, e com uma eficiência muito maior. Para isso, utilize a nossa Inteligência Artificial baseada em diversas variáveis exclusivas para aumentar a acurácia das previsões.</p>"
-      }]
+      } ]
     }
   } ],
   "tab" : "CONTENT",
@@ -475,13 +475,13 @@
       "title" : "Veja como funciona nossa plataforma",
       "imagem_fluxo_da_plataforma" : {
         "size_type" : "auto",
-        "src" : "https://pages.cortex-intelligence.com/hubfs/imagem%20pitch%20pr.png",
-        "alt" : "imagem pitch pr",
+        "src" : "https://pages.cortex-intelligence.com/hubfs/Fluxo%20Produto%20Vendas%20%7BPortugu%C3%AAs%7D.png",
+        "alt" : "Fluxo Produto Vendas {Português}",
         "loading" : "lazy",
-        "width" : 1396,
-        "height" : 500,
-        "max_width" : 1396,
-        "max_height" : 500
+        "width" : 2316,
+        "height" : 872,
+        "max_width" : 2316,
+        "max_height" : 872
       }
     },
     "section_2" : {
@@ -505,7 +505,7 @@
       }, {
         "title_description" : "Leads Propensity",
         "description" : "<p>Receba as recomendações dos melhores leads. Converta mais negócios, mais rapidamente, e com uma eficiência muito maior. Para isso, utilize a nossa Inteligência Artificial baseada em diversas variáveis exclusivas para aumentar a acurácia das previsões.</p>"
-      }]
+      } ]
     }
   }
 } ]

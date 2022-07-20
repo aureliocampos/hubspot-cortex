@@ -26,10 +26,19 @@ const keywordsPT = [
   "pagos",
   "prospecção",
   "análise",
-  "carteira"
+  "carteira",
+  "exposição", // Atualizção 12/07/22 Comunicação estrátegica e marketing
+  "quantitativos",
+  "reputação",
+  "exposição",
+  "ações",
+  "eventos",
+  "comunicação",
+  "tendências",
+  "bolhas"
 ]
-const prepositionsPT = ['a', 'e', 'o', 'da', 'das', 'de', 'do', 'dos', 
-'com', 'em', '&'];
+const prepositionsPT = ['a', 'e', 'o', 'da', 'de', 'do',
+'com', 'em', '&', 'na'];
 
 // Palavras em destaque (Inglês)
 const keywordsEN = [

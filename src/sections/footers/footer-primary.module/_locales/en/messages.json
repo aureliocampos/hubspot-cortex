@@ -189,6 +189,36 @@
     "description" : null,
     "placeholders" : null
   },
+  "fale_conosco.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "fale_conosco.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "fale_conosco.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "fale_conosco.label" : {
+    "message" : "Texto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "fale_conosco.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "fale_conosco.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
   "form_field.default.message" : {
     "message" : "Obrigado por enviar o formulário.",
     "description" : null,

@@ -16,7 +16,6 @@ const keywordsPT = [
   "previsibilidade",
   "propensão",
   "retorno",
-  "monitoramento",
   "gestão",
   "tempo",
   "real",
@@ -24,11 +23,22 @@ const keywordsPT = [
   "estratégico",
   "próprio",
   "comparação",
-  "prospecção"
   "pagos",
+  "prospecção",
+  "análise",
+  "carteira",
+  "exposição", // Atualizção 12/07/22 Comunicação estrátegica e marketing
+  "quantitativos",
+  "reputação",
+  "exposição",
+  "ações",
+  "eventos",
+  "comunicação",
+  "tendências",
+  "bolhas"
 ]
 const prepositionsPT = ['a', 'e', 'o', 'da', 'das', 'de', 'do', 'dos', 
-'com', 'em', '&'];
+'com', 'em', '&', 'na'];
 
 // Palavras em destaque (Inglês)
 const keywordsEN = [

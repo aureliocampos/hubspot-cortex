@@ -1,1 +1,32 @@
-[ ]
+[ {
+  "id" : "5f3cb607-a733-dafb-5f96-90f58c4e5ccb",
+  "name" : "text_field",
+  "display_width" : null,
+  "label" : "Texto",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Política de privacidade"
+}, {
+  "id" : "b0dce3d7-61c4-8144-766b-4ad10c36a0f3",
+  "name" : "link_field",
+  "display_width" : null,
+  "label" : "Link",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://pages.cortex-intelligence.com/politica-de-privacidade-cortex",
+      "content_id" : null
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+} ]

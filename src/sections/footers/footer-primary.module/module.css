@@ -255,3 +255,19 @@
     margin: 0 0 0 1em;
   }
 }
+
+
+.contact-us {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 1.5em;
+}
+.contact-us > h3 {
+  font: 400 1em var(--primary-font);
+  color: var(--darkest);
+}
+.contact-us > div > a {
+    font: 400 1em var(--primary-font);
+  color: var(--darkest);
+}

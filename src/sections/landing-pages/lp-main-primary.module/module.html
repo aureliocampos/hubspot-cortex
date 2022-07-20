@@ -3,7 +3,7 @@
     <div class="section__content">
       <p class="lp-main__tag">{{ module.tag }}</p>
       
-      <div class="lp-main__title">{{ module.title_h1 }}</div>
+      <h1 class="lp-main__title">{{ module.title_h1 }}</h1>
       {% set href = module.button_cta.link_field.url.href %}
         {% if module.button_cta.link_field.url.type is equalto "EMAIL_ADDRESS" %}
           {% set href = "mailto:" + href %}
